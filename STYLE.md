@@ -10,6 +10,8 @@ This repo has three voices. They are intentionally not the same.
 - Sentence and line length should move around. Short line, longer line, short again. Do not let every sentence land at the same length.
 - Keep claims tied to the supplied Auto-Dig material or landed GitHub changes. Style can be loose. Facts cannot.
 - Do not invent quotes, sources, commits, capabilities, people, conclusions, test results, or coverage numbers.
+- Do not pad reports with lawyerly paragraphs about what the evidence does not prove. State the verified fact cleanly. If a sentence would imply something unsupported, rewrite that sentence instead of adding a defensive disclaimer afterward.
+- Mention uncertainty only when it is actually needed to understand the claim.
 - Source links stay visible.
 - `nsaspy` is one word everywhere.
 - Never write `SIGNED OFF BY: nsaspy`.
@@ -42,6 +44,10 @@ The signoff is `N545PY`. `nsaspy` is part of the warning only.
 ## findings-shitposts
 
 Only Auto-Dig findings go here.
+
+These are community-facing posts. Reach matters. Headlines can be tabloid, blunt, provocative, and funny when the verified facts support it. Put the strongest verified fact in the headline and make the post easy to share.
+
+Do not weaken a strong factual story with a closing paragraph explaining every accusation that was not made. The post should simply avoid making unsupported accusations in the first place.
 
 A run randomly chooses one of four presentation modes:
 
