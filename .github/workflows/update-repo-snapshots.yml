@@ -1,0 +1,54 @@
+name: Refresh StarIntel repo snapshots
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: starintel-repo-snapshots
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.STARINTEL_GH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check cross-repo token
+        id: token
+        shell: bash
+        run: |
+          if [ -n "${GH_TOKEN:-}" ]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo 'STARINTEL_GH_TOKEN is not configured; skipping cross-repo snapshot refresh.'
+          fi
+
+      - name: Refresh snapshots
+        if: steps.token.outputs.ready == 'true'
+        run: bash scripts/update_repo_snapshots.sh
+
+      - name: Commit snapshots
+        if: steps.token.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'starintel-report-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add tracking/repos
+          if git diff --cached --quiet; then
+            echo 'snapshots unchanged'
+            exit 0
+          fi
+          git commit -m 'tracking: refresh StarIntel repo snapshots'
+          git pull --rebase origin main
+          git push origin HEAD:main
