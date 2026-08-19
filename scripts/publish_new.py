@@ -184,7 +184,7 @@ def main() -> int:
             continue
         kind, secret_name = mapping
 
-        if relative in published_paths:
+        if relative in published_paths or post_report.already_reported(STATE, relative):
             print(f"skip already-published path: {relative}")
             continue
 
@@ -216,6 +216,8 @@ def main() -> int:
             webhook,
             "--report",
             str(report),
+            "--report-id",
+            relative,
             "--state-file",
             str(STATE),
         ]
