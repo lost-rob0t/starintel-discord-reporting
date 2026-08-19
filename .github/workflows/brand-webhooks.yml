@@ -1,0 +1,26 @@
+name: Brand Discord webhooks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'branding/**'
+      - 'config/discord-identities.json'
+      - 'scripts/brand_webhooks.py'
+      - '.github/workflows/brand-webhooks.yml'
+  workflow_dispatch:
+
+jobs:
+  brand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply webhook names and avatars
+        env:
+          AUTO_DIG_FINDINGS: ${{ secrets.AUTO_DIG_FINDINGS }}
+          FINDINGS_SHITPOSTS: ${{ secrets.FINDINGS_SHITPOSTS }}
+          STARINTEL_UPDATES_CHANGELOG: ${{ secrets.STARINTEL_UPDATES_CHANGELOG }}
+        run: python scripts/brand_webhooks.py
