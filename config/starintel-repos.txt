@@ -6,7 +6,5 @@ quasar
 quasar-ui
 auto-dig-quasar
 tek9
-prolog-rlm
 star-lang
 star-funds
-mara
