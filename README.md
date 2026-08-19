@@ -1,60 +1,75 @@
 # starintel-discord-reporting
 
-Small reporting/publishing layer for StarIntel Discord channels.
-
-The repo keeps generated reports in:
+Discord publishing for StarIntel. Reports are files first, webhook messages second.
 
 ```text
-reports/<channel-name>/<datestring>-report.md
+reports/
+  auto-dig-findings/<datestring>-report.md
+  findings-shitposts/<datestring>-report.md
+  starintel-updates-changelog/<datestring>-report.md
 ```
 
-Discord posts use the **channel name as the webhook username**. No per-channel avatar machinery is required.
+The hourly workflow checks for new material every hour. No new relevant material means no report and no Discord post.
 
-## Current channel
+## Channels
 
-`auto-dig` is the first reporting channel. Its scheduled publisher runs every three hours and looks for the report for the current UTC slot.
+### `auto-dig-findings`
 
-Example:
+Serious, short Auto-Dig findings. It only emits when new `digs/**/README.md` material lands on `starintel-gpt-auto-dig/main`, contains extractable findings, and has at least two source URLs. The report keeps source links and the merge commit.
+
+Every findings report includes:
 
 ```text
-reports/auto-dig/2026-08-19T18-report.md
+This report was written by AI. Check it yourself.
+Do not trust this report as a source. Don't even trust NSA Spy.
+SIGNED OFF BY: N545PY
 ```
 
-Before anything is posted, the report validator checks the Markdown structure, balanced source-code fences, source URLs, sign-off, and the LLM-derived warning. Source URLs are probed when network verification is enabled.
+The validator checks required source links before publication and probes them over the network. Reports with broken verification fail closed.
 
-Discord webhook `content` is limited to 2,000 characters. `scripts/post_report.py` treats that as a hard protocol limit and splits longer reports into multiple messages. It prefers natural Markdown boundaries and keeps fenced source-code blocks valid across split messages instead of detonating formatting halfway through a function.
+### `findings-shitposts`
 
-## Secrets
+Uses the same newly-landed Auto-Dig material, but renders it in a deliberately rougher format. Each report randomly picks either greentext or loose anon-style prose. It does not invent extra claims. Source links stay attached.
 
-Add the Auto-Dig webhook to repository Actions secrets as:
+### `starintel-updates-changelog`
+
+Only reports pull requests that have actually landed on a configured repository's `main` or `master` branch. Each item includes the feature/capability title and a direct link to the landed commit.
+
+The monitored repository set lives in:
 
 ```text
-DISCORD_WEBHOOK_AUTO_DIG
+config/starintel-repos.txt
 ```
 
-Additional channels get their own secret and workflow entry when their channel name and webhook URL are added.
-
-## Report footer
-
-Every findings report ends with:
+## Webhook secrets
 
 ```text
-SIGNED OFF BY: <NAME>
-Please double check findings as this was llm derived
+AUTO_DIG_FINDINGS
+FINDINGS_SHITPOSTS
+STARINTEL_UPDATES_CHANGELOG
 ```
 
-Replace `<NAME>` in the generated report with the actual signer before publication.
+The webhook username is the channel name. No avatar override is used.
 
-## Local checks
+## Discord size and splitting
+
+Discord webhook `content` supports up to 2,000 characters. `scripts/post_report.py` treats 2,000 as a hard limit and splits longer reports into multiple Discord messages. It prefers paragraph/newline boundaries and preserves fenced code blocks across chunks.
+
+## Duplicate protection
+
+The publisher hashes `channel-name + report-content` and stores successful hashes in:
+
+```text
+state/published.json
+```
+
+Identical content will not be posted twice. Source cursors are only advanced after the publication phase succeeds.
+
+## Test
 
 ```bash
 python -m unittest discover -s tests -v
-python scripts/verify_report.py reports/auto-dig/example-report.md --no-network
-python scripts/post_report.py \
-  --channel-name auto-dig \
-  --webhook-url "$DISCORD_WEBHOOK_AUTO_DIG" \
-  --report reports/auto-dig/example-report.md \
-  --dry-run
+python -m py_compile scripts/*.py
 ```
 
-The publisher disables Discord mention parsing so report text cannot accidentally ping everyone, roles, or users.
+`test-webhooks.yml` sends a clearly marked **TEST RUN** message only when a file under `reports/test/` is pushed to `main`.
