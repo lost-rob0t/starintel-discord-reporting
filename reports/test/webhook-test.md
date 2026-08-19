@@ -1,7 +1,11 @@
 # TEST RUN
 
-**TEST ONLY.** This is a webhook smoke test for `starintel-discord-reporting` after the hourly reporter setup.
+**TEST ONLY.** This is a smoke test after moving the hourly reporting flow to GPT.
 
-No finding is being asserted. No changelog entry is being published. This only checks the three repository-secret webhooks, channel-name override, Discord Markdown, and message delivery.
+GPT now owns research, verification, style selection, report writing, and optional image generation. GitHub Actions only validates and publishes committed report files.
 
-If you see this in Discord, the webhook path worked.
+No finding is being asserted here. No changelog item is being claimed. No Auto-Dig shitpost is being treated as real output.
+
+This test checks the three configured webhook secrets, channel-name override, Discord Markdown delivery, and the publisher path.
+
+**TEST RUN. DO NOT TREAT THIS AS A REPORT.**
