@@ -19,9 +19,9 @@ REPORT_GLOBS = (
     "reports/starintel-updates-changelog/*-report.md",
 )
 CHANNELS = {
-    "auto-dig-findings": ("findings", "AUTO_DIG_FINDINGS"),
-    "findings-shitposts": ("shitpost", "FINDINGS_SHITPOSTS"),
-    "starintel-updates-changelog": ("changelog", "STARINTEL_UPDATES_CHANGELOG"),
+    "auto-dig-findings": ("findings", "AUTO_DIG_FINDINGS", "The Receipt Desk"),
+    "findings-shitposts": ("shitpost", "FINDINGS_SHITPOSTS", "Data After Dark"),
+    "starintel-updates-changelog": ("changelog", "STARINTEL_UPDATES_CHANGELOG", "StarIntel Shipyard"),
 }
 MEDIA_EXTENSIONS = ("png", "jpg", "jpeg", "gif", "webp")
 
@@ -182,7 +182,7 @@ def main() -> int:
         mapping = CHANNELS.get(channel)
         if mapping is None:
             continue
-        kind, secret_name = mapping
+        kind, secret_name, display_name = mapping
 
         if relative in published_paths or post_report.already_reported(STATE, relative):
             print(f"skip already-published path: {relative}")
@@ -211,7 +211,7 @@ def main() -> int:
 
         args = [
             "--channel-name",
-            channel,
+            display_name,
             "--webhook-url",
             webhook,
             "--report",
