@@ -15,6 +15,7 @@ import uuid
 from pathlib import Path
 
 MAX_DISCORD_CONTENT_CHARS = 2_000
+SUPPRESS_EMBEDS_FLAG = 1 << 2
 FENCE_RE = re.compile(r"(^```[^\n]*\n.*?^```[ \t]*(?:\n|$))", re.MULTILINE | re.DOTALL)
 
 
@@ -185,6 +186,15 @@ def _multipart(payload: dict, attachment: Path) -> tuple[bytes, str]:
     return bytes(body), f"multipart/form-data; boundary={boundary}"
 
 
+def _message_payload(channel_name: str, content: str) -> dict:
+    return {
+        "content": content,
+        "username": channel_name,
+        "allowed_mentions": {"parse": []},
+        "flags": SUPPRESS_EMBEDS_FLAG,
+    }
+
+
 def post_chunk(
     webhook_url: str,
     channel_name: str,
@@ -194,11 +204,7 @@ def post_chunk(
     timeout: float = 30.0,
     retries: int = 5,
 ) -> None:
-    payload = {
-        "content": content,
-        "username": channel_name,
-        "allowed_mentions": {"parse": []},
-    }
+    payload = _message_payload(channel_name, content)
     if attachment and attachment.is_file():
         body, content_type = _multipart(payload, attachment)
     else:
