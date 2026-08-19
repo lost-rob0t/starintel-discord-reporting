@@ -12,7 +12,7 @@ This repo has three voices. They are intentionally not the same.
 - Do not invent quotes, sources, commits, capabilities, people, conclusions, test results, or coverage numbers.
 - Do not pad reports with lawyerly paragraphs about what the evidence does not prove. State the verified fact cleanly. If a sentence would imply something unsupported, rewrite that sentence instead of adding a defensive disclaimer afterward.
 - Mention uncertainty only when it is actually needed to understand the claim.
-- Source links stay visible.
+- Source links stay visible, but Discord link previews/embeds must stay off. Wrap visible source URLs in `<...>` and the publisher also sets Discord's `SUPPRESS_EMBEDS` message flag.
 - `nsaspy` is one word everywhere.
 - Never write `SIGNED OFF BY: nsaspy`.
 
