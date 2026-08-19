@@ -1,6 +1,6 @@
 # starintel-discord-reporting
 
-Discord publishing for StarIntel. Reports are files first, webhook messages second.
+Discord publishing for StarIntel. GPT writes reports. GitHub Actions validates and sends them.
 
 ```text
 reports/
@@ -9,31 +9,47 @@ reports/
   starintel-updates-changelog/<datestring>-report.md
 ```
 
-The hourly workflow checks for new material every hour. No new relevant material means no report and no Discord post.
+The hourly research/reporting loop runs from GPT, not from GitHub Actions. `GPT-WORKFLOW.md` is the contract for that run. Most hourly runs should do nothing because no new material is worth posting.
+
+GitHub Actions only reacts after GPT commits a new report to `main`.
 
 ## Channels
 
 ### `auto-dig-findings`
 
-Serious, short Auto-Dig findings. It only emits when new `digs/**/README.md` material lands on `starintel-gpt-auto-dig/main`, contains extractable findings, and has at least two source URLs. The report keeps source links and the merge commit.
+Serious, short Auto-Dig findings. GPT verifies the underlying Auto-Dig material against its sources before writing a report. Weak or contradictory material gets skipped.
 
-Every findings report includes:
+Reports include visible source URLs, the landed Auto-Dig commit, and this footer:
 
 ```text
-This report was written by AI. Check it yourself.
-Do not trust this report as a source. Don't even trust NSA Spy.
+This was written by AI. check it yourself.
+Please double check findings as this was llm derived.
+dont trust this report as a source. dont even trust nsaspy.
 SIGNED OFF BY: N545PY
 ```
 
-The validator checks required source links before publication and probes them over the network. Reports with broken verification fail closed.
+`nsaspy` is one word and is never the signer.
 
 ### `findings-shitposts`
 
-Uses the same newly-landed Auto-Dig material, but renders it in a deliberately rougher format. Each report randomly picks either greentext or loose anon-style prose. It does not invent extra claims. Source links stay attached.
+Only uses Auto-Dig findings that already passed verification in the same GPT run.
+
+A post may be skipped entirely. When GPT does publish one, it chooses among:
+
+- no-image rough text;
+- `/pol/`-POV 4chan greentext with no image;
+- Star Trek meme image, where Data is always Auto-Dig;
+- Star Trek comic image, where Data is always Auto-Dig.
+
+For image modes, the image is stored beside the Markdown report using the same basename. The publisher attaches it automatically.
+
+The joke can be feral. The factual claim cannot be fabricated.
 
 ### `starintel-updates-changelog`
 
-Only reports pull requests that have actually landed on a configured repository's `main` or `master` branch. Each item includes the feature/capability title and a direct link to the landed commit.
+Only reports meaningful work that actually landed on a configured StarIntel repository's canonical `main` or `master` branch.
+
+Each item names the feature/capability and links directly to the landed merge/squash commit. Open PRs, branch-only work, CI-only churn, and trivial formatting/docs noise do not get posted.
 
 The monitored repository set lives in:
 
@@ -51,19 +67,25 @@ STARINTEL_UPDATES_CHANGELOG
 
 The webhook username is the channel name. No avatar override is used.
 
-## Discord size and splitting
+## Publisher workflow
 
-Discord webhook `content` supports up to 2,000 characters. `scripts/post_report.py` treats 2,000 as a hard limit and splits longer reports into multiple Discord messages. It prefers paragraph/newline boundaries and preserves fenced code blocks across chunks.
+`.github/workflows/publish-reports.yml` runs when a new report file lands on `main`.
 
-## Duplicate protection
+It:
 
-The publisher hashes `channel-name + report-content` and stores successful hashes in:
+- maps report directories to the repository webhook secrets;
+- validates reports before publication;
+- attaches a sibling PNG/JPG/JPEG/GIF/WebP when present;
+- splits Discord `content` at the hard 2,000-character limit;
+- preserves fenced Markdown across split messages;
+- disables mention parsing;
+- hashes published content in `state/published.json` and skips exact duplicates.
 
-```text
-state/published.json
-```
+The publisher does not research, summarize, or decide what deserves a post. That is the GPT workflow's job.
 
-Identical content will not be posted twice. Source cursors are only advanced after the publication phase succeeds.
+## Style
+
+Read `STYLE.md` before generating anything. No em dashes, no corporate LLM sludge, varied sentence rhythm, visible sources, and no anti-detector rewrite nonsense.
 
 ## Test
 
