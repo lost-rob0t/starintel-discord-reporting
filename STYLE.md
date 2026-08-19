@@ -9,7 +9,7 @@ This repo has three voices. They are intentionally not the same.
 - No canned LLM filler, executive-summary sludge, fake gravitas, or corporate prose.
 - Sentence and line length should move around. Short line, longer line, short again. Do not let every sentence land at the same length.
 - Keep claims tied to the supplied Auto-Dig material or landed GitHub changes. Style can be loose. Facts cannot.
-- Do not invent quotes, sources, commits, capabilities, people, or conclusions.
+- Do not invent quotes, sources, commits, capabilities, people, conclusions, test results, or coverage numbers.
 - Source links stay visible.
 - `nsaspy` is one word everywhere.
 - Never write `SIGNED OFF BY: nsaspy`.
@@ -77,10 +77,15 @@ Do not add the serious-channel AI footer or signoff to shitposts.
 
 ## starintel-updates-changelog
 
-Only merged work on a configured StarIntel repo's `main` or `master` branch is eligible.
+Only landed work on the configured canonical branch is eligible.
 
-- report the new feature or capability in plain language;
-- link directly to the landed merge/squash commit;
-- dedupe by repository + pull request;
-- do not report open PRs, branch-only work, drafts, CI-only churn, or commits that never landed on `main`/`master`;
-- keep entries compact. This is a changelog, not release-note fanfic.
+Keep these short. Summarize the useful change instead of dumping commit history. Use enough technical detail to say what actually changed, but do not turn the post into architecture notes.
+
+- usually 2 to 5 short bullets or paragraphs;
+- lead with what users/operators can do now or what became more reliable;
+- group related commits into one feature or stability item;
+- link a few representative landed commits, not every tiny commit;
+- never report open PRs, branch-only work, drafts, CI-only churn, or trivial formatting/docs;
+- when mentioning tests, report only observed suite/count results from commits or CI;
+- never invent a line-coverage percentage. If none is published, say that plainly;
+- no release-note sludge, fake excitement, or generic phrases like "significant improvements".
