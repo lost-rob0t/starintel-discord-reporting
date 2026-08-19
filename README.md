@@ -95,3 +95,5 @@ python -m py_compile scripts/*.py
 ```
 
 `test-webhooks.yml` sends a clearly marked **TEST RUN** message only when a file under `reports/test/` is pushed to `main`.
+
+<!-- actions-diagnostic -->
