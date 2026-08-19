@@ -1,0 +1,136 @@
+name: Publish Discord reports
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'reports/auto-dig-findings/**'
+      - 'reports/findings-shitposts/**'
+      - 'reports/starintel-updates-changelog/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: starintel-discord-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate publisher code
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/*.py
+          python -m unittest discover -s tests -v
+
+      - name: Find new GPT-authored reports
+        id: reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          : > /tmp/reports.tsv
+
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            base=HEAD^
+          else
+            base=$(git hash-object -t tree /dev/null)
+          fi
+
+          git diff --name-only --diff-filter=AM "$base" HEAD -- \
+            'reports/auto-dig-findings/*-report.md' \
+            'reports/findings-shitposts/*-report.md' \
+            'reports/starintel-updates-changelog/*-report.md' \
+          | while IFS= read -r report; do
+              [ -n "$report" ] || continue
+              channel=$(basename "$(dirname "$report")")
+              case "$channel" in
+                auto-dig-findings) kind=findings ;;
+                findings-shitposts) kind=shitpost ;;
+                starintel-updates-changelog) kind=changelog ;;
+                *) continue ;;
+              esac
+
+              attachment=""
+              stem=${report%.md}
+              for ext in png jpg jpeg gif webp; do
+                if [ -f "$stem.$ext" ]; then
+                  attachment="$stem.$ext"
+                  break
+                fi
+              done
+
+              printf '%s\t%s\t%s\t%s\n' "$channel" "$kind" "$report" "$attachment" >> /tmp/reports.tsv
+            done
+
+          if [ -s /tmp/reports.tsv ]; then
+            echo 'found=true' >> "$GITHUB_OUTPUT"
+            cat /tmp/reports.tsv
+          else
+            echo 'found=false' >> "$GITHUB_OUTPUT"
+            echo 'no new report files to publish'
+          fi
+
+      - name: Verify and publish
+        if: steps.reports.outputs.found == 'true'
+        env:
+          AUTO_DIG_FINDINGS: ${{ secrets.AUTO_DIG_FINDINGS }}
+          FINDINGS_SHITPOSTS: ${{ secrets.FINDINGS_SHITPOSTS }}
+          STARINTEL_UPDATES_CHANGELOG: ${{ secrets.STARINTEL_UPDATES_CHANGELOG }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          while IFS=$'\t' read -r channel kind report attachment; do
+            [ -n "${report:-}" ] || continue
+
+            python scripts/verify_report.py "$report" --kind "$kind"
+
+            case "$channel" in
+              auto-dig-findings) webhook="$AUTO_DIG_FINDINGS" ;;
+              findings-shitposts) webhook="$FINDINGS_SHITPOSTS" ;;
+              starintel-updates-changelog) webhook="$STARINTEL_UPDATES_CHANGELOG" ;;
+              *) echo "unknown channel: $channel" >&2; exit 1 ;;
+            esac
+
+            test -n "$webhook"
+
+            args=(
+              python scripts/post_report.py
+              --channel-name "$channel"
+              --webhook-url "$webhook"
+              --report "$report"
+              --state-file state/published.json
+            )
+
+            if [ -n "${attachment:-}" ]; then
+              args+=(--attachment "$attachment")
+            fi
+
+            "${args[@]}"
+          done < /tmp/reports.tsv
+
+      - name: Persist duplicate state
+        if: steps.reports.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'starintel-report-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add state/published.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'state: record published Discord reports'
+          git pull --rebase origin main
+          git push origin HEAD:main
