@@ -34,19 +34,67 @@ class ReportingTests(unittest.TestCase):
             self.assertFalse(post.already_posted(path, "y", "hello"))
 
     def test_findings_gate(self):
-        text = """# x
+        text = """# Auto-Dig findings
+
+## Findings
+- checked claim
+- merged: https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0123456789abcdef0123456789abcdef01234567
+
 ## Sources
 - https://example.com/a
 - https://example.org/b
 
-This report was written by AI. Check it yourself.
-Do not trust this report as a source. Don't even trust NSA Spy.
+This was written by AI. check it yourself.
+Please double check findings as this was llm derived.
+dont trust this report as a source. dont even trust nsaspy.
 SIGNED OFF BY: N545PY
 """
         self.assertEqual([], verify.verify(text, "findings", False))
 
+    def test_findings_reject_spaced_nsaspy(self):
+        text = """# Auto-Dig findings
+## Sources
+- https://example.com/a
+- https://example.org/b
+Dont trust NSA Spy.
+"""
+        errors = verify.verify(text, "findings", False)
+        self.assertTrue(any("one word" in error for error in errors))
+
+    def test_shitpost_rejects_signoff(self):
+        text = """# x
+## Sources
+- https://example.com/a
+SIGNED OFF BY: N545PY
+"""
+        errors = verify.verify(text, "shitpost", False)
+        self.assertTrue(any("signoff" in error for error in errors))
+
     def test_changelog_requires_commit(self):
         self.assertTrue(verify.verify("# x\n## Changes\n- feature\n", "changelog", False))
+        valid = """# StarIntel updates
+## Changes
+- new capability
+- https://github.com/lost-rob0t/quasar/commit/0123456789abcdef0123456789abcdef01234567
+"""
+        self.assertEqual([], verify.verify(valid, "changelog", False))
+
+    def test_multipart_contains_attachment_and_payload(self):
+        with tempfile.TemporaryDirectory() as directory:
+            attachment = Path(directory) / "meme.png"
+            attachment.write_bytes(b"png-bytes")
+            body, content_type = post._multipart(
+                {
+                    "content": "hi",
+                    "username": "findings-shitposts",
+                    "allowed_mentions": {"parse": []},
+                },
+                attachment,
+            )
+            self.assertIn("multipart/form-data", content_type)
+            self.assertIn(b"meme.png", body)
+            self.assertIn(b"png-bytes", body)
+            self.assertIn(b"findings-shitposts", body)
 
 
 if __name__ == "__main__":
