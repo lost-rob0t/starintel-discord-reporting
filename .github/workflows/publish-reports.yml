@@ -81,6 +81,16 @@ jobs:
             echo 'no new report files to publish'
           fi
 
+      - name: Refresh dedupe state from current main
+        if: steps.reports.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin main
+          if git cat-file -e origin/main:state/published.json 2>/dev/null; then
+            git show origin/main:state/published.json > state/published.json
+          fi
+
       - name: Verify and publish
         if: steps.reports.outputs.found == 'true'
         env:
@@ -95,8 +105,8 @@ jobs:
             [ -n "${report:-}" ] || continue
 
             # GPT already performs the source verification pass before committing a report.
-            # Do not make Discord delivery depend on random publisher sites allowing
-            # HEAD/Range requests from a GitHub runner. Structural validation stays hard.
+            # Structural validation remains hard, but Discord delivery does not depend on
+            # third-party sites accepting HEAD/Range requests from GitHub runners.
             python scripts/verify_report.py "$report" --kind "$kind" --no-network
 
             case "$channel" in
@@ -110,13 +120,13 @@ jobs:
               echo "missing webhook secret for $channel" >&2
               exit 1
             fi
-            echo "webhook configured for $channel"
 
             args=(
               python scripts/post_report.py
               --channel-name "$channel"
               --webhook-url "$webhook"
               --report "$report"
+              --report-id "$report"
               --state-file state/published.json
             )
 

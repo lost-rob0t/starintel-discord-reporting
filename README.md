@@ -1,6 +1,6 @@
 # starintel-discord-reporting
 
-Discord publishing for StarIntel. GPT writes reports. GitHub Actions validates and sends them.
+Discord publishing for StarIntel. GPT writes reports. GitHub Actions or the local publisher can send them.
 
 ```text
 reports/
@@ -9,53 +9,23 @@ reports/
   starintel-updates-changelog/<datestring>-report.md
 ```
 
-The hourly research/reporting loop runs from GPT, not from GitHub Actions. `GPT-WORKFLOW.md` is the contract for that run. Most hourly runs should do nothing because no new material is worth posting.
-
-GitHub Actions only reacts after GPT commits a new report to `main`.
+The hourly research/reporting loop runs from GPT, not GitHub Actions. `GPT-WORKFLOW.md` is the contract. Most hourly runs should do nothing.
 
 ## Channels
 
 ### `auto-dig-findings`
 
-Serious, short Auto-Dig findings. GPT verifies the underlying Auto-Dig material against its sources before writing a report. Weak or contradictory material gets skipped.
-
-Reports include visible source URLs, the landed Auto-Dig commit, and this footer:
-
-```text
-This was written by AI. check it yourself.
-Please double check findings as this was llm derived.
-dont trust this report as a source. dont even trust nsaspy.
-SIGNED OFF BY: N545PY
-```
-
-`nsaspy` is one word and is never the signer.
+Short verified Auto-Dig findings. Reports keep visible sources, the landed Auto-Dig commit, uncertainty when needed, and the required AI warning/signoff from `STYLE.md`.
 
 ### `findings-shitposts`
 
-Only uses Auto-Dig findings that already passed verification in the same GPT run.
-
-A post may be skipped entirely. When GPT does publish one, it chooses among:
-
-- no-image rough text;
-- `/pol/`-POV 4chan greentext with no image;
-- Star Trek meme image, where Data is always Auto-Dig;
-- Star Trek comic image, where Data is always Auto-Dig.
-
-For image modes, the image is stored beside the Markdown report using the same basename. The publisher attaches it automatically.
-
-The joke can be feral. The factual claim cannot be fabricated.
+Only uses Auto-Dig findings already verified in the same run. It may be text, `/pol/` greentext, a Star Trek meme, or a short Star Trek comic. Data is always Auto-Dig in the image modes.
 
 ### `starintel-updates-changelog`
 
-Only reports meaningful work that actually landed on a configured StarIntel repository's canonical `main` or `master` branch.
+Short summaries of useful work that actually landed on a configured canonical branch. Group related commits. Do not dump commit history or make up test coverage.
 
-Each item names the feature/capability and links directly to the landed merge/squash commit. Open PRs, branch-only work, CI-only churn, and trivial formatting/docs noise do not get posted.
-
-The monitored repository set lives in:
-
-```text
-config/starintel-repos.txt
-```
+`config/starintel-repos.txt` is the automatic changelog allow-list. `config/starintel-repo-tracking.tsv` is the wider StarIntel repository inventory.
 
 ## Webhook secrets
 
@@ -67,31 +37,41 @@ STARINTEL_UPDATES_CHANGELOG
 
 The webhook username is the channel name. No avatar override is used.
 
-## Publisher workflow
+## Publishing
 
-`.github/workflows/publish-reports.yml` runs when a new report file lands on `main`.
+GitHub Actions publishes new report files when runners are available.
 
-It:
+For Termux or any local checkout, the fallback is intentionally zero-argument:
 
-- maps report directories to the repository webhook secrets;
-- validates reports before publication;
-- attaches a sibling PNG/JPG/JPEG/GIF/WebP when present;
-- splits Discord `content` at the hard 2,000-character limit;
-- preserves fenced Markdown across split messages;
-- disables mention parsing;
-- hashes published content in `state/published.json` and skips exact duplicates.
+```bash
+python scripts/publish_new.py
+```
 
-The publisher does not research, summarize, or decide what deserves a post. That is the GPT workflow's job.
+It loads `.env`, finds only report files newer than its durable cursor, checks both immutable report paths and content hashes, publishes each report at most once, records state in `state/published.json`, commits that state, and pushes it to `main`.
+
+The GitHub publisher refreshes `state/published.json` from current `main` before sending, so an old queued run can see reports already published locally and skip them.
+
+## Repository snapshots
+
+Refresh local StarIntel repo evidence with:
+
+```bash
+bash scripts/update_repo_snapshots.sh
+```
+
+The tracked repo/branch map is in `config/starintel-repo-tracking.tsv`. Generated snapshots go under `tracking/repos/` and contain the canonical head, last 14 days of git log, changed repository paths, and test/CI paths touched.
+
+A scheduled workflow can refresh those snapshots when `STARINTEL_GH_TOKEN` is configured with access to the tracked private repos. The snapshots are evidence caches, not proof that a test passed.
 
 ## Style
 
-Read `STYLE.md` before generating anything. No em dashes, no corporate LLM sludge, varied sentence rhythm, visible sources, and no anti-detector rewrite nonsense.
+Read `STYLE.md` before generating anything. No em dashes, no corporate LLM sludge, visible sources, and no invented coverage numbers.
 
-## Test
+## Tests
 
 ```bash
 python -m unittest discover -s tests -v
 python -m py_compile scripts/*.py
 ```
 
-`test-webhooks.yml` sends a clearly marked **TEST RUN** message only when a file under `reports/test/` is pushed to `main`.
+Webhook smoke-test automation was removed after it caused duplicate test posts. Tests now stay local/CI unless deliberately reintroduced.

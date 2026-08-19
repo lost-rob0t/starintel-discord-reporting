@@ -109,18 +109,36 @@ def report_digest(channel_name: str, markdown: str) -> str:
 
 def load_state(path: Path) -> dict:
     if not path.exists():
-        return {"posted": []}
-    return json.loads(path.read_text(encoding="utf-8"))
+        return {"posted": [], "published_reports": []}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data.setdefault("posted", [])
+    data.setdefault("published_reports", [])
+    return data
 
 
 def already_posted(path: Path, channel_name: str, markdown: str) -> bool:
     return report_digest(channel_name, markdown) in set(load_state(path).get("posted", []))
 
 
-def mark_posted(path: Path, channel_name: str, markdown: str) -> None:
+def already_reported(path: Path, report_id: str | None) -> bool:
+    if not report_id:
+        return False
+    return report_id in set(load_state(path).get("published_reports", []))
+
+
+def mark_posted(
+    path: Path,
+    channel_name: str,
+    markdown: str,
+    *,
+    report_id: str | None = None,
+) -> None:
     state = load_state(path)
     posted = list(dict.fromkeys([*state.get("posted", []), report_digest(channel_name, markdown)]))
     state["posted"] = posted[-2000:]
+    if report_id:
+        reports = list(dict.fromkeys([*state.get("published_reports", []), report_id]))
+        state["published_reports"] = reports[-5000:]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
@@ -226,6 +244,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--channel-name", required=True)
     parser.add_argument("--webhook-url", required=True)
     parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--report-id")
     parser.add_argument("--attachment", type=Path)
     parser.add_argument("--state-file", type=Path, default=Path("state/published.json"))
     parser.add_argument("--dry-run", action="store_true")
@@ -236,8 +255,12 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     markdown = args.report.read_text(encoding="utf-8")
-    if already_posted(args.state_file, args.channel_name, markdown) and not args.force:
-        print(f"skip duplicate: {args.report}")
+
+    if not args.force and already_reported(args.state_file, args.report_id):
+        print(f"skip published report: {args.report_id}")
+        return 0
+    if not args.force and already_posted(args.state_file, args.channel_name, markdown):
+        print(f"skip duplicate content: {args.report}")
         return 0
 
     chunks = split_markdown(markdown)
@@ -261,7 +284,12 @@ def main(argv: list[str] | None = None) -> int:
         if index != len(chunks):
             time.sleep(0.35)
 
-    mark_posted(args.state_file, args.channel_name, markdown)
+    mark_posted(
+        args.state_file,
+        args.channel_name,
+        markdown,
+        report_id=args.report_id,
+    )
     return 0
 
 
