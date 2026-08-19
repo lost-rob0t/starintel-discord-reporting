@@ -51,6 +51,11 @@ class ReportingTests(unittest.TestCase):
             self.assertEqual("abc", state["manual_cursor"])
             self.assertEqual(["r"], state["published_reports"])
 
+    def test_message_payload_suppresses_embeds(self):
+        payload = post._message_payload("findings-shitposts", "https://example.com")
+        self.assertEqual(4, payload["flags"])
+        self.assertEqual({"parse": []}, payload["allowed_mentions"])
+
     def test_findings_gate(self):
         text = """# Auto-Dig findings
 
@@ -106,6 +111,7 @@ SIGNED OFF BY: N545PY
                     "content": "hi",
                     "username": "findings-shitposts",
                     "allowed_mentions": {"parse": []},
+                    "flags": post.SUPPRESS_EMBEDS_FLAG,
                 },
                 attachment,
             )
@@ -113,6 +119,7 @@ SIGNED OFF BY: N545PY
             self.assertIn(b"meme.png", body)
             self.assertIn(b"png-bytes", body)
             self.assertIn(b"findings-shitposts", body)
+            self.assertIn(b'"flags": 4', body)
 
 
 if __name__ == "__main__":
