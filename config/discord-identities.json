@@ -1,0 +1,17 @@
+{
+  "auto-dig-findings": {
+    "name": "The Receipt Desk",
+    "secret_env": "AUTO_DIG_FINDINGS",
+    "avatar": "branding/auto-dig-findings.png"
+  },
+  "findings-shitposts": {
+    "name": "Data After Dark",
+    "secret_env": "FINDINGS_SHITPOSTS",
+    "avatar": "branding/findings-shitposts.png"
+  },
+  "starintel-updates-changelog": {
+    "name": "StarIntel Shipyard",
+    "secret_env": "STARINTEL_UPDATES_CHANGELOG",
+    "avatar": "branding/starintel-updates-changelog.png"
+  }
+}
