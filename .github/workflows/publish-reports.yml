@@ -104,15 +104,21 @@ jobs:
           while IFS=$'\t' read -r channel kind report attachment; do
             [ -n "${report:-}" ] || continue
 
-            # GPT already performs the source verification pass before committing a report.
-            # Structural validation remains hard, but Discord delivery does not depend on
-            # third-party sites accepting HEAD/Range requests from GitHub runners.
             python scripts/verify_report.py "$report" --kind "$kind" --no-network
 
             case "$channel" in
-              auto-dig-findings) webhook="$AUTO_DIG_FINDINGS" ;;
-              findings-shitposts) webhook="$FINDINGS_SHITPOSTS" ;;
-              starintel-updates-changelog) webhook="$STARINTEL_UPDATES_CHANGELOG" ;;
+              auto-dig-findings)
+                webhook="$AUTO_DIG_FINDINGS"
+                display_name='The Receipt Desk'
+                ;;
+              findings-shitposts)
+                webhook="$FINDINGS_SHITPOSTS"
+                display_name='Data After Dark'
+                ;;
+              starintel-updates-changelog)
+                webhook="$STARINTEL_UPDATES_CHANGELOG"
+                display_name='StarIntel Shipyard'
+                ;;
               *) echo "unknown channel: $channel" >&2; exit 1 ;;
             esac
 
@@ -123,7 +129,7 @@ jobs:
 
             args=(
               python scripts/post_report.py
-              --channel-name "$channel"
+              --channel-name "$display_name"
               --webhook-url "$webhook"
               --report "$report"
               --report-id "$report"
