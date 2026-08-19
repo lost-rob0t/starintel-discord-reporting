@@ -1,0 +1,12 @@
+# Repositories whose landed main/master PRs may appear in the changelog.
+starintel-server
+starintel-gpt-auto-dig
+starintel-auto-research
+quasar
+quasar-ui
+auto-dig-quasar
+tek9
+prolog-rlm
+star-lang
+star-funds
+mara
