@@ -4,12 +4,14 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import mimetypes
 import re
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import uuid
 from pathlib import Path
 
 MAX_DISCORD_CONTENT_CHARS = 2_000
@@ -21,10 +23,14 @@ def _split_plain_text(text: str, limit: int) -> list[str]:
     rest = text
     while len(rest) > limit:
         window = rest[: limit + 1]
-        cut = max(window.rfind("\n\n", 0, limit + 1), window.rfind("\n", 0, limit + 1), window.rfind(" ", 0, limit + 1))
+        cut = max(
+            window.rfind("\n\n", 0, limit + 1),
+            window.rfind("\n", 0, limit + 1),
+            window.rfind(" ", 0, limit + 1),
+        )
         if cut <= 0:
             cut = limit
-        elif window[cut:cut + 2] == "\n\n":
+        elif window[cut : cut + 2] == "\n\n":
             cut += 2
         else:
             cut += 1
@@ -64,13 +70,13 @@ def _segments(markdown: str, limit: int) -> list[str]:
     pos = 0
     for match in FENCE_RE.finditer(markdown):
         if match.start() > pos:
-            out.extend(_split_plain_text(markdown[pos:match.start()], limit))
+            out.extend(_split_plain_text(markdown[pos : match.start()], limit))
         block = match.group(0)
         out.extend([block] if len(block) <= limit else _split_code_block(block, limit))
         pos = match.end()
     if pos < len(markdown):
         out.extend(_split_plain_text(markdown[pos:], limit))
-    return [x for x in out if x]
+    return [segment for segment in out if segment]
 
 
 def split_markdown(markdown: str, limit: int = MAX_DISCORD_CONTENT_CHARS) -> list[str]:
@@ -92,7 +98,7 @@ def split_markdown(markdown: str, limit: int = MAX_DISCORD_CONTENT_CHARS) -> lis
             current = segment
     if current:
         chunks.append(current)
-    if any(len(x) > limit for x in chunks):
+    if any(len(chunk) > limit for chunk in chunks):
         raise AssertionError("splitter exceeded Discord limit")
     return chunks
 
@@ -122,14 +128,74 @@ def mark_posted(path: Path, channel_name: str, markdown: str) -> None:
 def _wait_url(webhook_url: str) -> str:
     parsed = urllib.parse.urlsplit(webhook_url)
     query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
-    if not any(k == "wait" for k, _ in query):
+    if not any(key == "wait" for key, _ in query):
         query.append(("wait", "true"))
-    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, parsed.path, urllib.parse.urlencode(query), parsed.fragment))
+    return urllib.parse.urlunsplit(
+        (parsed.scheme, parsed.netloc, parsed.path, urllib.parse.urlencode(query), parsed.fragment)
+    )
 
 
-def post_chunk(webhook_url: str, channel_name: str, content: str, timeout: float = 30.0, retries: int = 5) -> None:
-    payload = json.dumps({"content": content, "username": channel_name, "allowed_mentions": {"parse": []}}).encode()
-    request = urllib.request.Request(_wait_url(webhook_url), data=payload, headers={"Content-Type": "application/json", "User-Agent": "starintel-discord-reporting/1.0"}, method="POST")
+def _multipart(payload: dict, attachment: Path) -> tuple[bytes, str]:
+    boundary = "----starintel-" + uuid.uuid4().hex
+    filename = attachment.name
+    content_type = mimetypes.guess_type(filename)[0] or "application/octet-stream"
+    payload = {
+        **payload,
+        "attachments": [{"id": 0, "filename": filename}],
+    }
+    body = bytearray()
+
+    def add(value: bytes) -> None:
+        body.extend(value)
+
+    add(f"--{boundary}\r\n".encode())
+    add(b'Content-Disposition: form-data; name="payload_json"\r\n')
+    add(b"Content-Type: application/json\r\n\r\n")
+    add(json.dumps(payload).encode("utf-8"))
+    add(b"\r\n")
+
+    add(f"--{boundary}\r\n".encode())
+    add(
+        f'Content-Disposition: form-data; name="files[0]"; filename="{filename}"\r\n'.encode(
+            "utf-8"
+        )
+    )
+    add(f"Content-Type: {content_type}\r\n\r\n".encode())
+    add(attachment.read_bytes())
+    add(b"\r\n")
+    add(f"--{boundary}--\r\n".encode())
+    return bytes(body), f"multipart/form-data; boundary={boundary}"
+
+
+def post_chunk(
+    webhook_url: str,
+    channel_name: str,
+    content: str,
+    *,
+    attachment: Path | None = None,
+    timeout: float = 30.0,
+    retries: int = 5,
+) -> None:
+    payload = {
+        "content": content,
+        "username": channel_name,
+        "allowed_mentions": {"parse": []},
+    }
+    if attachment and attachment.is_file():
+        body, content_type = _multipart(payload, attachment)
+    else:
+        body = json.dumps(payload).encode("utf-8")
+        content_type = "application/json"
+
+    request = urllib.request.Request(
+        _wait_url(webhook_url),
+        data=body,
+        headers={
+            "Content-Type": content_type,
+            "User-Agent": "starintel-discord-reporting/1.0",
+        },
+        method="POST",
+    )
     for attempt in range(retries + 1):
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
@@ -137,31 +203,34 @@ def post_chunk(webhook_url: str, channel_name: str, content: str, timeout: float
                     return
                 raise RuntimeError(f"Discord webhook returned HTTP {response.status}")
         except urllib.error.HTTPError as exc:
-            body = exc.read().decode("utf-8", errors="replace")
+            error_body = exc.read().decode("utf-8", errors="replace")
             if exc.code == 429 and attempt < retries:
                 try:
-                    delay = float(json.loads(body).get("retry_after", 1))
+                    delay = float(json.loads(error_body).get("retry_after", 1))
                 except Exception:
                     delay = 1
-                time.sleep(max(delay, .05))
+                time.sleep(max(delay, 0.05))
                 continue
-            raise RuntimeError(f"Discord webhook failed with HTTP {exc.code}: {body}") from exc
+            raise RuntimeError(
+                f"Discord webhook failed with HTTP {exc.code}: {error_body}"
+            ) from exc
         except urllib.error.URLError as exc:
             if attempt < retries:
-                time.sleep(min(2 ** attempt, 8))
+                time.sleep(min(2**attempt, 8))
                 continue
             raise RuntimeError(f"Discord webhook request failed: {exc.reason}") from exc
 
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
-    p = argparse.ArgumentParser()
-    p.add_argument("--channel-name", required=True)
-    p.add_argument("--webhook-url", required=True)
-    p.add_argument("--report", type=Path, required=True)
-    p.add_argument("--state-file", type=Path, default=Path("state/published.json"))
-    p.add_argument("--dry-run", action="store_true")
-    p.add_argument("--force", action="store_true")
-    return p.parse_args(argv)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--channel-name", required=True)
+    parser.add_argument("--webhook-url", required=True)
+    parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--attachment", type=Path)
+    parser.add_argument("--state-file", type=Path, default=Path("state/published.json"))
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true")
+    return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -170,15 +239,28 @@ def main(argv: list[str] | None = None) -> int:
     if already_posted(args.state_file, args.channel_name, markdown) and not args.force:
         print(f"skip duplicate: {args.report}")
         return 0
+
     chunks = split_markdown(markdown)
-    print(f"{args.report}: {len(markdown)} chars -> {len(chunks)} message(s); largest={max(map(len, chunks), default=0)}")
+    print(
+        f"{args.report}: {len(markdown)} chars -> {len(chunks)} message(s); "
+        f"largest={max(map(len, chunks), default=0)}"
+    )
+    if args.attachment and args.attachment.is_file():
+        print(f"attachment: {args.attachment}")
     if args.dry_run:
         return 0
-    for i, chunk in enumerate(chunks, 1):
-        post_chunk(args.webhook_url, args.channel_name, chunk)
-        print(f"posted {i}/{len(chunks)}")
-        if i != len(chunks):
-            time.sleep(.35)
+
+    for index, chunk in enumerate(chunks, 1):
+        post_chunk(
+            args.webhook_url,
+            args.channel_name,
+            chunk,
+            attachment=args.attachment if index == 1 else None,
+        )
+        print(f"posted {index}/{len(chunks)}")
+        if index != len(chunks):
+            time.sleep(0.35)
+
     mark_posted(args.state_file, args.channel_name, markdown)
     return 0
 
