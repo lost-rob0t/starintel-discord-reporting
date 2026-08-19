@@ -1,7 +1,7 @@
 # TEST RUN
 
-This is a **test** of `starintel-discord-reporting`.
+**TEST ONLY.** This is a webhook smoke test for `starintel-discord-reporting` after the hourly reporter setup.
 
-No finding or changelog claim is being published here. This message only checks that the webhook secret, channel name override, Discord Markdown, and message sender work.
+No finding is being asserted. No changelog entry is being published. This only checks the three repository-secret webhooks, channel-name override, Discord Markdown, and message delivery.
 
-**TEST ONLY.**
+If you see this in Discord, the webhook path worked.
