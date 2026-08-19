@@ -33,6 +33,24 @@ class ReportingTests(unittest.TestCase):
             self.assertTrue(post.already_posted(path, "x", "hello"))
             self.assertFalse(post.already_posted(path, "y", "hello"))
 
+    def test_dedupe_report_id(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state.json"
+            report_id = "reports/starintel-updates-changelog/a-report.md"
+            self.assertFalse(post.already_reported(path, report_id))
+            post.mark_posted(path, "x", "hello", report_id=report_id)
+            self.assertTrue(post.already_reported(path, report_id))
+            self.assertTrue(post.already_posted(path, "x", "hello"))
+
+    def test_mark_posted_preserves_other_state(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state.json"
+            path.write_text('{"manual_cursor":"abc","posted":[]}\n', encoding="utf-8")
+            post.mark_posted(path, "x", "hello", report_id="r")
+            state = post.load_state(path)
+            self.assertEqual("abc", state["manual_cursor"])
+            self.assertEqual(["r"], state["published_reports"])
+
     def test_findings_gate(self):
         text = """# Auto-Dig findings
 
