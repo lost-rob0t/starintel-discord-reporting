@@ -361,14 +361,14 @@
     }
   },
   "last_backlog_scan": {
-    "blocked": 2,
+    "blocked": 0,
     "delivered_this_run": {
-      "auto-dig-findings": 14,
-      "findings-shitposts": 9,
-      "starintel-updates-changelog": 4
+      "auto-dig-findings": 0,
+      "findings-shitposts": 0,
+      "starintel-updates-changelog": 0
     },
     "total_reports": 29,
-    "verified_deliveries": 27
+    "verified_deliveries": 29
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
