@@ -1,4 +1,5 @@
 {
+  "manual_cursor": "d50a216c656a2b20bc279ece4e709714d91986ec",
   "posted": [
     "8cd2b56ae15ef7818e96290999cf85c04ecc4018d9e3b9c113e054540d12133c",
     "dda2ebb550b8f354bb89c9a459a977f8fbce1d4aa22f08e74b25fe526b33c73d",
@@ -12,19 +13,23 @@
     "c1aef5ee327f42c14564ee743141db375f38b885a8701a96b8560f6994d6e968",
     "4532e80b2cb4ed7cabe24985c93e209629a8c9ffbcbec564fdccb6d1c9aa91c7",
     "47312a6068eb021131a9ee422385b95438b9beca3b2bc9caa2331e6d6307d147",
-    "5170bc90e3404aef86ea9e3321fe17a7a2a2260a120cdcf59d6235087d443faf"
+    "5170bc90e3404aef86ea9e3321fe17a7a2a2260a120cdcf59d6235087d443faf",
+    "db00e4a65bfc7aeebf723ae5f5c2177e8d33421839a85bd7cde784597228fbb0",
+    "e045d27a7a678d2d0bca72f149c1c0544632599719f865d527654550508b8f39"
   ],
   "published_reports": [
-    "reports/starintel-updates-changelog/2026-08-19T21-58-00Z-report.md",
-    "reports/starintel-updates-changelog/2026-08-19T21-58-01Z-report.md",
-    "reports/findings-shitposts/2026-08-19T23-41-00Z-report.md",
-    "reports/findings-shitposts/2026-08-19T23-46-00Z-report.md",
-    "reports/starintel-updates-changelog/2026-08-20T00-11-00Z-report.md",
     "reports/auto-dig-findings/2026-08-20T01-00-00Z-report.md",
     "reports/auto-dig-findings/2026-08-20T02-00-00Z-report.md",
     "reports/auto-dig-findings/2026-08-20T02-12-00Z-report.md",
-    "reports/findings-shitposts/2026-08-20T02-31-00Z-report.md",
+    "reports/auto-dig-findings/2026-08-20T10-06-40Z-report.md",
     "reports/auto-dig-findings/2026-08-20T11-15-00Z-report.md",
-    "reports/findings-shitposts/2026-08-20T11-15-01Z-report.md"
+    "reports/findings-shitposts/2026-08-19T23-41-00Z-report.md",
+    "reports/findings-shitposts/2026-08-19T23-46-00Z-report.md",
+    "reports/findings-shitposts/2026-08-20T02-31-00Z-report.md",
+    "reports/findings-shitposts/2026-08-20T10-06-52Z-report.md",
+    "reports/findings-shitposts/2026-08-20T11-15-01Z-report.md",
+    "reports/starintel-updates-changelog/2026-08-19T21-58-00Z-report.md",
+    "reports/starintel-updates-changelog/2026-08-19T21-58-01Z-report.md",
+    "reports/starintel-updates-changelog/2026-08-20T00-11-00Z-report.md"
   ]
 }
