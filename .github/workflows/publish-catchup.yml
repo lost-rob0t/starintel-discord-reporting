@@ -1,6 +1,13 @@
 name: Publish Discord catch-up
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/post_report.py'
+      - 'scripts/publish_new.py'
+      - 'tests/**'
+      - '.github/workflows/publish-catchup.yml'
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
@@ -44,7 +51,7 @@ jobs:
           python -m py_compile scripts/*.py
           python -m unittest discover -s tests -v
 
-      - name: Publish new reports from durable cursor
+      - name: Drain all unverified reports oldest first
         env:
           AUTO_DIG_FINDINGS: ${{ secrets.AUTO_DIG_FINDINGS }}
           FINDINGS_SHITPOSTS: ${{ secrets.FINDINGS_SHITPOSTS }}
