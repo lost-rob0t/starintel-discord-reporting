@@ -10,6 +10,7 @@ from pathlib import Path
 
 URL_RE = re.compile(r"https://[^\s)>\]}]+")
 FENCE_RE = re.compile(r"^```", re.MULTILINE)
+SOURCE_HEADING_RE = re.compile(r"^(?:##\s+Sources|Sources:)\s*$", re.MULTILINE)
 SLOP = (
     "it's important to note",
     "it is important to note",
@@ -25,6 +26,11 @@ AI_WARNING = "This was written by AI. check it yourself."
 DERIVED_WARNING = "Please double check findings as this was llm derived."
 TRUST_WARNING = "dont trust this report as a source. dont even trust nsaspy."
 SIGNOFF = "SIGNED OFF BY: N545PY"
+
+
+def _source_section(text: str) -> str:
+    match = SOURCE_HEADING_RE.search(text)
+    return text[match.start() :] if match else ""
 
 
 def _probe(url: str, timeout: float = 15.0) -> None:
@@ -72,6 +78,8 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
         if phrase in lowered:
             errors.append(f"slop phrase: {phrase}")
 
+    source_text = _source_section(text)
+
     if kind == "findings":
         required = (AI_WARNING, DERIVED_WARNING, TRUST_WARNING, SIGNOFF)
         for value in required:
@@ -79,9 +87,8 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
                 errors.append(f"missing findings footer line: {value}")
         if re.search(r"^SIGNED OFF BY:\s*nsaspy\s*$", text, re.I | re.MULTILINE):
             errors.append("nsaspy must never be the signer")
-        if "## Sources" not in text:
+        if not source_text:
             errors.append("missing sources")
-        source_text = text[text.find("## Sources") :] if "## Sources" in text else ""
         source_urls = list(dict.fromkeys(URL_RE.findall(source_text)))
         if len(source_urls) < 2:
             errors.append("findings need at least two source URLs")
@@ -99,9 +106,8 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
             errors.append("changelog needs a direct landed commit link")
 
     elif kind == "shitpost":
-        if "## Sources" not in text:
+        if not source_text:
             errors.append("shitpost needs source links")
-        source_text = text[text.find("## Sources") :] if "## Sources" in text else ""
         if not URL_RE.search(source_text):
             errors.append("shitpost needs at least one source URL")
         if "SIGNED OFF BY:" in text:
@@ -115,8 +121,7 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
     else:
         errors.append(f"unknown kind: {kind}")
 
-    if network and not errors and "## Sources" in text:
-        source_text = text[text.find("## Sources") :]
+    if network and not errors and source_text:
         for url in dict.fromkeys(URL_RE.findall(source_text)):
             try:
                 _probe(url)
