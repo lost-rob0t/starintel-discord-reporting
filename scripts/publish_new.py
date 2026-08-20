@@ -66,6 +66,21 @@ def all_reports() -> list[str]:
     return sorted(dict.fromkeys(paths), key=lambda value: (Path(value).name, value))
 
 
+def prune_verified_blockers(reports: list[str]) -> int:
+    state = load_state()
+    blockers = state.setdefault("backlog_blockers", {})
+    stale = [
+        path
+        for path in tuple(blockers)
+        if path in reports and post_report.already_reported(STATE, path)
+    ]
+    for path in stale:
+        del blockers[path]
+    if stale:
+        write_state(state)
+    return len(stale)
+
+
 def _decode_b64(path: Path, target: Path) -> Path:
     target.write_bytes(base64.b64decode(path.read_bytes()))
     return target
@@ -133,8 +148,12 @@ def main() -> int:
         return 2
 
     reports = all_reports()
+    pruned = prune_verified_blockers(reports)
     eligible = [path for path in reports if not post_report.already_reported(STATE, path)]
-    print(f"backlog scan: total={len(reports)} verified={len(reports) - len(eligible)} remaining={len(eligible)}")
+    print(
+        f"backlog scan: total={len(reports)} verified={len(reports) - len(eligible)} "
+        f"remaining={len(eligible)} stale_blockers_pruned={pruned}"
+    )
 
     delivered = {name: 0 for name in CHANNELS}
     blocked = 0
@@ -199,6 +218,7 @@ def main() -> int:
         "verified_deliveries": len([p for p in reports if post_report.already_reported(STATE, p)]),
         "blocked": blocked,
         "delivered_this_run": delivered,
+        "stale_blockers_pruned": pruned,
     }
     write_state(state)
     persist_state_commit()
