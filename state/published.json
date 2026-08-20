@@ -1,14 +1,5 @@
 {
-  "backlog_blockers": {
-    "reports/findings-shitposts/2026-08-20T04-07-01Z-report.md": {
-      "reason": "shitpost needs source links; shitpost needs at least one source URL",
-      "status": "blocked"
-    },
-    "reports/findings-shitposts/2026-08-20T05-06-01Z-report.md": {
-      "reason": "shitpost needs source links; shitpost needs at least one source URL",
-      "status": "blocked"
-    }
-  },
+  "backlog_blockers": {},
   "delivery_receipts": {
     "reports/auto-dig-findings/2026-08-19T20-14-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:19.596293+00:00",
@@ -404,6 +395,7 @@
       "findings-shitposts": 0,
       "starintel-updates-changelog": 0
     },
+    "stale_blockers_pruned": 2,
     "total_reports": 32,
     "verified_deliveries": 32
   },
