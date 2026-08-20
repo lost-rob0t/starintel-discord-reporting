@@ -1,0 +1,54 @@
+name: Publish Discord catch-up
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: starintel-discord-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish-catchup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ensure main branch checkout
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin main
+          git checkout -B main origin/main
+
+      - name: Configure publisher identity
+        shell: bash
+        run: |
+          git config user.name 'starintel-report-bot'
+          git config user.email 'actions@users.noreply.github.com'
+
+      - name: Validate publisher code
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/*.py
+          python -m unittest discover -s tests -v
+
+      - name: Publish new reports from durable cursor
+        env:
+          AUTO_DIG_FINDINGS: ${{ secrets.AUTO_DIG_FINDINGS }}
+          FINDINGS_SHITPOSTS: ${{ secrets.FINDINGS_SHITPOSTS }}
+          STARINTEL_UPDATES_CHANGELOG: ${{ secrets.STARINTEL_UPDATES_CHANGELOG }}
+        run: |
+          set -euo pipefail
+          python scripts/publish_new.py
