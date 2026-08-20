@@ -1,7 +1,9 @@
 import importlib.util
+import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest import mock
 
 ROOT = Path(__file__).parents[1]
 
@@ -17,6 +19,21 @@ post = load("post", "scripts/post_report.py")
 verify = load("verify", "scripts/verify_report.py")
 
 
+class FakeResponse:
+    def __init__(self, status, body):
+        self.status = status
+        self._body = body
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        return False
+
+    def read(self):
+        return self._body
+
+
 class ReportingTests(unittest.TestCase):
     def test_split_never_exceeds_discord_limit(self):
         text = ("para words here\n\n" * 300) + "```python\n" + ("print('x')\n" * 300) + "```\n"
@@ -25,31 +42,46 @@ class ReportingTests(unittest.TestCase):
         self.assertTrue(all(len(chunk) <= 2000 for chunk in chunks))
         self.assertTrue(all(chunk.count("```") % 2 == 0 for chunk in chunks))
 
-    def test_dedupe_digest(self):
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "state.json"
-            self.assertFalse(post.already_posted(path, "x", "hello"))
-            post.mark_posted(path, "x", "hello")
-            self.assertTrue(post.already_posted(path, "x", "hello"))
-            self.assertFalse(post.already_posted(path, "y", "hello"))
+    def test_bare_2xx_without_message_json_is_not_verified_delivery(self):
+        with mock.patch.object(post.urllib.request, "urlopen", return_value=FakeResponse(204, b"")):
+            with self.assertRaises(RuntimeError):
+                post.post_chunk("https://example.invalid/hook", "x", "hello", retries=0)
 
-    def test_dedupe_report_id(self):
+    def test_valid_response_persists_message_and_channel_ids(self):
+        with tempfile.TemporaryDirectory() as directory:
+            state_path = Path(directory) / "state.json"
+            response = json.dumps({"id": "msg-123", "channel_id": "chan-9"}).encode()
+            with mock.patch.object(post.urllib.request, "urlopen", return_value=FakeResponse(200, response)):
+                receipt = post.post_chunk("https://example.invalid/hook", "x", "hello", retries=0)
+            post.mark_verified_delivery(
+                state_path,
+                "reports/findings-shitposts/a-report.md",
+                "x",
+                "hello",
+                [receipt],
+            )
+            saved = post.load_state(state_path)["delivery_receipts"]["reports/findings-shitposts/a-report.md"]
+            self.assertEqual("verified-delivered", saved["status"])
+            self.assertEqual(["msg-123"], saved["message_ids"])
+            self.assertEqual("chan-9", saved["channel_id"])
+            self.assertTrue(saved["delivered_at"])
+
+    def test_legacy_published_report_does_not_suppress_recovery_without_receipt(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "state.json"
             report_id = "reports/starintel-updates-changelog/a-report.md"
+            path.write_text(json.dumps({"published_reports": [report_id], "posted": ["legacy"]}), encoding="utf-8")
             self.assertFalse(post.already_reported(path, report_id))
-            post.mark_posted(path, "x", "hello", report_id=report_id)
-            self.assertTrue(post.already_reported(path, report_id))
-            self.assertTrue(post.already_posted(path, "x", "hello"))
+            self.assertFalse(post.already_posted(path, "x", "hello"))
 
-    def test_mark_posted_preserves_other_state(self):
+    def test_verified_receipt_suppresses_exact_recovery(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "state.json"
-            path.write_text('{"manual_cursor":"abc","posted":[]}\n', encoding="utf-8")
-            post.mark_posted(path, "x", "hello", report_id="r")
-            state = post.load_state(path)
-            self.assertEqual("abc", state["manual_cursor"])
-            self.assertEqual(["r"], state["published_reports"])
+            report_id = "reports/starintel-updates-changelog/a-report.md"
+            post.mark_verified_delivery(path, report_id, "x", "hello", [{"id": "m1", "channel_id": "c1"}])
+            self.assertTrue(post.already_reported(path, report_id))
+            self.assertTrue(post.already_posted(path, "x", "hello"))
+            self.assertFalse(post.already_posted(path, "x", "different"))
 
     def test_message_payload_suppresses_embeds(self):
         payload = post._message_payload("findings-shitposts", "https://example.com")
