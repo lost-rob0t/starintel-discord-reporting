@@ -1,4 +1,351 @@
 {
+  "backlog_blockers": {
+    "reports/findings-shitposts/2026-08-20T04-07-01Z-report.md": {
+      "reason": "shitpost needs source links; shitpost needs at least one source URL",
+      "status": "blocked"
+    },
+    "reports/findings-shitposts/2026-08-20T05-06-01Z-report.md": {
+      "reason": "shitpost needs source links; shitpost needs at least one source URL",
+      "status": "blocked"
+    }
+  },
+  "delivery_receipts": {
+    "reports/auto-dig-findings/2026-08-19T20-14-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:19.596293+00:00",
+      "attempted_at": "2026-08-20T17:57:19.596293+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:19.596293+00:00",
+      "message_ids": [
+        "1540057158366793821"
+      ],
+      "report_digest": "03a7c70b7f4f569a133c473adc9f50c681521aa29fcc965561223a72a16a431f",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-19T20-27-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:20.875762+00:00",
+      "attempted_at": "2026-08-20T17:57:20.875762+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:20.875762+00:00",
+      "message_ids": [
+        "1540057161189695579",
+        "1540057163936956557"
+      ],
+      "report_digest": "f119a9a33c7cc1062fe9c482a6f37c80cd5ce0b5fc42278f3bffd2f61833afc5",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-19T20-27-01Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:21.208308+00:00",
+      "attempted_at": "2026-08-20T17:57:21.208308+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:21.208308+00:00",
+      "message_ids": [
+        "1540057164616310907"
+      ],
+      "report_digest": "29b3f32d403f407ed2f76f4b38f03ffa3088a36dad79dc36a1c2f21fe620ace6",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T01-00-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:24.215331+00:00",
+      "attempted_at": "2026-08-20T17:57:24.215331+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:24.215331+00:00",
+      "message_ids": [
+        "1540057176515547267"
+      ],
+      "report_digest": "e07c4690c88c1821c839d8d38181924b3ec242ae54ddecb6ba0f7c422db2a88a",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T02-00-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:24.801763+00:00",
+      "attempted_at": "2026-08-20T17:57:24.801763+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:24.801763+00:00",
+      "message_ids": [
+        "1540057180336562237"
+      ],
+      "report_digest": "408957415e1de7a32739d60440b6d37b1094783b40f837829a1785faff1a291c",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T02-12-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:25.308100+00:00",
+      "attempted_at": "2026-08-20T17:57:25.308100+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:25.308100+00:00",
+      "message_ids": [
+        "1540057182454939739"
+      ],
+      "report_digest": "c1aef5ee327f42c14564ee743141db375f38b885a8701a96b8560f6994d6e968",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T03-02-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:26.429568+00:00",
+      "attempted_at": "2026-08-20T17:57:26.429568+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:26.429568+00:00",
+      "message_ids": [
+        "1540057185977901179"
+      ],
+      "report_digest": "b45dd710de89e14afb409df4f379225dc4668af7afcb4e487d916211b6a5a2b5",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T03-13-07Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:27.084386+00:00",
+      "attempted_at": "2026-08-20T17:57:27.084386+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:27.084386+00:00",
+      "message_ids": [
+        "1540057189564153937"
+      ],
+      "report_digest": "29b7013eb6869f4794b9be83b21a9d8ea10d50475274480d58110d44db018ec5",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T04-07-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:28.266563+00:00",
+      "attempted_at": "2026-08-20T17:57:28.266563+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:28.266563+00:00",
+      "message_ids": [
+        "1540057192927989870"
+      ],
+      "report_digest": "725d6f2d5fcdc17c9e6bb00a5d308911be7d519e37c71b658164447b667b18d2",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T05-06-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:28.600057+00:00",
+      "attempted_at": "2026-08-20T17:57:28.600057+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:28.600057+00:00",
+      "message_ids": [
+        "1540057196061134988"
+      ],
+      "report_digest": "805339d40d5e85eabcb0a4390223940427f9378a46e60169985b75059dabea6f",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T06-10-22Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:28.865856+00:00",
+      "attempted_at": "2026-08-20T17:57:28.865856+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:28.865856+00:00",
+      "message_ids": [
+        "1540057197382209706"
+      ],
+      "report_digest": "da611b8ebbb674312de243c510990a22bcadbfd1a4e0572cb915fe04cfe83cdc",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T10-06-40Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:29.335443+00:00",
+      "attempted_at": "2026-08-20T17:57:29.335443+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:29.335443+00:00",
+      "message_ids": [
+        "1540057199039221831"
+      ],
+      "report_digest": "db00e4a65bfc7aeebf723ae5f5c2177e8d33421839a85bd7cde784597228fbb0",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T11-15-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:30.005410+00:00",
+      "attempted_at": "2026-08-20T17:57:30.005410+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:30.005410+00:00",
+      "message_ids": [
+        "1540057202163974244"
+      ],
+      "report_digest": "47312a6068eb021131a9ee422385b95438b9beca3b2bc9caa2331e6d6307d147",
+      "status": "verified-delivered"
+    },
+    "reports/auto-dig-findings/2026-08-20T12-13-17Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:30.693467+00:00",
+      "attempted_at": "2026-08-20T17:57:30.693467+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T17:57:30.693467+00:00",
+      "message_ids": [
+        "1540057204550533150"
+      ],
+      "report_digest": "a1e6289eb7e0f76b9e98c5a09dbcd5087cea35621ad30035d737e69d56b78997",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-19T23-46-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:23.223466+00:00",
+      "attempted_at": "2026-08-20T17:57:23.223466+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:23.223466+00:00",
+      "message_ids": [
+        "1540057168986898503"
+      ],
+      "report_digest": "989db994440d5a741606fbc6b762859c0e5e1f522e881aac8bdd1dae6c91ccfc",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T01-00-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:24.561600+00:00",
+      "attempted_at": "2026-08-20T17:57:24.561600+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:24.561600+00:00",
+      "message_ids": [
+        "1540057179082592443"
+      ],
+      "report_digest": "6d10658ee34ce83bdafe3e03e97eab5ad9d194a3ffc6daef1ef6e5e5129384ff",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T02-00-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:25.049192+00:00",
+      "attempted_at": "2026-08-20T17:57:25.049192+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:25.049192+00:00",
+      "message_ids": [
+        "1540057181033074870"
+      ],
+      "report_digest": "4c6db0b98c18f89815ed349025156cc53ff5921e1c9685603d8ca5c3840569b1",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T02-31-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:25.801561+00:00",
+      "attempted_at": "2026-08-20T17:57:25.801561+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:25.801561+00:00",
+      "message_ids": [
+        "1540057183872487606"
+      ],
+      "report_digest": "4532e80b2cb4ed7cabe24985c93e209629a8c9ffbcbec564fdccb6d1c9aa91c7",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T03-02-01Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:26.754799+00:00",
+      "attempted_at": "2026-08-20T17:57:26.754799+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:26.754799+00:00",
+      "message_ids": [
+        "1540057188205203639"
+      ],
+      "report_digest": "ab5c7abc829ad88b310988e2e8961dcddd410447b793aade384fd3e3af334634",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T03-13-08Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:27.384777+00:00",
+      "attempted_at": "2026-08-20T17:57:27.384777+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:27.384777+00:00",
+      "message_ids": [
+        "1540057190847484037"
+      ],
+      "report_digest": "f339a37fb72986cb38157ea776c974634f481f1f6c9bd9cd3128eede795d9df5",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T06-10-23Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:29.108881+00:00",
+      "attempted_at": "2026-08-20T17:57:29.108881+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:29.108881+00:00",
+      "message_ids": [
+        "1540057198464475257"
+      ],
+      "report_digest": "a6a24b37ba1a1ceb75f8cae865e8f96ea81d42cda8fc5f061d6b0e1cd6a28c73",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T10-06-52Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:29.738455+00:00",
+      "attempted_at": "2026-08-20T17:57:29.738455+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:29.738455+00:00",
+      "message_ids": [
+        "1540057200603435131"
+      ],
+      "report_digest": "e045d27a7a678d2d0bca72f149c1c0544632599719f865d527654550508b8f39",
+      "status": "verified-delivered"
+    },
+    "reports/findings-shitposts/2026-08-20T11-15-01Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:30.249662+00:00",
+      "attempted_at": "2026-08-20T17:57:30.249662+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-20T17:57:30.249662+00:00",
+      "message_ids": [
+        "1540057203199844502"
+      ],
+      "report_digest": "5170bc90e3404aef86ea9e3321fe17a7a2a2260a120cdcf59d6235087d443faf",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-08-19T20-14-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:19.971937+00:00",
+      "attempted_at": "2026-08-20T17:57:19.971937+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-20T17:57:19.971937+00:00",
+      "message_ids": [
+        "1540057159834804325"
+      ],
+      "report_digest": "35d54698ae6aba68b5dac0563ac881fb5b778cf16821dce5df3f14fe86295489",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-08-19T21-58-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:21.428458+00:00",
+      "attempted_at": "2026-08-20T17:57:21.428458+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-20T17:57:21.428458+00:00",
+      "message_ids": [
+        "1540057166294159380"
+      ],
+      "report_digest": "1466790b8e89ab3a8a9d1ef1d78106c7573528cb485cfe2effdf6dae8b9285c7",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-08-19T21-58-01Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:21.726059+00:00",
+      "attempted_at": "2026-08-20T17:57:21.726059+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-20T17:57:21.726059+00:00",
+      "message_ids": [
+        "1540057167221096552"
+      ],
+      "report_digest": "12ebea2303ac74b08e2afd4e6f6a99bab3cb1fd8c84c0eb0fef2083f433b783e",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-08-20T00-11-00Z-report.md": {
+      "accepted_at": "2026-08-20T17:57:23.473294+00:00",
+      "attempted_at": "2026-08-20T17:57:23.473294+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-20T17:57:23.473294+00:00",
+      "message_ids": [
+        "1540057174758260746"
+      ],
+      "report_digest": "0a0d92ad1ef4f627c8871197c2ab289ffe0d366bf6563b0a115e06b37310bf9e",
+      "status": "verified-delivered"
+    }
+  },
+  "last_backlog_scan": {
+    "blocked": 2,
+    "delivered_this_run": {
+      "auto-dig-findings": 14,
+      "findings-shitposts": 9,
+      "starintel-updates-changelog": 4
+    },
+    "total_reports": 29,
+    "verified_deliveries": 27
+  },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
     "8cd2b56ae15ef7818e96290999cf85c04ecc4018d9e3b9c113e054540d12133c",
