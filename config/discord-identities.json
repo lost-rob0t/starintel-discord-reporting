@@ -5,9 +5,9 @@
     "avatar": "branding/auto-dig-findings.png"
   },
   "findings-shitposts": {
-    "name": "Data After Dark",
+    "name": "tired-anon",
     "secret_env": "FINDINGS_SHITPOSTS",
-    "avatar": "branding/findings-shitposts.png"
+    "avatar": "branding/findings-shitposts.jpg"
   },
   "starintel-updates-changelog": {
     "name": "StarIntel Shipyard",
