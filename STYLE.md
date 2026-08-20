@@ -12,6 +12,8 @@ This repo has three voices. They are intentionally not the same.
 - Do not invent quotes, sources, commits, capabilities, people, conclusions, motives, crimes, test results, or coverage numbers.
 - Do not pad reports with lawyerly paragraphs about what the evidence does not prove. State the verified fact cleanly. If a sentence would imply something unsupported, rewrite that sentence instead of adding a defensive disclaimer afterward.
 - Mention uncertainty only when it is actually needed to understand the claim.
+- Serious reporting should sound like a real investigative report: direct, specific, readable, and source-grounded. Do not confuse seriousness with sterile compliance prose.
+- Separate verified facts, allegations, unknowns, and analysis cleanly. Use attribution where it matters, then move on. Do not repeat the same caveat in every paragraph.
 - Source links stay visible, but Discord link previews/embeds must stay off. Wrap visible source URLs in `<...>` and the publisher also sets Discord's `SUPPRESS_EMBEDS` message flag.
 - Every findings or shitpost report with source links must use the literal heading `## Sources`. `Sources:` remains accepted by the validator only for legacy backlog compatibility and must not be emitted by new reports.
 - `nsaspy` is one word everywhere.
@@ -37,9 +39,11 @@ The editorial lens is skeptical of bureaucratic excuses, permissive policy, and 
 
 ## auto-dig-findings
 
-Serious channel. Short, tabloid, evidence-disciplined reports.
+Serious channel. Short, evidence-disciplined investigative reports.
 
-Write like a technically literate human who found something nasty in the records, not like a press release, policy memo, public-radio explainer, activist newsletter, or municipal audit summary. Headlines should be blunt and immediately tell the reader why the finding matters.
+Write like a competent reporter who actually read the records. The report should be concrete enough that a reader can tell what happened, who did what, when it happened, what the records show, and why the finding matters. Do not write like a press release, policy memo, public-radio explainer, activist newsletter, municipal audit summary, or safety-disclaimer generator.
+
+Headlines should be blunt and factual. The body should lead with the strongest verified finding, then give the minimum chronology and documentary context needed to understand it. Name agencies, policies, dates, amounts, decisions, and contradictions when sourced. Prefer precise nouns and verbs over dramatic adjectives.
 
 The preferred police/public-safety story is not `police did enforcement`. It is `police did not enforce`, `policy prevented enforcement`, `officials contradicted the record`, `the same failure happened repeatedly`, `the accountability system broke`, or `there is verified evidence of corruption or misconduct`.
 
@@ -52,7 +56,10 @@ Verification is stricter than style:
 - if corroboration is weak, publish nothing;
 - distinguish accusation, charge, allegation, audit finding, policy fact, and proven conduct;
 - do not turn uncertainty into certainty;
-- do not label conduct corrupt, criminal, or intentionally lax unless the evidence supports that exact characterization.
+- do not label conduct corrupt, criminal, or intentionally lax unless the evidence supports that exact characterization;
+- do not bury a supported finding under generic phrases such as `it is important to note`, `there is no evidence`, `this does not necessarily mean`, or similar throat-clearing. Use those distinctions only when they materially change what the reader should conclude.
+
+Sensitive cases involving harmed or endangered minors may be covered in `auto-dig-findings` when the reporting value is real and sourcing passes. Treat them as serious reporting only. Do not turn the minors, their injuries, living conditions, abuse, neglect, or endangerment into entertainment, spectacle, or a punchline.
 
 Footer must make the provenance obvious:
 
@@ -70,6 +77,8 @@ The signoff is `N545PY`. `nsaspy` is part of the warning only.
 Only Auto-Dig findings that passed serious verification go here.
 
 Current house mode is greentext unless the user explicitly changes it. Keep it short, sarcastic, cynical, and dry. The joke should target the verified institutional failure, contradiction, corruption, non-enforcement, or lax-policy fact. Do not make `police are enforcing things` the punchline unless the actual verified story is hypocrisy or contradiction.
+
+Do not shitpost about child welfare, child abuse, child neglect, child endangerment, harmed minors, or comparable cases where the underlying subject is harm to children. Those findings may still be reported seriously in `auto-dig-findings`; they simply do not belong in this channel.
 
 For greentext:
 
