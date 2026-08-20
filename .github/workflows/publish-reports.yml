@@ -32,6 +32,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           find reports -type f -name '*.b64' -print0 | while IFS= read -r -d '' encoded; do
             output=${encoded%.b64}
             case "$output" in
@@ -39,6 +40,16 @@ jobs:
               *) echo "unsupported encoded media path: $encoded" >&2; exit 1 ;;
             esac
             base64 --decode "$encoded" > "$output"
+          done
+
+          find reports -type f -name '*.b64.part00' -print0 | while IFS= read -r -d '' first; do
+            encoded=${first%.part00}
+            output=${encoded%.b64}
+            case "$output" in
+              *.png|*.jpg|*.jpeg|*.gif|*.webp) ;;
+              *) echo "unsupported chunked media path: $first" >&2; exit 1 ;;
+            esac
+            cat "${encoded}.part"* | base64 --decode > "$output"
           done
 
       - name: Validate publisher code
