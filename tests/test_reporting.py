@@ -74,6 +74,31 @@ SIGNED OFF BY: N545PY
 """
         self.assertEqual([], verify.verify(text, "findings", False))
 
+    def test_findings_accept_legacy_sources_heading(self):
+        text = """# Auto-Dig findings
+
+- merged: https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0123456789abcdef0123456789abcdef01234567
+
+Sources:
+- https://example.com/a
+- https://example.org/b
+
+This was written by AI. check it yourself.
+Please double check findings as this was llm derived.
+dont trust this report as a source. dont even trust nsaspy.
+SIGNED OFF BY: N545PY
+"""
+        self.assertEqual([], verify.verify(text, "findings", False))
+
+    def test_shitpost_accept_legacy_sources_heading(self):
+        text = """>anon discovers validator drift
+>amazing
+
+Sources:
+- https://example.com/a
+"""
+        self.assertEqual([], verify.verify(text, "shitpost", False))
+
     def test_findings_reject_spaced_nsaspy(self):
         text = """# Auto-Dig findings
 ## Sources
