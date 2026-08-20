@@ -1,5 +1,5 @@
 {
-  "manual_cursor": "d50a216c656a2b20bc279ece4e709714d91986ec",
+  "manual_cursor": "f22c0a8f674a38fd525c98405f5c807961ac63ea",
   "posted": [
     "8cd2b56ae15ef7818e96290999cf85c04ecc4018d9e3b9c113e054540d12133c",
     "dda2ebb550b8f354bb89c9a459a977f8fbce1d4aa22f08e74b25fe526b33c73d",
@@ -24,6 +24,7 @@
     "reports/auto-dig-findings/2026-08-20T02-12-00Z-report.md",
     "reports/auto-dig-findings/2026-08-20T10-06-40Z-report.md",
     "reports/auto-dig-findings/2026-08-20T11-15-00Z-report.md",
+    "reports/auto-dig-findings/2026-08-20T12-13-17Z-report.md",
     "reports/findings-shitposts/2026-08-19T23-41-00Z-report.md",
     "reports/findings-shitposts/2026-08-19T23-46-00Z-report.md",
     "reports/findings-shitposts/2026-08-20T02-31-00Z-report.md",
@@ -31,7 +32,6 @@
     "reports/findings-shitposts/2026-08-20T11-15-01Z-report.md",
     "reports/starintel-updates-changelog/2026-08-19T21-58-00Z-report.md",
     "reports/starintel-updates-changelog/2026-08-19T21-58-01Z-report.md",
-    "reports/starintel-updates-changelog/2026-08-20T00-11-00Z-report.md",
-    "reports/auto-dig-findings/2026-08-20T12-13-17Z-report.md"
+    "reports/starintel-updates-changelog/2026-08-20T00-11-00Z-report.md"
   ]
 }
