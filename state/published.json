@@ -47,6 +47,19 @@
       "report_digest": "29b3f32d403f407ed2f76f4b38f03ffa3088a36dad79dc36a1c2f21fe620ace6",
       "status": "verified-delivered"
     },
+    "reports/auto-dig-findings/2026-08-20-hanceville-police-corruption-rebrand-report.md": {
+      "accepted_at": "2026-08-20T22:36:32.272970+00:00",
+      "attempted_at": "2026-08-20T22:36:32.272970+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-20T22:36:32.272970+00:00",
+      "message_ids": [
+        "1540127421435486208",
+        "1540127424090603644"
+      ],
+      "report_digest": "66ec931d033e9cc356c010f5e1d032334522562168e1ac6a471bfb9daafc360d",
+      "status": "verified-delivered"
+    },
     "reports/auto-dig-findings/2026-08-20T01-00-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:24.215331+00:00",
       "attempted_at": "2026-08-20T17:57:24.215331+00:00",
