@@ -13,6 +13,7 @@ This repo has three voices. They are intentionally not the same.
 - Do not pad reports with lawyerly paragraphs about what the evidence does not prove. State the verified fact cleanly. If a sentence would imply something unsupported, rewrite that sentence instead of adding a defensive disclaimer afterward.
 - Mention uncertainty only when it is actually needed to understand the claim.
 - Source links stay visible, but Discord link previews/embeds must stay off. Wrap visible source URLs in `<...>` and the publisher also sets Discord's `SUPPRESS_EMBEDS` message flag.
+- Every findings or shitpost report with source links must use the literal heading `## Sources`. `Sources:` remains accepted by the validator only for legacy backlog compatibility and must not be emitted by new reports.
 - `nsaspy` is one word everywhere.
 - Never write `SIGNED OFF BY: nsaspy`.
 
@@ -26,7 +27,7 @@ Verification is stricter than style:
 
 - only publish a finding after source checks pass;
 - preserve the direct landed Auto-Dig commit link;
-- include multiple source URLs;
+- include multiple source URLs under `## Sources`;
 - if corroboration is weak, publish nothing;
 - do not turn uncertainty into certainty.
 
@@ -79,7 +80,7 @@ A run randomly chooses one of four presentation modes:
    - keep it to a few panels, one finding, one punchline;
    - visible post text stays short with sources below it.
 
-Do not add the serious-channel AI footer or signoff to shitposts.
+Put shitpost source links under the literal `## Sources` heading. Do not add the serious-channel AI footer or signoff to shitposts.
 
 ## starintel-updates-changelog
 
