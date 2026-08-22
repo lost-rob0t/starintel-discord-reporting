@@ -11,6 +11,8 @@ from pathlib import Path
 URL_RE = re.compile(r"https://[^\s)>\]}]+")
 FENCE_RE = re.compile(r"^```", re.MULTILINE)
 SOURCE_HEADING_RE = re.compile(r"^(?:##\s+Sources|Sources:)\s*$", re.MULTILINE)
+OPERATIONAL_SOURCES_HEADING = "## Operational Sources"
+ACTIONS_RUN_RE = re.compile(r"https://github\.com/[^\s]+/actions/runs/\d+")
 SLOP = (
     "it's important to note",
     "it is important to note",
@@ -100,7 +102,12 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
     elif kind == "changelog":
         if "## Changes" not in text:
             errors.append("missing changes heading")
-        if not re.search(
+        operational = OPERATIONAL_SOURCES_HEADING in text
+        if operational:
+            operational_text = text[text.find(OPERATIONAL_SOURCES_HEADING) :]
+            if not ACTIONS_RUN_RE.search(operational_text):
+                errors.append("operational changelog needs a direct GitHub Actions run source")
+        elif not re.search(
             r"https://github\.com/[^\s]+/commit/[0-9a-f]{7,40}", text
         ):
             errors.append("changelog needs a direct landed commit link")
