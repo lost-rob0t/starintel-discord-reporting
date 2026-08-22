@@ -1,10 +1,5 @@
 {
-  "backlog_blockers": {
-    "reports/starintel-updates-changelog/2026-08-22T08-05-00Z-report.md": {
-      "reason": "changelog needs a direct landed commit link",
-      "status": "blocked"
-    }
-  },
+  "backlog_blockers": {},
   "delivery_receipts": {
     "reports/auto-dig-findings/2026-08-19T20-14-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:19.596293+00:00",
@@ -415,18 +410,30 @@
       ],
       "report_digest": "81e96640fc0637d7b157a5f85609068591b1afc89611cf500220834270b00bcb",
       "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-08-22T08-05-00Z-report.md": {
+      "accepted_at": "2026-08-22T08:52:46.093424+00:00",
+      "attempted_at": "2026-08-22T08:52:46.093424+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-22T08:52:46.093424+00:00",
+      "message_ids": [
+        "1540644891124834334"
+      ],
+      "report_digest": "b2d9b31ad4629895c93dbbee5797a85c48212c5160dd30bc79375ae11f15096d",
+      "status": "verified-delivered"
     }
   },
   "last_backlog_scan": {
-    "blocked": 1,
+    "blocked": 0,
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
-      "starintel-updates-changelog": 0
+      "starintel-updates-changelog": 1
     },
     "stale_blockers_pruned": 0,
     "total_reports": 34,
-    "verified_deliveries": 33
+    "verified_deliveries": 34
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
