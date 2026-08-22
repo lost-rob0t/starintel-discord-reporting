@@ -159,6 +159,30 @@ SIGNED OFF BY: N545PY
 """
         self.assertEqual([], verify.verify(valid, "changelog", False))
 
+    def test_operational_changelog_accepts_sourced_actions_incident(self):
+        text = """# StarIntel ops: the Mara 2.5k job incident
+
+## Changes
+- queue recovered after the fan-out incident
+
+## Operational Sources
+- https://github.com/lost-rob0t/zara/actions/runs/32534697924
+- https://github.com/lost-rob0t/zara/pull/126
+"""
+        self.assertEqual([], verify.verify(text, "changelog", False))
+
+    def test_operational_changelog_requires_actions_run_source(self):
+        text = """# StarIntel ops: incident
+
+## Changes
+- queue recovered
+
+## Operational Sources
+- https://github.com/lost-rob0t/zara/pull/126
+"""
+        errors = verify.verify(text, "changelog", False)
+        self.assertTrue(any("Actions run" in error for error in errors))
+
     def test_multipart_contains_attachment_and_payload(self):
         with tempfile.TemporaryDirectory() as directory:
             attachment = Path(directory) / "meme.png"
