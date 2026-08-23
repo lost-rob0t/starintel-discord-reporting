@@ -107,3 +107,27 @@ Keep these short. Summarize the useful change instead of dumping commit history.
 - when mentioning tests, report only observed suite/count results from commits or CI;
 - never invent a line-coverage percentage. If none is published, say that plainly;
 - no release-note sludge, fake excitement, or generic phrases like `significant improvements`.
+
+### Private-source changelogs
+
+Some configured changelog sources are private. Access to a private repository grants permission to inspect it for changelog generation. It does **not** grant permission to republish repository contents.
+
+Treat every Discord changelog as public unless the user explicitly says otherwise.
+
+For private-source changelogs:
+
+- publish the capability or operational outcome, not the implementation map;
+- never include private repository URLs, commit URLs, PR/issue URLs, commit SHAs, private branch names, or direct links to private artifacts;
+- do not quote private commit messages, source, configuration, logs, runbooks, issues, or documentation verbatim;
+- do not publish internal hostnames, private DNS names, IP addresses, CIDRs, ports, usernames, machine/container IDs, provider/account/project IDs, credential names, token names, environment-variable names, secrets, or secret-adjacent values;
+- do not publish exact network topology, tunnel peers, firewall/routing rules, ingress paths, service-discovery details, deployment commands, recovery commands, credential/bootstrap flows, or other details that would materially help an outsider map or access the infrastructure;
+- do not publish non-public vulnerability details, exploitable failure modes, security-control gaps, or precise workarounds. Summarize these as reliability, convergence, validation, hardening, or recovery improvements when that preserves the useful meaning;
+- do not expose internal file paths or implementation-specific identifiers merely to prove the change happened;
+- private repository names and organization names are not automatically public just because they appear in the allow-list. Omit them from the post unless the user has separately approved disclosure;
+- an allow-list entry grants changelog eligibility, not disclosure permission;
+- when a claim is supported by both private and public material, link only the public material if it independently supports the public claim;
+- if a useful changelog cannot be written without sensitive details, publish nothing.
+
+Prefer safe abstraction. For example, write `edge networking is now declaratively managed` instead of describing peer addresses and routes; write `the deployment validator now survives repeated runs` instead of publishing the exact bootstrap or SSH failure sequence.
+
+Before publishing, ask one final question internally: **would this sentence help an unknown outsider map, access, disrupt, or exploit the private system?** If yes, remove or generalize it.
