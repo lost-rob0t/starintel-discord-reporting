@@ -1,4 +1,5 @@
 # Repositories whose landed main/master PRs may appear in the changelog.
+# Owner-qualified entries are allowed. Private entries remain subject to STYLE.md private-source sanitization.
 starintel-server
 starintel-gpt-auto-dig
 starintel-auto-research
@@ -8,3 +9,4 @@ auto-dig-quasar
 tek9
 star-lang
 star-funds
+starintel-labs/starintel-infra
