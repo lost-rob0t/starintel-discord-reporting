@@ -79,9 +79,18 @@ class ReportingTests(unittest.TestCase):
             path = Path(directory) / "state.json"
             report_id = "reports/starintel-updates-changelog/a-report.md"
             post.mark_verified_delivery(path, report_id, "x", "hello", [{"id": "m1", "channel_id": "c1"}])
-            self.assertTrue(post.already_reported(path, report_id))
+            self.assertTrue(post.already_reported(path, report_id, "x", "hello"))
             self.assertTrue(post.already_posted(path, "x", "hello"))
             self.assertFalse(post.already_posted(path, "x", "different"))
+
+    def test_verified_receipt_does_not_suppress_rewritten_report(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state.json"
+            report_id = "reports/starintel-updates-changelog/a-report.md"
+            post.mark_verified_delivery(path, report_id, "StarIntel Shipyard", "old prose", [{"id": "m1", "channel_id": "c1"}])
+            self.assertFalse(
+                post.already_reported(path, report_id, "StarIntel Shipyard", "corrected prose")
+            )
 
     def test_message_payload_suppresses_embeds(self):
         payload = post._message_payload("findings-shitposts", "https://example.com")
