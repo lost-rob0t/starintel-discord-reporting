@@ -436,19 +436,15 @@
       "status": "verified-delivered"
     },
     "reports/starintel-updates-changelog/20260823T041100Z-seventh-gen-deployment-report.md": {
-      "accepted_at": "2026-08-23T04:12:26.918022+00:00",
-      "attempted_at": "2026-08-23T04:12:26.918022+00:00",
+      "accepted_at": "2026-08-23T05:52:37.395312+00:00",
+      "attempted_at": "2026-08-23T05:52:37.395312+00:00",
       "channel_id": "1539717118218469416",
       "channel_name": "StarIntel Shipyard",
-      "delivered_at": "2026-08-23T04:12:26.918022+00:00",
+      "delivered_at": "2026-08-23T05:52:37.395312+00:00",
       "message_ids": [
-        "1540936724564156416",
-        "1540936726699315211",
-        "1540936729547116614",
-        "1540936732290326649",
-        "1540936734785933413"
+        "1540961944486281236"
       ],
-      "report_digest": "6e94e31fbabe7ba5e3bc8080ecb9fb914d04a8aae9538d83608be34ae8ec9231",
+      "report_digest": "e254b3cd8d884319fd7752bc92a86a01c4931b9463fe5a48e0b7a7f3cc69eaee",
       "status": "verified-delivered"
     }
   },
