@@ -103,7 +103,7 @@ When useful new work exists, create:
 reports/starintel-updates-changelog/<UTC-datestring>-report.md
 ```
 
-Keep it compact, usually 2 to 5 bullets or short paragraphs. Lead with what became possible or more reliable. Include direct landed commit links. Only state test results or counts actually observed. Never invent coverage.
+Keep it compact, usually 2 to 5 bullets or short paragraphs. Lead with what became possible or more reliable. Include direct landed commit links for public source repositories. For private configured sources, never include private repository or commit links and follow the `Private-source changelogs` sanitization contract in `STYLE.md`. Only state test results or counts actually observed. Never invent coverage.
 
 ## 6. Publication contract
 
