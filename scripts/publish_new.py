@@ -66,14 +66,20 @@ def all_reports() -> list[str]:
     return sorted(dict.fromkeys(paths), key=lambda value: (Path(value).name, value))
 
 
+def report_verified(relative: str) -> bool:
+    report = ROOT / relative
+    mapping = CHANNELS.get(report.parent.name)
+    if mapping is None or not report.is_file():
+        return False
+    _, _, display_name = mapping
+    markdown = report.read_text(encoding="utf-8")
+    return post_report.already_reported(STATE, relative, display_name, markdown)
+
+
 def prune_verified_blockers(reports: list[str]) -> int:
     state = load_state()
     blockers = state.setdefault("backlog_blockers", {})
-    stale = [
-        path
-        for path in tuple(blockers)
-        if path in reports and post_report.already_reported(STATE, path)
-    ]
+    stale = [path for path in tuple(blockers) if path in reports and report_verified(path)]
     for path in stale:
         del blockers[path]
     if stale:
@@ -149,7 +155,7 @@ def main() -> int:
 
     reports = all_reports()
     pruned = prune_verified_blockers(reports)
-    eligible = [path for path in reports if not post_report.already_reported(STATE, path)]
+    eligible = [path for path in reports if not report_verified(path)]
     print(
         f"backlog scan: total={len(reports)} verified={len(reports) - len(eligible)} "
         f"remaining={len(eligible)} stale_blockers_pruned={pruned}"
@@ -215,14 +221,14 @@ def main() -> int:
     state = load_state()
     state["last_backlog_scan"] = {
         "total_reports": len(reports),
-        "verified_deliveries": len([p for p in reports if post_report.already_reported(STATE, p)]),
+        "verified_deliveries": len([p for p in reports if report_verified(p)]),
         "blocked": blocked,
         "delivered_this_run": delivered,
         "stale_blockers_pruned": pruned,
     }
     write_state(state)
     persist_state_commit()
-    remaining = [path for path in reports if not post_report.already_reported(STATE, path)]
+    remaining = [path for path in reports if not report_verified(path)]
     print(f"backlog complete: delivered={delivered} blocked={blocked} remaining={len(remaining)}")
     return 0
 
