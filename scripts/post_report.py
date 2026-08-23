@@ -126,10 +126,20 @@ def _is_verified(receipt: object) -> bool:
     return isinstance(receipt, dict) and receipt.get("status") == "verified-delivered" and bool(receipt.get("message_ids")) and bool(receipt.get("channel_id"))
 
 
-def already_reported(path: Path, report_id: str | None) -> bool:
+def already_reported(
+    path: Path,
+    report_id: str | None,
+    channel_name: str | None = None,
+    markdown: str | None = None,
+) -> bool:
     if not report_id:
         return False
-    return _is_verified(load_state(path).get("delivery_receipts", {}).get(report_id))
+    receipt = load_state(path).get("delivery_receipts", {}).get(report_id)
+    if not _is_verified(receipt):
+        return False
+    if channel_name is None or markdown is None:
+        return True
+    return receipt.get("report_digest") == report_digest(channel_name, markdown)
 
 
 def already_posted(path: Path, channel_name: str, markdown: str) -> bool:
@@ -283,7 +293,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     markdown = args.report.read_text(encoding="utf-8")
-    if not args.force and already_reported(args.state_file, args.report_id):
+    if not args.force and already_reported(args.state_file, args.report_id, args.channel_name, markdown):
         print(f"skip verified delivery: {args.report_id}")
         return 0
     chunks = split_markdown(markdown)
