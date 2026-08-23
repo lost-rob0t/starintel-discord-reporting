@@ -12,7 +12,9 @@ URL_RE = re.compile(r"https://[^\s)>\]}]+")
 FENCE_RE = re.compile(r"^```", re.MULTILINE)
 SOURCE_HEADING_RE = re.compile(r"^(?:##\s+Sources|Sources:)\s*$", re.MULTILINE)
 OPERATIONAL_SOURCES_HEADING = "## Operational Sources"
+PRIVATE_SOURCE_ATTESTATION_HEADING = "## Private Source Attestation"
 ACTIONS_RUN_RE = re.compile(r"https://github\.com/[^\s]+/actions/runs/\d+")
+GITHUB_URL_RE = re.compile(r"https://github\.com/[^\s)>\]}]+")
 SLOP = (
     "it's important to note",
     "it is important to note",
@@ -103,7 +105,16 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
         if "## Changes" not in text:
             errors.append("missing changes heading")
         operational = OPERATIONAL_SOURCES_HEADING in text
-        if operational:
+        private_source = PRIVATE_SOURCE_ATTESTATION_HEADING in text
+        if operational and private_source:
+            errors.append("changelog cannot mix operational and private-source attestations")
+        elif private_source:
+            private_text = text[text.find(PRIVATE_SOURCE_ATTESTATION_HEADING) :]
+            if GITHUB_URL_RE.search(private_text) or GITHUB_URL_RE.search(text[: text.find(PRIVATE_SOURCE_ATTESTATION_HEADING)]):
+                errors.append("private-source changelog must not expose GitHub links")
+            if "configured private canonical branch" not in private_text:
+                errors.append("private-source changelog needs canonical-branch attestation")
+        elif operational:
             operational_text = text[text.find(OPERATIONAL_SOURCES_HEADING) :]
             if not ACTIONS_RUN_RE.search(operational_text):
                 errors.append("operational changelog needs a direct GitHub Actions run source")
