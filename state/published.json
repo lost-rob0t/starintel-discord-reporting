@@ -1,5 +1,10 @@
 {
-  "backlog_blockers": {},
+  "backlog_blockers": {
+    "reports/starintel-updates-changelog/2026-08-24T20-02-00Z-report.md": {
+      "reason": "missing changes heading; changelog needs a direct landed commit link",
+      "status": "blocked"
+    }
+  },
   "delivery_receipts": {
     "reports/auto-dig-findings/2026-08-19T20-14-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:19.596293+00:00",
@@ -713,14 +718,14 @@
     }
   },
   "last_backlog_scan": {
-    "blocked": 0,
+    "blocked": 1,
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
       "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 57,
+    "total_reports": 58,
     "verified_deliveries": 57
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
