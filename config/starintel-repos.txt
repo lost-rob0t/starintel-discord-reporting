@@ -10,3 +10,4 @@ tek9
 star-lang
 star-funds
 starintel-labs/starintel-infra
+lost-rob0t/prolog-rlm
