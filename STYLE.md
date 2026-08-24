@@ -108,6 +108,16 @@ Keep these short. Summarize the useful change instead of dumping commit history.
 - never invent a line-coverage percentage. If none is published, say that plainly;
 - no release-note sludge, fake excitement, or generic phrases like `significant improvements`.
 
+### Auto-Research / ADAR(D) destination links
+
+When a report, follow-up, or changelog references public ADAR, ADARD, research, design, review, index, or implementation-status material published by Auto-Research, give readers the canonical public destination URL on `https://auto-research.starintel.actor/`.
+
+- Prefer the public Auto-Research destination for navigation while retaining direct landed GitHub commit/source links when provenance or validation requires them.
+- If separate public research, design, index, or implementation pages are materially useful, include all of those destination links instead of making readers reconstruct them from repository paths.
+- Derive destination URLs from the actual published artifact path and current site convention. Do not invent a Pages URL.
+- Verify publication state when possible. If the public destination is not published yet, do not claim it is live.
+- Follow-up posts count too. If an earlier report forgot the public destination links, publish a concise correction/follow-up with the destinations.
+
 ### Private-source changelogs
 
 Some configured changelog sources are private. Access to a private repository grants permission to inspect it for changelog generation. It does **not** grant permission to republish repository contents.
