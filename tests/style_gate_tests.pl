@@ -1,5 +1,5 @@
 :- begin_tests(style_gate).
-:- consult('../scripts/style_gate.pl').
+:- consult('scripts/style_gate.pl').
 
 test(plain_uncertainty_passes) :-
     style_ok("It mostly checks out, but the approval trail is still missing.").
