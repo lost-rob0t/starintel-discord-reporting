@@ -4,6 +4,20 @@
 test(plain_uncertainty_passes) :-
     style_ok("It mostly checks out, but the approval trail is still missing.").
 
+test(last_assistant_failure_is_seeded) :-
+    rejected_example(
+        assistant_failure_2026_08_25_oregon,
+        user_rejected,
+        fake_gravitas,
+        _
+    ).
+
+test(all_rejected_examples_stay_rejected) :-
+    forall(rejected_example(Id, _, _, _), rejected_example_still_rejected(Id)).
+
+test(all_accepted_examples_stay_accepted) :-
+    forall(accepted_example(Id, _, _), accepted_example_still_accepted(Id)).
+
 test(fake_gravitas_fails, true(member(fake_gravitas-_, Violations))) :-
     lint_text("The claim is substantially verified by the recovered official record.", Violations).
 
