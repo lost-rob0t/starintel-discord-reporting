@@ -1,7 +1,7 @@
 #!/usr/bin/env swipl
-:- initialization(main, main).
 :- use_module(library(readutil)).
 :- use_module(library(lists)).
+:- discontiguous violation/3.
 
 :- prolog_load_context(directory, ScriptDir),
    directory_file_path(ScriptDir, '../kb/style_kb.pl', StyleKb),
@@ -73,7 +73,7 @@ check_files(Paths) :-
     ( Failed == true -> halt(1) ; halt(0) ).
 
 print_help :-
-    writeln("usage: swipl -q -s scripts/style_gate.pl -- REPORT.md [REPORT.md ...]"),
+    writeln("usage: swipl -q -s scripts/style_gate.pl -g run_cli -- REPORT.md [REPORT.md ...]"),
     writeln("Fails when a report violates objective tone rules from STYLE.md / kb/style_kb.pl."),
     writeln("Preferred plain uncertainty examples:"),
     forall(preferred_uncertainty(P), format("  - ~s~n", [P])).
@@ -84,3 +84,7 @@ main(Argv) :-
         halt(2)
     ;   check_files(Argv)
     ).
+
+run_cli :-
+    current_prolog_flag(argv, Argv),
+    main(Argv).
