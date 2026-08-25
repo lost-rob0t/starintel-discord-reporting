@@ -74,4 +74,4 @@ jobs:
         run: |
           set -euo pipefail
           mapfile -d '' -t reports < /tmp/changed-reports
-          swipl -q -s scripts/style_gate.pl -- "${reports[@]}"
+          swipl -q -s scripts/style_gate.pl -g run_cli -- "${reports[@]}"
