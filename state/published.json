@@ -915,6 +915,18 @@
       "report_digest": "8877218c9e64410f3a3914cff4637f6fc563f4e804eea8b5f19828f35895f79f",
       "status": "verified-delivered"
     },
+    "reports/starintel-updates-changelog/2026-08-25T11-51-00Z-report.md": {
+      "accepted_at": "2026-08-25T12:39:23.317308+00:00",
+      "attempted_at": "2026-08-25T12:39:23.317308+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-25T12:39:23.317308+00:00",
+      "message_ids": [
+        "1541789086258438255"
+      ],
+      "report_digest": "1a8c537116be2722c025de1cc4a7a8d51c1489b26868171844172c4711fad221",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/20260823T041100Z-seventh-gen-deployment-report.md": {
       "accepted_at": "2026-08-23T05:52:37.395312+00:00",
       "attempted_at": "2026-08-23T05:52:37.395312+00:00",
@@ -933,11 +945,11 @@
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
-      "starintel-updates-changelog": 0
+      "starintel-updates-changelog": 1
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 73,
-    "verified_deliveries": 73
+    "total_reports": 76,
+    "verified_deliveries": 76
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
