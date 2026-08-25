@@ -2,7 +2,10 @@
 :- initialization(main, main).
 :- use_module(library(readutil)).
 :- use_module(library(lists)).
-:- consult('kb/style_kb.pl').
+
+:- prolog_load_context(directory, ScriptDir),
+   directory_file_path(ScriptDir, '../kb/style_kb.pl', StyleKb),
+   consult(StyleKb).
 
 % Keep the hard gate narrow and explainable. STYLE.md remains the human contract;
 % kb/style_kb.pl holds learned examples and objective recurring patterns.
