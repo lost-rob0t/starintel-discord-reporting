@@ -399,6 +399,18 @@
       "report_digest": "603b5b6295007458b11723645284bd294d9e41b75ba6fd3f55566dc277be1083",
       "status": "verified-delivered"
     },
+    "reports/findings-shitposts/2026-08-25T07-54-00Z-report.md": {
+      "accepted_at": "2026-08-25T07:54:06.639343+00:00",
+      "attempted_at": "2026-08-25T07:54:06.639343+00:00",
+      "channel_id": "1539718495858593893",
+      "channel_name": "Data After Dark",
+      "delivered_at": "2026-08-25T07:54:06.639343+00:00",
+      "message_ids": [
+        "1541717292667244615"
+      ],
+      "report_digest": "e1bd7de3c3c2d03c7ae0ac267ffc1e840a35314f3de89159f4fd7c16700c2b97",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/2026-08-19T20-14-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:19.971937+00:00",
       "attempted_at": "2026-08-20T17:57:19.971937+00:00",
