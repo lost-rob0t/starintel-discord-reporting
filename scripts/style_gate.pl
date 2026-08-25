@@ -2,7 +2,7 @@
 :- initialization(main, main).
 :- use_module(library(readutil)).
 :- use_module(library(lists)).
-:- consult('../kb/style_kb.pl').
+:- consult('kb/style_kb.pl').
 
 % Keep the hard gate narrow and explainable. STYLE.md remains the human contract;
 % kb/style_kb.pl holds learned examples and objective recurring patterns.
