@@ -957,11 +957,11 @@
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
-      "starintel-updates-changelog": 1
+      "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 76,
-    "verified_deliveries": 76
+    "total_reports": 77,
+    "verified_deliveries": 77
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
