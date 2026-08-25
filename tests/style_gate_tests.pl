@@ -1,5 +1,8 @@
 :- begin_tests(style_gate).
-:- consult('scripts/style_gate.pl').
+
+:- prolog_load_context(directory, TestDir),
+   directory_file_path(TestDir, '../scripts/style_gate.pl', StyleGate),
+   consult(StyleGate).
 
 test(plain_uncertainty_passes) :-
     style_ok("It mostly checks out, but the approval trail is still missing.").
