@@ -291,6 +291,18 @@
       "report_digest": "784b0fb00d2a49e9998f3d93fa42e134fe598ab60712f3009ff103c606a8e415",
       "status": "verified-delivered"
     },
+    "reports/auto-dig-findings/2026-08-26T23-53-20Z-report.md": {
+      "accepted_at": "2026-08-26T23:53:34.498936+00:00",
+      "attempted_at": "2026-08-26T23:53:34.498936+00:00",
+      "channel_id": "1539693381695967282",
+      "channel_name": "The Receipt Desk",
+      "delivered_at": "2026-08-26T23:53:34.498936+00:00",
+      "message_ids": [
+        "1542321138288295956"
+      ],
+      "report_digest": "9e3780525ed8e8385b55e84b4aa16d7bd55ba601930804515f963913a0c3c097",
+      "status": "verified-delivered"
+    },
     "reports/findings-shitposts/2026-08-19T23-46-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:23.223466+00:00",
       "attempted_at": "2026-08-20T17:57:23.223466+00:00",
