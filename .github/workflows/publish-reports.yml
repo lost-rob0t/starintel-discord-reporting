@@ -168,17 +168,39 @@ jobs:
             "${args[@]}"
           done < /tmp/reports.tsv
 
-      - name: Persist duplicate state
+      - name: Persist verified delivery state
         if: steps.reports.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'starintel-report-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add state/published.json
-          if git diff --cached --quiet; then
-            exit 0
-          fi
-          git commit -m 'state: record published Discord reports'
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          cp state/published.json /tmp/published-by-run.json
+
+          for attempt in 1 2 3 4 5; do
+            git fetch --quiet origin main
+            git show origin/main:state/published.json > /tmp/published-latest.json
+            python scripts/merge_delivery_state.py \
+              --latest-state /tmp/published-latest.json \
+              --run-state /tmp/published-by-run.json \
+              --output /tmp/published-merged.json
+
+            git reset --hard origin/main
+            cp /tmp/published-merged.json state/published.json
+            git add state/published.json
+
+            if git diff --cached --quiet; then
+              exit 0
+            fi
+
+            git commit -m 'state: record published Discord reports'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "state push raced on attempt $attempt; retrying" >&2
+          done
+
+          echo 'failed to persist verified delivery state after 5 attempts' >&2
+          exit 1
