@@ -25,6 +25,12 @@ CHANNEL_DISPLAY_NAMES = {
 }
 
 
+def normalize_report_path(report: Path, root: Path) -> Path:
+    if report.is_absolute():
+        return report
+    return root / report
+
+
 def provenance(markdown: str) -> set[str]:
     tokens = {
         f"commit:{owner.lower()}/{repo.lower()}@{sha.lower()}"
@@ -50,6 +56,7 @@ def verified_report_ids(state_path: Path) -> set[str]:
 
 
 def prior_provenance(report: Path, channel: str, state_path: Path, root: Path) -> tuple[set[str], dict[str, set[str]]]:
+    report = normalize_report_path(report, root)
     verified = verified_report_ids(state_path)
     report_id = report.relative_to(root).as_posix()
     report_dir = root / "reports" / channel
@@ -68,6 +75,7 @@ def prior_provenance(report: Path, channel: str, state_path: Path, root: Path) -
 
 
 def exact_duplicate(report: Path, channel: str, state_path: Path, root: Path) -> str | None:
+    report = normalize_report_path(report, root)
     display_name = CHANNEL_DISPLAY_NAMES.get(channel)
     if display_name is None:
         return None
@@ -89,6 +97,7 @@ def exact_duplicate(report: Path, channel: str, state_path: Path, root: Path) ->
 
 
 def duplicate_reason(report: Path, channel: str, state_path: Path, root: Path) -> str | None:
+    report = normalize_report_path(report, root)
     if channel not in CHANNEL_DISPLAY_NAMES:
         return None
 
@@ -137,7 +146,9 @@ def main() -> int:
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
-    reason = duplicate_reason(args.report, args.channel, args.state_file, root)
+    report = normalize_report_path(args.report, root)
+    state_file = args.state_file if args.state_file.is_absolute() else root / args.state_file
+    reason = duplicate_reason(report, args.channel, state_file, root)
     if reason is None:
         return 0
     print(f"duplicate report blocked: {args.report}: {reason}")
