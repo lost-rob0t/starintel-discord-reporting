@@ -8,6 +8,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import check_report_dedup
 import post_report
 import verify_report
 
@@ -171,6 +172,15 @@ def main() -> int:
             continue
         kind, secret_name, display_name = mapping
         markdown = report.read_text(encoding="utf-8")
+
+        duplicate = check_report_dedup.duplicate_reason(report, channel, STATE, ROOT)
+        if duplicate is not None:
+            blocked += 1
+            reason = f"duplicate report: {duplicate}"
+            record_blocker(relative, reason)
+            print(f"BLOCKED {relative}: {reason}", file=sys.stderr)
+            continue
+
         errors = verify_report.verify(markdown, kind, False)
         if errors:
             blocked += 1
