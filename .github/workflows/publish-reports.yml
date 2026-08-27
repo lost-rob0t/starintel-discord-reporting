@@ -128,6 +128,7 @@ jobs:
           while IFS=$'\t' read -r channel kind report attachment; do
             [ -n "${report:-}" ] || continue
 
+            python scripts/check_report_dedup.py "$report" --channel "$channel" --state-file state/published.json
             python scripts/verify_report.py "$report" --kind "$kind" --no-network
 
             case "$channel" in

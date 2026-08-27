@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/post_report.py'
       - 'scripts/publish_new.py'
+      - 'scripts/check_report_dedup.py'
       - 'tests/**'
       - '.github/workflows/publish-catchup.yml'
   schedule:
