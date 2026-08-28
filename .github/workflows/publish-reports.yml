@@ -71,7 +71,7 @@ jobs:
             base=$(git hash-object -t tree /dev/null)
           fi
 
-          git diff --name-only --diff-filter=AM "$base" HEAD -- \
+          git diff --name-only --diff-filter=A "$base" HEAD -- \
             'reports/auto-dig-findings/*-report.md' \
             'reports/findings-shitposts/*-report.md' \
             'reports/starintel-updates-changelog/*-report.md' \

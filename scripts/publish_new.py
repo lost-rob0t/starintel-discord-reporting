@@ -72,9 +72,7 @@ def report_verified(relative: str) -> bool:
     mapping = CHANNELS.get(report.parent.name)
     if mapping is None or not report.is_file():
         return False
-    _, _, display_name = mapping
-    markdown = report.read_text(encoding="utf-8")
-    return post_report.already_reported(STATE, relative, display_name, markdown)
+    return post_report.already_reported(STATE, relative)
 
 
 def prune_verified_blockers(reports: list[str]) -> int:
