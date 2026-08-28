@@ -38,7 +38,7 @@ jobs:
         run: bash scripts/update_repo_snapshots.sh
 
       - name: Commit snapshots
-        if: steps.token.outputs.ready == 'true'
+        if: always() && steps.token.outputs.ready == 'true'
         shell: bash
         run: |
           set -euo pipefail

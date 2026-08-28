@@ -11,25 +11,30 @@ command -v gh >/dev/null || { echo "gh is required" >&2; exit 2; }
 command -v git >/dev/null || { echo "git is required" >&2; exit 2; }
 
 mkdir -p "$OUT" "$CACHE"
+failures=()
 
-while IFS=$'\t' read -r repo branch changelog; do
-  [[ "$repo" == "repo" || -z "$repo" ]] && continue
-
-  name=${repo##*/}
-  dir="$CACHE/$name"
-  out="$OUT/$name.md"
+refresh_repo() {
+  local repo=$1
+  local branch=$2
+  local changelog=$3
+  local name=${repo##*/}
+  local dir="$CACHE/$name"
+  local out="$OUT/$name.md"
+  local head generated head_date head_subject tmp
 
   if [[ ! -d "$dir/.git" ]]; then
     rm -rf "$dir"
-    gh repo clone "$repo" "$dir" -- --filter=blob:none --no-checkout --quiet
+    if ! gh repo clone "$repo" "$dir" -- --filter=blob:none --no-checkout --quiet; then
+      return 1
+    fi
   fi
 
-  git -C "$dir" remote set-url origin "https://github.com/$repo.git"
-  git -C "$dir" fetch --quiet --prune origin "$branch"
-  head=$(git -C "$dir" rev-parse "origin/$branch")
+  git -C "$dir" remote set-url origin "https://github.com/$repo.git" || return 1
+  git -C "$dir" fetch --quiet --prune origin "$branch" || return 1
+  head=$(git -C "$dir" rev-parse "origin/$branch") || return 1
   generated=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-  head_date=$(git -C "$dir" show -s --format=%cI "$head")
-  head_subject=$(git -C "$dir" show -s --format=%s "$head")
+  head_date=$(git -C "$dir" show -s --format=%cI "$head") || return 1
+  head_subject=$(git -C "$dir" show -s --format=%s "$head") || return 1
 
   tmp=$(mktemp)
   {
@@ -60,6 +65,14 @@ while IFS=$'\t' read -r repo branch changelog; do
 
   mv "$tmp" "$out"
   echo "updated $out"
+}
+
+while IFS=$'\t' read -r repo branch changelog; do
+  [[ "$repo" == "repo" || -z "$repo" ]] && continue
+  if ! refresh_repo "$repo" "$branch" "$changelog"; then
+    failures+=("$repo")
+    echo "snapshot refresh failed for $repo; continuing with remaining repositories" >&2
+  fi
 done < "$CONFIG"
 
 {
@@ -73,5 +86,12 @@ done < "$CONFIG"
     printf -- '- [%s](./%s) `%s`\n' "$repo" "$base" "${head:0:12}"
   done | sort
 } > "$OUT/index.md"
+
+if (( ${#failures[@]} > 0 )); then
+  printf 'repo snapshots partially refreshed; inaccessible/failed repositories:' >&2
+  printf ' %s' "${failures[@]}" >&2
+  printf '\n' >&2
+  exit 1
+fi
 
 echo "repo snapshots refreshed"
