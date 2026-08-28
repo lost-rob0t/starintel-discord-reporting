@@ -11,7 +11,8 @@ command -v gh >/dev/null || { echo "gh is required" >&2; exit 2; }
 command -v git >/dev/null || { echo "git is required" >&2; exit 2; }
 
 mkdir -p "$OUT" "$CACHE"
-failures=()
+required_failures=()
+optional_failures=()
 
 refresh_repo() {
   local repo=$1
@@ -70,8 +71,13 @@ refresh_repo() {
 while IFS=$'\t' read -r repo branch changelog; do
   [[ "$repo" == "repo" || -z "$repo" ]] && continue
   if ! refresh_repo "$repo" "$branch" "$changelog"; then
-    failures+=("$repo")
-    echo "snapshot refresh failed for $repo; continuing with remaining repositories" >&2
+    if [[ "$changelog" == "yes" ]]; then
+      required_failures+=("$repo")
+      echo "required snapshot refresh failed for $repo; continuing with remaining repositories" >&2
+    else
+      optional_failures+=("$repo")
+      echo "optional snapshot refresh failed for $repo; continuing with remaining repositories" >&2
+    fi
   fi
 done < "$CONFIG"
 
@@ -87,9 +93,15 @@ done < "$CONFIG"
   done | sort
 } > "$OUT/index.md"
 
-if (( ${#failures[@]} > 0 )); then
-  printf 'repo snapshots partially refreshed; inaccessible/failed repositories:' >&2
-  printf ' %s' "${failures[@]}" >&2
+if (( ${#optional_failures[@]} > 0 )); then
+  printf 'optional repo snapshots unavailable:' >&2
+  printf ' %s' "${optional_failures[@]}" >&2
+  printf '\n' >&2
+fi
+
+if (( ${#required_failures[@]} > 0 )); then
+  printf 'required changelog snapshots partially refreshed; inaccessible/failed repositories:' >&2
+  printf ' %s' "${required_failures[@]}" >&2
   printf '\n' >&2
   exit 1
 fi
