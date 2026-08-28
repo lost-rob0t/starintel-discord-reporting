@@ -1,15 +1,31 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-28T06:09:31Z`
+- generated: `2026-08-28T18:46:10Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`7165680e31fa67053f19887026cd00e4e59ed0aa`](https://github.com/lost-rob0t/prolog-rlm/commit/7165680e31fa67053f19887026cd00e4e59ed0aa)
-- head date: `2026-08-27T13:59:23-04:00`
-- head subject: docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
+- head: [`a89175bf925df3afa358f8d05a370fe2a03e2117`](https://github.com/lost-rob0t/prolog-rlm/commit/a89175bf925df3afa358f8d05a370fe2a03e2117)
+- head date: `2026-08-28T03:18:21-04:00`
+- head subject: feat: run typed-plan model steps through native provider sessions
 
 ## Git log, last 14 days
 
 ```text
+2026-08-27 a89175bf925df3afa358f8d05a370fe2a03e2117 feat: run typed-plan model steps through native provider sessions
+2026-08-27 1c6022821064b10481acbd08a55d97dcdb89c351 docs: treat typed plans as first-class
+2026-08-27 5a365bbf0560292856f87aedd4c08e2f9ab2dde5 fix: preserve contextual compilation in direct mode
+2026-08-27 d87c467b9af445b01bbf55895fd68878f0f2e03b feat: add provider-native direct runtime
+2026-08-27 c43c26fcb103cf727521a6bced9722dd81acdcef test: add live 40k conversation retrieval
+2026-08-27 cc002c55effcf8400512ba0d0fc1fbc1ba3a98b0 perf: bound large conversation context packing
+2026-08-27 fecc31a20d1b0da73235b59eace0a18d2297b68f feat: give root planner calls a scoped agent identity system message
+2026-08-27 4668871829aefa1d05b6c0866f7f9e7ef26446c9 feat: give executed model steps a scoped system message
+2026-08-27 eae6d7cd529fcaf3f599da7d58f18c178f1a40f3 docs: frame rlm-recurse as the rlm plan tool, tighten facts/constraints
+2026-08-27 5aff7f8be265d2ebca29663e4605cdee2e9f935e docs: restructure rlm-operate skill as a plan-tool catalog
+2026-08-27 1328ad198c1125dc43a1d90a4e9024712b85d802 feat: attribute OpenRouter requests to the runtime
+2026-08-27 fa730876c4c9b0a1a5986412219ce8bc2df530c8 fix: fit direct root answers in planner token ceiling
+2026-08-27 6f3079d584136e8efda479541e24dfa3b41fa92d fix: make registry tool-envelope field hops repairable
+2026-08-27 4b1a5dd8c5320edac180b65f343ea1c92ec7a95b fix: close direct-or-plan root decision in rlm_completion
+2026-08-27 2ef6b66a81faac2397476e4a91d7352183f82ab4 test: add live planner context acceptance
+2026-08-27 6b58e0f6f690597a3e59b8571f4c1fbe0e483da2 fix: add corrective planner context
 2026-08-27 7165680e31fa67053f19887026cd00e4e59ed0aa docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
 2026-08-27 87189f7128bacfe97cd09874e958dd07e03322d3 fix: make durable mount recovery race safe
 2026-08-27 73ac81404aa1bd68cf1900a9121cfc733e3e621f fix: bind artifact value before mount projection
@@ -347,6 +363,7 @@
 .github/workflows/tree-sitter.yml
 .gitignore
 .gitmodules
+.opencode/skills/debug-io/SKILL.md
 AGENTS.md
 Makefile
 README.md
@@ -395,6 +412,7 @@ docs/conversation-runtime.md
 docs/conversation-warm-context.md
 docs/conversation-warm-integration.md
 docs/delegation-runtime.md
+docs/direct-runtime.md
 docs/effect-adapters.md
 docs/effect-migration.md
 docs/effect-runtime.md
@@ -419,6 +437,7 @@ docs/tool-packs.md
 docs/tool-result-projection.md
 docs/tools.md
 docs/tree-sitter-ffi.md
+docs/typed-plans.md
 flake.lock
 flake.nix
 prolog/adaptors/rlm_agent_zero_adapter.pl
@@ -446,6 +465,7 @@ prolog/rlm_conversation_persist.pl
 prolog/rlm_conversation_runtime.pl
 prolog/rlm_conversation_warm.pl
 prolog/rlm_delegation_runtime.pl
+prolog/rlm_direct.pl
 prolog/rlm_effect.pl
 prolog/rlm_effect_authority.pl
 prolog/rlm_effect_executor.pl
@@ -464,6 +484,7 @@ prolog/rlm_mcp_tool.pl
 prolog/rlm_mcp_tool_pack.pl
 prolog/rlm_mcp_transport.pl
 prolog/rlm_mcp_transport_send.pl
+prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_outcome.pl
 prolog/rlm_plan.pl
@@ -477,6 +498,7 @@ prolog/rlm_skill_eval.pl
 prolog/rlm_skill_graph.pl
 prolog/rlm_spec.pl
 prolog/rlm_spec_lang.pl
+prolog/rlm_spec_strategy.pl
 prolog/rlm_spec_workflow.pl
 prolog/rlm_subagent.pl
 prolog/rlm_tool.pl
@@ -495,6 +517,7 @@ rage/200-permanent-rlm-context.org
 rage/203-subagent-skill-role-provenance.org
 rage/206-prompt-command-runtime.org
 rage/264-real-recursive-final-handoff.org
+rage/277-planner-protocol-context.org
 research/README.md
 research/RLM-RESEARCH-000-foundations.org
 research/RLM-RESEARCH-001-prolog-runtime-design.org
@@ -516,6 +539,7 @@ research/RLM-RESEARCH-024-emacs-ui.org
 research/RLM-RESEARCH-025-lem-ui.org
 research/RLM-RESEARCH-026-task-deadlines.org
 scripts/build-tree-sitter-test-grammars.sh
+scripts/openrouter_completion.sh
 scripts/research_approval_validator.pl
 scripts/validate_research_approval.pl
 skills/core/rlm-constraints/SKILL.md
@@ -545,6 +569,10 @@ test/fixtures/skills/engineering/tdd/tests.md
 test/fixtures/skills/misc/unrelated/SKILL.md
 test/fixtures/skills/productivity/grill-me/SKILL.md
 test/live_chain_stream_openrouter_test.pl
+test/live_compiler_cache_openrouter_test.pl
+test/live_conversation_scale_openrouter_test.pl
+test/live_direct_native_openrouter_test.pl
+test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/load_error_status_test.pl
 test/pack_install_smoke.pl
@@ -562,6 +590,7 @@ test/rlm_async_test.pl
 test/rlm_authority_hardening_test.pl
 test/rlm_authority_lifecycle_test.pl
 test/rlm_authority_test.pl
+test/rlm_chain_app_attribution_test.pl
 test/rlm_chain_control_test.pl
 test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
@@ -577,8 +606,10 @@ test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
+test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
+test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
 test/rlm_effect_authority_test.pl
 test/rlm_effect_executor_test.pl
@@ -591,8 +622,10 @@ test/rlm_evolution_test.pl
 test/rlm_graph_authority_test.pl
 test/rlm_mcp_declaration_security_test.pl
 test/rlm_mcp_dual_test.pl
+test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
+test/rlm_plan_test.pl
 test/rlm_project_source_native_test.pl
 test/rlm_project_source_test.pl
 test/rlm_prompt_command_test.pl
@@ -606,6 +639,7 @@ test/rlm_skill_graph_test.pl
 test/rlm_skill_symlink_test.pl
 test/rlm_skill_test.pl
 test/rlm_spec_lang_test.pl
+test/rlm_spec_strategy_test.pl
 test/rlm_spec_verify_test.pl
 test/rlm_spec_workflow_test.pl
 test/rlm_subagent_deadline_test.pl
@@ -619,6 +653,8 @@ test/rlm_tool_mcp_scheduler_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_test.pl
 test/run_constraint_benchmark.pl
+test/run_live_compiler_cache_openrouter.pl
+test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
 test/run_tool_mcp_async_tests.pl
@@ -719,6 +755,7 @@ agentProlog/ui/opentui/test/render.test.tsx
 agentProlog/ui/opentui/test/transport.integration.ts
 flake.nix
 scripts/build-tree-sitter-test-grammars.sh
+scripts/openrouter_completion.sh
 scripts/research_approval_validator.pl
 scripts/validate_research_approval.pl
 test/deterministic_corpus.pl
@@ -744,6 +781,10 @@ test/fixtures/skills/engineering/tdd/tests.md
 test/fixtures/skills/misc/unrelated/SKILL.md
 test/fixtures/skills/productivity/grill-me/SKILL.md
 test/live_chain_stream_openrouter_test.pl
+test/live_compiler_cache_openrouter_test.pl
+test/live_conversation_scale_openrouter_test.pl
+test/live_direct_native_openrouter_test.pl
+test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/load_error_status_test.pl
 test/pack_install_smoke.pl
@@ -761,6 +802,7 @@ test/rlm_async_test.pl
 test/rlm_authority_hardening_test.pl
 test/rlm_authority_lifecycle_test.pl
 test/rlm_authority_test.pl
+test/rlm_chain_app_attribution_test.pl
 test/rlm_chain_control_test.pl
 test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
@@ -776,8 +818,10 @@ test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
+test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
+test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
 test/rlm_effect_authority_test.pl
 test/rlm_effect_executor_test.pl
@@ -790,8 +834,10 @@ test/rlm_evolution_test.pl
 test/rlm_graph_authority_test.pl
 test/rlm_mcp_declaration_security_test.pl
 test/rlm_mcp_dual_test.pl
+test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
+test/rlm_plan_test.pl
 test/rlm_project_source_native_test.pl
 test/rlm_project_source_test.pl
 test/rlm_prompt_command_test.pl
@@ -805,6 +851,7 @@ test/rlm_skill_graph_test.pl
 test/rlm_skill_symlink_test.pl
 test/rlm_skill_test.pl
 test/rlm_spec_lang_test.pl
+test/rlm_spec_strategy_test.pl
 test/rlm_spec_verify_test.pl
 test/rlm_spec_workflow_test.pl
 test/rlm_subagent_deadline_test.pl
@@ -818,6 +865,8 @@ test/rlm_tool_mcp_scheduler_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_test.pl
 test/run_constraint_benchmark.pl
+test/run_live_compiler_cache_openrouter.pl
+test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
 test/run_tool_mcp_async_tests.pl

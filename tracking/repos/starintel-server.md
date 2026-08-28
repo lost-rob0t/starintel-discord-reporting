@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-08-28T06:09:16Z`
+- generated: `2026-08-28T18:45:55Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`0caed07ff6ca31ca488c369c79fb1c1a8ff0f78d`](https://github.com/lost-rob0t/starintel-server/commit/0caed07ff6ca31ca488c369c79fb1c1a8ff0f78d)
-- head date: `2026-08-28T01:33:47-04:00`
-- head subject: Merge pull request #127 from lost-rob0t/rage/59-target-create-v1
+- head: [`e99aadd3f44505bc692708aad5e34ab0c4ab0036`](https://github.com/lost-rob0t/starintel-server/commit/e99aadd3f44505bc692708aad5e34ab0c4ab0036)
+- head date: `2026-08-28T03:07:09-04:00`
+- head subject: Approve v0.9 runtime implementation conformance
 
 ## Git log, last 14 days
 
 ```text
+2026-08-28 e99aadd3f44505bc692708aad5e34ab0c4ab0036 Approve v0.9 runtime implementation conformance
 2026-08-28 0caed07ff6ca31ca488c369c79fb1c1a8ff0f78d Merge pull request #127 from lost-rob0t/rage/59-target-create-v1
 2026-08-25 38666dab3610bd7771fa1c8ab3bbe67ebad0b594 fix: default Bixby operations to canonical target scope
 2026-08-25 b2b5c58ca1931ff19d41a5fa90ae609edb2d78bb build: share target create contract with clients
