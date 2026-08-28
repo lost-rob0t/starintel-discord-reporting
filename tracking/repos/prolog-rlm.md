@@ -1,0 +1,863 @@
+# lost-rob0t/prolog-rlm
+
+- generated: `2026-08-28T06:09:31Z`
+- canonical branch: `main`
+- changelog eligible: `yes`
+- head: [`7165680e31fa67053f19887026cd00e4e59ed0aa`](https://github.com/lost-rob0t/prolog-rlm/commit/7165680e31fa67053f19887026cd00e4e59ed0aa)
+- head date: `2026-08-27T13:59:23-04:00`
+- head subject: docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
+
+## Git log, last 14 days
+
+```text
+2026-08-27 7165680e31fa67053f19887026cd00e4e59ed0aa docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
+2026-08-27 87189f7128bacfe97cd09874e958dd07e03322d3 fix: make durable mount recovery race safe
+2026-08-27 73ac81404aa1bd68cf1900a9121cfc733e3e621f fix: bind artifact value before mount projection
+2026-08-27 a9bb8379c17b03799723740102b4b01cfbb50b24 test: pin concurrent durable mount races
+2026-08-27 bfbf44e9e48ac7ce9bd03b2666f7e80e4b1d6e14 test: pin artifact mount public projection ordering
+2026-08-27 9c30f9e427dabac71f5130b3a002492032d73303 fix: decode canonical persisted mount sources
+2026-08-27 a1424822613894574bb1848f73ebc6eed011f452 test: pin canonical persisted mount rehydration
+2026-08-27 362f4faaa61a42e26040fe9ec90712af2c605901 test: expose durable mount failure stage
+2026-08-27 751817f181676ce1ad1f36d71c0c39e1ec0e8b8f fix: partition persistent mount cache by artifact store
+2026-08-27 efa0d22a1c5764b1e3b1a5460bb6ee53a2e492f0 test: remove unregistered duplicate mount suite
+2026-08-27 26b01404f025446be181e9f086cf30418501c51a test: reproduce persistent mount cross-store cache leak
+2026-08-27 2bcd5ffae692211e918e7355a8a5ff2cfadb38c1 test: pin cross-store context mount cache isolation
+2026-08-27 7eb36ea9aada51ec6490c1219c434e654b8aeeba recover durable context mount baseline from #228
+2026-08-27 7f0050f524db6de5293163241176ac4660f04349 docs: correct exact-head evidence
+2026-08-27 e58798c55342a0010791286ae6067c6e63e3c016 docs: record final handoff evidence
+2026-08-27 eb64e5dc349f9c4a577cdb3daaf1f2adf1015285 fix: keep fixed CLI plans within budget
+2026-08-27 474facb0ddc6fae677b326ee49979220ea443cba fix: separate planner context from final output
+2026-08-27 e6e4c2a7d53de4830181bfe7e015e336176d1301 fix core typed-plan contract ownership
+2026-08-27 7f2f5d5d99181aef96818a982de419ecaf581ad0 test typed-plan benchmark contract regression
+2026-08-27 61ab893f0bf53b21fa8bedabf33a009f8c2af217 fix benchmark typed-plan planner contract
+2026-08-27 e9a2a6753470fc10c92226a8a88a35cc8fa0409a Fix live CSP planner truncation
+2026-08-27 3d4f574b5f31324411eddd0bb2d6c4a5aef61df8 CI: validate model-selected constraint lanes
+2026-08-27 6a8a90d814cd935a8fdb06227abf70ef1e7f2405 CI: validate requested constraint depth lanes
+2026-08-27 8fdc72e7bb3731cb8b333ee1ef3b3a2ad6d0459c CI: validate six-lane constraint benchmark
+2026-08-27 97232523921a52c47961b02b69e7d7af41f67e50 CI: expose and validate constraint benchmark report
+2026-08-27 4074c4635c1dbb5c30a0e3fc26d55511ecefe85f Recover #223 constraint benchmark on current main
+2026-08-27 b891c27c3d488ab336ebc125e9e04821351b0f22 docs(research): approved RLM-RESEARCH-011-managed-context-tool-discovery [skip ci]
+2026-08-27 ad655ca51f57148833f1294f511c0b5d1f24cdde docs(research): record approval migration audit
+2026-08-27 c92f59062b141cb8502c81b34d8c4e5dbeb6ea59 docs(research): standardize approval metadata
+2026-08-27 2e1264d80d02fecfb9f946e1328caaf1053e7a3b test: load salvaged runtime status in production-module gate
+2026-08-27 fd6554ecf48c5d7e34f8cac794410c31d50440be test: retain only reusable runtime status salvage
+2026-08-27 ad52a1dd79caf1f65e1910961fd93d6798723b35 feat: salvage renderer-neutral runtime status projection
+2026-08-27 15892c6a9491bb397d17e14533786a1afa12dfb8 test: salvage run alias and canonical runtime status contract
+2026-08-27 8c162f4f8690881a935f0ec57a803734ea286def test: fold runtime status coverage into existing deterministic suite
+2026-08-27 32714974750a788d4c1c2637a0bb82ab00354533 test: specify renderer-neutral runtime status projection
+2026-08-26 7fa4c2547b387acdbe5fc269e8ebcb4919249b97 test: register planner validation retry on current corpus
+2026-08-26 56af9287f218fe62096d03af63447c7c4e5548c6 fix: retry structurally invalid planner candidates
+2026-08-26 c238eb0ef3f19c89a06fc9d6a11993f9d0fddb71 test: register skill-selection evaluator in current corpus
+2026-08-26 4d665585a720fa9ed8d29f34c36666a47e638ebe feat: add deterministic skill-selection evaluation metrics
+2026-08-26 385eba3d12f431704c876bae7b92c2bb56e721c4 feat: add normalized skill catalog graph
+2026-08-26 340dd0aec4d2e1b555aac7b108beed9c29706a65 feat: add proof-carrying child result acceptance boundary
+2026-08-26 7eb60f98ed100423880b18b57724899d718cd5f3 feat: wire unresolved delegation into bounded parent resume
+2026-08-26 e4509ee8b5e4a53b85fcc6dd36e4cd048eb3b26a test: align deadline bounds with schema preflight
+2026-08-26 8722f5379b9080846e6827cd2363e4d84cc26003 feat: recover host-owned subagent deadline policy
+2026-08-26 a35e1400951dc9364169eabffe09041ba24d8547 feat: normalize provider tool-choice compatibility before dispatch
+2026-08-26 bd11d65703820a8b525544051d22891a8c95290c test: cover canonical tool-result projection presets
+2026-08-26 d7686492731bc94891e8bbd46b7ff013884ad6e2 feat: add tool-result projection policy module
+2026-08-26 5d37c8fe2198cf7b63b4bbde99c6cbbb5ff1d8df docs: document tool-result projection presets
+2026-08-26 c836b500b2a024637487401ec3312c4616822df5 chore: remove unrelated metadata-context edit
+2026-08-26 00f040f03cb86ffed306c19a24253e1a1ba78a0f revert: restore numeric schema candidate after failed cleanup edit
+2026-08-26 c09692e3ceb0744e601f3a2c84487e7dd4c92a74 chore: remove unrelated metadata-context edit
+2026-08-26 6f39f3c6c32046edd6e58f0529fdcfa8b4a18ab1 refactor: keep numeric bound checks closed
+2026-08-26 a11d6b0abeda243b67a0aca3ee75ad3f4c17cb68 docs: define numeric tool schema bounds
+2026-08-26 330f185cd88385babd3aeafda4629bfe648a3336 fix: enforce numeric tool schema bounds
+2026-08-26 989a5b3eee49568ae26967be7d4829d716d41bad test: pin numeric schema bound contract
+2026-08-26 267697bef10a3fffff7c093e1435ece770e7444b docs: reconcile AgentProlog compiler readiness
+2026-08-26 ebe0fdf72abf4dd9b4562138434e13c56684baea docs: define prompt compiler visibility contract
+2026-08-26 302e1bf4e6df3f2d02105558f4a0ecb0ad86148a docs: document compiler-owned tool visibility
+2026-08-25 72674314558388f198014c8194450f6675020611 test: assert compiled planner tool projection
+2026-08-25 333e6ca839c3048aef964ca939c2f5c37c9ce068 feat: compile root planner tool projection
+2026-08-25 f03a57fd1e3cb8daf5e84b894f6e57a8943595cb test: pin invalid prompt compile mode contract
+2026-08-25 a6b00bb4e28bff253fb01d500cb83225ff4e6be9 test: separate compiled and all-tools visibility contracts
+2026-08-25 24cc8053e2b5fb7be1d265dc68a9dea9c782838f chore: remove temporary #176 realization runner
+2026-08-25 4bda83043add14764b40c0caa26ce2f6a9a5d9ef chore: realize #176 compiler projection slice
+2026-08-25 575fdbfa68b2fd4189e65ba72d44451abcb5da57 test: preserve expected failure binding
+2026-08-25 5e7623d8dd55f00550afbde663a8caa17d27b02f test: capture root planner projection defect
+2026-08-25 49d86f88730b4a0f5dc4a7cf300b8f09ef5845b0 feat: add typed skill-aware delegation policy (#172)
+2026-08-25 36cb418b833c77e24438fa94e596062a90088fa3 docs: record issue 206 RAGE evidence
+2026-08-25 15e67f26e38e57418ce0edae7896469ee9772338 feat: execute closed prompt commands via typed tools
+2026-08-25 d0b5fe918fcbda0d6c9ca703e4edf5bddaf66402 test: harden prompt command execution boundary
+2026-08-25 b4b98d5500a1628d1ada698cdcf35a42ddef9515 test: define typed prompt command execution contract
+2026-08-25 8054606971ffbbb6aa9484b4e915caa4c655929b docs: record issue 203 RAGE evidence
+2026-08-25 a37944913c5b48999371995fb7ec7610a86dcbd4 test: use ground invalid subagent role fixture
+2026-08-25 88177b217d912d6ab995b33e21681c12904c27f2 test: respect normalized agent metadata shape
+2026-08-25 c375b3ff52fc4efa4f0afb7aa001ef55a8b397c3 fix: preserve subagent ABI and ground failures
+2026-08-25 28c73239b54ceac5e6d99408ec41da81d5a7e993 feat: carry trusted subagent delegation provenance
+2026-08-25 0ba8c1ef8df220972541ece84baae0ca9f27663c test: define subagent skill role provenance contract
+2026-08-25 a79e9c862b74449d73bcadc729d2a38b5163e10d docs: record issue 200 RAGE evidence
+2026-08-25 7582481aea6d007f33f68dede31cf75af8c94b80 feat: project permanent context into plan providers
+2026-08-25 1ae390af36fae4f9c3fc4c831a25f088e675d69f feat: add host-owned provider context wrapper
+2026-08-25 c2cbb50e1b151c3b18234ac94c248800838b0500 test: reproduce issue 200 provider context gap
+2026-08-25 2ceba4c0f4a64e95233849a92def6e4fbf95b8b7 docs: record issue 190 realization evidence
+2026-08-25 c77034d6e962aaa0328fa333a5bdcd03f429bb96 fix: make CLI help a successful dispatch path
+2026-08-25 2ef65e438c68917487767f0901da95478c0594fc test: reproduce issue 190 help failure
+2026-08-25 521b00b53cb02383928a264df38097d041d37878 test: define issue 190 RAGE contract
+2026-08-25 1636c7111389ce2d5430bcc111f064635b933fca fix: preserve completion budget usage
+2026-08-25 b82b975d9ba86c4bd8443aaafe43d15af4cfe88c feat: add Prolog-owned automatic skill activation
+2026-08-25 30c620bae7ef6d4c21a98ffdf17bb969b2686638 test: register issue 191 planner visibility regression
+2026-08-25 bb93a9fdb1a708897a80c87d092534ec257a41d3 ci: remove temporary issue 191 patch workflow
+2026-08-25 5581ebfba3fbbc67048c54d7d782ad847c5ea904 ci: remove issue 191 trigger
+2026-08-25 4143c76d73d6571f39a1ac1183e4d2490e2a6bbb fix: filter planner tool schemas by capabilities
+2026-08-25 ed46e9cbb395af4b99974b88d151072f840126ba test: inspect planner request through messages
+2026-08-25 3bc5655bc00c49297cfe7f76aafc8504b8b09f7a ci: fix issue 191 patch workflow syntax
+2026-08-25 d55bf74973439ae2f59a9786b8f4085c50210d2d ci: trigger issue 191 patch verification
+2026-08-25 9a20edefda67350468213af0a4da33ddb5b4763e ci: apply and verify issue 191 tool visibility patch
+2026-08-25 c1bc90429c56089fc8e5077a341d33bfdf745e2c test: reproduce planner visibility capability leak
+2026-08-25 a5e0a28b47fada46a15fe439d58bf2940ec224e7 chore: remove temporary issue 185 patch script
+2026-08-25 3607d4caae7179504a2cc774e926195ae4fc5cce chore: remove temporary issue 185 patch workflow
+2026-08-25 5d0d6cf78b0c39fffb5567815dae5c6a32080725 fix: propagate reasoning effort through completion runtime
+2026-08-25 ae071ce5d23ad58ac4acedeb543506892a9ad640 ci: apply and verify issue 185 reasoning patch
+2026-08-25 a6a040d0923f3b528901972d30a2da8eb27c4693 chore: stage issue 185 reasoning patch
+2026-08-25 71a9313b56e9caf33ae59ed918da13e46bbf3298 docs: remove nested AgentProlog authority references
+2026-08-25 2d7a877f6c3a976b76b29ce09bf186ec213aadf5 docs: remove nested AgentProlog async reference
+2026-08-25 81a845bdcfe6bef00843560d483c552b39db1fed docs: make AgentProlog roadmap explicitly downstream
+2026-08-25 623754ebaf32c2edaa07fb9238b336fed352a0b0 docs: point coding product ownership downstream
+2026-08-25 4de3d7c7c8e47f609a926c326ace2f5859a446de docs: describe frontend protocol as core runtime boundary
+2026-08-25 95c0337d70383f250e18a5b2f691c15f71c617a2 fix: preserve protocol bytes during harness extraction
+2026-08-25 59b42dfdc68094240c5a917ebc9287776360297c cleanup: remove legacy nested AgentProlog harness
+2026-08-25 24b9ddedcf742c2df65ad62e56ca36770be8f8bd test: load frontend protocol from core runtime
+2026-08-25 fc89f942551904a9768bda898a6f69e2326d4c8d test: load protocol fixture from test support
+2026-08-25 0470643d7630d6205bde66494d5ff1d2bd356791 test: point UI protocol coverage at core paths
+2026-08-25 e8f04b1646bd7586a8a768b9f8b9035d3d41144f test: relocate protocol golden session
+2026-08-25 aceda682073672bf128369d221836d24a16e5a17 test: relocate protocol fixture launcher
+2026-08-25 2aa8628c72b18b6884b5a75427dbc9322a7dee6e test: relocate frontend protocol fixture
+2026-08-25 aead75c9697436417087fe717edb192d992bcbd8 refactor: move frontend facade into core runtime
+2026-08-25 173b35eb26e7841663c86bd4cf164f87e30745f3 refactor: move UI protocol into core runtime
+2026-08-25 89d1b0b7f3782667c9704c63dd2f51d2a23814bc ci: report workflow failures as GitHub issues
+2026-08-24 982bad23c59dba0dd9157c1904e7723950889717 fix: harden evolution evaluator boundary
+2026-08-21 ec54214a02fc8e612c922fd698e55332f13331bf feat: evaluate evolution candidates through bounded futures
+2026-08-21 76fb91994ed2b7820db3088f739c8ce4bdcf85c1 test: specify async evolution evaluator contract
+2026-08-24 e6f04bb641d5f15d2b806eca4bd00d2718615034 Record PR 182 main reconciliation evidence
+2026-08-24 97ed737f12770e2fcd925cb7a7c4896fd262a540 Harden trusted binding replay conformance
+2026-08-24 329cdc690c77d14ab4959f104837b546c22dca02 ci: require pinned paid OpenRouter model
+2026-08-24 0d8e1008ba525f0ec7e51cba2de34ede8a63cf6f Merge pull request #180 from lost-rob0t/rage/144-fallback-closure
+2026-08-24 c56c82dd5c774e976cf1af5858addea4e97c5619 Close bounded subagent possession gaps
+2026-08-24 843337e85efdd2833a4308b1a6e1a4376eab72f2 Merge pull request #149 from lost-rob0t/agent/subagent-supervised-call-conformance
+2026-08-24 f477c6ed279afd78757c1fac130a694438bbdf3c Merge pull request #179 from lost-rob0t/rage/164-conversation-metadata
+2026-08-24 00d6da45539d1e8912a4c825bf91dc7ac55b0f9d Fix conversation closed-data metadata
+2026-08-24 a70539ddd6d635faac84a5f45f6a5aba900fe5d3 Complete supervised subagent result propagation
+2026-08-24 ab426de54a54101ca3a6d8197db77e4c1f9d009f Merge pull request #161 from lost-rob0t/fix/160-context-adapter-closed-data
+2026-08-24 8ba55dbcd3119acd9439e686ada04b1f4e2cfa81 fix(async): keep workers alive across cancellation races
+2026-08-24 a4720be0025918fb9b714ede7f5abdb06f1eab4c fix(test): normalize parameterized result identity
+2026-08-24 0c5acab9425bc40c4667885f70959f968a141288 test(runner): assert portable timeout invariants
+2026-08-24 dc6ec9f419ccdbe785c0da798d763995b6e9db28 fix(test): normalize PlUnit 9.0 results
+2026-08-24 6d54589899cdd15e7aa226972e167307d3ad1fb3 fix(ci): support SWI 9.0 in integrity gate
+2026-08-24 6d33648992e31ada255bb635c72bf3803c23fd9b fix(context): canonicalize adapter closed data
+2026-08-24 7c3561bcc34de55fba875dfd18b773211a3d3420 Merge pull request #178 from lost-rob0t/codex/move-agent-zero-adaptor
+2026-08-24 529e564350a9e738036525984aa505b7e3bee42a refactor: isolate Agent Zero adapter
+2026-08-24 718abd0df30c0507ceb816ec2f494948cfa15340 Merge pull request #177 from lost-rob0t/codex/sol-high-integration
+2026-08-24 90a054137a38b5b5231e6a45037597e52a5b5f2d feat: add Agent Zero symbolic integration
+2026-08-21 468deb40cf13ce991757074e1609606bfdd6960f Canonicalize evolution candidates and constraints
+2026-08-21 ed634b8a3e93d646c3d75794d270e81f5776fdd6 Strengthen evolution closed-data regressions
+2026-08-21 5431c78a43f29d777e452d81f8a9ad9445d7fe72 Preserve control exceptions across Future await
+2026-08-21 f651d5ace002eee967d5528342ecbc19922f7295 Add red Future control-exception regressions
+2026-08-21 fc94a2584f238ab8289d761c38cd197616f90efc fix(prompt): canonicalize closed anonymous-dict schemas
+2026-08-21 73eb13e2063844bbb99a46d7136808766321d455 test(core): register closed-data regression suite
+2026-08-21 594b7e45eb4b196749d50e1f9c7e92f1bf0aeb2f test(core): prove anonymous dict tags are representation-only
+2026-08-21 a16f3dbd21f5abc248db3e63ec8beb18328bc31b feat(core): add deterministic closed-data normalizer
+2026-08-21 bbc3bba197a24ac9f224b1ce29ae4da692c3bcf1 fix(loader): reclaim registry state through explicit destroy hook
+2026-08-21 568c1ed47766afc1e1c09bc24c1e7f820152ead0 fix(tool): add explicit registry destroy hook boundary
+2026-08-21 57ee547e71f23ebf690b44f4af46ec21d925faa0 test(effect): cover anonymous dict normalization
+2026-08-21 076e1d9b7ff0d357907bb4d9db51bf3795e7aa08 fix(effect): treat anonymous dict tags as representation-only
+2026-08-21 62dfbfc8d303415540966e885f796df4483cdaf1 fix(authority): canonicalize anonymous dict tags in fingerprints
+2026-08-22 3014b52ff4b2ba3d5721192d4ba32cec3507d5e0 fix: eliminate remaining PlUnit false-green paths
+2026-08-21 490194b2e47002c4b7a9ae4d8921f11719e26acd fix: make deterministic PlUnit gate fail closed
+2026-08-21 e32dd1486ab81e3ecda9e73455309db7434d59a3 Merge pull request #153 from lost-rob0t/fix/flake-lock-reproducibility
+2026-08-21 f22eff28d6d1f1a91cbe72ae18944fdd3562c8a8 ci: require pinned flake inputs
+2026-08-21 db16adac41108c45feb955b2083fe5a1bd1002bb nix: pin flake inputs
+2026-08-21 23d919628a449acc3ced08fc9bd8469cc2cbf8ea Add pure generic configuration evolution kernel (#148)
+2026-08-21 09d9418911acdebb851c8a8362fcd02ca1b5fdeb Add first-class bounded RLM subagent tool runtime (#147)
+2026-08-21 c0a7484d71265eed1a0f96f012040db39d9e58f1 Add flake-native runtime packaging (#145)
+2026-08-21 916e4c4d0181546c98079d70941466692ef7afc0 test: load RLM subagent runtime (#144)
+2026-08-21 a32a948e5a2557758c95f311d2d8c9a9082453d5 test: run RLM subagent suite (#144)
+2026-08-21 2f78d2bbef19a1916ab662fa98b0bc78c4d2965a test: cover bounded RLM subagent tool path (#144)
+2026-08-21 42c7180f394924741033540229b40f0472548f7c feat: add bounded RLM subagent tool runtime (#144)
+2026-08-21 1d1ee7594962accafabdd61d26a725d8bdb86a05 Add typed KB prompt command bindings (#146)
+2026-08-21 f21df8ea5bf89c85d0d516f170e1f157c553d800 Merge pull request #143 from agent/107-bound-adapter-metadata
+2026-08-21 00b4501c58b6fadc47159f3ba4d049593164cb1c docs: record metadata budget error facts (#107)
+2026-08-21 aeb075ea0b1acfbe664430d976d750d2a2e2b708 test: distinguish safe and oversized metadata (#107)
+2026-08-21 16133365e33d451e0634d8f8ad1db9bb13646a1c fix: bound complete adapter metadata descriptor (#107)
+2026-08-21 09dbc7cd10ba53cef09c6e25da69ef645b5f40a2 test: assert structured metadata budget facts (#107)
+2026-08-21 084748910ad4fe05fc1cc6fb41717d700948e3c8 Merge current main into #107 metadata hardening
+2026-08-21 b72a0de5550b24941f1f0970b89520bd432a31a6 docs: define adapter metadata byte ceiling (#107)
+2026-08-21 15650d5c8276aa7bf960912865674c9050ed5938 fix: bound adapter metadata at registration (#107)
+2026-08-21 451a37c264dd1deead1574ac81ede868cfa75bfa test: reject oversized adapter metadata (#107)
+2026-08-21 df5920d2b0bc3d0fb7e9071f5eaa0983a3ec75d3 docs: add evolutionary agent search research placeholder
+2026-08-20 290a87f5cff3a2c21b689877b167fa27dae16f61 Verify clean SWI pack installation path (#140)
+2026-08-20 59ca7c94947f5c048e5c4e314f588a63e02fd1c1 Preserve authoritative nested model trajectory events (#139)
+2026-08-20 04d90b608d11196c5a8fd3bdeb235566ef9352fd Make live OpenRouter streaming gate router-safe (#138)
+2026-08-20 767d677c826ed5c0873f1b2ce11c07b6f266497b Add provider-neutral symbolic prompt compiler core (#116)
+2026-08-20 6a6d03f66c3b5869f7c941cfa645f3d6a697a776 Merge pull request #135 from lost-rob0t/agent/42-canonical-recursive-fingerprints
+2026-08-20 7e6f05357704247dd7201fb56c85c5cfcac9418b Merge current main into recursive fingerprint fix
+2026-08-20 f56ecb9c01876083a7ff8c81453fbebdbf6c8ebc Make production static-load errors fail CI (#137)
+2026-08-20 6fef2c8889be4bb1bf15ce917580be9c16fa169b fix: canonicalize recursive-plan fingerprints (#42)
+2026-08-20 1e98b635d9deb83cae498974fe97f549f8d2ba4d test: pin direct recursive fingerprint regression (#42)
+2026-08-20 f4a0400fe718c533c82ea4d97ba1e28a07caca0e test: reproduce recursive fingerprint aliasing (#42)
+2026-08-20 feaa5aba6fa26ba73147993ece1a2829d2d41a36 test: add recursive fingerprint regression planners (#42)
+2026-08-20 99747d4748853dc8e1314fa97ba2ab04398010f6 Reclaim loader state when registries are destroyed (#133)
+2026-08-20 8c3b9cd0db71526648da2b5f2d8558dc6b87c241 Preserve model usage on completion execution errors (#134)
+2026-08-19 9322954c24594884b009bd3eece53a5784c8253e Add OpenTUI Solid reference client for PrologAgent UI v1 (#113)
+2026-08-19 eeda016b31fd702c59992f328e40689641e839de Merge pull request #115 from lost-rob0t/agent/95-project-source-registry
+2026-08-19 7f6026d3630eb780ab002af4e63688ff73a1926b Reconcile #95 project source registry onto current main
+2026-08-19 b57404534f58bfee0f301c9be03e3bc912af7f3b Merge PR #114: update roadmap after #86
+2026-08-19 15bba6bf8bb5582aaaae7d82539f65cf01baa166 Update roadmap after #86 effect-boundary merge
+2026-08-19 2bbd0ed2f1bc20b6164752f4bb133b1efe763395 Merge PR #86: route effectful tools through durable effect boundary
+2026-08-19 f06438d2561199dc56914f3b29b97ecd773113ee Merge PR #88: PrologAgent UI research
+2026-08-19 c7e539486b4bf0a807e20f326f9dd5da701a35ca Register tool effect-boundary tests on current main
+2026-08-19 7ce66fa76198732f29d8eeb0f0b31a44360cd6bc Reconcile #79 tool effect-boundary slice onto current main
+2026-08-19 2f8311362ee9120f02f1a369ee74ec118e16a44e Reconcile PrologAgent UI research onto current main
+2026-08-19 4aff0b6e082728e0ffc60b8c614aa6744b1e5584 Merge PR #106: managed hot/warm/cold conversation runtime
+2026-08-19 6ebe3e8f774713955a772e24324c75a25797b60e Reconcile cold-context tests with current main
+2026-08-19 a5bf311752026290e331c867f33facb28dfcdd17 Reconcile cold-context load checks with current main
+2026-08-19 1b209683d0968837b78b8b59ae1fb5f6be4527de Merge PR #111: Add direct SWI-Prolog Tree-sitter FFI
+2026-08-19 4340d404c39f3318d34c38e5cfe5a9ae82b971f6 Merge PR #104: durable warm conversation context
+2026-08-19 6da7e64e255f07d04055c66e283a36dcb52e94dc Merge managed conversation runtime into Tree-sitter FFI slice
+2026-08-19 5bc98abde3123fb2df11989a68640eac3b62f507 Resolve warm-context stack conflict with UI v1 test registration
+2026-08-19 350868d890eab658a81119c1333d79e345d3acf2 Resolve warm-context stack conflict with UI v1 load checks
+2026-08-19 c35658b2995dd96289de22b56de1e538cb31cf2f Merge PR #102: managed conversation runtime
+2026-08-19 af575e86be5cfe2a112606d0b36cc172a7499ebc Reconcile Tree-sitter roadmap with UI protocol
+2026-08-19 68a5ab5e4e45313d4f7762f679d62eb630933d40 Merge main into Tree-sitter FFI slice
+2026-08-19 805c8d6378b586a7d3d88f2897430a7637c49131 Update PrologAgent roadmap for Tree-sitter FFI
+2026-08-18 75634184da218fef9ebfbb43e7dcbab4547a11dd Merge PR #110: Implement PrologAgent UI v1 protocol
+2026-08-18 278d82dfed19f68604ce8ab649b1e3d65c899388 Cover UI protocol hardening regressions
+2026-08-18 18c31d754568dab8f18f2e77b19e057d64338351 Harden UI protocol replay and wire bounds
+2026-08-18 72e4e1036895c9678ff484d6a693285dfe9c3081 Fix Tree-sitter CI checkout depth
+2026-08-18 c08f0f1413c8a8f96ed0e187966533ad9f90f8f3 Add direct SWI-Prolog Tree-sitter FFI
+2026-08-18 4dfdff77c539fd5ac655231ca8bfc59b0f0b9877 Retain runtime boundary documentation
+2026-08-18 5ea3a83ee9350fc4deb7b71e756a3e46436ee5af Keep runtime docs stable
+2026-08-18 ed460a74ff5180c0536f7c3e89866d6f92ffd572 Preserve cold-context docs
+2026-08-18 fd13173f094e192fe2cc989154daefbf6e76f41f Keep cold-context docs canonical
+2026-08-18 fecade526b3dbd1999f2db7715d2485ffc5680f8 No-op canonicalize conversation runtime docs
+2026-08-18 f52ffa8730323e79d72e709570940c4ba969b764 Keep cold boundary docs canonical
+2026-08-18 9badabeb7ea8a3384e500614ba2c30f20e1d36f5 Clarify history boundary semantics
+2026-08-18 29b8447136b3db3c19a6b646c323a13ee0102a52 Document synthetic cold-history boundary
+2026-08-18 f70d2b723f1a0649ff8988e42199a8dd1c3287ce Document cold-history boundary projection
+2026-08-18 4eaa962424d567299f1f0bbff22fd5cd9c05ec53 Test synthetic cold-history boundary
+2026-08-18 56bcf126f7edca24e673fd65d267209f40af58e5 Add token-accounted cold-history boundary
+2026-08-18 c97716650ca6cbe3ef531fb403242be0c9aad7b2 Remove stale transcript-only projection test
+2026-08-18 3e209314bf2652582fb1f2655d36392c765cba84 Clarify warm reuse versus compaction in cold-context docs
+2026-08-18 1b618ecdc4ccc90887f0a3ebab8f503310ada325 Correct managed warm-context contract
+2026-08-18 5056c6a89c6f87873e3d7b798a4e117f84d0a9cd Document warm context integration without automatic compaction
+2026-08-18 d0c858cbaf248af26045b2cbb63b55644b301185 Load warm-aware conversation runtime
+2026-08-18 aa4f946197d744659b33378ce7adb6d51a3bb7f7 Run managed conversation runtime tests
+2026-08-18 17770bd7587c33efb7cb7380a021140d0488b24b Test warm-aware managed conversation runtime
+2026-08-18 a985173de8520c943905c09e62bce632b3d4e6d4 Route public conversation API through warm-aware runtime
+2026-08-18 5dd952ef4978dd0a0f094e1cfc6ad3f739885dc9 Wire existing warm context into managed conversations
+2026-08-18 67bdc61ef82a2ce86faba77511d5a933cb056d0b Make stdio fixture smoke warning tolerant
+2026-08-18 3404098a29fbf8f1674d83d195afaf5b97421579 Harden UI facade dict construction
+2026-08-18 b84101cd572586160ed6698da8f117e9877cc4f0 Advance PrologAgent roadmap through UI protocol slice
+2026-08-18 b55025685b4e283d076e42dac34562738af4a993 Document PrologAgent UI protocol boundary
+2026-08-18 52f91b0e8a736118772d35d36ddf8fc2d29d7e51 Clarify cold history as canonical default
+2026-08-18 33dcad931bb853c1edcd8e7d2d08aaf80f2ed378 Document PrologAgent UI v1 protocol
+2026-08-18 6e2d7a6326a7f0c2015e52df2cf721ed2a0ed128 Document hot-cold conversation contract
+2026-08-18 c17b612e48e7b0537f2b25079b2019ae5cae4e88 Lock warm context behind explicit opt-in
+2026-08-18 20d3c742694bc64635d3c488bb2b17670e673652 Load PrologAgent UI protocol modules
+2026-08-18 d94dead046429a2f122fda92f6212cf2bb43394e Run PrologAgent UI protocol tests
+2026-08-18 03cd15062ef34aa3883c08a0e3758ca394a57b05 Add deterministic UI protocol replay tests
+2026-08-18 b8d4fd47f12c8fa8c8d90a31c8e598991419c087 Add golden PrologAgent UI coding session
+2026-08-18 b5e371bd7839a526f3aca302364e3f20fb8c444a Add stdio UI protocol fixture entrypoint
+2026-08-18 44a7559409bf55ccc6c5a4a842b82af9e2d780af Add deterministic PrologAgent UI fixture server
+2026-08-18 c79de741fdd39de687b9d57bcc6969b2b3dd7532 Add renderer-safe AgentProlog UI facade
+2026-08-18 35b187349c3d6868555df28f08444f9e56a45bc7 Add PrologAgent UI v1 protocol core
+2026-08-18 411800746fe2f4601880baee602116e9dd0d0ad6 Document lazy cold conversation context
+2026-08-18 fbe3dd0b1b0e65e0af83aaa480966e70ef6bd174 Expose lazy cold conversation context
+2026-08-18 e9f5dab2c9794f22c3e63d16f4754b035c5aa0e0 Run cold conversation context tests
+2026-08-18 34bb28f850d1022ec5dd917069f2769c7db817b7 Test lazy cold conversation retrieval
+2026-08-18 c9160df346ede4fc7d1ee4e44f5ac5d6abb9dd99 Test trusted external context adapters
+2026-08-18 0705c253b9b83f819780bccf873e8aa66d6771a5 Back managed turns with lazy conversation context
+2026-08-18 efa46301fa223a246a8b14a0a76e4b89ad2fcac3 Add trusted lazy context adapter boundary
+2026-08-18 35b47e4d97c1c366e35c76c342e13a63a591ab46 Document warm conversation context
+2026-08-18 928b19b23bf0c7a3c1d9086282ca0fbb7e301832 Expose warm conversation context API
+2026-08-18 f04fe5c59742cf0db770b2606e9a991eb7f236fe Load warm conversation context runtime
+2026-08-18 e391db8baac944d6db580610a833f95321a54813 Run warm conversation context tests
+2026-08-18 3e4bcec3503929671c9cb3c90a2a94320345f24f Test durable warm conversation context
+2026-08-18 d33161d70ed7c133bb5d95fd0ab6a1e1c30e6117 Integrate derived context units into rolling pack
+2026-08-18 88d9f0a761a56c0b9cfdec946dae5c1052a9ec2c Add durable warm conversation context
+2026-08-18 2d6f5ea5847a791ea27b64f814f5fab459f92ea6 Document session discovery and token stages
+2026-08-18 6cc4403c9f7b3e7958052e425a850e229836fd65 Assert stage-aware token accounting
+2026-08-18 c15f99a0f1ec1139e4a032f9cf14d5cc12ee6c79 Test conversation discovery and range failures
+2026-08-18 0da34ad3fb1938af6e67ac3febe84e280f89d25a Expose conversation listing API
+2026-08-18 a8f6d12834f9de3bfb4222b31ccfdc6e2a851f4d Complete conversation listing API
+2026-08-18 6874895c0fa6c588279f4817e67df039b88b7ce4 List durable conversation headers
+2026-08-18 3a6a490dc5ed7af4f9f775fbffc2ef07e669327b Fix context text normalization
+2026-08-18 b08c73ed7d897f825e26c17cc9e9241a5df4565f Add stage-aware token ledger
+2026-08-18 8204f171585607815ab14f2bc2606f3c94046393 Fix context selection assertion
+2026-08-18 f1c1720c28ce9bdd691ea09f101aa7e70f5836f9 Harden infeasible context packing
+2026-08-18 161520030bfc68a0786733fe861a8e2f38e557bf Document managed conversation contract
+2026-08-18 afd22ceba4ce6ab808f644cb72d235e454edc438 Expose managed conversation runtime
+2026-08-18 379bb7d617f0a834a4a6bbbdba88305bc4ea9215 Load conversation runtime in smoke check
+2026-08-18 402e46603ac27bd4e46a0b7bb67b631c37132ca0 Run conversation context tests
+2026-08-18 47266fd06ac147e933b8187c268f838027579ec4 Test durable conversation transcript and rolling context
+2026-08-18 74bc5257e6b65489b212654c1d3aff097008a263 Test context budget constraints
+2026-08-18 4520b48e5c97b54be9d19a1d3632894eb3552bfd Add first-class conversation runtime
+2026-08-18 390d87e8eeffaab779cb4303cafcfa29c3cadc01 Add durable conversation persistence backend
+2026-08-18 11e55f646f9c0fdd5f952b5fd7838e59a753229c Add bounded context budget solver
+2026-08-18 6b476696f5470fe7c0c85452cc18d1bcb99ac769 Merge PR #100: Add SPEC mode authoring language
+2026-08-18 6db1b1af04f4e63b6003f197359defd3dfaf6da0 Merge PR #92: Add first-class Spec and Verify foundation
+2026-08-18 1a383bfa1b2640a7be711d6c8fdc11e563d57135 Document SPEC mode authoring API
+2026-08-18 cc17af3f70aadb88432cb9a08611915085bd2bd5 Cover SPEC catalog schemas and safety
+2026-08-18 97751cc15aa1afb03bb9cb87acbe3a7b5b1e3aad Expose safe assertion argument schemas
+2026-08-18 8f2fd2bbda0b04c42dbb9cd3ed19e87e4bccbece Harden SPEC source closure checks
+2026-08-18 b57e4203abc9bd721a1caa95451d13acdf544bf7 Load SPEC language module
+2026-08-18 553a31f016e84a85e1cfab6370135907b46ddc25 Run SPEC language tests
+2026-08-18 a32207f96d012a12e99eca9b44b159a7795ed70c Test SPEC authoring language
+2026-08-18 fce1b570de9624491d5d06bb7883e763f71bf9db Add SPEC authoring language
+2026-08-18 c280c313bec1fbc02cae62af3be9ef56c156a826 add first-class Spec and Verify foundation
+2026-08-18 591c936d0476df5ac56de31fd327e7d0d678fb4e Research symbolic prompt and capability compilation
+2026-08-18 946904091a8b23024c8eb27c244c66a29e4eb97f Finalize post-merge backlog reconciliation (#90)
+2026-08-18 8ec9b8649ad6bcdc4eecc2120917d9f3586ab994 Reconcile backlog, roadmap, and GitHub issue state (#89)
+2026-08-18 abfc30ebb9f335d5841c1f7910bd474da905ebcf Document the PrologAgent roadmap and product boundary (#87)
+2026-08-17 2b9816132d6da1010fbf105fcc6a0538767410e6 docs: add repository agent instructions
+2026-08-17 88433863056cd39a1d152db2c0a3cbf1a7f43fc0 Add explicit pre-v2 effect-store migration (#85)
+2026-08-17 655ad60d2aaf5cb537f36b578c62420f134aae02 Fence legacy attempts from fresh dispatch
+2026-08-17 fcff94c1da017bdfa4aa58cc2399bcd689f09106 Cover migration CLI and lock races
+2026-08-17 02a07db7cadfef46a123fdf4bec2cb1c400a9149 Harden migration identity and crash recovery
+2026-08-17 8f80c99f0f10f13ac5dd520dd176c40ff0c111aa Add explicit legacy effect-store migration
+2026-08-17 6c60924cef7a03b9d483e4691646d4d56a13c0f3 Harden durable effect substrate across identity, retention, and recovery (#83)
+2026-08-17 7af5d5f6dc833c70bd547571654485eb73a1a704 Add durable effect identity and observation ledger (#78)
+2026-08-17 7b527750a64d5cbd9fff79413a399a8c69e90c75 Harden declarative MCP execution policy (#72)
+2026-08-17 9ba763d248f6e087b3ff01c651762997f02ee726 Harden external tool category loading boundary (#66)
+2026-08-17 88b64db41a4c474379a1808b95c761ffc78d9fc2 Harden host authority and pending operations (#62)
+2026-08-16 26909346842f87726c9d3ec7a78ef0dbdc904fc3 Canonicalize agent and graph async execution (#61)
+2026-08-16 3db30d832f9b124d6b6e6aa3cbe2808914f4ae6e Canonical async tool + MCP runtime slice (#60)
+2026-08-16 ded8c2734a0c716c6074457b45fad5f475cd16c9 Make async execution canonical for issue #54 (#59)
+2026-08-16 ee9a28ec70dbe938c7eac15ea910f4b2e00e0706 Add dual sync/async runtime primitives (#55)
+2026-08-15 c39ea1990c1dc052e5d868e6c43d3ec7d19e2b21 docs: reconcile TODO with implemented runtime
+```
+
+## Repository paths changed, last 14 days
+
+```text
+.env.example
+.envrc
+.github/issue-191-trigger
+.github/patches/issue-185.py
+.github/workflows/agent-prolog-ui.yml
+.github/workflows/ci.yml
+.github/workflows/issue-185-patch.yml
+.github/workflows/issue-191-patch.yml
+.github/workflows/nix.yml
+.github/workflows/pack-install.yml
+.github/workflows/paid-openrouter.yml
+.github/workflows/rage-176-realize-once.yml
+.github/workflows/report-workflow-failures.yml
+.github/workflows/tree-sitter.yml
+.gitignore
+.gitmodules
+AGENTS.md
+Makefile
+README.md
+TODO.md
+agentProlog/README.md
+agentProlog/bin/prolog-agent-ui-fixture.pl
+agentProlog/fixtures/prolog_agent_ui_v1_session.ndjson
+agentProlog/prolog/prolog_agent_ui_facade.pl
+agentProlog/prolog/prolog_agent_ui_fixture.pl
+agentProlog/prolog/prolog_agent_ui_v1.pl
+agentProlog/ui/opentui/README.md
+agentProlog/ui/opentui/bunfig.toml
+agentProlog/ui/opentui/package.json
+agentProlog/ui/opentui/src/app.tsx
+agentProlog/ui/opentui/src/client.ts
+agentProlog/ui/opentui/src/index.tsx
+agentProlog/ui/opentui/src/protocol.ts
+agentProlog/ui/opentui/src/transport.ts
+agentProlog/ui/opentui/test/client-close.test.ts
+agentProlog/ui/opentui/test/client.test.ts
+agentProlog/ui/opentui/test/protocol.test.ts
+agentProlog/ui/opentui/test/render.test.tsx
+agentProlog/ui/opentui/test/transport.integration.ts
+agentProlog/ui/opentui/tsconfig.json
+benchmark/rlm_constraint_problem.pl
+benchmark/rlm_constraint_verify.pl
+benchmark/rlm_live_deep_experiment.pl
+benchmark/rlm_live_deep_smoke.pl
+benchmark/run.pl
+c/rlm_tree_sitter.c
+c/rlm_tree_sitter_internal.h
+c/rlm_tree_sitter_language.c
+c/rlm_tree_sitter_lifetime.c
+c/rlm_tree_sitter_node.c
+c/rlm_tree_sitter_parser.c
+c/rlm_tree_sitter_support.c
+docs/agent-runtime.md
+docs/agent-zero-adapter.md
+docs/async-runtime.md
+docs/authority-runtime.md
+docs/benchmark-conformance.md
+docs/chain-runtime.md
+docs/completion-runtime.md
+docs/conversation-cold-context.md
+docs/conversation-runtime.md
+docs/conversation-warm-context.md
+docs/conversation-warm-integration.md
+docs/delegation-runtime.md
+docs/effect-adapters.md
+docs/effect-migration.md
+docs/effect-runtime.md
+docs/evolution-kernel.md
+docs/external-tool-libraries.md
+docs/graph-runtime.md
+docs/mcp-lifecycle.md
+docs/nix-packaging.md
+docs/project-source-registry.md
+docs/prolog-agent-roadmap.md
+docs/prolog-agent-ui-v1.md
+docs/prompt-compiler.md
+docs/providers.md
+docs/research-record-template.org
+docs/research/evolutionary-agent-search.md
+docs/result-acceptance.md
+docs/skill-graph.md
+docs/skills.md
+docs/spec-mode.md
+docs/spec-verify.md
+docs/tool-packs.md
+docs/tool-result-projection.md
+docs/tools.md
+docs/tree-sitter-ffi.md
+flake.lock
+flake.nix
+prolog/adaptors/rlm_agent_zero_adapter.pl
+prolog/prolog_agent_ui_facade.pl
+prolog/prolog_agent_ui_v1.pl
+prolog/rlm.pl
+prolog/rlm_agent.pl
+prolog/rlm_agent_async.pl
+prolog/rlm_agent_zero_adapter.pl
+prolog/rlm_assertion.pl
+prolog/rlm_async.pl
+prolog/rlm_authority.pl
+prolog/rlm_benchmark.pl
+prolog/rlm_chain.pl
+prolog/rlm_chain_async.pl
+prolog/rlm_cli.pl
+prolog/rlm_closed_data.pl
+prolog/rlm_completion.pl
+prolog/rlm_completion_async.pl
+prolog/rlm_context.pl
+prolog/rlm_context_budget.pl
+prolog/rlm_context_mount.pl
+prolog/rlm_conversation.pl
+prolog/rlm_conversation_persist.pl
+prolog/rlm_conversation_runtime.pl
+prolog/rlm_conversation_warm.pl
+prolog/rlm_delegation_runtime.pl
+prolog/rlm_effect.pl
+prolog/rlm_effect_authority.pl
+prolog/rlm_effect_executor.pl
+prolog/rlm_effect_migration.pl
+prolog/rlm_effect_persist.pl
+prolog/rlm_effects.pl
+prolog/rlm_evidence.pl
+prolog/rlm_evolution.pl
+prolog/rlm_graph.pl
+prolog/rlm_graph_async.pl
+prolog/rlm_mcp.pl
+prolog/rlm_mcp_async.pl
+prolog/rlm_mcp_policy.pl
+prolog/rlm_mcp_server.pl
+prolog/rlm_mcp_tool.pl
+prolog/rlm_mcp_tool_pack.pl
+prolog/rlm_mcp_transport.pl
+prolog/rlm_mcp_transport_send.pl
+prolog/rlm_openai_compatible.pl
+prolog/rlm_outcome.pl
+prolog/rlm_plan.pl
+prolog/rlm_project_source.pl
+prolog/rlm_prompt_command.pl
+prolog/rlm_prompt_compiler.pl
+prolog/rlm_result_accept.pl
+prolog/rlm_runtime_status.pl
+prolog/rlm_skill.pl
+prolog/rlm_skill_eval.pl
+prolog/rlm_skill_graph.pl
+prolog/rlm_spec.pl
+prolog/rlm_spec_lang.pl
+prolog/rlm_spec_workflow.pl
+prolog/rlm_subagent.pl
+prolog/rlm_tool.pl
+prolog/rlm_tool_async.pl
+prolog/rlm_tool_loader.pl
+prolog/rlm_tool_projection.pl
+prolog/rlm_tree_sitter.pl
+prolog/rlm_verify.pl
+rage/117-skill-compiler-reconciliation.org
+rage/144-fallback-closure.org
+rage/164-conversation-metadata.org
+rage/172-typed-delegation-policy.org
+rage/181-binding-replay-race.org
+rage/190-cli-help-success.org
+rage/200-permanent-rlm-context.org
+rage/203-subagent-skill-role-provenance.org
+rage/206-prompt-command-runtime.org
+rage/264-real-recursive-final-handoff.org
+research/README.md
+research/RLM-RESEARCH-000-foundations.org
+research/RLM-RESEARCH-001-prolog-runtime-design.org
+research/RLM-RESEARCH-002-agentic-harness.org
+research/RLM-RESEARCH-003-typed-symbolic-execution.org
+research/RLM-RESEARCH-004-prologmcp-repair-loop.org
+research/RLM-RESEARCH-005-swi-agent-runtime.org
+research/RLM-RESEARCH-006-mcp-dual-version-runtime.org
+research/RLM-RESEARCH-007-langchain-langgraph-port.org
+research/RLM-RESEARCH-008-adaptive-recursion.org
+research/RLM-RESEARCH-009-durable-artifact-context.org
+research/RLM-RESEARCH-010-symbolic-prompt-compiler.org
+research/RLM-RESEARCH-011-managed-context-tool-discovery.org
+research/RLM-RESEARCH-020-prolog-agent-ui-contract.org
+research/RLM-RESEARCH-021-javascript-ui.org
+research/RLM-RESEARCH-022-common-lisp-ui.org
+research/RLM-RESEARCH-023-nim-ui.org
+research/RLM-RESEARCH-024-emacs-ui.org
+research/RLM-RESEARCH-025-lem-ui.org
+research/RLM-RESEARCH-026-task-deadlines.org
+scripts/build-tree-sitter-test-grammars.sh
+scripts/research_approval_validator.pl
+scripts/validate_research_approval.pl
+skills/core/rlm-constraints/SKILL.md
+skills/core/rlm-facts/SKILL.md
+skills/core/rlm-operate/SKILL.md
+skills/core/rlm-recurse/SKILL.md
+test/deterministic_corpus.pl
+test/deterministic_runner.pl
+test/effect_legacy_fixture.pl
+test/effect_migration_crash_worker.pl
+test/effect_projection_crash_phase1.pl
+test/effect_projection_crash_phase2.pl
+test/effect_restart_phase1.pl
+test/effect_restart_phase1_completed.pl
+test/effect_restart_phase2_completed.pl
+test/effect_restart_phase2_indeterminate.pl
+test/effect_restart_phase2_reconcile.pl
+test/effect_restart_support.pl
+test/effect_store_contender.pl
+test/effect_store_owner_phase1.pl
+test/effect_store_race_contender.pl
+test/fixtures/prolog_agent_ui_v1_session.ndjson
+test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
+test/fixtures/skills/engineering/enriched/SKILL.md
+test/fixtures/skills/engineering/tdd/SKILL.md
+test/fixtures/skills/engineering/tdd/tests.md
+test/fixtures/skills/misc/unrelated/SKILL.md
+test/fixtures/skills/productivity/grill-me/SKILL.md
+test/live_chain_stream_openrouter_test.pl
+test/load_all.pl
+test/load_error_status_test.pl
+test/pack_install_smoke.pl
+test/pack_load_smoke.pl
+test/prolog_agent_ui_fixture_command_codec_test.pl
+test/prolog_agent_ui_v1_test.pl
+test/rlm_agent_authority_test.pl
+test/rlm_agent_graph_async_test.pl
+test/rlm_agent_test.pl
+test/rlm_agent_zero_adapter_test.pl
+test/rlm_artifact_test.pl
+test/rlm_async_canonical_test.pl
+test/rlm_async_control_test.pl
+test/rlm_async_test.pl
+test/rlm_authority_hardening_test.pl
+test/rlm_authority_lifecycle_test.pl
+test/rlm_authority_test.pl
+test/rlm_chain_control_test.pl
+test/rlm_chain_message_metadata_test.pl
+test/rlm_chain_test.pl
+test/rlm_cli_test.pl
+test/rlm_closed_data_test.pl
+test/rlm_completion_final_handoff_test.pl
+test/rlm_completion_planner_validation_retry_test.pl
+test/rlm_completion_test.pl
+test/rlm_completion_tool_visibility_test.pl
+test/rlm_context_adapter_test.pl
+test/rlm_context_budget_test.pl
+test/rlm_context_mount_test.pl
+test/rlm_context_test.pl
+test/rlm_conversation_cold_test.pl
+test/rlm_conversation_runtime_test.pl
+test/rlm_conversation_test.pl
+test/rlm_conversation_warm_test.pl
+test/rlm_effect_adversarial_test.pl
+test/rlm_effect_authority_test.pl
+test/rlm_effect_executor_test.pl
+test/rlm_effect_hardening_test.pl
+test/rlm_effect_migration_restart_test.pl
+test/rlm_effect_migration_test.pl
+test/rlm_effect_restart_test.pl
+test/rlm_effect_test.pl
+test/rlm_evolution_test.pl
+test/rlm_graph_authority_test.pl
+test/rlm_mcp_declaration_security_test.pl
+test/rlm_mcp_dual_test.pl
+test/rlm_nested_trajectory_test.pl
+test/rlm_nested_usage_test.pl
+test/rlm_project_source_native_test.pl
+test/rlm_project_source_test.pl
+test/rlm_prompt_command_test.pl
+test/rlm_prompt_compiler_test.pl
+test/rlm_recursion_runtime_test.pl
+test/rlm_research_approval_test.pl
+test/rlm_result_accept_test.pl
+test/rlm_runtime_status_test.pl
+test/rlm_skill_eval_test.pl
+test/rlm_skill_graph_test.pl
+test/rlm_skill_symlink_test.pl
+test/rlm_skill_test.pl
+test/rlm_spec_lang_test.pl
+test/rlm_spec_verify_test.pl
+test/rlm_spec_workflow_test.pl
+test/rlm_subagent_deadline_test.pl
+test/rlm_subagent_supervision_test.pl
+test/rlm_subagent_test.pl
+test/rlm_tool_effect_test.pl
+test/rlm_tool_loader_security_test.pl
+test/rlm_tool_loader_test.pl
+test/rlm_tool_mcp_async_test.pl
+test/rlm_tool_mcp_scheduler_test.pl
+test/rlm_tool_test.pl
+test/rlm_tree_sitter_test.pl
+test/run_constraint_benchmark.pl
+test/run_runner_integrity_tests.pl
+test/run_tests.pl
+test/run_tool_mcp_async_tests.pl
+test/run_tree_sitter_tests.pl
+test/runner_main_ownership_probe.pl
+test/support/completion_final_handoff_support.pl
+test/support/completion_test_support.pl
+test/support/load_error_fixture.pl
+test/support/prolog-agent-ui-fixture.pl
+test/support/prolog_agent_ui_fixture.pl
+test/support/rlm_constraint_benchmark_test.pl
+test/support/rlm_delegation_runtime_cases.pl
+test/support/run_runner_scenario.pl
+test/support/runner_adversarial_failures.pl
+test/support/runner_blocked_test.pl
+test/support/runner_budget_setup_test.pl
+test/support/runner_budget_test.pl
+test/support/runner_condition_test.pl
+test/support/runner_duplicate_test.pl
+test/support/runner_hostile_guard_probe.pl
+test/support/runner_hostile_main.pl
+test/support/runner_hostile_probe.pl
+test/support/runner_integrity_test.pl
+test/support/runner_inventory_probe.pl
+test/support/runner_load_error_after.pl
+test/support/runner_load_error_suite.pl
+test/support/runner_missing_file_probe.pl
+test/support/runner_partial_spoof.pl
+test/support/runner_passing_test.pl
+test/support/runner_setup_test.pl
+test/support/runner_signal_probe.pl
+test/support/runner_strict_load_probe.pl
+test/support/runner_subset_tests.pl
+test/support/runner_timeout_test.pl
+test/support/runner_unstrict_load_probe.pl
+test/support/tool_effect_crash_support.pl
+test/support/tool_effect_test_support.pl
+test/support/tool_loader_library_alpha.pl
+test/support/tool_loader_library_beta.pl
+test/tool_effect_crash_phase1.pl
+test/tool_effect_crash_phase2.pl
+third_party/mattpocock-skills/LICENSE
+third_party/mattpocock-skills/UPSTREAM.md
+third_party/mattpocock-skills/skills/README.md
+third_party/mattpocock-skills/skills/engineering/code-review/SKILL.md
+third_party/mattpocock-skills/skills/engineering/codebase-design/DEEPENING.md
+third_party/mattpocock-skills/skills/engineering/codebase-design/DESIGN-IT-TWICE.md
+third_party/mattpocock-skills/skills/engineering/codebase-design/SKILL.md
+third_party/mattpocock-skills/skills/engineering/diagnosing-bugs/SKILL.md
+third_party/mattpocock-skills/skills/engineering/domain-modeling/ADR-FORMAT.md
+third_party/mattpocock-skills/skills/engineering/domain-modeling/CONTEXT-FORMAT.md
+third_party/mattpocock-skills/skills/engineering/domain-modeling/SKILL.md
+third_party/mattpocock-skills/skills/engineering/grill-with-docs/SKILL.md
+third_party/mattpocock-skills/skills/engineering/implement/SKILL.md
+third_party/mattpocock-skills/skills/engineering/prototype/LOGIC.md
+third_party/mattpocock-skills/skills/engineering/prototype/SKILL.md
+third_party/mattpocock-skills/skills/engineering/prototype/UI.md
+third_party/mattpocock-skills/skills/engineering/research/SKILL.md
+third_party/mattpocock-skills/skills/engineering/resolving-merge-conflicts/SKILL.md
+third_party/mattpocock-skills/skills/engineering/tdd/SKILL.md
+third_party/mattpocock-skills/skills/engineering/tdd/mocking.md
+third_party/mattpocock-skills/skills/engineering/tdd/tests.md
+third_party/mattpocock-skills/skills/engineering/wizard/SKILL.md
+third_party/mattpocock-skills/skills/engineering/wizard/template.sh
+third_party/mattpocock-skills/skills/misc/README.md
+third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/SKILL.md
+third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/agents/openai.yaml
+third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
+third_party/mattpocock-skills/skills/misc/migrate-to-shoehorn/SKILL.md
+third_party/mattpocock-skills/skills/misc/migrate-to-shoehorn/agents/openai.yaml
+third_party/mattpocock-skills/skills/misc/scaffold-exercises/SKILL.md
+third_party/mattpocock-skills/skills/misc/scaffold-exercises/agents/openai.yaml
+third_party/mattpocock-skills/skills/misc/setup-pre-commit/SKILL.md
+third_party/mattpocock-skills/skills/misc/setup-pre-commit/agents/openai.yaml
+third_party/mattpocock-skills/skills/productivity/grill-me/SKILL.md
+third_party/mattpocock-skills/skills/productivity/grilling/SKILL.md
+third_party/mattpocock-skills/skills/productivity/handoff/SKILL.md
+third_party/mattpocock-skills/upstream
+```
+
+## Test and CI paths touched, last 14 days
+
+```text
+.github/workflows/agent-prolog-ui.yml
+.github/workflows/ci.yml
+.github/workflows/issue-185-patch.yml
+.github/workflows/issue-191-patch.yml
+.github/workflows/nix.yml
+.github/workflows/pack-install.yml
+.github/workflows/paid-openrouter.yml
+.github/workflows/rage-176-realize-once.yml
+.github/workflows/report-workflow-failures.yml
+.github/workflows/tree-sitter.yml
+agentProlog/ui/opentui/test/client-close.test.ts
+agentProlog/ui/opentui/test/client.test.ts
+agentProlog/ui/opentui/test/protocol.test.ts
+agentProlog/ui/opentui/test/render.test.tsx
+agentProlog/ui/opentui/test/transport.integration.ts
+flake.nix
+scripts/build-tree-sitter-test-grammars.sh
+scripts/research_approval_validator.pl
+scripts/validate_research_approval.pl
+test/deterministic_corpus.pl
+test/deterministic_runner.pl
+test/effect_legacy_fixture.pl
+test/effect_migration_crash_worker.pl
+test/effect_projection_crash_phase1.pl
+test/effect_projection_crash_phase2.pl
+test/effect_restart_phase1.pl
+test/effect_restart_phase1_completed.pl
+test/effect_restart_phase2_completed.pl
+test/effect_restart_phase2_indeterminate.pl
+test/effect_restart_phase2_reconcile.pl
+test/effect_restart_support.pl
+test/effect_store_contender.pl
+test/effect_store_owner_phase1.pl
+test/effect_store_race_contender.pl
+test/fixtures/prolog_agent_ui_v1_session.ndjson
+test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
+test/fixtures/skills/engineering/enriched/SKILL.md
+test/fixtures/skills/engineering/tdd/SKILL.md
+test/fixtures/skills/engineering/tdd/tests.md
+test/fixtures/skills/misc/unrelated/SKILL.md
+test/fixtures/skills/productivity/grill-me/SKILL.md
+test/live_chain_stream_openrouter_test.pl
+test/load_all.pl
+test/load_error_status_test.pl
+test/pack_install_smoke.pl
+test/pack_load_smoke.pl
+test/prolog_agent_ui_fixture_command_codec_test.pl
+test/prolog_agent_ui_v1_test.pl
+test/rlm_agent_authority_test.pl
+test/rlm_agent_graph_async_test.pl
+test/rlm_agent_test.pl
+test/rlm_agent_zero_adapter_test.pl
+test/rlm_artifact_test.pl
+test/rlm_async_canonical_test.pl
+test/rlm_async_control_test.pl
+test/rlm_async_test.pl
+test/rlm_authority_hardening_test.pl
+test/rlm_authority_lifecycle_test.pl
+test/rlm_authority_test.pl
+test/rlm_chain_control_test.pl
+test/rlm_chain_message_metadata_test.pl
+test/rlm_chain_test.pl
+test/rlm_cli_test.pl
+test/rlm_closed_data_test.pl
+test/rlm_completion_final_handoff_test.pl
+test/rlm_completion_planner_validation_retry_test.pl
+test/rlm_completion_test.pl
+test/rlm_completion_tool_visibility_test.pl
+test/rlm_context_adapter_test.pl
+test/rlm_context_budget_test.pl
+test/rlm_context_mount_test.pl
+test/rlm_context_test.pl
+test/rlm_conversation_cold_test.pl
+test/rlm_conversation_runtime_test.pl
+test/rlm_conversation_test.pl
+test/rlm_conversation_warm_test.pl
+test/rlm_effect_adversarial_test.pl
+test/rlm_effect_authority_test.pl
+test/rlm_effect_executor_test.pl
+test/rlm_effect_hardening_test.pl
+test/rlm_effect_migration_restart_test.pl
+test/rlm_effect_migration_test.pl
+test/rlm_effect_restart_test.pl
+test/rlm_effect_test.pl
+test/rlm_evolution_test.pl
+test/rlm_graph_authority_test.pl
+test/rlm_mcp_declaration_security_test.pl
+test/rlm_mcp_dual_test.pl
+test/rlm_nested_trajectory_test.pl
+test/rlm_nested_usage_test.pl
+test/rlm_project_source_native_test.pl
+test/rlm_project_source_test.pl
+test/rlm_prompt_command_test.pl
+test/rlm_prompt_compiler_test.pl
+test/rlm_recursion_runtime_test.pl
+test/rlm_research_approval_test.pl
+test/rlm_result_accept_test.pl
+test/rlm_runtime_status_test.pl
+test/rlm_skill_eval_test.pl
+test/rlm_skill_graph_test.pl
+test/rlm_skill_symlink_test.pl
+test/rlm_skill_test.pl
+test/rlm_spec_lang_test.pl
+test/rlm_spec_verify_test.pl
+test/rlm_spec_workflow_test.pl
+test/rlm_subagent_deadline_test.pl
+test/rlm_subagent_supervision_test.pl
+test/rlm_subagent_test.pl
+test/rlm_tool_effect_test.pl
+test/rlm_tool_loader_security_test.pl
+test/rlm_tool_loader_test.pl
+test/rlm_tool_mcp_async_test.pl
+test/rlm_tool_mcp_scheduler_test.pl
+test/rlm_tool_test.pl
+test/rlm_tree_sitter_test.pl
+test/run_constraint_benchmark.pl
+test/run_runner_integrity_tests.pl
+test/run_tests.pl
+test/run_tool_mcp_async_tests.pl
+test/run_tree_sitter_tests.pl
+test/runner_main_ownership_probe.pl
+test/support/completion_final_handoff_support.pl
+test/support/completion_test_support.pl
+test/support/load_error_fixture.pl
+test/support/prolog-agent-ui-fixture.pl
+test/support/prolog_agent_ui_fixture.pl
+test/support/rlm_constraint_benchmark_test.pl
+test/support/rlm_delegation_runtime_cases.pl
+test/support/run_runner_scenario.pl
+test/support/runner_adversarial_failures.pl
+test/support/runner_blocked_test.pl
+test/support/runner_budget_setup_test.pl
+test/support/runner_budget_test.pl
+test/support/runner_condition_test.pl
+test/support/runner_duplicate_test.pl
+test/support/runner_hostile_guard_probe.pl
+test/support/runner_hostile_main.pl
+test/support/runner_hostile_probe.pl
+test/support/runner_integrity_test.pl
+test/support/runner_inventory_probe.pl
+test/support/runner_load_error_after.pl
+test/support/runner_load_error_suite.pl
+test/support/runner_missing_file_probe.pl
+test/support/runner_partial_spoof.pl
+test/support/runner_passing_test.pl
+test/support/runner_setup_test.pl
+test/support/runner_signal_probe.pl
+test/support/runner_strict_load_probe.pl
+test/support/runner_subset_tests.pl
+test/support/runner_timeout_test.pl
+test/support/runner_unstrict_load_probe.pl
+test/support/tool_effect_crash_support.pl
+test/support/tool_effect_test_support.pl
+test/support/tool_loader_library_alpha.pl
+test/support/tool_loader_library_beta.pl
+test/tool_effect_crash_phase1.pl
+test/tool_effect_crash_phase2.pl
+third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
+```
