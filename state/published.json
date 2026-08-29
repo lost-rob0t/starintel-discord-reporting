@@ -1359,6 +1359,18 @@
       "report_digest": "1661d5ce36a5ebb51db852a1cea80717c1d8ccfaf08442999d0984e075ef71cd",
       "status": "verified-delivered"
     },
+    "reports/starintel-updates-changelog/2026-08-29T14-49-00Z-report.md": {
+      "accepted_at": "2026-08-29T14:50:25.657637+00:00",
+      "attempted_at": "2026-08-29T14:50:25.657637+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-08-29T14:50:25.657637+00:00",
+      "message_ids": [
+        "1543271614211170446"
+      ],
+      "report_digest": "18e45a875e5fb0ec807fbb972c01472291bb63617b0aefce92d58e28cf1fa57a",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/20260823T041100Z-seventh-gen-deployment-report.md": {
       "accepted_at": "2026-08-23T05:52:37.395312+00:00",
       "attempted_at": "2026-08-23T05:52:37.395312+00:00",
