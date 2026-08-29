@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-doc
 
-- generated: `2026-08-28T18:46:28Z`
+- generated: `2026-08-29T02:50:00Z`
 - canonical branch: `master`
 - changelog eligible: `no`
 - head: [`980f7a217a0d28f22508c2f05831ceb2fefe8bd0`](https://github.com/lost-rob0t/starintel-doc/commit/980f7a217a0d28f22508c2f05831ceb2fefe8bd0)

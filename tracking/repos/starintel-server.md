@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-08-28T18:45:55Z`
+- generated: `2026-08-29T02:49:34Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`e99aadd3f44505bc692708aad5e34ab0c4ab0036`](https://github.com/lost-rob0t/starintel-server/commit/e99aadd3f44505bc692708aad5e34ab0c4ab0036)
@@ -198,7 +198,6 @@
 2026-08-16 516742d1de433a79fe1921b1b8b1ac00e6599e2a Retire dev: final reconciliation into master (#99)
 2026-08-16 884ffb59945bb1a7cd30eeff6efd1207a1c9b6cf ci: run operational salvage on master PRs
 2026-08-16 bd4b9d1ecd808f5e3aecf53df0b9c54337500b94 reconcile: merge dev into canonical master history
-2026-08-14 58aa8ab283ba1181c9baa51afd6be46d1e109ca5 Fix integration runner loopback resolution
 ```
 
 ## Repository paths changed, last 14 days
@@ -294,8 +293,6 @@ t/oauth-http-provider-test.lisp
 t/run-tests.lisp
 t/runtime-lifecycle-test.lisp
 t/v09-runtime-test.lisp
-t/valkey-lease-integration-test.lisp
-t/valkey-lease-review-regression-test.lisp
 tests/test_v09_runtime_contract.py
 ```
 
@@ -331,7 +328,5 @@ t/oauth-http-provider-test.lisp
 t/run-tests.lisp
 t/runtime-lifecycle-test.lisp
 t/v09-runtime-test.lisp
-t/valkey-lease-integration-test.lisp
-t/valkey-lease-review-regression-test.lisp
 tests/test_v09_runtime_contract.py
 ```
