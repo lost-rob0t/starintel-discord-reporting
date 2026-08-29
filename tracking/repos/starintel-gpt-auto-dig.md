@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-08-29T16:45:06Z`
+- generated: `2026-08-29T20:57:17Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`a4b73884d1556cf8eb3bc1ec924d4dd947800733`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/a4b73884d1556cf8eb3bc1ec924d4dd947800733)
-- head date: `2026-08-29T08:58:38-04:00`
-- head subject: Merge pull request #2305 from lost-rob0t/fix/use-prolog-rlm-298-schema-fix
+- head: [`e75a02a22813a2e5b337ba1939490f357675efa7`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/e75a02a22813a2e5b337ba1939490f357675efa7)
+- head date: `2026-08-29T16:25:47-04:00`
+- head subject: Temporarily disable Auto-Dig Prolog actor runner
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 e75a02a22813a2e5b337ba1939490f357675efa7 Temporarily disable Auto-Dig Prolog actor runner
 2026-08-29 a4b73884d1556cf8eb3bc1ec924d4dd947800733 Merge pull request #2305 from lost-rob0t/fix/use-prolog-rlm-298-schema-fix
 2026-08-29 c5210c524fb0445597853128c44c66ab7ce5a5cb chore: remove temporary Prolog-RLM upgrade workflow
 2026-08-29 9ede514e70ac2d92f61366b1e259815394e6b60e test: restore complete 14-tool direct inventory

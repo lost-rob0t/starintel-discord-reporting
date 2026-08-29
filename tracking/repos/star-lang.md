@@ -1,6 +1,6 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-08-29T16:45:11Z`
+- generated: `2026-08-29T20:57:22Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`0472ed8f4472252038b62bb19a17aa09d2ddf1b4`](https://github.com/lost-rob0t/star-lang/commit/0472ed8f4472252038b62bb19a17aa09d2ddf1b4)
@@ -36,13 +36,6 @@
 2026-08-16 7e1d0911cdd78bccba3fe2af00a068d1d7f30899 feat(logic): define logic IR package surface
 2026-08-16 d0f41883eb6773356fb876a0b3a5830a31f7d59f feat(logic): add final-owned logic IR system
 2026-08-16 fc5a6e00ff212278dd1c263223272501d81ad678 Add portable logic protocol and fake backend foundation
-2026-08-15 067f12506f429c8d34f0383729972e3ee1337c05 Merge pull request #38 from lost-rob0t/agent/freeze-verification-certificate-claims
-2026-08-15 fc5537a885f214b69c382e7d54b04435107f5018 Keep final dispatcher tests in runtime gate
-2026-08-15 6076285069e01ad2d088e328de566646d09fe10b Run final wire dispatcher tests through ASDF
-2026-08-15 4df1941596f0f6034322b8e2fd7773a453d5392e Delegate prototype idempotency identity to final dispatcher
-2026-08-15 d4dfd192c4c68fd3030e6ed096095232d699193f Reduce prototype dispatcher to final-runtime compatibility
-2026-08-15 4b657eb2f2cea38f3fa36ee43234ed040f16cf86 Load final wire dispatcher from starlang-runtime
-2026-08-15 45a5c043147d6c6c52eb35177e8b8c5895a28244 Fix final wire dispatcher package surface
 ```
 
 ## Repository paths changed, last 14 days
@@ -53,8 +46,6 @@
 ci/target-systems.txt
 fixtures/canonical/SHA256SUMS
 fixtures/canonical/logic-call-materialized-v1.json
-prototype/deterministic-dispatcher-prototype.lisp
-prototype/dispatcher-idempotency-identity-prototype.lisp
 star-logic-ir/src/canonical-json.lisp
 star-logic-ir/src/logic-ir.lisp
 star-logic-ir/src/packages.lisp
@@ -76,9 +67,6 @@ starlang-compiler/src/packages.lisp
 starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/starlang-compiler-tests.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
-starlang-runtime/src/packages.lisp
-starlang-runtime/starlang-runtime.asd
-starlang-runtime/tests/starlang-runtime-tests.asd
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -99,6 +87,4 @@ star-logic-testing/star-logic-testing.asd
 starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/starlang-compiler-tests.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
-starlang-runtime/starlang-runtime.asd
-starlang-runtime/tests/starlang-runtime-tests.asd
 ```

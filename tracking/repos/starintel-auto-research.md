@@ -1,15 +1,24 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-08-29T16:45:07Z`
+- generated: `2026-08-29T20:57:18Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`1960e7db63e1a7847a25c47465cd31680dd5fba6`](https://github.com/lost-rob0t/starintel-auto-research/commit/1960e7db63e1a7847a25c47465cd31680dd5fba6)
-- head date: `2026-08-29T12:07:11-04:00`
-- head subject: design: define data config and trusted init boundary
+- head: [`e6dbde75fc189e39d308387b0d4ad0e260d4c470`](https://github.com/lost-rob0t/starintel-auto-research/commit/e6dbde75fc189e39d308387b0d4ad0e260d4c470)
+- head date: `2026-08-29T16:04:07-04:00`
+- head subject: design: bound embeddable server core extraction
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 e6dbde75fc189e39d308387b0d4ad0e260d4c470 design: bound embeddable server core extraction
+2026-08-29 fc6d203d1fe3107bd256ad3ce0db3179df77e985 research: define embeddable server library boundary
+2026-08-29 f14c413672efb3ad5f561254936cd1313e82940b design: define strict JSON HTTP boundary
+2026-08-29 619266ccc42e4c39345af01f78142449f7aa8e79 research: advance strict JSON boundary with current parser evidence
+2026-08-29 f9a5c187ebed3044fc6ca0cb7a9ead02e8c5679c index: add target lease recovery race proof layer
+2026-08-29 affc8bec7819622bfdfcfb39d42dc1843c7aff46 design: define target lease recovery race proof harness
+2026-08-29 17bbc8528ee89e1891c9c1ea85e3ee936591b3ff research: define target lease recovery and race proof model
+2026-08-29 3fe200ee6d2546fcee01fa7a8cca9ed958ed9c1a design: refresh target lease HTTP integration boundary
+2026-08-29 a73bdadd3da7a9803ed0e863d27fba8ff51c4adf research: refresh target lease execution against current server
 2026-08-29 1960e7db63e1a7847a25c47465cd31680dd5fba6 design: define data config and trusted init boundary
 2026-08-29 0beda5eb4552715d40a7e26000c604a18249f8ed research: audit residual deployment config and secret boundary
 2026-08-29 e276099814b4650894709db0eb6970a245fe33a6 design: preserve Sento bounded mailboxes for admission
@@ -133,8 +142,6 @@
 2026-08-15 97bf941f9945dc12d610062eead712aeb09752fc Index STAR-LANG-009 approval
 2026-08-15 c790a5f30052e1ab6d2db353212557265c4600e3 Approve STAR-LANG-009 logic runtime API
 2026-08-15 d03aa1d47814496c70970b888b0ccd01e12104bd Research and specify StarLang logic runtime API
-2026-08-15 f3417d6f1871a462bcb48ae4e2be01200ba4490c Research Lisp-native StarLang pragma directives
-2026-08-15 95065699145b93377f027d2689feb443b165de10 Research explicit StarLang logic backend selection (#119)
 ```
 
 ## Repository paths changed, last 14 days
@@ -174,6 +181,7 @@ roam/design/star-lang/STAR-LANG-011-swi-prolog-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-012-n-prolog-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-013-explicit-agents-prolog-rlm.org
 roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
+roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
 roam/design/star-server/STAR-SERVER-038-gserver-client-runtime-and-local-administration.org
 roam/design/star-server/STAR-SERVER-040-starrouter-zeromq-transport-api-overhaul.org
 roam/design/star-server/STAR-SERVER-041-star-uri-authority-routing-protocol.org
@@ -181,13 +189,17 @@ roam/design/star-server/STAR-SERVER-042-bixby-oauth-authorization-code-provider.
 roam/design/star-server/STAR-SERVER-042-workload-dispatchers-router-pools.org
 roam/design/star-server/STAR-SERVER-043-sento-bounded-admission.org
 roam/design/star-server/STAR-SERVER-044-deployment-config-trusted-init.org
+roam/design/star-server/STAR-SERVER-045-target-lease-recovery-race-matrix.org
+roam/design/star-server/STAR-SERVER-046-embeddable-server-library-boundary.org
 roam/design/star-server/STAR-SERVER-059-generic-target-create-v1.org
+roam/design/star-server/STAR-SERVER-060-strict-json-http-boundary.org
 roam/implement/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/auto-research/STAR-RESEARCH-PIPELINE-INDEX-000-adaptive-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
+roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
 roam/indexes/star-server/STAR-OAUTH-INDEX-042-bixby-user-authorization.org
 roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
 roam/internal/OSINT-TOOLS-LEDGER.org
@@ -290,12 +302,14 @@ roam/research/star-server/STAR-RESEARCH-016-raw-data-replay.org
 roam/research/star-server/STAR-RESEARCH-029-distributed-target-lease-and-fencing.org
 roam/research/star-server/STAR-RESEARCH-030-backend-neutral-kv-lease-store.org
 roam/research/star-server/STAR-RESEARCH-032-authenticated-target-lease-http-execution.org
+roam/research/star-server/STAR-RESEARCH-033-target-lease-recovery-race-matrix.org
 roam/research/star-server/STAR-RESEARCH-033-titanic-lineage-and-starintel-history.org
 roam/research/star-server/STAR-RESEARCH-034-titanic-durable-actor-job-protocol.org
 roam/research/star-server/STAR-RESEARCH-035-titanic-backend-and-transport-comparison.org
 roam/research/star-server/STAR-RESEARCH-036-titanic-failure-semantics-and-contract-tests.org
 roam/research/star-server/STAR-RESEARCH-037-titanic-polyglot-zmq-transport-correction.org
 roam/research/star-server/STAR-RESEARCH-038-gserver-client-library-and-administration-boundary.org
+roam/research/star-server/STAR-RESEARCH-039-embeddable-server-library-boundary.org
 roam/research/star-server/STAR-RESEARCH-039-machine-readable-http-contract-and-client-generation.org
 roam/research/star-server/STAR-RESEARCH-040-starrouter-zeromq-transport-api-overhaul.org
 roam/research/star-server/STAR-RESEARCH-041-strict-json-http-boundary.org
