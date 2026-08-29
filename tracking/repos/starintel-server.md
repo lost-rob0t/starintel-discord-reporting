@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-08-29T02:49:34Z`
+- generated: `2026-08-29T11:08:21Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`e99aadd3f44505bc692708aad5e34ab0c4ab0036`](https://github.com/lost-rob0t/starintel-server/commit/e99aadd3f44505bc692708aad5e34ab0c4ab0036)
-- head date: `2026-08-28T03:07:09-04:00`
-- head subject: Approve v0.9 runtime implementation conformance
+- head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
+- head date: `2026-08-29T06:43:04-04:00`
+- head subject: Merge pull request #132 from lost-rob0t/agent/emacs-client-contract
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 8fb297d146e7332fae7e38170b5b49d49530ac53 Merge pull request #132 from lost-rob0t/agent/emacs-client-contract
+2026-08-29 3768df68dc0172c64fa803d6e10c285d1f84d3b0 feat: rewrite emacs client as async contract layer with ERT suite
 2026-08-28 e99aadd3f44505bc692708aad5e34ab0c4ab0036 Approve v0.9 runtime implementation conformance
 2026-08-28 0caed07ff6ca31ca488c369c79fb1c1a8ff0f78d Merge pull request #127 from lost-rob0t/rage/59-target-create-v1
 2026-08-25 38666dab3610bd7771fa1c8ab3bbe67ebad0b594 fix: default Bixby operations to canonical target scope
@@ -207,6 +209,7 @@
 .github/workflows/operational-salvage.yml
 .github/workflows/smoke-tests.yml
 .github/workflows/starintel-schema-lock.yml
+Makefile
 addons/bixby/bixby.lisp
 addons/bixby/package.lisp
 cli/api-client.lisp
@@ -223,6 +226,8 @@ cli/http-contract.lisp
 cli/star-cli-management.lisp
 cli/star-cli.asd
 cli/starintel-gserver-client.asd
+client-test.el
+client.el
 docker/star-server-init.lisp
 docs/addons.org
 docs/development.org

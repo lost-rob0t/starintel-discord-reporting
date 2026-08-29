@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-08-29T02:49:37Z`
+- generated: `2026-08-29T11:08:23Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`36ce245209dccbc9645a1ae9532a8604bdd27b0b`](https://github.com/lost-rob0t/starintel-auto-research/commit/36ce245209dccbc9645a1ae9532a8604bdd27b0b)
-- head date: `2026-08-28T03:04:10-04:00`
-- head subject: Validate human-gated ADARD stage worker profiles
+- head: [`5f6380f30c35bd2c9ee4b9bee681ec93b6b2a595`](https://github.com/lost-rob0t/starintel-auto-research/commit/5f6380f30c35bd2c9ee4b9bee681ec93b6b2a595)
+- head date: `2026-08-29T06:57:35-04:00`
+- head subject: Persist ARDR research issues to durable Org files
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 5f6380f30c35bd2c9ee4b9bee681ec93b6b2a595 Persist ARDR research issues to durable Org files
 2026-08-28 36ce245209dccbc9645a1ae9532a8604bdd27b0b Validate human-gated ADARD stage worker profiles
 2026-08-28 4e7c025eb7a04c92e237d7a8dc76a66bd553d26b Document human-gated ADARD stage workers
 2026-08-28 e3f646e9fd02e2a909606a08c999f077be93c587 Add verification worker communication rules
@@ -149,6 +150,7 @@ roam/design/star-server/STAR-SERVER-040-starrouter-zeromq-transport-api-overhaul
 roam/design/star-server/STAR-SERVER-041-star-uri-authority-routing-protocol.org
 roam/design/star-server/STAR-SERVER-042-bixby-oauth-authorization-code-provider.org
 roam/design/star-server/STAR-SERVER-059-generic-target-create-v1.org
+roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/auto-research/STAR-RESEARCH-PIPELINE-INDEX-000-adaptive-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
@@ -156,6 +158,29 @@ roam/indexes/star-server/STAR-OAUTH-INDEX-042-bixby-user-authorization.org
 roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
 roam/internal/OSINT-TOOLS-LEDGER.org
 roam/internal/osint/OSINT-IDENTITY-ENUMERATION-ENGINES.org
+roam/research/ardr-issues/ARDR-ISSUE-072-starintel-ontology-foundation.org
+roam/research/ardr-issues/ARDR-ISSUE-128-operator-research-decisions.org
+roam/research/ardr-issues/ARDR-ISSUE-133-meta-mcp-execution-plane.org
+roam/research/ardr-issues/ARDR-ISSUE-136-starintel-mcp-authoritative-interface.org
+roam/research/ardr-issues/ARDR-ISSUE-137-unified-star-uri-routing-fediwatch.org
+roam/research/ardr-issues/ARDR-ISSUE-147-threat-intelligence-feeds.org
+roam/research/ardr-issues/ARDR-ISSUE-151-webhook-subscriptions-durable-delivery.org
+roam/research/ardr-issues/ARDR-ISSUE-153-reconcile-research-implementation-evidence.org
+roam/research/ardr-issues/ARDR-ISSUE-156-starlang-v09-research-refresh.org
+roam/research/ardr-issues/ARDR-ISSUE-157-recover-operator-research-approvals.org
+roam/research/ardr-issues/ARDR-ISSUE-158-approve-starlang-research-batch.org
+roam/research/ardr-issues/ARDR-ISSUE-159-mailaccess-identity-domain-server.org
+roam/research/ardr-issues/ARDR-ISSUE-160-username-account-enumeration.org
+roam/research/ardr-issues/ARDR-ISSUE-161-email-google-identity-pivots.org
+roam/research/ardr-issues/ARDR-ISSUE-162-infrastructure-discovery-attack-surface.org
+roam/research/ardr-issues/ARDR-ISSUE-163-spiderfoot-orchestration-correlation.org
+roam/research/ardr-issues/ARDR-ISSUE-164-intelowl-analysis-lifecycle.org
+roam/research/ardr-issues/ARDR-ISSUE-165-starlang-osint-orchestration-gaps.org
+roam/research/ardr-issues/ARDR-ISSUE-169-starlang-source-acquisition-scraping.org
+roam/research/ardr-issues/ARDR-ISSUE-170-ardr-auto-research-policy.org
+roam/research/ardr-issues/ARDR-ISSUE-176-runtime-thread-budget.org
+roam/research/ardr-issues/ARDR-ISSUE-178-bixby-zitadel-account-linking.org
+roam/research/ardr-issues/ARDR-ISSUE-180-identity-email-google-enrichment.org
 roam/research/auto-dig/ADAR-APPROVAL-001-dashboard-ux.org
 roam/research/auto-dig/ADAR-RESEARCH-001-dashboard-ux-and-cross-site-navigation.org
 roam/research/auto-research/STAR-MCP-RESEARCH-001-authoritative-platform-interface.org
@@ -255,12 +280,16 @@ scripts/list-unreviewed-research.py
 scripts/publish-pages
 scripts/research_approval_migration.py
 scripts/research_queue.py
+scripts/save-research.py
 scripts/validate-docs.py
 scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
+skills/save-research/SKILL.md
 tests/test_research_approval_history.py
 tests/test_research_approval_migration.py
 tests/test_research_pending.py
+tests/test_research_persistence_contract.py
+tests/test_research_source_of_truth_contract.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -274,10 +303,13 @@ scripts/list-unreviewed-research.py
 scripts/publish-pages
 scripts/research_approval_migration.py
 scripts/research_queue.py
+scripts/save-research.py
 scripts/validate-docs.py
 scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
 tests/test_research_approval_history.py
 tests/test_research_approval_migration.py
 tests/test_research_pending.py
+tests/test_research_persistence_contract.py
+tests/test_research_source_of_truth_contract.py
 ```
