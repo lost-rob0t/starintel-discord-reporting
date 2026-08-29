@@ -1,15 +1,23 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-29T11:08:30Z`
+- generated: `2026-08-29T16:45:12Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`a89175bf925df3afa358f8d05a370fe2a03e2117`](https://github.com/lost-rob0t/prolog-rlm/commit/a89175bf925df3afa358f8d05a370fe2a03e2117)
-- head date: `2026-08-28T03:18:21-04:00`
-- head subject: feat: run typed-plan model steps through native provider sessions
+- head: [`b654831a0150a593821179da1d3886dfd64deb5c`](https://github.com/lost-rob0t/prolog-rlm/commit/b654831a0150a593821179da1d3886dfd64deb5c)
+- head date: `2026-08-29T09:03:59-04:00`
+- head subject: chore: remove temporary issue 304 patch workflow
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 b654831a0150a593821179da1d3886dfd64deb5c chore: remove temporary issue 304 patch workflow
+2026-08-29 25c0194ca98a0a9ad7e6ae221700b21ed99cffd6 fix: align context peek validation with native schema
+2026-08-29 3a860a0b8c2ec986d06d4301b757d3ec938b8deb ci: apply and test issue 304 selector fix
+2026-08-29 2275cdfe0eb1f3c593467a4f153bbedc2dea05f1 test: reproduce live context peek selector contract mismatch
+2026-08-29 eb2411afdaf981a0a121f55b7ddf23dc9fcef812 chore: remove temporary issue 298 patch workflow
+2026-08-29 eea576f9b13e9ed3f974a4af4944c9c87183e841 fix: render runtime any as unconstrained JSON Schema
+2026-08-29 1a7bb00115366603dfe38a3ec6838d055f1f7160 ci: apply and test issue 298 schema fix
+2026-08-29 af94929ebd094c69fa64795152bdabb9e054938b test: reproduce MCP any-schema direct projection failure
 2026-08-27 a89175bf925df3afa358f8d05a370fe2a03e2117 feat: run typed-plan model steps through native provider sessions
 2026-08-27 1c6022821064b10481acbd08a55d97dcdb89c351 docs: treat typed plans as first-class
 2026-08-27 5a365bbf0560292856f87aedd4c08e2f9ab2dde5 fix: preserve contextual compilation in direct mode
@@ -353,6 +361,8 @@
 .github/patches/issue-185.py
 .github/workflows/agent-prolog-ui.yml
 .github/workflows/ci.yml
+.github/workflows/fix-298-self-patch.yml
+.github/workflows/fix-304-self-patch.yml
 .github/workflows/issue-185-patch.yml
 .github/workflows/issue-191-patch.yml
 .github/workflows/nix.yml
@@ -609,6 +619,7 @@ test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
+test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
 test/rlm_effect_authority_test.pl
@@ -622,6 +633,7 @@ test/rlm_evolution_test.pl
 test/rlm_graph_authority_test.pl
 test/rlm_mcp_declaration_security_test.pl
 test/rlm_mcp_dual_test.pl
+test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
@@ -740,6 +752,8 @@ third_party/mattpocock-skills/upstream
 ```text
 .github/workflows/agent-prolog-ui.yml
 .github/workflows/ci.yml
+.github/workflows/fix-298-self-patch.yml
+.github/workflows/fix-304-self-patch.yml
 .github/workflows/issue-185-patch.yml
 .github/workflows/issue-191-patch.yml
 .github/workflows/nix.yml
@@ -821,6 +835,7 @@ test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
+test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
 test/rlm_effect_authority_test.pl
@@ -834,6 +849,7 @@ test/rlm_evolution_test.pl
 test/rlm_graph_authority_test.pl
 test/rlm_mcp_declaration_security_test.pl
 test/rlm_mcp_dual_test.pl
+test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl

@@ -1,15 +1,30 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-08-29T11:08:22Z`
+- generated: `2026-08-29T16:45:06Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`f9854092a34b60767e95a19ddea4332cdb6720eb`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/f9854092a34b60767e95a19ddea4332cdb6720eb)
-- head date: `2026-08-27T12:14:13-04:00`
-- head subject: Merge pull request #2301 from lost-rob0t/fix/auto-dig-rlm-observability-2026-08-27
+- head: [`a4b73884d1556cf8eb3bc1ec924d4dd947800733`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/a4b73884d1556cf8eb3bc1ec924d4dd947800733)
+- head date: `2026-08-29T08:58:38-04:00`
+- head subject: Merge pull request #2305 from lost-rob0t/fix/use-prolog-rlm-298-schema-fix
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 a4b73884d1556cf8eb3bc1ec924d4dd947800733 Merge pull request #2305 from lost-rob0t/fix/use-prolog-rlm-298-schema-fix
+2026-08-29 c5210c524fb0445597853128c44c66ab7ce5a5cb chore: remove temporary Prolog-RLM upgrade workflow
+2026-08-29 9ede514e70ac2d92f61366b1e259815394e6b60e test: restore complete 14-tool direct inventory
+2026-08-29 e12b7edcc096231f88726e2d6e6248b890c93b0e fix: restore full Brave direct tool inventory
+2026-08-29 f8d8e623cb45e47d43de37d8c4a02de568b4f48a fix: pin Prolog-RLM any-schema renderer
+2026-08-29 4ad80f280ee983a4f9b5d997405cd7b18b0b29c5 ci: apply and test Prolog-RLM schema upgrade
+2026-08-29 46fdb4f497d2628c1797bd570467121f3ebdf373 Merge pull request #2304 from lost-rob0t/fix/auto-dig-skip-unprojectable-llm-context
+2026-08-29 fb4944574bf21b8775d6cb9a9c7624f7bb4f3ff9 test: require 13 projectable research tools
+2026-08-29 99336a4dfdbb3e6df292bb9d84a0e991a0faedb4 fix: skip MCP schema Prolog-RLM cannot project yet
+2026-08-29 22d70678c0aa26c15c9e24d06ccea0d10dbcf885 Merge pull request #2303 from lost-rob0t/fix/auto-dig-direct-rlm-2026-08-29
+2026-08-29 f0cb6cad309df6d76d48c2739bdaf88eb0d479f4 test: require complete direct research tool inventory
+2026-08-29 afd59d775f781b49b5eba5a26460b881e28e7f15 feat: expose full read-only research MCP inventory
+2026-08-29 d616cc4e431ba0c776962ed733b10aa62ae92e27 ci: pin latest Prolog-RLM direct runtime
+2026-08-29 b5e455358a2055670d4b0e96bbf6a4ab5ba0da7a test: cover direct-mode Auto-Dig runtime policy
+2026-08-29 1f8882388a4d80bf589c733df4a8c6a8c38024a5 fix: run Auto-Dig research through direct RLM mode
 2026-08-27 f9854092a34b60767e95a19ddea4332cdb6720eb Merge pull request #2301 from lost-rob0t/fix/auto-dig-rlm-observability-2026-08-27
 2026-08-27 b52b96140681b149170979010a6976ac7f317f91 Make emission scrubber progress-safe on SWI 9.0
 2026-08-27 c33a0b578dce1ebe81eed26037e8ae7b9f2dd5bb Fix UTC timestamp formatting on SWI 9.0
@@ -201,6 +216,7 @@
 .github/workflows/materialize-harvest.yml
 .github/workflows/palantir-sec-principal-offices-one-shot.yml
 .github/workflows/sync-flock-locality-issues.yml
+.github/workflows/upgrade-prolog-rlm-298.yml
 .github/workflows/validate-db.yml
 AGENTS.md
 README.md
@@ -820,6 +836,7 @@ tests/test_sec_principal_office_real_cover_shapes.py
 .github/workflows/materialize-harvest.yml
 .github/workflows/palantir-sec-principal-offices-one-shot.yml
 .github/workflows/sync-flock-locality-issues.yml
+.github/workflows/upgrade-prolog-rlm-298.yml
 .github/workflows/validate-db.yml
 scripts/auto_dig_request.py
 scripts/company_public_hq.py
