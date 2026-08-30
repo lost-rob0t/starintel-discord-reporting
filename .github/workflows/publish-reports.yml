@@ -115,6 +115,19 @@ jobs:
             git show origin/main:state/published.json > state/published.json
           fi
 
+      - name: Merge verified recovery receipts
+        if: steps.reports.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f state/recovery-receipts.json ]; then
+            python scripts/merge_delivery_state.py \
+              --latest-state state/published.json \
+              --run-state state/recovery-receipts.json \
+              --output /tmp/published-recovered.json
+            mv /tmp/published-recovered.json state/published.json
+          fi
+
       - name: Verify and publish
         if: steps.reports.outputs.found == 'true'
         env:
