@@ -1,15 +1,27 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-08-29T20:57:18Z`
+- generated: `2026-08-30T00:23:01Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`e6dbde75fc189e39d308387b0d4ad0e260d4c470`](https://github.com/lost-rob0t/starintel-auto-research/commit/e6dbde75fc189e39d308387b0d4ad0e260d4c470)
-- head date: `2026-08-29T16:04:07-04:00`
-- head subject: design: bound embeddable server core extraction
+- head: [`0ccc5792e6bbf348330da316b75620698516a74e`](https://github.com/lost-rob0t/starintel-auto-research/commit/0ccc5792e6bbf348330da316b75620698516a74e)
+- head date: `2026-08-29T20:08:08-04:00`
+- head subject: design: align manifest research canonical numbering
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 0ccc5792e6bbf348330da316b75620698516a74e design: align manifest research canonical numbering
+2026-08-29 5afc066638c405c6439575b95cbe733f442d3ae4 research: remove superseded manifest research filename
+2026-08-29 ce57085dd2fc0ce6f7f6f7b6b6f78aaf54ba2209 research: renumber manifest runtime plan after ID audit
+2026-08-29 9f0426aa582aa39eff6879d1a8439a2a23643685 design: reconcile manifests with StarLang runtime planning
+2026-08-29 a236d70af29bb0d3c6c470ad7fd62ce677745cc0 research: reconcile actor and dataset manifest runtime planning
+2026-08-29 b370e64e4976380d847feb1c87251451c5a60016 design: add runtime component handle registry
+2026-08-29 908f5106143b47cff47a2d78ea2bb6833d96cba0 research: define runtime component handle registry
+2026-08-29 f2f7de3b074b252ddbb6ace4d8491880619197ce design: extract adapters behind typed runtime ports
+2026-08-29 1dc386f0c96595f8a3d859db993e33e9623b154a research: define concrete adapter extraction boundary
+2026-08-29 641b98d5cdad9d218c7974bb1c0f445ff9d26838 index: link explicit library runtime research and design
+2026-08-29 afd0eb5613b6063fda4fe187e6a48fa6963add71 design: explicit StarIntel library API and runtime ports
+2026-08-29 7a562ae77440e6fe042a78cd061ff3b3b5f0a68f research: define explicit StarIntel library API and runtime ports
 2026-08-29 e6dbde75fc189e39d308387b0d4ad0e260d4c470 design: bound embeddable server core extraction
 2026-08-29 fc6d203d1fe3107bd256ad3ce0db3179df77e985 research: define embeddable server library boundary
 2026-08-29 f14c413672efb3ad5f561254936cd1313e82940b design: define strict JSON HTTP boundary
@@ -135,13 +147,6 @@
 2026-08-19 8bc6d83b9981ae342d3652a6d5b4f0855ab057d0 research: machine-readable HTTP contract and client generation
 2026-08-18 39caddd6c5cdf8db560059bd7aadb03ce7733880 research: gserver client library boundary
 2026-08-16 ff3e88bc4118496981f0073922e2520859d30108 Split expert-system backend designs
-2026-08-15 2c7018a272e0d61f0c902a9e7d01b845897dbcbe docs(star-lang): carry 023 object gate into implementation index
-2026-08-15 cbdfc4316c544b070966a5a95c9a1807914e3a81 docs(star-lang): index 023 object reuse gate
-2026-08-15 e1573c5a34988f369bd29ca0626c12672ac1ecce research(star-lang): gate expert facts on StarIntel object reuse
-2026-08-15 be98a654e2d90c6e24941daffd9fd67e8f59f146 Merge pull request #123 from lost-rob0t/agent/approve-star-lang-009
-2026-08-15 97bf941f9945dc12d610062eead712aeb09752fc Index STAR-LANG-009 approval
-2026-08-15 c790a5f30052e1ab6d2db353212557265c4600e3 Approve STAR-LANG-009 logic runtime API
-2026-08-15 d03aa1d47814496c70970b888b0ccd01e12104bd Research and specify StarLang logic runtime API
 ```
 
 ## Repository paths changed, last 14 days
@@ -175,12 +180,12 @@ roam/design/star-lang/STAR-LANG-004-star-service-uri-discovery.org
 roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org
 roam/design/star-lang/STAR-LANG-006-final-package-extraction.org
 roam/design/star-lang/STAR-LANG-007-selectable-logic-and-expert-systems.org
-roam/design/star-lang/STAR-LANG-009-logic-runtime-api-specification.org
 roam/design/star-lang/STAR-LANG-010-lisa-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-011-swi-prolog-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-012-n-prolog-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-013-explicit-agents-prolog-rlm.org
 roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
+roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
 roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
 roam/design/star-server/STAR-SERVER-038-gserver-client-runtime-and-local-administration.org
 roam/design/star-server/STAR-SERVER-040-starrouter-zeromq-transport-api-overhaul.org
@@ -191,14 +196,17 @@ roam/design/star-server/STAR-SERVER-043-sento-bounded-admission.org
 roam/design/star-server/STAR-SERVER-044-deployment-config-trusted-init.org
 roam/design/star-server/STAR-SERVER-045-target-lease-recovery-race-matrix.org
 roam/design/star-server/STAR-SERVER-046-embeddable-server-library-boundary.org
+roam/design/star-server/STAR-SERVER-047-explicit-library-api-runtime-ports.org
+roam/design/star-server/STAR-SERVER-048-concrete-adapter-extraction.org
+roam/design/star-server/STAR-SERVER-049-component-handles-registry-readiness-health.org
 roam/design/star-server/STAR-SERVER-059-generic-target-create-v1.org
 roam/design/star-server/STAR-SERVER-060-strict-json-http-boundary.org
 roam/implement/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/auto-research/STAR-RESEARCH-PIPELINE-INDEX-000-adaptive-research.org
-roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
+roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
 roam/indexes/star-server/STAR-OAUTH-INDEX-042-bixby-user-authorization.org
 roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
@@ -311,11 +319,16 @@ roam/research/star-server/STAR-RESEARCH-037-titanic-polyglot-zmq-transport-corre
 roam/research/star-server/STAR-RESEARCH-038-gserver-client-library-and-administration-boundary.org
 roam/research/star-server/STAR-RESEARCH-039-embeddable-server-library-boundary.org
 roam/research/star-server/STAR-RESEARCH-039-machine-readable-http-contract-and-client-generation.org
+roam/research/star-server/STAR-RESEARCH-040-explicit-library-api-runtime-ports.org
 roam/research/star-server/STAR-RESEARCH-040-starrouter-zeromq-transport-api-overhaul.org
+roam/research/star-server/STAR-RESEARCH-041-concrete-adapter-extraction.org
 roam/research/star-server/STAR-RESEARCH-041-strict-json-http-boundary.org
 roam/research/star-server/STAR-RESEARCH-041-unified-star-uri-authority-routing-and-fediwatch-rabbitmq.org
 roam/research/star-server/STAR-RESEARCH-042-bixby-oauth-authorization-code-provider.org
+roam/research/star-server/STAR-RESEARCH-042-component-handles-registry-readiness-health.org
 roam/research/star-server/STAR-RESEARCH-042-strict-json-http-boundary.org
+roam/research/star-server/STAR-RESEARCH-043-manifest-runtime-plan-composition.org
+roam/research/star-server/STAR-RESEARCH-050-manifest-runtime-plan-composition.org
 roam/research/star-server/STAR-RESEARCH-059-generic-target-create-v1.org
 roam/research/star-server/STAR-RESEARCH-060-strict-json-http-boundary.org
 roam/research/starintel-discord-tool/STAR-DISCORD-RESEARCH-001-operations-interface.org
