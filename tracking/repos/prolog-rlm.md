@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-30T00:23:12Z`
+- generated: `2026-08-30T08:21:16Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`b654831a0150a593821179da1d3886dfd64deb5c`](https://github.com/lost-rob0t/prolog-rlm/commit/b654831a0150a593821179da1d3886dfd64deb5c)
@@ -348,8 +348,6 @@
 2026-08-16 26909346842f87726c9d3ec7a78ef0dbdc904fc3 Canonicalize agent and graph async execution (#61)
 2026-08-16 3db30d832f9b124d6b6e6aa3cbe2808914f4ae6e Canonical async tool + MCP runtime slice (#60)
 2026-08-16 ded8c2734a0c716c6074457b45fad5f475cd16c9 Make async execution canonical for issue #54 (#59)
-2026-08-16 ee9a28ec70dbe938c7eac15ea910f4b2e00e0706 Add dual sync/async runtime primitives (#55)
-2026-08-15 c39ea1990c1dc052e5d868e6c43d3ec7d19e2b21 docs: reconcile TODO with implemented runtime
 ```
 
 ## Repository paths changed, last 14 days

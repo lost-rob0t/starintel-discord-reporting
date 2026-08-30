@@ -1,6 +1,6 @@
 # lost-rob0t/tek9
 
-- generated: `2026-08-30T00:23:07Z`
+- generated: `2026-08-30T08:21:12Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`a9f5b595f5d965163d2b7c518c72a2efd9be13fe`](https://github.com/lost-rob0t/tek9/commit/a9f5b595f5d965163d2b7c518c72a2efd9be13fe)
@@ -26,10 +26,6 @@
 2026-08-17 2d3d0a0101f017a65c90a1e8864e2e7dd5c21af2 test: define transaction and graph lifecycle invariants
 2026-08-17 093020b82543a56b295c1726b7ff9b10078e1a4c Merge pull request #3 from lost-rob0t/agent/public-view-query-api
 2026-08-17 63c144ba2da506d6ca4cbedc79a5079d6be7b7e6 test: fix FiveAM boolean assertions
-2026-08-16 fc0774a1f87ad0e70ebf401fc34cb2d9c1f2f873 fix public view range expectations
-2026-08-16 d753e206a12c779acfaedee9fa6364e373f611d2 test public materialized view reads
-2026-08-16 2906c6446c3082c1e7a85b93f2766214d084a60b export public view query api
-2026-08-16 99b0792f59f7128c8758873a7dd610593ca0eb9c add public materialized view read api
 ```
 
 ## Repository paths changed, last 14 days
@@ -44,7 +40,6 @@ src/graph-lifecycle.lisp
 src/objects.lisp
 src/package.lisp
 src/tek9.asd
-src/views.lisp
 tests/nix-package-smoke.sh
 tests/tek9-tests.asd
 tests/test-graph-lifecycle.lisp

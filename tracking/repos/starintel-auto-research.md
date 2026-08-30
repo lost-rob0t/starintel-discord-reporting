@@ -1,15 +1,30 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-08-30T00:23:01Z`
+- generated: `2026-08-30T08:21:05Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`0ccc5792e6bbf348330da316b75620698516a74e`](https://github.com/lost-rob0t/starintel-auto-research/commit/0ccc5792e6bbf348330da316b75620698516a74e)
-- head date: `2026-08-29T20:08:08-04:00`
-- head subject: design: align manifest research canonical numbering
+- head: [`42d49b43dcfbc0ca2c6bb7e345709f85af183df7`](https://github.com/lost-rob0t/starintel-auto-research/commit/42d49b43dcfbc0ca2c6bb7e345709f85af183df7)
+- head date: `2026-08-30T00:11:13-04:00`
+- head subject: index: reconcile current server runtime ARDR nodes
 
 ## Git log, last 14 days
 
 ```text
+2026-08-30 42d49b43dcfbc0ca2c6bb7e345709f85af183df7 index: reconcile current server runtime ARDR nodes
+2026-08-30 d1705f39ecc1ac1a84355a1fc835202f46e14baf design: unify server public contract projections
+2026-08-30 0426309c159540a9d846b43a5b6aab5b48c768d3 research: define server public contract coherence
+2026-08-29 2655cae453b5b4b3f03070c3489b08ae38fde23d governance: record approved Quasar 006 and 008 decisions (#202)
+2026-08-29 b3b8f3e1935c6cbd7da3686ac16a24963f4a4a31 design: define end-to-end idempotency state machine
+2026-08-29 af6be02f9fa170f9898ffd183e1197067da8bcd5 research: define end-to-end idempotency contract
+2026-08-29 a90b8ee6192d062f9e1618d3d04ed9a2dcb45877 research: move document matchers into StarLang
+2026-08-29 a0e22265b4ef1795f97767eea418a12e5238ad5e ADARD: operator actor capabilities + gserver runtime binding (#152)
+2026-08-29 65f54f35b82cda1459ae1b3cf0bdcd9bcd53d923 design: reconcile approved observability research basis
+2026-08-29 6f72fbacd24eb9f5e5316f2654e37b548f636ba5 research: record operator approval for observability evidence
+2026-08-29 6e7991b6c7e114b37a99673dbddc5e92e326021b audit: repair canonical document ID collisions (#198)
+2026-08-29 1cc0f8fab25718ac99ff6cfb876a9b1465d8b356 design: define provider-neutral observability boundary
+2026-08-29 0b5ac74a36c5b6500df7fb494253ed225a0ab2b5 research: define StarIntel observability semantic contract
+2026-08-29 0bb135be064161bc6a647f2e878a2b980404a467 design: add bounded document transform ingress
+2026-08-29 46e0390bd34a1258f51c1f44accc298b5ec983ac research: define bounded document pattern ingress pipeline
 2026-08-29 0ccc5792e6bbf348330da316b75620698516a74e design: align manifest research canonical numbering
 2026-08-29 5afc066638c405c6439575b95cbe733f442d3ae4 research: remove superseded manifest research filename
 2026-08-29 ce57085dd2fc0ce6f7f6f7b6b6f78aaf54ba2209 research: renumber manifest runtime plan after ID audit
@@ -174,8 +189,16 @@ pages/static/research-pending.css
 pages/static/research-pending.js
 pages/static/site.js
 roam/design/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
+roam/design/auto-research/STAR-RESEARCH-PIPELINE-001-adaptive-research-dag-evaluation-harness.org
+roam/design/auto-research/STAR-RESEARCH-PIPELINE-002-deep-research-execution-adapters.org
+roam/design/auto-research/STAR-RESEARCH-PIPELINE-003-government-data-acquisition-actors.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-005-starintel-meta-mcp-execution-plane.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-006-starintel-mcp-authoritative-platform-interface.org
+roam/design/auto-research/government-data-protocol-compatibility-redirect.org
+roam/design/cl-gserver/SENTO-000-managed-component-runtime.org
+roam/design/government-data/STAR-GOVDATA-DESIGN-004-franklin-county-starlang-actor-system.org
+roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
+roam/design/star-lang/STAR-LANG-002-durable-actor-runtime.org
 roam/design/star-lang/STAR-LANG-004-star-service-uri-discovery.org
 roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org
 roam/design/star-lang/STAR-LANG-006-final-package-extraction.org
@@ -184,8 +207,12 @@ roam/design/star-lang/STAR-LANG-010-lisa-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-011-swi-prolog-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-012-n-prolog-expert-system-backend.org
 roam/design/star-lang/STAR-LANG-013-explicit-agents-prolog-rlm.org
+roam/design/star-server/QUASAR-006-auto-dig-fork-and-bridge-boundary.org
+roam/design/star-server/QUASAR-008-lisp-actor-discovery-and-actor-studio.org
+roam/design/star-server/STAR-ADR-004-cl-discord-self-public-read-only-approval.org
 roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
 roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
+roam/design/star-server/STAR-SERVER-000-composable-intelligence-gservers.org
 roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
 roam/design/star-server/STAR-SERVER-038-gserver-client-runtime-and-local-administration.org
 roam/design/star-server/STAR-SERVER-040-starrouter-zeromq-transport-api-overhaul.org
@@ -199,17 +226,27 @@ roam/design/star-server/STAR-SERVER-046-embeddable-server-library-boundary.org
 roam/design/star-server/STAR-SERVER-047-explicit-library-api-runtime-ports.org
 roam/design/star-server/STAR-SERVER-048-concrete-adapter-extraction.org
 roam/design/star-server/STAR-SERVER-049-component-handles-registry-readiness-health.org
+roam/design/star-server/STAR-SERVER-050-document-pattern-ingress-url-extraction.org
+roam/design/star-server/STAR-SERVER-050-workload-dispatchers-router-pools.org
+roam/design/star-server/STAR-SERVER-051-observability-correlation-audit-contract.org
+roam/design/star-server/STAR-SERVER-052-end-to-end-idempotency-duplicate-suppression.org
+roam/design/star-server/STAR-SERVER-053-public-contract-package-api-doc-coherence.org
 roam/design/star-server/STAR-SERVER-059-generic-target-create-v1.org
 roam/design/star-server/STAR-SERVER-060-strict-json-http-boundary.org
+roam/design/starintel-discord-tool/STAR-DISCORD-002-operations-interface-architecture.org
 roam/implement/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/auto-research/STAR-RESEARCH-PIPELINE-INDEX-000-adaptive-research.org
+roam/indexes/drunk-drivers/DRUNK-DRIVER-INDEX-000-national-crash-identity-resolution.org
+roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
 roam/indexes/star-server/STAR-OAUTH-INDEX-042-bixby-user-authorization.org
 roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
+roam/indexes/star-server/STAR-TITANIC-INDEX-033-durable-actor-jobs.org
+roam/indexes/starintel-discord-tool/STAR-DISCORD-INDEX-000-operations-interface.org
 roam/internal/OSINT-TOOLS-LEDGER.org
 roam/internal/osint/OSINT-IDENTITY-ENUMERATION-ENGINES.org
 roam/research/ardr-issues/ARDR-ISSUE-072-starintel-ontology-foundation.org
@@ -240,6 +277,13 @@ roam/research/ardr-issues/ARDR-ISSUE-190-sento-bounded-mailbox-admission.org
 roam/research/ardr-issues/ARDR-ISSUE-191-deployment-config-secrets-contract.org
 roam/research/auto-dig/ADAR-APPROVAL-001-dashboard-ux.org
 roam/research/auto-dig/ADAR-RESEARCH-001-dashboard-ux-and-cross-site-navigation.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-000-rd-agent-pipeline-analysis.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-001-logic-engine-selection-for-adard.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-002-deep-research-execution-adapter-analysis.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-003-us-government-data-acquisition-landscape.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-004-ethnicity-as-a-sourced-investigative-signal.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-005-starintel-v09-prolog-expert-system.org
+roam/research/auto-research/STAR-AUTO-RESEARCH-006-starintel-meta-mcp-execution-plane-analysis.org
 roam/research/auto-research/STAR-MCP-RESEARCH-001-authoritative-platform-interface.org
 roam/research/auto-research/STAR-RESEARCH-000-rd-agent-pipeline-analysis.org
 roam/research/auto-research/STAR-RESEARCH-001-logic-engine-selection-for-adard.org
@@ -252,6 +296,7 @@ roam/research/child-abuse/CHILD-ABUSE-RESEARCH-000-national-severe-case-landscap
 roam/research/child-abuse/CHILD-ABUSE-RESEARCH-001-child-identity-firewall-implementation.org
 roam/research/cl-gserver/SENTO-000-sento-runtime-analysis.org
 roam/research/cl-gserver/SENTO-000-zeromq-transport-analysis.org
+roam/research/cl-gserver/SENTO-ZMQ-RESEARCH-000-zeromq-transport-analysis.org
 roam/research/cl-gserver/SENTO-ZMQ-RESEARCH-001-pzmq-binding-audit.org
 roam/research/drunk-drivers/DRUNK-DRIVER-RESEARCH-000-national-fars-identity-resolution.org
 roam/research/drunk-drivers/DRUNK-DRIVER-RESEARCH-001-severe-harm-eligibility-boundary.org
@@ -284,6 +329,9 @@ roam/research/star-lang/STAR-LANG-RESEARCH-026-explicit-logic-backend-selection.
 roam/research/star-lang/STAR-LANG-RESEARCH-027-lisp-native-pragma-compiler-directives.org
 roam/research/star-lang/STAR-LANG-RESEARCH-028-logic-runtime-api-contract.org
 roam/research/star-lang/STAR-LANG-RESEARCH-029-explicit-agents-prolog-rlm.org
+roam/research/star-lang/STAR-LANG-RESEARCH-030-resolver-fetch-digest-ports.org
+roam/research/star-lang/STAR-LANG-RESEARCH-031-final-package-boundary-audit.org
+roam/research/star-lang/STAR-LANG-RESEARCH-032-comparative-gate-and-language-selection.org
 roam/research/star-server/LISA-RESEARCH-001-performance-and-feature-extension.org
 roam/research/star-server/QUASAR-RESEARCH-000-investigation-workspace-architecture.org
 roam/research/star-server/QUASAR-RESEARCH-001-transform-automation-catalog.org
@@ -291,6 +339,7 @@ roam/research/star-server/QUASAR-RESEARCH-002-client-library-stack.org
 roam/research/star-server/QUASAR-RESEARCH-003-situational-awareness-dashboard-shell.org
 roam/research/star-server/QUASAR-RESEARCH-004-dual-actor-supervisor-runtime.org
 roam/research/star-server/QUASAR-RESEARCH-005-four-repository-alignment-and-scale.org
+roam/research/star-server/QUASAR-RESEARCH-006-lisp-actor-discovery-and-actor-studio.org
 roam/research/star-server/STAR-RESEARCH-001-osint-feature-landscape.org
 roam/research/star-server/STAR-RESEARCH-002-awesome-osint-research-backlog.org
 roam/research/star-server/STAR-RESEARCH-003-budgeted-supervised-prolog-inference-actors.org
@@ -328,7 +377,16 @@ roam/research/star-server/STAR-RESEARCH-042-bixby-oauth-authorization-code-provi
 roam/research/star-server/STAR-RESEARCH-042-component-handles-registry-readiness-health.org
 roam/research/star-server/STAR-RESEARCH-042-strict-json-http-boundary.org
 roam/research/star-server/STAR-RESEARCH-043-manifest-runtime-plan-composition.org
+roam/research/star-server/STAR-RESEARCH-045-target-lease-recovery-race-matrix.org
+roam/research/star-server/STAR-RESEARCH-046-embeddable-server-library-boundary.org
+roam/research/star-server/STAR-RESEARCH-047-explicit-library-api-runtime-ports.org
+roam/research/star-server/STAR-RESEARCH-048-concrete-adapter-extraction.org
+roam/research/star-server/STAR-RESEARCH-049-component-handles-registry-readiness-health.org
 roam/research/star-server/STAR-RESEARCH-050-manifest-runtime-plan-composition.org
+roam/research/star-server/STAR-RESEARCH-051-document-pattern-ingress-url-extraction.org
+roam/research/star-server/STAR-RESEARCH-052-observability-correlation-audit-contract.org
+roam/research/star-server/STAR-RESEARCH-053-end-to-end-idempotency-duplicate-suppression.org
+roam/research/star-server/STAR-RESEARCH-054-public-contract-package-api-doc-coherence.org
 roam/research/star-server/STAR-RESEARCH-059-generic-target-create-v1.org
 roam/research/star-server/STAR-RESEARCH-060-strict-json-http-boundary.org
 roam/research/starintel-discord-tool/STAR-DISCORD-RESEARCH-001-operations-interface.org
@@ -340,21 +398,25 @@ roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-005-hcaptcha-provider-selec
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-006-captcha-challenge-provider-landscape.org
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-007-captcha-broker-transport-selection.org
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-008-self-sourced-captcha-solver-stack.org
+roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
 scripts/build-research-pending.py
 scripts/list-unreviewed-research.py
 scripts/publish-pages
 scripts/research_approval_migration.py
 scripts/research_queue.py
 scripts/save-research.py
+scripts/validate-changed-docs.py
 scripts/validate-docs.py
 scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
 skills/save-research/SKILL.md
+tests/test_canonical_document_ids.py
 tests/test_research_approval_history.py
 tests/test_research_approval_migration.py
 tests/test_research_pending.py
 tests/test_research_persistence_contract.py
 tests/test_research_source_of_truth_contract.py
+tools/generate-government-jurisdiction-todos.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -369,9 +431,11 @@ scripts/publish-pages
 scripts/research_approval_migration.py
 scripts/research_queue.py
 scripts/save-research.py
+scripts/validate-changed-docs.py
 scripts/validate-docs.py
 scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
+tests/test_canonical_document_ids.py
 tests/test_research_approval_history.py
 tests/test_research_approval_migration.py
 tests/test_research_pending.py
