@@ -1545,7 +1545,7 @@
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
-      "starintel-updates-changelog": 1
+      "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
     "total_reports": 126,
