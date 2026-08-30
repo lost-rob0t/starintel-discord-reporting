@@ -108,6 +108,21 @@ Keep these short. Summarize the useful change instead of dumping commit history.
 - never invent a line-coverage percentage. If none is published, say that plainly;
 - no release-note sludge, fake excitement, or generic phrases like `significant improvements`.
 
+### Research and Auto-Research posts
+
+Research posts are about **what was investigated and what was learned**. They are not product changelogs wearing a research badge.
+
+- Lead with the research question or strongest conclusion. The first paragraph should tell the reader what the research found and why it matters.
+- Do not write headlines like `Auto-Research makes X work`, `Auto-Research landed X`, or `X now does Y` when the referenced commits are research/design artifacts rather than implementation in the owning runtime repository.
+- Use verbs that match the artifact: `research found`, `research concluded`, `the design proposes`, `the review rejected`, `implementation landed`. Do not blur those states.
+- A design becoming `READY_FOR_DESIGN` or `DESIGN_READY_FOR_OPERATOR_REVIEW` is workflow metadata, not the story. Put lifecycle/approval state in one short sentence at the end only when it is useful to the reader.
+- Do not dump approval tables into Discord prose. Do not recite `research/design/implementation/publication remain pending` unless a pending decision itself is the reason for the post.
+- Do not pad a research update with `operator review only`, `no implementation authorization`, publication bookkeeping, 404 status, or similar control-plane boilerplate. Mention those facts only when they prevent a reader from correctly understanding the result.
+- Explain the actual technical or investigative delta in plain language. Prefer one concrete example over a paragraph of abstract architecture nouns.
+- If a prior post described research/design as if it were shipped behavior, publish a correction. Say exactly what was research, what was proposed, and what has or has not actually been implemented.
+- `starintel-server`, `starintel-auto-research`, and other publicly accessible StarIntel repositories are public sources. Do not apply the private-source sanitization rules to them merely because the material is technical. Public commit/source links are allowed and usually useful.
+- If a configured StarIntel source really is private, the private-source rules below still apply. Public/private status comes from the actual repository, not from whether the material feels internal.
+
 ### Auto-Research / ADAR(D) destination links
 
 When a report, follow-up, or changelog references public ADAR, ADARD, research, design, review, index, or implementation-status material published by Auto-Research, give readers the canonical public destination URL on `https://auto-research.starintel.actor/`.
