@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-08-30T14:53:08Z`
+- generated: `2026-08-30T19:20:03Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`42d49b43dcfbc0ca2c6bb7e345709f85af183df7`](https://github.com/lost-rob0t/starintel-auto-research/commit/42d49b43dcfbc0ca2c6bb7e345709f85af183df7)
@@ -161,7 +161,6 @@
 2026-08-19 104ccd2d6c564248b458a9e74545af3b43b1f971 design: gserver client runtime and local administration
 2026-08-19 8bc6d83b9981ae342d3652a6d5b4f0855ab057d0 research: machine-readable HTTP contract and client generation
 2026-08-18 39caddd6c5cdf8db560059bd7aadb03ce7733880 research: gserver client library boundary
-2026-08-16 ff3e88bc4118496981f0073922e2520859d30108 Split expert-system backend designs
 ```
 
 ## Repository paths changed, last 14 days

@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-08-30T14:53:06Z`
+- generated: `2026-08-30T19:20:00Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -189,7 +189,6 @@
 2026-08-17 7e9efb9fc50128dabf0583082edf84ee302e8f8b Add capability discovery contract tests
 2026-08-17 5074b62c78fe616c836997558a9ce22f8ab2bdbf Load API capability discovery before auth middleware
 2026-08-17 ee677687e8e9dbfbd9f9961067416e74164f5102 Add v1 capability discovery endpoint
-2026-08-16 7834d6614378e01232a1c810249d9ae83cec25c5 Merge PR #95: Valkey target-lease backend
 ```
 
 ## Repository paths changed, last 14 days

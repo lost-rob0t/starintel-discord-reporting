@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-30T14:53:15Z`
+- generated: `2026-08-30T19:20:12Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`b654831a0150a593821179da1d3886dfd64deb5c`](https://github.com/lost-rob0t/prolog-rlm/commit/b654831a0150a593821179da1d3886dfd64deb5c)
@@ -345,7 +345,6 @@
 2026-08-17 7b527750a64d5cbd9fff79413a399a8c69e90c75 Harden declarative MCP execution policy (#72)
 2026-08-17 9ba763d248f6e087b3ff01c651762997f02ee726 Harden external tool category loading boundary (#66)
 2026-08-17 88b64db41a4c474379a1808b95c761ffc78d9fc2 Harden host authority and pending operations (#62)
-2026-08-16 26909346842f87726c9d3ec7a78ef0dbdc904fc3 Canonicalize agent and graph async execution (#61)
 ```
 
 ## Repository paths changed, last 14 days
@@ -424,7 +423,6 @@ docs/effect-migration.md
 docs/effect-runtime.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
-docs/graph-runtime.md
 docs/mcp-lifecycle.md
 docs/nix-packaging.md
 docs/project-source-registry.md
@@ -450,7 +448,6 @@ prolog/prolog_agent_ui_facade.pl
 prolog/prolog_agent_ui_v1.pl
 prolog/rlm.pl
 prolog/rlm_agent.pl
-prolog/rlm_agent_async.pl
 prolog/rlm_agent_zero_adapter.pl
 prolog/rlm_assertion.pl
 prolog/rlm_async.pl
@@ -478,8 +475,6 @@ prolog/rlm_effect_persist.pl
 prolog/rlm_effects.pl
 prolog/rlm_evidence.pl
 prolog/rlm_evolution.pl
-prolog/rlm_graph.pl
-prolog/rlm_graph_async.pl
 prolog/rlm_mcp_policy.pl
 prolog/rlm_mcp_server.pl
 prolog/rlm_mcp_tool.pl
