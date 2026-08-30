@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-30T08:21:16Z`
+- generated: `2026-08-30T14:53:15Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`b654831a0150a593821179da1d3886dfd64deb5c`](https://github.com/lost-rob0t/prolog-rlm/commit/b654831a0150a593821179da1d3886dfd64deb5c)
@@ -346,8 +346,6 @@
 2026-08-17 9ba763d248f6e087b3ff01c651762997f02ee726 Harden external tool category loading boundary (#66)
 2026-08-17 88b64db41a4c474379a1808b95c761ffc78d9fc2 Harden host authority and pending operations (#62)
 2026-08-16 26909346842f87726c9d3ec7a78ef0dbdc904fc3 Canonicalize agent and graph async execution (#61)
-2026-08-16 3db30d832f9b124d6b6e6aa3cbe2808914f4ae6e Canonical async tool + MCP runtime slice (#60)
-2026-08-16 ded8c2734a0c716c6074457b45fad5f475cd16c9 Make async execution canonical for issue #54 (#59)
 ```
 
 ## Repository paths changed, last 14 days
@@ -441,7 +439,6 @@ docs/skill-graph.md
 docs/skills.md
 docs/spec-mode.md
 docs/spec-verify.md
-docs/tool-packs.md
 docs/tool-result-projection.md
 docs/tools.md
 docs/tree-sitter-ffi.md
@@ -460,7 +457,6 @@ prolog/rlm_async.pl
 prolog/rlm_authority.pl
 prolog/rlm_benchmark.pl
 prolog/rlm_chain.pl
-prolog/rlm_chain_async.pl
 prolog/rlm_cli.pl
 prolog/rlm_closed_data.pl
 prolog/rlm_completion.pl
@@ -484,14 +480,11 @@ prolog/rlm_evidence.pl
 prolog/rlm_evolution.pl
 prolog/rlm_graph.pl
 prolog/rlm_graph_async.pl
-prolog/rlm_mcp.pl
-prolog/rlm_mcp_async.pl
 prolog/rlm_mcp_policy.pl
 prolog/rlm_mcp_server.pl
 prolog/rlm_mcp_tool.pl
 prolog/rlm_mcp_tool_pack.pl
 prolog/rlm_mcp_transport.pl
-prolog/rlm_mcp_transport_send.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_outcome.pl
@@ -510,7 +503,6 @@ prolog/rlm_spec_strategy.pl
 prolog/rlm_spec_workflow.pl
 prolog/rlm_subagent.pl
 prolog/rlm_tool.pl
-prolog/rlm_tool_async.pl
 prolog/rlm_tool_loader.pl
 prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
@@ -592,7 +584,6 @@ test/rlm_agent_graph_async_test.pl
 test/rlm_agent_test.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_artifact_test.pl
-test/rlm_async_canonical_test.pl
 test/rlm_async_control_test.pl
 test/rlm_async_test.pl
 test/rlm_authority_hardening_test.pl
@@ -808,7 +799,6 @@ test/rlm_agent_graph_async_test.pl
 test/rlm_agent_test.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_artifact_test.pl
-test/rlm_async_canonical_test.pl
 test/rlm_async_control_test.pl
 test/rlm_async_test.pl
 test/rlm_authority_hardening_test.pl

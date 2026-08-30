@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-08-30T08:21:02Z`
+- generated: `2026-08-30T14:53:06Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -190,25 +190,12 @@
 2026-08-17 5074b62c78fe616c836997558a9ce22f8ab2bdbf Load API capability discovery before auth middleware
 2026-08-17 ee677687e8e9dbfbd9f9961067416e74164f5102 Add v1 capability discovery endpoint
 2026-08-16 7834d6614378e01232a1c810249d9ae83cec25c5 Merge PR #95: Valkey target-lease backend
-2026-08-16 652b148c233646af4f2e4b46dd6289ae73ef3c26 merge: carry canonical master policy into issue #31
-2026-08-16 badc960ac1f1222b3acbc5bc30c90c012d0f594c Make master the canonical development branch (#100)
-2026-08-16 54394e33a03273624afdc23fe73c22bef0631f7c merge: refresh issue #31 Valkey backend onto canonical master
-2026-08-16 9ca96026f75eccfecea06b10657673ce7612fbc5 docs: make master the canonical development branch
-2026-08-16 8e33e9e8228a99511438e7aada8a67edd650435a ci: target canonical master pull requests
-2026-08-16 b33513d37665c438b3a479620efbf61ddda2da56 ci: target canonical master branch
-2026-08-16 fa2ebde247c4fa7aaabbd71e23056c8e0395d51a ci: target canonical master branch
-2026-08-16 516742d1de433a79fe1921b1b8b1ac00e6599e2a Retire dev: final reconciliation into master (#99)
-2026-08-16 884ffb59945bb1a7cd30eeff6efd1207a1c9b6cf ci: run operational salvage on master PRs
-2026-08-16 bd4b9d1ecd808f5e3aecf53df0b9c54337500b94 reconcile: merge dev into canonical master history
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.github/workflows/docker.yml
-.github/workflows/operational-salvage.yml
 .github/workflows/smoke-tests.yml
-.github/workflows/starintel-schema-lock.yml
 Makefile
 addons/bixby/bixby.lisp
 addons/bixby/package.lisp
@@ -230,7 +217,6 @@ client-test.el
 client.el
 docker/star-server-init.lisp
 docs/addons.org
-docs/development.org
 docs/document-spec.org
 docs/http-api-docs.org
 docs/http-users.org
@@ -304,10 +290,7 @@ tests/test_v09_runtime_contract.py
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/docker.yml
-.github/workflows/operational-salvage.yml
 .github/workflows/smoke-tests.yml
-.github/workflows/starintel-schema-lock.yml
 cli/star-cli.asd
 cli/starintel-gserver-client.asd
 flake.nix
