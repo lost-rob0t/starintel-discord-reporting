@@ -7,6 +7,8 @@ on:
       - 'scripts/post_report.py'
       - 'scripts/publish_new.py'
       - 'scripts/check_report_dedup.py'
+      - 'scripts/merge_delivery_state.py'
+      - 'state/recovery-receipts.json'
       - 'tests/**'
       - '.github/workflows/publish-catchup.yml'
   schedule:
@@ -51,6 +53,18 @@ jobs:
           set -euo pipefail
           python -m py_compile scripts/*.py
           python -m unittest discover -s tests -v
+
+      - name: Apply verified recovery receipts
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f state/recovery-receipts.json ]; then
+            python scripts/merge_delivery_state.py \
+              --latest-state state/published.json \
+              --run-state state/recovery-receipts.json \
+              --output /tmp/published-recovered.json
+            mv /tmp/published-recovered.json state/published.json
+          fi
 
       - name: Drain all unverified reports oldest first
         env:
