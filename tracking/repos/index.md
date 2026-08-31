@@ -3,7 +3,7 @@
 Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These are evidence caches, not claims of test success.
 
 - [lost-rob0t/auto-dig-quasar](./auto-dig-quasar.md) `76f3971f8bde`
-- [lost-rob0t/prolog-rlm](./prolog-rlm.md) `b654831a0150`
+- [lost-rob0t/prolog-rlm](./prolog-rlm.md) `fb45be06a5c1`
 - [lost-rob0t/quasar-ui](./quasar-ui.md) `28684ae94953`
 - [lost-rob0t/quasar](./quasar.md) `b608fd91379e`
 - [lost-rob0t/star-app](./star-app.md) `5f727b477a06`
