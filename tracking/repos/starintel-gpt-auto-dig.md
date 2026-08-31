@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-08-31T13:57:25Z`
+- generated: `2026-08-31T20:08:36Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`e75a02a22813a2e5b337ba1939490f357675efa7`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/e75a02a22813a2e5b337ba1939490f357675efa7)
-- head date: `2026-08-29T16:25:47-04:00`
-- head subject: Temporarily disable Auto-Dig Prolog actor runner
+- head: [`7fbdc2684d22c1c3e43cee38002bb41dd90b663e`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/7fbdc2684d22c1c3e43cee38002bb41dd90b663e)
+- head date: `2026-08-31T16:04:07-04:00`
+- head subject: Include actor code in guarded live-test trigger [auto-dig-live-test]
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 7fbdc2684d22c1c3e43cee38002bb41dd90b663e Include actor code in guarded live-test trigger [auto-dig-live-test]
+2026-08-31 4278516533cae083014fcc88cef60324d71306d1 Fix stale Auto-Dig MCP allow-list regression test
+2026-08-31 c5eec01de8971f5b5c91d7cf570a6846c289b55d Re-enable Auto-Dig actor with current RLM harness [auto-dig-live-test]
 2026-08-29 e75a02a22813a2e5b337ba1939490f357675efa7 Temporarily disable Auto-Dig Prolog actor runner
 2026-08-29 a4b73884d1556cf8eb3bc1ec924d4dd947800733 Merge pull request #2305 from lost-rob0t/fix/use-prolog-rlm-298-schema-fix
 2026-08-29 c5210c524fb0445597853128c44c66ab7ce5a5cb chore: remove temporary Prolog-RLM upgrade workflow

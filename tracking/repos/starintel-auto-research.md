@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-08-31T13:57:26Z`
+- generated: `2026-08-31T20:08:37Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`42d49b43dcfbc0ca2c6bb7e345709f85af183df7`](https://github.com/lost-rob0t/starintel-auto-research/commit/42d49b43dcfbc0ca2c6bb7e345709f85af183df7)
-- head date: `2026-08-30T00:11:13-04:00`
-- head subject: index: reconcile current server runtime ARDR nodes
+- head: [`e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced`](https://github.com/lost-rob0t/starintel-auto-research/commit/e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced)
+- head date: `2026-08-31T14:29:41-04:00`
+- head subject: Remove orphaned StarLang prototype CI (#114)
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced Remove orphaned StarLang prototype CI (#114)
+2026-08-31 c3e5d568d9321d2dd859fc3e00fcf7a1bb2f7715 Retire autonomous StarIntel product worker profiles after Hackmode migration (#204)
 2026-08-30 42d49b43dcfbc0ca2c6bb7e345709f85af183df7 index: reconcile current server runtime ARDR nodes
 2026-08-30 d1705f39ecc1ac1a84355a1fc835202f46e14baf design: unify server public contract projections
 2026-08-30 0426309c159540a9d846b43a5b6aab5b48c768d3 research: define server public contract coherence
@@ -169,6 +171,14 @@
 .github/workflows/fix-main-only-policy.yml
 .github/workflows/migrate-all-research-approval.yml
 .github/workflows/pages.yml
+.github/workflows/star-lang-bbp-domain.yml
+.github/workflows/star-lang-bbp-journal-restart.yml
+.github/workflows/star-lang-bbp-run-idempotency.yml
+.github/workflows/star-lang-bbp-runtime-journal.yml
+.github/workflows/star-lang-common-lisp.yml
+.github/workflows/star-lang-constructors.yml
+.github/workflows/star-lang-dispatch-idempotency-identity.yml
+.github/workflows/star-lang-loader.yml
 AGENTS.md
 README.md
 __fetchtest__
@@ -184,6 +194,7 @@ agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.comm
 agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.specifics.md
+agent-zero/usr/agents/starintel/prompts/agent.system.main.specifics.md
 pages/static/research-pending.css
 pages/static/research-pending.js
 pages/static/site.js
@@ -399,6 +410,7 @@ roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-007-captcha-broker-transpor
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-008-self-sourced-captcha-solver-stack.org
 roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
 scripts/build-research-pending.py
+scripts/install-agent-zero.sh
 scripts/list-unreviewed-research.py
 scripts/publish-pages
 scripts/research_approval_migration.py
@@ -424,7 +436,16 @@ tools/generate-government-jurisdiction-todos.py
 .github/workflows/fix-main-only-policy.yml
 .github/workflows/migrate-all-research-approval.yml
 .github/workflows/pages.yml
+.github/workflows/star-lang-bbp-domain.yml
+.github/workflows/star-lang-bbp-journal-restart.yml
+.github/workflows/star-lang-bbp-run-idempotency.yml
+.github/workflows/star-lang-bbp-runtime-journal.yml
+.github/workflows/star-lang-common-lisp.yml
+.github/workflows/star-lang-constructors.yml
+.github/workflows/star-lang-dispatch-idempotency-identity.yml
+.github/workflows/star-lang-loader.yml
 scripts/build-research-pending.py
+scripts/install-agent-zero.sh
 scripts/list-unreviewed-research.py
 scripts/publish-pages
 scripts/research_approval_migration.py

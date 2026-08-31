@@ -1,15 +1,27 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-31T13:57:32Z`
+- generated: `2026-08-31T20:08:45Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`fb45be06a5c183653ac3c38796d62fa87888a03d`](https://github.com/lost-rob0t/prolog-rlm/commit/fb45be06a5c183653ac3c38796d62fa87888a03d)
-- head date: `2026-08-31T08:13:30-04:00`
-- head subject: test(live): deduplicate all_steps_ok and keep helper clauses contiguous
+- head: [`6957c30c88f9548137a8ff9c3a0720f9bdadb210`](https://github.com/lost-rob0t/prolog-rlm/commit/6957c30c88f9548137a8ff9c3a0720f9bdadb210)
+- head date: `2026-08-31T14:37:51-04:00`
+- head subject: fix: isolate recoverable native preflight faults per call (#313)
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 6957c30c88f9548137a8ff9c3a0720f9bdadb210 fix: isolate recoverable native preflight faults per call (#313)
+2026-08-31 b8206c728549f4128e8b18f0611d2d0456dc5b2d fix(312): derive context_peek schema and validation from one selector contract
+2026-08-31 0c9b8fc6102cbc720d54e81f2a5b832bb0260202 chore: drop corpus entries duplicated by the rebase onto main
+2026-08-29 781b526744678101f9de51536935fd1ffd4cbdd8 fix: align context_peek selector contract with projected schema
+2026-08-31 e9b0c187fd0f776d2b511f06685029ab436771d0 docs(agents): work in git worktrees under ~/git/worktrees
+2026-08-31 a3628d3aa81d1651b27af9b46de233a69c5b0c6e fix(runtime): propagate wall-time limits through skill compilation
+2026-08-31 02b724214f2ddfeb2f6be9944feee5147798e7e4 fix(completion): narrow the child model-step session to child_capabilities
+2026-08-31 241dfb47495095a7ac3dfa7599c40b99828f0c2c review(319): rename stale cache-test name, tidy indentation, keep grep gate strict
+2026-08-31 0d2c935f4129b2bc22c27941a0121a6d95d7cc75 ci(paid): CLI smoke surfaces the CLI error payload instead of dying blind
+2026-08-31 59d5033c7d45d79c5e84ed657bd08068b747bd4d test(live): streaming sentinel request gets reasoning headroom
+2026-08-31 72d1888a386822d1dde8c3bada770438a14085b9 fix(direct): advertise the context alias only when context ops are granted
+2026-08-31 149b7b2c13b33c663505950f2271032f32648ab3 test(live): replace the 120b cache pin with the pinned paid model
 2026-08-30 fb45be06a5c183653ac3c38796d62fa87888a03d test(live): deduplicate all_steps_ok and keep helper clauses contiguous
 2026-08-30 ac92c2c6f5d84c4549bb4c0501daa8ffaf62b378 docs(review): resolution addendum — 120B lane characterization after diagnostics work
 2026-08-30 9c77925665275a18006bb16be9b8ba55f13b6d1f fix(completion): actionable planner repair diagnostics for envelope and capability faults
@@ -367,7 +379,6 @@
 2026-08-17 02a07db7cadfef46a123fdf4bec2cb1c400a9149 Harden migration identity and crash recovery
 2026-08-17 8f80c99f0f10f13ac5dd520dd176c40ff0c111aa Add explicit legacy effect-store migration
 2026-08-17 6c60924cef7a03b9d483e4691646d4d56a13c0f3 Harden durable effect substrate across identity, retention, and recovery (#83)
-2026-08-17 7af5d5f6dc833c70bd547571654485eb73a1a704 Add durable effect identity and observation ledger (#78)
 ```
 
 ## Repository paths changed, last 14 days
@@ -572,15 +583,6 @@ test/effect_legacy_fixture.pl
 test/effect_migration_crash_worker.pl
 test/effect_projection_crash_phase1.pl
 test/effect_projection_crash_phase2.pl
-test/effect_restart_phase1.pl
-test/effect_restart_phase1_completed.pl
-test/effect_restart_phase2_completed.pl
-test/effect_restart_phase2_indeterminate.pl
-test/effect_restart_phase2_reconcile.pl
-test/effect_restart_support.pl
-test/effect_store_contender.pl
-test/effect_store_owner_phase1.pl
-test/effect_store_race_contender.pl
 test/fixtures/prolog_agent_ui_v1_session.ndjson
 test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
 test/fixtures/skills/engineering/enriched/SKILL.md
@@ -629,6 +631,7 @@ test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
 test/rlm_direct_context_peek_contract_test.pl
+test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
 test/rlm_effect_authority_test.pl
@@ -787,15 +790,6 @@ test/effect_legacy_fixture.pl
 test/effect_migration_crash_worker.pl
 test/effect_projection_crash_phase1.pl
 test/effect_projection_crash_phase2.pl
-test/effect_restart_phase1.pl
-test/effect_restart_phase1_completed.pl
-test/effect_restart_phase2_completed.pl
-test/effect_restart_phase2_indeterminate.pl
-test/effect_restart_phase2_reconcile.pl
-test/effect_restart_support.pl
-test/effect_store_contender.pl
-test/effect_store_owner_phase1.pl
-test/effect_store_race_contender.pl
 test/fixtures/prolog_agent_ui_v1_session.ndjson
 test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
 test/fixtures/skills/engineering/enriched/SKILL.md
@@ -844,6 +838,7 @@ test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
 test/rlm_direct_context_peek_contract_test.pl
+test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
 test/rlm_effect_authority_test.pl
