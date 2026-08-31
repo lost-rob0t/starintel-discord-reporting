@@ -97,7 +97,24 @@ Read the allow-list from `config/starintel-repos.txt`.
 
 Only landed work on each configured canonical `main` or `master` branch is eligible. Do not report open PRs, branch-only work, CI-only churn, formatting-only changes, trivial docs, or material already covered.
 
-When useful new work exists, create:
+### Changelog unit and dedupe contract
+
+A changelog report is for exactly one project. Never combine unrelated projects into one Discord post or one report file.
+
+Examples of separate project units include `prolog-rlm`, `hackmode`, `zara`, and the StarIntel project family. If more than one project has useful new landed work, create a separate report file and Discord message for each project. Do not create a cross-project roundup.
+
+Before creating a report for a project:
+
+1. inspect prior changelog report files and `state/published.json`;
+2. identify the landed commits or completed change already represented for that project;
+3. exclude anything already reported, even if it could be worded differently or grouped differently;
+4. only report the remaining genuinely new landed work.
+
+Do not duplicate a StarIntel update merely because another project changed in the same run. Do not repost unchanged material to make a run look productive.
+
+If a project has no genuinely new landed work after per-project deduplication, create no report for that project and send nothing for it. If every project is empty after deduplication, output nothing.
+
+When useful new work exists for one project, create one file for that project:
 
 ```text
 reports/starintel-updates-changelog/<UTC-datestring>-report.md
