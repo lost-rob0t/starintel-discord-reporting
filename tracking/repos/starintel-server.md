@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-08-30T22:47:30Z`
+- generated: `2026-08-31T05:41:20Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -177,18 +177,6 @@
 2026-08-19 4eb0a583a74a5826f228a0dc1ab4511ecb4a7601 define reusable gserver client API
 2026-08-19 3381b012b7b9f8fa20949fd4aa2fb6c965dfa22f define machine-readable HTTP contract
 2026-08-19 402dba4f68d60f6ffa4ff52bba2e949a70a726c5 add shared HTTP contract package
-2026-08-17 7df7fce9b95146a72c7b1e9c6ed7655e9f4b0bae Merge PR #103: owned runtime lifecycle and readiness
-2026-08-17 90dd220f0efa44e367f9f6399f776ec98cebcdd3 Make runtime lifecycle suite mandatory
-2026-08-17 a6e4b89c4967e802bfba993d054f5a59c8a82d96 Wire runtime lifecycle tests into unit system
-2026-08-17 8d16e1f7ca12452c09b4d5e9a5794e86d7f06515 Add runtime lifecycle regression tests
-2026-08-17 0ee5caa020eaeb993f114712c0f2b3654f1d8147 Replace global thread join with owned runtime loop
-2026-08-17 2f3bc0259545a5beeb662f2c1446b338afa4dcbb Load runtime lifecycle before server entrypoint
-2026-08-17 2641e3847446fa3a037fe3ad651ff7f53d4524ea Add owned runtime lifecycle and readiness core
-2026-08-17 5a8db680b2e1d5c8f82b40a1d93f1b43b2ff2072 Keep capability route metadata reload-safe
-2026-08-17 2d9462b85d9bfb19a05777c8b5b629d4c1406a2a Load capability discovery contract tests
-2026-08-17 7e9efb9fc50128dabf0583082edf84ee302e8f8b Add capability discovery contract tests
-2026-08-17 5074b62c78fe616c836997558a9ce22f8ab2bdbf Load API capability discovery before auth middleware
-2026-08-17 ee677687e8e9dbfbd9f9961067416e74164f5102 Add v1 capability discovery endpoint
 ```
 
 ## Repository paths changed, last 14 days
@@ -259,7 +247,6 @@ source/gserver-settings.lisp
 source/main.lisp
 source/package.lisp
 source/rabbit.lisp
-source/runtime-lifecycle.lisp
 source/starintel-gserver.asd
 source/target-dispatch-fixes.lisp
 source/target-dispatch.lisp
@@ -281,7 +268,6 @@ t/oauth-authorization-code-test.lisp
 t/oauth-http-bearer-test.lisp
 t/oauth-http-provider-test.lisp
 t/run-tests.lisp
-t/runtime-lifecycle-test.lisp
 t/v09-runtime-test.lisp
 tests/test_v09_runtime_contract.py
 ```
@@ -313,7 +299,6 @@ t/oauth-authorization-code-test.lisp
 t/oauth-http-bearer-test.lisp
 t/oauth-http-provider-test.lisp
 t/run-tests.lisp
-t/runtime-lifecycle-test.lisp
 t/v09-runtime-test.lisp
 tests/test_v09_runtime_contract.py
 ```
