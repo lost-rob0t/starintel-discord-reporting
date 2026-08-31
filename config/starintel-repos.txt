@@ -11,3 +11,5 @@ star-lang
 star-funds
 starintel-labs/starintel-infra
 lost-rob0t/prolog-rlm
+lost-rob0t/hackmode
+lost-rob0t/zara
