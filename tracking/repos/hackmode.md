@@ -1,15 +1,18 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-08-31T20:08:47Z`
+- generated: `2026-08-31T23:53:09Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`40389abcc10ad561be76219a4e665bc873fcc2de`](https://github.com/lost-rob0t/hackmode/commit/40389abcc10ad561be76219a4e665bc873fcc2de)
-- head date: `2026-08-31T16:01:10-04:00`
-- head subject: Capture: supervise operation-scoped mitmdump lifecycle (#147)
+- head: [`d34d58dac33f3bcd221198ddd5675707a84d59ab`](https://github.com/lost-rob0t/hackmode/commit/d34d58dac33f3bcd221198ddd5675707a84d59ab)
+- head date: `2026-08-31T19:08:48-04:00`
+- head subject: HTTP: add typed transport and browser profile policy (#158)
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 d34d58dac33f3bcd221198ddd5675707a84d59ab HTTP: add typed transport and browser profile policy (#158)
+2026-08-31 e9eb6286413d0875c49dcb5616d9e6277c797ade Database: enforce visual evidence operation/run write scope (#156)
+2026-08-31 26675e5e59eda6ac9014abaaa5abe93ad55d60ba IPX: wire versioned mitmproxy spool addon (#154)
 2026-08-31 40389abcc10ad561be76219a4e665bc873fcc2de Capture: supervise operation-scoped mitmdump lifecycle (#147)
 2026-08-31 a795ecb08ac2e30363f9538fbc1a1008a93faf25 Database: add canonical visual evidence persistence (#145)
 2026-08-31 b5bc9d5b007ff722cbe42c023d18482031bec951 Hackpert: defend run inspection reason strings (#132)
@@ -145,6 +148,7 @@ source/hackmode-core/expert/transition-inspection.lisp
 source/hackmode-core/functions.lisp
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
+source/hackmode-core/http-transport-profile.lisp
 source/hackmode-core/package.lisp
 source/hackmode-core/rage-worker.lisp
 source/hackmode-core/tests/capture-provider.lisp
@@ -167,6 +171,7 @@ source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/expert.lisp
 source/hackmode-core/tests/functions.lisp
+source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/rage-worker.lisp
 source/hackmode-database/db.lisp
 source/hackmode-database/effective-operational-kb.lisp
@@ -204,6 +209,7 @@ source/hackmode-providers/recon/package.lisp
 source/hackmode-providers/recon/recon.lisp
 source/hackmode-providers/recon/registration.lisp
 source/hackmode-providers/recon/tests/recon-tests.lisp
+tools/ipx/mitmproxy-addon.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -236,6 +242,7 @@ source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/expert.lisp
 source/hackmode-core/tests/functions.lisp
+source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/rage-worker.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd

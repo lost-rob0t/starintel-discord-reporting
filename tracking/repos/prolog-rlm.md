@@ -1,15 +1,22 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-31T20:08:45Z`
+- generated: `2026-08-31T23:53:08Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`6957c30c88f9548137a8ff9c3a0720f9bdadb210`](https://github.com/lost-rob0t/prolog-rlm/commit/6957c30c88f9548137a8ff9c3a0720f9bdadb210)
-- head date: `2026-08-31T14:37:51-04:00`
-- head subject: fix: isolate recoverable native preflight faults per call (#313)
+- head: [`a89711d504e6cc6c3fac789b7f0b6b0453aea23b`](https://github.com/lost-rob0t/prolog-rlm/commit/a89711d504e6cc6c3fac789b7f0b6b0453aea23b)
+- head date: `2026-08-31T18:48:43-04:00`
+- head subject: docs: record exact-head gate evidence for #325
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 a89711d504e6cc6c3fac789b7f0b6b0453aea23b docs: record exact-head gate evidence for #325
+2026-08-31 7828fd8ef8254112fd0f5417ffd3324f26dd07a9 docs: state wire-text retention boundary for classify (#325)
+2026-08-31 c39ea277d9873b875531ecdf19e7a7d800c6fa1b fix: keep partial normalization entries wire-safe (#325)
+2026-08-31 ae1a27165b6071785373d8bd44e23cec42446b12 fix: isolate malformed native argument parsing per call (#325)
+2026-08-31 de8d47c1e9395760fcda9c80753bb88d879d3f2c test: reproduce raw native argument batch abort (#325)
+2026-08-31 774c9cc20f01b0203d3cf122c16fc1c1f647f138 fix: preserve resolved bindings through recoverable preflight faults
+2026-08-31 c13c37066cda798e2dacbb59c8ce41eb610457fe test: add RED regressions for original-request effect isolation (#316)
 2026-08-31 6957c30c88f9548137a8ff9c3a0720f9bdadb210 fix: isolate recoverable native preflight faults per call (#313)
 2026-08-31 b8206c728549f4128e8b18f0611d2d0456dc5b2d fix(312): derive context_peek schema and validation from one selector contract
 2026-08-31 0c9b8fc6102cbc720d54e81f2a5b832bb0260202 chore: drop corpus entries duplicated by the rebase onto main
@@ -373,12 +380,6 @@
 2026-08-18 8ec9b8649ad6bcdc4eecc2120917d9f3586ab994 Reconcile backlog, roadmap, and GitHub issue state (#89)
 2026-08-18 abfc30ebb9f335d5841c1f7910bd474da905ebcf Document the PrologAgent roadmap and product boundary (#87)
 2026-08-17 2b9816132d6da1010fbf105fcc6a0538767410e6 docs: add repository agent instructions
-2026-08-17 88433863056cd39a1d152db2c0a3cbf1a7f43fc0 Add explicit pre-v2 effect-store migration (#85)
-2026-08-17 655ad60d2aaf5cb537f36b578c62420f134aae02 Fence legacy attempts from fresh dispatch
-2026-08-17 fcff94c1da017bdfa4aa58cc2399bcd689f09106 Cover migration CLI and lock races
-2026-08-17 02a07db7cadfef46a123fdf4bec2cb1c400a9149 Harden migration identity and crash recovery
-2026-08-17 8f80c99f0f10f13ac5dd520dd176c40ff0c111aa Add explicit legacy effect-store migration
-2026-08-17 6c60924cef7a03b9d483e4691646d4d56a13c0f3 Harden durable effect substrate across identity, retention, and recovery (#83)
 ```
 
 ## Repository paths changed, last 14 days
@@ -453,8 +454,6 @@ docs/conversation-warm-integration.md
 docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/effect-adapters.md
-docs/effect-migration.md
-docs/effect-runtime.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
 docs/nix-packaging.md
@@ -502,11 +501,8 @@ prolog/rlm_conversation_warm.pl
 prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
 prolog/rlm_effect.pl
-prolog/rlm_effect_authority.pl
 prolog/rlm_effect_executor.pl
 prolog/rlm_effect_migration.pl
-prolog/rlm_effect_persist.pl
-prolog/rlm_effects.pl
 prolog/rlm_evidence.pl
 prolog/rlm_evolution.pl
 prolog/rlm_native_tool.pl
@@ -544,6 +540,7 @@ rage/264-real-recursive-final-handoff.org
 rage/277-planner-protocol-context.org
 rage/290-adversarial-review-report.md
 rage/290-findings-fix-prompt.md
+rage/325-native-call-isolation.org
 research/README.md
 research/RLM-RESEARCH-000-foundations.org
 research/RLM-RESEARCH-001-prolog-runtime-design.org
@@ -579,10 +576,7 @@ skills/core/rlm-operate/SKILL.md
 skills/core/rlm-recurse/SKILL.md
 test/deterministic_corpus.pl
 test/deterministic_runner.pl
-test/effect_legacy_fixture.pl
 test/effect_migration_crash_worker.pl
-test/effect_projection_crash_phase1.pl
-test/effect_projection_crash_phase2.pl
 test/fixtures/prolog_agent_ui_v1_session.ndjson
 test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
 test/fixtures/skills/engineering/enriched/SKILL.md
@@ -639,7 +633,6 @@ test/rlm_effect_executor_test.pl
 test/rlm_effect_hardening_test.pl
 test/rlm_effect_migration_restart_test.pl
 test/rlm_effect_migration_test.pl
-test/rlm_effect_restart_test.pl
 test/rlm_effect_test.pl
 test/rlm_evolution_test.pl
 test/rlm_graph_authority_test.pl
@@ -786,10 +779,7 @@ scripts/spec_plan_authority_check.sh
 scripts/validate_research_approval.pl
 test/deterministic_corpus.pl
 test/deterministic_runner.pl
-test/effect_legacy_fixture.pl
 test/effect_migration_crash_worker.pl
-test/effect_projection_crash_phase1.pl
-test/effect_projection_crash_phase2.pl
 test/fixtures/prolog_agent_ui_v1_session.ndjson
 test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
 test/fixtures/skills/engineering/enriched/SKILL.md
@@ -846,7 +836,6 @@ test/rlm_effect_executor_test.pl
 test/rlm_effect_hardening_test.pl
 test/rlm_effect_migration_restart_test.pl
 test/rlm_effect_migration_test.pl
-test/rlm_effect_restart_test.pl
 test/rlm_effect_test.pl
 test/rlm_evolution_test.pl
 test/rlm_graph_authority_test.pl

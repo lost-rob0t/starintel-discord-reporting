@@ -3,8 +3,8 @@
 Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These are evidence caches, not claims of test success.
 
 - [lost-rob0t/auto-dig-quasar](./auto-dig-quasar.md) `76f3971f8bde`
-- [lost-rob0t/hackmode](./hackmode.md) `40389abcc10a`
-- [lost-rob0t/prolog-rlm](./prolog-rlm.md) `6957c30c88f9`
+- [lost-rob0t/hackmode](./hackmode.md) `d34d58dac33f`
+- [lost-rob0t/prolog-rlm](./prolog-rlm.md) `a89711d504e6`
 - [lost-rob0t/quasar-ui](./quasar-ui.md) `28684ae94953`
 - [lost-rob0t/quasar](./quasar.md) `80553699fa6c`
 - [lost-rob0t/star-app](./star-app.md) `5f727b477a06`
@@ -21,9 +21,9 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `b55316bae294`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `980f7a217a0d`
-- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `7fbdc2684d22`
+- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `ff1e1d11be56`
 - [lost-rob0t/starintel-server](./starintel-server.md) `8fb297d146e7`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `ec0dcc17ef39`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
 - [lost-rob0t/tek9](./tek9.md) `a9f5b595f5d9`
-- [lost-rob0t/zara](./zara.md) `de7c91c80a13`
+- [lost-rob0t/zara](./zara.md) `7ae4b7f7a716`

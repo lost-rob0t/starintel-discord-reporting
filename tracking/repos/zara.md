@@ -1,15 +1,20 @@
 # lost-rob0t/zara
 
-- generated: `2026-08-31T20:08:48Z`
+- generated: `2026-08-31T23:53:09Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`de7c91c80a1380781ef41d0b6a85d0f1725d812a`](https://github.com/lost-rob0t/zara/commit/de7c91c80a1380781ef41d0b6a85d0f1725d812a)
-- head date: `2026-08-31T14:51:44-04:00`
-- head subject: Merge pull request #242 from lost-rob0t/fix/agent-openrouter-server-entrypoint
+- head: [`7ae4b7f7a716f302f3ad9299df3f3b1d9322e3a5`](https://github.com/lost-rob0t/zara/commit/7ae4b7f7a716f302f3ad9299df3f3b1d9322e3a5)
+- head date: `2026-08-31T18:09:21-04:00`
+- head subject: Merge pull request #245 from lost-rob0t/chore/backlog-244
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 7ae4b7f7a716f302f3ad9299df3f3b1d9322e3a5 Merge pull request #245 from lost-rob0t/chore/backlog-244
+2026-08-31 37410f988055939579e5bbbfb8e4a789e3d299fb chore(backlog): import issue 244 and refresh closed-issue mirror
+2026-08-31 4f77de3c7dec0cebf711a5ffdad04fd136354693 Merge pull request #243 from lost-rob0t/rage/156-prolog-frames
+2026-08-31 7d5e17693463d2f9f9479df564474d3eea3fc958 Merge branch 'master' into rage/156-prolog-frames
+2026-08-31 8f2581cefd79890788ca83d46dedb2c4f0fd4d7b feat(prolog): adapt resolution to IntentFrame with canonical semantic corpus
 2026-08-31 de7c91c80a1380781ef41d0b6a85d0f1725d812a Merge pull request #242 from lost-rob0t/fix/agent-openrouter-server-entrypoint
 2026-08-31 8e212f8ccba35ea1a31e2faae2b058455e8951b0 fix(server): keep one PrincipalContext under the -m entrypoint
 2026-08-31 34a0638ec83a9c9fc0b44be72be390454f7be714 fix(agent): add OpenRouter provider to the agent ChatModel factory
@@ -21,6 +26,8 @@
 2026-08-31 aa5c396a75a336fae86fcbd13c35aca2161a7092 docs: record ZARA-027 RAGE implementation evidence and update wiki
 2026-08-31 24643d71de59acd75c498af9e5c9832de6cb2dae feat(agent,llm): stream LLM/agent output with cancellation-safe text events
 2026-08-31 a4ccec2c7947038fcd30e546c421ac55a3073897 feat(agent): add typed stream events and pure sentence chunker
+2026-08-31 64ee53c1ee107fc93c46ed92568bd538e33f9de1 docs(rage): record #156 run identity, research, design, adversarial review
+2026-08-31 55b3bb84c649afb620a139d9e4c28eadbc26d48f docs(rage): record #155 merge evidence; regenerate backlog post-merge
 2026-08-31 f053f41f2997a8c4054baef5238a84554d0826d8 Merge pull request #236 from lost-rob0t/rage/155-typed-slots
 2026-08-31 7c31c456add5ae637cbe161932b3421073aaf03b Merge branch 'master' into rage/155-typed-slots
 2026-08-31 0f5734b64d71a02f1a9aa9d42e5d54cb131a0ee3 docs(rage): record #155 TDD and gate evidence; regenerate backlog mirror
@@ -432,8 +439,11 @@ docs/server.org
 flake.lock
 flake.nix
 kb/config.pl
+kb/intents.pl
+kb/semantic_corpus.pl
 modules/command_loop.pl
 modules/config_loader.pl
+modules/intent_frames.pl
 modules/llm_client.pl
 modules/rlm_rewrite.pl
 modules/rlm_sidecar.pl
@@ -461,6 +471,7 @@ rage/154-intentframe-design.org
 rage/154-intentframe-research.org
 rage/154-intentframe.org
 rage/155-clarification-dialogue.org
+rage/156-prolog-frames.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
@@ -538,6 +549,7 @@ t/test_principal_conversation_isolation.py
 t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
 t/test_principal_runtime_wiring.py
+t/test_prolog_frame_adapter.py
 t/test_prolog_rlm_backend.py
 t/test_prolog_rlm_protocol_edges.py
 t/test_prolog_studio.py
@@ -549,6 +561,7 @@ t/test_quick_handoff_edges.py
 t/test_runtime_backend_selection.py
 t/test_runtime_host_clarification.py
 t/test_runtime_tool_approval.py
+t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
@@ -693,6 +706,7 @@ t/test_principal_conversation_isolation.py
 t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
 t/test_principal_runtime_wiring.py
+t/test_prolog_frame_adapter.py
 t/test_prolog_rlm_backend.py
 t/test_prolog_rlm_protocol_edges.py
 t/test_prolog_studio.py
@@ -704,6 +718,7 @@ t/test_quick_handoff_edges.py
 t/test_runtime_backend_selection.py
 t/test_runtime_host_clarification.py
 t/test_runtime_tool_approval.py
+t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py

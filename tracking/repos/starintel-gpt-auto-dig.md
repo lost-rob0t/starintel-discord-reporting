@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-08-31T20:08:36Z`
+- generated: `2026-08-31T23:53:00Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`7fbdc2684d22c1c3e43cee38002bb41dd90b663e`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/7fbdc2684d22c1c3e43cee38002bb41dd90b663e)
-- head date: `2026-08-31T16:04:07-04:00`
-- head subject: Include actor code in guarded live-test trigger [auto-dig-live-test]
+- head: [`ff1e1d11be560d1691887736c4616b9806443710`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/ff1e1d11be560d1691887736c4616b9806443710)
+- head date: `2026-08-31T16:20:46-04:00`
+- head subject: Pin validated tool-result wire fix [auto-dig-live-test]
 
 ## Git log, last 14 days
 
 ```text
+2026-08-31 ff1e1d11be560d1691887736c4616b9806443710 Pin validated tool-result wire fix [auto-dig-live-test]
+2026-08-31 4daa25e8b67db1568fec32e430a7f13deb9dbdc2 Test bounded Auto-Dig raw-JSON repair [auto-dig-live-test]
+2026-08-31 e6b9ba5944045c46cacd3649ffcabd10060535a1 Harden Auto-Dig native-call harness
 2026-08-31 7fbdc2684d22c1c3e43cee38002bb41dd90b663e Include actor code in guarded live-test trigger [auto-dig-live-test]
 2026-08-31 4278516533cae083014fcc88cef60324d71306d1 Fix stale Auto-Dig MCP allow-list regression test
 2026-08-31 c5eec01de8971f5b5c91d7cf570a6846c289b55d Re-enable Auto-Dig actor with current RLM harness [auto-dig-live-test]
@@ -195,12 +198,6 @@
 2026-08-17 f39aef7902632aef328ba455c7ad2d50056c0167 Hourly Auto-Dig: Anduril HQ semantics and Thunder update (#2033)
 2026-08-17 75e6a359a1ec0b928fa8c4095a348287306dc65d Add Flock roster, New York decisionmaker tracking, and sharing recursions (#81)
 2026-08-17 bda97837309107e7fd1e5918f975f87f693c47a8 Add WEF Columbus depth 6 primary records (#82)
-2026-08-17 53775fb9dd661a324a1f3f547668c5b490b59363 Recurse WEF crossmatch and add Palantir HQ/news Auto-Dig pass
-2026-08-17 fa51e55e61bc127a6d46624b486f358120b184c8 Consolidate Flock datasets under canonical root (#2032)
-2026-08-17 43de8920667cf7c4f6f820032e357293d900d23c Add sanitized Flock VP enrichment export
-2026-08-17 bc39e053f6817317429b002164e23ce4a9375e8c Publish Flock board public-contact surface (#2030)
-2026-08-17 3bcd36b0b253285ca4a57412c9f3e9cdf74c7775 Add Flock VP location enrichment pass 1 (#2029)
-2026-08-17 35e2fbb6ea8e8ae4073afd1ab85de21239976a1f AutoDig: Flock Dunwoody MJCCA camera access (#2028)
 ```
 
 ## Repository paths changed, last 14 days
@@ -216,14 +213,9 @@
 .github/workflows/auto-dig-request.yml
 .github/workflows/dnc-key-people-wef-accountability.yml
 .github/workflows/fbi-procurement-collector.yml
-.github/workflows/flock-dunwoody-mjcca-one-shot.yml
 .github/workflows/materialize-harvest.yml
-.github/workflows/palantir-sec-principal-offices-one-shot.yml
 .github/workflows/sync-flock-locality-issues.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
-.github/workflows/validate-db.yml
-AGENTS.md
-README.md
 agents/.keep-observability
 agents/README.md
 agents/auto_dig_failure_report.py
@@ -241,44 +233,24 @@ agents/test_auto_dig_model_router.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_rlm_runner.pl
 config/locality-tracking/new-york.json
-db/address/starintel:address:palantir-principal-office-19505-biscayne-aventura.ndjson
 db/analysis/starintel:analysis:andhealth-incentive-ledger-conflict-depth-6.ndjson
 db/analysis/starintel:analysis:central-ohio-living-lab-project-disclosure-gap-depth-6.ndjson
-db/analysis/starintel:analysis:flock-dunwoody-mjcca-access-initial-assessment.ndjson
 db/analysis/starintel:analysis:global-shapers-columbus-status-depth-6.ndjson
 db/analysis/starintel:analysis:green-it-operating-model-depth-6.ndjson
 db/analysis/starintel:analysis:hntb-smart-lighting-procurement-continuity-depth-6.ndjson
-db/analysis/starintel:analysis:palantir-principal-office-enrichment-2026-08-17.ndjson
-db/analysis/starintel:analysis:palantir-wef-current-news-materiality-2026-08-17.ndjson
 db/analysis/starintel:analysis:smart-columbus-current-staff-role-map-depth-6.ndjson
 db/analysis/starintel:analysis:urbanos-reuse-lineage-depth-6.ndjson
 db/analysis/starintel:analysis:wef-columbus-depth-6-primary-records-and-status.ndjson
 db/analysis/starintel:analysis:wef-columbus-direct-agreement-search-depth-6.ndjson
-db/asset/starintel:asset:mjcca-gymnastics-camera.ndjson
-db/asset/starintel:asset:mjcca-main-pool-right-camera.ndjson
-db/claim/starintel:claim:carter-accessed-mjcca-gymnastics-camera-2025-09-30.ndjson
-db/claim/starintel:claim:carter-single-camera-view-2025-09-30.ndjson
-db/claim/starintel:claim:demo-partner-documentation-not-produced-report.ndjson
-db/claim/starintel:claim:flock-changed-sensitive-demo-location-policy.ndjson
-db/claim/starintel:claim:flock-characterizes-carter-access-as-authorized-demo.ndjson
-db/claim/starintel:claim:mjcca-camera-sharing-critical-incident-scope.ndjson
 db/event/starintel:event:cleveland-supported-columbus-global-shapers-launch.ndjson
 db/event/starintel:event:connectus-device-donation-program-launch-2025.ndjson
-db/event/starintel:event:flock-carter-mjcca-gymnastics-live-view-2025-09-30.ndjson
-db/event/starintel:event:flock-gluck-mjcca-camera-live-views-2025-07-23.ndjson
 db/event/starintel:event:hntb-smart-lighting-phase-2-contract-2022.ndjson
 db/event/starintel:event:hntb-smart-lighting-phase-3-modification-2024.ndjson
 db/financial-observation/starintel:financial-observation:andhealth-columbus-project-cost-components-2022.ndjson
 db/financial-observation/starintel:financial-observation:andhealth-downtown-office-incentive-known-payments-2023-2024.ndjson
 db/financial-observation/starintel:financial-observation:andhealth-downtown-office-incentive-payment-2023.ndjson
 db/financial-observation/starintel:financial-observation:hntb-smart-lighting-lifecycle-authorization-2022-2026.ndjson
-db/investigation-target/starintel:investigation-target:dunwoody-flock-demo-authorization-chain.ndjson
-db/investigation-target/starintel:investigation-target:dunwoody-flock-raw-audit-logs.ndjson
 db/investigation-target/starintel:investigation-target:ecfr-explicit-headquarters-designation.ndjson
-db/investigation-target/starintel:investigation-target:flock-dunwoody-mjcca-access.ndjson
-db/investigation-target/starintel:investigation-target:flock-live-view-audit-semantics.ndjson
-db/investigation-target/starintel:investigation-target:mjcca-dunwoody-camera-sharing-terms.ndjson
-db/investigation-target/starintel:investigation-target:palantir-org-id-resolution.ndjson
 db/investigation-target/starintel:investigation-target:wef-depth-7-andhealth-compliance-ledger.ndjson
 db/investigation-target/starintel:investigation-target:wef-depth-7-columbus-shapers-archive.ndjson
 db/investigation-target/starintel:investigation-target:wef-depth-7-green-it-adoption-roster.ndjson
@@ -289,56 +261,26 @@ db/investigation-target/starintel:investigation-target:wef-depth-7-urbanos-deplo
 db/investigation-target/starintel:investigation-target:wef-depth-7-wef-columbus-public-records.ndjson
 db/location/starintel:location:ecfr-berlin-office.ndjson
 db/media/starintel:media:columbus-green-it-playbook-2-0-2025.ndjson
-db/observation/starintel:observation:hunyar-carter-live-view-log-2025-09-30.ndjson
-db/observation/starintel:observation:palantir-principal-office-effective-2026-02-17.ndjson
-db/org/starintel:org:city-of-dunwoody-georgia.ndjson
-db/org/starintel:org:dunwoody-police-department.ndjson
 db/org/starintel:org:emh-and-t-inc.ndjson
 db/org/starintel:org:energi-ai.ndjson
 db/org/starintel:org:european-council-on-foreign-relations.ndjson
-db/org/starintel:org:flock-safety.ndjson
 db/org/starintel:org:global-shapers-cleveland-hub.ndjson
 db/org/starintel:org:global-shapers-columbus-hub-provisional.ndjson
-db/org/starintel:org:marcus-jewish-community-center-of-atlanta.ndjson
 db/org/starintel:org:national-engineering-services-inc.ndjson
-db/org/starintel:org:palantir-technologies-inc.ndjson
 db/org/starintel:org:smart-columbus.ndjson
 db/org/starintel:org:urbanos-examples.ndjson
 db/org/starintel:org:usdot-jpo-codehub.ndjson
-db/person/starintel:person:bob-carter-flock.ndjson
-db/person/starintel:person:jason-hunyar-dunwoody.ndjson
-db/person/starintel:person:randy-gluck-flock.ndjson
 db/product/starintel:product:energi-ai-emissions-mapping-project.ndjson
 db/product/starintel:product:urbanos-examples-smartcitiesdata-repository.ndjson
 db/product/starintel:product:urbanos-smart-cities-data-platform.ndjson
 db/product/starintel:product:usdot-jpo-codehub-smartcitiesdata-repository.ndjson
-db/relation/starintel:relation:bob-carter-employed-by-flock.ndjson
-db/relation/starintel:relation:bob-carter-viewed-mjcca-gymnastics-camera.ndjson
 db/relation/starintel:relation:cleveland-hub-supported-columbus-hub-launch.ndjson
-db/relation/starintel:relation:dpd-part-of-city-of-dunwoody.ndjson
-db/relation/starintel:relation:dunwoody-pd-uses-flock.ndjson
 db/relation/starintel:relation:green-it-playbook-operationalized-by-energi-ai-connectus.ndjson
 db/relation/starintel:relation:hntb-phase-3-used-emht-national-engineering-services.ndjson
-db/relation/starintel:relation:mjcca-shares-cameras-with-dunwoody-pd.ndjson
-db/relation/starintel:relation:palantir-principal-office-effective-2026-02-17.ndjson
-db/relation/starintel:relation:randy-gluck-employed-by-flock.ndjson
-db/relation/starintel:relation:randy-gluck-viewed-mjcca-pool-camera.ndjson
 db/relation/starintel:relation:smart-columbus-partnered-energi-ai-emissions-mapping.ndjson
 db/relation/starintel:relation:urbanos-smartcitiesdata-replicated-to-public-repositories.ndjson
-db/research-pass/starintel:research-pass:flock-dunwoody-mjcca-initial-2026-08-17.ndjson
 db/research-pass/starintel:research-pass:hourly-dark-academia-ecfr-2026-08-19.ndjson
-db/research-pass/starintel:research-pass:palantir-principal-office-enrichment-2026-08-17.ndjson
-db/research-pass/starintel:research-pass:palantir-wef-current-news-materiality-2026-08-17.ndjson
 db/research-pass/starintel:research-pass:wef-columbus-depth-6-2026-07-31.ndjson
-db/social-media-post/starintel:social-media-post:deflock-2079202670380814382.ndjson
-db/source/starintel:source:404media-dunwoody-flock-demo-camera-access-2026.ndjson
-db/source/starintel:source:acpc-dunwoody-flock-contract-camera-access-2026-04-14.ndjson
-db/source/starintel:source:deflock-x-2079202670380814382.ndjson
-db/source/starintel:source:dunwoody-brookhaven-ledger-flock-gymnastics-camera-2026.ndjson
-db/source/starintel:source:flock-testing-development-program-dunwoody-2026.ndjson
-db/source/starintel:source:hunyar-why-are-flock-employees-watching-our-children-2026.ndjson
-db/source/starintel:source:muckrock-dunwoody-camera-partnership-request-d038447-061624.ndjson
-db/source/starintel:source:muckrock-dunwoody-flock-contracts-d045363-090725.ndjson
 digs/bruegel/2026-08-19-brussels-location-news/README.md
 digs/bruegel/2026-08-19-brussels-location-news/starintel-documents.jsonl
 digs/cia/2026-08-17-anduril-hq-thunder/starintel-documents.jsonl
@@ -471,36 +413,6 @@ digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/subcontr
 digs/fed/2026-08-18-odni-clayton-handoff/starintel-documents.jsonl
 digs/fed/2026-08-19-national-security-adviser-eop-location/README.md
 digs/fed/2026-08-19-national-security-adviser-eop-location/starintel-documents.jsonl
-digs/flock-safety/2026-08-17-vp-location-enrichment-pass-1/flock-799118-valid-sanitized.csv
-digs/flock-safety/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-001.jsonl
-digs/flock-safety/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-002.jsonl
-digs/flock-safety/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-003.jsonl
-digs/flock-safety/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-004.jsonl
-digs/flock/2026-07-25-columbus-local-government-lobbying/README.md
-digs/flock/2026-07-25-columbus-local-government-lobbying/manifest.json
-digs/flock/2026-07-25-columbus-local-government-lobbying/sources.md
-digs/flock/2026-07-25-columbus-local-government-lobbying/starintel-documents.jsonl
-digs/flock/2026-07-25-national-state-locality-seed/README.md
-digs/flock/2026-07-25-national-state-locality-seed/manifest.json
-digs/flock/2026-07-25-national-state-locality-seed/sources.md
-digs/flock/2026-07-25-national-state-locality-seed/starintel-documents.jsonl
-digs/flock/2026-07-26-columbus-cpd-control-plane/README.md
-digs/flock/2026-07-26-columbus-cpd-control-plane/manifest.json
-digs/flock/2026-07-26-columbus-cpd-control-plane/sources.md
-digs/flock/2026-07-26-columbus-cpd-control-plane/starintel-documents.jsonl
-digs/flock/2026-07-26-columbus-cpd-next-level/README.md
-digs/flock/2026-07-26-columbus-cpd-next-level/manifest.json
-digs/flock/2026-07-26-columbus-cpd-next-level/sources.md
-digs/flock/2026-07-26-columbus-cpd-next-level/starintel-documents.jsonl
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/README.md
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/manifest.json
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/sources.md
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/starintel-documents.jsonl.gz.b64.part-001
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/starintel-documents.jsonl.gz.b64.part-002
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/starintel-documents.jsonl.gz.b64.part-003
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/starintel-documents.jsonl.gz.b64.part-004a
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/starintel-documents.jsonl.gz.b64.part-004b
-digs/flock/2026-07-26-shotspotter-surveillance-locality-recursion/starintel-documents.jsonl.gz.b64.parts
 digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/README.md
 digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/manifest.json
 digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/sources.md
@@ -593,13 +505,6 @@ digs/flock/2026-08-10-columbus-flock-hearing/starintel-documents.jsonl
 digs/flock/2026-08-12-columbus-renewal-control-surface/README.md
 digs/flock/2026-08-12-columbus-renewal-control-surface/sources.md
 digs/flock/2026-08-12-columbus-renewal-control-surface/starintel-documents.jsonl
-digs/flock/2026-08-17-dunwoody-mjcca-camera-access/board-public-contact-report.md
-digs/flock/2026-08-17-dunwoody-mjcca-camera-access/starintel-documents.jsonl
-digs/flock/2026-08-17-vp-location-enrichment-pass-1/flock-799118-valid-sanitized.csv
-digs/flock/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-001.jsonl
-digs/flock/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-002.jsonl
-digs/flock/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-003.jsonl
-digs/flock/2026-08-17-vp-location-enrichment-pass-1/starintel-documents.part-004.jsonl
 digs/flock/2026-08-19-request-1895-poestenkill-flock-rejection/README.md
 digs/flock/2026-08-19-request-1895-poestenkill-flock-rejection/starintel-documents.jsonl
 digs/flock/2026-08-19-request-1896-petersburgh-flock-deployment/README.md
@@ -734,52 +639,6 @@ digs/wef-columbus/2026-08-18-andhealth-location-incentive/starintel-documents.js
 digs/wef-columbus/2026-08-18-global-shapers-archive/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
-digs/wef/2026-08-12-katherine-hsiao-data-policy-attribution-depth-7/README.md
-digs/wef/2026-08-12-katherine-hsiao-data-policy-attribution-depth-7/sources.md
-digs/wef/2026-08-12-katherine-hsiao-data-policy-attribution-depth-7/starintel-documents.jsonl
-digs/wef/2026-08-12-katherine-hsiao-data-policy-council-depth-6/README.md
-digs/wef/2026-08-12-katherine-hsiao-data-policy-council-depth-6/starintel-documents.jsonl
-digs/wef/2026-08-12-katherine-hsiao-wef-artifact-recovery-depth-8/README.md
-digs/wef/2026-08-12-katherine-hsiao-wef-artifact-recovery-depth-8/starintel-documents.jsonl
-digs/wef/2026-08-12-palantir-amnc-session-speaker-resolution-depth-5/README.md
-digs/wef/2026-08-12-palantir-amnc-session-speaker-resolution-depth-5/starintel-documents.jsonl
-digs/wef/2026-08-12-palantir-wef-data-equity-output-network-root/starintel-documents.jsonl
-digs/wef/2026-08-12-palantir-wef-participant-resolution-depth-4/README.md
-digs/wef/2026-08-12-palantir-wef-participant-resolution-depth-4/manifest.json
-digs/wef/2026-08-12-palantir-wef-participant-resolution-depth-4/starintel-documents.jsonl
-digs/wef/2026-08-12-thiel-company-employee-wef-crossmatch-depth-3/README.md
-digs/wef/2026-08-12-thiel-company-employee-wef-crossmatch-depth-3/manifest.json
-digs/wef/2026-08-12-thiel-company-employee-wef-crossmatch-depth-3/sources.md
-digs/wef/2026-08-12-thiel-company-employee-wef-crossmatch-depth-3/starintel-documents.jsonl
-digs/wef/2026-08-12-wef-data-equity-2023-coauthor-institution-crossmatch-depth-1/starintel-documents.jsonl
-digs/wef/2026-08-12-wef-data-equity-2023-full-author-affiliation-resolution-depth-2/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-data-equity-term-end-depth-4/README.md
-digs/wef/2026-08-17-katherine-hsiao-data-equity-term-end-depth-4/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-data-equity-term-start-depth-3/README.md
-digs/wef/2026-08-17-katherine-hsiao-data-equity-term-start-depth-3/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-data-frontiers-successor-roster-depth-5/README.md
-digs/wef/2026-08-17-katherine-hsiao-data-frontiers-successor-roster-depth-5/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-data-policy-direct-artifact-depth-2/README.md
-digs/wef/2026-08-17-katherine-hsiao-data-policy-direct-artifact-depth-2/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-data-policy-term-calibration-depth-1/README.md
-digs/wef/2026-08-17-katherine-hsiao-data-policy-term-calibration-depth-1/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-wef-council-chronology-closure-depth-6/README.md
-digs/wef/2026-08-17-katherine-hsiao-wef-council-chronology-closure-depth-6/starintel-documents.jsonl
-digs/wef/2026-08-17-katherine-hsiao-wef-council-chronology-root/README.md
-digs/wef/2026-08-17-katherine-hsiao-wef-council-chronology-root/starintel-documents.jsonl
-digs/wef/2026-08-17-palantir-current-news-pass/starintel-documents.jsonl
-digs/wef/2026-08-17-palantir-sec-principal-office-history/README.md
-digs/wef/2026-08-17-palantir-sec-principal-office-history/starintel-documents.jsonl
-digs/wef/2026-08-17-palantir-wef-data-equity-output-network-closure-depth-5/README.md
-digs/wef/2026-08-17-palantir-wef-data-equity-output-network-closure-depth-5/starintel-documents.jsonl
-digs/wef/2026-08-17-wef-data-equity-2023-pdf-affiliation-closure-depth-3/README.md
-digs/wef/2026-08-17-wef-data-equity-2023-pdf-affiliation-closure-depth-3/starintel-documents.jsonl
-digs/wef/2026-08-17-wef-data-equity-2024-roster-continuity-depth-4/README.md
-digs/wef/2026-08-17-wef-data-equity-2024-roster-continuity-depth-4/starintel-documents.jsonl
-digs/wef/2026-08-17-wef-data-governance-council-member-carryover-root/README.md
-digs/wef/2026-08-17-wef-data-governance-council-member-carryover-root/starintel-documents.jsonl
-digs/wef/2026-08-17-wef-data-policy-2020-2021-roster-expansion-depth-1/README.md
-digs/wef/2026-08-17-wef-data-policy-2020-2021-roster-expansion-depth-1/starintel-documents.jsonl
 digs/wef/2026-08-19-palantir-identity-hq-staleness/README.md
 digs/wef/2026-08-19-palantir-identity-hq-staleness/starintel-documents.jsonl
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/ORB-SMPC-DEPTH-1.md
@@ -807,22 +666,13 @@ scripts/materialize_harvest.py
 scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
-scripts/scrape_wef_council_artifacts.py
-scripts/sec_principal_office_history.py
-scripts/seed_flock_dunwoody_mjcca_camera_access.py
-scripts/seed_palantir_current_news_pass.py
-scripts/seed_palantir_sec_principal_offices.py
 scripts/sync_flock_locality_issues.py
 skills/validate-starintel-changes/SKILL.md
 tests/test_auto_dig_request.py
-tests/test_canonical_dataset_roots.py
 tests/test_company_public_hq.py
 tests/test_scrape_fbi_procurement.py
 tests/test_scrape_tsc_job_postings.py
 tests/test_scrape_usaspending_award_transactions.py
-tests/test_scrape_wef_council_artifacts.py
-tests/test_sec_principal_office_history.py
-tests/test_sec_principal_office_real_cover_shapes.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -836,12 +686,9 @@ tests/test_sec_principal_office_real_cover_shapes.py
 .github/workflows/auto-dig-request.yml
 .github/workflows/dnc-key-people-wef-accountability.yml
 .github/workflows/fbi-procurement-collector.yml
-.github/workflows/flock-dunwoody-mjcca-one-shot.yml
 .github/workflows/materialize-harvest.yml
-.github/workflows/palantir-sec-principal-offices-one-shot.yml
 .github/workflows/sync-flock-locality-issues.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
-.github/workflows/validate-db.yml
 scripts/auto_dig_request.py
 scripts/company_public_hq.py
 scripts/generate_dnc_key_people_wef_accountability.py
@@ -849,19 +696,10 @@ scripts/materialize_harvest.py
 scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
-scripts/scrape_wef_council_artifacts.py
-scripts/sec_principal_office_history.py
-scripts/seed_flock_dunwoody_mjcca_camera_access.py
-scripts/seed_palantir_current_news_pass.py
-scripts/seed_palantir_sec_principal_offices.py
 scripts/sync_flock_locality_issues.py
 tests/test_auto_dig_request.py
-tests/test_canonical_dataset_roots.py
 tests/test_company_public_hq.py
 tests/test_scrape_fbi_procurement.py
 tests/test_scrape_tsc_job_postings.py
 tests/test_scrape_usaspending_award_transactions.py
-tests/test_scrape_wef_council_artifacts.py
-tests/test_sec_principal_office_history.py
-tests/test_sec_principal_office_real_cover_shapes.py
 ```
