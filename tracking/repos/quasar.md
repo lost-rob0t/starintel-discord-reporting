@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-08-31T23:53:02Z`
+- generated: `2026-09-01T05:14:57Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`80553699fa6c9dec227d4ddff629c3ab3a8b8010`](https://github.com/lost-rob0t/quasar/commit/80553699fa6c9dec227d4ddff629c3ab3a8b8010)
@@ -63,10 +63,6 @@
 2026-08-25 a640874c4004a05045fcd2732fdb0009bedb5c0c test: run Auto-Dig control contract suite
 2026-08-25 c7855139ffb7d1052d2f88f61a93bbb7901ce350 test: specify typed Auto-Dig control lifecycle
 2026-08-19 560208d0906cf564dd59050bca9a0f9341a3c55d Unify Quasar UI core and application shell (#40)
-2026-08-17 468889de0afa27748cbba85306eda512372422d9 Merge pull request #36 from lost-rob0t/agent/issue-35-tek9-streaming
-2026-08-17 528116996da1aa6359f02215e9008be3e71c594f fix: reject missing import chunk operations
-2026-08-17 04699688e928a3ffc9b11f3c1ba15716e9a48816 test: load Phase 2 journal assertion fix
-2026-08-17 90df9791a75ed86bf4f12df0070e18dd2eb39f34 test: fix Phase 2 journal command assertion
 ```
 
 ## Repository paths changed, last 14 days
@@ -85,7 +81,6 @@ control-plane/src/config.lisp
 control-plane/src/configured-main.lisp
 control-plane/src/debug-logging.lisp
 control-plane/src/packages.lisp
-control-plane/src/phase2-control-plane.lisp
 control-plane/src/websocket-server.lisp
 control-plane/tests/autodig-control-tests.lisp
 control-plane/tests/autodig-persistence-adversarial-tests.lisp
@@ -93,7 +88,6 @@ control-plane/tests/autodig-persistence-tests.lisp
 control-plane/tests/autodig-principal-isolation-tests.lisp
 control-plane/tests/autodig-websocket-auth-tests.lisp
 control-plane/tests/autodig-worker-reclaim-tests.lisp
-control-plane/tests/phase2-adversarial-v2-regression-fix.lisp
 docs/CONFIGURATION.md
 docs/UI-CORE.md
 example_configs/init.lisp
@@ -152,7 +146,6 @@ control-plane/tests/autodig-persistence-tests.lisp
 control-plane/tests/autodig-principal-isolation-tests.lisp
 control-plane/tests/autodig-websocket-auth-tests.lisp
 control-plane/tests/autodig-worker-reclaim-tests.lisp
-control-plane/tests/phase2-adversarial-v2-regression-fix.lisp
 flake.nix
 scripts/bootstrap-lisp-deps
 scripts/check-control-plane-deps.mjs

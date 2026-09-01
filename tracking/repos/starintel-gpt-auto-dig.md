@@ -1,15 +1,25 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-08-31T23:53:00Z`
+- generated: `2026-09-01T05:14:55Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`ff1e1d11be560d1691887736c4616b9806443710`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/ff1e1d11be560d1691887736c4616b9806443710)
-- head date: `2026-08-31T16:20:46-04:00`
-- head subject: Pin validated tool-result wire fix [auto-dig-live-test]
+- head: [`950778074cc706dfe5a52b0c1a41517fde1e2cef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/950778074cc706dfe5a52b0c1a41517fde1e2cef)
+- head date: `2026-09-01T01:07:18-04:00`
+- head subject: Temporarily disable publishing CI
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 950778074cc706dfe5a52b0c1a41517fde1e2cef Temporarily disable publishing CI
+2026-09-01 bf2a99c98f86bfb237f24f21d79f9969a1fa03af Fix full ingest duplicate precedence (#2310)
+2026-09-01 e19f2c134b5f77f5b7508237711749e3bcd56a28 Merge pull request #2307 from lost-rob0t/chore/update-prolog-rlm-2026-08-31
+2026-09-01 73ac5b65ee984cbd668eaa7ffacc8102561ba2c7 Retry truncated InfluenceWatch HTTP responses
+2026-09-01 5f42855f9358cda9b9fd9988d26577c6502ad281 Merge pull request #2308 from lost-rob0t/feat/ingest-documents-ci
+2026-09-01 0b8e6f0dc824c76ecf5c5658042bdfa96ac47272 Add Forgejo StarIntel ingest workflow
+2026-09-01 cec7398b35742572f4fc873cf50979ffc04efab2 Add manual StarIntel ingest workflow dispatch
+2026-09-01 960537291a11a9c843e049e411b1907f59a72868 Add ingest backfill script and diff-only CI
+2026-08-31 76f5ae00cd6b7ec4a140ca2aded4c2e92cdb2185 chore: pin Auto-Dig actor to latest Prolog-RLM
+2026-08-31 79de77717cc8178e162f77ca49697774615418fc chore: pin Auto-Dig checks to latest Prolog-RLM
 2026-08-31 ff1e1d11be560d1691887736c4616b9806443710 Pin validated tool-result wire fix [auto-dig-live-test]
 2026-08-31 4daa25e8b67db1568fec32e430a7f13deb9dbdc2 Test bounded Auto-Dig raw-JSON repair [auto-dig-live-test]
 2026-08-31 e6b9ba5944045c46cacd3649ffcabd10060535a1 Harden Auto-Dig native-call harness
@@ -192,19 +202,13 @@
 2026-08-18 cf17c761a93a4482130fa2a97d08a2060ea182a7 Hourly Auto-Dig: Tech-Bro capital location and Vista disclosure (#2039)
 2026-08-18 aecf543701606c1255cf49b2a267d3d146db4b33 Hourly Auto-Dig: Graphika public offices and news scan (#2038)
 2026-08-18 dc5d57abb276dd2459a8e72fa8da6020fb108d31 Hourly Auto-Dig: FED ODNI location and Clayton handoff (#2037)
-2026-08-17 1e852369214223290037b8e83a31bd9123e73394 Hourly Auto-Dig: DNC Democracy Partners HQ and 2028 calendar (#2036)
-2026-08-17 fca979e016baaf605dee32b4c13d954bbaad2ad9 Hourly Auto-Dig: Ohio Development location semantics and demolition grants (#2035)
-2026-08-17 46a436ca9b8fb19a61fcdc6a88a7f66f1950430a Hourly Auto-Dig: JobsOhio location semantics and Fury milestone (#2034)
-2026-08-17 f39aef7902632aef328ba455c7ad2d50056c0167 Hourly Auto-Dig: Anduril HQ semantics and Thunder update (#2033)
-2026-08-17 75e6a359a1ec0b928fa8c4095a348287306dc65d Add Flock roster, New York decisionmaker tracking, and sharing recursions (#81)
-2026-08-17 bda97837309107e7fd1e5918f975f87f693c47a8 Add WEF Columbus depth 6 primary records (#82)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
+.forgejo/workflows/import-starintel-documents.yml
 .github/ISSUE_TEMPLATE/auto-dig-request.yml
-.github/ISSUE_TEMPLATE/flock-locality.yml
 .github/workflows/auto-dig-failure-report-check.yml
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
@@ -213,8 +217,9 @@
 .github/workflows/auto-dig-request.yml
 .github/workflows/dnc-key-people-wef-accountability.yml
 .github/workflows/fbi-procurement-collector.yml
+.github/workflows/import-starintel-documents.yml
 .github/workflows/materialize-harvest.yml
-.github/workflows/sync-flock-locality-issues.yml
+.github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
 agents/.keep-observability
 agents/README.md
@@ -232,58 +237,12 @@ agents/test_auto_dig_mcp_tools.pl
 agents/test_auto_dig_model_router.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_rlm_runner.pl
-config/locality-tracking/new-york.json
-db/analysis/starintel:analysis:andhealth-incentive-ledger-conflict-depth-6.ndjson
-db/analysis/starintel:analysis:central-ohio-living-lab-project-disclosure-gap-depth-6.ndjson
-db/analysis/starintel:analysis:global-shapers-columbus-status-depth-6.ndjson
-db/analysis/starintel:analysis:green-it-operating-model-depth-6.ndjson
-db/analysis/starintel:analysis:hntb-smart-lighting-procurement-continuity-depth-6.ndjson
-db/analysis/starintel:analysis:smart-columbus-current-staff-role-map-depth-6.ndjson
-db/analysis/starintel:analysis:urbanos-reuse-lineage-depth-6.ndjson
-db/analysis/starintel:analysis:wef-columbus-depth-6-primary-records-and-status.ndjson
-db/analysis/starintel:analysis:wef-columbus-direct-agreement-search-depth-6.ndjson
-db/event/starintel:event:cleveland-supported-columbus-global-shapers-launch.ndjson
-db/event/starintel:event:connectus-device-donation-program-launch-2025.ndjson
-db/event/starintel:event:hntb-smart-lighting-phase-2-contract-2022.ndjson
-db/event/starintel:event:hntb-smart-lighting-phase-3-modification-2024.ndjson
-db/financial-observation/starintel:financial-observation:andhealth-columbus-project-cost-components-2022.ndjson
-db/financial-observation/starintel:financial-observation:andhealth-downtown-office-incentive-known-payments-2023-2024.ndjson
-db/financial-observation/starintel:financial-observation:andhealth-downtown-office-incentive-payment-2023.ndjson
-db/financial-observation/starintel:financial-observation:hntb-smart-lighting-lifecycle-authorization-2022-2026.ndjson
 db/investigation-target/starintel:investigation-target:ecfr-explicit-headquarters-designation.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-andhealth-compliance-ledger.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-columbus-shapers-archive.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-green-it-adoption-roster.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-hntb-executed-files-and-workshare.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-living-lab-project-identifiers.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-smart-columbus-project-assignments.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-urbanos-deployment-proof.ndjson
-db/investigation-target/starintel:investigation-target:wef-depth-7-wef-columbus-public-records.ndjson
 db/location/starintel:location:ecfr-berlin-office.ndjson
-db/media/starintel:media:columbus-green-it-playbook-2-0-2025.ndjson
-db/org/starintel:org:emh-and-t-inc.ndjson
-db/org/starintel:org:energi-ai.ndjson
 db/org/starintel:org:european-council-on-foreign-relations.ndjson
-db/org/starintel:org:global-shapers-cleveland-hub.ndjson
-db/org/starintel:org:global-shapers-columbus-hub-provisional.ndjson
-db/org/starintel:org:national-engineering-services-inc.ndjson
-db/org/starintel:org:smart-columbus.ndjson
-db/org/starintel:org:urbanos-examples.ndjson
-db/org/starintel:org:usdot-jpo-codehub.ndjson
-db/product/starintel:product:energi-ai-emissions-mapping-project.ndjson
-db/product/starintel:product:urbanos-examples-smartcitiesdata-repository.ndjson
-db/product/starintel:product:urbanos-smart-cities-data-platform.ndjson
-db/product/starintel:product:usdot-jpo-codehub-smartcitiesdata-repository.ndjson
-db/relation/starintel:relation:cleveland-hub-supported-columbus-hub-launch.ndjson
-db/relation/starintel:relation:green-it-playbook-operationalized-by-energi-ai-connectus.ndjson
-db/relation/starintel:relation:hntb-phase-3-used-emht-national-engineering-services.ndjson
-db/relation/starintel:relation:smart-columbus-partnered-energi-ai-emissions-mapping.ndjson
-db/relation/starintel:relation:urbanos-smartcitiesdata-replicated-to-public-repositories.ndjson
 db/research-pass/starintel:research-pass:hourly-dark-academia-ecfr-2026-08-19.ndjson
-db/research-pass/starintel:research-pass:wef-columbus-depth-6-2026-07-31.ndjson
 digs/bruegel/2026-08-19-brussels-location-news/README.md
 digs/bruegel/2026-08-19-brussels-location-news/starintel-documents.jsonl
-digs/cia/2026-08-17-anduril-hq-thunder/starintel-documents.jsonl
 digs/cia/2026-08-18-anduril-hq-semantic-conflict/starintel-documents.jsonl
 digs/cia/2026-08-18-anduril-principal-sparrows-point/starintel-documents.jsonl
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
@@ -382,7 +341,6 @@ digs/dnc/2026-08-01-key-people-wef-accountability/source/people-priority-invento
 digs/dnc/2026-08-01-key-people-wef-accountability/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-wef-expansion/manifest.json
 digs/dnc/2026-08-01-key-people-wef-expansion/starintel-documents.jsonl
-digs/dnc/2026-08-17-democracy-partners-hq-calendar/starintel-documents.jsonl
 digs/dnc/2026-08-18-democracy-partners-suite-history-ice-resolutions/starintel-documents.jsonl
 digs/dnc/2026-08-18-mur-7157-document-graph/starintel-documents.jsonl
 digs/drunk-drivers/2026-08-18-kearns-court-facility-news-scan/starintel-documents.jsonl
@@ -413,87 +371,6 @@ digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/subcontr
 digs/fed/2026-08-18-odni-clayton-handoff/starintel-documents.jsonl
 digs/fed/2026-08-19-national-security-adviser-eop-location/README.md
 digs/fed/2026-08-19-national-security-adviser-eop-location/starintel-documents.jsonl
-digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/README.md
-digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/manifest.json
-digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/sources.md
-digs/flock/2026-07-31-columbus-287g-sharing-control-recursion/starintel-documents.jsonl.gz.b64
-digs/flock/2026-07-31-columbus-asymmetric-sharing/README.md
-digs/flock/2026-07-31-columbus-asymmetric-sharing/manifest.json
-digs/flock/2026-07-31-columbus-asymmetric-sharing/sources.md
-digs/flock/2026-07-31-columbus-asymmetric-sharing/starintel-documents.jsonl.gz.b64.part-001
-digs/flock/2026-07-31-columbus-asymmetric-sharing/starintel-documents.jsonl.gz.b64.part-002
-digs/flock/2026-07-31-columbus-asymmetric-sharing/starintel-documents.jsonl.gz.b64.part-003
-digs/flock/2026-07-31-columbus-asymmetric-sharing/starintel-documents.jsonl.gz.b64.part-004
-digs/flock/2026-07-31-columbus-asymmetric-sharing/starintel-documents.jsonl.gz.b64.parts
-digs/flock/2026-07-31-columbus-audit-surface-opacity/README.md
-digs/flock/2026-07-31-columbus-audit-surface-opacity/manifest.json
-digs/flock/2026-07-31-columbus-audit-surface-opacity/sources.md
-digs/flock/2026-07-31-columbus-transparency-portal-observability/README.md
-digs/flock/2026-07-31-columbus-transparency-portal-observability/manifest.json
-digs/flock/2026-07-31-columbus-transparency-portal-observability/sources.md
-digs/flock/2026-07-31-columbus-transparency-portal-observability/starintel-documents.jsonl.gz.b64
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/README.md
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/manifest.json
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/sources.md
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-001.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-002.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-003.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-004.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-005.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-006.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-007.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-008.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-009.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-010.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-011.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-012.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-013.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-014.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-015.jsonl
-digs/flock/2026-07-31-new-york-governance-sharing-private-depth-2/starintel-documents.part-016.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/README.md
-digs/flock/2026-07-31-new-york-locality-seed/manifest.json
-digs/flock/2026-07-31-new-york-locality-seed/sources.md
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-001.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-002.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-003.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-004.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-005.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-006.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-007.jsonl
-digs/flock/2026-07-31-new-york-locality-seed/starintel-documents.part-008.jsonl
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/README.md
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/manifest.json
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/sources.md
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-001
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-002
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-003a
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-003b
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-004-0
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-004-1
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-004-2
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-004-3
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.part-005
-digs/flock/2026-07-31-organization-rosters-wef-crossmatch/starintel-documents.jsonl.gz.b64.parts
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/README.md
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/manifest.json
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/sources.md
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-001
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-002
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-003
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-004a
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-004b
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-004c
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-005
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-006
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-007
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-008
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-009a
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-009b
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-009c1
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-009c2
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.part-009c3
-digs/flock/2026-08-02-new-york-decisionmakers-contract-admin-depth-3/starintel-documents.jsonl.gz.b64.parts
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/README.md
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/manifest.json
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/sources.md
@@ -632,9 +509,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-002.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-003.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
-digs/wef-columbus/2026-07-31-depth-6-primary-records/manifest.json
-digs/wef-columbus/2026-08-17-jobsohio-hq-fury/starintel-documents.jsonl
-digs/wef-columbus/2026-08-17-ohio-development-location-demolition/starintel-documents.jsonl
 digs/wef-columbus/2026-08-18-andhealth-location-incentive/starintel-documents.jsonl
 digs/wef-columbus/2026-08-18-global-shapers-archive/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
@@ -660,16 +534,17 @@ harvest-manifests/request-2112-2026-08-25.json
 harvest-manifests/request-2286-oregon-2026-08-25.json
 opencode.jsonc
 scripts/auto_dig_request.py
-scripts/company_public_hq.py
 scripts/generate_dnc_key_people_wef_accountability.py
+scripts/import-starintel-documents.py
+scripts/influencewatch/network.py
 scripts/materialize_harvest.py
 scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
-scripts/sync_flock_locality_issues.py
 skills/validate-starintel-changes/SKILL.md
 tests/test_auto_dig_request.py
-tests/test_company_public_hq.py
+tests/test_import_starintel_documents.py
+tests/test_influencewatch_import.py
 tests/test_scrape_fbi_procurement.py
 tests/test_scrape_tsc_job_postings.py
 tests/test_scrape_usaspending_award_transactions.py
@@ -686,19 +561,21 @@ tests/test_scrape_usaspending_award_transactions.py
 .github/workflows/auto-dig-request.yml
 .github/workflows/dnc-key-people-wef-accountability.yml
 .github/workflows/fbi-procurement-collector.yml
+.github/workflows/import-starintel-documents.yml
 .github/workflows/materialize-harvest.yml
-.github/workflows/sync-flock-locality-issues.yml
+.github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
 scripts/auto_dig_request.py
-scripts/company_public_hq.py
 scripts/generate_dnc_key_people_wef_accountability.py
+scripts/import-starintel-documents.py
+scripts/influencewatch/network.py
 scripts/materialize_harvest.py
 scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
-scripts/sync_flock_locality_issues.py
 tests/test_auto_dig_request.py
-tests/test_company_public_hq.py
+tests/test_import_starintel_documents.py
+tests/test_influencewatch_import.py
 tests/test_scrape_fbi_procurement.py
 tests/test_scrape_tsc_job_postings.py
 tests/test_scrape_usaspending_award_transactions.py

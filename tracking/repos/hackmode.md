@@ -1,15 +1,22 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-08-31T23:53:09Z`
+- generated: `2026-09-01T05:15:06Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`d34d58dac33f3bcd221198ddd5675707a84d59ab`](https://github.com/lost-rob0t/hackmode/commit/d34d58dac33f3bcd221198ddd5675707a84d59ab)
-- head date: `2026-08-31T19:08:48-04:00`
-- head subject: HTTP: add typed transport and browser profile policy (#158)
+- head: [`67a2556ddd44ed46a4963b77fcfd89cc079da615`](https://github.com/lost-rob0t/hackmode/commit/67a2556ddd44ed46a4963b77fcfd89cc079da615)
+- head date: `2026-09-01T00:29:50-04:00`
+- head subject: expert: freeze selection identity (#173)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 67a2556ddd44ed46a4963b77fcfd89cc079da615 expert: freeze selection identity (#173)
+2026-08-31 78a9f94dc80075240afe8e595938c2cec75c984e views: add canonical ingest-by-state materialization
+2026-08-31 f2d10dd17b07f7ad0fa69dbc9f84498432911324 Hackpert: freeze expert extension identity strings (#168)
+2026-08-31 04f65eb17ffd00198776af6770096268b95f514d Investigation: materialize operation asset views (#166)
+2026-08-31 3ebcedf63b15ceafb7c620a083135bc00d6a6d0f Hackpert: harden objective identity snapshots (#164)
+2026-08-31 8d23204bf95fc7053a4c4ac7ac1b27a97330b50a HTTP: add typed requester contract (#162)
+2026-08-31 5a828d9890a6563361784bd292a60446a462aee1 Visual evidence: project accepted records through durable outbox (#161)
 2026-08-31 d34d58dac33f3bcd221198ddd5675707a84d59ab HTTP: add typed transport and browser profile policy (#158)
 2026-08-31 e9eb6286413d0875c49dcb5616d9e6277c797ade Database: enforce visual evidence operation/run write scope (#156)
 2026-08-31 26675e5e59eda6ac9014abaaa5abe93ad55d60ba IPX: wire versioned mitmproxy spool addon (#154)
@@ -125,6 +132,7 @@ docs/architecture/expert-layer.org
 docs/architecture/ipx.org
 docs/architecture/rage-workers.org
 flake.nix
+source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
 source/hackmode-core/expert.lisp
 source/hackmode-core/expert/actions.lisp
@@ -148,7 +156,9 @@ source/hackmode-core/expert/transition-inspection.lisp
 source/hackmode-core/functions.lisp
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
+source/hackmode-core/http-requester.lisp
 source/hackmode-core/http-transport-profile.lisp
+source/hackmode-core/investigation-views.lisp
 source/hackmode-core/package.lisp
 source/hackmode-core/rage-worker.lisp
 source/hackmode-core/tests/capture-provider.lisp
@@ -165,14 +175,19 @@ source/hackmode-core/tests/expert-orchestration.lisp
 source/hackmode-core/tests/expert-plan.lisp
 source/hackmode-core/tests/expert-recon.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
+source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
 source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/expert.lisp
 source/hackmode-core/tests/functions.lisp
+source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
+source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/rage-worker.lisp
+source/hackmode-core/tests/visual-evidence-outbox.lisp
+source/hackmode-core/visual-evidence-outbox.lisp
 source/hackmode-database/db.lisp
 source/hackmode-database/effective-operational-kb.lisp
 source/hackmode-database/execution-graph.lisp
@@ -236,14 +251,18 @@ source/hackmode-core/tests/expert-orchestration.lisp
 source/hackmode-core/tests/expert-plan.lisp
 source/hackmode-core/tests/expert-recon.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
+source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
 source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/expert.lisp
 source/hackmode-core/tests/functions.lisp
+source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
+source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/rage-worker.lisp
+source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
 source/hackmode-database/tests/capture-checkpoint.lisp

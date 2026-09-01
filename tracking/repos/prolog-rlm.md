@@ -1,15 +1,21 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-08-31T23:53:08Z`
+- generated: `2026-09-01T05:15:04Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`a89711d504e6cc6c3fac789b7f0b6b0453aea23b`](https://github.com/lost-rob0t/prolog-rlm/commit/a89711d504e6cc6c3fac789b7f0b6b0453aea23b)
-- head date: `2026-08-31T18:48:43-04:00`
-- head subject: docs: record exact-head gate evidence for #325
+- head: [`eed1639d0b20a7efb26e02c94b3e896e790c5bae`](https://github.com/lost-rob0t/prolog-rlm/commit/eed1639d0b20a7efb26e02c94b3e896e790c5bae)
+- head date: `2026-09-01T01:11:45-04:00`
+- head subject: fix: break rlm_completion <-> rlm_direct import cycle (#328)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 eed1639d0b20a7efb26e02c94b3e896e790c5bae fix: break rlm_completion <-> rlm_direct import cycle (#328)
+2026-09-01 889eb66e28eb5c09773dbd04f94dcac769951197 test: reproduce hostile host text_string corruption (#328)
+2026-08-31 7e1e992772290fa869e3573182c77e570cb667bb test: pin tool-result correlation without optional name (#326)
+2026-08-31 0c51cb6c621e1baa8357ac61049302eeb9769ff6 Keep tool-result fix surgical
+2026-08-31 b7479b920eb155b5803b46d71ee4416108e049dd Test provider-safe dotted tool result messages
+2026-08-31 8732c3b6a47b9dc2791d07897cf4c0153aa49d69 Fix OpenRouter tool-result wire correlation
 2026-08-31 a89711d504e6cc6c3fac789b7f0b6b0453aea23b docs: record exact-head gate evidence for #325
 2026-08-31 7828fd8ef8254112fd0f5417ffd3324f26dd07a9 docs: state wire-text retention boundary for classify (#325)
 2026-08-31 c39ea277d9873b875531ecdf19e7a7d800c6fa1b fix: keep partial normalization entries wire-safe (#325)
@@ -379,7 +385,6 @@
 2026-08-18 946904091a8b23024c8eb27c244c66a29e4eb97f Finalize post-merge backlog reconciliation (#90)
 2026-08-18 8ec9b8649ad6bcdc4eecc2120917d9f3586ab994 Reconcile backlog, roadmap, and GitHub issue state (#89)
 2026-08-18 abfc30ebb9f335d5841c1f7910bd474da905ebcf Document the PrologAgent roadmap and product boundary (#87)
-2026-08-17 2b9816132d6da1010fbf105fcc6a0538767410e6 docs: add repository agent instructions
 ```
 
 ## Repository paths changed, last 14 days
@@ -522,6 +527,7 @@ prolog/rlm_spec_lang.pl
 prolog/rlm_spec_strategy.pl
 prolog/rlm_spec_workflow.pl
 prolog/rlm_subagent.pl
+prolog/rlm_text.pl
 prolog/rlm_tool.pl
 prolog/rlm_tool_loader.pl
 prolog/rlm_tool_projection.pl
@@ -612,6 +618,7 @@ test/rlm_chain_test.pl
 test/rlm_cli_test.pl
 test/rlm_closed_data_test.pl
 test/rlm_completion_final_handoff_test.pl
+test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
@@ -678,6 +685,7 @@ test/run_tree_sitter_tests.pl
 test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
+test/support/issue328_hostile_host.pl
 test/support/load_error_fixture.pl
 test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
@@ -815,6 +823,7 @@ test/rlm_chain_test.pl
 test/rlm_cli_test.pl
 test/rlm_closed_data_test.pl
 test/rlm_completion_final_handoff_test.pl
+test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
@@ -881,6 +890,7 @@ test/run_tree_sitter_tests.pl
 test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
+test/support/issue328_hostile_host.pl
 test/support/load_error_fixture.pl
 test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
