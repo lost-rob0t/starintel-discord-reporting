@@ -1,15 +1,21 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-01T11:43:18Z`
+- generated: `2026-09-01T16:42:36Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`8e7b00934824f329acb373ea086be6294f67f9d3`](https://github.com/lost-rob0t/prolog-rlm/commit/8e7b00934824f329acb373ea086be6294f67f9d3)
-- head date: `2026-09-01T01:28:17-04:00`
-- head subject: Add Prolog-RLM feature-freeze worker installer
+- head: [`39b278589dae8518e583778cd6671a6cb1e026c7`](https://github.com/lost-rob0t/prolog-rlm/commit/39b278589dae8518e583778cd6671a6cb1e026c7)
+- head date: `2026-09-01T12:12:47-04:00`
+- head subject: test: import library(http/json) for atom_json_dict on SWI 9
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 39b278589dae8518e583778cd6671a6cb1e026c7 test: import library(http/json) for atom_json_dict on SWI 9
+2026-09-01 7a701578a50735d1383cf1709e1d32a3a6af0ed8 test: isolate the tool-cutoff test from the wall-clock reservation
+2026-09-01 d5e2cecfeb1f887f46b8513a4be92b3f888b4f7c fix: bound evidence by response count with deterministic closing turns
+2026-09-01 2fa4c2428655a24ddec4820226c0bc77151958af test: assert the synthesis-reservation invariant and self-report outcomes
+2026-09-01 ca0d9774b607299390ef983f1b18f314f169bf13 test: make the synthesis-reservation transition race-free and budget-coherent
+2026-09-01 ef192d98e0ff690e5262d63913bc62a5654fbe51 fix: type direct-mode deadline failures and reserve synthesis wall clock
 2026-09-01 8e7b00934824f329acb373ea086be6294f67f9d3 Add Prolog-RLM feature-freeze worker installer
 2026-09-01 e1a4428a8bf4ced57cd7794090757c7ac56f8452 Add AgentProlog integration worker communication policy
 2026-09-01 bf87efa5055034116baaffe83e1f168418baf7cb Add AgentProlog integration RAGE profile
@@ -378,16 +384,6 @@
 2026-08-18 4520b48e5c97b54be9d19a1d3632894eb3552bfd Add first-class conversation runtime
 2026-08-18 390d87e8eeffaab779cb4303cafcfa29c3cadc01 Add durable conversation persistence backend
 2026-08-18 11e55f646f9c0fdd5f952b5fd7838e59a753229c Add bounded context budget solver
-2026-08-18 6b476696f5470fe7c0c85452cc18d1bcb99ac769 Merge PR #100: Add SPEC mode authoring language
-2026-08-18 6db1b1af04f4e63b6003f197359defd3dfaf6da0 Merge PR #92: Add first-class Spec and Verify foundation
-2026-08-18 1a383bfa1b2640a7be711d6c8fdc11e563d57135 Document SPEC mode authoring API
-2026-08-18 cc17af3f70aadb88432cb9a08611915085bd2bd5 Cover SPEC catalog schemas and safety
-2026-08-18 97751cc15aa1afb03bb9cb87acbe3a7b5b1e3aad Expose safe assertion argument schemas
-2026-08-18 8f2fd2bbda0b04c42dbb9cd3ed19e87e4bccbece Harden SPEC source closure checks
-2026-08-18 b57e4203abc9bd721a1caa95451d13acdf544bf7 Load SPEC language module
-2026-08-18 553a31f016e84a85e1cfab6370135907b46ddc25 Run SPEC language tests
-2026-08-18 a32207f96d012a12e99eca9b44b159a7795ed70c Test SPEC authoring language
-2026-08-18 fce1b570de9624491d5d06bb7883e763f71bf9db Add SPEC authoring language
 ```
 
 ## Repository paths changed, last 14 days
@@ -482,7 +478,6 @@ docs/research/spec-plan-authority.md
 docs/result-acceptance.md
 docs/skill-graph.md
 docs/skills.md
-docs/spec-mode.md
 docs/tool-result-projection.md
 docs/tools.md
 docs/tree-sitter-ffi.md
@@ -495,7 +490,6 @@ prolog/prolog_agent_ui_v1.pl
 prolog/rlm.pl
 prolog/rlm_agent.pl
 prolog/rlm_agent_zero_adapter.pl
-prolog/rlm_assertion.pl
 prolog/rlm_async.pl
 prolog/rlm_authority.pl
 prolog/rlm_benchmark.pl
@@ -530,7 +524,6 @@ prolog/rlm_skill.pl
 prolog/rlm_skill_eval.pl
 prolog/rlm_skill_graph.pl
 prolog/rlm_spec.pl
-prolog/rlm_spec_lang.pl
 prolog/rlm_spec_strategy.pl
 prolog/rlm_spec_workflow.pl
 prolog/rlm_subagent.pl
@@ -638,6 +631,7 @@ test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
 test/rlm_direct_context_peek_contract_test.pl
+test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
@@ -668,7 +662,6 @@ test/rlm_skill_eval_test.pl
 test/rlm_skill_graph_test.pl
 test/rlm_skill_symlink_test.pl
 test/rlm_skill_test.pl
-test/rlm_spec_lang_test.pl
 test/rlm_spec_strategy_test.pl
 test/rlm_spec_verify_test.pl
 test/rlm_spec_workflow_test.pl
@@ -843,6 +836,7 @@ test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
 test/rlm_conversation_warm_test.pl
 test/rlm_direct_context_peek_contract_test.pl
+test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_effect_adversarial_test.pl
@@ -873,7 +867,6 @@ test/rlm_skill_eval_test.pl
 test/rlm_skill_graph_test.pl
 test/rlm_skill_symlink_test.pl
 test/rlm_skill_test.pl
-test/rlm_spec_lang_test.pl
 test/rlm_spec_strategy_test.pl
 test/rlm_spec_verify_test.pl
 test/rlm_spec_workflow_test.pl

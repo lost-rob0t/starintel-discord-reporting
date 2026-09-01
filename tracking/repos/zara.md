@@ -1,15 +1,17 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-01T11:43:22Z`
+- generated: `2026-09-01T16:42:39Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`928aee7105842cc50b9eff73c7b56980c414ef3b`](https://github.com/lost-rob0t/zara/commit/928aee7105842cc50b9eff73c7b56980c414ef3b)
-- head date: `2026-09-01T06:29:54-04:00`
-- head subject: RAGE #172: portable Android Prolog semantic contract (#269)
+- head: [`2833e8b2d4bd50a14b0674c34f688749b3b01f54`](https://github.com/lost-rob0t/zara/commit/2833e8b2d4bd50a14b0674c34f688749b3b01f54)
+- head date: `2026-09-01T10:30:57-04:00`
+- head subject: RAGE #172: package Android portable semantic assets (gate recovery) (#275)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 2833e8b2d4bd50a14b0674c34f688749b3b01f54 RAGE #172: package Android portable semantic assets (gate recovery) (#275)
+2026-09-01 a77e4e866d38019f24af7ec3518f419e86f91e35 fix: rebase built-in todo surface toggle on current master (#272)
 2026-09-01 928aee7105842cc50b9eff73c7b56980c414ef3b RAGE #172: portable Android Prolog semantic contract (#269)
 2026-09-01 ed683b454bc15d14ca4fdec329640a1bf1d431d1 Merge pull request #259 from lost-rob0t/feature/agent-mode-core
 2026-09-01 f17175e65f91bb00c100613d8a987da8bf3e9d82 rage: record PR 259 current-master recovery
@@ -487,9 +489,12 @@ android/.gitignore
 android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
 android/app/src/main/assets/prolog/.gitkeep
+android/app/src/main/assets/prolog/portable/semantic_core.pl
+android/app/src/main/assets/prolog/portable/semantic_fixtures.json
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
+android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/build.gradle.kts
@@ -515,6 +520,7 @@ modules/commands.pl
 modules/config_loader.pl
 modules/dictate.pl
 modules/intent_frames.pl
+modules/intent_resolver.pl
 modules/llm_client.pl
 modules/rlm_rewrite.pl
 modules/rlm_sidecar.pl
@@ -563,6 +569,7 @@ rage/209-runtime-tool-approvals.org
 rage/244-wake-daemon-voice-design.org
 rage/244-wake-daemon-voice-research.org
 rage/244-wake-daemon-voice.org
+rage/246-todo-toggle-recovery.org
 rage/249-latency-trace-checkpoint-design.org
 rage/249-latency-trace-checkpoint-research.org
 rage/249-latency-trace-checkpoint.org
@@ -675,6 +682,7 @@ t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
+t/test_todo_surface_toggle.py
 t/test_tts.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
@@ -730,6 +738,7 @@ zara/agent/tools/registry.py
 zara/agent_cli.py
 zara/client.py
 zara/config.py
+zara/console.py
 zara/database.py
 zara/desktop/app.py
 zara/desktop/chat_widgets.py
@@ -762,6 +771,7 @@ zara/principals.py
 zara/prolog_engine.py
 zara/protocol.py
 zara/protocol_runtime.py
+zara/python_skills.py
 zara/runtime/api_service.py
 zara/runtime/backend.py
 zara/runtime/clarification.py
@@ -789,6 +799,7 @@ zara/zmq_transport.py
 
 ```text
 .github/workflows/ci.yml
+android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 flake.nix
@@ -883,6 +894,7 @@ t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
+t/test_todo_surface_toggle.py
 t/test_tts.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py

@@ -1,15 +1,28 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-01T11:43:07Z`
+- generated: `2026-09-01T16:42:26Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`47016b3280997a2ca09cb13d1a5465acfda83a94`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/47016b3280997a2ca09cb13d1a5465acfda83a94)
-- head date: `2026-09-01T07:23:45-04:00`
-- head subject: [auto-dig-live-test] enforce native tool cutoff before synthesis (#2317)
+- head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
+- head date: `2026-09-01T12:29:54-04:00`
+- head subject: [auto-dig-live-test] accept heading-anchored reports (#2330)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 8f31d347f64dd9de25cf570c7990d2e6f93cb962 [auto-dig-live-test] accept heading-anchored reports (#2330)
+2026-09-01 bba0b493a5956ca28acbc58c055f465cbc2b1cc4 fix(auto-dig): consume merged synthesis runtime (#2329)
+2026-09-01 e7cbefbc16787fb6463c76e48f66ff2fd9402358 [auto-dig-live-test] inject synthesis transition at tool cutoff (#2328)
+2026-09-01 94d593227375d87a1aeca28fc45baa7b91514189 [auto-dig-live-test] make synthesis transition explicit (#2327)
+2026-09-01 7e1b027005c4b342ce8d5cc8a8e2eb3f9f297767 [auto-dig-live-test] force GLM synthesis earlier (#2326)
+2026-09-01 eb639f448bef12711a44744c16564daeb37812fb [auto-dig-live-test] reserve provider latency before synthesis (#2325)
+2026-09-01 325c9968125239647629366927ff77b75352b86b [auto-dig-live-test] reserve wall-clock headroom for synthesis (#2324)
+2026-09-01 3f3cbbdfb40e90c4a64a2b6edd2001a69794e8a1 [auto-dig-live-test] recover read-only context alias errors (#2323)
+2026-09-01 cf3035d8c75bd7440b2ec577e4a67700dded7d50 [auto-dig-live-test] render full actor report for humans
+2026-09-01 7fd164cb16f62551832c6409670baa256e35f393 test(auto-dig): require terminal report emission
+2026-09-01 329ec1063e7347f94a7408c90e3bfe094296a573 fix(auto-dig): print validated actor report to terminal
+2026-09-01 eb70d42050f9f4e0bac149d2842a8575e69b7b2e [auto-dig-live-test] make forced target selection authoritative (#2321)
+2026-09-01 70df13d86a56077e963b44a9cd67cdee3ba532c4 [auto-dig-live-test] require real research output (#2318)
 2026-09-01 47016b3280997a2ca09cb13d1a5465acfda83a94 [auto-dig-live-test] enforce native tool cutoff before synthesis (#2317)
 2026-09-01 f12383eeafb2d37228c76059772796feb1c5783c [auto-dig-live-test] verify synthesis reservation (#2315)
 2026-09-01 d796fb908599dbc862c4838e2537835fb0f0bd5e Dogfood: reserve Auto-Dig synthesis headroom (#2314)
@@ -219,11 +232,6 @@
 2026-08-18 c80ec98372c0b2b1cde273470181b4dddad8ba8b Hourly Auto-Dig: Palantir Vulcan HQ and OSC status (#2050)
 2026-08-18 eca73e87f8bd689490c603af54f15cfa477c8436 Hourly Auto-Dig: Devil-Corp Credico location pass (#2049)
 2026-08-18 e40ac4d096e4ee41ef7c9bfd8a095ea28165de66 Hourly Auto-Dig: Cloarida Fishback/Azoria principal-place pass (#2048)
-2026-08-18 a16ea8955b2976f47eae9c0cfc18b495ef046c1c Hourly Auto-Dig: Trump-Netanyahu municipal records and Gaza-plan update (#2047)
-2026-08-18 1ced5ee5b386283498389d6bc6e34f95178bda7d Hourly Auto-Dig: CIA Anduril principal-place and Sparrows Point pass (#2046)
-2026-08-18 2d09b53b531008b94dc0f51784fede6d42b37e57 Hourly Auto-Dig: WEF-Columbus AndHealth location and incentive pass (#2045)
-2026-08-18 c6477597bc1fc9aaed7febfda67fa011b037b4e0 Hourly Auto-Dig: Hunter Biden reporting and publisher provenance (#2044)
-2026-08-18 7485cb2fcbd6ca521e615f701f748db799f5db97 Hourly Auto-Dig: GOP C00096412 location and overlap resolution (#2043)
 ```
 
 ## Repository paths changed, last 14 days
@@ -253,6 +261,7 @@ agents/auto_dig_prolog_actor.pl
 agents/auto_dig_prolog_state.schema.json
 agents/auto_dig_rlm_runner.pl
 agents/auto_dig_safe_log.pl
+agents/test_auto_dig_deadline_synthesis_hotfix.pl
 agents/test_auto_dig_failure_report.py
 agents/test_auto_dig_mcp_runner.pl
 agents/test_auto_dig_mcp_tools.pl
@@ -268,7 +277,6 @@ db/research-pass/starintel:research-pass:hourly-dark-academia-ecfr-2026-08-19.nd
 digs/bruegel/2026-08-19-brussels-location-news/README.md
 digs/bruegel/2026-08-19-brussels-location-news/starintel-documents.jsonl
 digs/cia/2026-08-18-anduril-hq-semantic-conflict/starintel-documents.jsonl
-digs/cia/2026-08-18-anduril-principal-sparrows-point/starintel-documents.jsonl
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
 digs/cloarida/2026-08-18-azoria-principal-place-news-scan/starintel-documents.jsonl
@@ -429,7 +437,6 @@ digs/flock/2026-08-24-request-1901-harvest/README.md
 digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
-digs/gop/2026-08-18-c00096412-location-overlap/starintel-documents.jsonl
 digs/gop/2026-08-19-rnc-receipts-location/README.md
 digs/gop/2026-08-19-rnc-receipts-location/starintel-documents.jsonl
 digs/graphika/2026-08-18-headquarters-locality-hourly/starintel-documents.jsonl
@@ -445,7 +452,6 @@ digs/hunter-biden/2026-08-01-bhr-partners-depth-12/manifest.json
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/relations.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.md
-digs/hunter-biden/2026-08-18-reporting-publisher-provenance/starintel-documents.jsonl
 digs/hunter-biden/2026-08-19-brownes-location-receiver-authority/README.md
 digs/hunter-biden/2026-08-19-brownes-location-receiver-authority/starintel-documents.jsonl
 digs/iiss/2026-08-19-arundel-house-headquarters-news/README.md
@@ -509,7 +515,6 @@ digs/trilateral-commission/2026-08-08-roster-provenance-audit/README.md
 digs/trilateral-commission/2026-08-08-roster-provenance-audit/starintel-documents.jsonl
 digs/trilateral-commission/2026-08-08-source-integrity/README.md
 digs/trilateral-commission/2026-08-08-source-integrity/starintel-documents.jsonl
-digs/trump-netanyahu/2026-08-18-netanya-ashkelon-record-access/starintel-documents.jsonl
 digs/usaid-doge-mortality-accountability/2026-08-19-usaid-former-hq-state-oig/README.md
 digs/usaid-doge-mortality-accountability/2026-08-19-usaid-former-hq-state-oig/starintel-documents.jsonl
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/README.md
@@ -528,7 +533,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-003.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-004.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
-digs/wef-columbus/2026-08-18-andhealth-location-incentive/starintel-documents.jsonl
 digs/wef-columbus/2026-08-18-global-shapers-archive/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
@@ -552,6 +556,7 @@ harvest-manifests/request-2106-2026-08-25.json
 harvest-manifests/request-2112-2026-08-25.json
 harvest-manifests/request-2286-oregon-2026-08-25.json
 opencode.jsonc
+scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/auto_dig_request.py
 scripts/generate_dnc_key_people_wef_accountability.py
@@ -586,6 +591,7 @@ tests/test_scrape_usaspending_award_transactions.py
 .github/workflows/materialize-harvest.yml
 .github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
+scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/auto_dig_request.py
 scripts/generate_dnc_key_people_wef_accountability.py
