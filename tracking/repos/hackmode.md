@@ -1,15 +1,23 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-01T05:15:06Z`
+- generated: `2026-09-01T11:43:21Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`67a2556ddd44ed46a4963b77fcfd89cc079da615`](https://github.com/lost-rob0t/hackmode/commit/67a2556ddd44ed46a4963b77fcfd89cc079da615)
-- head date: `2026-09-01T00:29:50-04:00`
-- head subject: expert: freeze selection identity (#173)
+- head: [`3c04418492bae0a7f5c4f8389e01f7469303ce84`](https://github.com/lost-rob0t/hackmode/commit/3c04418492bae0a7f5c4f8389e01f7469303ce84)
+- head date: `2026-09-01T01:28:25-04:00`
+- head subject: Retire Hackmode Auto-RAGE ownership
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 3c04418492bae0a7f5c4f8389e01f7469303ce84 Retire Hackmode Auto-RAGE ownership
+2026-09-01 0edf029b0d7bf1a7e04447d0616032e654d2a3c8 Remove retired Hackmode RAGE installer
+2026-09-01 61e8f65989df28c91fcece952053fd64c81ca9d7 Remove retired Hackmode RAGE PR lanes
+2026-09-01 5beedf0814be28c9dae475b52c5177fe68a9b1a0 Retire Hackmode Hackpert RAGE communication policy
+2026-09-01 f780338afa87c39abc14922adb2e063f384de919 Retire Hackmode Hackpert RAGE worker
+2026-09-01 7edb05b83f4ec9d125209aa00b9c0e9311707007 Retire Hackmode database RAGE communication policy
+2026-09-01 9a7a9222734db47279591899d6c3ed7b549becc8 Retire Hackmode database RAGE worker
+2026-09-01 6f40a4461809d6509ea8c7f02afcc1db0ce58b31 capture: replay canonical IPX HTTP spool (#174)
 2026-09-01 67a2556ddd44ed46a4963b77fcfd89cc079da615 expert: freeze selection identity (#173)
 2026-08-31 78a9f94dc80075240afe8e595938c2cec75c984e views: add canonical ingest-by-state materialization
 2026-08-31 f2d10dd17b07f7ad0fa69dbc9f84498432911324 Hackpert: freeze expert extension identity strings (#168)
@@ -134,6 +142,7 @@ docs/architecture/rage-workers.org
 flake.nix
 source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
+source/hackmode-core/capture-replay.lisp
 source/hackmode-core/expert.lisp
 source/hackmode-core/expert/actions.lisp
 source/hackmode-core/expert/budget-inspection.lisp
@@ -185,6 +194,7 @@ source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
+source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/rage-worker.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-core/visual-evidence-outbox.lisp
@@ -261,6 +271,7 @@ source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
+source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/rage-worker.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd

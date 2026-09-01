@@ -1,15 +1,34 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-01T05:14:55Z`
+- generated: `2026-09-01T11:43:07Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`950778074cc706dfe5a52b0c1a41517fde1e2cef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/950778074cc706dfe5a52b0c1a41517fde1e2cef)
-- head date: `2026-09-01T01:07:18-04:00`
-- head subject: Temporarily disable publishing CI
+- head: [`47016b3280997a2ca09cb13d1a5465acfda83a94`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/47016b3280997a2ca09cb13d1a5465acfda83a94)
+- head date: `2026-09-01T07:23:45-04:00`
+- head subject: [auto-dig-live-test] enforce native tool cutoff before synthesis (#2317)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 47016b3280997a2ca09cb13d1a5465acfda83a94 [auto-dig-live-test] enforce native tool cutoff before synthesis (#2317)
+2026-09-01 f12383eeafb2d37228c76059772796feb1c5783c [auto-dig-live-test] verify synthesis reservation (#2315)
+2026-09-01 d796fb908599dbc862c4838e2537835fb0f0bd5e Dogfood: reserve Auto-Dig synthesis headroom (#2314)
+2026-09-01 2d04d04ee153ec96ed1e2925c7cacbc5c8a7eb4e Merge pull request #2312 from lost-rob0t/fix/import-counterevidence-duplicate
+2026-09-01 fbdbe5673be75db546a4032528e01bd3d7ad08cb fix(auto-dig): leave bounded synthesis headroom [auto-dig-live-test]
+2026-09-01 aa6fd1f185494a4864e6d85586ee51ff770d8443 test(auto-dig): require synthesis headroom after research
+2026-09-01 46bdd798aed8d0977527de550d6396849f8613cf Merge current main into importer duplicate fix
+2026-09-01 62ff4b96c88fe7d4e9f749ddb55dc01ff66469eb fix(auto-dig): restore executable live actor workflow [auto-dig-live-test]
+2026-09-01 c3e84fa7b838effd61eb9b1f980f5d5688d24ea2 test(auto-dig): preserve recovery result bindings [auto-dig-live-test]
+2026-09-01 4266bc608de7a582f239d50feaca04a5af04c845 test(import): reject counterevidence entity shadowing
+2026-09-01 0d43dff0446e56724adfcd45dbe5c3bc2a4fb9bd ci(auto-dig): gate pinned runtime hotfix changes [auto-dig-live-test]
+2026-09-01 9b179d194b71df454dc99bd8b5608f9e874b78b8 fix(data): align counterevidence manifest after dedupe
+2026-09-01 6c0b8ffc0b321ea8bc5377cbc2f67c3187d46cc9 fix(data): stop counterevidence from shadowing canonical person
+2026-09-01 be4673e1920e6992d5e6e36f8140b2e045362a6b fix(auto-dig): bind read-tool error data before observation [auto-dig-live-test]
+2026-09-01 c658b2f9e70dfe12fee2315a748cc2cf1a43525b Merge pull request #2219 from lost-rob0t/agent/siders-2026-08-21-indictment-update
+2026-09-01 554ed071eda110ab5cb3772be9eaee81656cebdb test(auto-dig): expose read-tool recovery failures [auto-dig-live-test]
+2026-09-01 56a2e55a5155605d97ecfd0243789e5407a35ddf fix(auto-dig): recover read-only MCP tool errors [auto-dig-live-test]
+2026-09-01 f3e260d01ca2887b2a40e26e786f312f15f08231 fix(auto-dig): encode provider-native tool names [auto-dig-live-test]
+2026-09-01 20342c76181dd4de9f519ab3f7c4a769258a2a33 fix(auto-dig): retry transient provider failures [auto-dig-live-test]
 2026-09-01 950778074cc706dfe5a52b0c1a41517fde1e2cef Temporarily disable publishing CI
 2026-09-01 bf2a99c98f86bfb237f24f21d79f9969a1fa03af Fix full ingest duplicate precedence (#2310)
 2026-09-01 e19f2c134b5f77f5b7508237711749e3bcd56a28 Merge pull request #2307 from lost-rob0t/chore/update-prolog-rlm-2026-08-31
@@ -123,6 +142,15 @@
 2026-08-24 ed60a476792ccee83e41973f96e86914b8943dba chore: pin OpenCode web MCP versions
 2026-08-24 4fb9a45fdb0784c45b86ba34b3a3aa10081f3d38 chore: add Brave Search and web fetch MCPs for OpenCode
 2026-08-24 cdaa15e118f00eb471320c44a7b17d2aaad4e4a9 Harvest mature Rensselaer Sheriff evidence from request #1901
+2026-08-21 dbec0aa6eb61e3670a499e25fe6356af31d74087 docs: register linked indictment shard
+2026-08-21 6273cd6045e8396d4f97a8249b7fd82dd75811ff data: register linked indictment shard in packet manifest
+2026-08-21 5e8b351abe9ba435cddeaeb6e93eb13f6b77edaf data: add linked Investigation One adult indictment records
+2026-08-21 2a294db3940720f983995f845fe5befc59c014f3 data: add adult defendants from linked Vinton investigation
+2026-08-21 7c763e00b6679b0a65d00e2f8191984d4c4b60cf data: normalize Aug 21 Siders indictment update
+2026-08-21 02c81282c9ce91eb18d09101e55616abca1fe234 data: update Siders legal case to Aug 21 indictment posture
+2026-08-21 1d58efa3248c5fbe1e0273a1cb8a769faad14838 data: add Aug 21 indictment sources to Siders packet
+2026-08-21 c85ee38c6b015429fe05216f9fde611fe415692a docs: add Aug 21 indictment sources and strict minor-victim redaction
+2026-08-21 8ed203d52d6f65116a780b6f058a1c46b2f3c3b1 docs: update Siders packet for Aug 21 indictments and victim privacy
 2026-08-20 79db594ffaacdf9fa7ccb55a9ff411a7fb85e458 DNC key people WEF and accountability pass (#1944)
 2026-08-20 267d031cdc04dd55fd446137f47ff503f94a9adf Auto-Dig #2106: use GitHub CI and advance RTCC control chain (#2110)
 2026-08-20 66047287cc19f02ec272d67ccbd554a92d01472b Add BHR Partners depth-12 Indul shareholder and Nijjar chain (#1945)
@@ -196,12 +224,6 @@
 2026-08-18 2d09b53b531008b94dc0f51784fede6d42b37e57 Hourly Auto-Dig: WEF-Columbus AndHealth location and incentive pass (#2045)
 2026-08-18 c6477597bc1fc9aaed7febfda67fa011b037b4e0 Hourly Auto-Dig: Hunter Biden reporting and publisher provenance (#2044)
 2026-08-18 7485cb2fcbd6ca521e615f701f748db799f5db97 Hourly Auto-Dig: GOP C00096412 location and overlap resolution (#2043)
-2026-08-18 331f6df871e8cb9850b450f5ca69a27251c74f0c Hourly Auto-Dig: DNC suite history and ICE resolutions (#2042)
-2026-08-18 9ad617a08eddeb10901f81ca00f8ccd172fd2edd Hourly Auto-Dig: Cloarida Incubate location and lawsuit (#2041)
-2026-08-18 7f519ef2e3d0231da2c94457dc5f0de11372b106 Hourly Auto-Dig: Greater Israel Trump Foundation location scan (#2040)
-2026-08-18 cf17c761a93a4482130fa2a97d08a2060ea182a7 Hourly Auto-Dig: Tech-Bro capital location and Vista disclosure (#2039)
-2026-08-18 aecf543701606c1255cf49b2a267d3d146db4b33 Hourly Auto-Dig: Graphika public offices and news scan (#2038)
-2026-08-18 dc5d57abb276dd2459a8e72fa8da6020fb108d31 Hourly Auto-Dig: FED ODNI location and Clayton handoff (#2037)
 ```
 
 ## Repository paths changed, last 14 days
@@ -235,7 +257,9 @@ agents/test_auto_dig_failure_report.py
 agents/test_auto_dig_mcp_runner.pl
 agents/test_auto_dig_mcp_tools.pl
 agents/test_auto_dig_model_router.pl
+agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
+agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
 db/investigation-target/starintel:investigation-target:ecfr-explicit-headquarters-designation.ndjson
 db/location/starintel:location:ecfr-berlin-office.ndjson
@@ -248,7 +272,6 @@ digs/cia/2026-08-18-anduril-principal-sparrows-point/starintel-documents.jsonl
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
 digs/cloarida/2026-08-18-azoria-principal-place-news-scan/starintel-documents.jsonl
-digs/cloarida/2026-08-18-incubate-location-lawsuit/starintel-documents.jsonl
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/README.md
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/starintel-documents.jsonl
 digs/dark-academia/2026-08-19-boao-forum-hq-location-news-scan/README.md
@@ -341,7 +364,6 @@ digs/dnc/2026-08-01-key-people-wef-accountability/source/people-priority-invento
 digs/dnc/2026-08-01-key-people-wef-accountability/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-wef-expansion/manifest.json
 digs/dnc/2026-08-01-key-people-wef-expansion/starintel-documents.jsonl
-digs/dnc/2026-08-18-democracy-partners-suite-history-ice-resolutions/starintel-documents.jsonl
 digs/dnc/2026-08-18-mur-7157-document-graph/starintel-documents.jsonl
 digs/drunk-drivers/2026-08-18-kearns-court-facility-news-scan/starintel-documents.jsonl
 digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/README.md
@@ -368,7 +390,6 @@ digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/records-
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/source-notes.md
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/starintel-documents.jsonl
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/subcontractor-leads.md
-digs/fed/2026-08-18-odni-clayton-handoff/starintel-documents.jsonl
 digs/fed/2026-08-19-national-security-adviser-eop-location/README.md
 digs/fed/2026-08-19-national-security-adviser-eop-location/starintel-documents.jsonl
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/README.md
@@ -412,10 +433,8 @@ digs/gop/2026-08-18-c00096412-location-overlap/starintel-documents.jsonl
 digs/gop/2026-08-19-rnc-receipts-location/README.md
 digs/gop/2026-08-19-rnc-receipts-location/starintel-documents.jsonl
 digs/graphika/2026-08-18-headquarters-locality-hourly/starintel-documents.jsonl
-digs/graphika/2026-08-18-public-offices-news-scan/starintel-documents.jsonl
 digs/graphika/2026-08-19-hq-federal-address-news-scan/README.md
 digs/graphika/2026-08-19-hq-federal-address-news-scan/starintel-documents.jsonl
-digs/greater-israel/2026-08-18-trump-foundation-location-news-scan/starintel-documents.jsonl
 digs/greater-israel/2026-08-18-trump-foundation-municipality-news-scan/starintel-documents.jsonl
 digs/hanceville/2026-08-20-police-corruption-rebrand/sources.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/README.md
@@ -464,7 +483,6 @@ digs/seattle/2026-08-20-request-2106-personnel-integrity/starintel-documents.jso
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/README.md
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/starintel-documents.jsonl
 digs/seattle/2026-08-25-request-2106-harvest/starintel-documents.jsonl
-digs/tech-bro/2026-08-18-capital-syndication-location-news/starintel-documents.jsonl
 digs/trilateral-commission/2026-08-08-cross-network-freshness/README.md
 digs/trilateral-commission/2026-08-08-cross-network-freshness/starintel-documents.jsonl
 digs/trilateral-commission/2026-08-08-donor-side-and-entity-resolution/README.md
@@ -508,6 +526,7 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/sources.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-001.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-002.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-003.jsonl
+digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-004.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
 digs/wef-columbus/2026-08-18-andhealth-location-incentive/starintel-documents.jsonl
 digs/wef-columbus/2026-08-18-global-shapers-archive/starintel-documents.jsonl
@@ -533,6 +552,7 @@ harvest-manifests/request-2106-2026-08-25.json
 harvest-manifests/request-2112-2026-08-25.json
 harvest-manifests/request-2286-oregon-2026-08-25.json
 opencode.jsonc
+scripts/apply_prolog_rlm_hotfix.py
 scripts/auto_dig_request.py
 scripts/generate_dnc_key_people_wef_accountability.py
 scripts/import-starintel-documents.py
@@ -543,6 +563,7 @@ scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
 skills/validate-starintel-changes/SKILL.md
 tests/test_auto_dig_request.py
+tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_scrape_fbi_procurement.py
@@ -565,6 +586,7 @@ tests/test_scrape_usaspending_award_transactions.py
 .github/workflows/materialize-harvest.yml
 .github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
+scripts/apply_prolog_rlm_hotfix.py
 scripts/auto_dig_request.py
 scripts/generate_dnc_key_people_wef_accountability.py
 scripts/import-starintel-documents.py
@@ -574,6 +596,7 @@ scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
 tests/test_auto_dig_request.py
+tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_scrape_fbi_procurement.py

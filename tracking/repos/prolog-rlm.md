@@ -1,15 +1,23 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-01T05:15:04Z`
+- generated: `2026-09-01T11:43:18Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`eed1639d0b20a7efb26e02c94b3e896e790c5bae`](https://github.com/lost-rob0t/prolog-rlm/commit/eed1639d0b20a7efb26e02c94b3e896e790c5bae)
-- head date: `2026-09-01T01:11:45-04:00`
-- head subject: fix: break rlm_completion <-> rlm_direct import cycle (#328)
+- head: [`8e7b00934824f329acb373ea086be6294f67f9d3`](https://github.com/lost-rob0t/prolog-rlm/commit/8e7b00934824f329acb373ea086be6294f67f9d3)
+- head date: `2026-09-01T01:28:17-04:00`
+- head subject: Add Prolog-RLM feature-freeze worker installer
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 8e7b00934824f329acb373ea086be6294f67f9d3 Add Prolog-RLM feature-freeze worker installer
+2026-09-01 e1a4428a8bf4ced57cd7794090757c7ac56f8452 Add AgentProlog integration worker communication policy
+2026-09-01 bf87efa5055034116baaffe83e1f168418baf7cb Add AgentProlog integration RAGE profile
+2026-09-01 308a865f5b71a04ec97bfed28d777c76471de331 Add Prolog-RLM hardening worker communication policy
+2026-09-01 da1fb6b48165b33c42f8ad23c2015423610c52f4 Add Prolog-RLM hardening RAGE profile
+2026-09-01 b16f6cf7e0ce859cd422d1cc3de7cddbbbcece24 Add Prolog-RLM RAGE feature-freeze workers
+2026-09-01 3a4c2d10f4bd26c5c66346fe503d4a4b0eb9c5bb fix: add native-call batch cardinality admission (#323)
+2026-09-01 7a8a5c59d4b4483de53c4450d5ddab00e0203222 test: reproduce native batch cardinality admission gaps (#323)
 2026-09-01 eed1639d0b20a7efb26e02c94b3e896e790c5bae fix: break rlm_completion <-> rlm_direct import cycle (#328)
 2026-09-01 889eb66e28eb5c09773dbd04f94dcac769951197 test: reproduce hostile host text_string corruption (#328)
 2026-08-31 7e1e992772290fa869e3573182c77e570cb667bb test: pin tool-result correlation without optional name (#326)
@@ -380,11 +388,6 @@
 2026-08-18 553a31f016e84a85e1cfab6370135907b46ddc25 Run SPEC language tests
 2026-08-18 a32207f96d012a12e99eca9b44b159a7795ed70c Test SPEC authoring language
 2026-08-18 fce1b570de9624491d5d06bb7883e763f71bf9db Add SPEC authoring language
-2026-08-18 c280c313bec1fbc02cae62af3be9ef56c156a826 add first-class Spec and Verify foundation
-2026-08-18 591c936d0476df5ac56de31fd327e7d0d678fb4e Research symbolic prompt and capability compilation
-2026-08-18 946904091a8b23024c8eb27c244c66a29e4eb97f Finalize post-merge backlog reconciliation (#90)
-2026-08-18 8ec9b8649ad6bcdc4eecc2120917d9f3586ab994 Reconcile backlog, roadmap, and GitHub issue state (#89)
-2026-08-18 abfc30ebb9f335d5841c1f7910bd474da905ebcf Document the PrologAgent roadmap and product boundary (#87)
 ```
 
 ## Repository paths changed, last 14 days
@@ -413,6 +416,12 @@ AGENTS.md
 Makefile
 README.md
 TODO.md
+agent-zero/README.md
+agent-zero/install.sh
+agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.communication.md
+agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.specifics.md
+agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.communication.md
+agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.specifics.md
 agentProlog/README.md
 agentProlog/bin/prolog-agent-ui-fixture.pl
 agentProlog/fixtures/prolog_agent_ui_v1_session.ndjson
@@ -474,7 +483,6 @@ docs/result-acceptance.md
 docs/skill-graph.md
 docs/skills.md
 docs/spec-mode.md
-docs/spec-verify.md
 docs/tool-result-projection.md
 docs/tools.md
 docs/tree-sitter-ffi.md
@@ -508,7 +516,6 @@ prolog/rlm_direct.pl
 prolog/rlm_effect.pl
 prolog/rlm_effect_executor.pl
 prolog/rlm_effect_migration.pl
-prolog/rlm_evidence.pl
 prolog/rlm_evolution.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
@@ -532,7 +539,6 @@ prolog/rlm_tool.pl
 prolog/rlm_tool_loader.pl
 prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
-prolog/rlm_verify.pl
 rage/117-skill-compiler-reconciliation.org
 rage/144-fallback-closure.org
 rage/164-conversation-metadata.org

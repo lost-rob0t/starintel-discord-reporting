@@ -1,18 +1,34 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-01T05:15:07Z`
+- generated: `2026-09-01T11:43:22Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`eeeadc4180275186f5974226267e98de91f7c82b`](https://github.com/lost-rob0t/zara/commit/eeeadc4180275186f5974226267e98de91f7c82b)
-- head date: `2026-09-01T00:58:30-04:00`
-- head subject: Merge pull request #261 from lost-rob0t/docs/250-merge-evidence
+- head: [`928aee7105842cc50b9eff73c7b56980c414ef3b`](https://github.com/lost-rob0t/zara/commit/928aee7105842cc50b9eff73c7b56980c414ef3b)
+- head date: `2026-09-01T06:29:54-04:00`
+- head subject: RAGE #172: portable Android Prolog semantic contract (#269)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 928aee7105842cc50b9eff73c7b56980c414ef3b RAGE #172: portable Android Prolog semantic contract (#269)
+2026-09-01 ed683b454bc15d14ca4fdec329640a1bf1d431d1 Merge pull request #259 from lost-rob0t/feature/agent-mode-core
+2026-09-01 f17175e65f91bb00c100613d8a987da8bf3e9d82 rage: record PR 259 current-master recovery
+2026-09-01 204ffe5f149df984af8ef04433133f11ac762bdd recover: rebase agent hooks and barge-in on current master
+2026-09-01 4e539b5a74d95ccecf67976c132ccf68ed10485a Merge pull request #267 from lost-rob0t/rage/244-wake-daemon-voice
+2026-09-01 8687662306224516feaaf13c9f7bbc2e0208f5a1 Merge pull request #265 from lost-rob0t/docs/244-merge-evidence
+2026-09-01 d1f2cf666ec5e7e8c7314e2f6ed1e58d04eeed89 fix(wake): restore ack player wiring broken by the daemon migration
+2026-09-01 ce3271bde9df5215754c91f97ea1d8986af00022 Merge pull request #263 from lost-rob0t/rage/244-wake-daemon-voice
+2026-09-01 e0b29ec0b482b90efbc354a67979136be725e8e4 docs(rage): record issue 244 merge evidence
+2026-09-01 ddfad5f8453691ccaba05e4d30d8a7d9070c06f3 chore(rage): fix wake research whitespace gate
+2026-09-01 867c7ce219489b525889d6aa827a962e27d17583 test: extend agent-mode backend double for the latency_trace contract
+2026-09-01 8ef404126afa149b9b7d9b54eb494f6fb574c482 Merge remote-tracking branch 'origin/master' into rage/244-wake-daemon-voice
+2026-09-01 45bc17c60c0b74b51872c72a172600d46b2b1991 docs(rage): record issue 244 implementation evidence and gate results
 2026-09-01 eeeadc4180275186f5974226267e98de91f7c82b Merge pull request #261 from lost-rob0t/docs/250-merge-evidence
+2026-09-01 76b4f8ad7aec19956af600243913b85c130a8f07 feat(config): add [daemon] section for wake client endpoint, audio output rate, and auth keys
+2026-09-01 70edb119647d97a8d3c1a93b06e4ac5319a0221f test(wake): prove two-principal isolation and end-to-end trace continuity
 2026-09-01 57ee4ae060c932d996344134aa85f0ebe00a453b docs(rage): record 250 merge evidence
 2026-08-31 7a9c25cf31c4088568e2b50e49f47ce05a0a0172 feat(stt): route AMD device tokens to the whisper.cpp Vulkan backend (#258)
+2026-08-31 cc256c130cccc2914a4d900c62e6ccf3979d1e85 feat(wake): migrate wake listener onto the daemon ZARA/1 voice client
 2026-08-31 ddac73abe02a2b90732262b3bc0d90dff57a922b Merge pull request #257 from lost-rob0t/feature/agent-mode-core
 2026-08-31 a1623daabacc08b2ffb252647074a9ebe10572fe Test agent-mode routing prompt precedence
 2026-08-31 5ee36fe99b1ea2dd9dbdd7d3f829056d8803a27f Route autonomous and speech requests to service tools
@@ -35,20 +51,27 @@
 2026-08-31 1a43d1ca2f51f7f647fa61eed6ce572797b333b2 docs(wiki): api-service provider registry and config split; capability-plans scope note
 2026-08-31 34fb840480fff1456414e3bb1f42b4d9fe7bbdc8 feat(runtime): versioned api_service registry, plan execution service, host wiring
 2026-08-31 142e295f03cc8b56b721adeaec8f3be8d7269754 feat(kb): split device provider configuration from shared semantic config
+2026-08-31 7201e9b8e69028eb166c55226497587797c46ea5 feat(wake): add thin daemon voice client adapter for the wake listener
+2026-08-31 29162a90e5e6c9d6343b571ef74804c84aedd698 test: extend gateway double for negotiated audio output format capture
+2026-08-31 899a52b2bb3e6acf95e6f2e3d930bfb53f6272dc feat(runtime): add daemon TTS output bridge producing ZARA/1 audio.output streams
 2026-08-31 cc5ade3023cee40b702cb4e05ad716b7094e22fa docs(planning): regenerate backlog for 158 consumption
 2026-08-31 ec0c74a39a9cd99aabee2795a0f4abfd92966949 Merge pull request #241 from lost-rob0t/codex/zara-discord-plugin-guidance
 2026-08-31 c18323b4b4891fada06efb000d9f50daedee21e0 docs(rage): record 157 merge evidence; regenerate backlog post-merge
 2026-08-31 65313760cfa4102468b77cf045a2680505f37a6f Merge branch 'master' into codex/zara-discord-plugin-guidance
 2026-08-31 2054ac1d368b175a85518c258f6a9cf6647f69a4 Merge pull request #247 from lost-rob0t/rage/157-execution-plans
+2026-08-31 5fcd5a54d3267696640bbc1debb1ef8a2800c26d feat(runtime): stream assistant phrase events and persist turns to principal memory
 2026-08-31 ccb2807723888e01560f9526d7b971acc5dbe56d docs(rage): record 157 tdd evidence and gate results
+2026-08-31 2c1907e0ab3fc48e544ad1a0fcd038f1aea3940e feat(runtime): add daemon-side Prolog-first intent router with per-turn latency traces
 2026-08-31 a3646137a51bfb71a723edd4905072a47e33ebc5 test(gate): capability plan phase; docs(wiki): capability plans page
 2026-08-31 205da6eb983c1ba468ae8d86f946b85475566021 feat(runtime): typed ExecutionPlan mirror, PrologEngine plan boundary, PlanExecutor
 2026-08-31 3da07e5168ace5aa768b1283906eed0fa2e1c05b feat(prolog): pure capability reasoning with typed ExecutionPlans
+2026-08-31 f0ddfef3250d834ce6d3b11872035dc14b691f31 docs(rage): record issue 244 research and design artifacts
 2026-08-31 930088c6b6b2f488243b84c025f62039125ca3f5 docs(rage): record 157 adversarial review
 2026-08-31 4d08f7f152c45a778ab53af464c8329dd9f8b880 docs(rage): record 157 research, design, adversarial-review decisions
 2026-08-31 13b7b1d863dde90966d5ee12524891b5b2c0bb75 docs(rage): record 157 run identity and queue state at consumption
 2026-08-31 f58b551df7ce411d17277d4073a8121b47824145 docs(rage): record #156 merge evidence; regenerate backlog post-merge
 2026-08-31 7ae4b7f7a716f302f3ad9299df3f3b1d9322e3a5 Merge pull request #245 from lost-rob0t/chore/backlog-244
+2026-08-31 18659368cd00d57f3ea8c6da5534cb141e05f8c0 docs: define external plugin configuration contract
 2026-08-31 37410f988055939579e5bbbfb8e4a789e3d299fb chore(backlog): import issue 244 and refresh closed-issue mirror
 2026-08-31 4f77de3c7dec0cebf711a5ffdad04fd136354693 Merge pull request #243 from lost-rob0t/rage/156-prolog-frames
 2026-08-31 7d5e17693463d2f9f9479df564474d3eea3fc958 Merge branch 'master' into rage/156-prolog-frames
@@ -465,7 +488,9 @@ android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
 android/app/src/main/assets/prolog/.gitkeep
 android/app/src/main/java/ai/zara/app/MainActivity.kt
+android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
+android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/build.gradle.kts
 android/gradle.properties
@@ -524,6 +549,7 @@ rage/158-api-service-providers.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
+rage/172-android-portable-prolog.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
@@ -534,12 +560,16 @@ rage/195-samsung-assistant-research.org
 rage/209-runtime-tool-approvals-design.org
 rage/209-runtime-tool-approvals-research.org
 rage/209-runtime-tool-approvals.org
+rage/244-wake-daemon-voice-design.org
+rage/244-wake-daemon-voice-research.org
+rage/244-wake-daemon-voice.org
 rage/249-latency-trace-checkpoint-design.org
 rage/249-latency-trace-checkpoint-research.org
 rage/249-latency-trace-checkpoint.org
 rage/250-amd-stt-device-routing-design.org
 rage/250-amd-stt-device-routing-research.org
 rage/250-amd-stt-device-routing.org
+rage/259-agent-hooks-recovery.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
 rage/daemon-128-design.org
@@ -584,7 +614,9 @@ t/prolog_config.pl
 t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_mode_core_plugin.py
+t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py
+t/test_backend_turn_services.py
 t/test_backlog_import.py
 t/test_capability_plans.py
 t/test_clarification_session.py
@@ -592,11 +624,15 @@ t/test_cli_client_migration.py
 t/test_client.py
 t/test_command_routing.py
 t/test_config.py
+t/test_conversation_flow.py
+t/test_conversation_service.py
+t/test_daemon_intent_router.py
 t/test_daemon_security.py
 t/test_daemon_security_abuse.py
 t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
+t/test_daemon_tts_output.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
@@ -628,14 +664,18 @@ t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_quick_handoff_edges.py
+t/test_runtime_backend_publisher.py
 t/test_runtime_backend_selection.py
+t/test_runtime_host.py
 t/test_runtime_host_clarification.py
+t/test_runtime_intent_routing.py
 t/test_runtime_tool_approval.py
 t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
+t/test_tts.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
 t/test_voice_protocol.py
@@ -652,7 +692,14 @@ t/test_voice_zmq_output_client.py
 t/test_voice_zmq_output_negotiation.py
 t/test_voice_zmq_transport.py
 t/test_wake_clarification.py
+t/test_wake_daemon_client.py
+t/test_wake_fail_closed.py
+t/test_wake_import.py
+t/test_wake_latency_continuity.py
+t/test_wake_lifecycle.py
 t/test_wake_model_debug.py
+t/test_wake_principal_isolation.py
+t/test_wake_speaker.py
 t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_tool_approvals.py
@@ -675,6 +722,7 @@ zara/agent/__init__.py
 zara/agent/approval.py
 zara/agent/conversation.py
 zara/agent/graph.py
+zara/agent/prompting.py
 zara/agent/sentence_chunker.py
 zara/agent/stream_events.py
 zara/agent/tools/builtin_tools.py
@@ -708,6 +756,7 @@ zara/mcp/session.py
 zara/memory.py
 zara/plugins/builtin/__init__.py
 zara/plugins/builtin/agent_mode.py
+zara/plugins/builtin/agent_mode_hooks.py
 zara/plugins/manager.py
 zara/principals.py
 zara/prolog_engine.py
@@ -719,15 +768,20 @@ zara/runtime/clarification.py
 zara/runtime/events.py
 zara/runtime/frames.py
 zara/runtime/host.py
+zara/runtime/intent_router.py
 zara/runtime/plans.py
 zara/runtime/prolog_rlm.py
+zara/runtime/tts_output.py
 zara/security.py
 zara/security_gateway.py
 zara/security_transport.py
 zara/server.py
+zara/speech_activity.py
 zara/streaming_stt.py
 zara/voice_runtime.py
 zara/wake.py
+zara/wake_daemon.py
+zara/wake_words.py
 zara/zmq_transport.py
 ```
 
@@ -735,6 +789,7 @@ zara/zmq_transport.py
 
 ```text
 .github/workflows/ci.yml
+android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 flake.nix
 scripts/benchmark-agent-backends.py
@@ -767,7 +822,9 @@ t/prolog_config.pl
 t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_mode_core_plugin.py
+t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py
+t/test_backend_turn_services.py
 t/test_backlog_import.py
 t/test_capability_plans.py
 t/test_clarification_session.py
@@ -775,11 +832,15 @@ t/test_cli_client_migration.py
 t/test_client.py
 t/test_command_routing.py
 t/test_config.py
+t/test_conversation_flow.py
+t/test_conversation_service.py
+t/test_daemon_intent_router.py
 t/test_daemon_security.py
 t/test_daemon_security_abuse.py
 t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
+t/test_daemon_tts_output.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
@@ -811,14 +872,18 @@ t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_quick_handoff_edges.py
+t/test_runtime_backend_publisher.py
 t/test_runtime_backend_selection.py
+t/test_runtime_host.py
 t/test_runtime_host_clarification.py
+t/test_runtime_intent_routing.py
 t/test_runtime_tool_approval.py
 t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
+t/test_tts.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
 t/test_voice_protocol.py
@@ -835,7 +900,14 @@ t/test_voice_zmq_output_client.py
 t/test_voice_zmq_output_negotiation.py
 t/test_voice_zmq_transport.py
 t/test_wake_clarification.py
+t/test_wake_daemon_client.py
+t/test_wake_fail_closed.py
+t/test_wake_import.py
+t/test_wake_latency_continuity.py
+t/test_wake_lifecycle.py
 t/test_wake_model_debug.py
+t/test_wake_principal_isolation.py
+t/test_wake_speaker.py
 t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_tool_approvals.py
