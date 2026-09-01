@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-01T16:42:26Z`
+- generated: `2026-09-01T21:04:42Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -227,11 +227,6 @@
 2026-08-18 387ca6affb5c4f6b1692be349b1a12df34f218b9 Add CIA Anduril HQ semantic-conflict research pass
 2026-08-18 c5b543ee1182e9a577995cbf9963e6660eba4fd4 Auto-Dig: BlackRock succession HQ enrichment (#2054)
 2026-08-18 bf103af31999b136568976a562ababc1facb17a0 Hourly Auto-Dig: Graphika headquarters locality (#2053)
-2026-08-18 32ff1462bf945ce642293d40aa035148628c661d DNC Auto-Dig: expand FEC MUR 7157 document graph (#2052)
-2026-08-18 880b012ed436214e9ca29250d995ba1a5a1ed5cc Hourly Auto-Dig: WEF-Columbus Global Shapers archival status (#2051)
-2026-08-18 c80ec98372c0b2b1cde273470181b4dddad8ba8b Hourly Auto-Dig: Palantir Vulcan HQ and OSC status (#2050)
-2026-08-18 eca73e87f8bd689490c603af54f15cfa477c8436 Hourly Auto-Dig: Devil-Corp Credico location pass (#2049)
-2026-08-18 e40ac4d096e4ee41ef7c9bfd8a095ea28165de66 Hourly Auto-Dig: Cloarida Fishback/Azoria principal-place pass (#2048)
 ```
 
 ## Repository paths changed, last 14 days
@@ -279,7 +274,6 @@ digs/bruegel/2026-08-19-brussels-location-news/starintel-documents.jsonl
 digs/cia/2026-08-18-anduril-hq-semantic-conflict/starintel-documents.jsonl
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
-digs/cloarida/2026-08-18-azoria-principal-place-news-scan/starintel-documents.jsonl
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/README.md
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/starintel-documents.jsonl
 digs/dark-academia/2026-08-19-boao-forum-hq-location-news-scan/README.md
@@ -293,7 +287,6 @@ digs/dark-academia/2026-08-19-piie-location-news/README.md
 digs/dark-academia/2026-08-19-piie-location-news/starintel-documents.jsonl
 digs/dark-academia/2026-08-19-rand-headquarters-news-scan/README.md
 digs/dark-academia/2026-08-19-rand-headquarters-news-scan/starintel-documents.jsonl
-digs/devil-corp/2026-08-18-credico-chicago-location-news-scan/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/README.md
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
@@ -372,7 +365,6 @@ digs/dnc/2026-08-01-key-people-wef-accountability/source/people-priority-invento
 digs/dnc/2026-08-01-key-people-wef-accountability/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-wef-expansion/manifest.json
 digs/dnc/2026-08-01-key-people-wef-expansion/starintel-documents.jsonl
-digs/dnc/2026-08-18-mur-7157-document-graph/starintel-documents.jsonl
 digs/drunk-drivers/2026-08-18-kearns-court-facility-news-scan/starintel-documents.jsonl
 digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/README.md
 digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/starintel-documents.jsonl
@@ -481,7 +473,6 @@ digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-osi-resource-sharing.md
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.json
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.md
-digs/palantir/2026-08-18-vulcan-headquarters-osc-status/starintel-documents.jsonl
 digs/rockefeller-foundation/2026-08-19-global-hq-coo-transition/README.md
 digs/rockefeller-foundation/2026-08-19-global-hq-coo-transition/starintel-documents.jsonl
 digs/seattle/2026-08-20-request-2106-personnel-integrity/README.md
@@ -533,7 +524,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-003.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-004.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
-digs/wef-columbus/2026-08-18-global-shapers-archive/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
 digs/wef/2026-08-19-palantir-identity-hq-staleness/README.md

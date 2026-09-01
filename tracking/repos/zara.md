@@ -1,15 +1,20 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-01T16:42:39Z`
+- generated: `2026-09-01T21:04:59Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`2833e8b2d4bd50a14b0674c34f688749b3b01f54`](https://github.com/lost-rob0t/zara/commit/2833e8b2d4bd50a14b0674c34f688749b3b01f54)
-- head date: `2026-09-01T10:30:57-04:00`
-- head subject: RAGE #172: package Android portable semantic assets (gate recovery) (#275)
+- head: [`82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8`](https://github.com/lost-rob0t/zara/commit/82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8)
+- head date: `2026-09-01T15:02:06-04:00`
+- head subject: Merge pull request #280 from lost-rob0t/rage/android-172-fixture-runner
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8 Merge pull request #280 from lost-rob0t/rage/android-172-fixture-runner
+2026-09-01 c82aea0a041411709b510c38ca6394dd8cce6e36 rage: record #172 cross-runtime runner iteration
+2026-09-01 93dcd05ab5ce903a43f4d5b70fea8cff57a8eb9e RAGE #172 GREEN: add fail-closed semantic parity runner
+2026-09-01 1a48be8515637f14494f34ed768e319f70d26081 RAGE #172 RED: require cross-runtime semantic fixture runner
+2026-09-01 54c0e96fa75a6f2c5ba44b55d1f7a5f6e088fcf3 RAGE #172: normalize Android semantic parity results (#278)
 2026-09-01 2833e8b2d4bd50a14b0674c34f688749b3b01f54 RAGE #172: package Android portable semantic assets (gate recovery) (#275)
 2026-09-01 a77e4e866d38019f24af7ec3518f419e86f91e35 fix: rebase built-in todo surface toggle on current master (#272)
 2026-09-01 928aee7105842cc50b9eff73c7b56980c414ef3b RAGE #172: portable Android Prolog semantic contract (#269)
@@ -493,9 +498,13 @@ android/app/src/main/assets/prolog/portable/semantic_core.pl
 android/app/src/main/assets/prolog/portable/semantic_fixtures.json
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
+android/app/src/main/java/ai/zara/app/prolog/SemanticFixtureRunner.kt
+android/app/src/main/java/ai/zara/app/prolog/SemanticResultComparator.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
+android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
+android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/build.gradle.kts
 android/gradle.properties
@@ -555,6 +564,7 @@ rage/158-api-service-providers.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
+rage/172-android-fixture-runner.org
 rage/172-android-portable-prolog.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
@@ -801,6 +811,8 @@ zara/zmq_transport.py
 .github/workflows/ci.yml
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
+android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
+android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 flake.nix
 scripts/benchmark-agent-backends.py

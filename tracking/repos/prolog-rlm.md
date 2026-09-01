@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-01T16:42:36Z`
+- generated: `2026-09-01T21:04:55Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`39b278589dae8518e583778cd6671a6cb1e026c7`](https://github.com/lost-rob0t/prolog-rlm/commit/39b278589dae8518e583778cd6671a6cb1e026c7)
@@ -326,64 +326,6 @@
 2026-08-18 f70d2b723f1a0649ff8988e42199a8dd1c3287ce Document cold-history boundary projection
 2026-08-18 4eaa962424d567299f1f0bbff22fd5cd9c05ec53 Test synthetic cold-history boundary
 2026-08-18 56bcf126f7edca24e673fd65d267209f40af58e5 Add token-accounted cold-history boundary
-2026-08-18 c97716650ca6cbe3ef531fb403242be0c9aad7b2 Remove stale transcript-only projection test
-2026-08-18 3e209314bf2652582fb1f2655d36392c765cba84 Clarify warm reuse versus compaction in cold-context docs
-2026-08-18 1b618ecdc4ccc90887f0a3ebab8f503310ada325 Correct managed warm-context contract
-2026-08-18 5056c6a89c6f87873e3d7b798a4e117f84d0a9cd Document warm context integration without automatic compaction
-2026-08-18 d0c858cbaf248af26045b2cbb63b55644b301185 Load warm-aware conversation runtime
-2026-08-18 aa4f946197d744659b33378ce7adb6d51a3bb7f7 Run managed conversation runtime tests
-2026-08-18 17770bd7587c33efb7cb7380a021140d0488b24b Test warm-aware managed conversation runtime
-2026-08-18 a985173de8520c943905c09e62bce632b3d4e6d4 Route public conversation API through warm-aware runtime
-2026-08-18 5dd952ef4978dd0a0f094e1cfc6ad3f739885dc9 Wire existing warm context into managed conversations
-2026-08-18 67bdc61ef82a2ce86faba77511d5a933cb056d0b Make stdio fixture smoke warning tolerant
-2026-08-18 3404098a29fbf8f1674d83d195afaf5b97421579 Harden UI facade dict construction
-2026-08-18 b84101cd572586160ed6698da8f117e9877cc4f0 Advance PrologAgent roadmap through UI protocol slice
-2026-08-18 b55025685b4e283d076e42dac34562738af4a993 Document PrologAgent UI protocol boundary
-2026-08-18 52f91b0e8a736118772d35d36ddf8fc2d29d7e51 Clarify cold history as canonical default
-2026-08-18 33dcad931bb853c1edcd8e7d2d08aaf80f2ed378 Document PrologAgent UI v1 protocol
-2026-08-18 6e2d7a6326a7f0c2015e52df2cf721ed2a0ed128 Document hot-cold conversation contract
-2026-08-18 c17b612e48e7b0537f2b25079b2019ae5cae4e88 Lock warm context behind explicit opt-in
-2026-08-18 20d3c742694bc64635d3c488bb2b17670e673652 Load PrologAgent UI protocol modules
-2026-08-18 d94dead046429a2f122fda92f6212cf2bb43394e Run PrologAgent UI protocol tests
-2026-08-18 03cd15062ef34aa3883c08a0e3758ca394a57b05 Add deterministic UI protocol replay tests
-2026-08-18 b8d4fd47f12c8fa8c8d90a31c8e598991419c087 Add golden PrologAgent UI coding session
-2026-08-18 b5e371bd7839a526f3aca302364e3f20fb8c444a Add stdio UI protocol fixture entrypoint
-2026-08-18 44a7559409bf55ccc6c5a4a842b82af9e2d780af Add deterministic PrologAgent UI fixture server
-2026-08-18 c79de741fdd39de687b9d57bcc6969b2b3dd7532 Add renderer-safe AgentProlog UI facade
-2026-08-18 35b187349c3d6868555df28f08444f9e56a45bc7 Add PrologAgent UI v1 protocol core
-2026-08-18 411800746fe2f4601880baee602116e9dd0d0ad6 Document lazy cold conversation context
-2026-08-18 fbe3dd0b1b0e65e0af83aaa480966e70ef6bd174 Expose lazy cold conversation context
-2026-08-18 e9f5dab2c9794f22c3e63d16f4754b035c5aa0e0 Run cold conversation context tests
-2026-08-18 34bb28f850d1022ec5dd917069f2769c7db817b7 Test lazy cold conversation retrieval
-2026-08-18 c9160df346ede4fc7d1ee4e44f5ac5d6abb9dd99 Test trusted external context adapters
-2026-08-18 0705c253b9b83f819780bccf873e8aa66d6771a5 Back managed turns with lazy conversation context
-2026-08-18 efa46301fa223a246a8b14a0a76e4b89ad2fcac3 Add trusted lazy context adapter boundary
-2026-08-18 35b47e4d97c1c366e35c76c342e13a63a591ab46 Document warm conversation context
-2026-08-18 928b19b23bf0c7a3c1d9086282ca0fbb7e301832 Expose warm conversation context API
-2026-08-18 f04fe5c59742cf0db770b2606e9a991eb7f236fe Load warm conversation context runtime
-2026-08-18 e391db8baac944d6db580610a833f95321a54813 Run warm conversation context tests
-2026-08-18 3e4bcec3503929671c9cb3c90a2a94320345f24f Test durable warm conversation context
-2026-08-18 d33161d70ed7c133bb5d95fd0ab6a1e1c30e6117 Integrate derived context units into rolling pack
-2026-08-18 88d9f0a761a56c0b9cfdec946dae5c1052a9ec2c Add durable warm conversation context
-2026-08-18 2d6f5ea5847a791ea27b64f814f5fab459f92ea6 Document session discovery and token stages
-2026-08-18 6cc4403c9f7b3e7958052e425a850e229836fd65 Assert stage-aware token accounting
-2026-08-18 c15f99a0f1ec1139e4a032f9cf14d5cc12ee6c79 Test conversation discovery and range failures
-2026-08-18 0da34ad3fb1938af6e67ac3febe84e280f89d25a Expose conversation listing API
-2026-08-18 a8f6d12834f9de3bfb4222b31ccfdc6e2a851f4d Complete conversation listing API
-2026-08-18 6874895c0fa6c588279f4817e67df039b88b7ce4 List durable conversation headers
-2026-08-18 3a6a490dc5ed7af4f9f775fbffc2ef07e669327b Fix context text normalization
-2026-08-18 b08c73ed7d897f825e26c17cc9e9241a5df4565f Add stage-aware token ledger
-2026-08-18 8204f171585607815ab14f2bc2606f3c94046393 Fix context selection assertion
-2026-08-18 f1c1720c28ce9bdd691ea09f101aa7e70f5836f9 Harden infeasible context packing
-2026-08-18 161520030bfc68a0786733fe861a8e2f38e557bf Document managed conversation contract
-2026-08-18 afd22ceba4ce6ab808f644cb72d235e454edc438 Expose managed conversation runtime
-2026-08-18 379bb7d617f0a834a4a6bbbdba88305bc4ea9215 Load conversation runtime in smoke check
-2026-08-18 402e46603ac27bd4e46a0b7bb67b631c37132ca0 Run conversation context tests
-2026-08-18 47266fd06ac147e933b8187c268f838027579ec4 Test durable conversation transcript and rolling context
-2026-08-18 74bc5257e6b65489b212654c1d3aff097008a263 Test context budget constraints
-2026-08-18 4520b48e5c97b54be9d19a1d3632894eb3552bfd Add first-class conversation runtime
-2026-08-18 390d87e8eeffaab779cb4303cafcfa29c3cadc01 Add durable conversation persistence backend
-2026-08-18 11e55f646f9c0fdd5f952b5fd7838e59a753229c Add bounded context budget solver
 ```
 
 ## Repository paths changed, last 14 days
@@ -459,8 +401,6 @@ docs/chain-runtime.md
 docs/completion-runtime.md
 docs/conversation-cold-context.md
 docs/conversation-runtime.md
-docs/conversation-warm-context.md
-docs/conversation-warm-integration.md
 docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/effect-adapters.md
@@ -622,7 +562,6 @@ test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
 test/rlm_context_adapter_test.pl
-test/rlm_context_budget_test.pl
 test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
@@ -827,7 +766,6 @@ test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
 test/rlm_context_adapter_test.pl
-test/rlm_context_budget_test.pl
 test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
