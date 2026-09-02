@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-02T00:17:51Z`
+- generated: `2026-09-02T07:08:16Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`39b278589dae8518e583778cd6671a6cb1e026c7`](https://github.com/lost-rob0t/prolog-rlm/commit/39b278589dae8518e583778cd6671a6cb1e026c7)
@@ -290,31 +290,6 @@
 2026-08-20 8c3b9cd0db71526648da2b5f2d8558dc6b87c241 Preserve model usage on completion execution errors (#134)
 2026-08-19 9322954c24594884b009bd3eece53a5784c8253e Add OpenTUI Solid reference client for PrologAgent UI v1 (#113)
 2026-08-19 eeda016b31fd702c59992f328e40689641e839de Merge pull request #115 from lost-rob0t/agent/95-project-source-registry
-2026-08-19 7f6026d3630eb780ab002af4e63688ff73a1926b Reconcile #95 project source registry onto current main
-2026-08-19 b57404534f58bfee0f301c9be03e3bc912af7f3b Merge PR #114: update roadmap after #86
-2026-08-19 15bba6bf8bb5582aaaae7d82539f65cf01baa166 Update roadmap after #86 effect-boundary merge
-2026-08-19 2bbd0ed2f1bc20b6164752f4bb133b1efe763395 Merge PR #86: route effectful tools through durable effect boundary
-2026-08-19 f06438d2561199dc56914f3b29b97ecd773113ee Merge PR #88: PrologAgent UI research
-2026-08-19 c7e539486b4bf0a807e20f326f9dd5da701a35ca Register tool effect-boundary tests on current main
-2026-08-19 7ce66fa76198732f29d8eeb0f0b31a44360cd6bc Reconcile #79 tool effect-boundary slice onto current main
-2026-08-19 2f8311362ee9120f02f1a369ee74ec118e16a44e Reconcile PrologAgent UI research onto current main
-2026-08-19 4aff0b6e082728e0ffc60b8c614aa6744b1e5584 Merge PR #106: managed hot/warm/cold conversation runtime
-2026-08-19 6ebe3e8f774713955a772e24324c75a25797b60e Reconcile cold-context tests with current main
-2026-08-19 a5bf311752026290e331c867f33facb28dfcdd17 Reconcile cold-context load checks with current main
-2026-08-19 1b209683d0968837b78b8b59ae1fb5f6be4527de Merge PR #111: Add direct SWI-Prolog Tree-sitter FFI
-2026-08-19 4340d404c39f3318d34c38e5cfe5a9ae82b971f6 Merge PR #104: durable warm conversation context
-2026-08-19 6da7e64e255f07d04055c66e283a36dcb52e94dc Merge managed conversation runtime into Tree-sitter FFI slice
-2026-08-19 5bc98abde3123fb2df11989a68640eac3b62f507 Resolve warm-context stack conflict with UI v1 test registration
-2026-08-19 350868d890eab658a81119c1333d79e345d3acf2 Resolve warm-context stack conflict with UI v1 load checks
-2026-08-19 c35658b2995dd96289de22b56de1e538cb31cf2f Merge PR #102: managed conversation runtime
-2026-08-19 af575e86be5cfe2a112606d0b36cc172a7499ebc Reconcile Tree-sitter roadmap with UI protocol
-2026-08-19 68a5ab5e4e45313d4f7762f679d62eb630933d40 Merge main into Tree-sitter FFI slice
-2026-08-19 805c8d6378b586a7d3d88f2897430a7637c49131 Update PrologAgent roadmap for Tree-sitter FFI
-2026-08-18 75634184da218fef9ebfbb43e7dcbab4547a11dd Merge PR #110: Implement PrologAgent UI v1 protocol
-2026-08-18 278d82dfed19f68604ce8ab649b1e3d65c899388 Cover UI protocol hardening regressions
-2026-08-18 18c31d754568dab8f18f2e77b19e057d64338351 Harden UI protocol replay and wire bounds
-2026-08-18 72e4e1036895c9678ff484d6a693285dfe9c3081 Fix Tree-sitter CI checkout depth
-2026-08-18 c08f0f1413c8a8f96ed0e187966533ad9f90f8f3 Add direct SWI-Prolog Tree-sitter FFI
 ```
 
 ## Repository paths changed, last 14 days
@@ -374,13 +349,6 @@ benchmark/rlm_constraint_verify.pl
 benchmark/rlm_live_deep_experiment.pl
 benchmark/rlm_live_deep_smoke.pl
 benchmark/run.pl
-c/rlm_tree_sitter.c
-c/rlm_tree_sitter_internal.h
-c/rlm_tree_sitter_language.c
-c/rlm_tree_sitter_lifetime.c
-c/rlm_tree_sitter_node.c
-c/rlm_tree_sitter_parser.c
-c/rlm_tree_sitter_support.c
 docs/agent-runtime.md
 docs/agent-zero-adapter.md
 docs/async-runtime.md
@@ -392,11 +360,9 @@ docs/conversation-cold-context.md
 docs/conversation-runtime.md
 docs/delegation-runtime.md
 docs/direct-runtime.md
-docs/effect-adapters.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
 docs/nix-packaging.md
-docs/project-source-registry.md
 docs/prolog-agent-roadmap.md
 docs/prolog-agent-ui-v1.md
 docs/prompt-compiler.md
@@ -436,14 +402,12 @@ prolog/rlm_conversation_warm.pl
 prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
 prolog/rlm_effect.pl
-prolog/rlm_effect_executor.pl
 prolog/rlm_effect_migration.pl
 prolog/rlm_evolution.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_outcome.pl
 prolog/rlm_plan.pl
-prolog/rlm_project_source.pl
 prolog/rlm_prompt_command.pl
 prolog/rlm_prompt_compiler.pl
 prolog/rlm_result_accept.pl
@@ -459,7 +423,6 @@ prolog/rlm_text.pl
 prolog/rlm_tool.pl
 prolog/rlm_tool_loader.pl
 prolog/rlm_tool_projection.pl
-prolog/rlm_tree_sitter.pl
 rage/117-skill-compiler-reconciliation.org
 rage/144-fallback-closure.org
 rage/164-conversation-metadata.org
@@ -496,7 +459,6 @@ research/RLM-RESEARCH-025-lem-ui.org
 research/RLM-RESEARCH-026-task-deadlines.org
 research/spec-plan-refinement-kb-state.pl
 research/spec-plan-refinement-kb.pl
-scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/openrouter_completion.sh
 scripts/research_approval_validator.pl
@@ -577,7 +539,6 @@ test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
-test/rlm_project_source_native_test.pl
 test/rlm_project_source_test.pl
 test/rlm_prompt_command_test.pl
 test/rlm_prompt_compiler_test.pl
@@ -600,14 +561,12 @@ test/rlm_tool_loader_security_test.pl
 test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
-test/rlm_tree_sitter_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
 test/run_tool_mcp_async_tests.pl
-test/run_tree_sitter_tests.pl
 test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -640,10 +599,7 @@ test/support/runner_strict_load_probe.pl
 test/support/runner_subset_tests.pl
 test/support/runner_timeout_test.pl
 test/support/runner_unstrict_load_probe.pl
-test/support/tool_effect_crash_support.pl
 test/support/tool_effect_test_support.pl
-test/tool_effect_crash_phase1.pl
-test/tool_effect_crash_phase2.pl
 third_party/mattpocock-skills/LICENSE
 third_party/mattpocock-skills/UPSTREAM.md
 third_party/mattpocock-skills/skills/README.md
@@ -704,7 +660,6 @@ agentProlog/ui/opentui/test/protocol.test.ts
 agentProlog/ui/opentui/test/render.test.tsx
 agentProlog/ui/opentui/test/transport.integration.ts
 flake.nix
-scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/openrouter_completion.sh
 scripts/research_approval_validator.pl
@@ -781,7 +736,6 @@ test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
-test/rlm_project_source_native_test.pl
 test/rlm_project_source_test.pl
 test/rlm_prompt_command_test.pl
 test/rlm_prompt_compiler_test.pl
@@ -804,14 +758,12 @@ test/rlm_tool_loader_security_test.pl
 test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
-test/rlm_tree_sitter_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
 test/run_tool_mcp_async_tests.pl
-test/run_tree_sitter_tests.pl
 test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -844,9 +796,6 @@ test/support/runner_strict_load_probe.pl
 test/support/runner_subset_tests.pl
 test/support/runner_timeout_test.pl
 test/support/runner_unstrict_load_probe.pl
-test/support/tool_effect_crash_support.pl
 test/support/tool_effect_test_support.pl
-test/tool_effect_crash_phase1.pl
-test/tool_effect_crash_phase2.pl
 third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
 ```

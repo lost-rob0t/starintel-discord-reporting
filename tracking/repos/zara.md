@@ -1,15 +1,56 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-02T00:17:55Z`
+- generated: `2026-09-02T07:08:19Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`89e6fbc6f17df0a86083b5e66dd1496c89555daf`](https://github.com/lost-rob0t/zara/commit/89e6fbc6f17df0a86083b5e66dd1496c89555daf)
-- head date: `2026-09-01T19:01:43-04:00`
-- head subject: Merge pull request #283 from lost-rob0t/rage/android-172-trealla-runtime
+- head: [`753f79326f1be7dc77030c9950a08e2901827d8d`](https://github.com/lost-rob0t/zara/commit/753f79326f1be7dc77030c9950a08e2901827d8d)
+- head date: `2026-09-02T03:04:15-04:00`
+- head subject: Merge pull request #292 from lost-rob0t/rage/android-172-asset-staging
 
 ## Git log, last 14 days
 
 ```text
+2026-09-02 753f79326f1be7dc77030c9950a08e2901827d8d Merge pull request #292 from lost-rob0t/rage/android-172-asset-staging
+2026-09-02 eadda3766a80060b4472a92ddf4164a96e2f1a39 RAGE #172: record asset-staging RED/GREEN evidence
+2026-09-02 507962af225c269925df1d53bdfc845036e2d2ce RAGE #172: initialize Trealla from staged Android assets
+2026-09-02 7b3b3ed69074ebd2af2a896a3510a319ccdaf41e RAGE #172: stage portable Prolog core into app-private storage
+2026-09-02 1780e4142ce2f7e4e18a92258336a1284ffd5418 RAGE #172: name canonical portable semantic asset paths
+2026-09-02 f4c2409b860a80ac93b3fe19e0a09703ddb9b0dc RAGE #172 RED: require deterministic Android Prolog asset staging
+2026-09-02 43cf88b7a45168508459597819386364d457ee47 RAGE #172: record Android asset-staging iteration start
+2026-09-02 0b2dc899bba6303f5ae4abeadbc909a44cf24b1e Merge pull request #290 from lost-rob0t/rage/android-172-native-adapter
+2026-09-01 f956574916dff85e8ca92ebdcf4f5d7725245daf docs(rage): record #172 packaging green and master recovery
+2026-09-01 e080c59dade0652aad806be679dd0548b8d0d13f chore(android): recover #172 native adapter onto current master
+2026-09-01 a96b48d12d6fe0eb7bfb88d0a0e0559775974a9d Merge pull request #288 from lost-rob0t/rage/260-python-hooks-advice
+2026-09-01 f2715253c4e7f885a1521409486e2a539653d8e2 docs(rage): record Android Trealla packaging RED and recovery
+2026-09-01 7b5ef168956234506ad33730d33cf30e29cc5f3f fix(android): point at versioned NDK root
+2026-09-01 3f33f44625cc4a11a91e0b2bcb76a480d4dfb09e build(android): pin exact Trealla source hash
+2026-09-01 5ab3b1b3ba3c15dd0150dd70b00ece980aec16c3 ci(android): use Android-owned NDK toolchain
+2026-09-01 025478efc3878999db6335ab6764d99d65d84106 build(android): require the pinned NDK version
+2026-09-01 d7743d458ac3c63c798474b22482aed0738314df test(android): bind packaging proof to Android-owned toolchain
+2026-09-01 5a2ebe0639cafd708edc00fc9ad91213d2b9e637 build(android): lock Android toolchain nixpkgs
+2026-09-01 5494c8932b2708345b808d9cde69a712ed4244e4 feat(android): define pinned NDK and Trealla toolchain
+2026-09-01 5044792caadc6ab7756ffa28c729d70b328f35a8 test(android): build native Trealla before APK gate
+2026-09-01 d534c0674641f1003b118f1bb6e8c642bffeabf3 feat(android): build pinned Trealla for supported ABIs
+2026-09-01 037346380650e230396a0d5e025e94db7c743435 feat(android): resolve pinned Trealla library per ABI
+2026-09-01 2627c28dd6fb28b93ee5a54974e5482ebb80b338 feat(android): wire Trealla native build into APK
+2026-09-01 e7a40b552c2ba1ae4a6235480336078fc3d18e25 test(android): require reproducible Trealla NDK packaging
+2026-09-01 abeb9c39583ea11331662d5c62b80d59dc78b110 RAGE #172: record native adapter RED/GREEN evidence
+2026-09-01 b65c54c4ce0aada001ffff96af7744050fb908e6 RAGE #172: define pinned Trealla native build contract
+2026-09-01 80a072a3277209a77de86a39fca5d6ea4147fb5b RAGE #172 GREEN: add fail-closed Trealla JNI adapter source
+2026-09-01 5e313630513b8df92bbe5615225d79526736d7fe RAGE #172 RED: require native Trealla JNI source contract
+2026-09-01 7101099e41c407be2f31509e0ac154a836cac865 RAGE #172: start Android native Trealla adapter iteration
+2026-09-01 6dee4a02abc3fba3f6750df35f5825c54c9535cc Merge master into RAGE #260 Python hooks slice
+2026-09-01 518fef14a710b04c99f4509235ef244bdf4f9f34 docs(rage): record Python hooks RED and implementation
+2026-09-01 e1c61a38b68fb0601f49152ca4d2205e4a5c41f7 Merge pull request #286 from lost-rob0t/rage/android-172-jni-bridge
+2026-09-01 9e7895bd7087b947613093b6bb55ff3b045e5c27 feat(agent): implement bounded advice registry
+2026-09-01 f2a9c09da861890e161bc30a7f01e8b3c13c350a test: RED Python hook/advice registry contract
+2026-09-01 4012ddb16586da0bde8168026294484f60cce8bd rage: design #260 Python hook/advice registry
+2026-09-01 579c9a5548bd8812050d52cc398ac9ee5a5aeeb7 rage: research #260 Python hook/advice seam
+2026-09-01 7ea61cf90c37dd3ab467f4d302bb86431577f063 rage: start #260 Python hooks/advice iteration
+2026-09-01 bb82778cca98de8eb2c4d1220a64900b80bd7f77 docs(rage): record #172 JNI bridge design and TDD evidence
+2026-09-01 b26fc07dc3b06c50c08fb14efce988092e938c48 feat(android): add fail-closed Trealla JNI bridge boundary
+2026-09-01 44427e416ce1613e8774ee42a059389f3191511d test(android): define Trealla JNI bridge fail-closed contract
+2026-09-01 0988bbe5249ce5530144110ebabdb8d2986af080 rage(android): start #172 JNI bridge iteration
 2026-09-01 89e6fbc6f17df0a86083b5e66dd1496c89555daf Merge pull request #283 from lost-rob0t/rage/android-172-trealla-runtime
 2026-09-01 be75c73c0b32ca4cabd4837ca41e685d967e1ae3 docs(rage): record #172 stale-base recovery
 2026-09-01 934aa4e6049b3b82202820f559b38a740e6518a8 merge(master): refresh Android #172 candidate
@@ -518,19 +559,30 @@ android/app/src/main/AndroidManifest.xml
 android/app/src/main/assets/prolog/.gitkeep
 android/app/src/main/assets/prolog/portable/semantic_core.pl
 android/app/src/main/assets/prolog/portable/semantic_fixtures.json
+android/app/src/main/cpp/CMakeLists.txt
+android/app/src/main/cpp/zara_trealla_jni.c
 android/app/src/main/java/ai/zara/app/MainActivity.kt
+android/app/src/main/java/ai/zara/app/prolog/NativeTreallaBridge.kt
+android/app/src/main/java/ai/zara/app/prolog/PortableSemanticAssetStager.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticFixtureRunner.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticResultComparator.kt
 android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
+android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
+android/build-trealla.sh
 android/build.gradle.kts
+android/flake.lock
+android/flake.nix
 android/gradle.properties
 android/gradle/libs.versions.toml
 android/settings.gradle.kts
@@ -590,7 +642,10 @@ rage/158-api-service-providers.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
+rage/172-android-asset-staging.org
 rage/172-android-fixture-runner.org
+rage/172-android-jni-bridge.org
+rage/172-android-native-adapter.org
 rage/172-android-portable-prolog.org
 rage/172-android-trealla-runtime.org
 rage/191-zara1-tool-approvals-2-design.org
@@ -617,6 +672,8 @@ rage/259-agent-hooks-recovery.org
 rage/260-hooks-prolog-config-design.org
 rage/260-hooks-prolog-config-research.org
 rage/260-hooks-prolog-config.org
+rage/260-python-hooks-advice-design.org
+rage/260-python-hooks-advice-research.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
 rage/daemon-128-design.org
@@ -661,6 +718,7 @@ t/process_safety.pl
 t/prolog_config.pl
 t/rlm_rewrite.pl
 t/sounds.pl
+t/test_agent_hooks.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py
@@ -774,6 +832,7 @@ zara/agent/__init__.py
 zara/agent/approval.py
 zara/agent/conversation.py
 zara/agent/graph.py
+zara/agent/hooks.py
 zara/agent/prompting.py
 zara/agent/sentence_chunker.py
 zara/agent/stream_events.py
@@ -843,12 +902,17 @@ zara/zmq_transport.py
 
 ```text
 .github/workflows/ci.yml
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
+android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
+android/flake.nix
 flake.nix
 scripts/benchmark-agent-backends.py
 scripts/benchmark-voice.py
@@ -880,6 +944,7 @@ t/process_safety.pl
 t/prolog_config.pl
 t/rlm_rewrite.pl
 t/sounds.pl
+t/test_agent_hooks.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py

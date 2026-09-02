@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-02T00:17:40Z`
+- generated: `2026-09-02T07:08:08Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced`](https://github.com/lost-rob0t/starintel-auto-research/commit/e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced)
@@ -158,11 +158,6 @@
 2026-08-23 0c28f4909ad2bd770ecd10c3ee93a7c63cf301fa docs: approve Meta MCP without crawl
 2026-08-23 8f191a995255eec5118d4aaced050d760f2a4ab9 research: Meta MCP execution plane ADARD (#132)
 2026-08-23 32ecdb2e3bf0a8218c95063ba77d5069fdc91654 research: broaden ZeroMQ into StarRouter transport/API overhaul (#129)
-2026-08-19 b0c2cf434f5b0aa3b710c3c5ff265024cf517970 Merge PR #127: machine-readable HTTP contract and client design
-2026-08-19 3a313166b56c8d18b376e6e3d29c55c1755c218b docs: record approval of gserver client research
-2026-08-19 104ccd2d6c564248b458a9e74545af3b43b1f971 design: gserver client runtime and local administration
-2026-08-19 8bc6d83b9981ae342d3652a6d5b4f0855ab057d0 research: machine-readable HTTP contract and client generation
-2026-08-18 39caddd6c5cdf8db560059bd7aadb03ce7733880 research: gserver client library boundary
 ```
 
 ## Repository paths changed, last 14 days
@@ -224,7 +219,6 @@ roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
 roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
 roam/design/star-server/STAR-SERVER-000-composable-intelligence-gservers.org
 roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
-roam/design/star-server/STAR-SERVER-038-gserver-client-runtime-and-local-administration.org
 roam/design/star-server/STAR-SERVER-040-starrouter-zeromq-transport-api-overhaul.org
 roam/design/star-server/STAR-SERVER-041-star-uri-authority-routing-protocol.org
 roam/design/star-server/STAR-SERVER-042-bixby-oauth-authorization-code-provider.org

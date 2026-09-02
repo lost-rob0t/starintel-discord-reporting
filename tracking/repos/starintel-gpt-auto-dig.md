@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-02T00:17:38Z`
+- generated: `2026-09-02T07:08:06Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -214,10 +214,6 @@
 2026-08-19 83c65d8741c433db4ad2b940cd791c459cd69687 revert: restore branch-only hourly research flow
 2026-08-19 e8aabc3c9f63a9e2192636d36fa5803a32388e90 research: add RAND headquarters evidence packet
 2026-08-19 53c44d05b6985d57bc99dab6d22afde5d0693e95 research: add RAND headquarters hourly pass
-2026-08-19 ab8683950a61ec019b6107ba27476e9179a3a154 Hourly Auto-Dig: Chatham House location and programme update (#2063)
-2026-08-18 432f68871e048a18ac04e56dc215d25c6843432d Hourly Auto-Dig: Boao Forum HQ semantics and news scan (#2062)
-2026-08-18 2e35e428ab2523c57b281f3aa8d40e5f8e9bc63a Hourly Auto-Dig: Graphika HQ evidence and news scan (#2061)
-2026-08-18 ef8629d9ce862b2be30c376df7bb4e4d630581e1 Hourly Auto-Dig: FED national security adviser and EOP location (#2060)
 ```
 
 ## Repository paths changed, last 14 days
@@ -266,10 +262,6 @@ digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/README.md
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/starintel-documents.jsonl
-digs/dark-academia/2026-08-19-boao-forum-hq-location-news-scan/README.md
-digs/dark-academia/2026-08-19-boao-forum-hq-location-news-scan/starintel-documents.jsonl
-digs/dark-academia/2026-08-19-chatham-house-location-programme/README.md
-digs/dark-academia/2026-08-19-chatham-house-location-programme/starintel-documents.jsonl
 digs/dark-academia/2026-08-19-ecfr-berlin-office/report.md
 digs/dark-academia/2026-08-19-milken-institute-location-health/README.md
 digs/dark-academia/2026-08-19-milken-institute-location-health/starintel-documents.jsonl
@@ -379,8 +371,6 @@ digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/records-
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/source-notes.md
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/starintel-documents.jsonl
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/subcontractor-leads.md
-digs/fed/2026-08-19-national-security-adviser-eop-location/README.md
-digs/fed/2026-08-19-national-security-adviser-eop-location/starintel-documents.jsonl
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/README.md
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/manifest.json
 digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/sources.md
@@ -420,8 +410,6 @@ digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
 digs/gop/2026-08-19-rnc-receipts-location/README.md
 digs/gop/2026-08-19-rnc-receipts-location/starintel-documents.jsonl
-digs/graphika/2026-08-19-hq-federal-address-news-scan/README.md
-digs/graphika/2026-08-19-hq-federal-address-news-scan/starintel-documents.jsonl
 digs/hanceville/2026-08-20-police-corruption-rebrand/sources.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/README.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/attack-results.md

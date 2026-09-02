@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-02T00:17:44Z`
+- generated: `2026-09-02T07:08:09Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`ffd3f903d21abd4adec83b7d47230dc02df922c8`](https://github.com/lost-rob0t/quasar/commit/ffd3f903d21abd4adec83b7d47230dc02df922c8)
@@ -105,7 +105,6 @@
 2026-08-25 15941301907063f436029e086a716720bfe26648 test: expand durable Auto-Dig lifecycle contract
 2026-08-25 a640874c4004a05045fcd2732fdb0009bedb5c0c test: run Auto-Dig control contract suite
 2026-08-25 c7855139ffb7d1052d2f88f61a93bbb7901ce350 test: specify typed Auto-Dig control lifecycle
-2026-08-19 560208d0906cf564dd59050bca9a0f9341a3c55d Unify Quasar UI core and application shell (#40)
 ```
 
 ## Repository paths changed, last 14 days
@@ -113,7 +112,6 @@
 ```text
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
-.github/workflows/ui-overhaul-format.yml
 README.md
 control-plane/src/autodig-control.lisp
 control-plane/src/autodig-persistence-bridge.lisp
@@ -133,28 +131,18 @@ control-plane/tests/autodig-principal-isolation-tests.lisp
 control-plane/tests/autodig-websocket-auth-tests.lisp
 control-plane/tests/autodig-worker-reclaim-tests.lisp
 docs/CONFIGURATION.md
-docs/UI-CORE.md
 example_configs/init.lisp
 flake.nix
 frontend/benchmarks/graph-renderer.html
 frontend/docs/gpu-renderer-benchmark.md
 frontend/e2e/application.spec.ts
-frontend/e2e/dataset-picker.spec.ts
 frontend/e2e/graph-controls.spec.ts
 frontend/e2e/graph-fullscreen.spec.ts
 frontend/e2e/graph-viewport.spec.ts
 frontend/e2e/large-import.spec.ts
 frontend/e2e/mobile-fit-agent-disclosure.spec.ts
-frontend/e2e/mobile-navigation.spec.ts
-frontend/e2e/ui-consistency.spec.ts
 frontend/package.json
 frontend/scripts/benchmark-graph-renderer.mjs
-frontend/src/App.jsx
-frontend/src/app/main.tsx
-frontend/src/components/AgentDisclosureBridge.jsx
-frontend/src/components/DatasetsPage.jsx
-frontend/src/components/MobileGestureMenu.jsx
-frontend/src/components/MobileGraphToolTray.jsx
 frontend/src/graph/GraphAdapter.js
 frontend/src/graph/graph-performance.js
 frontend/src/graph/graph-performance.test.js
@@ -162,19 +150,6 @@ frontend/src/graph/graph-renderer.js
 frontend/src/graph/graph-renderer.test.js
 frontend/src/graph/renderer-benchmark.js
 frontend/src/lib/graph-style.js
-frontend/src/ui-core/QuasarShell.jsx
-frontend/src/ui-core/StatusCenter.jsx
-frontend/src/ui-core/adapters/auto-dig.js
-frontend/src/ui-core/adapters/control-plane.js
-frontend/src/ui-core/adapters/index.js
-frontend/src/ui-core/adapters/shared.js
-frontend/src/ui-core/adapters/standalone.js
-frontend/src/ui-core/graph.css
-frontend/src/ui-core/navigation.jsx
-frontend/src/ui-core/responsive.css
-frontend/src/ui-core/runtime.jsx
-frontend/src/ui-core/shell.css
-frontend/src/ui-core/surfaces.css
 noop
 package.json
 scripts/bootstrap-lisp-deps
@@ -196,7 +171,6 @@ systems/quasar-web.asd
 ```text
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
-.github/workflows/ui-overhaul-format.yml
 control-plane/tests/autodig-control-tests.lisp
 control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp

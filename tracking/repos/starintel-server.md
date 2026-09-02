@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-02T00:17:36Z`
+- generated: `2026-09-02T07:08:05Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -136,47 +136,6 @@
 2026-08-22 f4f5526814ff1eabd2bcebc230879bf4b6230b98 test: prove expired CouchDB sessions are renewed
 2026-08-22 6e5f5daebe77d4efecb31f2b4582afe9aca52591 fix: add session-aware CouchDB pool hardening
 2026-08-19 bb4eb92eab20b23ea8b11be9af7503bc39eeefaf fix http contract reader balance
-2026-08-19 db4099ddec8c3f18520c3c7cc6710f8e7498f818 test OpenAPI secret directions
-2026-08-19 7cced77099e699236b6becf7c445799b56cef9d6 mark returned API keys read-only in OpenAPI
-2026-08-19 4974b486d18e082967dd794d1adc4ce4b6fb5106 declare client deadline lock dependency
-2026-08-19 1f9adab15195ed3953314628651bfffab2c8304c serialize shared deadline registry access
-2026-08-19 25700ca15a1173cc9ecdf4abee9dc3db80956070 load corrected client fixture last
-2026-08-19 97d8f416768665ebd4089b2c9ff36356110c29e1 correct stdin password fixture
-2026-08-19 2945a0214e9a288c594ba7f64c2c4fa460ef62ad avoid deadline registry leaks and classify socket timeouts
-2026-08-19 b53d78b8cfbf18895bee61f28a0b4ba36e455913 document remote SDK-backed management CLI
-2026-08-19 d79d50416ca3e79734609487f7f012c941a064fa expand client and admin acceptance coverage
-2026-08-19 5753b7c650ddea35930674bde69a3b5a6ac6a529 load final deadline and problem normalization layer
-2026-08-19 ab154ddeacae6e26d2741096430a3742b0208a88 enforce absolute request deadlines and problem details
-2026-08-19 04a1862c01a1f1d3e7b13248777eeaba0ab99f61 load remote management CLI over SDK
-2026-08-19 f15bfceaf2d5afd51afb5bb18ced30eee0650c3a add remote auth and administration CLI over SDK
-2026-08-19 ed48434097b59d3c98c813a36916250225815e30 fix shared contract ASDF pathnames
-2026-08-19 a614d41bd633b34b3ae2a47bff302649438fb9dc load finalized admin command tree
-2026-08-19 b84e81ee0dbf3b5d7a2722569cbc22323351cd09 make admin command groups print usage
-2026-08-19 59cbb5b46245bb70a38bf290c5039bee259fc361 document server-local administration
-2026-08-19 1522b1c9e3bf1dac26592bd1f48fbdae1a03f817 document machine-readable authenticated HTTP surface
-2026-08-19 14aaa16172c385e8d232afd1559f09b373445e65 inherit init option through admin subcommands
-2026-08-19 812d5fadb7a34a2e052ff3f30df1a73c9afd497e finalize legacy client compatibility
-2026-08-19 311c539fd124cf204d70cfea0c873af1cf5ad3c5 normalize OpenAPI boolean schema values
-2026-08-19 ff320b85becad2c86d1b404a3d031f0eb51a0767 require gserver client test suite
-2026-08-19 317d13273b962381a425d23a963175f5bd82a73f run gserver client contract tests
-2026-08-19 3436c8c6aee6cf52f4127f6bafb27c3a5434c63c load finalized shared HTTP contract
-2026-08-19 84d45cfd65a4a558d8623a9f323dc64c12ed64bb load contract finalization and compatibility layer
-2026-08-19 ff1979e049932392e9191d15f8cdfb8cfc62e4da preserve legacy star-client construction
-2026-08-19 1acd846191dce734fea3d3f67b25904fb81dac60 finalize generated contract schemas
-2026-08-19 d241b7cf3830314e9c7802eb95564fcef8c7c5c2 test contract client and local admin boundaries
-2026-08-19 d347b0a46fed3ac9a8fd3553d4e567ee0d1d7a49 publish contract discovery endpoints without auth
-2026-08-19 8dc013f05753685534134c6c8e160665773fa6ba load shared contract and local admin surface
-2026-08-19 a51bdaf83ae2cfbaad18ade6b429bee47117ac18 expose admin commands from star-server
-2026-08-19 e990d45365e3e44a14386062f00a78e38543f6f8 add server-local administration commands
-2026-08-19 a1de2b4edbc44977c1fbc95d689c1af60c3e506c mount contracted HTTP routes and schema endpoints
-2026-08-19 528223f635b456c05fc792b1dec9dd72eb240edd load generated client runtime layers
-2026-08-19 01c0a7d598397e474feb1697b451a06d5f9392ae route legacy client calls through runtime
-2026-08-19 b0b391f88ee38520c7a6a82c76fa872d116ef30e add typed auth and management client operations
-2026-08-19 9d66c08374dd7b8e6dd56ed88b9d963929baa3dd generate client operation wrappers from contract
-2026-08-19 985c610577788a3f990cc98ab437e89b9b9da1de implement reusable client runtime
-2026-08-19 4eb0a583a74a5826f228a0dc1ab4511ecb4a7601 define reusable gserver client API
-2026-08-19 3381b012b7b9f8fa20949fd4aa2fb6c965dfa22f define machine-readable HTTP contract
-2026-08-19 402dba4f68d60f6ffa4ff52bba2e949a70a726c5 add shared HTTP contract package
 ```
 
 ## Repository paths changed, last 14 days
@@ -186,19 +145,10 @@
 Makefile
 addons/bixby/bixby.lisp
 addons/bixby/package.lisp
-cli/api-client.lisp
-cli/client-compat.lisp
-cli/client-convenience.lisp
-cli/client-package.lisp
 cli/client-runtime-final.lisp
-cli/client-runtime.lisp
-cli/generated-operations.lisp
 cli/http-contract-final.lisp
-cli/http-contract-package.lisp
 cli/http-contract-targets.lisp
 cli/http-contract.lisp
-cli/star-cli-management.lisp
-cli/star-cli.asd
 cli/starintel-gserver-client.asd
 client-test.el
 client.el
@@ -206,10 +156,8 @@ docker/star-server-init.lisp
 docs/addons.org
 docs/document-spec.org
 docs/http-api-docs.org
-docs/http-users.org
 docs/messaging.org
 docs/oauth-provider.org
-docs/server-admin.org
 docs/v09-runtime.org
 example_configs/init.lisp
 flake.lock
@@ -217,8 +165,6 @@ flake.nix
 qlfile.lock
 scripts/stack-test.sh
 source/addons.lisp
-source/admin-final.lisp
-source/admin.lisp
 source/auth/oauth-bearer.lisp
 source/auth/oauth-package.lisp
 source/auth/oauth.lisp
@@ -244,7 +190,6 @@ source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
 source/gserver-settings.lisp
-source/main.lisp
 source/package.lisp
 source/rabbit.lisp
 source/starintel-gserver.asd
@@ -258,7 +203,6 @@ t/authorization-policy-test.lisp
 t/couchdb-session-test.lisp
 t/couchdb-view-integration-test.lisp
 t/gserver-client-final-test.lisp
-t/gserver-client-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
@@ -276,7 +220,6 @@ tests/test_v09_runtime_contract.py
 
 ```text
 .github/workflows/smoke-tests.yml
-cli/star-cli.asd
 cli/starintel-gserver-client.asd
 flake.nix
 scripts/stack-test.sh
@@ -289,7 +232,6 @@ t/authorization-policy-test.lisp
 t/couchdb-session-test.lisp
 t/couchdb-view-integration-test.lisp
 t/gserver-client-final-test.lisp
-t/gserver-client-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
