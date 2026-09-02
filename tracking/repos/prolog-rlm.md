@@ -1,15 +1,16 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-02T17:55:40Z`
+- generated: `2026-09-02T21:06:08Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`39b278589dae8518e583778cd6671a6cb1e026c7`](https://github.com/lost-rob0t/prolog-rlm/commit/39b278589dae8518e583778cd6671a6cb1e026c7)
-- head date: `2026-09-01T12:12:47-04:00`
-- head subject: test: import library(http/json) for atom_json_dict on SWI 9
+- head: [`156bfe9b2caffa1b967e77bee51263ee9e85fb50`](https://github.com/lost-rob0t/prolog-rlm/commit/156bfe9b2caffa1b967e77bee51263ee9e85fb50)
+- head date: `2026-09-02T15:26:51-04:00`
+- head subject: Add versioned project syntax observations
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 156bfe9b2caffa1b967e77bee51263ee9e85fb50 Add versioned project syntax observations
 2026-09-01 39b278589dae8518e583778cd6671a6cb1e026c7 test: import library(http/json) for atom_json_dict on SWI 9
 2026-09-01 7a701578a50735d1383cf1709e1d32a3a6af0ed8 test: isolate the tool-cutoff test from the wall-clock reservation
 2026-09-01 d5e2cecfeb1f887f46b8513a4be92b3f888b4f7c fix: bound evidence by response count with deterministic closing turns
@@ -348,6 +349,11 @@ benchmark/rlm_constraint_verify.pl
 benchmark/rlm_live_deep_experiment.pl
 benchmark/rlm_live_deep_smoke.pl
 benchmark/run.pl
+c/rlm_tree_sitter.c
+c/rlm_tree_sitter_internal.h
+c/rlm_tree_sitter_lifetime.c
+c/rlm_tree_sitter_node.c
+c/rlm_tree_sitter_parser.c
 docs/agent-runtime.md
 docs/agent-zero-adapter.md
 docs/async-runtime.md
@@ -362,6 +368,8 @@ docs/direct-runtime.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
 docs/nix-packaging.md
+docs/project-source-registry.md
+docs/project-syntax.md
 docs/prolog-agent-roadmap.md
 docs/prolog-agent-ui-v1.md
 docs/prompt-compiler.md
@@ -407,6 +415,9 @@ prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_outcome.pl
 prolog/rlm_plan.pl
+prolog/rlm_project_grammar_pack.pl
+prolog/rlm_project_source.pl
+prolog/rlm_project_syntax.pl
 prolog/rlm_prompt_command.pl
 prolog/rlm_prompt_compiler.pl
 prolog/rlm_result_accept.pl
@@ -422,6 +433,7 @@ prolog/rlm_text.pl
 prolog/rlm_tool.pl
 prolog/rlm_tool_loader.pl
 prolog/rlm_tool_projection.pl
+prolog/rlm_tree_sitter.pl
 rage/117-skill-compiler-reconciliation.org
 rage/144-fallback-closure.org
 rage/164-conversation-metadata.org
@@ -436,6 +448,7 @@ rage/277-planner-protocol-context.org
 rage/290-adversarial-review-report.md
 rage/290-findings-fix-prompt.md
 rage/325-native-call-isolation.org
+rage/96-versioned-syntax-facts.org
 research/README.md
 research/RLM-RESEARCH-000-foundations.org
 research/RLM-RESEARCH-001-prolog-runtime-design.org
@@ -538,7 +551,9 @@ test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
+test/rlm_project_grammar_pack_test.pl
 test/rlm_project_source_test.pl
+test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
 test/rlm_prompt_compiler_test.pl
 test/rlm_recursion_runtime_test.pl
@@ -560,12 +575,14 @@ test/rlm_tool_loader_security_test.pl
 test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
+test/rlm_tree_sitter_cancellation_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
 test/run_tool_mcp_async_tests.pl
+test/run_tree_sitter_tests.pl
 test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -735,7 +752,9 @@ test/rlm_native_tool_test.pl
 test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
+test/rlm_project_grammar_pack_test.pl
 test/rlm_project_source_test.pl
+test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
 test/rlm_prompt_compiler_test.pl
 test/rlm_recursion_runtime_test.pl
@@ -757,12 +776,14 @@ test/rlm_tool_loader_security_test.pl
 test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
+test/rlm_tree_sitter_cancellation_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
 test/run_tool_mcp_async_tests.pl
+test/run_tree_sitter_tests.pl
 test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl

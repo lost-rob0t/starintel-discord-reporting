@@ -1,15 +1,26 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-02T17:55:43Z`
+- generated: `2026-09-02T21:06:11Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`9f3b779b876df360001b12d0100698f334beb8b8`](https://github.com/lost-rob0t/zara/commit/9f3b779b876df360001b12d0100698f334beb8b8)
-- head date: `2026-09-02T10:04:31-04:00`
-- head subject: Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
+- head: [`b8cdbbdab66792dede09971d5826bb3494d1f6ff`](https://github.com/lost-rob0t/zara/commit/b8cdbbdab66792dede09971d5826bb3494d1f6ff)
+- head date: `2026-09-02T14:59:33-04:00`
+- head subject: Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
 
 ## Git log, last 14 days
 
 ```text
+2026-09-02 b8cdbbdab66792dede09971d5826bb3494d1f6ff Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
+2026-09-02 b7cc0a85a6d84352c668d8e892e01b2b5f5e0e79 RAGE #264: expose principal identity through runtime backend
+2026-09-02 fdff7ef91a13a57199c1f6637b77006a8fc73907 RAGE #264: apply narrow long-horizon task config delta
+2026-09-02 bbcc59fe880c114e7761cdde9407f27a81d8f5c3 RAGE #264: isolate historical task config delta
+2026-09-02 3c8d07a9336884e4789abc01a936a304bb4c6968 RAGE #264: drop unrelated config rewrite churn
+2026-09-02 442d0571ff6af830e5c1cf3375ff35bb61ae874b RAGE #264: port long-horizon tasks onto current RuntimeHost
+2026-09-02 b60b826c146ec36f367573665d31360efc4bc87f RAGE #264: port bounded long-horizon task configuration
+2026-09-02 2b6b3f49cbfee70b1026c517dcf8a4d6005cf80c RAGE #264: isolate long-horizon task turns at runtime backend
+2026-09-02 dc698488011ace1c90575aa501bd64e42f1cc793 RAGE #264: port task turn context through current agent advice loop
+2026-09-02 9a05d0021e84b978dee009ceac288cfb07faa398 RAGE #264: port task runtime events onto current event model
+2026-09-02 7c78907d42a067c457fff920e54aeaf3da342002 RAGE #264: rebase long-horizon task core onto current master
 2026-09-02 9f3b779b876df360001b12d0100698f334beb8b8 Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
 2026-09-02 575e841503628f28c1cca3cfc638c7202b7e0d81 merge current master into Android #172 resolver parity
 2026-09-02 4746ef00f973513d56112687553db32a3c13e3ba Merge pull request #297 from lost-rob0t/rage/260-python-user-hooks
@@ -735,6 +746,7 @@ rage/daemon-130-design.org
 rage/daemon-130-research.org
 rage/daemon-130-security.org
 rage/daemon-139.org
+rage/long-horizon-tasks.org
 scripts/benchmark-agent-backends.py
 scripts/benchmark-voice.py
 scripts/import-backlog.py
@@ -790,6 +802,7 @@ t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
 t/test_daemon_tts_output.py
+t/test_database_fetch_locking.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
@@ -833,6 +846,14 @@ t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
+t/test_task_approval_flow.py
+t/test_task_host_wiring.py
+t/test_task_observability.py
+t/test_task_runner.py
+t/test_task_store.py
+t/test_task_tools.py
+t/test_task_turn_context.py
+t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
 t/test_user_python_hooks.py
@@ -876,6 +897,7 @@ wiki/android.org
 wiki/api-service.org
 wiki/capability-plans.org
 wiki/install.org
+wiki/long-horizon-tasks.org
 wiki/mcp.org
 wiki/plugins.org
 wiki/tool-approvals.org
@@ -944,6 +966,9 @@ zara/security_transport.py
 zara/server.py
 zara/speech_activity.py
 zara/streaming_stt.py
+zara/tasks/__init__.py
+zara/tasks/runner.py
+zara/tasks/store.py
 zara/voice_runtime.py
 zara/wake.py
 zara/wake_daemon.py
@@ -1020,6 +1045,7 @@ t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
 t/test_daemon_tts_output.py
+t/test_database_fetch_locking.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
@@ -1063,6 +1089,14 @@ t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
+t/test_task_approval_flow.py
+t/test_task_host_wiring.py
+t/test_task_observability.py
+t/test_task_runner.py
+t/test_task_store.py
+t/test_task_tools.py
+t/test_task_turn_context.py
+t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
 t/test_user_python_hooks.py
