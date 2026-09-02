@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-01T21:04:42Z`
+- generated: `2026-09-02T00:17:38Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -218,15 +218,6 @@
 2026-08-18 432f68871e048a18ac04e56dc215d25c6843432d Hourly Auto-Dig: Boao Forum HQ semantics and news scan (#2062)
 2026-08-18 2e35e428ab2523c57b281f3aa8d40e5f8e9bc63a Hourly Auto-Dig: Graphika HQ evidence and news scan (#2061)
 2026-08-18 ef8629d9ce862b2be30c376df7bb4e4d630581e1 Hourly Auto-Dig: FED national security adviser and EOP location (#2060)
-2026-08-18 e881e2b709e839226b38533e301a165367c64030 Hourly Auto-Dig: Kearns court facility location pass (#2058)
-2026-08-18 b26c5a3d67da0161984851a7aceaa2e864854a24 Revert accidental direct-main Auto-Dig packet write
-2026-08-18 8746af28bfe348cc2f7f9341303639b2887574ca Add Kearns court facility Auto-Dig pass
-2026-08-18 52420c03c47e092bf88b2471691fbd527acbb222 Add Greater Israel Trump Foundation municipality pass (#2057)
-2026-08-18 b79ae106b2b541a7ffaf3ff03f27715569e655a5 Hourly Auto-Dig: CIA Anduril HQ semantic conflict (#2056)
-2026-08-18 0ca71fafa40cdad7b8d80b7c83c7502ebb92b02f Revert accidental direct-main Auto-Dig packet write
-2026-08-18 387ca6affb5c4f6b1692be349b1a12df34f218b9 Add CIA Anduril HQ semantic-conflict research pass
-2026-08-18 c5b543ee1182e9a577995cbf9963e6660eba4fd4 Auto-Dig: BlackRock succession HQ enrichment (#2054)
-2026-08-18 bf103af31999b136568976a562ababc1facb17a0 Hourly Auto-Dig: Graphika headquarters locality (#2053)
 ```
 
 ## Repository paths changed, last 14 days
@@ -271,7 +262,6 @@ db/org/starintel:org:european-council-on-foreign-relations.ndjson
 db/research-pass/starintel:research-pass:hourly-dark-academia-ecfr-2026-08-19.ndjson
 digs/bruegel/2026-08-19-brussels-location-news/README.md
 digs/bruegel/2026-08-19-brussels-location-news/starintel-documents.jsonl
-digs/cia/2026-08-18-anduril-hq-semantic-conflict/starintel-documents.jsonl
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
 digs/cloarida/2026-08-19-strive-principal-executive-office-news/README.md
@@ -365,7 +355,6 @@ digs/dnc/2026-08-01-key-people-wef-accountability/source/people-priority-invento
 digs/dnc/2026-08-01-key-people-wef-accountability/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-wef-expansion/manifest.json
 digs/dnc/2026-08-01-key-people-wef-expansion/starintel-documents.jsonl
-digs/drunk-drivers/2026-08-18-kearns-court-facility-news-scan/starintel-documents.jsonl
 digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/README.md
 digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/starintel-documents.jsonl
 digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/README.md
@@ -431,10 +420,8 @@ digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
 digs/gop/2026-08-19-rnc-receipts-location/README.md
 digs/gop/2026-08-19-rnc-receipts-location/starintel-documents.jsonl
-digs/graphika/2026-08-18-headquarters-locality-hourly/starintel-documents.jsonl
 digs/graphika/2026-08-19-hq-federal-address-news-scan/README.md
 digs/graphika/2026-08-19-hq-federal-address-news-scan/starintel-documents.jsonl
-digs/greater-israel/2026-08-18-trump-foundation-municipality-news-scan/starintel-documents.jsonl
 digs/hanceville/2026-08-20-police-corruption-rebrand/sources.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/README.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/attack-results.md
@@ -450,7 +437,6 @@ digs/iiss/2026-08-19-arundel-house-headquarters-news/README.md
 digs/iiss/2026-08-19-arundel-house-headquarters-news/starintel-documents.jsonl
 digs/influence-watch-db/2026-08-19-one-america-location-semantics/README.md
 digs/influence-watch-db/2026-08-19-one-america-location-semantics/starintel-documents.jsonl
-digs/larry-fink/2026-08-18-blackrock-succession-hq/starintel-documents.jsonl
 digs/offshore-leaks/2026-08-19-energia-global-registration-news-scan/README.md
 digs/offshore-leaks/2026-08-19-energia-global-registration-news-scan/starintel-documents.jsonl
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.json

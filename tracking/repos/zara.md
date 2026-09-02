@@ -1,20 +1,42 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-01T21:04:59Z`
+- generated: `2026-09-02T00:17:55Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8`](https://github.com/lost-rob0t/zara/commit/82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8)
-- head date: `2026-09-01T15:02:06-04:00`
-- head subject: Merge pull request #280 from lost-rob0t/rage/android-172-fixture-runner
+- head: [`89e6fbc6f17df0a86083b5e66dd1496c89555daf`](https://github.com/lost-rob0t/zara/commit/89e6fbc6f17df0a86083b5e66dd1496c89555daf)
+- head date: `2026-09-01T19:01:43-04:00`
+- head subject: Merge pull request #283 from lost-rob0t/rage/android-172-trealla-runtime
 
 ## Git log, last 14 days
 
 ```text
+2026-09-01 89e6fbc6f17df0a86083b5e66dd1496c89555daf Merge pull request #283 from lost-rob0t/rage/android-172-trealla-runtime
+2026-09-01 be75c73c0b32ca4cabd4837ca41e685d967e1ae3 docs(rage): record #172 stale-base recovery
+2026-09-01 934aa4e6049b3b82202820f559b38a740e6518a8 merge(master): refresh Android #172 candidate
+2026-09-01 800a740a36b57969cb5cf6bafbbf9dd52d68e4fe Merge pull request #281 from lost-rob0t/rage/260-hooks-prolog-config
+2026-09-01 eadbd238f83abb8283332961e785e3d3e0af0ff1 Merge master into rage/260-hooks-prolog-config
+2026-09-01 59de1e9a468672353f83ca6064bcc9070f658246 docs(rage): record Android semantic contract compile fix
+2026-09-01 2c708f71f1fbe4cd1e1ad4c65233b2bcc233d3b2 fix(android): match semantic result terms contract
+2026-09-01 1e2b9501fefa9fc1cb5e42fc6ee56991710c5889 docs: record hook policy RED and implementation
+2026-09-01 632c7ec9edc935a2ca98a711e69fc9cc6490e615 test: create config directory in hook fixture
+2026-09-01 78c2b2bc69be6802837785e80dd672d02536befa docs: define fail-closed hook policy projection
+2026-09-01 6fa447ba2ae5672fa2dcb35cbd2eb6c7f4a76c8b feat: project hook policy from canonical TOML
+2026-09-01 49c658bbde0c109826bf2f93d3073dca50e7740b test: keep daemon wiring scope unchanged
+2026-09-01 496be51db4e8efbafc01a12f5d4eaab9bb367eaf test: drive hook policy from canonical TOML
+2026-09-01 54525963735b792cd3d8945bb512ed939bcb6103 test: preserve existing runtime wiring coverage
+2026-09-01 7e53146bd29278b6f15ebe3984cf22501cd0f01a test: apply hook policy at daemon Prolog boundary
+2026-09-01 2344f338c3a8d63cdd9a1921b7ba1d1b6a92dcc5 feat: enforce explicit Prolog hook policy
+2026-09-01 67c4367329bcacc8455780b846d8985b6313b222 test: gate user hooks behind explicit policy
+2026-09-01 e3d5c4d8ed75aa580dadb3d97befc0901464dce1 RAGE #172 GREEN: add Trealla semantic runtime lifecycle
+2026-09-01 ecec0caabf42efd5fc1d0040e559775872a148a0 RAGE #172 RED: specify Trealla semantic runtime lifecycle
+2026-09-01 501923450ebed99670049ba6e0b45b4d92f909b1 RAGE #172: record Trealla runtime lifecycle iteration
 2026-09-01 82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8 Merge pull request #280 from lost-rob0t/rage/android-172-fixture-runner
+2026-09-01 ae40572020ae59536ebe3c6834bc65919560753e Merge master into RAGE #260 recovery
 2026-09-01 c82aea0a041411709b510c38ca6394dd8cce6e36 rage: record #172 cross-runtime runner iteration
 2026-09-01 93dcd05ab5ce903a43f4d5b70fea8cff57a8eb9e RAGE #172 GREEN: add fail-closed semantic parity runner
 2026-09-01 1a48be8515637f14494f34ed768e319f70d26081 RAGE #172 RED: require cross-runtime semantic fixture runner
 2026-09-01 54c0e96fa75a6f2c5ba44b55d1f7a5f6e088fcf3 RAGE #172: normalize Android semantic parity results (#278)
+2026-09-01 30d6b52609de219cb58b144cb85c2b7aad1a10d2 RAGE #260: recover hooks policy onto current master
 2026-09-01 2833e8b2d4bd50a14b0674c34f688749b3b01f54 RAGE #172: package Android portable semantic assets (gate recovery) (#275)
 2026-09-01 a77e4e866d38019f24af7ec3518f419e86f91e35 fix: rebase built-in todo surface toggle on current master (#272)
 2026-09-01 928aee7105842cc50b9eff73c7b56980c414ef3b RAGE #172: portable Android Prolog semantic contract (#269)
@@ -500,11 +522,13 @@ android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticFixtureRunner.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticResultComparator.kt
+android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
+android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/build.gradle.kts
 android/gradle.properties
@@ -528,12 +552,14 @@ modules/command_loop.pl
 modules/commands.pl
 modules/config_loader.pl
 modules/dictate.pl
+modules/hooks_loader.pl
 modules/intent_frames.pl
 modules/intent_resolver.pl
 modules/llm_client.pl
 modules/rlm_rewrite.pl
 modules/rlm_sidecar.pl
 modules/sound.pl
+modules/zara_hooks.pl
 planning/backlog.pl
 rage/131-principal-isolation-design.org
 rage/131-principal-isolation-merge-closeout.org
@@ -566,6 +592,7 @@ rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
 rage/172-android-fixture-runner.org
 rage/172-android-portable-prolog.org
+rage/172-android-trealla-runtime.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
@@ -587,6 +614,9 @@ rage/250-amd-stt-device-routing-design.org
 rage/250-amd-stt-device-routing-research.org
 rage/250-amd-stt-device-routing.org
 rage/259-agent-hooks-recovery.org
+rage/260-hooks-prolog-config-design.org
+rage/260-hooks-prolog-config-research.org
+rage/260-hooks-prolog-config.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
 rage/daemon-128-design.org
@@ -605,6 +635,7 @@ scripts/test-all.sh
 scripts/test-android.sh
 scripts/test-api-service.sh
 scripts/test-capability-plans.sh
+scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
@@ -656,6 +687,7 @@ t/test_desktop_shell.py
 t/test_desktop_theme.py
 t/test_dialogue_script.py
 t/test_full_chat.py
+t/test_hooks_config.py
 t/test_host_api_service.py
 t/test_latency_metrics.py
 t/test_llm.py
@@ -721,12 +753,14 @@ t/test_wake_speaker.py
 t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_tool_approvals.py
+t/test_zara_hooks_registry.py
 t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
 t/test_zmq_transport_status.py
 t/test_zmq_transport_turn_completed.py
+t/zara_hooks_registry.pl
 wiki/agent-mode.org
 wiki/android.org
 wiki/api-service.org
@@ -813,6 +847,7 @@ android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
+android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 flake.nix
 scripts/benchmark-agent-backends.py
@@ -822,6 +857,7 @@ scripts/test-all.sh
 scripts/test-android.sh
 scripts/test-api-service.sh
 scripts/test-capability-plans.sh
+scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
@@ -870,6 +906,7 @@ t/test_desktop_shell.py
 t/test_desktop_theme.py
 t/test_dialogue_script.py
 t/test_full_chat.py
+t/test_hooks_config.py
 t/test_host_api_service.py
 t/test_latency_metrics.py
 t/test_llm.py
@@ -935,10 +972,12 @@ t/test_wake_speaker.py
 t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_tool_approvals.py
+t/test_zara_hooks_registry.py
 t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
 t/test_zmq_transport_status.py
 t/test_zmq_transport_turn_completed.py
+t/zara_hooks_registry.pl
 ```

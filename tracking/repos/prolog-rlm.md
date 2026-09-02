@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-01T21:04:55Z`
+- generated: `2026-09-02T00:17:51Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`39b278589dae8518e583778cd6671a6cb1e026c7`](https://github.com/lost-rob0t/prolog-rlm/commit/39b278589dae8518e583778cd6671a6cb1e026c7)
@@ -315,17 +315,6 @@
 2026-08-18 18c31d754568dab8f18f2e77b19e057d64338351 Harden UI protocol replay and wire bounds
 2026-08-18 72e4e1036895c9678ff484d6a693285dfe9c3081 Fix Tree-sitter CI checkout depth
 2026-08-18 c08f0f1413c8a8f96ed0e187966533ad9f90f8f3 Add direct SWI-Prolog Tree-sitter FFI
-2026-08-18 4dfdff77c539fd5ac655231ca8bfc59b0f0b9877 Retain runtime boundary documentation
-2026-08-18 5ea3a83ee9350fc4deb7b71e756a3e46436ee5af Keep runtime docs stable
-2026-08-18 ed460a74ff5180c0536f7c3e89866d6f92ffd572 Preserve cold-context docs
-2026-08-18 fd13173f094e192fe2cc989154daefbf6e76f41f Keep cold-context docs canonical
-2026-08-18 fecade526b3dbd1999f2db7715d2485ffc5680f8 No-op canonicalize conversation runtime docs
-2026-08-18 f52ffa8730323e79d72e709570940c4ba969b764 Keep cold boundary docs canonical
-2026-08-18 9badabeb7ea8a3384e500614ba2c30f20e1d36f5 Clarify history boundary semantics
-2026-08-18 29b8447136b3db3c19a6b646c323a13ee0102a52 Document synthetic cold-history boundary
-2026-08-18 f70d2b723f1a0649ff8988e42199a8dd1c3287ce Document cold-history boundary projection
-2026-08-18 4eaa962424d567299f1f0bbff22fd5cd9c05ec53 Test synthetic cold-history boundary
-2026-08-18 56bcf126f7edca24e673fd65d267209f40af58e5 Add token-accounted cold-history boundary
 ```
 
 ## Repository paths changed, last 14 days
@@ -443,7 +432,6 @@ prolog/rlm_context_budget.pl
 prolog/rlm_context_mount.pl
 prolog/rlm_conversation.pl
 prolog/rlm_conversation_persist.pl
-prolog/rlm_conversation_runtime.pl
 prolog/rlm_conversation_warm.pl
 prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
