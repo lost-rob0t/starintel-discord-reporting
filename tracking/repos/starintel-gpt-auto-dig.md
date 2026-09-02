@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-02T12:48:00Z`
+- generated: `2026-09-02T17:55:29Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -198,16 +198,6 @@
 2026-08-19 ef7b733699b0505cd307690d868abffa05b159c8 Hourly Auto-Dig: RNC receipts and location semantics (#2085)
 2026-08-19 6cb77593aedd9613fa939c14407cb55b164d1c05 Hourly Auto-Dig: Palantir identity and WEF HQ staleness (#2083)
 2026-08-19 ded47611a0033310fef3b0df109265d5759645f8 Add idempotent Auto-Dig request queue (#2087)
-2026-08-19 5b17fca81bcf875c828fc786546658b6d6dab29b Hourly Auto-Dig: ECFR Berlin office enrichment (#2059)
-2026-08-19 f206af66fb1cf56acbb9a64ca37316410532da05 Hourly Auto-Dig: Cloarida Strive Dallas principal-office pass (#2082)
-2026-08-19 eba31bdf6b6e475a850699ee6276034f21f66386 Hourly Auto-Dig: Energia Global registration geography (#2081)
-2026-08-19 2a8c1d8faaa8f3126d217a40dab91e61d2ec9434 Hourly Auto-Dig: PIIE Washington location and Inu Manak update (#2080)
-2026-08-19 d91d85c6d11ca4652f04ebf93801ac4b3d823ef3 Hourly Auto-Dig: RAND headquarters and current-news scan (#2079)
-2026-08-19 a33caed9ca2f0b8ced19aa9bc6b2115e1b44f0a8 Hourly Auto-Dig: Brownes registered-office and receiver-authority pass (#2078)
-2026-08-19 a567839db8db84c8f0efe787cfadc32ac441c7be Hourly Auto-Dig: Milken Institute location and health update (#2077)
-2026-08-19 ee669b5a01d3dc36446c59cccc3c91292570d5b3 Hourly Auto-Dig: Kearns UPD precinct enrichment (#2076)
-2026-08-19 36152f6a83d30e7cfcac78415fab51677e3cb883 Hourly Auto-Dig: IISS Arundel House headquarters (#2075)
-2026-08-19 a1af6028c7ccceb3c9a759896abc5dc15205e656 Hourly Auto-Dig: Bruegel Brussels office semantics (#2073)
 ```
 
 ## Repository paths changed, last 14 days
@@ -246,23 +236,8 @@ agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
-db/investigation-target/starintel:investigation-target:ecfr-explicit-headquarters-designation.ndjson
-db/location/starintel:location:ecfr-berlin-office.ndjson
-db/org/starintel:org:european-council-on-foreign-relations.ndjson
-db/research-pass/starintel:research-pass:hourly-dark-academia-ecfr-2026-08-19.ndjson
-digs/bruegel/2026-08-19-brussels-location-news/README.md
-digs/bruegel/2026-08-19-brussels-location-news/starintel-documents.jsonl
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
 digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
-digs/cloarida/2026-08-19-strive-principal-executive-office-news/README.md
-digs/cloarida/2026-08-19-strive-principal-executive-office-news/starintel-documents.jsonl
-digs/dark-academia/2026-08-19-ecfr-berlin-office/report.md
-digs/dark-academia/2026-08-19-milken-institute-location-health/README.md
-digs/dark-academia/2026-08-19-milken-institute-location-health/starintel-documents.jsonl
-digs/dark-academia/2026-08-19-piie-location-news/README.md
-digs/dark-academia/2026-08-19-piie-location-news/starintel-documents.jsonl
-digs/dark-academia/2026-08-19-rand-headquarters-news-scan/README.md
-digs/dark-academia/2026-08-19-rand-headquarters-news-scan/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/README.md
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
@@ -341,8 +316,6 @@ digs/dnc/2026-08-01-key-people-wef-accountability/source/people-priority-invento
 digs/dnc/2026-08-01-key-people-wef-accountability/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-wef-expansion/manifest.json
 digs/dnc/2026-08-01-key-people-wef-expansion/starintel-documents.jsonl
-digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/README.md
-digs/drunk-drivers/2026-08-19-kearns-upd-precinct-news-scan/starintel-documents.jsonl
 digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/README.md
 digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/merge-plan.json
 digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/source-notes.md
@@ -413,14 +386,8 @@ digs/hunter-biden/2026-08-01-bhr-partners-depth-12/manifest.json
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/relations.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.md
-digs/hunter-biden/2026-08-19-brownes-location-receiver-authority/README.md
-digs/hunter-biden/2026-08-19-brownes-location-receiver-authority/starintel-documents.jsonl
-digs/iiss/2026-08-19-arundel-house-headquarters-news/README.md
-digs/iiss/2026-08-19-arundel-house-headquarters-news/starintel-documents.jsonl
 digs/influence-watch-db/2026-08-19-one-america-location-semantics/README.md
 digs/influence-watch-db/2026-08-19-one-america-location-semantics/starintel-documents.jsonl
-digs/offshore-leaks/2026-08-19-energia-global-registration-news-scan/README.md
-digs/offshore-leaks/2026-08-19-energia-global-registration-news-scan/starintel-documents.jsonl
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.json
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.md
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-osf-ecfr-cluster.json

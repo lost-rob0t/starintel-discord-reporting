@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-02T12:48:11Z`
+- generated: `2026-09-02T17:55:40Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`39b278589dae8518e583778cd6671a6cb1e026c7`](https://github.com/lost-rob0t/prolog-rlm/commit/39b278589dae8518e583778cd6671a6cb1e026c7)
@@ -289,7 +289,6 @@
 2026-08-20 99747d4748853dc8e1314fa97ba2ab04398010f6 Reclaim loader state when registries are destroyed (#133)
 2026-08-20 8c3b9cd0db71526648da2b5f2d8558dc6b87c241 Preserve model usage on completion execution errors (#134)
 2026-08-19 9322954c24594884b009bd3eece53a5784c8253e Add OpenTUI Solid reference client for PrologAgent UI v1 (#113)
-2026-08-19 eeda016b31fd702c59992f328e40689641e839de Merge pull request #115 from lost-rob0t/agent/95-project-source-registry
 ```
 
 ## Repository paths changed, last 14 days

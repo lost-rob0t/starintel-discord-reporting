@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-02T12:47:59Z`
+- generated: `2026-09-02T17:55:28Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -135,7 +135,6 @@
 2026-08-22 2291212c174f79804910dbbe6f14d5cea3fb0914 build: load CouchDB session hardening
 2026-08-22 f4f5526814ff1eabd2bcebc230879bf4b6230b98 test: prove expired CouchDB sessions are renewed
 2026-08-22 6e5f5daebe77d4efecb31f2b4582afe9aca52591 fix: add session-aware CouchDB pool hardening
-2026-08-19 bb4eb92eab20b23ea8b11be9af7503bc39eeefaf fix http contract reader balance
 ```
 
 ## Repository paths changed, last 14 days
@@ -148,7 +147,6 @@ addons/bixby/package.lisp
 cli/client-runtime-final.lisp
 cli/http-contract-final.lisp
 cli/http-contract-targets.lisp
-cli/http-contract.lisp
 cli/starintel-gserver-client.asd
 client-test.el
 client.el

@@ -1,17 +1,45 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-02T12:48:14Z`
+- generated: `2026-09-02T17:55:43Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`f078a2d3f1bd10b60914153de486130bce787380`](https://github.com/lost-rob0t/zara/commit/f078a2d3f1bd10b60914153de486130bce787380)
-- head date: `2026-09-02T05:02:54-04:00`
-- head subject: Merge pull request #293 from lost-rob0t/rage/260-agent-loop-integration
+- head: [`9f3b779b876df360001b12d0100698f334beb8b8`](https://github.com/lost-rob0t/zara/commit/9f3b779b876df360001b12d0100698f334beb8b8)
+- head date: `2026-09-02T10:04:31-04:00`
+- head subject: Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
 
 ## Git log, last 14 days
 
 ```text
+2026-09-02 9f3b779b876df360001b12d0100698f334beb8b8 Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
+2026-09-02 575e841503628f28c1cca3cfc638c7202b7e0d81 merge current master into Android #172 resolver parity
+2026-09-02 4746ef00f973513d56112687553db32a3c13e3ba Merge pull request #297 from lost-rob0t/rage/260-python-user-hooks
+2026-09-02 0e6f4ed0c6c8c76447acb29f18f7d4cdf659a104 merge master into Android #172 resolver parity
+2026-09-02 2007e16928017b68956d8284bcf4ddbcc69b6668 docs(rage): record user hooks red and implementation
+2026-09-02 deda2f310bf5fe71d997d61d7f315dd692462f8b feat(hooks): autoload mutable user hooks in agent runtime
+2026-09-02 a628b8c093451a739da23ff8117337a6b11432b6 feat(hooks): load mutable user Python hooks
+2026-09-02 416a88584a3b1c6aaefe9f9cd3d52c510fb978e0 docs(rage): record Android unit contract recovery
+2026-09-02 8e4281b6244613bcbcfc8dbafa21a25602cf8f7f test(android): update portable resource contract for shared resolver
+2026-09-02 5c1809c501f2a038d9a2f0b86f8ab0881e51de72 test #260: define Python user hook loader contract RED
+2026-09-02 229bc423a9a435844e0de3e7669feb9e37935320 rage #260: record Python user hooks design
+2026-09-02 b2ec0ee9c46ba94cedff7ec784f540b0bd9a6a00 rage #260: record Python user hooks research
+2026-09-02 d281d2bacca4166105d861ecab0ed73b74bd03dc rage #260: start Python user hooks slice
+2026-09-02 e66f43e0f5d3f22f79668ccc71a7098a3417883f docs(rage): record Android gate failure and output recovery
+2026-09-02 39af84ecdc9262cfd761c5b8dbba7e32cee00b99 fix(android): configure portable semantic asset output
 2026-09-02 f078a2d3f1bd10b60914153de486130bce787380 Merge pull request #293 from lost-rob0t/rage/260-agent-loop-integration
+2026-09-02 09a27707d16246cc91e74d62b36efe8a15ab887f docs(rage): record Android gate failure recovery
+2026-09-02 8824f042a482cb1019d89f70dd9b9db91d90ebe1 test(android): require bounded generated asset inputs
+2026-09-02 2440469422b73ac101879317b26b82b7b5ceb832 fix(android): bound portable asset task inputs
 2026-09-02 b8ba54f81cbbfd0a750b880466b183eb4a76b7c4 Merge master into rage/260-agent-loop-integration
+2026-09-02 1f19fc2946ae2565f5f890089a391be17c61dce0 RAGE #172: record resolver packaging RED/GREEN and exact-head gate
+2026-09-02 452814fa450cf5a66899e9bc3ed2dcf9afe8efd2 RAGE #172: make staged resource digest byte-stable
+2026-09-02 6a0ce2db3646cd01d69dbe218d62492a57cdc824 RAGE #172: verify canonical resolver source packaging contract
+2026-09-02 93b859b276de374179300dca2f879a0117a902ed RAGE #172: generate Android resolver assets from canonical Prolog sources
+2026-09-02 5b50aebe2e4ed947370c87801f7363560d679ad8 RAGE #172: expose canonical resolver through portable core
+2026-09-02 b59a205efd6b27ceb34e213f5ed89cdc94d01327 RAGE #172: initialize Trealla from complete staged semantic set
+2026-09-02 afd0e0dffb097e56fddf33e5e5df7233ad1af9ac RAGE #172: stage complete portable resolver resource sets
+2026-09-02 fd8827d4ef528a88a0bdc24dbe1a0f0082673de9 RAGE #172: declare canonical resolver assets
+2026-09-02 63da392b2808658d598ca791f53025f7ccc47f14 RAGE #172 RED: require canonical resolver packaging and staging
+2026-09-02 d55821e64efede075ca975e5f7ac30ff2f7e91ec RAGE #172: record Android resolver parity iteration
 2026-09-02 753f79326f1be7dc77030c9950a08e2901827d8d Merge pull request #292 from lost-rob0t/rage/android-172-asset-staging
 2026-09-02 f4b3189170ef4c7fd094f6b63937876634f71608 fix(agent): fail closed for partially constructed managers
 2026-09-02 eadda3766a80060b4472a92ddf4164a96e2f1a39 RAGE #172: record asset-staging RED/GREEN evidence
@@ -586,6 +614,7 @@ android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
+android/app/src/test/java/ai/zara/app/prolog/PortableResolverPackagingContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
@@ -661,6 +690,7 @@ rage/172-android-fixture-runner.org
 rage/172-android-jni-bridge.org
 rage/172-android-native-adapter.org
 rage/172-android-portable-prolog.org
+rage/172-android-resolver-parity.org
 rage/172-android-trealla-runtime.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
@@ -691,6 +721,9 @@ rage/260-hooks-prolog-config-research.org
 rage/260-hooks-prolog-config.org
 rage/260-python-hooks-advice-design.org
 rage/260-python-hooks-advice-research.org
+rage/260-python-user-hooks-design.org
+rage/260-python-user-hooks-research.org
+rage/260-python-user-hooks.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
 rage/daemon-128-design.org
@@ -802,6 +835,7 @@ t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
 t/test_voice_protocol.py
@@ -856,6 +890,7 @@ zara/agent/sentence_chunker.py
 zara/agent/stream_events.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
+zara/agent/user_hooks.py
 zara/agent_cli.py
 zara/client.py
 zara/config.py
@@ -923,6 +958,7 @@ zara/zmq_transport.py
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
+android/app/src/test/java/ai/zara/app/prolog/PortableResolverPackagingContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
@@ -1029,6 +1065,7 @@ t/test_server_zmq_endpoint.py
 t/test_streaming_stt_commit.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
 t/test_voice_protocol.py
