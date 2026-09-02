@@ -1,23 +1,37 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-02T07:08:19Z`
+- generated: `2026-09-02T12:48:14Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`753f79326f1be7dc77030c9950a08e2901827d8d`](https://github.com/lost-rob0t/zara/commit/753f79326f1be7dc77030c9950a08e2901827d8d)
-- head date: `2026-09-02T03:04:15-04:00`
-- head subject: Merge pull request #292 from lost-rob0t/rage/android-172-asset-staging
+- head: [`f078a2d3f1bd10b60914153de486130bce787380`](https://github.com/lost-rob0t/zara/commit/f078a2d3f1bd10b60914153de486130bce787380)
+- head date: `2026-09-02T05:02:54-04:00`
+- head subject: Merge pull request #293 from lost-rob0t/rage/260-agent-loop-integration
 
 ## Git log, last 14 days
 
 ```text
+2026-09-02 f078a2d3f1bd10b60914153de486130bce787380 Merge pull request #293 from lost-rob0t/rage/260-agent-loop-integration
+2026-09-02 b8ba54f81cbbfd0a750b880466b183eb4a76b7c4 Merge master into rage/260-agent-loop-integration
 2026-09-02 753f79326f1be7dc77030c9950a08e2901827d8d Merge pull request #292 from lost-rob0t/rage/android-172-asset-staging
+2026-09-02 f4b3189170ef4c7fd094f6b63937876634f71608 fix(agent): fail closed for partially constructed managers
 2026-09-02 eadda3766a80060b4472a92ddf4164a96e2f1a39 RAGE #172: record asset-staging RED/GREEN evidence
 2026-09-02 507962af225c269925df1d53bdfc845036e2d2ce RAGE #172: initialize Trealla from staged Android assets
 2026-09-02 7b3b3ed69074ebd2af2a896a3510a319ccdaf41e RAGE #172: stage portable Prolog core into app-private storage
 2026-09-02 1780e4142ce2f7e4e18a92258336a1284ffd5418 RAGE #172: name canonical portable semantic asset paths
 2026-09-02 f4c2409b860a80ac93b3fe19e0a09703ddb9b0dc RAGE #172 RED: require deterministic Android Prolog asset staging
 2026-09-02 43cf88b7a45168508459597819386364d457ee47 RAGE #172: record Android asset-staging iteration start
+2026-09-02 accf1d7057d288cb11b62026c6507789324513e6 docs(rage): record #260 green-attempt regression and recovery
+2026-09-02 dc90edfbcccfb99d61ea815aa30826bc35b406de Merge current master into #260 advice integration
+2026-09-02 70efc7a71763cc006a4b2af3ed916e533719607f chore(#260): remove whitespace from advice integration fix
+2026-09-02 858879bb28baa3c7f7a11d137bda28d333ed9fc7 fix(#260): fail closed for config adapters without hooks API
 2026-09-02 0b2dc899bba6303f5ae4abeadbc909a44cf24b1e Merge pull request #290 from lost-rob0t/rage/android-172-native-adapter
+2026-09-02 ed247cfe4c55c6b22f249a2bea0728eab3b1b920 rage: record #260 RED evidence and implementation boundary
+2026-09-02 559f761a2ece818572c1f67de6d58fa89ae5a2be feat: route canonical agent loop through advice registry
+2026-09-02 1a154ff72a513d06a806bf9ce3aa80b4bd25ade7 test: fix RAGE artifact whitespace before RED
+2026-09-02 f1a08a84ad22f537f9fa67c3b6b565b36e97a318 test: define RED agent-loop advice integration contract
+2026-09-02 656e9504f751a95a42ca36f600eeea741b0b5445 rage: design #260 agent-loop advice integration
+2026-09-02 8b77a759b9cf4c37f26a4430f488c24e537e30bf rage: research #260 agent-loop advice integration
+2026-09-02 16a8a526e92a78b02f21fdc11e8acdf9a18d37a5 rage: consume #260 agent-loop integration slice
 2026-09-01 f956574916dff85e8ca92ebdcf4f5d7725245daf docs(rage): record #172 packaging green and master recovery
 2026-09-01 e080c59dade0652aad806be679dd0548b8d0d13f chore(android): recover #172 native adapter onto current master
 2026-09-01 a96b48d12d6fe0eb7bfb88d0a0e0559775974a9d Merge pull request #288 from lost-rob0t/rage/260-python-hooks-advice
@@ -669,6 +683,9 @@ rage/250-amd-stt-device-routing-design.org
 rage/250-amd-stt-device-routing-research.org
 rage/250-amd-stt-device-routing.org
 rage/259-agent-hooks-recovery.org
+rage/260-agent-loop-integration-design.org
+rage/260-agent-loop-integration-research.org
+rage/260-agent-loop-integration.org
 rage/260-hooks-prolog-config-design.org
 rage/260-hooks-prolog-config-research.org
 rage/260-hooks-prolog-config.org
@@ -719,6 +736,7 @@ t/prolog_config.pl
 t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_hooks.py
+t/test_agent_loop_advice_integration.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py
@@ -945,6 +963,7 @@ t/prolog_config.pl
 t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_hooks.py
+t/test_agent_loop_advice_integration.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py

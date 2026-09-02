@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-02T07:08:06Z`
+- generated: `2026-09-02T12:48:00Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -208,12 +208,6 @@
 2026-08-19 ee669b5a01d3dc36446c59cccc3c91292570d5b3 Hourly Auto-Dig: Kearns UPD precinct enrichment (#2076)
 2026-08-19 36152f6a83d30e7cfcac78415fab51677e3cb883 Hourly Auto-Dig: IISS Arundel House headquarters (#2075)
 2026-08-19 a1af6028c7ccceb3c9a759896abc5dc15205e656 Hourly Auto-Dig: Bruegel Brussels office semantics (#2073)
-2026-08-19 3f74988be0b4d6aad8dc3a3eeabc80553e1422a3 Hourly Auto-Dig: Rockefeller Foundation global HQ and COO transition (#2072)
-2026-08-19 e108edaeb6afee5ca501f4b21505ac1a989019f1 Hourly Auto-Dig: USAID former HQ and State OIG transfer update (#2070)
-2026-08-19 15fa1b8d608174bd7c383399126cf4cc24abcd7c revert: remove accidental main-branch hourly packet
-2026-08-19 83c65d8741c433db4ad2b940cd791c459cd69687 revert: restore branch-only hourly research flow
-2026-08-19 e8aabc3c9f63a9e2192636d36fa5803a32388e90 research: add RAND headquarters evidence packet
-2026-08-19 53c44d05b6985d57bc99dab6d22afde5d0693e95 research: add RAND headquarters hourly pass
 ```
 
 ## Repository paths changed, last 14 days
@@ -447,8 +441,6 @@ digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-osi-resource-sharing.md
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.json
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.md
-digs/rockefeller-foundation/2026-08-19-global-hq-coo-transition/README.md
-digs/rockefeller-foundation/2026-08-19-global-hq-coo-transition/starintel-documents.jsonl
 digs/seattle/2026-08-20-request-2106-personnel-integrity/README.md
 digs/seattle/2026-08-20-request-2106-personnel-integrity/starintel-documents.jsonl
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/README.md
@@ -480,8 +472,6 @@ digs/trilateral-commission/2026-08-08-roster-provenance-audit/README.md
 digs/trilateral-commission/2026-08-08-roster-provenance-audit/starintel-documents.jsonl
 digs/trilateral-commission/2026-08-08-source-integrity/README.md
 digs/trilateral-commission/2026-08-08-source-integrity/starintel-documents.jsonl
-digs/usaid-doge-mortality-accountability/2026-08-19-usaid-former-hq-state-oig/README.md
-digs/usaid-doge-mortality-accountability/2026-08-19-usaid-former-hq-state-oig/starintel-documents.jsonl
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/README.md
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/sources.md
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/starintel-documents-part-007.jsonl
