@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-03T17:52:59Z`
+- generated: `2026-09-03T21:05:09Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -175,8 +175,6 @@
 2026-08-20 a3a2ed3325a013f80cc1f4946f707f8f0cd0a1fe Add Trilateral Commission dataset research pass (#1981)
 2026-08-20 5c25a30830995aa147f2a0c1133180ee422944be add Flock X/Aerodome video lead (#1973)
 2026-08-20 23d7d27f9ea9d3c98481f0486d0c78830cb6b13d Corroborate pending violent-offenders local-news cases (#1979)
-2026-08-20 988dec4c442b0797cdd35be854853a81c5e49ae1 Document Siders Vinton County child-abuse case (#2074)
-2026-08-20 a0d1a72dfb2a38d5c2e2e9e37fc7b3ed92f43f44 Violent offenders: document Elijah Foster / Mercedes Chico-Sims case (#2055)
 ```
 
 ## Repository paths changed, last 14 days
@@ -388,9 +386,6 @@ digs/trilateral-commission/2026-08-08-source-integrity/starintel-documents.jsonl
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/README.md
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/sources.md
 digs/violent-offenders/2026-08-08-local-news-expanded-scan/starintel-documents-part-007.jsonl
-digs/violent-offenders/2026-08-18-elijah-foster-mercedes-chico-sims/README.md
-digs/violent-offenders/2026-08-18-elijah-foster-mercedes-chico-sims/sources.md
-digs/violent-offenders/2026-08-18-elijah-foster-mercedes-chico-sims/starintel-documents.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/README.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/sources.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-001.jsonl

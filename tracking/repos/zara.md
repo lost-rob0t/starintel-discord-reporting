@@ -1,15 +1,52 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-03T17:53:15Z`
+- generated: `2026-09-03T21:05:25Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`e6d9409e49246a187d5ea015da681bfc4e4fdc63`](https://github.com/lost-rob0t/zara/commit/e6d9409e49246a187d5ea015da681bfc4e4fdc63)
-- head date: `2026-09-03T06:03:53-04:00`
-- head subject: Merge pull request #308 from lost-rob0t/docs/260-customization-wiki
+- head: [`f25aea5f9e5bceb747cb282b6a28c43f07e5b727`](https://github.com/lost-rob0t/zara/commit/f25aea5f9e5bceb747cb282b6a28c43f07e5b727)
+- head date: `2026-09-03T16:03:07-04:00`
+- head subject: Merge pull request #310 from lost-rob0t/rage/309-prolog-config-recovery
 
 ## Git log, last 14 days
 
 ```text
+2026-09-03 f25aea5f9e5bceb747cb282b6a28c43f07e5b727 Merge pull request #310 from lost-rob0t/rage/309-prolog-config-recovery
+2026-09-03 3c91e35849e38927285a495b3147a2804b6054a6 rage #309: record Nix contract cleanup
+2026-09-03 fdffbe5184d11ddd232e7ca83dd409dcbf02fe17 fix #309: drop Prolog-RLM lock input
+2026-09-03 704b937f04f01e5f8149e5fc61fb067afe3b04e8 fix #309: remove Prolog-RLM Nix wiring
+2026-09-03 6be2a50bd646591f6ac6e99b58bfaa9f37669add test: compare recovery base config by bytes
+2026-09-03 de529830ad7f70c4b695189562d054da6909989c rage: record CI 906 config assertion diagnosis
+2026-09-03 b736091731658aa4b7d441883100c062d7c9f69b test: compare provisioned config content by character codes
+2026-09-03 411c83ad3504d252937cec976518579262df0049 docs(rage): record 904 stale RLM gate
+2026-09-03 f658a0d5fad90ce35b605a5739d730218218e0ba test: retire stale Prolog-RLM gate
+2026-09-03 6c5135dd7e5bb9c3f67ea3441ff3f5929140fda3 test: point routing gate at daemon router
+2026-09-03 440399b60b95d1d7cbea327fc1090297c1646c28 docs(rage): record CI 902 routing gate failure
+2026-09-03 1c5d4f589f2dfea0d99c45fbc8e56f9760100a94 docs(rage): record api-service test restoration
+2026-09-03 fd51cee576a31dbedeb0727d5104fdc57cefbcc6 test(search): restore full api-service suite with Brave expectation
+2026-09-03 1c87f3949b0018d1bde9240e017c574fc4eb5907 docs(rage): record phase-6 Brave contract reconciliation
+2026-09-03 3748d88f2bb1f059c90088b4ee62d3e80bbd3b45 test(search): expect Brave from server search provider
+2026-09-03 b3a065356fa70a389f9d99511f65b1acd786683c test(command-loop): remove coverage for retired RLM routing knob
+2026-09-03 5e47384947ea8ab0b85718d16944ffea95ac36cc docs(rage): record config recovery GREEN implementation
+2026-09-03 8d49d942e6fc54fa94a333ebd2591496ed541697 docs(config): document durable Prolog overlay and remove RLM setup
+2026-09-03 713d8cc99e7d343d5762aaefb2ad30610b10e8c6 docs(config): align API service config ownership with recovery
+2026-09-03 628edb8d07787bd994b62a88d566013b93d8b120 fix(command-loop): remove dead Prolog-RLM fallback branch
+2026-09-03 a3ad2cb75b57e0e6f879390ec7f9ce33f2b5eb1d test(config): retire obsolete RLM configuration contract
+2026-09-03 8f61822ce5f244aed20bf108d4f19b92fa238b1c fix(config): reject removed RLM knobs and document local overlay
+2026-09-03 0412cae73595f75a85e54b9ef058daca8dc34022 docs(rage): record first genuine RED for #309
+2026-09-03 b6220dea467660ed6cdf9aded0eaeeb1222abf09 fix(config): make Brave the supported built-in search default
+2026-09-03 329e3db39ff13516b8aceb86e869de363be79229 test: make phase failures unswallowable
+2026-09-03 da62139a68ef9dcd2e3f08b9488ab97852995fcf docs(rage): record third false-green and hard RED gate
+2026-09-03 8c60d925d9e29f177c1d4d09ecd0bdec08d00b49 test: make Prolog recovery RED fail closed
+2026-09-03 504b38246f19fcc7eedd506786a1f92e6865d68c rage: record second false-green and fail-closed RED harness
+2026-09-03 d05d7dc401b9463e284104ab079d5f6b9058bbbb test: make Prolog config RED gate fail closed
+2026-09-03 b1e49d9cdf4a79059f3f216324683c2a2edda1bd rage: record false-green harness and corrected RED candidate
+2026-09-03 e0974ff2b23fc757c2a7b44bdfa02af4a710dee6 test: run recovery PlUnit separately so RED cannot false-green
+2026-09-03 28f4c7d7658cd8780a447f20612d7382fe4920ed rage: record issue 309 research design and RED candidate
+2026-09-03 291975c0dc2c3fe611a11c52f7f1957918ca1dee test: include issue 309 recovery unit in Prolog config gate
+2026-09-03 17dec76d5d4229cee4e13d351202e0e486258ba9 test: define RED config recovery contract for issue 309
+2026-09-03 696a3883a460a3b05e2ebbef16186378df01767a rage: design issue 309 config recovery contract
+2026-09-03 1d89c457b12881129cb6a8926997a1057a440e65 rage: research issue 309 config authority regression
+2026-09-03 6da4aa595d16cb3f1b7dd0ed81a86595407a850c rage: consume issue 309 from exact master
 2026-09-03 e6d9409e49246a187d5ea015da681bfc4e4fdc63 Merge pull request #308 from lost-rob0t/docs/260-customization-wiki
 2026-09-03 5a2999390ffe29ad10d8c4208c59d2a0e7bd6399 docs: document hooks advice and agent backends
 2026-09-03 ea787f5807d54ef1801e083e9f250d1bf386e762 docs(rage): record #260 customization wiki slice
@@ -825,6 +862,9 @@ rage/260-python-user-hooks.org
 rage/260-service-plugin-advice.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
+rage/309-prolog-config-recovery-design.org
+rage/309-prolog-config-recovery-research.org
+rage/309-prolog-config-recovery.org
 rage/5-config-durability.org
 rage/daemon-128-design.org
 rage/daemon-128-research.org
@@ -844,6 +884,7 @@ scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-api-service.sh
 scripts/test-capability-plans.sh
+scripts/test-command-routing.sh
 scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
@@ -870,6 +911,7 @@ t/fixtures/mcp_test_server.py
 t/llm_clients.pl
 t/process_safety.pl
 t/prolog_config.pl
+t/prolog_config_recovery.pl
 t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_hooks.py
@@ -1100,6 +1142,7 @@ scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-api-service.sh
 scripts/test-capability-plans.sh
+scripts/test-command-routing.sh
 scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
@@ -1123,6 +1166,7 @@ t/fixtures/mcp_test_server.py
 t/llm_clients.pl
 t/process_safety.pl
 t/prolog_config.pl
+t/prolog_config_recovery.pl
 t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_hooks.py
