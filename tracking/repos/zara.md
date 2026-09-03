@@ -1,36 +1,82 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-03T00:19:09Z`
+- generated: `2026-09-03T07:12:50Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`c07914416b5995f5b708e51790544151714e82bd`](https://github.com/lost-rob0t/zara/commit/c07914416b5995f5b708e51790544151714e82bd)
-- head date: `2026-09-02T19:58:47-04:00`
-- head subject: Merge pull request #303 from lost-rob0t/rage/zara-004-config-durability
+- head: [`6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7`](https://github.com/lost-rob0t/zara/commit/6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7)
+- head date: `2026-09-03T01:03:19-04:00`
+- head subject: Merge pull request #305 from lost-rob0t/rage/260-agent-loop-backend-registry
 
 ## Git log, last 14 days
 
 ```text
+2026-09-03 6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7 Merge pull request #305 from lost-rob0t/rage/260-agent-loop-backend-registry
+2026-09-03 fc573aa8898478187fe9500c69ae81eedae44c76 rage: record override policy for loop backend selection
+2026-09-03 acf10a9f2e1167dc22b47ef451e5b71aecec9db2 test: enforce override gate for custom loop backend
+2026-09-03 44f81d910a73a606eb53c97faac1e035f57a01e5 fix: enforce hook override gate for custom loop backends
+2026-09-03 27994cd898af42dce339b222f3eafed782349c9b feat: gate custom loop backends behind override policy
+2026-09-03 fa6a6699045fe759188c0d8c60df0a1847435056 test: cover implicit langgraph backend default
+2026-09-03 b17cbe3e34f724e023992bc8f75fefa85684d33d feat: resolve configured agent loop through registry
+2026-09-03 dc78c7c970c564584649ccf3b85fee387ffa11c1 feat: add owner-safe agent loop backend registry
+2026-09-03 2c6f9707220828d4318b4c5c9f7cd9ac5559c18c test: define RED contract for named agent loop backends
+2026-09-03 4953cf0cb3fc3c932e7ca73e13d2c2d6f93d394a rage: record #260 agent backend registry design
+2026-09-02 7a89d6d0efeac92ba2ff47203882c2a89b663ede Merge pull request #304 from lost-rob0t/rage/260-service-plugin-advice
+2026-09-02 70413aabc66c077d4757c1bc9663253d3478230a RAGE #260: wire service-plugin advice through RuntimeHost
+2026-09-02 08c2bef5e317065820da49f927ebcee0e16c9fd0 Merge pull request #299 from lost-rob0t/rage/android-172-cross-runtime-parity
+2026-09-02 27aa25c12258f76c7018aeb8f765150ad34dd25c chore(android): reconcile #172 parity with current master
 2026-09-02 c07914416b5995f5b708e51790544151714e82bd Merge pull request #303 from lost-rob0t/rage/zara-004-config-durability
+2026-09-02 b8ec2eae62ffef834be03cd6e8c84f88b519306a fix(android): make ambiguity matching Trealla-portable
 2026-09-02 096c6606dc6f790f40c99f86ea85d19a0c2ece9a RAGE #5: record config layering implementation
 2026-09-02 96ca65eb033d4d90f06310cd13696f31c378655f RAGE #5: layer mutable Prolog config over provisioned base
 2026-09-02 7b891ffee6b91ba4fa31b9d33b1ffc44d36f757e RAGE #5: enforce explicit PLUnit result accounting
 2026-09-02 c5444b6354767965ecf70c74046122a42c7f8105 RAGE #5: make Prolog test failure set process status
 2026-09-02 2ece25e99c98bbbc8a753d95f792f2beeb9b52af RAGE #5: make PLUnit config gate target the loaded unit
+2026-09-02 e80a24d4c99737420cae9f14aa2ad18b816976a9 fix(android): treat whitespace-only utterances as empty
 2026-09-02 f6dd1da9df1b2a9cd5a932104ef76a2af13f3841 RAGE #5: record false-green harness finding
 2026-09-02 b33dd78fe728d4badd40753e880eac254a305ee7 RAGE #5: make Prolog config test launcher fail closed
 2026-09-02 9df18df47c5afb0657c8b6662a30c440a3a8d3e6 RAGE #5 RED: require durable local Prolog config overlay
 2026-09-02 0902076daea66474b7ba4ea322f6d939ed8fb32e RAGE #5: record config durability transaction and design
 2026-09-02 7e72d98e0cfc262294f01ed177416a3b2c3bf275 Merge pull request #298 from lost-rob0t/rage/260-prolog-command-advice
+2026-09-02 d74f89ca0173db2cac2ccecbca4aef318de97b56 fix(android): compare portable parity attestations
+2026-09-02 94416a0bcee155440d78966549c8c6b7ddb00d62 fix(android): handle empty utterances portably
+2026-09-02 6a30b3d254478237b4f2557d28ed534e4e8845a1 rage: record Trealla string_to_atom recovery
+2026-09-02 3853fea309de9040e5042f95315ba3766569ee3c fix(android): remove Trealla string_to_atom dependency
 2026-09-02 3e6e4352c62055f621d2b73ac63fcba19a29c19e RAGE #260: implement gated Prolog command-loop advice
+2026-09-02 bd50e6b235daeb0af347274d12ac68031fb57e39 fix(android): preserve state-control frame semantics
+2026-09-02 5416af7be1b814af70a980bdf05e32fa56fcac94 fix(android): remove atom_string from portable intent entrypoint
 2026-09-02 b8cdbbdab66792dede09971d5826bb3494d1f6ff Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
+2026-09-02 9a62ab423b5ed80c023d0de9b11c356ef6855b93 docs(rage): record Trealla normalizer portability failure
+2026-09-02 5bcba65649accc0b7757fb1b59a85c330e624084 fix(android): make shared normalizer portable to Trealla
 2026-09-02 b7cc0a85a6d84352c668d8e892e01b2b5f5e0e79 RAGE #264: expose principal identity through runtime backend
+2026-09-02 7d363fe7a3f6c532a9fb9cf41d87c0175246e311 rage: record Android parity diagnostic recovery
+2026-09-02 cfa53c3358fd1cdd83145024d8f417db4832b48d ci(android): upload semantic parity diagnostics
+2026-09-02 783a5d1a3c7ad1a23989aa00fa03c804be64e270 test(android): preserve parity failure diagnostics
 2026-09-02 fdff7ef91a13a57199c1f6637b77006a8fc73907 RAGE #264: apply narrow long-horizon task config delta
 2026-09-02 bbcc59fe880c114e7761cdde9407f27a81d8f5c3 RAGE #264: isolate historical task config delta
 2026-09-02 3c8d07a9336884e4789abc01a936a304bb4c6968 RAGE #264: drop unrelated config rewrite churn
 2026-09-02 442d0571ff6af830e5c1cf3375ff35bb61ae874b RAGE #264: port long-horizon tasks onto current RuntimeHost
 2026-09-02 b60b826c146ec36f367573665d31360efc4bc87f RAGE #264: port bounded long-horizon task configuration
+2026-09-02 9b999de0f5aee37fdeccc5ab4516e00debfb79ba build(android): declare fail-closed Trealla patch tooling
+2026-09-02 8c624c5b4196e1760e25a26e5f7700c66a00c32c test(android): bind parity to native Trealla compatibility patch
+2026-09-02 ca791c8161a61e9a184639cee868c8f823e2e2e8 test(android): keep staging contract source-faithful
+2026-09-02 38804a6894e4b7fee85483a2e6eaf0c47a1c8b24 test(android): parity uses patched Trealla runtime
+2026-09-02 27a9774ab034c93d10f424a5bbb9709b2f38b320 fix(android): patch Trealla module source paths
+2026-09-02 6728c3499c7c47ccc102f549514b08cfb2cebe14 fix(android): preserve Trealla module source paths
+2026-09-02 85425ad4813537641119adaf1dac10dfec305b4d test(android): require cwd-independent semantic loader
 2026-09-02 2b6b3f49cbfee70b1026c517dcf8a4d6005cf80c RAGE #264: isolate long-horizon task turns at runtime backend
 2026-09-02 dc698488011ace1c90575aa501bd64e42f1cc793 RAGE #264: port task turn context through current agent advice loop
+2026-09-02 a4cfa984999f549682370c838a39c723e944c49c RAGE #172: record headless Trealla build recovery
+2026-09-02 866c22ee932ef3148231ad21ab81c347f05ed061 RAGE #172: build headless pinned Trealla for parity
+2026-09-02 0f10ea918eacbca6edc443c02c7b3b289c79b0a9 RAGE #172: correct parity target to canonical corpus
+2026-09-02 3c72bfc97eab77173ba273220c784034247ce4b6 RAGE #172: keep parity toolchain minimal
+2026-09-02 7112e1025af4341f97544b0db23e858d2db18aea RAGE #172: execute full canonical semantic corpus
+2026-09-02 ba916142d4d3f87dd9a675f61052c0659649e40f RAGE #172: require canonical corpus in parity gate
+2026-09-02 4854917a80731636c9f896b8db7dce50c1199042 RAGE #172: record RED and parity implementation
+2026-09-02 137842cd801e0904a5da9aff164be40779d14d94 RAGE #172: wire executable semantic parity into Android gate
+2026-09-02 94a66f2f190fd702ff0683d27efbf5679fdcac94 RAGE #172: add executable SWI Trealla parity gate
+2026-09-02 249e51b4246b6f54523fcf51ecfeb8a48db81e22 RAGE #172: add parity runtimes to Android dev shell
+2026-09-02 52e16d5d02cb2d8ba2b4a0074a84bcad4bd04133 RAGE #172: add RED cross-runtime parity gate contract
+2026-09-02 90896a3821d3448fa7b7d0c8c460075256affd79 RAGE #172: record cross-runtime parity design
 2026-09-02 9a05d0021e84b978dee009ceac288cfb07faa398 RAGE #264: port task runtime events onto current event model
 2026-09-02 7c78907d42a067c457fff920e54aeaf3da342002 RAGE #264: rebase long-horizon task core onto current master
 2026-09-02 9f3b779b876df360001b12d0100698f334beb8b8 Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
@@ -634,6 +680,7 @@ android/app/src/main/java/ai/zara/app/prolog/SemanticFixtureRunner.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticResultComparator.kt
 android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
+android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
@@ -651,6 +698,7 @@ android/flake.lock
 android/flake.nix
 android/gradle.properties
 android/gradle/libs.versions.toml
+android/patch-trealla-module-path.sh
 android/settings.gradle.kts
 docs/desktop-copilot-design.md
 docs/intentframe-contract.md
@@ -674,6 +722,7 @@ modules/hooks_loader.pl
 modules/intent_frames.pl
 modules/intent_resolver.pl
 modules/llm_client.pl
+modules/normalizer.pl
 modules/rlm_rewrite.pl
 modules/rlm_sidecar.pl
 modules/sound.pl
@@ -715,6 +764,7 @@ rage/172-android-native-adapter.org
 rage/172-android-portable-prolog.org
 rage/172-android-resolver-parity.org
 rage/172-android-trealla-runtime.org
+rage/172-cross-runtime-parity.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
@@ -736,6 +786,7 @@ rage/250-amd-stt-device-routing-design.org
 rage/250-amd-stt-device-routing-research.org
 rage/250-amd-stt-device-routing.org
 rage/259-agent-hooks-recovery.org
+rage/260-agent-loop-backend-registry.org
 rage/260-agent-loop-integration-design.org
 rage/260-agent-loop-integration-research.org
 rage/260-agent-loop-integration.org
@@ -750,6 +801,7 @@ rage/260-python-hooks-advice-research.org
 rage/260-python-user-hooks-design.org
 rage/260-python-user-hooks-research.org
 rage/260-python-user-hooks.org
+rage/260-service-plugin-advice.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
 rage/5-config-durability.org
@@ -767,6 +819,7 @@ scripts/benchmark-agent-backends.py
 scripts/benchmark-voice.py
 scripts/import-backlog.py
 scripts/test-all.sh
+scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-api-service.sh
 scripts/test-capability-plans.sh
@@ -800,6 +853,7 @@ t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
+t/test_agent_loop_backend_registry.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py
@@ -863,6 +917,7 @@ t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
+t/test_service_plugin_advice.py
 t/test_streaming_stt_commit.py
 t/test_task_approval_flow.py
 t/test_task_host_wiring.py
@@ -925,6 +980,7 @@ zara/agent/approval.py
 zara/agent/conversation.py
 zara/agent/graph.py
 zara/agent/hooks.py
+zara/agent/loops.py
 zara/agent/prompting.py
 zara/agent/sentence_chunker.py
 zara/agent/stream_events.py
@@ -959,6 +1015,7 @@ zara/mcp/config.py
 zara/mcp/manager.py
 zara/mcp/session.py
 zara/memory.py
+zara/plugins/api.py
 zara/plugins/builtin/__init__.py
 zara/plugins/builtin/agent_mode.py
 zara/plugins/builtin/agent_mode_hooks.py
@@ -998,6 +1055,7 @@ zara/zmq_transport.py
 
 ```text
 .github/workflows/ci.yml
+android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
@@ -1015,6 +1073,7 @@ scripts/benchmark-agent-backends.py
 scripts/benchmark-voice.py
 scripts/import-backlog.py
 scripts/test-all.sh
+scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-api-service.sh
 scripts/test-capability-plans.sh
@@ -1045,6 +1104,7 @@ t/rlm_rewrite.pl
 t/sounds.pl
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
+t/test_agent_loop_backend_registry.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
 t/test_api_service.py
@@ -1108,6 +1168,7 @@ t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_server_zmq_endpoint.py
+t/test_service_plugin_advice.py
 t/test_streaming_stt_commit.py
 t/test_task_approval_flow.py
 t/test_task_host_wiring.py

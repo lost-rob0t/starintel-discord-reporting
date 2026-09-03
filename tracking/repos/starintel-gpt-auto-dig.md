@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-03T00:19:00Z`
+- generated: `2026-09-03T07:12:30Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -180,15 +180,6 @@
 2026-08-20 192258c9f4c3016a8b20bf78ebc2158d666ae4e9 Auto-Dig request #2106: Seattle command timeline depth 1 (#2108)
 2026-08-20 59ee73efdf40fda472057df9a2f5b606b56c3f7a Auto-Dig request #2095: World ID privileged control depth 1 (#2107)
 2026-08-20 8c9c6a9ddf4002b3cdd3dd2c1c397d89fc1a9087 Add current news scan packet (#2096)
-2026-08-19 7dc8e2755ef0017d74a8a1c88e1d8a59534817a6 Auto-Dig request #1907: separate Onondaga County ALPR networks (#2103)
-2026-08-19 fa3293f3134274db70c8706922bbfcacb9bbd5dd Auto-Dig request #1905: Troy ALPR governance and audit update (#2102)
-2026-08-19 62625e75052caaa401f3a8695c7cdf12b022e1e2 Auto-Dig request #2095: World Orb MPC technical authority depth 1 (#2101)
-2026-08-19 ddbdecd646d64707712418cafc71e1b5f90358eb Auto-Dig request #1903: Syracuse Flock offboarding and Axon transition (#2099)
-2026-08-19 9eacc0ba433ac8f21fb10bda1a1df90022eb9a11 Auto-Dig request #1902: Stewart's Shops rejected ALPR proposals (#2098)
-2026-08-19 d03799959ad8f50133ddbdbd70375c058afa198f Auto-Dig request #2095: World control, WLD, and Orb custody baseline (#2097)
-2026-08-19 d43ebdf3f4365a9dc2e3a0147a33d8ead5c2120a Auto-Dig request #1901: advance Rensselaer Sheriff Flock network (#2094)
-2026-08-19 d322cdd1764da262e399a39335b4ba23f2bc876b Auto-Dig request #1900: advance Cornell Flock controls (#2093)
-2026-08-19 5f08c96609ad955840f2be62cc4f40e017d9fa8c Auto-Dig request #1899: advance Ithaca Flock offboarding (#2092)
 ```
 
 ## Repository paths changed, last 14 days
@@ -335,20 +326,6 @@ digs/flock/2026-08-10-columbus-flock-hearing/starintel-documents.jsonl
 digs/flock/2026-08-12-columbus-renewal-control-surface/README.md
 digs/flock/2026-08-12-columbus-renewal-control-surface/sources.md
 digs/flock/2026-08-12-columbus-renewal-control-surface/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1899-ithaca-offboarding/README.md
-digs/flock/2026-08-19-request-1899-ithaca-offboarding/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1900-cornell-flock-controls/README.md
-digs/flock/2026-08-19-request-1900-cornell-flock-controls/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1901-rensselaer-sheriff-network/README.md
-digs/flock/2026-08-19-request-1901-rensselaer-sheriff-network/starintel-documents.jsonl
-digs/flock/2026-08-20-request-1902-stewarts-proposals/README.md
-digs/flock/2026-08-20-request-1902-stewarts-proposals/starintel-documents.jsonl
-digs/flock/2026-08-20-request-1903-syracuse-transition/README.md
-digs/flock/2026-08-20-request-1903-syracuse-transition/starintel-documents.jsonl
-digs/flock/2026-08-20-request-1905-troy-governance-audit/README.md
-digs/flock/2026-08-20-request-1905-troy-governance-audit/starintel-documents.jsonl
-digs/flock/2026-08-20-request-1907-onondaga-county-network/README.md
-digs/flock/2026-08-20-request-1907-onondaga-county-network/starintel-documents.jsonl
 digs/flock/2026-08-24-request-1901-harvest/README.md
 digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
@@ -431,12 +408,8 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
-digs/worldcoin/2026-08-20-request-2095-control-biometric-token/ORB-SMPC-DEPTH-1.md
-digs/worldcoin/2026-08-20-request-2095-control-biometric-token/README.md
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/WORLD-ID-CONTROL-DEPTH-1.md
-digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documents-orb-smpc-depth-1.jsonl
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documents-world-id-control-depth-1.jsonl
-digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documents.jsonl
 digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
 docs/fbi-procurement-scraper.md
 docs/repository-contract.md
