@@ -1,5 +1,22 @@
 {
-  "backlog_blockers": {},
+  "backlog_blockers": {
+    "reports/starintel-updates-changelog/2026-09-03T05-48-00Z-report.md": {
+      "reason": "duplicate report: exact report body already delivered as reports/starintel-updates-changelog/2026-09-03T06-00-00Z-report.md",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-03T05-49-00Z-report.md": {
+      "reason": "duplicate report: reuses already-delivered provenance (commit:lost-rob0t/prolog-rlm@39b278589dae8518e583778cd6671a6cb1e026c7, commit:lost-rob0t/prolog-rlm@d5e2cecfeb1f887f46b8513a4be92b3f888b4f7c, commit:lost-rob0t/prolog-rlm@ef192d98e0ff690e5262d63913bc62a5654fbe51) from reports/starintel-updates-changelog/2026-09-03T06-01-00Z-report.md; new reports must use new provenance, or use an explicit CORRECTION/FOLLOW-UP heading when editorially justified",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-03T05-50-00Z-report.md": {
+      "reason": "duplicate report: reuses already-delivered provenance (commit:lost-rob0t/starintel-gpt-auto-dig@8f31d347f64dd9de25cf570c7990d2e6f93cb962, commit:lost-rob0t/starintel-gpt-auto-dig@bba0b493a5956ca28acbc58c055f465cbc2b1cc4, commit:lost-rob0t/starintel-gpt-auto-dig@eb639f448bef12711a44744c16564daeb37812fb) from reports/starintel-updates-changelog/2026-09-03T06-02-00Z-report.md; new reports must use new provenance, or use an explicit CORRECTION/FOLLOW-UP heading when editorially justified",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-03T05-51-00Z-report.md": {
+      "reason": "missing changes heading; changelog needs a direct landed commit link",
+      "status": "blocked"
+    }
+  },
   "delivery_receipts": {
     "reports/auto-dig-findings/2026-08-19T20-14-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:19.596293+00:00",
@@ -1962,15 +1979,15 @@
     }
   },
   "last_backlog_scan": {
-    "blocked": 0,
+    "blocked": 4,
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
       "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 157,
-    "verified_deliveries": 157
+    "total_reports": 165,
+    "verified_deliveries": 161
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
