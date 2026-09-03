@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-02T21:05:59Z`
+- generated: `2026-09-03T00:19:00Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -189,28 +189,16 @@
 2026-08-19 d43ebdf3f4365a9dc2e3a0147a33d8ead5c2120a Auto-Dig request #1901: advance Rensselaer Sheriff Flock network (#2094)
 2026-08-19 d322cdd1764da262e399a39335b4ba23f2bc876b Auto-Dig request #1900: advance Cornell Flock controls (#2093)
 2026-08-19 5f08c96609ad955840f2be62cc4f40e017d9fa8c Auto-Dig request #1899: advance Ithaca Flock offboarding (#2092)
-2026-08-19 6517e09f928f0215177f6be046d84aca8a08c56e Auto-Dig request #1898: resolve East Greenbush Flock vendor (#2091)
-2026-08-19 ae85729fb4b6619ff3f63cbcd3394c40e5319bf2 Auto-Dig request #1897: resolve North Greenbush Flock vendor (#2090)
-2026-08-19 b3d06edecab8c997cd884957cb8e63e0b0bfdf19 Auto-Dig request #1896: verify Petersburgh Flock installation (#2089)
-2026-08-19 241868ad4ea5e8267651272f8d695597fd6c277a Hourly Auto-Dig: Anduril Sparrows Point primary records (#2086)
-2026-08-19 64e9c53003523d9878ca8eabbd5885bcd5339aef Auto-Dig request #1895: reconcile Poestenkill Flock rejection (#2088)
-2026-08-19 00bd908ae9b50b13319a0324c11265e6b42f79dc Hourly Auto-Dig: One America location semantics (#2084)
-2026-08-19 ef7b733699b0505cd307690d868abffa05b159c8 Hourly Auto-Dig: RNC receipts and location semantics (#2085)
-2026-08-19 6cb77593aedd9613fa939c14407cb55b164d1c05 Hourly Auto-Dig: Palantir identity and WEF HQ staleness (#2083)
-2026-08-19 ded47611a0033310fef3b0df109265d5759645f8 Add idempotent Auto-Dig request queue (#2087)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .forgejo/workflows/import-starintel-documents.yml
-.github/ISSUE_TEMPLATE/auto-dig-request.yml
 .github/workflows/auto-dig-failure-report-check.yml
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/auto-dig-prolog-failure-report.yml
-.github/workflows/auto-dig-request-check.yml
-.github/workflows/auto-dig-request.yml
 .github/workflows/dnc-key-people-wef-accountability.yml
 .github/workflows/fbi-procurement-collector.yml
 .github/workflows/import-starintel-documents.yml
@@ -236,8 +224,6 @@ agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
-digs/cia/2026-08-19-anduril-sparrows-point-primary-records/README.md
-digs/cia/2026-08-19-anduril-sparrows-point-primary-records/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/README.md
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
@@ -349,14 +335,6 @@ digs/flock/2026-08-10-columbus-flock-hearing/starintel-documents.jsonl
 digs/flock/2026-08-12-columbus-renewal-control-surface/README.md
 digs/flock/2026-08-12-columbus-renewal-control-surface/sources.md
 digs/flock/2026-08-12-columbus-renewal-control-surface/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1895-poestenkill-flock-rejection/README.md
-digs/flock/2026-08-19-request-1895-poestenkill-flock-rejection/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1896-petersburgh-flock-deployment/README.md
-digs/flock/2026-08-19-request-1896-petersburgh-flock-deployment/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1897-north-greenbush-flock-vendor/README.md
-digs/flock/2026-08-19-request-1897-north-greenbush-flock-vendor/starintel-documents.jsonl
-digs/flock/2026-08-19-request-1898-east-greenbush-flock-vendor/README.md
-digs/flock/2026-08-19-request-1898-east-greenbush-flock-vendor/starintel-documents.jsonl
 digs/flock/2026-08-19-request-1899-ithaca-offboarding/README.md
 digs/flock/2026-08-19-request-1899-ithaca-offboarding/starintel-documents.jsonl
 digs/flock/2026-08-19-request-1900-cornell-flock-controls/README.md
@@ -375,8 +353,6 @@ digs/flock/2026-08-24-request-1901-harvest/README.md
 digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
-digs/gop/2026-08-19-rnc-receipts-location/README.md
-digs/gop/2026-08-19-rnc-receipts-location/starintel-documents.jsonl
 digs/hanceville/2026-08-20-police-corruption-rebrand/sources.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/README.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/attack-results.md
@@ -386,8 +362,6 @@ digs/hunter-biden/2026-08-01-bhr-partners-depth-12/manifest.json
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/relations.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.md
-digs/influence-watch-db/2026-08-19-one-america-location-semantics/README.md
-digs/influence-watch-db/2026-08-19-one-america-location-semantics/starintel-documents.jsonl
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.json
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.md
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-osf-ecfr-cluster.json
@@ -457,8 +431,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
-digs/wef/2026-08-19-palantir-identity-hq-staleness/README.md
-digs/wef/2026-08-19-palantir-identity-hq-staleness/starintel-documents.jsonl
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/ORB-SMPC-DEPTH-1.md
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/README.md
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/WORLD-ID-CONTROL-DEPTH-1.md
@@ -466,7 +438,6 @@ digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documen
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documents-world-id-control-depth-1.jsonl
 digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documents.jsonl
 digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
-docs/auto-dig-requests.md
 docs/fbi-procurement-scraper.md
 docs/repository-contract.md
 docs/tsc-job-postings.md
@@ -479,7 +450,6 @@ harvest-manifests/request-2286-oregon-2026-08-25.json
 opencode.jsonc
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
-scripts/auto_dig_request.py
 scripts/generate_dnc_key_people_wef_accountability.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
@@ -488,7 +458,6 @@ scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
 skills/validate-starintel-changes/SKILL.md
-tests/test_auto_dig_request.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
@@ -504,8 +473,6 @@ tests/test_scrape_usaspending_award_transactions.py
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/auto-dig-prolog-failure-report.yml
-.github/workflows/auto-dig-request-check.yml
-.github/workflows/auto-dig-request.yml
 .github/workflows/dnc-key-people-wef-accountability.yml
 .github/workflows/fbi-procurement-collector.yml
 .github/workflows/import-starintel-documents.yml
@@ -514,7 +481,6 @@ tests/test_scrape_usaspending_award_transactions.py
 .github/workflows/upgrade-prolog-rlm-298.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
-scripts/auto_dig_request.py
 scripts/generate_dnc_key_people_wef_accountability.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
@@ -522,7 +488,6 @@ scripts/materialize_harvest.py
 scripts/scrape_fbi_procurement.py
 scripts/scrape_tsc_job_postings.py
 scripts/scrape_usaspending_award_transactions.py
-tests/test_auto_dig_request.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py

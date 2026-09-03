@@ -1,15 +1,27 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-02T21:06:11Z`
+- generated: `2026-09-03T00:19:09Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b8cdbbdab66792dede09971d5826bb3494d1f6ff`](https://github.com/lost-rob0t/zara/commit/b8cdbbdab66792dede09971d5826bb3494d1f6ff)
-- head date: `2026-09-02T14:59:33-04:00`
-- head subject: Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
+- head: [`c07914416b5995f5b708e51790544151714e82bd`](https://github.com/lost-rob0t/zara/commit/c07914416b5995f5b708e51790544151714e82bd)
+- head date: `2026-09-02T19:58:47-04:00`
+- head subject: Merge pull request #303 from lost-rob0t/rage/zara-004-config-durability
 
 ## Git log, last 14 days
 
 ```text
+2026-09-02 c07914416b5995f5b708e51790544151714e82bd Merge pull request #303 from lost-rob0t/rage/zara-004-config-durability
+2026-09-02 096c6606dc6f790f40c99f86ea85d19a0c2ece9a RAGE #5: record config layering implementation
+2026-09-02 96ca65eb033d4d90f06310cd13696f31c378655f RAGE #5: layer mutable Prolog config over provisioned base
+2026-09-02 7b891ffee6b91ba4fa31b9d33b1ffc44d36f757e RAGE #5: enforce explicit PLUnit result accounting
+2026-09-02 c5444b6354767965ecf70c74046122a42c7f8105 RAGE #5: make Prolog test failure set process status
+2026-09-02 2ece25e99c98bbbc8a753d95f792f2beeb9b52af RAGE #5: make PLUnit config gate target the loaded unit
+2026-09-02 f6dd1da9df1b2a9cd5a932104ef76a2af13f3841 RAGE #5: record false-green harness finding
+2026-09-02 b33dd78fe728d4badd40753e880eac254a305ee7 RAGE #5: make Prolog config test launcher fail closed
+2026-09-02 9df18df47c5afb0657c8b6662a30c440a3a8d3e6 RAGE #5 RED: require durable local Prolog config overlay
+2026-09-02 0902076daea66474b7ba4ea322f6d939ed8fb32e RAGE #5: record config durability transaction and design
+2026-09-02 7e72d98e0cfc262294f01ed177416a3b2c3bf275 Merge pull request #298 from lost-rob0t/rage/260-prolog-command-advice
+2026-09-02 3e6e4352c62055f621d2b73ac63fcba19a29c19e RAGE #260: implement gated Prolog command-loop advice
 2026-09-02 b8cdbbdab66792dede09971d5826bb3494d1f6ff Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
 2026-09-02 b7cc0a85a6d84352c668d8e892e01b2b5f5e0e79 RAGE #264: expose principal identity through runtime backend
 2026-09-02 fdff7ef91a13a57199c1f6637b77006a8fc73907 RAGE #264: apply narrow long-horizon task config delta
@@ -730,6 +742,9 @@ rage/260-agent-loop-integration.org
 rage/260-hooks-prolog-config-design.org
 rage/260-hooks-prolog-config-research.org
 rage/260-hooks-prolog-config.org
+rage/260-prolog-command-advice-design.org
+rage/260-prolog-command-advice-research.org
+rage/260-prolog-command-advice.org
 rage/260-python-hooks-advice-design.org
 rage/260-python-hooks-advice-research.org
 rage/260-python-user-hooks-design.org
@@ -737,6 +752,7 @@ rage/260-python-user-hooks-research.org
 rage/260-python-user-hooks.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
+rage/5-config-durability.org
 rage/daemon-128-design.org
 rage/daemon-128-research.org
 rage/daemon-129-design.org
@@ -758,6 +774,8 @@ scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
+scripts/test-prolog-command-advice.sh
+scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.py
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
@@ -1004,6 +1022,8 @@ scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
+scripts/test-prolog-command-advice.sh
+scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.py
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
