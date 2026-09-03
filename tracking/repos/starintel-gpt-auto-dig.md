@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-03T07:12:30Z`
+- generated: `2026-09-03T12:51:03Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -177,9 +177,6 @@
 2026-08-20 23d7d27f9ea9d3c98481f0486d0c78830cb6b13d Corroborate pending violent-offenders local-news cases (#1979)
 2026-08-20 988dec4c442b0797cdd35be854853a81c5e49ae1 Document Siders Vinton County child-abuse case (#2074)
 2026-08-20 a0d1a72dfb2a38d5c2e2e9e37fc7b3ed92f43f44 Violent offenders: document Elijah Foster / Mercedes Chico-Sims case (#2055)
-2026-08-20 192258c9f4c3016a8b20bf78ebc2158d666ae4e9 Auto-Dig request #2106: Seattle command timeline depth 1 (#2108)
-2026-08-20 59ee73efdf40fda472057df9a2f5b606b56c3f7a Auto-Dig request #2095: World ID privileged control depth 1 (#2107)
-2026-08-20 8c9c6a9ddf4002b3cdd3dd2c1c397d89fc1a9087 Add current news scan packet (#2096)
 ```
 
 ## Repository paths changed, last 14 days
@@ -359,8 +356,6 @@ digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-osi-resource-sharing.md
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.json
 digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.md
-digs/seattle/2026-08-20-request-2106-personnel-integrity/README.md
-digs/seattle/2026-08-20-request-2106-personnel-integrity/starintel-documents.jsonl
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/README.md
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/starintel-documents.jsonl
 digs/seattle/2026-08-25-request-2106-harvest/starintel-documents.jsonl
@@ -396,9 +391,6 @@ digs/violent-offenders/2026-08-08-local-news-expanded-scan/starintel-documents-p
 digs/violent-offenders/2026-08-18-elijah-foster-mercedes-chico-sims/README.md
 digs/violent-offenders/2026-08-18-elijah-foster-mercedes-chico-sims/sources.md
 digs/violent-offenders/2026-08-18-elijah-foster-mercedes-chico-sims/starintel-documents.jsonl
-digs/violent-offenders/2026-08-19-news-scan/README.md
-digs/violent-offenders/2026-08-19-news-scan/sources.md
-digs/violent-offenders/2026-08-19-news-scan/starintel-documents.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/README.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/sources.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-001.jsonl
@@ -408,8 +400,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
 digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
-digs/worldcoin/2026-08-20-request-2095-control-biometric-token/WORLD-ID-CONTROL-DEPTH-1.md
-digs/worldcoin/2026-08-20-request-2095-control-biometric-token/starintel-documents-world-id-control-depth-1.jsonl
 digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
 docs/fbi-procurement-scraper.md
 docs/repository-contract.md

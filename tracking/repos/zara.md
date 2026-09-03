@@ -1,15 +1,32 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-03T07:12:50Z`
+- generated: `2026-09-03T12:51:23Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7`](https://github.com/lost-rob0t/zara/commit/6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7)
-- head date: `2026-09-03T01:03:19-04:00`
-- head subject: Merge pull request #305 from lost-rob0t/rage/260-agent-loop-backend-registry
+- head: [`e6d9409e49246a187d5ea015da681bfc4e4fdc63`](https://github.com/lost-rob0t/zara/commit/e6d9409e49246a187d5ea015da681bfc4e4fdc63)
+- head date: `2026-09-03T06:03:53-04:00`
+- head subject: Merge pull request #308 from lost-rob0t/docs/260-customization-wiki
 
 ## Git log, last 14 days
 
 ```text
+2026-09-03 e6d9409e49246a187d5ea015da681bfc4e4fdc63 Merge pull request #308 from lost-rob0t/docs/260-customization-wiki
+2026-09-03 5a2999390ffe29ad10d8c4208c59d2a0e7bd6399 docs: document hooks advice and agent backends
+2026-09-03 ea787f5807d54ef1801e083e9f250d1bf386e762 docs(rage): record #260 customization wiki slice
+2026-09-03 e15fe203c69ef8196430aa5479158ccfde2e2322 Merge pull request #306 from lost-rob0t/rage/260-customization-diagnostics
+2026-09-03 ad1fe996c6c221c30004e7012fbc9dbfc2b88a74 test: complete diagnostics manager fixture
+2026-09-03 c64c408b051e618904b0b25f7eca9728af032eb9 docs(rage): record diagnostics red and implementation
+2026-09-03 f57abe38d6f002694805215bf64e2709e5c41e56 test(rage): use canonical runtime host shutdown
+2026-09-03 c37c0a6539e963ed2784abdf9d5cd7213ab02af0 feat(rage): expose customization diagnostics from runtime host
+2026-09-03 f3274ad75adc78f58599ae6d1b4b399ca9fc3731 feat(rage): expose runtime customization diagnostics
+2026-09-03 6cd63f28f03a6b9e6679cf4fbc21b8fe5307f0f6 feat(rage): expose bounded customization diagnostics
+2026-09-03 1b3008aabd0919a64f127ede4b3c666313316497 feat(rage): add safe backend diagnostics projection
+2026-09-03 b410fe531bdd4e620b2835b0db556b3805c705c4 feat(rage): add safe advice diagnostics projection
+2026-09-03 fa1e5e74bc89f56a84c40a69ce35109320683d2a test(rage): require runtime customization diagnostics seam
+2026-09-03 94aeeae839da4f4d71241100d018f4b4b83c1bdb test: define #260 customization diagnostic contract
+2026-09-03 d04e2a38a07f94c2c4b322c7f912d7a597324184 rage: design #260 customization diagnostics
+2026-09-03 7c70219cb393302145582d31c28b00f214f112d6 rage: research #260 customization diagnostics
+2026-09-03 41c323131f9a0df73f934d72e3388c3183eb3539 rage: start #260 customization diagnostics
 2026-09-03 6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7 Merge pull request #305 from lost-rob0t/rage/260-agent-loop-backend-registry
 2026-09-03 fc573aa8898478187fe9500c69ae81eedae44c76 rage: record override policy for loop backend selection
 2026-09-03 acf10a9f2e1167dc22b47ef451e5b71aecec9db2 test: enforce override gate for custom loop backend
@@ -790,6 +807,10 @@ rage/260-agent-loop-backend-registry.org
 rage/260-agent-loop-integration-design.org
 rage/260-agent-loop-integration-research.org
 rage/260-agent-loop-integration.org
+rage/260-customization-diagnostics-design.org
+rage/260-customization-diagnostics-research.org
+rage/260-customization-diagnostics.org
+rage/260-customization-wiki.org
 rage/260-hooks-prolog-config-design.org
 rage/260-hooks-prolog-config-research.org
 rage/260-hooks-prolog-config.org
@@ -867,6 +888,7 @@ t/test_command_routing.py
 t/test_config.py
 t/test_conversation_flow.py
 t/test_conversation_service.py
+t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
 t/test_daemon_security.py
 t/test_daemon_security_abuse.py
@@ -969,6 +991,7 @@ wiki/agent-mode.org
 wiki/android.org
 wiki/api-service.org
 wiki/capability-plans.org
+wiki/customization.org
 wiki/install.org
 wiki/long-horizon-tasks.org
 wiki/mcp.org
@@ -1118,6 +1141,7 @@ t/test_command_routing.py
 t/test_config.py
 t/test_conversation_flow.py
 t/test_conversation_service.py
+t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
 t/test_daemon_security.py
 t/test_daemon_security_abuse.py
