@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-03T21:05:21Z`
+- generated: `2026-09-04T00:08:39Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`156bfe9b2caffa1b967e77bee51263ee9e85fb50`](https://github.com/lost-rob0t/prolog-rlm/commit/156bfe9b2caffa1b967e77bee51263ee9e85fb50)
@@ -280,13 +280,6 @@
 2026-08-20 59ca7c94947f5c048e5c4e314f588a63e02fd1c1 Preserve authoritative nested model trajectory events (#139)
 2026-08-20 04d90b608d11196c5a8fd3bdeb235566ef9352fd Make live OpenRouter streaming gate router-safe (#138)
 2026-08-20 767d677c826ed5c0873f1b2ce11c07b6f266497b Add provider-neutral symbolic prompt compiler core (#116)
-2026-08-20 6a6d03f66c3b5869f7c941cfa645f3d6a697a776 Merge pull request #135 from lost-rob0t/agent/42-canonical-recursive-fingerprints
-2026-08-20 7e6f05357704247dd7201fb56c85c5cfcac9418b Merge current main into recursive fingerprint fix
-2026-08-20 f56ecb9c01876083a7ff8c81453fbebdbf6c8ebc Make production static-load errors fail CI (#137)
-2026-08-20 6fef2c8889be4bb1bf15ce917580be9c16fa169b fix: canonicalize recursive-plan fingerprints (#42)
-2026-08-20 1e98b635d9deb83cae498974fe97f549f8d2ba4d test: pin direct recursive fingerprint regression (#42)
-2026-08-20 f4a0400fe718c533c82ea4d97ba1e28a07caca0e test: reproduce recursive fingerprint aliasing (#42)
-2026-08-20 feaa5aba6fa26ba73147993ece1a2829d2d41a36 test: add recursive fingerprint regression planners (#42)
 ```
 
 ## Repository paths changed, last 14 days
@@ -584,7 +577,6 @@ test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
-test/support/load_error_fixture.pl
 test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
@@ -785,7 +777,6 @@ test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
-test/support/load_error_fixture.pl
 test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl

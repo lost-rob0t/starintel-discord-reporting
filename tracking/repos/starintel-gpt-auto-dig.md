@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-03T21:05:09Z`
+- generated: `2026-09-04T00:08:26Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -168,13 +168,6 @@
 2026-08-20 267d031cdc04dd55fd446137f47ff503f94a9adf Auto-Dig #2106: use GitHub CI and advance RTCC control chain (#2110)
 2026-08-20 66047287cc19f02ec272d67ccbd554a92d01472b Add BHR Partners depth-12 Indul shareholder and Nijjar chain (#1945)
 2026-08-20 c11023bcac6b35f174dad2c03c01f9e3846df13e Add FBI TSC procurement depths 2–5 and evidence collectors (#1962)
-2026-08-20 846281d0b037b6d74de8b478e502ced909615f96 dig: add Hanceville police corruption rebrand source packet
-2026-08-20 3e370318a4837e923e86c159a367cfc7fc8a558e research: WEF ECP Fall 2026 methodology audit depth 2 (#2024)
-2026-08-20 4f98843a4efc256236842c1eca77eda8f034ef54 Add Columbus Flock hearing follow-up packet (#2023)
-2026-08-20 eec2fc4148360b9b1399485ddda1f1c42c6284a8 OSF public rosters, legal funding channels, and cross-ties (#1987)
-2026-08-20 a3a2ed3325a013f80cc1f4946f707f8f0cd0a1fe Add Trilateral Commission dataset research pass (#1981)
-2026-08-20 5c25a30830995aa147f2a0c1133180ee422944be add Flock X/Aerodome video lead (#1973)
-2026-08-20 23d7d27f9ea9d3c98481f0486d0c78830cb6b13d Corroborate pending violent-offenders local-news cases (#1979)
 ```
 
 ## Repository paths changed, last 14 days
@@ -310,22 +303,10 @@ digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/records-
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/source-notes.md
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/starintel-documents.jsonl
 digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/subcontractor-leads.md
-digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/README.md
-digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/manifest.json
-digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/sources.md
-digs/flock/2026-08-07-loyal-moses-x-aerodome-conflict/starintel-documents.jsonl
-digs/flock/2026-08-10-columbus-flock-hearing/README.md
-digs/flock/2026-08-10-columbus-flock-hearing/manifest.json
-digs/flock/2026-08-10-columbus-flock-hearing/sources.md
-digs/flock/2026-08-10-columbus-flock-hearing/starintel-documents.jsonl
-digs/flock/2026-08-12-columbus-renewal-control-surface/README.md
-digs/flock/2026-08-12-columbus-renewal-control-surface/sources.md
-digs/flock/2026-08-12-columbus-renewal-control-surface/starintel-documents.jsonl
 digs/flock/2026-08-24-request-1901-harvest/README.md
 digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
-digs/hanceville/2026-08-20-police-corruption-rebrand/sources.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/README.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/attack-results.md
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/entities.jsonl
@@ -334,58 +315,9 @@ digs/hunter-biden/2026-08-01-bhr-partners-depth-12/manifest.json
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/relations.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.jsonl
 digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-ivan-krastev.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-osf-ecfr-cluster.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-3-osf-ecfr-cluster.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-4-ecfr-audited-funding.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-4-ecfr-audited-funding.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-5-ecfr-osf-funding-trend.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/depth-5-ecfr-osf-funding-trend.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/public-rosters.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/report.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-ecfr-osf-grant-id-index.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-ecfr-osf-grant-id-index.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpos-2024-outflows.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpos-2024-outflows.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-entity-split.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-entity-split.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-osi-resource-sharing.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-fpr-osi-resource-sharing.md
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.json
-digs/open-society-foundations/2026-08-08-public-roster-depth-2/supplemental-legal-funding-channels.md
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/README.md
 digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/starintel-documents.jsonl
 digs/seattle/2026-08-25-request-2106-harvest/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-cross-network-freshness/README.md
-digs/trilateral-commission/2026-08-08-cross-network-freshness/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-donor-side-and-entity-resolution/README.md
-digs/trilateral-commission/2026-08-08-donor-side-and-entity-resolution/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-government-archive-interface/README.md
-digs/trilateral-commission/2026-08-08-government-archive-interface/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-hewlett-grant-verification/README.md
-digs/trilateral-commission/2026-08-08-hewlett-grant-verification/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-mellon-historical-grants/README.md
-digs/trilateral-commission/2026-08-08-mellon-historical-grants/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-membership-policy-semantics/README.md
-digs/trilateral-commission/2026-08-08-membership-policy-semantics/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-monetary-gold-attribution/README.md
-digs/trilateral-commission/2026-08-08-monetary-gold-attribution/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-north-america-finance-history/README.md
-digs/trilateral-commission/2026-08-08-north-america-finance-history/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-north-america-governance-chronology/README.md
-digs/trilateral-commission/2026-08-08-north-america-governance-chronology/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-policy-attribution-methodology/README.md
-digs/trilateral-commission/2026-08-08-policy-attribution-methodology/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-regional-legal-and-secretariat-structure/README.md
-digs/trilateral-commission/2026-08-08-regional-legal-and-secretariat-structure/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-roster-provenance-audit/README.md
-digs/trilateral-commission/2026-08-08-roster-provenance-audit/starintel-documents.jsonl
-digs/trilateral-commission/2026-08-08-source-integrity/README.md
-digs/trilateral-commission/2026-08-08-source-integrity/starintel-documents.jsonl
-digs/violent-offenders/2026-08-08-local-news-expanded-scan/README.md
-digs/violent-offenders/2026-08-08-local-news-expanded-scan/sources.md
-digs/violent-offenders/2026-08-08-local-news-expanded-scan/starintel-documents-part-007.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/README.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/sources.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-001.jsonl
@@ -393,8 +325,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-003.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-004.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
-digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/README.md
-digs/wef/2026-08-11-ecp-methodology-requisition-depth-2/starintel-documents.jsonl
 digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
 docs/fbi-procurement-scraper.md
 docs/repository-contract.md
