@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-04T04:39:05Z`
+- generated: `2026-09-04T11:23:00Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`156bfe9b2caffa1b967e77bee51263ee9e85fb50`](https://github.com/lost-rob0t/prolog-rlm/commit/156bfe9b2caffa1b967e77bee51263ee9e85fb50)
@@ -259,23 +259,6 @@
 2026-08-21 f22eff28d6d1f1a91cbe72ae18944fdd3562c8a8 ci: require pinned flake inputs
 2026-08-21 db16adac41108c45feb955b2083fe5a1bd1002bb nix: pin flake inputs
 2026-08-21 23d919628a449acc3ced08fc9bd8469cc2cbf8ea Add pure generic configuration evolution kernel (#148)
-2026-08-21 09d9418911acdebb851c8a8362fcd02ca1b5fdeb Add first-class bounded RLM subagent tool runtime (#147)
-2026-08-21 c0a7484d71265eed1a0f96f012040db39d9e58f1 Add flake-native runtime packaging (#145)
-2026-08-21 916e4c4d0181546c98079d70941466692ef7afc0 test: load RLM subagent runtime (#144)
-2026-08-21 a32a948e5a2557758c95f311d2d8c9a9082453d5 test: run RLM subagent suite (#144)
-2026-08-21 2f78d2bbef19a1916ab662fa98b0bc78c4d2965a test: cover bounded RLM subagent tool path (#144)
-2026-08-21 42c7180f394924741033540229b40f0472548f7c feat: add bounded RLM subagent tool runtime (#144)
-2026-08-21 1d1ee7594962accafabdd61d26a725d8bdb86a05 Add typed KB prompt command bindings (#146)
-2026-08-21 f21df8ea5bf89c85d0d516f170e1f157c553d800 Merge pull request #143 from agent/107-bound-adapter-metadata
-2026-08-21 00b4501c58b6fadc47159f3ba4d049593164cb1c docs: record metadata budget error facts (#107)
-2026-08-21 aeb075ea0b1acfbe664430d976d750d2a2e2b708 test: distinguish safe and oversized metadata (#107)
-2026-08-21 16133365e33d451e0634d8f8ad1db9bb13646a1c fix: bound complete adapter metadata descriptor (#107)
-2026-08-21 09dbc7cd10ba53cef09c6e25da69ef645b5f40a2 test: assert structured metadata budget facts (#107)
-2026-08-21 084748910ad4fe05fc1cc6fb41717d700948e3c8 Merge current main into #107 metadata hardening
-2026-08-21 b72a0de5550b24941f1f0970b89520bd432a31a6 docs: define adapter metadata byte ceiling (#107)
-2026-08-21 15650d5c8276aa7bf960912865674c9050ed5938 fix: bound adapter metadata at registration (#107)
-2026-08-21 451a37c264dd1deead1574ac81ede868cfa75bfa test: reject oversized adapter metadata (#107)
-2026-08-21 df5920d2b0bc3d0fb7e9071f5eaa0983a3ec75d3 docs: add evolutionary agent search research placeholder
 ```
 
 ## Repository paths changed, last 14 days
@@ -352,7 +335,6 @@ docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
-docs/nix-packaging.md
 docs/project-source-registry.md
 docs/project-syntax.md
 docs/prolog-agent-roadmap.md
@@ -360,7 +342,6 @@ docs/prolog-agent-ui-v1.md
 docs/prompt-compiler.md
 docs/providers.md
 docs/research-record-template.org
-docs/research/evolutionary-agent-search.md
 docs/research/spec-plan-authority.md
 docs/result-acceptance.md
 docs/skill-graph.md
