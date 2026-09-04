@@ -1,15 +1,33 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-04T11:23:03Z`
+- generated: `2026-09-04T16:25:34Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`c4945cf3e848eb4e55355ed767ce780348beb414`](https://github.com/lost-rob0t/zara/commit/c4945cf3e848eb4e55355ed767ce780348beb414)
-- head date: `2026-09-04T00:01:00-04:00`
-- head subject: Merge pull request #312 from lost-rob0t/rage/163-user-command-compiler
+- head: [`dd03e3309f5c09ddbc76c22ba936ce366508ac2a`](https://github.com/lost-rob0t/zara/commit/dd03e3309f5c09ddbc76c22ba936ce366508ac2a)
+- head date: `2026-09-04T10:00:15-04:00`
+- head subject: Merge pull request #313 from lost-rob0t/rage/164-user-command-authoring
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 dd03e3309f5c09ddbc76c22ba936ce366508ac2a Merge pull request #313 from lost-rob0t/rage/164-user-command-authoring
+2026-09-04 8ba768b17da7a40773d3141fa2289b4abebf7ebe rage: record authoring cancellation acceptance fix
+2026-09-04 986d4252cc6818921f9dedaa755d4e7bfafef5de fix: route authoring cancellation through clarification control
+2026-09-04 3f6c38eea08bae8036e7040659ba81876e23b70a test: prove remaining command authoring acceptance invariants
+2026-09-04 a12ddb0f63660743fd714aa903f19382c85db050 rage: record command management RED and implementation
+2026-09-04 cccad6ca72ed29312ab2195470dc9034f29bbce9 feat: complete user command authoring dialogue
+2026-09-04 9d93b4ab9580a43fdfad3648207caa9c10378985 test: cover full user command authoring dialogue
+2026-09-04 106d4414019fb6d1273b3d4d99abdfdee5ef616e test: preserve canonical clarification tombstone lifecycle
+2026-09-04 97c76e5c9c3de78eb01f3fbeea56cc8b0bfc54ca RAGE #164: record dialogue RED and contract correction
+2026-09-04 70bd5040e027aac8aa947c8aa986e3b8c8fb0fba feat: add typed create-command dialogue
+2026-09-04 408466e45f4d50976cbc40a1774bd7b3ef46f6fe test: define conversational authoring red contract
+2026-09-04 de47813751ff32bc142a22a55e0c72232233a99b test: align authoring preview with compiled action contract
+2026-09-04 a413f27031e26adb2cc5584af84b2934a8f989b6 RAGE #164: record RED and implementation evidence
+2026-09-04 c1ee7bf865971a1781ddb9bdb1c3239fce451900 RAGE #164: implement semantic user command authoring service
+2026-09-04 53ebf3a08071cef4f821271428cbc5a248f9fb27 test: add user command authoring gate
+2026-09-04 af7323778df878ed9480d99007c5ab93629a129c test: define red contract for user command authoring
+2026-09-04 4ff167db5a519624dc787c6a1af675a0ad1dd5b4 rage: research and design user command authoring
+2026-09-04 014e8f7e472011b6319f03026cd37f29d4748a18 rage: consume issue 164
 2026-09-04 c4945cf3e848eb4e55355ed767ce780348beb414 Merge pull request #312 from lost-rob0t/rage/163-user-command-compiler
 2026-09-03 7f908015761c0367d1a739fb535140422d588a7d docs: record #163 RED and compiler implementation
 2026-09-03 65ab9123088999473e7e9edf4df7e65085672492 feat: compile persisted user commands into semantic frames
@@ -826,6 +844,7 @@ rage/157-execution-plans.org
 rage/158-api-service-providers.org
 rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
+rage/164-user-command-authoring.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
@@ -916,6 +935,7 @@ scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
 scripts/test-server-lifecycle.sh
 scripts/test-streaming-llm.sh
+scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
 scripts/test-zara1-protocol.sh
@@ -1013,6 +1033,8 @@ t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_user_command_authoring.py
+t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
 t/test_user_command_persistence.py
 t/test_user_python_hooks.py
@@ -1131,6 +1153,7 @@ zara/streaming_stt.py
 zara/tasks/__init__.py
 zara/tasks/runner.py
 zara/tasks/store.py
+zara/user_command_authoring.py
 zara/user_command_compiler.py
 zara/user_commands.py
 zara/voice_runtime.py
@@ -1180,6 +1203,7 @@ scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
 scripts/test-server-lifecycle.sh
 scripts/test-streaming-llm.sh
+scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
 scripts/test-zara1-protocol.sh
@@ -1274,6 +1298,8 @@ t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_user_command_authoring.py
+t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
 t/test_user_command_persistence.py
 t/test_user_python_hooks.py

@@ -1,15 +1,40 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-04T11:23:00Z`
+- generated: `2026-09-04T16:25:31Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`156bfe9b2caffa1b967e77bee51263ee9e85fb50`](https://github.com/lost-rob0t/prolog-rlm/commit/156bfe9b2caffa1b967e77bee51263ee9e85fb50)
-- head date: `2026-09-02T15:26:51-04:00`
-- head subject: Add versioned project syntax observations
+- head: [`06e8fb41254df5c9800315931e285a2ebd2fe990`](https://github.com/lost-rob0t/prolog-rlm/commit/06e8fb41254df5c9800315931e285a2ebd2fe990)
+- head date: `2026-09-04T12:12:59-04:00`
+- head subject: add icon
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 06e8fb41254df5c9800315931e285a2ebd2fe990 add icon
+2026-09-04 cac770b1791575832c5a4349465ff9738d10beb3 aprovved research
+2026-09-04 0de5105512eeafaabc2b7d39500ce62c25b5ec75 verify: record issue-336 research-slice observations at final HEAD
+2026-09-04 c33f2a58e7d5264118f49901cc9007a39d2d31b5 verify: match recorded command shape (command/1) in requirement observations
+2026-09-04 f7626f11466522772ca62975bb8825645b49777d research: RLM-RESEARCH-336 text streaming through the completion boundary
+2026-09-02 55a9f431f257f72bfc729772041056e327fad70e cd: reference nix-installer-action by full upstream URL
+2026-09-02 291faef5d2db07f1b6a0bf69f48721a63219f7d6 docs: record #97 research Q&A notes
+2026-09-02 9724cafcb2c97c04e137482bdddbedbb0aee7178 docs(research): approve RLM-RESEARCH-353 (operator)
+2026-09-02 3c29ca8a9cb772c0ad8921cbd88157101c0baaff chore: re-observe #97 evidence at head 13efeac
+2026-09-02 b2e6913405bd3ad640e9cbc673c8687eacc0f736 chore: ignore prolog-verify lock file
+2026-09-02 52a3280cfe134ff3f5448431725e791fce6ca80b chore: track #97 prolog-verify evidence and gate state
+2026-09-02 e9ba071c40a633ccd9d6d2f57715d083d830334c feat: implement #97 tree-sitter query pack and capture APIs
+2026-09-02 fcc900889c076eda7ca359c37d555d99df78e7ca design: record #97 design approval and hand off realization to next slice
+2026-09-02 b31b29bc9433457e4c7ae4194409011e8488cf40 design: record #97 query/capture ADADR design
+2026-09-02 c50c9defe80074ffa983ae2007d4987b09d477ba research: record RLM-RESEARCH-012 approval
+2026-09-02 e6dcb57cb5d6160a0e3b99443e4041cde704144b research: author RLM-RESEARCH-012 for #97 query/capture APIs
+2026-09-02 0dfa76141cbf7f704d2837c4acc1ea5ad973ac64 research: operator resolves OQ3 - keycard rule for model grants
+2026-09-02 138b58c89e6e819bf44beee318e0e036713b488b research: OQ3 - model grants are structural, advertisement distinction dissolves
+2026-09-02 65e0b50ba8b44a4380f0b0e2ad84dac24424d9ae research: operator resolves OQ2 - adopt turn-cost-aware admission direction
+2026-09-02 4d8912da5abbffb37eb2810406167187da83c5d8 research: OQ2 operator steering - constant time budgeting is the fundamental problem
+2026-09-02 e13e7bef3876f8015fafe0dc6910bda5bcb27aa2 research: operator resolves OQ6 - expert availability is a first-class event
+2026-09-02 e9a543849449be29789c7eddbd2c7794c4007150 research: operator rejects relaxing single-effect-call rule (closes OQ5)
+2026-09-02 28f2952a8e21f55b600e1823c1124db5cb79518f research: answer operator note on effect batching (open question 5)
+2026-09-02 05f433fc2f50e5e60e92ba2ae1991e72f1a9388d research: convert record to canonical org template (RLM-RESEARCH-353)
+2026-09-02 3e772eb43c06061648b919c0178812c68dd502b0 research: experts as native direct-mode tools (verified analysis)
 2026-09-01 156bfe9b2caffa1b967e77bee51263ee9e85fb50 Add versioned project syntax observations
 2026-09-01 39b278589dae8518e583778cd6671a6cb1e026c7 test: import library(http/json) for atom_json_dict on SWI 9
 2026-09-01 7a701578a50735d1383cf1709e1d32a3a6af0ed8 test: isolate the tool-cutoff test from the wall-clock reservation
@@ -258,7 +283,6 @@
 2026-08-21 e32dd1486ab81e3ecda9e73455309db7434d59a3 Merge pull request #153 from lost-rob0t/fix/flake-lock-reproducibility
 2026-08-21 f22eff28d6d1f1a91cbe72ae18944fdd3562c8a8 ci: require pinned flake inputs
 2026-08-21 db16adac41108c45feb955b2083fe5a1bd1002bb nix: pin flake inputs
-2026-08-21 23d919628a449acc3ced08fc9bd8469cc2cbf8ea Add pure generic configuration evolution kernel (#148)
 ```
 
 ## Repository paths changed, last 14 days
@@ -283,6 +307,9 @@
 .gitignore
 .gitmodules
 .opencode/skills/debug-io/SKILL.md
+.prolog/.gitignore
+.prolog/facts.kb
+.prolog/verify.pl
 AGENTS.md
 Makefile
 README.md
@@ -322,6 +349,8 @@ c/rlm_tree_sitter_internal.h
 c/rlm_tree_sitter_lifetime.c
 c/rlm_tree_sitter_node.c
 c/rlm_tree_sitter_parser.c
+c/rlm_tree_sitter_query.c
+c/rlm_tree_sitter_support.c
 docs/agent-runtime.md
 docs/agent-zero-adapter.md
 docs/async-runtime.md
@@ -335,6 +364,7 @@ docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
+docs/project-query.md
 docs/project-source-registry.md
 docs/project-syntax.md
 docs/prolog-agent-roadmap.md
@@ -342,6 +372,8 @@ docs/prolog-agent-ui-v1.md
 docs/prompt-compiler.md
 docs/providers.md
 docs/research-record-template.org
+docs/research/expert-direct-tool-projection.md
+docs/research/expert-direct-tool-projection.org
 docs/research/spec-plan-authority.md
 docs/result-acceptance.md
 docs/skill-graph.md
@@ -351,6 +383,7 @@ docs/tools.md
 docs/typed-plans.md
 flake.lock
 flake.nix
+icon.png
 prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/prolog_agent_ui_v1.pl
@@ -381,6 +414,8 @@ prolog/rlm_openai_compatible.pl
 prolog/rlm_outcome.pl
 prolog/rlm_plan.pl
 prolog/rlm_project_grammar_pack.pl
+prolog/rlm_project_query.pl
+prolog/rlm_project_query_persist.pl
 prolog/rlm_project_source.pl
 prolog/rlm_project_syntax.pl
 prolog/rlm_prompt_command.pl
@@ -414,6 +449,9 @@ rage/290-adversarial-review-report.md
 rage/290-findings-fix-prompt.md
 rage/325-native-call-isolation.org
 rage/96-versioned-syntax-facts.org
+rage/97-query-capture-apis.org
+rage/97-query-capture-notes.org
+rage/97-query-capture-realize-prompt.md
 research/README.md
 research/RLM-RESEARCH-000-foundations.org
 research/RLM-RESEARCH-001-prolog-runtime-design.org
@@ -434,8 +472,11 @@ research/RLM-RESEARCH-023-nim-ui.org
 research/RLM-RESEARCH-024-emacs-ui.org
 research/RLM-RESEARCH-025-lem-ui.org
 research/RLM-RESEARCH-026-task-deadlines.org
+research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
 research/spec-plan-refinement-kb.pl
+research/tree-sitter-query-capture.org
+scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/openrouter_completion.sh
 scripts/research_approval_validator.pl
@@ -515,6 +556,10 @@ test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
+test/rlm_project_query_restart_phase1.pl
+test/rlm_project_query_restart_phase2.pl
+test/rlm_project_query_restart_test.pl
+test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
@@ -539,6 +584,7 @@ test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
+test/rlm_tree_sitter_query_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
@@ -638,6 +684,7 @@ agentProlog/ui/opentui/test/protocol.test.ts
 agentProlog/ui/opentui/test/render.test.tsx
 agentProlog/ui/opentui/test/transport.integration.ts
 flake.nix
+scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/openrouter_completion.sh
 scripts/research_approval_validator.pl
@@ -713,6 +760,10 @@ test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
+test/rlm_project_query_restart_phase1.pl
+test/rlm_project_query_restart_phase2.pl
+test/rlm_project_query_restart_test.pl
+test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
@@ -737,6 +788,7 @@ test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
+test/rlm_tree_sitter_query_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
