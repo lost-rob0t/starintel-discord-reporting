@@ -1,15 +1,31 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-04T00:08:44Z`
+- generated: `2026-09-04T04:39:09Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`f25aea5f9e5bceb747cb282b6a28c43f07e5b727`](https://github.com/lost-rob0t/zara/commit/f25aea5f9e5bceb747cb282b6a28c43f07e5b727)
-- head date: `2026-09-03T16:03:07-04:00`
-- head subject: Merge pull request #310 from lost-rob0t/rage/309-prolog-config-recovery
+- head: [`c4945cf3e848eb4e55355ed767ce780348beb414`](https://github.com/lost-rob0t/zara/commit/c4945cf3e848eb4e55355ed767ce780348beb414)
+- head date: `2026-09-04T00:01:00-04:00`
+- head subject: Merge pull request #312 from lost-rob0t/rage/163-user-command-compiler
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 c4945cf3e848eb4e55355ed767ce780348beb414 Merge pull request #312 from lost-rob0t/rage/163-user-command-compiler
+2026-09-03 7f908015761c0367d1a739fb535140422d588a7d docs: record #163 RED and compiler implementation
+2026-09-03 65ab9123088999473e7e9edf4df7e65085672492 feat: compile persisted user commands into semantic frames
+2026-09-03 cf03f6376d9be0799812d2c740e3ded559f45c21 test: add user command compiler gate
+2026-09-03 6b27dad03ac4e25171ef35908576622d348660d3 test: define user command compiler contract
+2026-09-03 bc1c2d8a977e38311c7d8d1b7ff8ddcd057eacc2 rage: consume issue 163
+2026-09-03 7ae6739f44f11aaef2786fa9410e26f5b7aecab3 Merge pull request #311 from lost-rob0t/rage/162-user-command-persistence
+2026-09-03 ae0d49d89dd5b910b43134fc3ffc2cbf56af5bdc RAGE #162: complete typed command definition persistence
+2026-09-03 9693cf1082491a0247dece1695224bbc3729379d docs: record #162 acceptance-gap iteration
+2026-09-03 c189c26dcda56eb363fcfee3586c97a5361da2a3 test: cover full user command persistence contract
+2026-09-03 4cd886cecb2e71e5e054dc08daa0202f13b17d34 test: add user command persistence gate
+2026-09-03 a573ddcb7c10c17165a0c38d696a77e29f205668 feat: persist principal-scoped semantic commands
+2026-09-03 3184fff6e25ae055773a9b77341e3e19580582e1 docs: record #162 RED evidence
+2026-09-03 5c757371475cd823c6f59bc251c03e0c7c9ea1f7 test: cover user command persistence invariants
+2026-09-03 7110b3a693ba566e1259fd8d3ba8a09bc38dadad test: define first user command persistence contract
+2026-09-03 6e85c351f0c197c032983f538e17669e76cd4564 rage: consume issue 162
 2026-09-03 f25aea5f9e5bceb747cb282b6a28c43f07e5b727 Merge pull request #310 from lost-rob0t/rage/309-prolog-config-recovery
 2026-09-03 3c91e35849e38927285a495b3147a2804b6054a6 rage #309: record Nix contract cleanup
 2026-09-03 fdffbe5184d11ddd232e7ca83dd409dcbf02fe17 fix #309: drop Prolog-RLM lock input
@@ -808,6 +824,8 @@ rage/155-clarification-dialogue.org
 rage/156-prolog-frames.org
 rage/157-execution-plans.org
 rage/158-api-service-providers.org
+rage/162-user-command-persistence.org
+rage/163-user-command-compiler.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
@@ -898,6 +916,8 @@ scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
 scripts/test-server-lifecycle.sh
 scripts/test-streaming-llm.sh
+scripts/test-user-command-compiler.sh
+scripts/test-user-command-persistence.sh
 scripts/test-zara1-protocol.sh
 scripts/test-zara1-tool-approvals.sh
 scripts/test-zara1-voice.sh
@@ -993,6 +1013,8 @@ t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_user_command_compiler.py
+t/test_user_command_persistence.py
 t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
@@ -1109,6 +1131,8 @@ zara/streaming_stt.py
 zara/tasks/__init__.py
 zara/tasks/runner.py
 zara/tasks/store.py
+zara/user_command_compiler.py
+zara/user_commands.py
 zara/voice_runtime.py
 zara/wake.py
 zara/wake_daemon.py
@@ -1156,6 +1180,8 @@ scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
 scripts/test-server-lifecycle.sh
 scripts/test-streaming-llm.sh
+scripts/test-user-command-compiler.sh
+scripts/test-user-command-persistence.sh
 scripts/test-zara1-protocol.sh
 scripts/test-zara1-tool-approvals.sh
 scripts/test-zara1-voice.sh
@@ -1248,6 +1274,8 @@ t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_user_command_compiler.py
+t/test_user_command_persistence.py
 t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py

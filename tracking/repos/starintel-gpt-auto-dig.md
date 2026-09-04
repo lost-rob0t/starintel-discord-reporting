@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-04T00:08:26Z`
+- generated: `2026-09-04T04:38:54Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -164,10 +164,6 @@
 2026-08-21 1d58efa3248c5fbe1e0273a1cb8a769faad14838 data: add Aug 21 indictment sources to Siders packet
 2026-08-21 c85ee38c6b015429fe05216f9fde611fe415692a docs: add Aug 21 indictment sources and strict minor-victim redaction
 2026-08-21 8ed203d52d6f65116a780b6f058a1c46b2f3c3b1 docs: update Siders packet for Aug 21 indictments and victim privacy
-2026-08-20 79db594ffaacdf9fa7ccb55a9ff411a7fb85e458 DNC key people WEF and accountability pass (#1944)
-2026-08-20 267d031cdc04dd55fd446137f47ff503f94a9adf Auto-Dig #2106: use GitHub CI and advance RTCC control chain (#2110)
-2026-08-20 66047287cc19f02ec272d67ccbd554a92d01472b Add BHR Partners depth-12 Indul shareholder and Nijjar chain (#1945)
-2026-08-20 c11023bcac6b35f174dad2c03c01f9e3846df13e Add FBI TSC procurement depths 2–5 and evidence collectors (#1962)
 ```
 
 ## Repository paths changed, last 14 days
@@ -178,8 +174,6 @@
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/auto-dig-prolog-failure-report.yml
-.github/workflows/dnc-key-people-wef-accountability.yml
-.github/workflows/fbi-procurement-collector.yml
 .github/workflows/import-starintel-documents.yml
 .github/workflows/materialize-harvest.yml
 .github/workflows/publish-pages.yml
@@ -203,120 +197,12 @@ agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
-digs/dnc/2026-08-01-key-people-accountability-counterevidence/README.md
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability-seed/README.md
-digs/dnc/2026-08-01-key-people-wef-accountability-seed/manifest.json
-digs/dnc/2026-08-01-key-people-wef-accountability-seed/materialized-head-validation.txt
-digs/dnc/2026-08-01-key-people-wef-accountability-seed/source/current-officer-wef-probes.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability-seed/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/README.md
-digs/dnc/2026-08-01-key-people-wef-accountability/manifest.json
-digs/dnc/2026-08-01-key-people-wef-accountability/part-00/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-01/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-02/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-03/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-04/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-05/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-06/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-07/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-08/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-09/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-10/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-11/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-12/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-13/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-14/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-15/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-16/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-17/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-18/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-19/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-20/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-21/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-22/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-23/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-24/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-25/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-26/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-27/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-28/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-29/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-30/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-31/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-32/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-33/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-34/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-35/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-36/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-37/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-38/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-39/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-40/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-41/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-42/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-43/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-44/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-45/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-46/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-47/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-48/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-49/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-50/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-51/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-52/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-53/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-54/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-55/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-56/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-57/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-58/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-59/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-60/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-61/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-62/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/part-63/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/source/people-priority-inventory.jsonl
-digs/dnc/2026-08-01-key-people-wef-accountability/starintel-documents.jsonl
-digs/dnc/2026-08-01-key-people-wef-expansion/manifest.json
-digs/dnc/2026-08-01-key-people-wef-expansion/starintel-documents.jsonl
-digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/README.md
-digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/merge-plan.json
-digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/source-notes.md
-digs/fed/2026-08-02-bae-thiel-wef-think-tank-cross-dataset-depth-4/starintel-documents.jsonl
-digs/fed/2026-08-02-fbi-tsc-ai-procurement-lineage-depth-2/README.md
-digs/fed/2026-08-02-fbi-tsc-ai-procurement-lineage-depth-2/records-request.md
-digs/fed/2026-08-02-fbi-tsc-ai-procurement-lineage-depth-2/source-notes.md
-digs/fed/2026-08-02-fbi-tsc-ai-procurement-lineage-depth-2/starintel-documents.jsonl
-digs/fed/2026-08-02-fbi-tsc-bae-analysis-services-depth-3/README.md
-digs/fed/2026-08-02-fbi-tsc-bae-analysis-services-depth-3/records-request.md
-digs/fed/2026-08-02-fbi-tsc-bae-analysis-services-depth-3/source-notes.md
-digs/fed/2026-08-02-fbi-tsc-bae-analysis-services-depth-3/starintel-documents.jsonl
-digs/fed/2026-08-02-fbi-tsc-historical-vendor-lineage-depth-4/README.md
-digs/fed/2026-08-02-fbi-tsc-historical-vendor-lineage-depth-4/source-notes.md
-digs/fed/2026-08-02-fbi-tsc-historical-vendor-lineage-depth-4/starintel-documents.jsonl
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/README.md
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/job-surface.md
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/next-pass.md
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/records-request.md
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/source-notes.md
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/starintel-documents.jsonl
-digs/fed/2026-08-02-fbi-tsc-intelliware-agile-award-replacement-depth-5/subcontractor-leads.md
 digs/flock/2026-08-24-request-1901-harvest/README.md
 digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/README.md
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/attack-results.md
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/entities.jsonl
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/investigation-targets.jsonl
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/manifest.json
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/relations.jsonl
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.jsonl
-digs/hunter-biden/2026-08-01-bhr-partners-depth-12/sources.md
-digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/README.md
-digs/seattle/2026-08-20-request-2106-rtcc-narcotics-control/starintel-documents.jsonl
 digs/seattle/2026-08-25-request-2106-harvest/starintel-documents.jsonl
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/README.md
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/sources.md
@@ -326,10 +212,6 @@ digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-
 digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-004.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
 digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
-docs/fbi-procurement-scraper.md
-docs/repository-contract.md
-docs/tsc-job-postings.md
-docs/usaspending-award-transactions.md
 harvest-manifests/request-1904-2026-08-25.json
 harvest-manifests/request-2095-2026-08-25.json
 harvest-manifests/request-2106-2026-08-25.json
@@ -338,20 +220,12 @@ harvest-manifests/request-2286-oregon-2026-08-25.json
 opencode.jsonc
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
-scripts/generate_dnc_key_people_wef_accountability.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
 scripts/materialize_harvest.py
-scripts/scrape_fbi_procurement.py
-scripts/scrape_tsc_job_postings.py
-scripts/scrape_usaspending_award_transactions.py
-skills/validate-starintel-changes/SKILL.md
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
-tests/test_scrape_fbi_procurement.py
-tests/test_scrape_tsc_job_postings.py
-tests/test_scrape_usaspending_award_transactions.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -361,25 +235,16 @@ tests/test_scrape_usaspending_award_transactions.py
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/auto-dig-prolog-failure-report.yml
-.github/workflows/dnc-key-people-wef-accountability.yml
-.github/workflows/fbi-procurement-collector.yml
 .github/workflows/import-starintel-documents.yml
 .github/workflows/materialize-harvest.yml
 .github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
-scripts/generate_dnc_key_people_wef_accountability.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
 scripts/materialize_harvest.py
-scripts/scrape_fbi_procurement.py
-scripts/scrape_tsc_job_postings.py
-scripts/scrape_usaspending_award_transactions.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
-tests/test_scrape_fbi_procurement.py
-tests/test_scrape_tsc_job_postings.py
-tests/test_scrape_usaspending_award_transactions.py
 ```

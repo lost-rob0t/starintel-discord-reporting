@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-04T00:08:39Z`
+- generated: `2026-09-04T04:39:05Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`156bfe9b2caffa1b967e77bee51263ee9e85fb50`](https://github.com/lost-rob0t/prolog-rlm/commit/156bfe9b2caffa1b967e77bee51263ee9e85fb50)
@@ -276,10 +276,6 @@
 2026-08-21 15650d5c8276aa7bf960912865674c9050ed5938 fix: bound adapter metadata at registration (#107)
 2026-08-21 451a37c264dd1deead1574ac81ede868cfa75bfa test: reject oversized adapter metadata (#107)
 2026-08-21 df5920d2b0bc3d0fb7e9071f5eaa0983a3ec75d3 docs: add evolutionary agent search research placeholder
-2026-08-20 290a87f5cff3a2c21b689877b167fa27dae16f61 Verify clean SWI pack installation path (#140)
-2026-08-20 59ca7c94947f5c048e5c4e314f588a63e02fd1c1 Preserve authoritative nested model trajectory events (#139)
-2026-08-20 04d90b608d11196c5a8fd3bdeb235566ef9352fd Make live OpenRouter streaming gate router-safe (#138)
-2026-08-20 767d677c826ed5c0873f1b2ce11c07b6f266497b Add provider-neutral symbolic prompt compiler core (#116)
 ```
 
 ## Repository paths changed, last 14 days
@@ -307,7 +303,6 @@
 AGENTS.md
 Makefile
 README.md
-TODO.md
 agent-zero/README.md
 agent-zero/install.sh
 agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.communication.md
@@ -372,7 +367,6 @@ docs/skill-graph.md
 docs/skills.md
 docs/tool-result-projection.md
 docs/tools.md
-docs/tree-sitter-ffi.md
 docs/typed-plans.md
 flake.lock
 flake.nix
@@ -489,7 +483,6 @@ test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/load_error_status_test.pl
-test/pack_install_smoke.pl
 test/pack_load_smoke.pl
 test/prolog_agent_ui_fixture_command_codec_test.pl
 test/prolog_agent_ui_v1_test.pl
@@ -538,7 +531,6 @@ test/rlm_mcp_declaration_security_test.pl
 test/rlm_mcp_dual_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
-test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
@@ -689,7 +681,6 @@ test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/load_error_status_test.pl
-test/pack_install_smoke.pl
 test/pack_load_smoke.pl
 test/prolog_agent_ui_fixture_command_codec_test.pl
 test/prolog_agent_ui_v1_test.pl
@@ -738,7 +729,6 @@ test/rlm_mcp_declaration_security_test.pl
 test/rlm_mcp_dual_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
-test/rlm_nested_trajectory_test.pl
 test/rlm_nested_usage_test.pl
 test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
