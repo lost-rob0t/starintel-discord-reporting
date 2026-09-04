@@ -1,15 +1,33 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-04T16:25:34Z`
+- generated: `2026-09-04T20:48:09Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`dd03e3309f5c09ddbc76c22ba936ce366508ac2a`](https://github.com/lost-rob0t/zara/commit/dd03e3309f5c09ddbc76c22ba936ce366508ac2a)
-- head date: `2026-09-04T10:00:15-04:00`
-- head subject: Merge pull request #313 from lost-rob0t/rage/164-user-command-authoring
+- head: [`7340ca414fff8b543a3a279acd93c2bb613b1eab`](https://github.com/lost-rob0t/zara/commit/7340ca414fff8b543a3a279acd93c2bb613b1eab)
+- head date: `2026-09-04T16:03:36-04:00`
+- head subject: Merge pull request #314 from lost-rob0t/rage/165-user-command-runtime
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 7340ca414fff8b543a3a279acd93c2bb613b1eab Merge pull request #314 from lost-rob0t/rage/165-user-command-runtime
+2026-09-04 446bffa9b3a8db130f037ebd6cea95b699e618f4 docs(rage): record strict #165 gate recovery
+2026-09-04 69ff37f8b5d43d07bbf5e691abb57f146cdc6d7c Merge 23fcd224a2742b76eb5b4c6d21d4776fc8c414e5 into a1b38d9b80a2f4dabe06d53d1185ff23acbbb84d
+2026-09-04 23fcd224a2742b76eb5b4c6d21d4776fc8c414e5 rage: record #315 recovery before #165 re-gate
+2026-09-04 996440122611c978a0b2d56558fafcbc67bb425e test: sync route-backpressure contract from #315
+2026-09-04 a1b38d9b80a2f4dabe06d53d1185ff23acbbb84d Merge pull request #316 from lost-rob0t/rage/315-route-backpressure-test-contract
+2026-09-04 fbc22c09e4e4e40d5c8523b960f2c4efdeb81851 test: assert route-local ordering under backpressure
+2026-09-04 e3ee03164a09bd8b067fe7cc4cc5b661dba9db45 rage: consume #315 route backpressure test regression
+2026-09-04 8268443861524a27191d5529281585c827166e12 rage: record #165 schema placeholder RED
+2026-09-04 57734bfa6ca70fb96c3715584d80c318722505e8 fix: resolve schema-legal command placeholders
+2026-09-04 9fd706b6dd123663bf6292d9da5fea37a5291f1a fix: align command placeholders with slot schema
+2026-09-04 96dde9843aa57e5e968bf4d470d4dfcc5505eee3 test: cover schema-legal hyphenated slot placeholders
+2026-09-04 f5146cb2ad3a5a5011b2ab95d8e3811a4ad78f71 feat: validate user command trigger placeholders
+2026-09-04 68a323fa9b58b2db50d38b45a7ec24a2c50e1985 feat: resolve compiled user commands at runtime
+2026-09-04 e395daf082b870c9f8808238014fb85419839ac1 test: use overlapping distinct command templates
+2026-09-04 1fd1ce78d3d111b172afd295ec42b196f3b6134a rage: record #165 deterministic red
+2026-09-04 d992fd9c9b9f21309be8290bc705a8dc244b675f test: define parameterized user command runtime contract
+2026-09-04 15e942bb16e85346733fa6c2c7963015579a0ed7 rage: consume #165 user command runtime
 2026-09-04 dd03e3309f5c09ddbc76c22ba936ce366508ac2a Merge pull request #313 from lost-rob0t/rage/164-user-command-authoring
 2026-09-04 8ba768b17da7a40773d3141fa2289b4abebf7ebe rage: record authoring cancellation acceptance fix
 2026-09-04 986d4252cc6818921f9dedaa755d4e7bfafef5de fix: route authoring cancellation through clarification control
@@ -845,6 +863,7 @@ rage/158-api-service-providers.org
 rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
+rage/165-user-command-runtime.org
 rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
@@ -902,6 +921,7 @@ rage/28-streaming-llm.org
 rage/309-prolog-config-recovery-design.org
 rage/309-prolog-config-recovery-research.org
 rage/309-prolog-config-recovery.org
+rage/315-route-backpressure-test-contract.org
 rage/5-config-durability.org
 rage/daemon-128-design.org
 rage/daemon-128-research.org
@@ -1037,6 +1057,7 @@ t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
 t/test_user_command_persistence.py
+t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
@@ -1155,6 +1176,7 @@ zara/tasks/runner.py
 zara/tasks/store.py
 zara/user_command_authoring.py
 zara/user_command_compiler.py
+zara/user_command_runtime.py
 zara/user_commands.py
 zara/voice_runtime.py
 zara/wake.py
@@ -1302,6 +1324,7 @@ t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
 t/test_user_command_persistence.py
+t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
 t/test_voice_output_protocol.py
