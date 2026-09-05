@@ -15,6 +15,26 @@
     "reports/starintel-updates-changelog/2026-09-03T05-51-00Z-report.md": {
       "reason": "missing changes heading; changelog needs a direct landed commit link",
       "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-05T06-49-02Z-report.md": {
+      "reason": "changelog needs a direct landed commit link",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-05T06-49-04Z-report.md": {
+      "reason": "changelog needs a direct landed commit link",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-05T06-49-07Z-report.md": {
+      "reason": "duplicate report: exact report body already delivered as reports/starintel-updates-changelog/2026-09-05T06-55-02Z-report.md",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-05T06-49-09Z-report.md": {
+      "reason": "changelog needs a direct landed commit link",
+      "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-09-05T06-49-11Z-report.md": {
+      "reason": "missing changes heading; changelog needs a direct landed commit link",
+      "status": "blocked"
     }
   },
   "delivery_receipts": {
@@ -2150,15 +2170,15 @@
     }
   },
   "last_backlog_scan": {
-    "blocked": 4,
+    "blocked": 9,
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
       "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 165,
-    "verified_deliveries": 161
+    "total_reports": 184,
+    "verified_deliveries": 175
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
