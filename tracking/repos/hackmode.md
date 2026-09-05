@@ -1,15 +1,16 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-05T00:08:27Z`
+- generated: `2026-09-05T04:34:47Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`3c04418492bae0a7f5c4f8389e01f7469303ce84`](https://github.com/lost-rob0t/hackmode/commit/3c04418492bae0a7f5c4f8389e01f7469303ce84)
-- head date: `2026-09-01T01:28:25-04:00`
-- head subject: Retire Hackmode Auto-RAGE ownership
+- head: [`3b4e2da0dbd808f46711a0784f6a4fbdf15df583`](https://github.com/lost-rob0t/hackmode/commit/3b4e2da0dbd808f46711a0784f6a4fbdf15df583)
+- head date: `2026-09-04T21:55:10-04:00`
+- head subject: agent-zero: restore two Hackmode development workers
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 3b4e2da0dbd808f46711a0784f6a4fbdf15df583 agent-zero: restore two Hackmode development workers
 2026-09-01 3c04418492bae0a7f5c4f8389e01f7469303ce84 Retire Hackmode Auto-RAGE ownership
 2026-09-01 0edf029b0d7bf1a7e04447d0616032e654d2a3c8 Remove retired Hackmode RAGE installer
 2026-09-01 61e8f65989df28c91fcece952053fd64c81ca9d7 Remove retired Hackmode RAGE PR lanes
@@ -134,8 +135,11 @@ agent-zero/install.sh
 agent-zero/pr-lanes.txt
 agent-zero/usr/agents/hackmode-rage-database/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/hackmode-rage-database/prompts/agent.system.main.specifics.md
+agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.communication.md
 agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.main.specifics.md
+agent-zero/usr/agents/hackmode-rage-tooling/prompts/agent.system.communication.md
+agent-zero/usr/agents/hackmode-rage-tooling/prompts/agent.system.main.specifics.md
 docs/architecture/expert-layer.org
 docs/architecture/ipx.org
 docs/architecture/rage-workers.org

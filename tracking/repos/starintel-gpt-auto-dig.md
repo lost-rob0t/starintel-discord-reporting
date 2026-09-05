@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-05T00:08:19Z`
+- generated: `2026-09-05T04:34:34Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
@@ -155,15 +155,6 @@
 2026-08-24 ed60a476792ccee83e41973f96e86914b8943dba chore: pin OpenCode web MCP versions
 2026-08-24 4fb9a45fdb0784c45b86ba34b3a3aa10081f3d38 chore: add Brave Search and web fetch MCPs for OpenCode
 2026-08-24 cdaa15e118f00eb471320c44a7b17d2aaad4e4a9 Harvest mature Rensselaer Sheriff evidence from request #1901
-2026-08-21 dbec0aa6eb61e3670a499e25fe6356af31d74087 docs: register linked indictment shard
-2026-08-21 6273cd6045e8396d4f97a8249b7fd82dd75811ff data: register linked indictment shard in packet manifest
-2026-08-21 5e8b351abe9ba435cddeaeb6e93eb13f6b77edaf data: add linked Investigation One adult indictment records
-2026-08-21 2a294db3940720f983995f845fe5befc59c014f3 data: add adult defendants from linked Vinton investigation
-2026-08-21 7c763e00b6679b0a65d00e2f8191984d4c4b60cf data: normalize Aug 21 Siders indictment update
-2026-08-21 02c81282c9ce91eb18d09101e55616abca1fe234 data: update Siders legal case to Aug 21 indictment posture
-2026-08-21 1d58efa3248c5fbe1e0273a1cb8a769faad14838 data: add Aug 21 indictment sources to Siders packet
-2026-08-21 c85ee38c6b015429fe05216f9fde611fe415692a docs: add Aug 21 indictment sources and strict minor-victim redaction
-2026-08-21 8ed203d52d6f65116a780b6f058a1c46b2f3c3b1 docs: update Siders packet for Aug 21 indictments and victim privacy
 ```
 
 ## Repository paths changed, last 14 days
@@ -204,12 +195,6 @@ digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
 digs/seattle/2026-08-25-request-2106-harvest/starintel-documents.jsonl
-digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/README.md
-digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/sources.md
-digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-001.jsonl
-digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-002.jsonl
-digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-003.jsonl
-digs/violent-offenders/2026-08-19-siders-vinton-child-abuse/starintel-documents-004.jsonl
 digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
 digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
 harvest-manifests/request-1904-2026-08-25.json

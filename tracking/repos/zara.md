@@ -1,15 +1,21 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-05T00:08:28Z`
+- generated: `2026-09-05T04:34:48Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`59e9654176fa02eb4aab4cbed4e1532d02f71d2f`](https://github.com/lost-rob0t/zara/commit/59e9654176fa02eb4aab4cbed4e1532d02f71d2f)
-- head date: `2026-09-04T20:02:47-04:00`
-- head subject: Merge pull request #317 from lost-rob0t/rage/13-open-app-allowlist-regression
+- head: [`da515c80a2ba18e889f62dc8f1816c8c95249f43`](https://github.com/lost-rob0t/zara/commit/da515c80a2ba18e889f62dc8f1816c8c95249f43)
+- head date: `2026-09-04T23:02:26-04:00`
+- head subject: Merge pull request #318 from lost-rob0t/rage/133-daemon-default-regression
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 da515c80a2ba18e889f62dc8f1816c8c95249f43 Merge pull request #318 from lost-rob0t/rage/133-daemon-default-regression
+2026-09-04 10ff76e5c53d5c189572a06d58f4ab430ba0a4bd RAGE #133: keep daemon-default CLI diff minimal
+2026-09-04 a20a343b9632afe59474d5f4870a0ebe4e7d24aa RAGE #133: record RED and daemon-default implementation
+2026-09-04 2f5effd17e388637974ce2d6c7917bbece1db614 RAGE #133: default one-shot commands to daemon client
+2026-09-04 1de5c5ad041a54868aaeaf6c4163bd9fbeab1b8b test: prove default timer command uses daemon client
+2026-09-04 d34f1365bad6653d61e4d38dfd3b4e0e0a22e5e5 rage: start #133 daemon-default regression recovery
 2026-09-04 59e9654176fa02eb4aab4cbed4e1532d02f71d2f Merge pull request #317 from lost-rob0t/rage/13-open-app-allowlist-regression
 2026-09-04 1c9f7fe5c7af64f83b3be29f3a7958fbe5a34fdc fix: fail closed on unconfigured app launches
 2026-09-04 118bf44a3891a3d257d88c0b54babe6c9847ecba RAGE #13: record exact-head RED evidence
@@ -746,24 +752,6 @@
 2026-08-22 0a0aa8bda5c6b1e8000dad40c740493449a031da feat(skills): bootstrap Zara RAGE skill
 2026-08-22 9b84d84052c0b948c75dcd75decd2fba92b51a78 docs(agents): define issue-driven RAGE protocol
 2026-08-22 7f6d380f857b351b42a264bb796d1f10bb6cc6a6 chore(rage): mark daemon RAGE start commit
-2026-08-22 12d28bcb28a2b48750875050ad7c21ebbbd636d8 Merge pull request #136 from lost-rob0t/feature/mcp-client-support-current
-2026-08-21 61f0e2d0a26e8c87b2479cb92c7c4da3e9e83e15 test removed RLM backend fails closed
-2026-08-21 ea055f1a8899d0fcc81256d045fa4e040d39926b make MCP agent integration fail closed
-2026-08-21 8cc5cbd42006bf54fe25bbf761595d024306a406 make MCP E2E dependencies fail closed
-2026-08-21 4baa05b67e9602da9dad26829bac77eea18259ff test private MCP config permissions
-2026-08-21 1a76c1c2953dd6105af1a48022ec15bad9ca0388 harden MCP config file permissions
-2026-08-21 c8f12b6e8b537b0b2813c482bd718ded8ed25cfe remove Prolog-RLM backend benchmark
-2026-08-21 32890525a39903545a19700e738b387e182705a8 remove Prolog-RLM live smoke
-2026-08-21 66c7151590d9b3be2f0e09f286296d3e9089a585 remove Prolog-RLM protocol tests
-2026-08-21 1a456eb1460ae67b3e483851563cc9f2540686b9 remove Prolog-RLM backend tests
-2026-08-21 e03ec6f65f736cc51a96a1efea653b1131263c4a remove Prolog-RLM runtime adapter
-2026-08-21 0d9990d20967118002ff4905c026c7d94419ad9d remove Prolog-RLM sidecar
-2026-08-21 7fd51963ce9b3c9dcac8e507b5adab496f9f101d remove Prolog-RLM backend docs
-2026-08-21 12e0eca4744d90cdd2569c5c92103608e683bf91 remove Prolog-RLM Nix wiring
-2026-08-21 7a9ca07eff4cbf83eedbc75e419617973672b257 remove Prolog-RLM flake lock input
-2026-08-21 76e27433171b46e719010d0a98c7fb3c332d47f5 drop Prolog-RLM CI gates
-2026-08-21 4b3af713816065e7e67d6b586735cd6ff0a9a5df remove Prolog-RLM runtime backend
-2026-08-21 94c8c8f9cf05b7bff62f3a4b0690077f6d58aed2 feat: carry native MCP client support onto current master
 ```
 
 ## Repository paths changed, last 14 days
@@ -814,7 +802,6 @@ android/patch-trealla-module-path.sh
 android/settings.gradle.kts
 docs/desktop-copilot-design.md
 docs/intentframe-contract.md
-docs/prolog-rlm-backend.md
 docs/server.org
 flake.lock
 flake.nix
@@ -836,7 +823,6 @@ modules/intent_resolver.pl
 modules/llm_client.pl
 modules/normalizer.pl
 modules/rlm_rewrite.pl
-modules/rlm_sidecar.pl
 modules/sound.pl
 modules/zara_hooks.pl
 planning/backlog.pl
@@ -856,6 +842,7 @@ rage/133-client-migration-design.org
 rage/133-client-migration-final-gate.org
 rage/133-client-migration-research.org
 rage/133-client-migration.org
+rage/133-daemon-default-regression.org
 rage/133-post-merge-evidence.org
 rage/134-daemon-release-design.org
 rage/134-daemon-release-gate.org
@@ -940,7 +927,6 @@ rage/daemon-130-research.org
 rage/daemon-130-security.org
 rage/daemon-139.org
 rage/long-horizon-tasks.org
-scripts/benchmark-agent-backends.py
 scripts/benchmark-voice.py
 scripts/import-backlog.py
 scripts/test-all.sh
@@ -956,7 +942,6 @@ scripts/test-principal-isolation.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
-scripts/test-prolog-rlm-live.py
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
@@ -975,7 +960,6 @@ skills/rage/SKILL.md
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
-t/fixtures/mcp_test_server.py
 t/llm_clients.pl
 t/process_safety.pl
 t/prolog_config.pl
@@ -1018,10 +1002,6 @@ t/test_host_api_service.py
 t/test_latency_metrics.py
 t/test_llm.py
 t/test_llm_streaming.py
-t/test_mcp_agent_integration.py
-t/test_mcp_config.py
-t/test_mcp_e2e.py
-t/test_mcp_session.py
 t/test_memory.py
 t/test_packaging.py
 t/test_plan_executor.py
@@ -1031,8 +1011,6 @@ t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
 t/test_principal_runtime_wiring.py
 t/test_prolog_frame_adapter.py
-t/test_prolog_rlm_backend.py
-t/test_prolog_rlm_protocol_edges.py
 t/test_prolog_studio.py
 t/test_protocol.py
 t/test_protocol_runtime.py
@@ -1040,7 +1018,6 @@ t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_quick_handoff_edges.py
 t/test_runtime_backend_publisher.py
-t/test_runtime_backend_selection.py
 t/test_runtime_host.py
 t/test_runtime_host_clarification.py
 t/test_runtime_intent_routing.py
@@ -1109,7 +1086,6 @@ wiki/capability-plans.org
 wiki/customization.org
 wiki/install.org
 wiki/long-horizon-tasks.org
-wiki/mcp.org
 wiki/plugins.org
 wiki/tool-approvals.org
 zara/__main__.py
@@ -1125,7 +1101,6 @@ zara/agent/stream_events.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/agent/user_hooks.py
-zara/agent_cli.py
 zara/client.py
 zara/config.py
 zara/console.py
@@ -1147,11 +1122,6 @@ zara/desktop/windows/settings.py
 zara/desktop/windows/status.py
 zara/latency.py
 zara/llm.py
-zara/mcp/__init__.py
-zara/mcp/cli.py
-zara/mcp/config.py
-zara/mcp/manager.py
-zara/mcp/session.py
 zara/memory.py
 zara/plugins/api.py
 zara/plugins/builtin/__init__.py
@@ -1171,7 +1141,6 @@ zara/runtime/frames.py
 zara/runtime/host.py
 zara/runtime/intent_router.py
 zara/runtime/plans.py
-zara/runtime/prolog_rlm.py
 zara/runtime/tts_output.py
 zara/security.py
 zara/security_gateway.py
@@ -1211,7 +1180,6 @@ android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/flake.nix
 flake.nix
-scripts/benchmark-agent-backends.py
 scripts/benchmark-voice.py
 scripts/import-backlog.py
 scripts/test-all.sh
@@ -1227,7 +1195,6 @@ scripts/test-principal-isolation.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
-scripts/test-prolog-rlm-live.py
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
@@ -1243,7 +1210,6 @@ scripts/test-zara1-voice.sh
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
-t/fixtures/mcp_test_server.py
 t/llm_clients.pl
 t/process_safety.pl
 t/prolog_config.pl
@@ -1286,10 +1252,6 @@ t/test_host_api_service.py
 t/test_latency_metrics.py
 t/test_llm.py
 t/test_llm_streaming.py
-t/test_mcp_agent_integration.py
-t/test_mcp_config.py
-t/test_mcp_e2e.py
-t/test_mcp_session.py
 t/test_memory.py
 t/test_packaging.py
 t/test_plan_executor.py
@@ -1299,8 +1261,6 @@ t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
 t/test_principal_runtime_wiring.py
 t/test_prolog_frame_adapter.py
-t/test_prolog_rlm_backend.py
-t/test_prolog_rlm_protocol_edges.py
 t/test_prolog_studio.py
 t/test_protocol.py
 t/test_protocol_runtime.py
@@ -1308,7 +1268,6 @@ t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_quick_handoff_edges.py
 t/test_runtime_backend_publisher.py
-t/test_runtime_backend_selection.py
 t/test_runtime_host.py
 t/test_runtime_host_clarification.py
 t/test_runtime_intent_routing.py

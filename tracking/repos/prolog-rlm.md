@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-05T00:08:26Z`
+- generated: `2026-09-05T04:34:45Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506`](https://github.com/lost-rob0t/prolog-rlm/commit/6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506)
@@ -315,7 +315,6 @@
 2026-08-21 076e1d9b7ff0d357907bb4d9db51bf3795e7aa08 fix(effect): treat anonymous dict tags as representation-only
 2026-08-21 62dfbfc8d303415540966e885f796df4483cdaf1 fix(authority): canonicalize anonymous dict tags in fingerprints
 2026-08-22 3014b52ff4b2ba3d5721192d4ba32cec3507d5e0 fix: eliminate remaining PlUnit false-green paths
-2026-08-21 490194b2e47002c4b7a9ae4d8921f11719e26acd fix: make deterministic PlUnit gate fail closed
 ```
 
 ## Repository paths changed, last 14 days
@@ -635,9 +634,7 @@ test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
-test/run_tool_mcp_async_tests.pl
 test/run_tree_sitter_tests.pl
-test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
@@ -846,9 +843,7 @@ test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
 test/run_tests.pl
-test/run_tool_mcp_async_tests.pl
 test/run_tree_sitter_tests.pl
-test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
