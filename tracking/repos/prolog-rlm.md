@@ -1,40 +1,70 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-04T20:48:05Z`
+- generated: `2026-09-05T00:08:26Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`06e8fb41254df5c9800315931e285a2ebd2fe990`](https://github.com/lost-rob0t/prolog-rlm/commit/06e8fb41254df5c9800315931e285a2ebd2fe990)
-- head date: `2026-09-04T12:12:59-04:00`
-- head subject: add icon
+- head: [`6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506`](https://github.com/lost-rob0t/prolog-rlm/commit/6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506)
+- head date: `2026-09-04T19:44:22Z`
+- head subject: Merge pull request 'ci: run tree-sitter FFI gate on a container-safe nix runner' (#359) from ci/tree-sitter-runner-labels into main
 
 ## Git log, last 14 days
 
 ```text
-2026-09-04 06e8fb41254df5c9800315931e285a2ebd2fe990 add icon
-2026-09-04 cac770b1791575832c5a4349465ff9738d10beb3 aprovved research
-2026-09-04 0de5105512eeafaabc2b7d39500ce62c25b5ec75 verify: record issue-336 research-slice observations at final HEAD
-2026-09-04 c33f2a58e7d5264118f49901cc9007a39d2d31b5 verify: match recorded command shape (command/1) in requirement observations
-2026-09-04 f7626f11466522772ca62975bb8825645b49777d research: RLM-RESEARCH-336 text streaming through the completion boundary
-2026-09-02 55a9f431f257f72bfc729772041056e327fad70e cd: reference nix-installer-action by full upstream URL
-2026-09-02 291faef5d2db07f1b6a0bf69f48721a63219f7d6 docs: record #97 research Q&A notes
-2026-09-02 9724cafcb2c97c04e137482bdddbedbb0aee7178 docs(research): approve RLM-RESEARCH-353 (operator)
-2026-09-02 3c29ca8a9cb772c0ad8921cbd88157101c0baaff chore: re-observe #97 evidence at head 13efeac
-2026-09-02 b2e6913405bd3ad640e9cbc673c8687eacc0f736 chore: ignore prolog-verify lock file
-2026-09-02 52a3280cfe134ff3f5448431725e791fce6ca80b chore: track #97 prolog-verify evidence and gate state
-2026-09-02 e9ba071c40a633ccd9d6d2f57715d083d830334c feat: implement #97 tree-sitter query pack and capture APIs
-2026-09-02 fcc900889c076eda7ca359c37d555d99df78e7ca design: record #97 design approval and hand off realization to next slice
-2026-09-02 b31b29bc9433457e4c7ae4194409011e8488cf40 design: record #97 query/capture ADADR design
-2026-09-02 c50c9defe80074ffa983ae2007d4987b09d477ba research: record RLM-RESEARCH-012 approval
-2026-09-02 e6dcb57cb5d6160a0e3b99443e4041cde704144b research: author RLM-RESEARCH-012 for #97 query/capture APIs
-2026-09-02 0dfa76141cbf7f704d2837c4acc1ea5ad973ac64 research: operator resolves OQ3 - keycard rule for model grants
-2026-09-02 138b58c89e6e819bf44beee318e0e036713b488b research: OQ3 - model grants are structural, advertisement distinction dissolves
-2026-09-02 65e0b50ba8b44a4380f0b0e2ad84dac24424d9ae research: operator resolves OQ2 - adopt turn-cost-aware admission direction
-2026-09-02 4d8912da5abbffb37eb2810406167187da83c5d8 research: OQ2 operator steering - constant time budgeting is the fundamental problem
-2026-09-02 e13e7bef3876f8015fafe0dc6910bda5bcb27aa2 research: operator resolves OQ6 - expert availability is a first-class event
-2026-09-02 e9a543849449be29789c7eddbd2c7794c4007150 research: operator rejects relaxing single-effect-call rule (closes OQ5)
-2026-09-02 28f2952a8e21f55b600e1823c1124db5cb79518f research: answer operator note on effect batching (open question 5)
-2026-09-02 05f433fc2f50e5e60e92ba2ae1991e72f1a9388d research: convert record to canonical org template (RLM-RESEARCH-353)
-2026-09-02 3e772eb43c06061648b919c0178812c68dd502b0 research: experts as native direct-mode tools (verified analysis)
+2026-09-04 6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506 Merge pull request 'ci: run tree-sitter FFI gate on a container-safe nix runner' (#359) from ci/tree-sitter-runner-labels into main
+2026-09-04 e244020d5ce52d3e7c4217659187c2ceaf6fc842 ci: re-trigger canonical gate after cancelled run 853
+2026-09-04 22a9a489a10d7423502ef95e94be3a22399c8358 chore(verify): record PR 359 merge reconcile evidence at 23b9aff
+2026-09-04 23b9aff8e19c9d17f711110d45a926a84006e956 Merge main into ci/tree-sitter-runner-labels: reconcile verification workspace
+2026-09-04 af9911ae30283e3c9b03000438b463f73d861517 Merge pull request 'S0: adopt closed project-op plan vocabulary + dependency-graph executor (#293)' (#335) from issue-293 into main
+2026-09-04 d211e682a7317ae4eabc85edf16308cc1480f4de chore(verify): record PR 335 merge reconcile evidence at a0272a3
+2026-09-04 a0272a39972d4fdbd33c8396e85914b6a983e49f Merge main into issue-293: reconcile verification workspace with #349/#350
+2026-09-04 c0c201f985540df596b6acd8520248e42e84c6bc chore(verify): record PR 335 local test evidence at d2cc7a9
+2026-09-04 2962d896355749b43078c12c5a7ee24496557667 Merge pull request 'design+realize: RLM-336 text streaming through the completion boundary' (#350) from research/text-streaming into main
+2026-09-04 8f0515da413a4c363356c0e5b8eeedff5dd29a58 verify: record ci-tree-sitter evidence at rebased HEAD
+2026-09-04 4e712eab5b8e867e45e076761be24d40a0e1fa78 ci: run tree-sitter FFI gate on a container-safe nix runner
+2026-09-04 9006c22508e8ce19f4ea8e2f55e8fc9883a3ac4f verify: record issue-336 realization observations at final HEAD
+2026-09-04 bef1b6ed659fb6a915a04f693630a4af4af15428 realize: RLM-336 text streaming through the completion boundary
+2026-09-04 a1332975c2fdefa8bc2726c92592b0201f8beb74 Merge pull request 'docs: add editor-handoff policy to AGENTS.md' (#352) from docs/agent-editor-handoff into main
+2026-09-04 e7686e71ca85bb9e37d4e503ac3d624109050a2b docs: add editor-handoff policy to AGENTS.md
+2026-09-04 15261a3e5a76654a13281eed0200fd4548368bf8 design: record operator design approval for RLM-336
+2026-09-04 b34f3d9f64d888631c6456a5035fd6b8a8f64272 design: RLM-336 text streaming through the completion boundary
+2026-09-04 4531b1e6dab45772450cff11455539842d9bf9ad research: operator approves RLM-RESEARCH-336 for realization
+2026-09-04 c37acbdd89f61de6db60e79a9e13215c18e4c42d Merge pull request 'research: RLM-RESEARCH-336 text streaming through the completion boundary' (#349) from research/text-streaming into main
+2026-09-04 d96d5cb86489657a7bba3d8f959acb823308bc3b aprovved research
+2026-09-04 bd457a546feac5e50cae43137730d7ba12c07e7e verify: record issue-336 research-slice observations at final HEAD
+2026-09-04 17ed526318a20e3718ef36828a340193d84fa818 verify: match recorded command shape (command/1) in requirement observations
+2026-09-04 fd8a7af7e10f5c6b643b248252363787957ff1e5 research: RLM-RESEARCH-336 text streaming through the completion boundary
+2026-09-04 d2cc7a99879b845260bdbb8f82cb2925625cab70 chore(verify): record CI whitespace fix evidence
+2026-09-04 43405ed73d66da49564eb3ac255f0efaaf3d31a7 style(plan-graph): remove EOF whitespace blocking CI
+2026-09-03 56901058ec3034c231dbb2462a715420787605bf chore(verify): record #293 adoption gate evidence at head 92550f5
+2026-09-03 92550f5cbe241db3deffddc9b3c5aaf008882bd4 feat(plan-graph): reconcile #293 adoption with D6-11 dispatch and design gate
+2026-09-03 6d5b872972b998d20cb797a8f6f385fc59da5e24 Merge commit '653fed1' into issue-293
+2026-09-03 d5cb6c619f679c9da8939a4178c8a7dd94fbd80e Merge rage/288-spec-plan-graph-executor (71a10ae) into main
+2026-09-02 653fed13ad35b4f8880221c0cff0e60a02cd3dc3 feat(plan-graph): D6-11 plan-native deterministic mutations (#355)
+2026-09-03 466bde0d4c3fc17f62d3bba1b40465e4c2ba6832 Merge pull request 'cd: reference nix-installer-action by full upstream URL' (#298) from cd/nix-installer-action-url into main
+2026-09-02 c6e921363c32e05923a98577e3c89be6b7782e52 cd: reference nix-installer-action by full upstream URL
+2026-09-02 3aa16838f58915a3ec392d4832571828604c7c76 Merge pull request 'docs: record #97 research Q&A notes' (#297) from rage/97-query-capture-apis into main
+2026-09-02 be9e8b20c6bd563b822d7b191516c938371a6ab9 docs: record #97 research Q&A notes
+2026-09-02 ae14ae11ae5a99d8e8dc607fc714bb61d7326126 Merge pull request 'docs(research): approve RLM-RESEARCH-353' (#296) from research/expert-direct-tool-projection into main
+2026-09-02 d0d6c0b7792f526bb6923b46f4e18741c94389b2 docs(research): approve RLM-RESEARCH-353 (operator)
+2026-09-02 037ea1f149a8b2bb75fad0a0b14fe44f4e587d49 Merge pull request 'feat: implement #97 tree-sitter query pack and capture APIs' (#294) from rage/97-query-capture-apis into main
+2026-09-02 6153b00a4cfdd3f51c3463b78b4f53484ad73a21 chore: re-observe #97 evidence at head 13efeac
+2026-09-02 053dd796e742e42a3f1da1d9b801a3065b53f78a Merge pull request '[RESEARCH] Experts as native direct-mode tools (RLM-RESEARCH-353)' (#295) from research/expert-direct-tool-projection into main
+2026-09-02 13efeac4b693cbf97368acd39dc0298de8315e76 chore: ignore prolog-verify lock file
+2026-09-02 e6e49170805400596f1ac4d3e31adc3a3194334e chore: track #97 prolog-verify evidence and gate state
+2026-09-02 bf8b08ca9ed0bb95133dfa6df9aff5d063a94cab research: operator resolves OQ3 - keycard rule for model grants
+2026-09-02 89b5eb387dd8305d15ee3968cc6c9303eece71e5 research: OQ3 - model grants are structural, advertisement distinction dissolves
+2026-09-02 48f32941cbbfeddb5f138a93767c8a6f2f85f9fb research: operator resolves OQ2 - adopt turn-cost-aware admission direction
+2026-09-02 3334eaaee74e718273044022e91c4e4e4812878e research: OQ2 operator steering - constant time budgeting is the fundamental problem
+2026-09-02 c24e87cc18c2dbcee91017eb3a6e234f7580adcd feat: implement #97 tree-sitter query pack and capture APIs
+2026-09-02 b20d96a5a2220760b6d3b502be637dfee4674e6a research: operator resolves OQ6 - expert availability is a first-class event
+2026-09-02 91f5b2993881dea088cef428c72403c441ae6f86 research: operator rejects relaxing single-effect-call rule (closes OQ5)
+2026-09-02 ca29ec1c26a3995c6993b3ee44712a933afa4561 research: answer operator note on effect batching (open question 5)
+2026-09-02 5a6e89c4c08d1ad18917df5796c6b91a5584e77c research: convert record to canonical org template (RLM-RESEARCH-353)
+2026-09-02 59f2a72f0d9849db37096323abfcc786dd95c401 research: experts as native direct-mode tools (verified analysis)
+2026-09-02 eba9609b6831ee9873c8880e420434d028ab02c8 design: record #97 design approval and hand off realization to next slice
+2026-09-02 bb729f427eb9e711964ca1474ec513c8d9ca6349 design: record #97 query/capture ADADR design
+2026-09-02 31f744c94ffdeed62ffc919690663c477ce72a2b research: record RLM-RESEARCH-012 approval
+2026-09-02 4ab728553c65b574c440066f02aadbf9e9893225 research: author RLM-RESEARCH-012 for #97 query/capture APIs
 2026-09-01 156bfe9b2caffa1b967e77bee51263ee9e85fb50 Add versioned project syntax observations
 2026-09-01 39b278589dae8518e583778cd6671a6cb1e026c7 test: import library(http/json) for atom_json_dict on SWI 9
 2026-09-01 7a701578a50735d1383cf1709e1d32a3a6af0ed8 test: isolate the tool-cutoff test from the wall-clock reservation
@@ -109,6 +139,8 @@
 2026-08-29 eea576f9b13e9ed3f974a4af4944c9c87183e841 fix: render runtime any as unconstrained JSON Schema
 2026-08-29 1a7bb00115366603dfe38a3ec6838d055f1f7160 ci: apply and test issue 298 schema fix
 2026-08-29 af94929ebd094c69fa64795152bdabb9e054938b test: reproduce MCP any-schema direct projection failure
+2026-08-28 71a10ae238dd0fa288005bf10892dc8d865ef2f3 fix(plan-graph): final-review hardening for #288
+2026-08-28 496e48fdd43ff47a4b6c867d70d13d46d723123f feat(plan-graph): closed project-op vocabulary and ready_step dependency-graph executor
 2026-08-27 a89175bf925df3afa358f8d05a370fe2a03e2117 feat: run typed-plan model steps through native provider sessions
 2026-08-27 1c6022821064b10481acbd08a55d97dcdb89c351 docs: treat typed plans as first-class
 2026-08-27 5a365bbf0560292856f87aedd4c08e2f9ab2dde5 fix: preserve contextual compilation in direct mode
@@ -125,6 +157,10 @@
 2026-08-27 4b1a5dd8c5320edac180b65f343ea1c92ec7a95b fix: close direct-or-plan root decision in rlm_completion
 2026-08-27 2ef6b66a81faac2397476e4a91d7352183f82ab4 test: add live planner context acceptance
 2026-08-27 6b58e0f6f690597a3e59b8571f4c1fbe0e483da2 fix: add corrective planner context
+2026-08-28 3899fb2c11b68a6e90e9ab8f2e83c49f88aa14a6 docs(design): plan-graph executor design record for #288
+2026-08-28 c5f0f2d596dfa58e603d10b478d88aed9109a49d docs(research): fold adversarial review into RLM-RESEARCH-027 and reconcile #288
+2026-08-28 8b00e9dfce1fb748a93d0232afa0cf880dac6192 docs(research): RLM-RESEARCH-027 spec/plan graph executor + #288 contract gate
+2026-08-28 9b90098e93c24190a1b0c55161b9102f6c9945ef docs(rage): open #288 spec/plan graph iteration log
 2026-08-27 7165680e31fa67053f19887026cd00e4e59ed0aa docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
 2026-08-27 87189f7128bacfe97cd09874e958dd07e03322d3 fix: make durable mount recovery race safe
 2026-08-27 73ac81404aa1bd68cf1900a9121cfc733e3e621f fix: bind artifact value before mount projection
@@ -280,9 +316,6 @@
 2026-08-21 62dfbfc8d303415540966e885f796df4483cdaf1 fix(authority): canonicalize anonymous dict tags in fingerprints
 2026-08-22 3014b52ff4b2ba3d5721192d4ba32cec3507d5e0 fix: eliminate remaining PlUnit false-green paths
 2026-08-21 490194b2e47002c4b7a9ae4d8921f11719e26acd fix: make deterministic PlUnit gate fail closed
-2026-08-21 e32dd1486ab81e3ecda9e73455309db7434d59a3 Merge pull request #153 from lost-rob0t/fix/flake-lock-reproducibility
-2026-08-21 f22eff28d6d1f1a91cbe72ae18944fdd3562c8a8 ci: require pinned flake inputs
-2026-08-21 db16adac41108c45feb955b2083fe5a1bd1002bb nix: pin flake inputs
 ```
 
 ## Repository paths changed, last 14 days
@@ -364,6 +397,7 @@ docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/evolution-kernel.md
 docs/external-tool-libraries.md
+docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-source-registry.md
 docs/project-syntax.md
@@ -374,6 +408,7 @@ docs/providers.md
 docs/research-record-template.org
 docs/research/expert-direct-tool-projection.md
 docs/research/expert-direct-tool-projection.org
+docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
 docs/result-acceptance.md
 docs/skill-graph.md
@@ -381,9 +416,7 @@ docs/skills.md
 docs/tool-result-projection.md
 docs/tools.md
 docs/typed-plans.md
-flake.lock
 flake.nix
-icon.png
 prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/prolog_agent_ui_v1.pl
@@ -413,6 +446,7 @@ prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_outcome.pl
 prolog/rlm_plan.pl
+prolog/rlm_plan_graph.pl
 prolog/rlm_project_grammar_pack.pl
 prolog/rlm_project_query.pl
 prolog/rlm_project_query_persist.pl
@@ -445,9 +479,13 @@ rage/203-subagent-skill-role-provenance.org
 rage/206-prompt-command-runtime.org
 rage/264-real-recursive-final-handoff.org
 rage/277-planner-protocol-context.org
+rage/288-final-review-report.md
+rage/288-review-research-report.md
+rage/288-spec-plan-graph-executor.org
 rage/290-adversarial-review-report.md
 rage/290-findings-fix-prompt.md
 rage/325-native-call-isolation.org
+rage/336-text-streaming-design.org
 rage/96-versioned-syntax-facts.org
 rage/97-query-capture-apis.org
 rage/97-query-capture-notes.org
@@ -472,6 +510,7 @@ research/RLM-RESEARCH-023-nim-ui.org
 research/RLM-RESEARCH-024-emacs-ui.org
 research/RLM-RESEARCH-025-lem-ui.org
 research/RLM-RESEARCH-026-task-deadlines.org
+research/RLM-RESEARCH-027-spec-plan-graph-executor.org
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
 research/spec-plan-refinement-kb.pl
@@ -479,6 +518,8 @@ research/tree-sitter-query-capture.org
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/openrouter_completion.sh
+scripts/plan_graph_contract_check.pl
+scripts/plan_graph_contract_check.sh
 scripts/research_approval_validator.pl
 scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
@@ -500,6 +541,7 @@ test/fixtures/skills/productivity/grill-me/SKILL.md
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
 test/live_completion_openrouter_test.pl
+test/live_completion_stream_openrouter_test.pl
 test/live_conversation_scale_openrouter_test.pl
 test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
@@ -526,6 +568,7 @@ test/rlm_closed_data_test.pl
 test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
+test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
 test/rlm_context_adapter_test.pl
@@ -554,6 +597,8 @@ test/rlm_mcp_dual_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
+test/rlm_plan_graph_test.pl
+test/rlm_plan_native_ops_test.pl
 test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
 test/rlm_project_query_restart_phase1.pl
@@ -596,6 +641,7 @@ test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
+test/support/plan_graph_test_tools.pl
 test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
@@ -687,6 +733,8 @@ flake.nix
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/openrouter_completion.sh
+scripts/plan_graph_contract_check.pl
+scripts/plan_graph_contract_check.sh
 scripts/research_approval_validator.pl
 scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
@@ -704,6 +752,7 @@ test/fixtures/skills/productivity/grill-me/SKILL.md
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
 test/live_completion_openrouter_test.pl
+test/live_completion_stream_openrouter_test.pl
 test/live_conversation_scale_openrouter_test.pl
 test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
@@ -730,6 +779,7 @@ test/rlm_closed_data_test.pl
 test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
+test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
 test/rlm_context_adapter_test.pl
@@ -758,6 +808,8 @@ test/rlm_mcp_dual_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
+test/rlm_plan_graph_test.pl
+test/rlm_plan_native_ops_test.pl
 test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
 test/rlm_project_query_restart_phase1.pl
@@ -800,6 +852,7 @@ test/runner_main_ownership_probe.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
+test/support/plan_graph_test_tools.pl
 test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl

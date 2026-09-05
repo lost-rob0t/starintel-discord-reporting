@@ -1,15 +1,21 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-04T20:48:09Z`
+- generated: `2026-09-05T00:08:28Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`7340ca414fff8b543a3a279acd93c2bb613b1eab`](https://github.com/lost-rob0t/zara/commit/7340ca414fff8b543a3a279acd93c2bb613b1eab)
-- head date: `2026-09-04T16:03:36-04:00`
-- head subject: Merge pull request #314 from lost-rob0t/rage/165-user-command-runtime
+- head: [`59e9654176fa02eb4aab4cbed4e1532d02f71d2f`](https://github.com/lost-rob0t/zara/commit/59e9654176fa02eb4aab4cbed4e1532d02f71d2f)
+- head date: `2026-09-04T20:02:47-04:00`
+- head subject: Merge pull request #317 from lost-rob0t/rage/13-open-app-allowlist-regression
 
 ## Git log, last 14 days
 
 ```text
+2026-09-04 59e9654176fa02eb4aab4cbed4e1532d02f71d2f Merge pull request #317 from lost-rob0t/rage/13-open-app-allowlist-regression
+2026-09-04 1c9f7fe5c7af64f83b3be29f3a7958fbe5a34fdc fix: fail closed on unconfigured app launches
+2026-09-04 118bf44a3891a3d257d88c0b54babe6c9847ecba RAGE #13: record exact-head RED evidence
+2026-09-04 f7e4698f3afddcec7d5a46a4f96e660a24037cc9 test: require unknown app names to fail closed
+2026-09-04 08c134f150f1936508731fa1d5032ae35a7b2ac4 test: expose unknown executable fallback regression
+2026-09-04 8f4baf46344fcf730e08e71d800438329cc31204 rage: consume reopened #13 app allowlist regression
 2026-09-04 7340ca414fff8b543a3a279acd93c2bb613b1eab Merge pull request #314 from lost-rob0t/rage/165-user-command-runtime
 2026-09-04 446bffa9b3a8db130f037ebd6cea95b699e618f4 docs(rage): record strict #165 gate recovery
 2026-09-04 69ff37f8b5d43d07bbf5e691abb57f146cdc6d7c Merge 23fcd224a2742b76eb5b4c6d21d4776fc8c414e5 into a1b38d9b80a2f4dabe06d53d1185ff23acbbb84d
@@ -834,6 +840,7 @@ modules/rlm_sidecar.pl
 modules/sound.pl
 modules/zara_hooks.pl
 planning/backlog.pl
+rage/13-open-app-allowlist-regression.org
 rage/131-principal-isolation-design.org
 rage/131-principal-isolation-merge-closeout.org
 rage/131-principal-isolation-research.org
@@ -946,6 +953,7 @@ scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
+scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.py
@@ -1216,6 +1224,7 @@ scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
 scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
+scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.py
