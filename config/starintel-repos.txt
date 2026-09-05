@@ -19,3 +19,4 @@ lost-rob0t/a0-symbolics
 lost-rob0t/task-steward
 lost-rob0t/symbolic-memory
 lost-rob0t/org-vector
+lost-rob0t/skills
