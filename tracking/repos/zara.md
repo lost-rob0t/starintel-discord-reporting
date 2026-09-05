@@ -1,26 +1,219 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-05T10:40:20Z`
+- generated: `2026-09-05T15:17:37Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`345d318360737598bb7a0407d6961d0d76e02e8d`](https://github.com/lost-rob0t/zara/commit/345d318360737598bb7a0407d6961d0d76e02e8d)
-- head date: `2026-09-05T06:27:37-04:00`
-- head subject: Merge pull request #338 from lost-rob0t/rage/173-android-client-continuity
+- head: [`efe112f74b130ec39e81f2fc538818895e790ea5`](https://github.com/lost-rob0t/zara/commit/efe112f74b130ec39e81f2fc538818895e790ea5)
+- head date: `2026-09-05T11:16:03-04:00`
+- head subject: Merge pull request #390 from lost-rob0t/rage/326-desktop-toggle
 
 ## Git log, last 14 days
 
 ```text
+2026-09-05 efe112f74b130ec39e81f2fc538818895e790ea5 Merge pull request #390 from lost-rob0t/rage/326-desktop-toggle
+2026-09-05 d2cdaf3bb3e3f42fc2d571b243fd6a741fc6d83f fix(#326): keep desktop control owner alive after liveness probes
+2026-09-05 2b0c536e48f5aefcd1609d3aaf09560f86eb09d9 RAGE #326: record local owner contract and exact CI long-path recovery
+2026-09-05 c7510c075ed0b6564c4df088e095f18d25448449 RAGE #326: cover long-path fallback and stale endpoint parent
+2026-09-05 e77924242ded113eb1d8570922a4a8c6bd5ba866 RAGE #326: bound AF_UNIX endpoint length with private hashed fallback
+2026-09-05 75bba4088e9aba98a6e0a7f0c7fbb4a59438d34b RAGE #326: add bounded toggle/show/hide desktop CLI
+2026-09-05 2c455acc75b43bb8ece1e7f387af6fef1ec7649e RAGE #326: reserve one desktop owner before client startup
+2026-09-05 ff3b833e196f50356c1b4effc0e975bebb75f342 RAGE #326: preserve desktop cleanup while adding local control signal
+2026-09-05 1671c2e5b5a6f87f0e71ed1d46d62cf08255c360 RAGE #326: route local desktop controls onto Qt owner
+2026-09-05 a0bfbd2911edf30399c237174981aa441afdad30 RAGE #326: RED for CLI and duplicate-owner desktop control lifecycle
+2026-09-05 6bbb8d62128ebe470f3c98cef1095e4fcdb6bf88 RAGE #326: prove failed duplicate cannot unlink live owner
+2026-09-05 6ae5cb4c6e9f15ad50afc5280999e1e75bfdfa1c RAGE #326: make desktop socket ownership race-safe
+2026-09-05 9c7372a452569dbed83a246ac3caa5b65ac3779b RAGE #326: implement bounded local desktop control socket
+2026-09-05 596ab286d2179ec75060ec6b1288c7f5f6392dd9 test: require bounded owner-private desktop control IPC
+2026-09-05 12aa5a88e01f5ca549f7533a1262190cfaa8f6f9 desktop: make tray primary activation a true toggle
+2026-09-05 ca274ed7925d0c149cd87cc1ffc70d100253f951 rage: record #326 tray-toggle RED and repair
+2026-09-05 d6e78031fbfc0bf7c9b1f9a78998681c0b2cbd2f test: require true tray toggle for Quick Copilot
+2026-09-05 8299bba79fab04a787ffa4e7c74667c360adc6dc rage: consume #326 desktop toggle control
+2026-09-05 3676fc7e452eab409305f62a826b9f0b1f9841d4 Merge pull request #383 from lost-rob0t/rage/29-streaming-tts-current-r7
+2026-09-05 46753ddc60d661e3e8887c0801f0ba9e62e98e45 RAGE #29: recover bounded streaming TTS lifecycle on current master
+2026-09-05 b839268b4cd63b30da455734ba1346b0bee02f05 Merge pull request #380 from lost-rob0t/rage/371-plugin-approval-current
+2026-09-05 c814eecf64323b55a1913f81361d729657da879c core: recover #371 plugin approval contract on exact master
+2026-09-05 03143a3cd4990734e3f9afaf63462c8b03108337 Merge pull request #373 from lost-rob0t/rage/196-ui-closed-runtime
+2026-09-05 d5f9a57e437cee72e2dfeae97ed5124727608085 Merge pull request #369 from lost-rob0t/rage/196-android-assistant-role
+2026-09-05 c9c432f692641df723fc341ca2d1cfdb64fea49c docs(rage): record rendered Assistant guidance slice
+2026-09-05 0858604bc4c422b7baa920dc326c5ac066a07457 feat(android): render bounded Samsung Assistant setup guidance
+2026-09-05 43897bdc79ffe236acea55524adafe26579691ee test(android): require Samsung Assistant guidance in Settings
+2026-09-05 1abbfbe40cbafee50b99c66a626cb302c1351138 docs(rage): record UI-closed assistant runtime design and rejected auto-mic path
+2026-09-05 30597abd6739f8963c50a6421a68cf42958538c5 feat(android): add explicit system-assistant overlay push-to-talk
+2026-09-05 34b479da73a398b58d36f8c8cfa92fb526444ea7 test(android): require explicit VoiceInteraction overlay PTT UI
+2026-09-05 f33d547a5e3f2ec1895615ffe2d16c47d098bb69 feat(android): model explicit assistant overlay PTT lifecycle
+2026-09-05 ed1f7e89021424899a00b9ce2388f6d52eaa9c50 test(android): require explicit assistant overlay PTT lifecycle
+2026-09-05 5b1f32e4a17fd8ad0e9ec9d8d6f1dbb8754d45aa feat(android): bind assistant service lifecycle to shared runtime
+2026-09-05 7c8c59ee6e8b37fd27c725a279b7fff7e466a31b test(android): require shared service role and shutdown lifecycle
+2026-09-05 0193a713bd8220f7bdcdbeeaa522fe825756b5fb fix(android): avoid duplicate assistant capture cancellation
+2026-09-05 b6256bc828122a835270f11d3ccff05f36fea750 feat(android): single-claim assistant capture cancellation
+2026-09-05 07bb81a8908d3740c4850d39e093c06853fdf125 test(android): require single-claim assistant capture cancellation
+2026-09-05 4f74bff6c0b6684f20f4490e0f110281496e6dc7 feat(android): drive UI-closed voice through shared Zara session
+2026-09-05 baf06e025069f41d47a184a28a7e3c39f918a31d feat(android): fence assistant invocation show-hide races
+2026-09-05 a0bad7c6f578843428b66a9c732a9f8132428c7d test(android): fence duplicate and late assistant capture lifecycle
+2026-09-05 bdaa690b66381610df664953ecaa6bd122d583ad feat(android): plan UI-closed assistant voice on canonical runtime state
+2026-09-05 3d6a00ecc2863ed7103df3a192b9e40f1587a625 test(android): require fail-closed UI-closed assistant start plan
+2026-09-05 7f75100265e5bca8a8948178be12e047721e3fc6 feat(android): detach Compose lifecycle from shared runtime lifetime
+2026-09-05 885657805fdc440211ee38f3b59db6c544e69c53 feat(android): co-locate UI and assistant services in runtime process
+2026-09-05 33f8bd9133d5c63dea11ff9a110772ca33ceb12d feat(android): own Zara session at application process scope
+2026-09-05 bdff5bcd543dbf52e55b0bc1598c941fed954042 test(android): require one UI-closed assistant runtime owner
+2026-09-05 d85fa83f47c9b372a9d7dd44363c6d33c1ed760f docs(rage): record Samsung guidance slice
+2026-09-05 11f3d808486b2f26c2ac676bc23a41fc3b4760e3 feat(android): encode bounded Samsung assistant setup guidance
+2026-09-05 9cc6ad40c90e54a0ce463a6e80622d6b75abece0 test(android): require bounded Samsung assistant guidance
+2026-09-05 b7b144ac256be4a5ff7a9d48427a6740c16009c4 docs(rage): record role lifecycle hardening evidence
+2026-09-05 d7893258c4ccfe124833848152773943334797af feat(android): recheck assistant role on activity resume
+2026-09-05 0c6bddbd22c3bf506f24e0ddd9777e227608bd90 test(android): require assistant role recheck on resume
+2026-09-05 95f4dbf158e15a000d323416a470f1261f6ba4fd docs(rage): record Android #196 assistant-role evidence
+2026-09-05 fdaf8a4dd87d6ac3baaa8a4e10de982b43674e5b feat(android): wire explicit system assistant role request
+2026-09-05 cd63eee181ed830151eaf2cec447c55f047a07d1 feat(android): bind assistant role to canonical app session
+2026-09-05 6eac03ef965a311671ce68ba69870c4fabc58970 test(android): assert assistant result from observed role only
+2026-09-05 63f6bfaa1984623209d8bad1d85820b76ee745fe refactor(android): make assistant role result a platform recheck
+2026-09-05 c8778fe5ba1a055ab2fc786ddcd77e272711816d test(android): require explicit assistant role onboarding flow
+2026-09-05 ec836e07ca8ea30f9406ef04336a7e69a039658b feat(android): render honest assistant role onboarding state
+2026-09-05 4a9124a371f5c911117fdbd6b9c955b4a9421112 test(android): require honest assistant role UI projection
+2026-09-05 bb983d62af63ea31928204e35ab3fa5720fcc541 feat(android): publish assistant role through runtime reducer
+2026-09-05 262b15b93dd2eb08234b29063d414d1d0a45e5bd test(android): require canonical assistant role publication
+2026-09-05 caa3ffd425ff28206c436ab2b82043ab1413acb9 feat(android): verify assistant role ownership after user result
+2026-09-05 ea795271a1fa4159e86a8bc934962946af6e70c8 test(android): require fail-closed assistant role request result
+2026-09-05 6c20074158902f839f4984b0bf55cc1887da1871 Merge pull request #372 from lost-rob0t/master
+2026-09-05 b6d46352b30d26aa85fc5fe897c28204a345df4d Merge pull request #366 from lost-rob0t/rage/175-android-barge-in
+2026-09-05 dab37719bf3388e020ffad8b892ea736fa08fe68 Merge pull request #355 from lost-rob0t/rage/175-android-streamed-voice
+2026-09-05 e0170a59c2118148f05227329ee5e074b6d627ec feat(android): bind assistant role checks to RoleManager
+2026-09-05 4a14b485301318f91e5e8087dbfc47a95c311eaa feat(android): register assistant voice services
+2026-09-05 4e7b3d3a28342a734fa1a5b040154b7a79d5a7de feat(android): declare assistant voice interaction metadata
+2026-09-05 0b64df678df90c1c6764dd01c01618bb8675f214 feat(android): add lightweight assistant session
+2026-09-05 9f2ca554879808e224af793d1ab595b61cd365db feat(android): add voice interaction session service
+2026-09-05 d149764ab996c77fc909c25fcd7161bf606c708b feat(android): add public voice interaction service surface
+2026-09-05 9092fc2ea60fe0fb300f089cb9f06dda8f1d71f3 test(android): define assistant service manifest contract
+2026-09-05 6f84765ef51c6a3a93d876a6f73d999aae46245b feat(android): add typed assistant role assessment controller
+2026-09-05 86cfe5608e121432251215c1c4045952615a1787 test(android): define assistant role assessment contract
+2026-09-05 558fdd6a0831a721ab85a2fe5702b17edb8a282d Merge pull request #368 from lost-rob0t/rage/175-android-streamed-voice
+2026-09-05 4ffdb54be76cc91d82125059ca3c1ede2a695439 Merge pull request #367 from lost-rob0t/master
+2026-09-05 5779e44c567147c1d344e69985761e74a863ebd7 Merge pull request #347 from lost-rob0t/rage/175-android-manual-voice
+2026-09-05 6ec4826a051ec925f9e145ef5b3999898ea0075d RAGE #175 B3: stop local speaker before opening barge-in microphone
+2026-09-05 2dfc273bb2b66fffd41f663bc37214d9be360a30 RAGE #175 B3: serialize local barge-in through playback actor
+2026-09-05 848c835d2934cddc2856dd45f112798fe6007a41 RAGE #175 B3 RED: serialize barge-in through playback actor
+2026-09-05 2235c0a41490ff1b5253972661cbaafbefc700b5 RAGE #175 B3: stop local playback immediately on barge-in
+2026-09-05 f0a94ff8114c49578b83098d0e112cc42f7a5589 RAGE #175 B3 RED: local barge-in stops output before network cancel
+2026-09-05 8482388d9f62e28c669dccb03b2b443b8b5aebd5 RAGE #175 B3: define Android barge-in ownership boundary
+2026-09-05 cf937c8ac514b7b4facd1ca2d0d8bc0741ce1165 RAGE #175 B2: record streamed voice recovery and acceptance evidence
+2026-09-05 74d083af331b9f0c403b31e3b7d98b53a19e2a58 RAGE #175 B2: surface bounded playback actor failures in app diagnostics
+2026-09-05 945040a79474665387e291edaa1512fa40d38251 RAGE #175 B2: expose asynchronous playback failures from sink actor
+2026-09-05 7f90a2368a0b6348bbe12f2da5244200444a1d70 RAGE #175 B2 RED: surface asynchronous playback failure
+2026-09-05 0a23c7df94a570f093b31f762889ca21cf7bc9c0 RAGE #175 B2: use runtime voice negotiation types
+2026-09-05 0e4576c95341622b7f4957d95e8d67b9d5557c26 RAGE #175 B2: fix runtime audio negotiation import
+2026-09-05 9c322bfa877085fc38c24917d1a3f8549cb7faf4 RAGE #175 B2: use runtime voice hello negotiation type
+2026-09-05 a194c686202bea3927931d3d584673ba0034c192 Merge pull request #365 from lost-rob0t/rage/175-android-manual-voice
+2026-09-05 c080f25ab06c424e2cc8961759d5a01e53059741 Merge pull request #364 from lost-rob0t/master
+2026-09-05 44a84f47518e1a712f72146ae10512dc5ae51a63 RAGE #175 B2: enable canonical 24 kHz mono output negotiation in app session
+2026-09-05 2a8039168f77f16f4cf6353c2278702fb1fbe530 RAGE #175 B2: negotiate canonical PCM output on the live Android actor
+2026-09-05 46a5b082903c28e80cc78a663b73795b0f0298cb RAGE #175 B2 RED: require live actor audio output negotiation
+2026-09-05 230a53b3a3f961ad2010bc66fc7c989fbf0da0c1 RAGE #175 B2: bound event interleaving before typed voice acknowledgements
+2026-09-05 e57ab143055b57e3b0c02b895f1b5edbacc3d2f4 RAGE #175 B2 RED: bound stream events that may precede a command ack
+2026-09-05 82c8a62880faf6f613e204b1c73c632463b33a75 RAGE #175 B2: render real transcript playback and stream errors
+2026-09-05 14f4a3f086a8b2d08268a47bf969f875b1cb1278 RAGE #175 B2: observe canonical transcript and playback state in Compose
+2026-09-05 dcdac058ac94262d44a5e728eb6d0a3753afee1a RAGE #175 B2: wire canonical stream events into bounded Android playback actor
+2026-09-05 a0fb8c69a2273df4020b55814f7eb49c49b0c829 RAGE #175 B2: pump post-commit voice events on the socket actor
+2026-09-05 126b392b775e6324317428ec1d30f7581efff31e RAGE #175 B2 RED: drain final transcript and audio after voice commit
+2026-09-05 65669d17dec74a174cc2e458f76cb9b170ee708d RAGE #175 B2: add bounded single-owner playback event actor
+2026-09-05 fa12f1864198019387aae6f5af570ed7384a6a0b RAGE #175 B2 RED: require serialized bounded voice stream sink ownership
+2026-09-05 67f51700318aae4480dbb762f0118f70ea429e01 RAGE #175 B2: dispatch interleaved voice events while awaiting command replies
+2026-09-05 7bebe54e2add0d5a96f235d250494e360ace29c3 RAGE #175 B2 RED: route interleaved stream events while awaiting ack
+2026-09-05 a959d19c5222148316cb7ef57d39f2b5749334ba RAGE #175 B2: clear playback ownership before replacement start
+2026-09-05 aa240bcba18f38b284b6eae433377324f836acbf RAGE #175 B2 RED: keep playback ownership honest after replacement failure
+2026-09-05 681918ca5a0bef5b4e31fd789f4d64bcad43aaa5 RAGE #175 B2: reset transcript sequence at terminal stream boundary
+2026-09-05 c7a338ace71acc1b3736d727683cd3aae4ccd8ce RAGE #175 B2 RED: permit sequence reset after terminal transcript
+2026-09-05 8c5783daf4bd773a24be76e8e3f7b7289e5de25f RAGE #175 B2: classify streamed voice events beside command replies
+2026-09-05 ef8d5d964269147881d8e6096b2f74832719e00e RAGE #175 B2 RED: require voice event and ack multiplexing
+2026-09-05 82f8f8cb17ece2c4731747b421300a16c00f4a71 Merge pull request #359 from lost-rob0t/rage/327-bounded-target-edit-distance-recovery-r2
+2026-09-05 0605498bcf2134ff48b73d4d0dc1330d5e91167b Merge pull request #362 from lost-rob0t/rage/175-android-manual-voice
+2026-09-05 e2ec5efc85a0cbd04dcd99f60112a7c8edb5f259 Merge pull request #361 from lost-rob0t/master
+2026-09-05 1c8eaea28fa1df190d4711bc87e94a42eaa516ed RAGE #327: correct preserved RED head identity
+2026-09-05 e993e2a424bcff35202cbeb8786fe7a4cc805b30 RAGE #327: record post-security-fix exact-base recovery
+2026-09-05 d68e470103c6a8ec0755e4cb3b06fcbf28f80a7b RAGE #327: advance recovery onto merged security fix
+2026-09-05 a1429625ec43880310d6c53d8343e58749003b6f Merge pull request #356 from lost-rob0t/rage/348-dash-prefixed-z85-cli-r2
+2026-09-05 4e34cd9992107550b0c9bac13c176e7e14f1b215 RAGE #327: record current-master recovery iteration
+2026-09-05 0cab11f49db73bbf0900fe61cada6ab726f36596 RAGE #327: replay bounded target recovery on current master
+2026-09-05 c3d25fee8225819f752c9f14f44a903cc9caab78 RAGE #348: record current-master recovery iteration
+2026-09-05 d858a9b4230d3edbcb23c5077143f6b0833b62d3 RAGE #348: replay dash-prefixed Z85 fix on current master
+2026-09-05 4099e811b03a394fb35025359750187ce88f77cf chore(android): keep PCM output imports strict
+2026-09-05 25256c2dc069e8c800c24e0a00a4b7d1422435ec feat(android): add single-owner AudioTrack PCM output
+2026-09-05 685c92def1a1685c345f43d9fa48b9f3fc703ae0 feat(android): enforce one-owner voice playback lifecycle
+2026-09-05 e5a0573516c7f17efec51a8a8f01815b44088911 test(android): specify one-owner streamed voice playback
+2026-09-05 613fb9cce40c4520fcdb83fce25fa826abc655b0 docs(rage): record Android manual voice evidence
+2026-09-05 863561e5ebb4d12f050651e6621f15562af8ff1b feat(android): reject stale streamed voice state
+2026-09-05 a5aa8ae4721849c5996bb17b83569f70f5b1b8b3 test(android): specify stale-safe streamed voice reducer
+2026-09-05 d288b6b01ffa807497ac62b052e2739c3ad9030d feat(android): negotiate canonical voice output format
+2026-09-05 83e55e00a23c6e9d1252a06bd3ef1fe701f92357 test(android): isolate voice hello negotiation codec
+2026-09-05 f02b8d93529dd2cfff01eca7c476d87fd01e559b feat(android): decode canonical streamed transcript and audio events
+2026-09-05 44a032432fec75dc9d9a2729cf86937f854c71f0 test(android): specify streamed transcript and audio decoding
+2026-09-05 e2944efe29bcc1e833c0fb1b736217518581b8cf test(android): specify canonical voice output negotiation
+2026-09-05 6096ca9188d27420e9e39b0bc388002a57dfdaf0 Merge pull request #354 from lost-rob0t/master
+2026-09-05 f590e50fdccd6b25453c09ba697ab70c770c9692 Merge pull request #345 from lost-rob0t/rage/197-compose-first-usable
+2026-09-05 07cc092e4810dfef495c99b9283a650ffce6d8e9 feat(android): request mic permission and drive manual voice UI
+2026-09-05 357101e720e7d2b3193649a6a9422360bc2d272a feat(android): add honest manual voice surface
+2026-09-05 090549d921cdb13a137491de98ff42780d4c980c test(android): require honest manual voice availability
+2026-09-05 7ca62614813e5659debcfa80cccd4e4b156917e3 feat(android): expose canonical PTT session operations
+2026-09-05 a9278a7314f92a81f5f3e5d9b23e06904f9e823a feat(android): bind PTT to canonical runtime session state
+2026-09-05 c12589b5f8978bca996ee9f8173504e6422b32d1 test(android): bind manual voice to canonical runtime session
+2026-09-05 2191c2e46674e5b20d43274fa716db90d60adfe0 test(android): prove voice shares authenticated dealer session
+2026-09-05 46d823ef514f5468221e413f7ac4b14f66df6ea2 feat(android): serialize voice commands on authenticated dealer owner
+2026-09-05 561b0c6de0833f5443414f191dc4606956e04fed feat(android): decode voice acknowledgements fail closed
+2026-09-05 fb021ae0114415b117d0148c2a85e580b7640b57 test(android): specify strict voice acknowledgement decoding
+2026-09-05 fe9faeaf0b349eb95cd04116d174a459d4c0a806 feat(android): gate manual voice on authenticated command acks
+2026-09-05 1b22cf35f8041014d29c443814fe77387fbc9f98 test(android): require authenticated voice command acknowledgements
+2026-09-05 f6f77e22c12f12bc14e165a000db6511fef43637 Merge pull request #353 from lost-rob0t/rage/197-compose-first-usable
+2026-09-05 e3ebbb126beac5a946cb126fcf1e704458e21492 Merge pull request #352 from lost-rob0t/master
 2026-09-05 345d318360737598bb7a0407d6961d0d76e02e8d Merge pull request #338 from lost-rob0t/rage/173-android-client-continuity
+2026-09-05 97ed4b773a33d5d11dbb14b2d0f137160002b6fd feat(android): encode canonical ZARA/1 voice ingress frames
+2026-09-05 5b6facb54bf9486ad23b500c791f5ccd1e1cf6bf test(android): define canonical ZARA/1 voice wire encoding
+2026-09-05 f53025a3e42c3235050d42375d5a8f57a1b38197 feat(android): declare runtime microphone permission for manual voice
+2026-09-05 497376b84c9d6bfc88e577790aec918b6aa04e86 feat(android): add single-owner AudioRecord PCM recorder
+2026-09-05 268c5c2468877a2f7f273b03349aab6ad371c932 feat(android): fail closed on asynchronous recorder errors
+2026-09-05 2fcb2500b138e401103afdcdb2d01badd9943c78 feat(android): add atomic voice cancellation for recorder failures
+2026-09-05 15a8de277b44db97f74a25d3c3e1faf9b23254d6 test(android): require async recorder failure to cancel voice stream
+2026-09-05 9f05b3301a4f44d6bbf3b5ec25efe60fb3ecf127 rage(#348): record bounded parser design and implementation
+2026-09-05 3c38f150940cda8fa7dd21552ce78184de92a8c1 test(#348): keep malformed dash values fail-closed
+2026-09-05 ecbe34f353c7fd4000a916329ba59ea4d997f8c1 Merge pull request #351 from lost-rob0t/rage/197-compose-first-usable
+2026-09-05 2ffe9711b52963044c82caf644babd8d241b6841 Merge pull request #350 from lost-rob0t/rage/173-android-client-continuity
 2026-09-05 5dc158133c681b1b6975d82bcd5933c3ac6a8f19 fix(android): route capability ack through its canonical codec in stock interop
+2026-09-05 1490c4068e287d999bd8a79e3ef3549c0164fa06 fix(#348): accept dash-prefixed Z85 enrollment keys
+2026-09-05 32d5bd7b603868fa7bdb4a01643fef0e90f42eb8 test(#348): pin dash-prefixed Z85 parser regression
+2026-09-05 5486f67c5b0fe4ec000ca96abae1a9408c7da0d0 rage(#348): record dash-prefixed Z85 CLI regression
+2026-09-05 e3f08b6d3316c6a4dd816fd59e619a6957f62a68 fix(android): serialize manual voice capture transitions
+2026-09-05 39ca3050c4f920103e140c77d40377371911db30 feat(android): enforce single-owner push-to-talk recorder lifecycle
+2026-09-05 d60c58ca3a9504dd389039ca566d611c48f5720f test(android): define push-to-talk recorder ownership ordering
+2026-09-05 85612bdac953559869b63b9515b2a63b3a97ca5d fix(#327): keep target recovery inside closed latency schema
+2026-09-05 66c159dcb7bd4f5998477d79faacc87f1824bc2a feat(android): add manual voice capture ownership boundary
+2026-09-05 1442ddcba34e4fcb92041f68d50d6eed6591db24 test(android): define strict manual voice capture lifecycle
+2026-09-05 1febdd31cd309ab45813a7b8d1f6c69a5eaff440 Merge pull request #346 from lost-rob0t/rage/173-android-client-continuity
 2026-09-05 3465d9e05e4eaf92512ae6ecd90a71fa19c3e3ff fix(android): bootstrap stock server fixture from repo package
 2026-09-05 4c1d16aca25ec68e027bff1eca3dbb8ea2ca25b1 RAGE #173: signal stock runtime after actual JeroMQ turn acceptance
 2026-09-05 edd409ed17583acd5bb1de557c6eb37251d69a73 RAGE #173: gate runtime events on observed turn acceptance
+2026-09-05 ff5a146460bbb6c08ddbcccc08a84e235b23700f RAGE #197: record live first-usable wiring and UI invariants
+2026-09-05 41edb3eecada2161b88410d4e3d7d83c115b84b2 RAGE #197: prevent parallel connects and clarify enrollment
+2026-09-05 f755d2b711fd5fc9aa72ccc6fce6ee9f6532e2f2 RAGE #197: RED parallel connect control
 2026-09-05 dc8bc136e499073da4d8ef09ebc53a447513f42a RAGE #173: bound cold Nix stock-server fixture startup
+2026-09-05 ef356d75cba664c6375513c2710a2a72b208bfbf RAGE #197: test live reducer state observation
+2026-09-05 2d40d17c33ae171e9cbda7764b1529616ae667de RAGE #197: drive Compose from reducer state observer
+2026-09-05 4a65252cd6500452f9384e086dfd3e65ddf90fb8 RAGE #197: expose canonical runtime state observation
+2026-09-05 562ee6dcdbf248c1899bbe7f3f594c1fda6367f6 RAGE #197: publish canonical reducer state to UI observers
 2026-09-05 42e202d50a93642a10af0c0d86224a38fc69c11d RAGE #173: require stock secure ZaraServer interop in Android gate
 2026-09-05 c6d921b8cd8ecf26ee78f0f4a3a85ba752fc1bba RAGE #173: prove JeroMQ actor against stock secure ZaraServer
 2026-09-05 bcbfa54693ce609b0953e4e2b9dbfa0b3aca1327 RAGE #173: add stock ZaraServer Android interop fixture
+2026-09-05 11e6db290073bd269a70760610c58b8e8ad1a0c5 RAGE #197: connect Compose controls to canonical Zara session
+2026-09-05 0ee493350485cac0efe9404776fdcc027b688e0f RAGE #197: wire enrollment connection and real chat controls
+2026-09-05 84f097ab17e7c02f80a17788d989723726a2d043 RAGE #197: own canonical Android app session lifecycle
+2026-09-05 6d4595ba9a887e74dd115854946fe9285888f86a RAGE #197: record first-usable Compose shell evidence
+2026-09-05 47b0d1d186130342ab522f96a3838ca978faea4a RAGE #197: test canonical UI state projections
+2026-09-05 71db459594950e4da4745f01fc45f32b2d6f2d69 RAGE #197: launch Compose shell from restored runtime state
+2026-09-05 d0f79b0c85110de39f0f8b186cb72fc90f2a45de RAGE #197: add honest first-usable Compose surfaces
+2026-09-05 62e3af73b571f5a15b1927e747d44fe33c5f9bb4 RAGE #197: enable pinned Compose Material 3 shell
 2026-09-05 37f19709974402927d77943c5d0e2984ff6b126a Merge current master into Android #173 recovery
 2026-09-05 a0d218de65e2dc294dbf4b9b3fab6a7309e8783a RAGE #173: disambiguate synchronized request predicate
+2026-09-05 f2406d1e7282cfaab78df59c0fddaab0fd373530 feat: recover registered app targets in Prolog router
+2026-09-05 28ea0c2638f0e267871b318aa9b2472efeda9e3b test: require bounded registered target recovery
+2026-09-05 1e358175f57d2a8eedaceefa20ee51b51a05a6df docs(rage): recover issue 327 on current master
+2026-09-05 925f5fc9506abe4f5b9e5a942fe3a1f87525166f feat: add bounded registered target matcher
 2026-09-05 7cb047a390644c7da96cfb4620bfb8d569450fff Merge pull request #331 from lost-rob0t/rage/329-production-secure-listener
 2026-09-05 b20c0c18cbe391000829334e4dec370bbab0054d RAGE #173: emit compact canonical text JSON
 2026-09-05 c123ba40a46937f8ba87dd395f2885fce66c0533 RAGE #173: invalidate timed-out text transport before reuse
@@ -856,37 +1049,6 @@
 2026-08-22 e8363828c416418f7c6278fae32bb18a3c2f65c4 feat(security): add registry-backed CURVE transport primitives
 2026-08-22 32e5d3d3098351337c0dd767c9f13f7fa1a4cbcf docs(rage): record slice B transport security red gate
 2026-08-22 b22461a05699dc9563d267575f5480fa54211bbd test(security): define CURVE/ZAP transport plumbing red gate
-2026-08-22 c2ddd5ec53d3c39b102d3c00e9233a2a273f0a25 feat(security): implement tested daemon security primitives
-2026-08-22 7da90f6b99ef028a5135df33be42855b875c4cc4 docs(rage): record issue 130 slice A red evidence
-2026-08-22 6240578952546fc55a83ebe88b2582f7dc6ec3bf test(security): define red contracts for daemon security primitives
-2026-08-22 152a76736c3f1a5819538fd9b832f717113677c9 docs(rage): design issue 130 security architecture
-2026-08-22 2e559f7a5fce07c5265a4e693e02b77e1d73880e docs(rage): research issue 130 security boundary
-2026-08-22 486a3aae6138294217fb6cf07c899cd9fa756976 docs(rage): start issue 130 security iteration
-2026-08-22 2bf0adbca15ea8c161df7cf15c6c9cc4125317dc Merge pull request #143 from lost-rob0t/docs/rage-129-merge-outcome
-2026-08-22 a35f08b4139597769acd4e689276d7be8dda4169 docs(rage): preserve append-only gate history
-2026-08-22 49a0b11bd733c6010f9abaf28e22a0e72d738af4 docs(rage): record issue 129 merge outcome
-2026-08-22 1cae2e32cc40112aa13af6b8f4b7319869c72bd9 Merge RAGE #129 ZARA/1 ZeroMQ protocol and client
-2026-08-22 3ab7d04c6af2e62f00570fb9ebdc731c4eb075c0 docs(rage): record turn completion regression fix
-2026-08-22 52b447cc9eb7bcf050bba279f03af1b123b9bc3b fix(zmq): publish turn completion events
-2026-08-22 61ef9d8e4bcce125ad978d1bc573cc711330e158 test(zara1): include turn completion client gate
-2026-08-22 1cdf1d3809ea1652f718d217732e061a3a3e470f test(transport): require client turn completion event
-2026-08-22 d78798e6c8727da231bf3a0ea46e0ee3a16b14f4 fix(protocol): admit turn.completed wire event
-2026-08-22 e5496f80095fae67834148ab5b15b7628d0041fb fix(rage): restore clobbered protocol and transport tests
-2026-08-22 acfacb07cda8eca3e2d40a9df9179133bf3d0bda test(transport): require client turn completion event
-2026-08-22 0143831f3c1309b856fb41ecd8aeb2417cc3636e fix(protocol): emit turn.completed from runtime
-2026-08-22 d19da4eb9c42d264f150504d73fba841643d9905 fix(protocol): allow turn.completed server event
-2026-08-22 66450d79c8bf595f8c80eb96efc076b3ff6dee27 test(protocol): prove mapped runtime events are wire encodable
-2026-08-22 6d0b1b9627cf601971fe373ebc768648850a4b6b test(protocol): require turn.completed wire event
-2026-08-22 62ba1dcb0eed3c656071ff04a221c2db0ebdbb4f docs(rage): continue issue 129 gate evidence
-2026-08-22 0fdfaebbc4454c6cdecdf8683fc242b38775242e test(zara1): include all issue 129 transport gates
-2026-08-22 67b0e8dd2ec1c076a1865e583d876e9171bb276f fix(server): bound local ZARA/1 IPC endpoints
-2026-08-22 eff3fda6ff91e7e7e4cc59b04cdd6f58996ddec8 test(zara1): bound IPC endpoint paths safely
-2026-08-22 73c8de637fca948e2ea61815ddeb635c817da3fa feat(zara1): compose gateway into zara-server lifecycle
-2026-08-22 f2c7b1ab535d853c7b91946b286aa2fc21becb3a test(zara1): require failed gateway startup cleanup
-2026-08-22 9185f63f8b4b0fc2edb3ab27a45a70958df6695b test(zara1): require zara-server gateway lifecycle integration
-2026-08-22 96bf6ed369d66136c07d457a0c9730a162b67b30 feat(zara1): define owner-private server IPC endpoint
-2026-08-22 1b391e2b2e68a1fe418a0343b19ebda63ac5dcd3 test(zara1): require owner-private server IPC endpoint
-2026-08-22 f9df2594a20939f3b017aafb495e739fda44626b feat(zara1): expose client runtime status
 ```
 
 ## Repository paths changed, last 14 days
@@ -909,7 +1071,16 @@ android/app/src/main/assets/prolog/portable/semantic_core.pl
 android/app/src/main/assets/prolog/portable/semantic_fixtures.json
 android/app/src/main/cpp/CMakeLists.txt
 android/app/src/main/cpp/zara_trealla_jni.c
+android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
+android/app/src/main/java/ai/zara/app/ZaraApplication.kt
+android/app/src/main/java/ai/zara/app/assistant/AndroidAssistantRolePlatform.kt
+android/app/src/main/java/ai/zara/app/assistant/AssistantInvocationGate.kt
+android/app/src/main/java/ai/zara/app/assistant/AssistantRoleController.kt
+android/app/src/main/java/ai/zara/app/assistant/AssistantVoiceSessionBridge.kt
+android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionService.kt
+android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionSession.kt
+android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionSessionService.kt
 android/app/src/main/java/ai/zara/app/auth/AndroidCredentialCipher.kt
 android/app/src/main/java/ai/zara/app/auth/AuthCore.kt
 android/app/src/main/java/ai/zara/app/auth/EnrollmentRepository.kt
@@ -930,7 +1101,28 @@ android/app/src/main/java/ai/zara/app/runtime/ServerProfile.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraCapabilityCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
+android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
+android/app/src/main/java/ai/zara/app/ui/AssistantSetupGuidance.kt
+android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
+android/app/src/main/java/ai/zara/app/voice/AndroidPcmOutput.kt
+android/app/src/main/java/ai/zara/app/voice/AndroidPcmRecorder.kt
+android/app/src/main/java/ai/zara/app/voice/AuthenticatedVoiceIngress.kt
+android/app/src/main/java/ai/zara/app/voice/ManualVoiceCapture.kt
+android/app/src/main/java/ai/zara/app/voice/ManualVoiceSessionCoordinator.kt
+android/app/src/main/java/ai/zara/app/voice/PushToTalkController.kt
+android/app/src/main/java/ai/zara/app/voice/VoicePlaybackController.kt
+android/app/src/main/java/ai/zara/app/voice/VoiceStreamReducer.kt
+android/app/src/main/java/ai/zara/app/voice/VoiceStreamSinkActor.kt
+android/app/src/main/java/ai/zara/app/voice/ZaraVoiceAckCodec.kt
+android/app/src/main/java/ai/zara/app/voice/ZaraVoiceCodec.kt
+android/app/src/main/java/ai/zara/app/voice/ZaraVoiceInboundCodec.kt
+android/app/src/main/java/ai/zara/app/voice/ZaraVoiceStreamCodec.kt
+android/app/src/main/res/xml/voice_interaction_service.xml
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantRoleControllerTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantServiceManifestContractTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantVoiceSessionBridgeTest.kt
 android/app/src/test/java/ai/zara/app/auth/AuthenticationTest.kt
 android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
@@ -944,6 +1136,7 @@ android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
@@ -951,8 +1144,26 @@ android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceFloodTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceNegotiationTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoicePumpTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
+android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/voice/AuthenticatedVoiceIngressTest.kt
+android/app/src/test/java/ai/zara/app/voice/ManualVoiceCaptureTest.kt
+android/app/src/test/java/ai/zara/app/voice/ManualVoiceSessionCoordinatorTest.kt
+android/app/src/test/java/ai/zara/app/voice/PushToTalkControllerTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoicePlaybackControllerTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoiceStreamBargeInTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoiceStreamReducerTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoiceStreamSinkActorTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceAckCodecTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/build-trealla.sh
 android/build.gradle.kts
 android/flake.lock
@@ -1042,6 +1253,9 @@ rage/172-android-trealla-runtime.org
 rage/172-cross-runtime-parity.org
 rage/173-android-auth.org
 rage/173-android-client-continuity.org
+rage/175-android-barge-in.org
+rage/175-android-manual-voice.org
+rage/175-android-streamed-voice.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
@@ -1049,6 +1263,9 @@ rage/191-zara1-tool-approvals-design.org
 rage/191-zara1-tool-approvals-research.org
 rage/191-zara1-tool-approvals.org
 rage/195-samsung-assistant-research.org
+rage/196-android-assistant-role.org
+rage/196-ui-closed-runtime.org
+rage/197-compose-first-usable.org
 rage/209-runtime-tool-approvals-design.org
 rage/209-runtime-tool-approvals-research.org
 rage/209-runtime-tool-approvals.org
@@ -1085,16 +1302,18 @@ rage/260-python-user-hooks.org
 rage/260-service-plugin-advice.org
 rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
+rage/29-streaming-tts-recovery-r7.org
 rage/309-prolog-config-recovery-design.org
 rage/309-prolog-config-recovery-research.org
 rage/309-prolog-config-recovery.org
 rage/315-route-backpressure-test-contract.org
+rage/326-desktop-toggle.org
+rage/327-bounded-target-edit-distance-recovery.org
 rage/329-production-secure-listener.org
 rage/329-threat-model.org
+rage/348-dash-prefixed-z85-cli.org
+rage/371-plugin-approval-contract.org
 rage/5-config-durability.org
-rage/daemon-129-gate.org
-rage/daemon-130-design.org
-rage/daemon-130-research.org
 rage/daemon-130-security.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
@@ -1118,6 +1337,7 @@ scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
 scripts/test-streaming-llm.sh
+scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
@@ -1155,18 +1375,19 @@ t/test_conversation_flow.py
 t/test_conversation_service.py
 t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
-t/test_daemon_security.py
 t/test_daemon_security_abuse.py
 t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
+t/test_desktop_control.py
 t/test_desktop_launch_surface.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
 t/test_desktop_theme.py
+t/test_desktop_toggle_control.py
 t/test_dialogue_script.py
 t/test_full_chat.py
 t/test_hooks_config.py
@@ -1178,6 +1399,7 @@ t/test_llm_streaming.py
 t/test_memory.py
 t/test_plan_executor.py
 t/test_plans.py
+t/test_plugin_tool_approval.py
 t/test_principal_conversation_isolation.py
 t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
@@ -1190,6 +1412,7 @@ t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_quick_handoff_edges.py
+t/test_registered_target_recovery.py
 t/test_runtime_backend_publisher.py
 t/test_runtime_host.py
 t/test_runtime_host_clarification.py
@@ -1215,7 +1438,6 @@ t/test_security_threat_transport.py
 t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
-t/test_server_zmq_endpoint.py
 t/test_service_plugin_advice.py
 t/test_streaming_stt_commit.py
 t/test_task_approval_flow.py
@@ -1228,6 +1450,7 @@ t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_tts_output_lifecycle.py
 t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
@@ -1268,7 +1491,6 @@ t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
-t/test_zmq_transport_turn_completed.py
 t/zara_hooks_registry.pl
 wiki/agent-mode.org
 wiki/android.org
@@ -1293,11 +1515,13 @@ zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/agent/user_hooks.py
 zara/client.py
+zara/command_gate.py
 zara/config.py
 zara/console.py
 zara/database.py
 zara/desktop/app.py
 zara/desktop/chat_widgets.py
+zara/desktop/control.py
 zara/desktop/controller.py
 zara/desktop/conversation/__init__.py
 zara/desktop/conversation/store.py
@@ -1363,6 +1587,10 @@ zara/zmq_transport.py
 .github/workflows/ci.yml
 .github/workflows/rage-159-apply.yml
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantRoleControllerTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantServiceManifestContractTest.kt
+android/app/src/test/java/ai/zara/app/assistant/AssistantVoiceSessionBridgeTest.kt
 android/app/src/test/java/ai/zara/app/auth/AuthenticationTest.kt
 android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
@@ -1376,6 +1604,7 @@ android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
@@ -1383,8 +1612,26 @@ android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceFloodTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceNegotiationTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoicePumpTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
+android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/voice/AuthenticatedVoiceIngressTest.kt
+android/app/src/test/java/ai/zara/app/voice/ManualVoiceCaptureTest.kt
+android/app/src/test/java/ai/zara/app/voice/ManualVoiceSessionCoordinatorTest.kt
+android/app/src/test/java/ai/zara/app/voice/PushToTalkControllerTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoicePlaybackControllerTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoiceStreamBargeInTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoiceStreamReducerTest.kt
+android/app/src/test/java/ai/zara/app/voice/VoiceStreamSinkActorTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceAckCodecTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/flake.nix
 flake.nix
 scripts/benchmark-voice.py
@@ -1408,6 +1655,7 @@ scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
 scripts/test-streaming-llm.sh
+scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
@@ -1444,18 +1692,19 @@ t/test_conversation_flow.py
 t/test_conversation_service.py
 t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
-t/test_daemon_security.py
 t/test_daemon_security_abuse.py
 t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
+t/test_desktop_control.py
 t/test_desktop_launch_surface.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
 t/test_desktop_theme.py
+t/test_desktop_toggle_control.py
 t/test_dialogue_script.py
 t/test_full_chat.py
 t/test_hooks_config.py
@@ -1467,6 +1716,7 @@ t/test_llm_streaming.py
 t/test_memory.py
 t/test_plan_executor.py
 t/test_plans.py
+t/test_plugin_tool_approval.py
 t/test_principal_conversation_isolation.py
 t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
@@ -1479,6 +1729,7 @@ t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_quick_handoff_edges.py
+t/test_registered_target_recovery.py
 t/test_runtime_backend_publisher.py
 t/test_runtime_host.py
 t/test_runtime_host_clarification.py
@@ -1504,7 +1755,6 @@ t/test_security_threat_transport.py
 t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
-t/test_server_zmq_endpoint.py
 t/test_service_plugin_advice.py
 t/test_streaming_stt_commit.py
 t/test_task_approval_flow.py
@@ -1517,6 +1767,7 @@ t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
 t/test_tts.py
+t/test_tts_output_lifecycle.py
 t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
@@ -1557,6 +1808,5 @@ t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
-t/test_zmq_transport_turn_completed.py
 t/zara_hooks_registry.pl
 ```
