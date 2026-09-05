@@ -10,6 +10,12 @@ tek9
 star-lang
 star-funds
 starintel-labs/starintel-infra
+starintel-labs/website
 lost-rob0t/prolog-rlm
 lost-rob0t/hackmode
 lost-rob0t/zara
+lost-rob0t/zara-plugins
+lost-rob0t/a0-symbolics
+lost-rob0t/task-steward
+lost-rob0t/symbolic-memory
+lost-rob0t/org-vector
