@@ -1,15 +1,19 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-05T04:34:47Z`
+- generated: `2026-09-05T10:40:18Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`3b4e2da0dbd808f46711a0784f6a4fbdf15df583`](https://github.com/lost-rob0t/hackmode/commit/3b4e2da0dbd808f46711a0784f6a4fbdf15df583)
-- head date: `2026-09-04T21:55:10-04:00`
-- head subject: agent-zero: restore two Hackmode development workers
+- head: [`7e4b5e6086bce208f27ecfaf0fa852e78915821a`](https://github.com/lost-rob0t/hackmode/commit/7e4b5e6086bce208f27ecfaf0fa852e78915821a)
+- head date: `2026-09-05T08:46:55Z`
+- head subject: Core: repair expert-run-inspection accessor collision (#189)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-05 7e4b5e6086bce208f27ecfaf0fa852e78915821a Core: repair expert-run-inspection accessor collision (#189)
+2026-09-05 047353b9af84db9cfe64802c083a1560d68c5cd2 CI: tolerate unsupported artifact upload on Forgejo
+2026-09-05 800e738d311dd9131c492ad2ba18a7693825e7e1 CI: pin core dependency checkouts to on-host mirrors
+2026-09-05 eb96f822d2a85b94e17ca66623c8e32016a74779 Core: repair expert-run-inspection accessor collision
 2026-09-04 3b4e2da0dbd808f46711a0784f6a4fbdf15df583 agent-zero: restore two Hackmode development workers
 2026-09-01 3c04418492bae0a7f5c4f8389e01f7469303ce84 Retire Hackmode Auto-RAGE ownership
 2026-09-01 0edf029b0d7bf1a7e04447d0616032e654d2a3c8 Remove retired Hackmode RAGE installer

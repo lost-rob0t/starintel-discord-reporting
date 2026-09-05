@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-05T04:34:35Z`
+- generated: `2026-09-05T10:40:07Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced`](https://github.com/lost-rob0t/starintel-auto-research/commit/e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced)
-- head date: `2026-08-31T14:29:41-04:00`
-- head subject: Remove orphaned StarLang prototype CI (#114)
+- head: [`eda24d2540c3c847199a361cbf011bd597360e95`](https://github.com/lost-rob0t/starintel-auto-research/commit/eda24d2540c3c847199a361cbf011bd597360e95)
+- head date: `2026-09-05T04:12:24-04:00`
+- head subject: research: seed Confoederatio in OSINT source backlog
 
 ## Git log, last 14 days
 
 ```text
+2026-09-05 eda24d2540c3c847199a361cbf011bd597360e95 research: seed Confoederatio in OSINT source backlog
+2026-09-05 5cd6092f4504b7fe47fecd1bd1d26cd32f492c17 research: add Confoederatio world-model source reconnaissance
 2026-08-31 e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced Remove orphaned StarLang prototype CI (#114)
 2026-08-31 c3e5d568d9321d2dd859fc3e00fcf7a1bb2f7715 Retire autonomous StarIntel product worker profiles after Hackmode migration (#204)
 2026-08-30 42d49b43dcfbc0ca2c6bb7e345709f85af183df7 index: reconcile current server runtime ARDR nodes
@@ -345,6 +347,7 @@ roam/research/star-server/QUASAR-RESEARCH-004-dual-actor-supervisor-runtime.org
 roam/research/star-server/QUASAR-RESEARCH-005-four-repository-alignment-and-scale.org
 roam/research/star-server/QUASAR-RESEARCH-006-lisp-actor-discovery-and-actor-studio.org
 roam/research/star-server/STAR-RESEARCH-001-osint-feature-landscape.org
+roam/research/star-server/STAR-RESEARCH-002-C23C24-confoederatio-world-model.org
 roam/research/star-server/STAR-RESEARCH-002-awesome-osint-research-backlog.org
 roam/research/star-server/STAR-RESEARCH-003-budgeted-supervised-prolog-inference-actors.org
 roam/research/star-server/STAR-RESEARCH-004-internal-prolog-server-library-swi-nprolog.org

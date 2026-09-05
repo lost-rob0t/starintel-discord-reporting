@@ -1,15 +1,17 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-05T04:34:45Z`
+- generated: `2026-09-05T10:40:17Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506`](https://github.com/lost-rob0t/prolog-rlm/commit/6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506)
-- head date: `2026-09-04T19:44:22Z`
-- head subject: Merge pull request 'ci: run tree-sitter FFI gate on a container-safe nix runner' (#359) from ci/tree-sitter-runner-labels into main
+- head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
+- head date: `2026-09-05T03:18:36Z`
+- head subject: Merge pull request 'fix: preserve Agent Zero skills through canonical skill graph' (#364) from fix/339-agent-zero-skill-graph into main
 
 ## Git log, last 14 days
 
 ```text
+2026-09-05 e1ed6c2b5f717d9bb380fcf22d144737299197f8 Merge pull request 'fix: preserve Agent Zero skills through canonical skill graph' (#364) from fix/339-agent-zero-skill-graph into main
+2026-09-05 4b34741f1d0bac3049d821314263471790fcbb39 Merge branch 'main' into fix/339-agent-zero-skill-graph
 2026-09-04 6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506 Merge pull request 'ci: run tree-sitter FFI gate on a container-safe nix runner' (#359) from ci/tree-sitter-runner-labels into main
 2026-09-04 e244020d5ce52d3e7c4217659187c2ceaf6fc842 ci: re-trigger canonical gate after cancelled run 853
 2026-09-04 22a9a489a10d7423502ef95e94be3a22399c8358 chore(verify): record PR 359 merge reconcile evidence at 23b9aff
@@ -66,6 +68,10 @@
 2026-09-02 31f744c94ffdeed62ffc919690663c477ce72a2b research: record RLM-RESEARCH-012 approval
 2026-09-02 4ab728553c65b574c440066f02aadbf9e9893225 research: author RLM-RESEARCH-012 for #97 query/capture APIs
 2026-09-01 156bfe9b2caffa1b967e77bee51263ee9e85fb50 Add versioned project syntax observations
+2026-09-01 b12561cf888f62c5bfe692cc6669eae50eb1b634 test: match skill graph with explicit dict access
+2026-09-01 fc4def9991a85658e5a1a14e9a36304c819b66a4 test: keep graph fixture bindings outside assertions
+2026-09-01 b19da3b240bdd15c4d2884aa2ab4cbf4e94857da feat: adapt Agent Zero packages into skill graph
+2026-09-01 e569015b969f2028de89c30767ac1d71c2d3ceef test: specify Agent Zero skill graph adapter
 2026-09-01 39b278589dae8518e583778cd6671a6cb1e026c7 test: import library(http/json) for atom_json_dict on SWI 9
 2026-09-01 7a701578a50735d1383cf1709e1d32a3a6af0ed8 test: isolate the tool-cutoff test from the wall-clock reservation
 2026-09-01 d5e2cecfeb1f887f46b8513a4be92b3f888b4f7c fix: bound evidence by response count with deterministic closing turns
@@ -314,7 +320,6 @@
 2026-08-21 57ee547e71f23ebf690b44f4af46ec21d925faa0 test(effect): cover anonymous dict normalization
 2026-08-21 076e1d9b7ff0d357907bb4d9db51bf3795e7aa08 fix(effect): treat anonymous dict tags as representation-only
 2026-08-21 62dfbfc8d303415540966e885f796df4483cdaf1 fix(authority): canonicalize anonymous dict tags in fingerprints
-2026-08-22 3014b52ff4b2ba3d5721192d4ba32cec3507d5e0 fix: eliminate remaining PlUnit false-green paths
 ```
 
 ## Repository paths changed, last 14 days
@@ -387,7 +392,6 @@ docs/agent-runtime.md
 docs/agent-zero-adapter.md
 docs/async-runtime.md
 docs/authority-runtime.md
-docs/benchmark-conformance.md
 docs/chain-runtime.md
 docs/completion-runtime.md
 docs/conversation-cold-context.md
@@ -633,7 +637,6 @@ test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
-test/run_tests.pl
 test/run_tree_sitter_tests.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -643,28 +646,7 @@ test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-test/support/run_runner_scenario.pl
-test/support/runner_adversarial_failures.pl
-test/support/runner_blocked_test.pl
-test/support/runner_budget_setup_test.pl
-test/support/runner_budget_test.pl
-test/support/runner_condition_test.pl
-test/support/runner_duplicate_test.pl
-test/support/runner_hostile_guard_probe.pl
-test/support/runner_hostile_main.pl
-test/support/runner_hostile_probe.pl
 test/support/runner_integrity_test.pl
-test/support/runner_inventory_probe.pl
-test/support/runner_load_error_after.pl
-test/support/runner_load_error_suite.pl
-test/support/runner_missing_file_probe.pl
-test/support/runner_partial_spoof.pl
-test/support/runner_passing_test.pl
-test/support/runner_setup_test.pl
-test/support/runner_signal_probe.pl
-test/support/runner_strict_load_probe.pl
-test/support/runner_subset_tests.pl
-test/support/runner_timeout_test.pl
 test/support/runner_unstrict_load_probe.pl
 test/support/tool_effect_test_support.pl
 third_party/mattpocock-skills/LICENSE
@@ -842,7 +824,6 @@ test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_runner_integrity_tests.pl
-test/run_tests.pl
 test/run_tree_sitter_tests.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -852,28 +833,7 @@ test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-test/support/run_runner_scenario.pl
-test/support/runner_adversarial_failures.pl
-test/support/runner_blocked_test.pl
-test/support/runner_budget_setup_test.pl
-test/support/runner_budget_test.pl
-test/support/runner_condition_test.pl
-test/support/runner_duplicate_test.pl
-test/support/runner_hostile_guard_probe.pl
-test/support/runner_hostile_main.pl
-test/support/runner_hostile_probe.pl
 test/support/runner_integrity_test.pl
-test/support/runner_inventory_probe.pl
-test/support/runner_load_error_after.pl
-test/support/runner_load_error_suite.pl
-test/support/runner_missing_file_probe.pl
-test/support/runner_partial_spoof.pl
-test/support/runner_passing_test.pl
-test/support/runner_setup_test.pl
-test/support/runner_signal_probe.pl
-test/support/runner_strict_load_probe.pl
-test/support/runner_subset_tests.pl
-test/support/runner_timeout_test.pl
 test/support/runner_unstrict_load_probe.pl
 test/support/tool_effect_test_support.pl
 third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh

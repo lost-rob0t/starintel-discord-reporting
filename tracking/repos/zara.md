@@ -1,15 +1,198 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-05T04:34:48Z`
+- generated: `2026-09-05T10:40:20Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`da515c80a2ba18e889f62dc8f1816c8c95249f43`](https://github.com/lost-rob0t/zara/commit/da515c80a2ba18e889f62dc8f1816c8c95249f43)
-- head date: `2026-09-04T23:02:26-04:00`
-- head subject: Merge pull request #318 from lost-rob0t/rage/133-daemon-default-regression
+- head: [`345d318360737598bb7a0407d6961d0d76e02e8d`](https://github.com/lost-rob0t/zara/commit/345d318360737598bb7a0407d6961d0d76e02e8d)
+- head date: `2026-09-05T06:27:37-04:00`
+- head subject: Merge pull request #338 from lost-rob0t/rage/173-android-client-continuity
 
 ## Git log, last 14 days
 
 ```text
+2026-09-05 345d318360737598bb7a0407d6961d0d76e02e8d Merge pull request #338 from lost-rob0t/rage/173-android-client-continuity
+2026-09-05 5dc158133c681b1b6975d82bcd5933c3ac6a8f19 fix(android): route capability ack through its canonical codec in stock interop
+2026-09-05 3465d9e05e4eaf92512ae6ecd90a71fa19c3e3ff fix(android): bootstrap stock server fixture from repo package
+2026-09-05 4c1d16aca25ec68e027bff1eca3dbb8ea2ca25b1 RAGE #173: signal stock runtime after actual JeroMQ turn acceptance
+2026-09-05 edd409ed17583acd5bb1de557c6eb37251d69a73 RAGE #173: gate runtime events on observed turn acceptance
+2026-09-05 dc8bc136e499073da4d8ef09ebc53a447513f42a RAGE #173: bound cold Nix stock-server fixture startup
+2026-09-05 42e202d50a93642a10af0c0d86224a38fc69c11d RAGE #173: require stock secure ZaraServer interop in Android gate
+2026-09-05 c6d921b8cd8ecf26ee78f0f4a3a85ba752fc1bba RAGE #173: prove JeroMQ actor against stock secure ZaraServer
+2026-09-05 bcbfa54693ce609b0953e4e2b9dbfa0b3aca1327 RAGE #173: add stock ZaraServer Android interop fixture
+2026-09-05 37f19709974402927d77943c5d0e2984ff6b126a Merge current master into Android #173 recovery
+2026-09-05 a0d218de65e2dc294dbf4b9b3fab6a7309e8783a RAGE #173: disambiguate synchronized request predicate
+2026-09-05 7cb047a390644c7da96cfb4620bfb8d569450fff Merge pull request #331 from lost-rob0t/rage/329-production-secure-listener
+2026-09-05 b20c0c18cbe391000829334e4dec370bbab0054d RAGE #173: emit compact canonical text JSON
+2026-09-05 c123ba40a46937f8ba87dd395f2885fce66c0533 RAGE #173: invalidate timed-out text transport before reuse
+2026-09-05 142e9777c00119978e3f81f09500a81e607e7647 RAGE #173 RED: reconnect after text request timeout
+2026-09-05 af972b7154021f983ba89bbc433b21bd8427101f RAGE #173: disconnect transport when enrollment authority is lost
+2026-09-05 8bb17a50582676f2663d515db1ce7ec7b06d802a RAGE #173: invalidate active runtime when enrollment is lost
+2026-09-05 3480312fbe2d0fe7e475c59f8562caed9239520a RAGE #173 RED: disconnect when enrollment authority is lost
+2026-09-05 d3d87e983c96fbed470c7fe8ef0530fbeabaaccd RAGE #173 RED: invalidate active session when enrollment is lost
+2026-09-05 51689ecb15db92bb53111ff718c56469a7f5a18b RAGE #173: record text lifecycle and reconnect hardening
+2026-09-05 81e7aafc6fc4b36c1c3aec5535a5fdada6b39ca9 RAGE #173: ignore stale connect completions before retry effects
+2026-09-05 0af3860c5784572b4697d1c9a990e59d3dfef797 RAGE #173 RED: reject stale connect failure retry scheduling
+2026-09-05 9330314a8a201f6adc3b61d266c90ef1f36d7904 RAGE #173: negotiate capabilities in ordering fixture
+2026-09-05 fb53318443f56de52cc3533729876a90518f1647 RAGE #173: cover capability negotiation across text sessions
+2026-09-05 0e552e13e2ccb351c19af3ac7273e895b50f5353 RAGE #173: negotiate empty capability snapshot before connected
+2026-09-05 d74b978f14124ee516d58250dde49d6d0f60d455 RAGE #173 RED: require capability snapshot negotiation after hello
+2026-09-05 d591e395878962cc10517d8bde71eedc031cd27b RAGE #173: align text actor fixture with terminal turn event
+2026-09-05 9a8d7df580e8ef155cd961f01e1fd8ee74986320 RAGE #173: drain canonical text turn lifecycle
+2026-09-05 5c97b44ce7f52490e048a867416a12bc9e1f4457 RAGE #173: record reconnect and merged capability contract
+2026-09-05 af5a27979d66cbea75062f829dc565e17955d72e Android #173: harden capability JSON integer parser
+2026-09-05 fabea77133914976bd0da2373ad9392d42a46a1e RAGE #329: prove typed device actions survive secure gateway hardening
+2026-09-05 04ef8a261570f5a45639314b74fae404c9f354ce Android #173 GREEN: add closed ZARA1 capability codec
+2026-09-05 b5a32e6136ff52fda4794562df95e99c8cb90f11 Android #173: isolate capability negotiation codec
+2026-09-05 056c6eb4c4a6f4e100b201ebed3d358bc986554a RAGE #329: preserve #336 device-action authorization on hardened gateway
+2026-09-05 acefb7b80abe4b7c59a492b5033245aa8a0c7587 Android #173 RED: require typed capability snapshot codec
+2026-09-05 3479c7507f00ae6526828a5c412905352738f07a Merge canonical master after #336 into RAGE #329
+2026-09-05 c28f43701b5b7196dc64f2050966a2cea0116af2 Android #173 GREEN: execute bounded reconnect schedule
+2026-09-05 6f6dabd20578abad4218b4173883ed141dc44e7b Android #173 RED: require bounded reconnect orchestration
+2026-09-05 a4173f79ec5bb51ea54c1711663ae2872afa0228 Android #173 GREEN: retain configured server across restore
+2026-09-05 bb55b494bbbdb8c93e73b5facb0646e6102b9d9e Android #173 RED: restored state retains configured server
+2026-09-05 7ad60ae16aea72ba614e3b2b80334ab904efd742 Recovery: refresh Android #173 on merged #159 master
+2026-09-05 759222b879825cf34bff226f247ef1a93eccae0e Android #173: bind text actor to session-client contract
+2026-09-05 4353214b9a3e96a0e2d70986722117d09d5f71a7 Android #173: implement reducer-owned text session controller
+2026-09-05 19e2b27befebc9c8911ce969cac6e060e26e35d1 RAGE #173: record text client and source-SHA gate repair
+2026-09-05 eb6e9bac0a9fc13ca90b3779fe1d7271107d431e Merge PR #336: typed ZARA/1 device capability/action lifecycle
+2026-09-05 08c16b05e37eded8aac9e76fd6404e75891e8a4d RAGE #329: point depth threat to exact gateway oracle
+2026-09-05 d41d6bafaa24205b822f211d716adb3cec95e2e3 RAGE #329: enforce compound threat oracle references
+2026-09-05 c2a1547f88d59af29da58ffd6dbbc6ac30077f7c Android: derive diagnostics SHA from PR event head
+2026-09-05 63c72640aa3518b6455e56042e3aaae399ce0993 RAGE #329: catalog research-derived cross-boundary threats
+2026-09-05 a487b908b6175a3813c8a616cec27ad3081efa92 RAGE #329: assert exact duplicate-device failure class
+2026-09-05 a07c412aaead1d51f2e4f8c8fe87d24aca247e8e RAGE #329: cover adversarial enrollment lifecycle sequences
+2026-09-05 ac9c041ef245fe00f44b05a6e512ec22ce360ff5 RAGE #329: prove control-plane rate quota stays bounded
+2026-09-05 b89a124c002435a0dafaa17aa42afcc3af144225 RAGE #329: keep reconnect hello outside runtime concurrency quota
+2026-09-05 678c1a69ff3e040390caba00b6eadecdaec68457 RAGE #329: separate request-rate quota from runtime concurrency
+2026-09-05 4a8d68543c334c6ea8caf4d478dd168cc8a54caf RAGE #329: pin untrusted JSON nesting boundary
+2026-09-05 e6e0e2fc04ab583b36e393004c495ae0e2e76006 RAGE #329: keep structured persistence fuzz JSON-native
+2026-09-05 84431b4c3b97ecb1e4cf9dfb72ce6423e6c5aec9 RAGE #329: bound persistent security JSON nesting before parse
+2026-09-05 fe1740a91d44059795bf1bdea4c2221ac3b33470 RAGE #329: bound security admin JSON nesting before parse
+2026-09-05 8109e34bd5c7c2afab0ac574d40be82486c57e4d RAGE #329: add deterministic untrusted JSON nesting bound
+2026-09-05 d8787394a62fcca108bebc7c364937b011a972b1 test(android): define reducer-owned text session controller contract
+2026-09-05 a50a30920cec53a39afd20e4ae88ae5ca3d33e0e Merge pull request #340 from lost-rob0t/master
+2026-09-05 87ecf536c2347e6407155846a6c47bf8b7890e6e Merge master docs refresh into RAGE #159
+2026-09-05 a6e06877aae1f70bc77a999f95f7e12f80a53b37 RAGE #329: include parser and reconnect threat cases in soak
+2026-09-05 172e92e459c583a4509479c07b018dbf3240711a RAGE #173 GREEN: decode canonical text-turn progress and terminal events
+2026-09-05 6def13fa033e72613b3f527633bf4c3c1bbd1947 RAGE #329: verify route replacement and vanished-route quota release
+2026-09-05 52eb5fb38ecfd36d386ed1b229f8f162a78ed0ec RAGE #329: prove recursive ZARA/1 JSON cannot kill secure gateway
+2026-09-05 352362fb865f47b1f949baf74a8ddd3666784d2d RAGE #329: scope recursive JSON unit tests to local boundaries
+2026-09-05 eb72da2ad230c207bd9c060484f166f7dfe92735 RAGE #329: normalize recursive persisted JSON failures
+2026-09-05 b76c1f94620aae6d04ef0383e9d7e302ff7d5568 RAGE #173 RED: require canonical turn progress and terminal drain
+2026-09-05 f4887e937ea2cc8439ae533d9ec8545df5bc3d81 RAGE #329: normalize recursive admin JSON failures
+2026-09-05 588ea73734429989904b5c03adba47fb953e7ac4 RAGE #329: close authenticated route and quota lifecycle leaks
+2026-09-05 108f3a6d307b7211de8d2a493ed7521e820b4d76 RAGE #173: bind text actor to authenticated JeroMQ DEALER
+2026-09-05 5f874e1f51ac30b5c705c0479d831b2fba77accc RAGE #173: keep actor assertions at wire boundary
+2026-09-05 f12c358d8069beaacf3ad189231f5d64c2b322a2 RAGE #329 RED: model authenticated reconnect quota abuse
+2026-09-05 752a8d208531e86436573d6e752f6fd15f008b13 RAGE #173 GREEN: add single-owner ZARA1 text client actor
+2026-09-05 77728fe1d7a03721c85f7211348f5f51d98f9f94 RAGE #329 RED: cover recursive JSON parser exhaustion
+2026-09-05 04eb6774eb37c0dbeadcc7ed618725d42b1acb8a RAGE #173 RED: define single-owner authenticated text client actor
+2026-09-05 7b35dd2b581091143d0392b268eab48990b7e3ba RAGE #173 GREEN: add strict ZARA1 text codec
+2026-09-05 400744e5bd00e8a302318c91db0678c7d8314af7 docs: extensive Zara documentation refresh (#337)
+2026-09-05 3ead5986506a738d1235daabad85d81fa4ce258d RAGE #329: include dependency threat gate in security soak
+2026-09-05 6f10852686738cf8459583f9df6dbd7843cedef3 RAGE #329: require actual libzmq CURVE capability
+2026-09-05 df332b4b2376b27bff108c667401d94732a4fed8 RAGE #173 RED: define strict dependency-free ZARA1 text codec
+2026-09-05 de639188f0453d5a4cd626fe4cfc54b7872cf051 RAGE #329 RED: require actual libzmq CURVE capability
+2026-09-05 1b86b1e71737f67d0a0be3c2574f0c7d7a30165b RAGE #173: record client-state campaign slices
+2026-09-05 d354638d035ddddeaaa5bd967046005ffda2acde RAGE #173: render real enrollment and restorable state on launch
+2026-09-05 4a6bf32109ec41f63b33ede307e0697062b60f47 RAGE #329: run full threat-model security soak
+2026-09-05 1a275917e20f0548b630c55a14f228b5cd74f70b RAGE #173 GREEN: project enrollment readiness into canonical reducer
+2026-09-05 da440bd3f9e737f53cce99b1d51fa97aedc66e30 RAGE #329: record complete authenticated-daemon threat model
+2026-09-05 b5c54cfb8242488ffac0ab459efab80e10383c1c RAGE #173 GREEN: expose key-free enrollment readiness projection
+2026-09-05 a57c02a7ca5b072fc5fa87c40df90ebf3ec75715 RAGE #173 RED: project enrollment authority into key-free runtime state
+2026-09-05 8cf1d470cbac81bb5197c412573a54fe11eac560 RAGE #173: regress exact Android diagnostic source SHA
+2026-09-05 d90b4d7cbe50feb7a16921650a1e2741228f7059 RAGE #329: enforce threat-model traceability in CI
+2026-09-05 f297cebd5ba630e97be851c3387261d8e2d0fd57 RAGE #329: verify owner-private admin permission contract
+2026-09-05 8987efe19f07725efeeffab9e6c69cb1bedbd2e9 RAGE #329: add executable STRIDE threat catalog
+2026-09-05 ef7c7b832962679efdf0296fd802cba16575f9ee RAGE #173 GREEN: bound request correlation to generation and session
+2026-09-05 605993c0f533bc7907588b2b8b90c04d61253c7f RAGE #173 RED: require bounded generation-bound request correlation
+2026-09-05 09dfc355444b579d0120abb9a21544ba96b2aa17 RAGE #173: record actual PR head SHA in Android diagnostics
+2026-09-05 5c487853915e1a0334ade61319b149da9bfb8ed7 RAGE #159: record surfaced accepted-before-error RED
+2026-09-05 ad0f22667bc88ce7fc2efc5c76cb4e4f55f4dbd7 RAGE #329: add security-management disclosure and state-limit tests
+2026-09-05 06c9a62e77935f3eee28ad65bfb5ea8b0aa28ce4 RAGE #159: align remote-error test with accepted-terminal lifecycle
+2026-09-05 a7847072cf1597c6465cf312aad762d0dce1cb49 RAGE #329: add remote gateway threat-model tests
+2026-09-05 69c76809abc8d6f128e012fcde8d8d1ee7c3b2f9 RAGE #173 GREEN: restore durable selection without fabricating a session
+2026-09-05 81adb076b2d32650f0b8430a2a0722fbebefbb17 RAGE #173 GREEN: persist only restorable public client state
+2026-09-05 696d832cdcafe9cd2bca9a95083cee97128369ca RAGE #173 RED: process restore must never persist live session state
+2026-09-05 22a54533c3215f446064d7df0dbcb4a4f02c5645 RAGE #329: make ZAP user ids opaque bounded ASCII
+2026-09-05 f78f54c92a1a293824441a7fa32dadad4dcb3002 RAGE #173: expose exact Android source SHA in diagnostics
+2026-09-05 985e56d365c92eeaccf79550cbf8ba36ccc39d32 RAGE #173: embed exact source SHA in Android BuildConfig
+2026-09-05 9edcc1c97a504f19752484d19de9f485b71112de RAGE #173: render evolved canonical connection states
+2026-09-05 5d5dc5978abcf818cdd55a13f8791275d2ed9e44 RAGE #329: harden CURVE/ZAP transport invariants
+2026-09-05 0c9a971dfead6170af221ea94b35539268e3cc06 RAGE #173 GREEN: generation-bind hello sessions and bounded reconnect
+2026-09-05 9d13265325f85ada47cb7852063f782121dbfda1 RAGE #173 RED: require generation-bound session and reconnect reducer
+2026-09-05 c2c568f5a219f22e35509615d12e4240575c0179 RAGE #329 RED: codify transport and local-admin threat cases
+2026-09-05 9abadedaac91557e344135c233a593f8898d31fa RAGE #173 GREEN: validate public TCP server profiles
+2026-09-05 f17105cb1daaa33d6c9757aa9d636602696979ac RAGE #173 RED: define safe Android server endpoint contract
+2026-09-05 4b48bbd5ba0881e5f0633ed9e0e06a98250e2f87 RAGE #173: consume Android client continuity slice
+2026-09-05 752a46bc754e8c96bba4e98e59bee220e5735c62 RAGE #159: record failure-surfacing recovery
+2026-09-05 31e1110576828ac4b5b778ce7898e68bc7fd3db5 RAGE #159: make device-action ZMQ teardown failure-safe
+2026-09-05 05b25f1edfce97ea5045b9f6b1956a35b3f7ebb6 RAGE #159: make adversarial ZMQ teardown failure-safe
+2026-09-05 330402ef67f6c92b7c19ac63d10f65734b49cdd9 Merge pull request #335 from lost-rob0t/rage/159-zara1-device-actions-recovery
+2026-09-05 cc4826bb8ea2f05b04238612f0ba4ce184c201b0 RAGE #329: add process-chaos tier to security soak
+2026-09-05 98b0bcd30ff0a973d12bb06c138e0a1a5da389cd RAGE #329: add multi-process crash-point security chaos
+2026-09-05 9928b70d96686ece187e225d9a2f28bafda34427 RAGE #329: make structured fuzz mutations unambiguously invalid
+2026-09-05 85d8f7b6f82124fc6b69241840db0701a385cd75 RAGE #329: widen deterministic security fuzz corpus
+2026-09-05 1fb7d255795626de6ac4090a4e4ac07697bd1069 RAGE #329: include adversarial suite in security soak
+2026-09-05 0440f2dcac15e2d07eb5bc6c059d7181e2fc8b70 RAGE #329: add adversarial security state and admin tests
+2026-09-05 dc850892edd5ab12555fad3e4bdb8c32dac438e7 RAGE #329: exercise chaos through bounded admin socket path
+2026-09-05 d6f031e54f5a71d4f1db9382476809f0ce1b0ed3 RAGE #329: serialize persistent security state mutations
+2026-09-05 479634cb71384e728ae501db7594999c0fb58cb1 RAGE #329: harden security identity validation
+2026-09-05 49fbe4c45c31bcccf78e463dd8f1cb6337b02278 test: make security fuzz inputs byte-for-byte reproducible
+2026-09-05 3c00b9c5fabe436b297b8308389da1837a05669b Merge master into RAGE #159 device actions recovery
+2026-09-05 2bf5f6e688bfbe80ad6d734b4ea2e8e0aebe09c8 test: add reproducible security fuzz chaos soak runner
+2026-09-05 beb733afb4d3cf0b0f2d8048d808236307d12eb7 test: make security fuzz seed corpus scalable
+2026-09-05 ceb2e13951af518cbc29df2dafabdea022baad89 Merge pull request #322 from lost-rob0t/rage/173-android-auth
+2026-09-05 b6e8e62d9489123a6b39397536a5a0dd76b0cea8 docs: record security fuzz and chaos hardening
+2026-09-05 617f9cf11a649959f6855970e54a4b0ab8d43735 test: add live security chaos and fault-injection coverage
+2026-09-05 c5d1f17834f87f4001d0b542384adba5d890f4c3 test: add deterministic security mutation fuzzing
+2026-09-05 d25096f0110c1484cd9e012008bc432f299f42d5 fix: fail closed when live security control disappears
+2026-09-05 aef972cc5e4ab4529a9faf81277d2d92173a0ae7 test: lock long-path live security socket regression
+2026-09-05 4e0d5906104b8859b5091ad20cf3ad3e6994b7b4 fix: keep long-path admin socket inside security directory
+2026-09-05 36a30958ebab6b96df82b414b7d54631cdbc4747 Merge master into RAGE #329 security recovery
+2026-09-05 17b1fda2aae0835efdc21b23fa0ef424f875b556 fix: route owner security management through live daemon
+2026-09-05 6f1f040a6a4dde8bf5309edf40e1c09b1ee57d5f feat: add owner-local live security control socket
+2026-09-05 7d4fca38628a6fc4e5e6e568b667c41e72a4167d fix: make security persistence live-registry aware
+2026-09-05 97a010110d7defede9135851db21a365369050cf docs: record live security RED and no-reload design
+2026-09-05 7c62117ecc55c488771b5496be84bd0b75bcb74b test: prove live security mutations require no reload
+2026-09-05 01dd7da417ae19848bf8a4e21031819edcaf04e8 Merge pull request #334 from lost-rob0t/master
+2026-09-05 45975f7baa0f81a91198861185993bb31a12597d RAGE #159: record protocol-state repair iteration
+2026-09-05 6e974fcdc11a10616a0dfa573cfb174eba44818a RAGE #159: enforce device action lifecycle
+2026-09-05 a86170c3009d56271c595305443a004d26fd02eb Merge current master into RAGE #159 recovery
+2026-09-05 8e247fd4cb6ffe1f3258bfb4f115a3339208e8c1 Merge pull request #328 from lost-rob0t/research/unified-copilot-20260905
+2026-09-05 7ed53bdbc2b19c3de4d1f33e85f4a2810814da4a RAGE #173: record Android auth implementation and green gate
+2026-09-05 b9822bcf5b078f2bb13eefb5a8ad96c14d4dfd05 Merge pull request #333 from lost-rob0t/master
+2026-09-05 83e4f4828a3c2928ae95aede3943f5d4439bb44d RAGE #329: wire secure CURVE/ZAP listener into zara-server
+2026-09-05 f9c249280fb6fc22b9a3afd99f20143dd0d78de8 RAGE #329: split server lifecycle core for secure facade
+2026-09-05 e6fef87a214ea96552107a621213b0c94a2316f4 RAGE #329: add durable CURVE security state
+2026-09-05 60f103e79470d2938e6d28905cfd117811c8c1ad RAGE #329 RED: specify production secure listener and durable state
+2026-09-05 6cdc8a392639946232bd220a1627ff52c9bcfcfa research: fix whitespace in unified Copilot notes
+2026-09-05 892b1549ba7f2717260f81cfc12aa4f5460e3168 RAGE #329: record secure production listener recovery
+2026-09-05 8fe8c3ddca0e5cc2ef5624f551d75b4e3c29d9a0 research: unify desktop copilot, voice chats and visual CI
+2026-09-05 50dd567f0a976ce7dd97f5f3374cba75eff6f7c8 RAGE #173: fail closed on server pin replacement
+2026-09-05 62cbfddb74777c5a0be8964856dbfafe557d22bf RAGE #173 RED: reject silent server repinning
+2026-09-05 d0fd3d99de0a9c21fb97baca65c02cfd6d537375 RAGE #173: permit authenticated ZARA/1 network transport
+2026-09-05 16b1eda8dd4a0b1e4a3dba7742787e8a75192347 Merge pull request #319 from lost-rob0t/rage/133-desktop-daemon-default-regression
+2026-09-05 5035be7964f801cd8a4726178eb8124eb440b4a2 RAGE #173: cover enrollment state and Z85 exchange
+2026-09-05 e93396a0d7ccfb59926f798188428397f774bfa2 RAGE #173: expose Z85 enrollment exchange
+2026-09-05 66dd0e58d7bd8764ad5390de5a1e54e480295553 RAGE #173: add CURVE Z85 enrollment exchange and dealer factory
+2026-09-05 52b51d8cc3b85c1f663c3db2943757288a5c0cef RAGE #173: clear loaded CURVE secrets after enrollment operations
+2026-09-05 d59043957811b1e734b99ae1deeacdc91ceedab2 RAGE #173: bound plaintext CURVE secret lifetime
+2026-09-05 197d45c87984ede4f6caa968224e08b908da644f RAGE #173: wire pinned JeroMQ into Android client
+2026-09-05 5b1c7eee8c8feeb80bd266a4237d02ebbae032d4 RAGE #173: pin JeroMQ CURVE dependency
+2026-09-05 0e9f3fccee9d6435e024dce8dd0a9542dcc7248f RAGE #173: add typed Android enrollment repository
+2026-09-05 29f8d6d8412299e774d03610e266afc3769f4fb1 RAGE #173: bind auth material to JeroMQ CURVE
+2026-09-05 f01a9cdfd8fa0528fed51f97421184b99ddcaafa RAGE #173: harden atomic credential write
+2026-09-05 bd895648d134b7bc7eccb425901d6a3964b3d2ce RAGE #173: add Android Keystore credential wrapping
+2026-09-05 86d6ed7ce3f8869b98843622e131a2770c5fb611 RAGE #173: implement wrapped CURVE credential core
+2026-09-05 01cbc085a05755f8705bae07789c5a90a86ae4e5 RAGE #173 RED: specify Android authentication contract
+2026-09-05 1ceaef551690dfdbf02799bb70521267d3bc07f2 RAGE #173: record Android auth start and design
+2026-09-05 f90bf1d47af2a7830c8f9e54c2852482cacbf5c4 RAGE #159: record current-master recovery
+2026-09-05 20a63186bb9433016682ee48d64fb7fcdeed5710 Merge current master into #159 recovery branch
+2026-09-05 d2b59eaf387104fa7bc2a325f6bf0f9fef1fae8d RAGE #133: record desktop RED and implementation
+2026-09-05 f6102b5d6cde02ae623f07fd4dc9e278e01bcc0c RAGE #133: default desktop to daemon client
+2026-09-05 dfca78b44fc0e7ccced4800476d2be52b0a67e9f test: require desktop daemon client by default
+2026-09-05 4dc71e0c5543f27016baefc7b9b22dbff9786cd4 rage: record #133 desktop daemon-default iteration
 2026-09-04 da515c80a2ba18e889f62dc8f1816c8c95249f43 Merge pull request #318 from lost-rob0t/rage/133-daemon-default-regression
 2026-09-04 10ff76e5c53d5c189572a06d58f4ab430ba0a4bd RAGE #133: keep daemon-default CLI diff minimal
 2026-09-04 a20a343b9632afe59474d5f4870a0ebe4e7d24aa RAGE #133: record RED and daemon-default implementation
@@ -116,14 +299,27 @@
 2026-09-03 ea787f5807d54ef1801e083e9f250d1bf386e762 docs(rage): record #260 customization wiki slice
 2026-09-03 e15fe203c69ef8196430aa5479158ccfde2e2322 Merge pull request #306 from lost-rob0t/rage/260-customization-diagnostics
 2026-09-03 ad1fe996c6c221c30004e7012fbc9dbfc2b88a74 test: complete diagnostics manager fixture
+2026-09-03 f014ff791568d5001eec7b3838c8218b18a3fb72 RAGE #159 RED: include adversarial device-action tests
+2026-09-03 6dcc6c0ecafb908d13181053f62cb1f64b2976e0 RAGE #159 RED: harden action lifecycle contract
+2026-09-03 4fe812d6a0097144a2cfc5ffae5a418b9ae67ccd RAGE #159: remove one-shot apply harness
+2026-09-03 aa963063bdabc8e6dbd69c88fb16c0354911cb5d RAGE #159: remove one-shot apply workflow
 2026-09-03 c64c408b051e618904b0b25f7eca9728af032eb9 docs(rage): record diagnostics red and implementation
 2026-09-03 f57abe38d6f002694805215bf64e2709e5c41e56 test(rage): use canonical runtime host shutdown
 2026-09-03 c37c0a6539e963ed2784abdf9d5cd7213ab02af0 feat(rage): expose customization diagnostics from runtime host
+2026-09-03 8180f79b6c0bf598fbe8023c61fb595784baee04 [rage159-applied] RAGE #159: implement typed device actions
+2026-09-03 f08caa98e76fafc2209bed0ea3fdde1112e08df9 RAGE #159: tighten gateway patch anchor
 2026-09-03 f3274ad75adc78f58599ae6d1b4b399ca9fc3731 feat(rage): expose runtime customization diagnostics
+2026-09-03 50d522dbbcecbcd294f8282a358ceb8ab8847e93 RAGE #159: run one-shot implementation harness
 2026-09-03 6cd63f28f03a6b9e6679cf4fbc21b8fe5307f0f6 feat(rage): expose bounded customization diagnostics
+2026-09-03 1ed47f4dfd365646b429adc4258e693c0505200a RAGE #159: add one-shot implementation harness
 2026-09-03 1b3008aabd0919a64f127ede4b3c666313316497 feat(rage): add safe backend diagnostics projection
 2026-09-03 b410fe531bdd4e620b2835b0db556b3805c705c4 feat(rage): add safe advice diagnostics projection
 2026-09-03 fa1e5e74bc89f56a84c40a69ce35109320683d2a test(rage): require runtime customization diagnostics seam
+2026-09-03 0387f8adf2e3627fac291ae48b3682338f698e9f RAGE #159: freeze device-action design
+2026-09-03 832c2ec4fa2cac125f03df9651c0bab586e5de5c RAGE #159: record protocol research
+2026-09-03 8f602872227903c8a6c1110068e84e47c3e1f83a RAGE #159 RED: add focused device-action gate
+2026-09-03 b8f2413a149230f247f99b904ab494c489c1bf7d RAGE #159 RED: require typed device-action protocol
+2026-09-03 b6d2754ef6b2c25e3bfeb2ba80b8840d2c674021 RAGE #159: consume typed device-action protocol
 2026-09-03 94aeeae839da4f4d71241100d018f4b4b83c1bdb test: define #260 customization diagnostic contract
 2026-09-03 d04e2a38a07f94c2c4b322c7f912d7a597324184 rage: design #260 customization diagnostics
 2026-09-03 7c70219cb393302145582d31c28b00f214f112d6 rage: research #260 customization diagnostics
@@ -691,79 +887,20 @@
 2026-08-22 96bf6ed369d66136c07d457a0c9730a162b67b30 feat(zara1): define owner-private server IPC endpoint
 2026-08-22 1b391e2b2e68a1fe418a0343b19ebda63ac5dcd3 test(zara1): require owner-private server IPC endpoint
 2026-08-22 f9df2594a20939f3b017aafb495e739fda44626b feat(zara1): expose client runtime status
-2026-08-22 01b8bcd19035aa359b8ee828d5cdd82950a09ffa test(zara1): require client runtime status API
-2026-08-22 233c428905a8d642ee047904abb3aaf6a1889a0d feat(zara1): answer runtime status queries
-2026-08-22 7e1eb951d23243425423c5b81772a827940314b4 test(zara1): require runtime status response
-2026-08-22 bdd73342cca61f9bd3c7d7660c89c6324aaffa4b fix(zara1): isolate per-route outbound backpressure
-2026-08-22 5c13d90489bf6ff2034a8a5261405fdbdffd8cd0 test(zara1): isolate stalled route outbound pressure
-2026-08-22 66564666dcf4e83eace2fe11876e93b2407a8ba5 test(zara1): bound async backpressure dispatch assertion
-2026-08-22 b7267fa0831923a7d662ba2b53ace123f6c8255d test(zara1): reconnect raw route after gateway restart
-2026-08-22 570d62a6accf158b03074a504fbe1a4e53e17e3f test(zara1): fail fast on transport hangs
-2026-08-22 dd390331cf9e968597820c6ba7671e893f17d84d test(zara1): add bounded focused protocol gate
-2026-08-22 ce2b51db7f466ff8a637d00657586c7511fc33e2 feat(zara1): make command idempotency survive reconnect
-2026-08-22 7c9147c0d95543ce0656a8f8a429b50a4201d1b8 test(zara1): cover in-flight duplicate reconnect retry
-2026-08-22 4fe3d9b4fee13e2d1ce9e8dfbc7a20be2f24b6c2 test(zara1): define reconnect idempotency conflict semantics
-2026-08-22 2528d90ebe12f70ee3226d23a59023aeefcd6e13 test(zara1): guarantee cleanup on reconnect red failure
-2026-08-22 c5dc2c13cfd16239fad260fb12fd0e3016f92629 test(zara1): require idempotency across reconnect
-2026-08-22 29fc15f51740d597bc647fc5311f99e282abde0a feat(zara1): bound reconnect idempotency and pending requests
-2026-08-22 9f8cee434da6288ef438328ecc136df30f2cbbc9 test(zara1): define reconnect and backpressure contract
-2026-08-22 74441868bc5bbea92e555e1483184a7aa17a7015 test(zara1): assert ROUTER mandatory behavior
-2026-08-22 f5de66e74d52f0a4605d0e564c40a23f3571d6a8 feat(zara1): add ROUTER DEALER client transport
-2026-08-22 b94f20d54df68e46d3b7329ada660aaf9e756949 test(zara1): define ROUTER DEALER transport contract
-2026-08-22 6bf52a2f0a5a9bc11145d745ee0a3413306f4572 feat(protocol): add explicit runtime wire codecs
-2026-08-22 0b92696399038f305d39da14232e04e6ddaafcc4 docs(rage): record protocol Slice A green and Slice B red
-2026-08-22 00a50d706d03cd8a51bea2579b0751dd22c891b9 test(protocol): define runtime codec contract first
-2026-08-22 297de324b26e3adacfb343033e46872c8d4e8a87 feat(protocol): implement strict ZARA/1 frame codec
-2026-08-22 f6e52ec5cfe9a26513d56800894d68457e3e0f6e docs(rage): record protocol Slice A red gate
-2026-08-22 5784ab75619a5e4b1906e422cecd2db5be8089fa test(protocol): define ZARA/1 codec contract first
-2026-08-22 ed7012c78fc705d21de0c53723edfdcaaffcf999 docs(rage): design ZARA/1 protocol and TDD gate
-2026-08-22 6c9c004590218fbfef159216d1120376b6fac890 docs(rage): research ZARA/1 protocol failure model
-2026-08-22 6b8d0e58d1f61d2bf5f274ae6c377203c4000f78 docs(rage): consume issue 129 at immutable start
-2026-08-22 b0bc03590215424db01277cbc4758067a7b854ab Merge pull request #141 from lost-rob0t/docs/rage-128-merge-outcome
-2026-08-22 921d1a6d903a36ac61aef468f6d69dc4c5aaa208 docs(rage): record issue 128 merge outcome
-2026-08-22 0a648c9157ec0f5dc63bc193acdc3b4fe1fcd4dc Merge pull request #140 from lost-rob0t/rage/139-daemon
-2026-08-22 0a961fa21dbc339affdd87b46831ee94c5871d7b docs(rage): record exact-head Nix gate defect
-2026-08-22 5d141ae456e7edef219bd3e21061d828855650c1 fix(ci): provide CA bundle to hermetic pytest check
-2026-08-22 9a46128da4d84a549f421ba14841e8cd35b25905 ci: run required flake gate
-2026-08-22 4ba6c94c57e8bdb950db1ec0ae1b3602b15938ea test: include server lifecycle in full gate
-2026-08-22 6665c139b838b1435afca442b5c316262b699540 feat: package zara-server in Nix
-2026-08-22 45cf53d8f2afa6b104f6579f211710ba6ae6322b test: require Nix zara-server package and app
-2026-08-22 350694b431b8a22eff25a9a0bd52ede20061d7c6 fix(client): report stopped after close-before-start
-2026-08-22 2efe70e8a8b42ce0c85412c5beb76110c4a96f04 fix(server): reject ambiguous principal ownership keys
-2026-08-22 3ecb622e6988bc089507e5b796bed2b914a275c0 docs(rage): record exact red gate evidence
-2026-08-22 6deb0e161585b25bd66f69aec642cb7d703dcfbd test(client): distinguish local lifecycle events from cross-client leakage
-2026-08-22 2bf98ace0629c0ece015ef53aea7f5f0ebe39e63 test(client): keep isolation assertion strict
-2026-08-22 2964c9585129aca4a14135408a96b13cd5ff4233 test(client): add lifecycle edge coverage before fixes
-2026-08-22 ad09fe25953781d87fa04de5567a0352f340b8bb test(server): expand lifecycle and ownership coverage before fixes
-2026-08-22 c827af720597dcd54919f303fcbd3e9cba447350 docs(rage): record TDD policy escalation
-2026-08-22 130f70371fd7970c9842be82212077b77494ad58 docs(rage): strengthen issue 128 TDD and coverage design
-2026-08-22 e70f517281b43a1c13d65a416811b395b198c6ab docs(agents): make TDD-first maximum coverage mandatory
-2026-08-22 543aba417f22ca2c91c9672473a5eb5a8aabc873 docs(rage): require TDD-first coverage-maximizing implementation
-2026-08-22 9d0497b44acc56133ea10b17224c933ab38a8552 docs(test): include zara-server in packaging contract
-2026-08-22 894221b527cab59c446b96d3f5a946fc43180b09 test(packaging): require zara-server entrypoint
-2026-08-22 49e24f39dc56734a19458884e43eed0cd58f1e35 build: package zara-server console entrypoint
-2026-08-22 df5b0bd2b5ef949cfc01ef83569b48996845520f test(client): assert transport-neutral client state
-2026-08-22 57e227cfa8288e7494ee0931071c3e530fc378ad refactor(client): keep client state transport-neutral
-2026-08-22 9a3f209b0c4b9e92b1f5d2a7392f6b40697772a9 feat(server): establish zara client/server lifecycle boundary
-2026-08-22 4b85b012bd3815e03dbb2b27a3dbd1fd27c98500 docs(rage): record issue 128 research and design checkpoint
-2026-08-22 736219f0b617c7ce51bb9f653d20c43e68795e87 docs(rage): design zara-server lifecycle for issue 128
-2026-08-22 eb036fc2ee5802e23acbcf2d8ad2cf08cb9852dd docs(rage): deep research daemon lifecycle issue 128
-2026-08-22 b563509a99b6b963b2f961795b3323f57040d52c chore(rage): consume daemon issue 128
-2026-08-22 0a0aa8bda5c6b1e8000dad40c740493449a031da feat(skills): bootstrap Zara RAGE skill
-2026-08-22 9b84d84052c0b948c75dcd75decd2fba92b51a78 docs(agents): define issue-driven RAGE protocol
-2026-08-22 7f6d380f857b351b42a264bb796d1f10bb6cc6a6 chore(rage): mark daemon RAGE start commit
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .github/workflows/ci.yml
+.github/workflows/rage-159-apply.yml
 .impeccable/design.json
 .impeccable/surfaces/zara-desktop-windows-quick-py.md
 .rage.toml
 AGENTS.md
 DESIGN.md
 PRODUCT.md
+README.org
 android/.gitignore
 android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
@@ -773,13 +910,28 @@ android/app/src/main/assets/prolog/portable/semantic_fixtures.json
 android/app/src/main/cpp/CMakeLists.txt
 android/app/src/main/cpp/zara_trealla_jni.c
 android/app/src/main/java/ai/zara/app/MainActivity.kt
+android/app/src/main/java/ai/zara/app/auth/AndroidCredentialCipher.kt
+android/app/src/main/java/ai/zara/app/auth/AuthCore.kt
+android/app/src/main/java/ai/zara/app/auth/EnrollmentRepository.kt
+android/app/src/main/java/ai/zara/app/auth/JeroMqAuth.kt
 android/app/src/main/java/ai/zara/app/prolog/NativeTreallaBridge.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticAssetStager.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticFixtureRunner.kt
 android/app/src/main/java/ai/zara/app/prolog/SemanticResultComparator.kt
 android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
+android/app/src/main/java/ai/zara/app/runtime/AndroidTextSessionController.kt
+android/app/src/main/java/ai/zara/app/runtime/ClientStateStore.kt
+android/app/src/main/java/ai/zara/app/runtime/EnrollmentProjection.kt
+android/app/src/main/java/ai/zara/app/runtime/JeroMqTextDealer.kt
+android/app/src/main/java/ai/zara/app/runtime/RequestCorrelations.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
+android/app/src/main/java/ai/zara/app/runtime/ServerProfile.kt
+android/app/src/main/java/ai/zara/app/runtime/ZaraCapabilityCodec.kt
+android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
+android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
+android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
+android/app/src/test/java/ai/zara/app/auth/AuthenticationTest.kt
 android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
@@ -791,17 +943,32 @@ android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
+android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
+android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
+android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/build-trealla.sh
 android/build.gradle.kts
 android/flake.lock
 android/flake.nix
 android/gradle.properties
 android/gradle/libs.versions.toml
+android/integration/stock_zara_server_fixture.py
 android/patch-trealla-module-path.sh
 android/settings.gradle.kts
+docs/README.org
+docs/STT.md
+docs/architecture.org
 docs/desktop-copilot-design.md
+docs/development.org
 docs/intentframe-contract.md
+docs/research/002-unified-copilot-voice-visual-ci.md
 docs/server.org
 flake.lock
 flake.nix
@@ -843,6 +1010,7 @@ rage/133-client-migration-final-gate.org
 rage/133-client-migration-research.org
 rage/133-client-migration.org
 rage/133-daemon-default-regression.org
+rage/133-desktop-daemon-default-regression.org
 rage/133-post-merge-evidence.org
 rage/134-daemon-release-design.org
 rage/134-daemon-release-gate.org
@@ -854,6 +1022,9 @@ rage/155-clarification-dialogue.org
 rage/156-prolog-frames.org
 rage/157-execution-plans.org
 rage/158-api-service-providers.org
+rage/159-zara1-device-actions-design.org
+rage/159-zara1-device-actions-research.org
+rage/159-zara1-device-actions.org
 rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
@@ -869,6 +1040,8 @@ rage/172-android-portable-prolog.org
 rage/172-android-resolver-parity.org
 rage/172-android-trealla-runtime.org
 rage/172-cross-runtime-parity.org
+rage/173-android-auth.org
+rage/173-android-client-continuity.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
@@ -916,19 +1089,18 @@ rage/309-prolog-config-recovery-design.org
 rage/309-prolog-config-recovery-research.org
 rage/309-prolog-config-recovery.org
 rage/315-route-backpressure-test-contract.org
+rage/329-production-secure-listener.org
+rage/329-threat-model.org
 rage/5-config-durability.org
-rage/daemon-128-design.org
-rage/daemon-128-research.org
-rage/daemon-129-design.org
 rage/daemon-129-gate.org
-rage/daemon-129-research.org
 rage/daemon-130-design.org
 rage/daemon-130-research.org
 rage/daemon-130-security.org
-rage/daemon-139.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
 scripts/import-backlog.py
+scripts/rage-159-apply.py
+scripts/security-fuzz-soak.sh
 scripts/test-all.sh
 scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
@@ -937,7 +1109,6 @@ scripts/test-capability-plans.sh
 scripts/test-command-routing.sh
 scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
-scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
@@ -946,17 +1117,15 @@ scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
-scripts/test-server-lifecycle.sh
 scripts/test-streaming-llm.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
+scripts/test-zara1-device-actions.sh
 scripts/test-zara1-protocol.sh
 scripts/test-zara1-tool-approvals.sh
 scripts/test-zara1-voice.sh
 server_main.pl
-setup.py
-skills/rage/SKILL.md
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
@@ -965,6 +1134,8 @@ t/process_safety.pl
 t/prolog_config.pl
 t/prolog_config_recovery.pl
 t/rlm_rewrite.pl
+t/security_threat_catalog.py
+t/security_threat_extensions.py
 t/sounds.pl
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
@@ -991,6 +1162,7 @@ t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
+t/test_desktop_launch_surface.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
@@ -999,17 +1171,18 @@ t/test_dialogue_script.py
 t/test_full_chat.py
 t/test_hooks_config.py
 t/test_host_api_service.py
+t/test_json_limits.py
 t/test_latency_metrics.py
 t/test_llm.py
 t/test_llm_streaming.py
 t/test_memory.py
-t/test_packaging.py
 t/test_plan_executor.py
 t/test_plans.py
 t/test_principal_conversation_isolation.py
 t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
 t/test_principal_runtime_wiring.py
+t/test_production_secure_listener.py
 t/test_prolog_frame_adapter.py
 t/test_prolog_studio.py
 t/test_protocol.py
@@ -1022,6 +1195,23 @@ t/test_runtime_host.py
 t/test_runtime_host_clarification.py
 t/test_runtime_intent_routing.py
 t/test_runtime_tool_approval.py
+t/test_security_admin_permissions_placeholder.py
+t/test_security_adversarial.py
+t/test_security_chaos.py
+t/test_security_device_action_integration.py
+t/test_security_fuzz.py
+t/test_security_process_chaos.py
+t/test_security_quota_control_plane.py
+t/test_security_threat_dependency.py
+t/test_security_threat_extensions.py
+t/test_security_threat_gateway.py
+t/test_security_threat_json_depth.py
+t/test_security_threat_lifecycle_sequences.py
+t/test_security_threat_management.py
+t/test_security_threat_model.py
+t/test_security_threat_protocol_depth.py
+t/test_security_threat_reconnect.py
+t/test_security_threat_transport.py
 t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
@@ -1070,13 +1260,14 @@ t/test_wake_principal_isolation.py
 t/test_wake_speaker.py
 t/test_wake_words.py
 t/test_whisper_cpp.py
+t/test_zara1_device_actions.py
+t/test_zara1_device_actions_adversarial.py
 t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
 t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
-t/test_zmq_transport_status.py
 t/test_zmq_transport_turn_completed.py
 t/zara_hooks_registry.pl
 wiki/agent-mode.org
@@ -1120,6 +1311,7 @@ zara/desktop/windows/chat.py
 zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
 zara/desktop/windows/status.py
+zara/json_limits.py
 zara/latency.py
 zara/llm.py
 zara/memory.py
@@ -1143,9 +1335,12 @@ zara/runtime/intent_router.py
 zara/runtime/plans.py
 zara/runtime/tts_output.py
 zara/security.py
+zara/security_admin.py
 zara/security_gateway.py
+zara/security_state.py
 zara/security_transport.py
 zara/server.py
+zara/server_core.py
 zara/speech_activity.py
 zara/streaming_stt.py
 zara/tasks/__init__.py
@@ -1166,6 +1361,9 @@ zara/zmq_transport.py
 
 ```text
 .github/workflows/ci.yml
+.github/workflows/rage-159-apply.yml
+android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
+android/app/src/test/java/ai/zara/app/auth/AuthenticationTest.kt
 android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaPackagingContractTest.kt
@@ -1177,11 +1375,22 @@ android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SemanticResultComparatorTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
+android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
+android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
+android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/flake.nix
 flake.nix
 scripts/benchmark-voice.py
 scripts/import-backlog.py
+scripts/rage-159-apply.py
+scripts/security-fuzz-soak.sh
 scripts/test-all.sh
 scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
@@ -1190,7 +1399,6 @@ scripts/test-capability-plans.sh
 scripts/test-command-routing.sh
 scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
-scripts/test-packaging.sh
 scripts/test-principal-isolation.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
@@ -1199,11 +1407,11 @@ scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
 scripts/test-runtime-tool-approvals.sh
-scripts/test-server-lifecycle.sh
 scripts/test-streaming-llm.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
+scripts/test-zara1-device-actions.sh
 scripts/test-zara1-protocol.sh
 scripts/test-zara1-tool-approvals.sh
 scripts/test-zara1-voice.sh
@@ -1215,6 +1423,8 @@ t/process_safety.pl
 t/prolog_config.pl
 t/prolog_config_recovery.pl
 t/rlm_rewrite.pl
+t/security_threat_catalog.py
+t/security_threat_extensions.py
 t/sounds.pl
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
@@ -1241,6 +1451,7 @@ t/test_daemon_security_policy.py
 t/test_daemon_security_transport.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
+t/test_desktop_launch_surface.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_shell.py
@@ -1249,17 +1460,18 @@ t/test_dialogue_script.py
 t/test_full_chat.py
 t/test_hooks_config.py
 t/test_host_api_service.py
+t/test_json_limits.py
 t/test_latency_metrics.py
 t/test_llm.py
 t/test_llm_streaming.py
 t/test_memory.py
-t/test_packaging.py
 t/test_plan_executor.py
 t/test_plans.py
 t/test_principal_conversation_isolation.py
 t/test_principal_memory_isolation.py
 t/test_principal_runtime_isolation.py
 t/test_principal_runtime_wiring.py
+t/test_production_secure_listener.py
 t/test_prolog_frame_adapter.py
 t/test_prolog_studio.py
 t/test_protocol.py
@@ -1272,6 +1484,23 @@ t/test_runtime_host.py
 t/test_runtime_host_clarification.py
 t/test_runtime_intent_routing.py
 t/test_runtime_tool_approval.py
+t/test_security_admin_permissions_placeholder.py
+t/test_security_adversarial.py
+t/test_security_chaos.py
+t/test_security_device_action_integration.py
+t/test_security_fuzz.py
+t/test_security_process_chaos.py
+t/test_security_quota_control_plane.py
+t/test_security_threat_dependency.py
+t/test_security_threat_extensions.py
+t/test_security_threat_gateway.py
+t/test_security_threat_json_depth.py
+t/test_security_threat_lifecycle_sequences.py
+t/test_security_threat_management.py
+t/test_security_threat_model.py
+t/test_security_threat_protocol_depth.py
+t/test_security_threat_reconnect.py
+t/test_security_threat_transport.py
 t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
@@ -1320,13 +1549,14 @@ t/test_wake_principal_isolation.py
 t/test_wake_speaker.py
 t/test_wake_words.py
 t/test_whisper_cpp.py
+t/test_zara1_device_actions.py
+t/test_zara1_device_actions_adversarial.py
 t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
 t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
-t/test_zmq_transport_status.py
 t/test_zmq_transport_turn_completed.py
 t/zara_hooks_registry.pl
 ```
