@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-05T23:55:53Z`
+- generated: `2026-09-06T04:43:46Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -126,15 +126,6 @@
 2026-08-23 d1867ea28e6a18cc347d48401fc69779488892c0 fix: install renewal policy on live HTTP CouchDB pool
 2026-08-23 74d971109a4e6c40bb544d49d79a87b954f7d2f5 fix: load CouchDB session policy before pool owners
 2026-08-23 27a75bd8907b47e9c79ed36ab675e22dc88aedb5 fix: route all CouchDB pools through session renewal
-2026-08-23 b90a000d081b38900d7b79227607f67a5a145e0a test: prove replacement operations and auth pool renewal
-2026-08-23 396b922f7eafb9747b4df3d2d085938e03defd61 test: bind CouchDB integration connector counter sequentially
-2026-08-22 4d20a932c70f94fe92e88635992c4ec41968887e test: verify CouchDB session renewal against real service
-2026-08-22 1cbe33e9fee24b05174625ba292ef7866884de5b fix: probe CouchDB session without broken request macro
-2026-08-22 686719c1d1c0be975b339e9e036771d4246f7fe0 test: require CouchDB session renewal suite
-2026-08-22 6d37419810340139d7aea542024042734f3948eb test: load CouchDB session renewal regression
-2026-08-22 2291212c174f79804910dbbe6f14d5cea3fb0914 build: load CouchDB session hardening
-2026-08-22 f4f5526814ff1eabd2bcebc230879bf4b6230b98 test: prove expired CouchDB sessions are renewed
-2026-08-22 6e5f5daebe77d4efecb31f2b4582afe9aca52591 fix: add session-aware CouchDB pool hardening
 ```
 
 ## Repository paths changed, last 14 days
@@ -199,7 +190,6 @@ starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
 t/couchdb-session-test.lisp
-t/couchdb-view-integration-test.lisp
 t/gserver-client-final-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
@@ -228,7 +218,6 @@ starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
 t/couchdb-session-test.lisp
-t/couchdb-view-integration-test.lisp
 t/gserver-client-final-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
