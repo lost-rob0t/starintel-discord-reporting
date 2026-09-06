@@ -1,15 +1,43 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-06T15:30:49Z`
+- generated: `2026-09-06T18:21:17Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`c2d903fd5cf08e2d28e006cec021309142bf6834`](https://github.com/lost-rob0t/zara/commit/c2d903fd5cf08e2d28e006cec021309142bf6834)
-- head date: `2026-09-06T10:13:43-04:00`
-- head subject: Merge pull request #529 from lost-rob0t/rage/492-device-action-replay-r6
+- head: [`b1ca89d52e0ffc84f8ad6eb18987f3f77fc841e5`](https://github.com/lost-rob0t/zara/commit/b1ca89d52e0ffc84f8ad6eb18987f3f77fc841e5)
+- head date: `2026-09-06T14:18:52-04:00`
+- head subject: Merge pull request #550 from lost-rob0t/rage/324-unified-copilot-r4
 
 ## Git log, last 14 days
 
 ```text
+2026-09-06 b1ca89d52e0ffc84f8ad6eb18987f3f77fc841e5 Merge pull request #550 from lost-rob0t/rage/324-unified-copilot-r4
+2026-09-06 60acf0c7a666837e66477c4c8edadd2c92d6bd15 RAGE #324 r4: recover adaptive Copilot onto current Android master
+2026-09-06 3533308b391079171cd9dd5ffe4ad6e0231da06f Merge pull request #542 from lost-rob0t/rage/178-voice-stream-json-depth-r5
+2026-09-06 96fc32fba5790eea6a767d2080a82ad5dd061cc8 RAGE #324 r3: recover adaptive Copilot onto current master
+2026-09-06 ea41dad2f0000dc95ca5a2148014d58a530261e5 fix(android): recover voice stream JSON depth bound on current master
+2026-09-06 f4b17bde742cca416728d6edc3f5dc1d19784bc6 RAGE #160: semantic-first runtime and timer CLI regression (#541)
+2026-09-06 2a4cb38a820832e08ed3de200b0d53a3a5b6614b Merge pull request #536 from lost-rob0t/rage/178-voice-ack-json-depth-r3
+2026-09-06 d1c95f0cd2d5ee295b97b7df46a1debbad57f825 RAGE #324: retire dual-renderer handoff assumptions
+2026-09-06 9491a460f4fe2d031119d2273fb32e279f5a19d3 RAGE #324 GREEN: project complete canonical conversation
+2026-09-06 ad85b9eada47e1c6c1d4ea18b31eecdf6db0817e RAGE #324: expose projection policy seam
+2026-09-06 0b785f868493f9e12a1ee17a341862b08bbbd1c2 RAGE #324: restore desktop diagnostics signal
+2026-09-06 175ae929e890b2720ad68bb6c5a390ff53988a5b RAGE #324: restore canonical desktop restart signal
+2026-09-06 a4167b4226c48c3d4ace7d8b0018a012258d9c7c RAGE #324 RED: require full conversation projection
+2026-09-06 1baa5ff059685539ab6c9b897e46e2abc6be38bd RAGE #324: design canonical full-conversation projection
+2026-09-06 32cc8d2718476145c17efb97359500cca54301ff feat(#324): collapse desktop ownership to one Copilot renderer
+2026-09-06 ddb41dea063be497b8bc0e05d81a69d1a857734b test(#324): require one process-owned Copilot renderer
+2026-09-06 56e93635766a6e3514f34bccfac313d8a05d662f docs(#324): record screenshot fixture GREEN
+2026-09-06 8ff01894a15b2f032b1975b6ec01fd8f11eae445 feat(#324): render deterministic Copilot screenshot fixtures
+2026-09-06 009daf9b092f78ed3de29e74b9f149ddf69bcb1c fix(android): bound voice acknowledgement JSON nesting
+2026-09-06 b6e03355b9938a6444caa9587d49519f261e8283 test(android): preserve voice acknowledgement JSON depth bound
+2026-09-06 a8641c410407a79cdb8d8dff35f4d041b3c0eb94 test(#324): fix adaptive fixture request identity
+2026-09-06 56fdffa5eee7361ec16501d1c0c447134d80507a test(#324): define deterministic Copilot screenshot RED
+2026-09-06 5dab4f2a01285b34db7f32da5a71fc3b4cecbec1 rage(#324): record adaptive Copilot RED and GREEN slice
+2026-09-06 3ace55d7b9957b7a932e4201e371c28e2d697405 feat(#324): export adaptive Copilot surface
+2026-09-06 d4d75d46e74bab5fbcf178ea463bc720b81f5282 feat(#324): add single-renderer adaptive Copilot seam
+2026-09-06 38e550dfafd8e1a9a2f4533de2335825ec082606 test(#324): define adaptive Copilot presentation RED
+2026-09-06 b5794db14ad41137c06d20c0e67645175643cb95 rage(#324): reconcile exact-current adaptive Copilot design
+2026-09-06 fa0374289e22e9f6ab5d95dae103a2af900c3c18 rage(#324): record exact-current r2 transaction
 2026-09-06 c2d903fd5cf08e2d28e006cec021309142bf6834 Merge pull request #529 from lost-rob0t/rage/492-device-action-replay-r6
 2026-09-06 c956d238c4d6d338d88eb1415e6d79e1fc8bb82d rage(#492): recover exact green replay contract onto current master
 2026-09-06 23260e1598c85641effae3ec573ff66930cdc2f0 Merge pull request #530 from lost-rob0t/rage/178-voice-hello-json-depth
@@ -1140,26 +1168,6 @@
 2026-08-23 0312d0fcd6760ad867556401b1291a9920664fad RAGE #133: align daemon CLI boundary fixture with completion contract
 2026-08-23 6554b1f19d65b1c3e44d286328b0c1b5cc83e7ef RAGE #133: record CLI selection green and completion red candidate
 2026-08-23 4fe074c04ac7075754eaf6b25ef65d68ce7b8702 RAGE #133: specify completed daemon CLI turn behavior
-2026-08-23 fd5ee35a023163e7cb048d8c3502315a7110b60b RAGE #133: record CLI slice red and implementation evidence
-2026-08-23 972c5ec333c38f9d314ee721fd43ac8f35970215 RAGE #133: route explicit daemon text turns through ZaraClient
-2026-08-23 85223a3417915cfce1ed5fbc34048ac5671ef254 docs: record #133 slice 2 green and CLI red candidate
-2026-08-23 a1b4e0192c1973fd0d80c9a373bad52cdc71f7e2 test: define CLI daemon and standalone client policy
-2026-08-23 8315ca127b10260aba6742da6f35c18335021faf docs: preserve RAGE #133 failed-green evidence
-2026-08-23 7d6b23c91b888689ead3fe8ebd098feb2d1c3520 fix: preserve legacy desktop start call shape
-2026-08-23 bca489f04a79fc18df85faf8dd43ffdef2780d5c docs: record RAGE #133 desktop red and implementation
-2026-08-23 655a0e13a12d86ef3186d1dd0f45dc0b3f87e698 feat: make desktop lifecycle ZaraClient-owned
-2026-08-23 d3eba985abf97aafed3ccdd4bf070fd0a5c0af92 feat: construct desktop through ZaraClient boundary
-2026-08-23 d78ea92de5d7da68aa1b5074ba9672c5a948591a test: define ZaraClient-owned desktop lifecycle
-2026-08-23 4c8cadad861fb091a9a5e9850fb6117772b4385b Merge PR #187: record RAGE #132 final evidence
-2026-08-23 3a3af88fc601b0f6e4af1fd5e1b78f1b133398ce fix: bind Qt runtime events to supplied client subscription
-2026-08-23 25fb5ad18b655f2320dddf1aa5bc8797273d970f rage: record issue 133 research design and first authoritative red
-2026-08-23 6101479fc803304864af9fff4af93290a596f23d rage: record missing secure client wiring in issue 133 research
-2026-08-23 e45fc3d3fd75ee0497a21db296ab1957bc05a9ca test: require Qt bridge to use supplied ZaraClient subscription
-2026-08-23 e65b84890cd2910624e7b52414d74cafedd948f1 rage: derive issue 133 client migration design
-2026-08-23 1e3c63761db9e64920737752b8b82b91a7e1b11d rage: research issue 133 client migration boundaries
-2026-08-23 6068c2e2f0c59a47adcbf34992243ace74d5191f rage: consume issue 133 at immutable master head
-2026-08-23 9b39e04122f311b4f586eea65de3b74f88571d08 docs(rage): record #132 final gate and merge evidence
-2026-08-23 4c6018b30ff4be2e168551f0cf256f8333bc58af Merge PR #185: RAGE #132 live voice over ZARA/1
 ```
 
 ## Repository paths changed, last 14 days
@@ -1324,6 +1332,7 @@ android/app/src/test/java/ai/zara/app/voice/VoiceSessionInvalidationWiringContra
 android/app/src/test/java/ai/zara/app/voice/VoiceStreamBargeInTest.kt
 android/app/src/test/java/ai/zara/app/voice/VoiceStreamReducerTest.kt
 android/app/src/test/java/ai/zara/app/voice/VoiceStreamSinkActorTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceAckCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceAckCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
@@ -1370,13 +1379,10 @@ modules/sound.pl
 modules/zara_hooks.pl
 planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
-rage/132-post-merge-evidence.org
 rage/132-visible-stt-regression-design.org
 rage/132-visible-stt-regression-research.org
 rage/132-visible-stt-regression.org
-rage/133-client-migration-design.org
 rage/133-client-migration-final-gate.org
-rage/133-client-migration-research.org
 rage/133-client-migration.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
@@ -1394,6 +1400,7 @@ rage/158-api-service-providers.org
 rage/159-zara1-device-actions-design.org
 rage/159-zara1-device-actions-research.org
 rage/159-zara1-device-actions.org
+rage/160-semantic-first-runtime.org
 rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
@@ -1501,6 +1508,8 @@ rage/309-prolog-config-recovery-design.org
 rage/309-prolog-config-recovery-research.org
 rage/309-prolog-config-recovery.org
 rage/315-route-backpressure-test-contract.org
+rage/324-unified-copilot-r2.org
+rage/324-unified-copilot-research-r2.org
 rage/326-desktop-toggle.org
 rage/327-bounded-target-edit-distance-recovery.org
 rage/329-production-secure-listener.org
@@ -1552,6 +1561,7 @@ t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/sounds.pl
+t/test_adaptive_copilot.py
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
@@ -1563,11 +1573,14 @@ t/test_backlog_import.py
 t/test_capability_plans.py
 t/test_clarification_session.py
 t/test_cli_client_migration.py
+t/test_cli_semantic_modes.py
 t/test_client.py
 t/test_command_routing.py
 t/test_config.py
 t/test_conversation_flow.py
 t/test_conversation_service.py
+t/test_copilot_controller_collapse.py
+t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
 t/test_daemon_tts_output.py
@@ -1628,6 +1641,7 @@ t/test_security_threat_protocol_depth.py
 t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_corpus.py
+t/test_semantic_first_runtime.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_service_plugin_advice.py
@@ -1707,11 +1721,12 @@ zara/desktop/control.py
 zara/desktop/controller.py
 zara/desktop/preferences.py
 zara/desktop/prolog_studio.py
-zara/desktop/qt_bridge.py
 zara/desktop/theme.py
 zara/desktop/tray/tray.py
+zara/desktop/ui_fixtures.py
 zara/desktop/windows/__init__.py
 zara/desktop/windows/chat.py
+zara/desktop/windows/copilot.py
 zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
 zara/desktop/windows/status.py
@@ -1844,6 +1859,7 @@ android/app/src/test/java/ai/zara/app/voice/VoiceSessionInvalidationWiringContra
 android/app/src/test/java/ai/zara/app/voice/VoiceStreamBargeInTest.kt
 android/app/src/test/java/ai/zara/app/voice/VoiceStreamReducerTest.kt
 android/app/src/test/java/ai/zara/app/voice/VoiceStreamSinkActorTest.kt
+android/app/src/test/java/ai/zara/app/voice/ZaraVoiceAckCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceAckCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
@@ -1892,6 +1908,7 @@ t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/sounds.pl
+t/test_adaptive_copilot.py
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
@@ -1903,11 +1920,14 @@ t/test_backlog_import.py
 t/test_capability_plans.py
 t/test_clarification_session.py
 t/test_cli_client_migration.py
+t/test_cli_semantic_modes.py
 t/test_client.py
 t/test_command_routing.py
 t/test_config.py
 t/test_conversation_flow.py
 t/test_conversation_service.py
+t/test_copilot_controller_collapse.py
+t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
 t/test_daemon_tts_output.py
@@ -1968,6 +1988,7 @@ t/test_security_threat_protocol_depth.py
 t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_corpus.py
+t/test_semantic_first_runtime.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_service_plugin_advice.py
