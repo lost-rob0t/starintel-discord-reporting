@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-06T22:08:26Z`
+- generated: `2026-09-06T23:57:35Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`c06b8fc466ea765ef2a857b137d43d6b2535c90f`](https://github.com/lost-rob0t/starintel-server/commit/c06b8fc466ea765ef2a857b137d43d6b2535c90f)
@@ -125,8 +125,6 @@
 2026-08-24 068afa1aef1c417b1492335d6170325ed8736af9 test(client): cover request options constructor lifecycle
 2026-08-24 9c4fa2dd276be14b329d8cc66a4e67c4cae2f36c fix(client): keep request options constructor callable
 2026-08-23 820b54519c8811cb87d8fdf15d8b48c5285e85f9 fix(client): avoid constructor redefinition warning
-2026-08-23 e5f36356772ba9933b3631dbaf1bfeb3ea158c0d Merge pull request #102 from lost-rob0t/agent/api-v1-capabilities
-2026-08-23 2fbc4b74fe4517cf7c39266a1807bf640ba747dc test: make capability route assertions valid FiveAM forms
 ```
 
 ## Repository paths changed, last 14 days

@@ -1,15 +1,24 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-06T22:08:42Z`
+- generated: `2026-09-06T23:57:52Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`bea53760a6c1e91bb0671a509985498d760a49d5`](https://github.com/lost-rob0t/zara/commit/bea53760a6c1e91bb0671a509985498d760a49d5)
-- head date: `2026-09-06T17:46:15-04:00`
-- head subject: Merge PR #569: characterize ToolNode dispatch boundary
+- head: [`6d8fa68a63218bc14934bac75b23fb3a996963ba`](https://github.com/lost-rob0t/zara/commit/6d8fa68a63218bc14934bac75b23fb3a996963ba)
+- head date: `2026-09-06T19:22:21-04:00`
+- head subject: Merge PR #585: expose bounded gateway send-failure diagnostics
 
 ## Git log, last 14 days
 
 ```text
+2026-09-06 6d8fa68a63218bc14934bac75b23fb3a996963ba Merge PR #585: expose bounded gateway send-failure diagnostics
+2026-09-06 1c3d87b89078f85a2fd7dcd472a28eef9182d409 fix: expose bounded gateway send failure [rage-575-green]
+2026-09-06 38ea9c7bab6945b16b725686d565e974aa6cae3f chore: apply #575 green on exact-current recovery
+2026-09-06 a9816e1dbceadd895f12c257f891f94e75e4a45c docs: recover #575 RAGE evidence on current master
+2026-09-06 c32adb10455f3a4f58ef64eef138b913d6136f8d test: recover bounded gateway send RED on current master
+2026-09-06 e6c90b274d285444520bd8372efe396c5f4cf24f Merge PR #578: preserve stock interop diagnostics
+2026-09-06 a9f0e7a056f90655a062ebe976f553dd91a3e2f5 RAGE #575: recover green diagnostics evidence on current master
+2026-09-06 c3290b6f96fb0c17b815c4441e35fd0a4ed888cf test(#575): require stock-server diagnostics on Gradle failure
+2026-09-06 9c4e9d488b90ce36cbab08a81cb9e7ddf3dfb384 fix(#575): preserve stock interop diagnostics on gate failure
 2026-09-06 bea53760a6c1e91bb0671a509985498d760a49d5 Merge PR #569: characterize ToolNode dispatch boundary
 2026-09-06 ea00e250489493ff4e717ca97af905d89a461a5d test(#388): exercise ToolNode through compiled graph runtime
 2026-09-06 dd439a30946c9776e80e671f71bce251c544da31 RAGE #388 r16: characterize ToolNode public dispatch boundary
@@ -1171,13 +1180,6 @@
 2026-08-23 e1912324e92e042867a608a093b5df05d062328d docs(rage): record issue 133 merge closeout
 2026-08-23 487996d56467f5227c5c6b1178333fbf1ee6d8a0 Merge pull request #188 from lost-rob0t/rage/133-client-migration
 2026-08-23 3e626b47de7830b5c9ffbd6d516259c0be7b66af Merge master into rage/133-client-migration
-2026-08-23 517e4993a67cbfbc788e4d8cee10818b4e4766e9 docs(rage): record #133 exact-head gate protection race
-2026-08-23 c9c6bc7f318f2c8abd8190919e693188e7a2472e rage: record #133 final exact-head gate
-2026-08-23 3a34e642d9fd87ea51ce29d149da6553fca417b2 fix: coalesce concurrent reconnect generations
-2026-08-23 cfa83fe3dbb4e8fe84eb4649dac49b6ba046c015 test: require one active reconnect generation
-2026-08-23 8a7b3cef6d2b99768048866232a1651e36f9444f feat: add bounded ZaraClient reconnect controller
-2026-08-23 42c1f1fce1125a08b3416a4a1a512bd2b4e2a232 docs(rage): record reconnect backoff red evidence
-2026-08-23 097c42c3e5cbc14ad2149c56abc7f03ef1b03744 test: specify bounded reconnect backoff behavior
 ```
 
 ## Repository paths changed, last 14 days
@@ -1185,6 +1187,7 @@
 ```text
 .github/workflows/ci.yml
 .github/workflows/rage-159-apply.yml
+.github/workflows/rage-575-apply-green.yml
 .impeccable/design.json
 .impeccable/surfaces/zara-desktop-windows-quick-py.md
 .rage.toml
@@ -1392,8 +1395,6 @@ rage/13-open-app-allowlist-regression.org
 rage/132-visible-stt-regression-design.org
 rage/132-visible-stt-regression-research.org
 rage/132-visible-stt-regression.org
-rage/133-client-migration-final-gate.org
-rage/133-client-migration.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
 rage/133-post-merge-evidence.org
@@ -1529,6 +1530,8 @@ rage/371-plugin-approval-contract.org
 rage/388-plugin-cancellation-r16.org
 rage/492-device-action-replay-r3.org
 rage/5-config-durability.org
+rage/575-gateway-send-diagnostics.org
+rage/575-stock-interop-diagnostics.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
 scripts/import-backlog.py
@@ -1578,6 +1581,7 @@ t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
+t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_backend_turn_services.py
 t/test_backlog_import.py
@@ -1697,8 +1701,8 @@ t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
 t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
+t/test_zmq_send_diagnostics.py
 t/test_zmq_transport.py
-t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 wiki/agent-mode.org
@@ -1722,7 +1726,6 @@ zara/agent/stream_events.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/agent/user_hooks.py
-zara/client.py
 zara/command_gate.py
 zara/config.py
 zara/console.py
@@ -1796,6 +1799,7 @@ zara/zmq_transport.py
 ```text
 .github/workflows/ci.yml
 .github/workflows/rage-159-apply.yml
+.github/workflows/rage-575-apply-green.yml
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AppScopedAssistantRuntimeContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt
@@ -1926,6 +1930,7 @@ t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
 t/test_agent_mode_core_plugin.py
 t/test_agent_mode_voice_barge_in.py
+t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_backend_turn_services.py
 t/test_backlog_import.py
@@ -2045,8 +2050,8 @@ t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
 t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
+t/test_zmq_send_diagnostics.py
 t/test_zmq_transport.py
-t/test_zmq_transport_reconnect_backoff.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 ```
