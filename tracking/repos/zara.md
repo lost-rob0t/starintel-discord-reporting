@@ -1,15 +1,36 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-06T11:01:38Z`
+- generated: `2026-09-06T15:30:49Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b4f6297d70543be674fd2c6ef0769499eb77955d`](https://github.com/lost-rob0t/zara/commit/b4f6297d70543be674fd2c6ef0769499eb77955d)
-- head date: `2026-09-06T06:50:25-04:00`
-- head subject: Merge pull request #520 from lost-rob0t/rage/203-android-playback-session-invalidation-r3
+- head: [`c2d903fd5cf08e2d28e006cec021309142bf6834`](https://github.com/lost-rob0t/zara/commit/c2d903fd5cf08e2d28e006cec021309142bf6834)
+- head date: `2026-09-06T10:13:43-04:00`
+- head subject: Merge pull request #529 from lost-rob0t/rage/492-device-action-replay-r6
 
 ## Git log, last 14 days
 
 ```text
+2026-09-06 c2d903fd5cf08e2d28e006cec021309142bf6834 Merge pull request #529 from lost-rob0t/rage/492-device-action-replay-r6
+2026-09-06 c956d238c4d6d338d88eb1415e6d79e1fc8bb82d rage(#492): recover exact green replay contract onto current master
+2026-09-06 23260e1598c85641effae3ec573ff66930cdc2f0 Merge pull request #530 from lost-rob0t/rage/178-voice-hello-json-depth
+2026-09-06 aec46b3ef543ee2a6858c7faee705fa0f984c1c0 RAGE #178 GREEN: bound voice hello JSON container depth
+2026-09-06 32b9727baeda389c233a92aaaf1dfcd734c6404b RAGE #178 RED: prove voice hello JSON nesting is unbounded
+2026-09-06 e13a67df2bd3bb8b84b4e64f6e632dcb10e9063a RAGE #178: record Android voice hello JSON depth slice
+2026-09-06 f8ba7eb9f891eddb54de71390dd942567a8866fd Merge pull request #527 from lost-rob0t/rage/178-capability-json-depth-bound
+2026-09-06 ca6dd5bf775c742b38177c0d6509949e284e9485 fix(android): bound capability JSON nesting
+2026-09-06 6b71e056f5003b5b1297525d47fd3e0f63de5220 test(android): expose unbounded capability JSON nesting
+2026-09-06 52109e8a3a43461278e689cfe8964bace48cce2f rage: start Android capability JSON depth slice
+2026-09-06 20e7ce159009accad9a1aeded424f566835df355 Merge pull request #525 from lost-rob0t/rage/178-android-daemon-restart-stale-turn-r2
+2026-09-06 9b2508bd09feb1656d97bbce081c13e95abd1815 test(android): expect stale text turn to fail closed
+2026-09-06 b2071ba7e90dd3fcd6d3e8031771aac8ada72106 docs(rage): record stale text-session recovery evidence
+2026-09-06 47888f36e7434309588e08592c2df60674c2415a fix(android): fence stale text turn completions
+2026-09-06 ef0b4eada009a80c4470c1729d3c7c8f7520bded test(android): prove stale text turn fails after daemon restart
+2026-09-06 7a6b3cf6a9f524e29dcd6da624ec76fd6c89e749 Merge pull request #522 from lost-rob0t/rage/178-android-json-depth-bound-r2
+2026-09-06 31c4eed35bf10bfaa3b690fe3b09fd4132b05e25 RAGE #178: record JSON depth RED and GREEN
+2026-09-06 365b25a4358fd304e8f1af8a70b2b043a9074215 RAGE #178: pin JSON nesting boundary
+2026-09-06 71a6e07887f11d2a1dd41b0ea4e5701eceb2d5dd RAGE #178 GREEN: bound strict JSON container depth
+2026-09-06 115a5eea76dfe6de5f2cbf53dfd0925c3d19a4d8 RAGE #178 RED r2: prove bounded JSON nesting
+2026-09-06 3634d19a72d943804e5400c2d87dad5d397c2523 RAGE #178 r2: recover JSON depth-bound evidence
 2026-09-06 b4f6297d70543be674fd2c6ef0769499eb77955d Merge pull request #520 from lost-rob0t/rage/203-android-playback-session-invalidation-r3
 2026-09-06 f613455f183b3c0577525e314838e381db2b9d22 RAGE #203 r3: recover stale playback invalidation
 2026-09-06 98360054f80dda5b93669c7a44ba268ae52c0927 Merge pull request #518 from lost-rob0t/rage/178-android-audio-payload-bound-r4
@@ -1139,37 +1160,6 @@
 2026-08-23 6068c2e2f0c59a47adcbf34992243ace74d5191f rage: consume issue 133 at immutable master head
 2026-08-23 9b39e04122f311b4f586eea65de3b74f88571d08 docs(rage): record #132 final gate and merge evidence
 2026-08-23 4c6018b30ff4be2e168551f0cf256f8333bc58af Merge PR #185: RAGE #132 live voice over ZARA/1
-2026-08-23 06f23ede1120d482dfa6b28c1168adf7c335951f fix: bind voice streams to authenticated principal
-2026-08-23 7e0f1e183e932627ca282d2b7a6cfcc1d95f34b5 test: prove secure voice cleanup stays principal-bound
-2026-08-23 881e1d253fd5a0747e9575785b2a8859ac71b476 fix: enforce negotiated voice output format
-2026-08-23 4be02d1ddb2982aa18cdde1fdff738d906400767 test: make negotiated output mismatch assertion precise
-2026-08-23 f765c496ad1712c9543861a2754fb756be277278 test: include negotiated playback enforcement gate
-2026-08-23 7e5ee328044eb8d14a3e140d94dea76bc7b2913c test: enforce negotiated voice output format at playback
-2026-08-23 f68bf9e7551bf5dd7214728503af2aa218979aaa feat: authorize secure live voice ingress
-2026-08-23 cd500b7cf8a9e855517e9495e4400639b2e5a6ec test: include secure voice authorization gate
-2026-08-23 479b1eb8a9dfde53e2dc6e47fc8675b0b3066a35 test: specify secure ZARA/1 voice authorization
-2026-08-23 ee787df4f00f323c306b0d9aca3a2c61b5127ca5 test(#132): negotiate output format in playback fixtures
-2026-08-23 b398795ec56603e0406abe4505fa708643607d64 test(#132): negotiate output format in barge-in fixture
-2026-08-23 87518639b39831da641d9c4b06873ba27dc02d53 docs(#132): record negotiation red and acceptance audit blockers
-2026-08-23 d98bdc7c52b2cdd98298edff450bb70ac0c7975a docs(#132): close negotiation and secure voice design gaps
-2026-08-23 8f7375d05dd552e15d7c65072ac40f8089cce05d test(#132): include output negotiation in focused voice gate
-2026-08-23 d4830639ac6040fe616688225347731d17294644 feat(#132): negotiate output PCM format during handshake
-2026-08-23 9121980894f078443adb54d5f48c3b8517c92efc test(#132): require output PCM handshake negotiation
-2026-08-23 16f4900ba4f10580dd4b5a9d7e36f1b8c150c12e test(#132): compose live voice gate into ZARA/1 regression gate
-2026-08-23 c007acbd282619f3aacf99f9fa7502fabebd50ec test(#132): add focused live voice transport gate
-2026-08-23 d7b948a9ffb69529023708eea0f786c716b48f9b feat: barge in before opening new voice input
-2026-08-23 f38340f340ff62dd534f80220fa7d8717e659c1f test: drain barge-in audio start after local-stop assertion
-2026-08-23 b0e5de5379c395d7f162caa8becc7a9293be476d test: require proactive cross-process voice barge-in
-2026-08-23 401a862a68a1c5ddadddca2e779d3b649ecbbe69 feat: serialize voice commit behind accepted PCM
-2026-08-23 f6cf44231f66cfa0542df780b3df977a2279cbe0 feat: finalize streaming STT on explicit voice commit
-2026-08-23 24914a445c0359053ab77cfd51230d4f81ef1a14 test: define streaming STT commit semantics
-2026-08-23 d7809d839fa048af1e704c977d263f4abe206023 test: prove committed voice flushes final transcript
-2026-08-23 7c13943d9bee332761aa376a00d85bdc23a749c8 feat: wire daemon voice ingress into zara-server
-2026-08-23 2678606100e15770c0e9fcaa89823d7130d5a722 feat: connect daemon voice ingress to canonical runtime
-2026-08-23 6201d4de619cc8f21b91c023c92fa0c7140b75d8 test: prove daemon voice ingress reaches canonical runtime
-2026-08-23 6ee6ed4bb2f026b153d2ffb15f9032d01b0b4f2c fix: stop cancelled turn playback and drop stale audio
-2026-08-23 acfea1af39ed49508822c6ed653c2c4dce652902 test: prove cancelled turns stop playback and drop stale audio
-2026-08-23 9442b8804ddb6f046e661db62aefb71d9f0414a3 feat: hand binary voice output to client playback boundary
 ```
 
 ## Repository paths changed, last 14 days
@@ -1293,6 +1283,7 @@ android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionRestartTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ConnectionFailureReasonTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
@@ -1300,6 +1291,7 @@ android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraCapabilityCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraDeviceActionCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientCapabilitiesTest.kt
@@ -1308,8 +1300,10 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceFloodTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoicePumpTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
@@ -1376,8 +1370,6 @@ modules/sound.pl
 modules/zara_hooks.pl
 planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
-rage/132-live-voice-design.org
-rage/132-live-voice.org
 rage/132-post-merge-evidence.org
 rage/132-visible-stt-regression-design.org
 rage/132-visible-stt-regression-research.org
@@ -1427,13 +1419,17 @@ rage/175-android-manual-voice.org
 rage/175-android-streamed-voice.org
 rage/178-android-auth-revocation-r2.org
 rage/178-android-capability-revocation-r3.org
+rage/178-android-daemon-restart-stale-turn-r2.org
 rage/178-android-device-action-replay-r4.org
+rage/178-android-json-depth-bound-r2.org
 rage/178-android-no-raw-logging-r5.org
 rage/178-android-principal-target-abuse-r2.org
 rage/178-android-prolog-lifecycle-r3.org
 rage/178-android-reconnect-storm-r3.org
 rage/178-android-release-matrix.org
 rage/178-android-uri-intent-abuse-r4.org
+rage/178-android-voice-hello-json-depth-r1.org
+rage/178-capability-json-depth-bound.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
@@ -1511,6 +1507,7 @@ rage/329-production-secure-listener.org
 rage/329-threat-model.org
 rage/348-dash-prefixed-z85-cli.org
 rage/371-plugin-approval-contract.org
+rage/492-device-action-replay-r3.org
 rage/5-config-durability.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
@@ -1582,6 +1579,8 @@ t/test_desktop_settings_window.py
 t/test_desktop_shell.py
 t/test_desktop_theme.py
 t/test_desktop_toggle_control.py
+t/test_device_action_replay_contract.py
+t/test_device_action_sequence_wiring.py
 t/test_dialogue_script.py
 t/test_full_chat.py
 t/test_hooks_config.py
@@ -1632,7 +1631,6 @@ t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_service_plugin_advice.py
-t/test_streaming_stt_commit.py
 t/test_task_approval_flow.py
 t/test_task_host_wiring.py
 t/test_task_observability.py
@@ -1655,14 +1653,8 @@ t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
-t/test_voice_runtime_commit.py
 t/test_voice_runtime_ingress.py
-t/test_voice_secure_gateway.py
-t/test_voice_zmq_barge_in.py
 t/test_voice_zmq_client.py
-t/test_voice_zmq_negotiation.py
-t/test_voice_zmq_output_client.py
-t/test_voice_zmq_output_negotiation.py
 t/test_wake_clarification.py
 t/test_wake_daemon_client.py
 t/test_wake_fail_closed.py
@@ -1723,6 +1715,7 @@ zara/desktop/windows/chat.py
 zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
 zara/desktop/windows/status.py
+zara/device_action_replay.py
 zara/json_limits.py
 zara/latency.py
 zara/llm.py
@@ -1754,7 +1747,6 @@ zara/security_transport.py
 zara/server.py
 zara/server_core.py
 zara/speech_activity.py
-zara/streaming_stt.py
 zara/tasks/__init__.py
 zara/tasks/runner.py
 zara/tasks/store.py
@@ -1811,6 +1803,7 @@ android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionRestartTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ConnectionFailureReasonTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
@@ -1818,6 +1811,7 @@ android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraCapabilityCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraDeviceActionCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientCapabilitiesTest.kt
@@ -1826,8 +1820,10 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceFloodTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoicePumpTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientVoiceTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
+android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
@@ -1923,6 +1919,8 @@ t/test_desktop_settings_window.py
 t/test_desktop_shell.py
 t/test_desktop_theme.py
 t/test_desktop_toggle_control.py
+t/test_device_action_replay_contract.py
+t/test_device_action_sequence_wiring.py
 t/test_dialogue_script.py
 t/test_full_chat.py
 t/test_hooks_config.py
@@ -1973,7 +1971,6 @@ t/test_semantic_corpus.py
 t/test_sentence_chunker.py
 t/test_server.py
 t/test_service_plugin_advice.py
-t/test_streaming_stt_commit.py
 t/test_task_approval_flow.py
 t/test_task_host_wiring.py
 t/test_task_observability.py
@@ -1996,14 +1993,8 @@ t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_visible_stt_runtime.py
-t/test_voice_runtime_commit.py
 t/test_voice_runtime_ingress.py
-t/test_voice_secure_gateway.py
-t/test_voice_zmq_barge_in.py
 t/test_voice_zmq_client.py
-t/test_voice_zmq_negotiation.py
-t/test_voice_zmq_output_client.py
-t/test_voice_zmq_output_negotiation.py
 t/test_wake_clarification.py
 t/test_wake_daemon_client.py
 t/test_wake_fail_closed.py
