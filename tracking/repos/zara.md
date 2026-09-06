@@ -1,16 +1,36 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-06T18:21:17Z`
+- generated: `2026-09-06T22:08:42Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b1ca89d52e0ffc84f8ad6eb18987f3f77fc841e5`](https://github.com/lost-rob0t/zara/commit/b1ca89d52e0ffc84f8ad6eb18987f3f77fc841e5)
-- head date: `2026-09-06T14:18:52-04:00`
-- head subject: Merge pull request #550 from lost-rob0t/rage/324-unified-copilot-r4
+- head: [`bea53760a6c1e91bb0671a509985498d760a49d5`](https://github.com/lost-rob0t/zara/commit/bea53760a6c1e91bb0671a509985498d760a49d5)
+- head date: `2026-09-06T17:46:15-04:00`
+- head subject: Merge PR #569: characterize ToolNode dispatch boundary
 
 ## Git log, last 14 days
 
 ```text
+2026-09-06 bea53760a6c1e91bb0671a509985498d760a49d5 Merge PR #569: characterize ToolNode dispatch boundary
+2026-09-06 ea00e250489493ff4e717ca97af905d89a461a5d test(#388): exercise ToolNode through compiled graph runtime
+2026-09-06 dd439a30946c9776e80e671f71bce251c544da31 RAGE #388 r16: characterize ToolNode public dispatch boundary
+2026-09-06 d0d6fa8562fa1b4df9d677e392420605ca1d903c RAGE #388 r16: record exact dispatch isolation start
+2026-09-06 2da13cb08d15f268e355171ba56f0decde238126 Merge pull request #564 from lost-rob0t/rage/324-independent-geometry-r2
+2026-09-06 84003e34772b0df01fd57c54c2338cb3f3423296 test(copilot): prove independent compact and expanded geometry
+2026-09-06 838bf374b1bd0328834a1997f7e3c20c5d8eb567 fix(copilot): restore independent presentation geometry
+2026-09-06 47381e446e42e1332c96833ab0b958430ea42962 Merge pull request #558 from lost-rob0t/rage/324-screenshot-provenance-r1
+2026-09-06 0152aa9a2ab2c8b41f66cfc1fba56ec41c1fb948 RAGE #324: recover screenshot provenance onto current master
+2026-09-06 dcfff6cc75ef5b672e2ce4abc93bc7b57ae7633a Merge pull request #552 from lost-rob0t/rage/324-history-parity-r1
+2026-09-06 68c8967ab21d17dad4d8ea3f9f72936c0a76a568 RAGE #324: stamp screenshots with reviewed source head
+2026-09-06 624fd0fd95bcb625bf329ba9d4f80277f01b1645 RAGE #324: require exact PR-head screenshot provenance
+2026-09-06 e770c8c9c4bc99e7e560cea6d10e88f0da5078dc RAGE #324: record screenshot provenance correction
+2026-09-06 be36e90b466fb20d9c79a8b291f0dcb61cf85d2d RAGE #324: add expanded conversation history projection
+2026-09-06 99794ef7198028b8d95ecbd517c0b7fee37ee3a1 Merge pull request #551 from lost-rob0t/rage/324-screenshot-ci-r1
 2026-09-06 b1ca89d52e0ffc84f8ad6eb18987f3f77fc841e5 Merge pull request #550 from lost-rob0t/rage/324-unified-copilot-r4
+2026-09-06 af5d617e892b514a7ad6cd77a021511e1647e63a RAGE #324: add RED expanded history parity
+2026-09-06 466427ff740c44397387102ffe15ccd15313a717 RAGE #324: design expanded history parity slice
+2026-09-06 01e45f6ec7b1eb24a283917f0820431f8d4e3ed5 RAGE #324: record screenshot CI RED/GREEN slice
+2026-09-06 ba1c796ccef9ef38ac01107b5ca393d173a78238 RAGE #324: render deterministic Copilot screenshots in CI
+2026-09-06 e26d36a62dbc458d601a5a94b4b882108da16922 RAGE #324: add RED screenshot CI invocation contract
 2026-09-06 60acf0c7a666837e66477c4c8edadd2c92d6bd15 RAGE #324 r4: recover adaptive Copilot onto current Android master
 2026-09-06 3533308b391079171cd9dd5ffe4ad6e0231da06f Merge pull request #542 from lost-rob0t/rage/178-voice-stream-json-depth-r5
 2026-09-06 96fc32fba5790eea6a767d2080a82ad5dd061cc8 RAGE #324 r3: recover adaptive Copilot onto current master
@@ -1158,16 +1178,6 @@
 2026-08-23 8a7b3cef6d2b99768048866232a1651e36f9444f feat: add bounded ZaraClient reconnect controller
 2026-08-23 42c1f1fce1125a08b3416a4a1a512bd2b4e2a232 docs(rage): record reconnect backoff red evidence
 2026-08-23 097c42c3e5cbc14ad2149c56abc7f03ef1b03744 test: specify bounded reconnect backoff behavior
-2026-08-23 d3ac8171f26fc17df3c30a25d739ec26b4a9a886 fix: replace stale ROUTER state on client reconnect
-2026-08-23 c6406566ad583942a31602fe4d66aad7414ac6b0 fix: fence stale client events across reconnect generations
-2026-08-23 8272d9499104581bf5eae642b252c38f284865bb test: reject stale queued events after reconnect
-2026-08-23 c1d3bb0ee2f7e65e466d954df8927f1448bf84b2 fix(#133): restore selected conversation after reconnect
-2026-08-23 6edc6dbb15c181ed2bd86bc813ea6eb72496da8b test(#133): require conversation continuity across reconnect
-2026-08-23 c86a89735b5bb1a857f1c9e909d19f9605c4b849 RAGE #133: record CLI completion red and implementation
-2026-08-23 5aca6e36fc739b52811dee40029ebfb88a92149f RAGE #133: wait for completed daemon CLI turns
-2026-08-23 0312d0fcd6760ad867556401b1291a9920664fad RAGE #133: align daemon CLI boundary fixture with completion contract
-2026-08-23 6554b1f19d65b1c3e44d286328b0c1b5cc83e7ef RAGE #133: record CLI selection green and completion red candidate
-2026-08-23 4fe074c04ac7075754eaf6b25ef65d68ce7b8702 RAGE #133: specify completed daemon CLI turn behavior
 ```
 
 ## Repository paths changed, last 14 days
@@ -1516,6 +1526,7 @@ rage/329-production-secure-listener.org
 rage/329-threat-model.org
 rage/348-dash-prefixed-z85-cli.org
 rage/371-plugin-approval-contract.org
+rage/388-plugin-cancellation-r16.org
 rage/492-device-action-replay-r3.org
 rage/5-config-durability.org
 rage/long-horizon-tasks.org
@@ -1580,6 +1591,7 @@ t/test_config.py
 t/test_conversation_flow.py
 t/test_conversation_service.py
 t/test_copilot_controller_collapse.py
+t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
@@ -1654,6 +1666,7 @@ t/test_task_tools.py
 t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
+t/test_toolnode_dispatch_contract.py
 t/test_transcript_normalization.py
 t/test_transcript_normalization_config.py
 t/test_transcript_normalization_selection.py
@@ -1686,7 +1699,6 @@ t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
 t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
-t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 wiki/agent-mode.org
@@ -1927,6 +1939,7 @@ t/test_config.py
 t/test_conversation_flow.py
 t/test_conversation_service.py
 t/test_copilot_controller_collapse.py
+t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_intent_router.py
@@ -2001,6 +2014,7 @@ t/test_task_tools.py
 t/test_task_turn_context.py
 t/test_tasks_config.py
 t/test_todo_surface_toggle.py
+t/test_toolnode_dispatch_contract.py
 t/test_transcript_normalization.py
 t/test_transcript_normalization_config.py
 t/test_transcript_normalization_selection.py
@@ -2033,7 +2047,6 @@ t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
 t/test_zmq_transport.py
 t/test_zmq_transport_reconnect_backoff.py
-t/test_zmq_transport_reconnect_idempotency.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 ```
