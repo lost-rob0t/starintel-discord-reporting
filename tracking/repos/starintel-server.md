@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-06T04:43:46Z`
+- generated: `2026-09-06T11:01:29Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`8fb297d146e7332fae7e38170b5b49d49530ac53`](https://github.com/lost-rob0t/starintel-server/commit/8fb297d146e7332fae7e38170b5b49d49530ac53)
@@ -112,20 +112,6 @@
 2026-08-23 820b54519c8811cb87d8fdf15d8b48c5285e85f9 fix(client): avoid constructor redefinition warning
 2026-08-23 e5f36356772ba9933b3631dbaf1bfeb3ea158c0d Merge pull request #102 from lost-rob0t/agent/api-v1-capabilities
 2026-08-23 2fbc4b74fe4517cf7c39266a1807bf640ba747dc test: make capability route assertions valid FiveAM forms
-2026-08-23 3c4dd634e3c77a6078ad02ab3535fb257866a1c8 Merge pull request #107 from lost-rob0t/fix/106-couchdb-session-renewal
-2026-08-23 b320e3a5c373a5fa527ed091d3bea10cfb7fec2a test: fix CouchDB session pool LET binding
-2026-08-23 d6670a69fa2d66a24050a3947214788d56262a22 test: close CouchDB session renewal regression form
-2026-08-23 795a90b08550f8d8def0d9431ef0a0b434621f52 ci: retain hermetic failure log for diagnosis
-2026-08-23 5e6b7b731b822e96c351bac729dbed34efc71768 ci: surface hermetic test failure tail
-2026-08-23 9472cd384b5af3ffa7441097f4c110f6ccfea614 test: assert shared CouchDB pool validator identity
-2026-08-23 c2fba5c9d9ff34ac68a99afd7ac4c29ccd05ec0a fix: share CouchDB session validator directly
-2026-08-23 839f3d88cef66b4b38b167af0ca7d3390bb4cba2 test: assert CouchDB session replacement contract
-2026-08-23 ff62de333b231b550a7e0e464c64dc13d291fc52 fix: preserve live CouchDB pool identity
-2026-08-23 69a6e149aa612452ac9c14537b4bcaa09ea705d9 test: cover live HTTP and auth CouchDB pool probes
-2026-08-23 50e4c60ad7733b371a21c70c74f35bbe960e6e64 fix: install CouchDB renewal after HTTP pool exists
-2026-08-23 d1867ea28e6a18cc347d48401fc69779488892c0 fix: install renewal policy on live HTTP CouchDB pool
-2026-08-23 74d971109a4e6c40bb544d49d79a87b954f7d2f5 fix: load CouchDB session policy before pool owners
-2026-08-23 27a75bd8907b47e9c79ed36ab675e22dc88aedb5 fix: route all CouchDB pools through session renewal
 ```
 
 ## Repository paths changed, last 14 days
@@ -160,7 +146,6 @@ source/auth/oauth.lisp
 source/auth/store.lisp
 source/authorization/package.lisp
 source/authorization/services.lisp
-source/couchdb-session-hardening.lisp
 source/databases/document-update-package.lisp
 source/databases/document-update.lisp
 source/document-access-package.lisp
@@ -189,7 +174,6 @@ starintel-gserver-integration-tests.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
-t/couchdb-session-test.lisp
 t/gserver-client-final-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
@@ -217,7 +201,6 @@ starintel-gserver-integration-tests.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
-t/couchdb-session-test.lisp
 t/gserver-client-final-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
