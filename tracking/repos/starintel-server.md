@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-07T18:44:58Z`
+- generated: `2026-09-07T22:51:32Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`4721efaf8141fd7199b6e1ceb1011b9ad970796e`](https://github.com/lost-rob0t/starintel-server/commit/4721efaf8141fd7199b6e1ceb1011b9ad970796e)
@@ -52,16 +52,6 @@
 2026-08-25 922bda3c8bb346b4eb1700281417d7a018253621 test: separate canonical and legacy HTTP fixtures
 2026-08-25 2d6d88dbc188f64fcf76b53a8411b576b62c6a44 fix: correct star-cl flake nar hash
 2026-08-25 69b8a03d4d152c5015f500f3b59334d6177731ce feat: enforce canonical v0.9 runtime boundaries
-2026-08-24 4f2f70126bc59e18681844019460a33709e1eba6 Merge PR #118: core OAuth provider plus reload-safe Bixby add-on
-2026-08-24 2c00cda2f2f18424a2279b933322235fee4b15c6 docs: clarify ASDF-safe add-on reload semantics
-2026-08-24 bb15a1a0e9f7975fd06d35ae6aa3b6fcd0e00240 fix: make add-on reload ASDF-safe in nested operations
-2026-08-24 21c6ad766748e00ff7579c5d9ce1a954c1185ac4 test: expose Bixby add-on reload failure cause
-2026-08-24 a8489ff29ae8c082d4590f46adecf5aae2274fc0 build: package optional Bixby ASDF add-on in Nix closures
-2026-08-24 e59e6285d036735830efbdcc05cc074a14849558 test: keep Bixby add-on optional outside test-system dependencies
-2026-08-24 141ccda56e3102902c0db26210538e586e3b88b2 test: include optional Bixby ASDF system in hermetic test closure
-2026-08-24 7da237f1e93ce1ab6e0bc3d373d0fbabe1cf64ab test: surface Bixby add-on load cause without weakening failure
-2026-08-24 d4425f7514e0db1a8675ed4fa2fcbda1b279370c fix: parse OAuth space-delimited scopes at provider boundary
-2026-08-24 685c672c1b24acc6cc7f253936de365ee3fa2c8b test: repair OAuth wrong-password regression reader syntax
 ```
 
 ## Repository paths changed, last 14 days
@@ -116,7 +106,6 @@ doc/server-admin.org
 doc/target-lease-semantics.org
 doc/testing.md
 doc/v09-runtime.org
-docs/addons.org
 docs/document-spec.org
 docs/http-api-docs.org
 docs/messaging.org
@@ -158,7 +147,6 @@ source/frontends/http-boundary-core.lisp
 source/frontends/http-boundary-routes.lisp
 source/frontends/http-bulk-jobs.lisp
 source/frontends/http-document-update.lisp
-source/frontends/http-oauth-provider.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
@@ -182,7 +170,6 @@ t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
-t/oauth-http-provider-test.lisp
 t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
@@ -207,7 +194,6 @@ t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
-t/oauth-http-provider-test.lisp
 t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp

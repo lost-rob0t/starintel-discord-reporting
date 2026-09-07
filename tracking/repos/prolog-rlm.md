@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-07T18:45:06Z`
+- generated: `2026-09-07T22:51:40Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -289,7 +289,6 @@
 2026-08-21 76fb91994ed2b7820db3088f739c8ce4bdcf85c1 test: specify async evolution evaluator contract
 2026-08-24 e6f04bb641d5f15d2b806eca4bd00d2718615034 Record PR 182 main reconciliation evidence
 2026-08-24 97ed737f12770e2fcd925cb7a7c4896fd262a540 Harden trusted binding replay conformance
-2026-08-24 329cdc690c77d14ab4959f104837b546c22dca02 ci: require pinned paid OpenRouter model
 ```
 
 ## Repository paths changed, last 14 days

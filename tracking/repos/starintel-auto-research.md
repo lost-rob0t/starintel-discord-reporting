@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-07T18:45:00Z`
+- generated: `2026-09-07T22:51:34Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`eda24d2540c3c847199a361cbf011bd597360e95`](https://github.com/lost-rob0t/starintel-auto-research/commit/eda24d2540c3c847199a361cbf011bd597360e95)
@@ -123,8 +123,6 @@
 2026-08-26 babe14bded6020688ed90f50d6130e8240283383 Merge pull request #149 from lost-rob0t/rage/server-059-target-create-v1
 2026-08-26 a5f865e16e39383650813f39d9274035c5b6bf95 design: specify generic target-create v1
 2026-08-26 e1bc3d8aff01cbcac7c4b3fdabf83e75e4fef0a6 research: define generic target-create v1 boundary
-2026-08-24 4e3d987f2febd8e3be71438accea0ea64008acaa docs(protocol): index amended STAR-LANG-004 URI model
-2026-08-24 d72fc1633dfe0502b37753258b3ec2072b4f1ae2 docs(star-lang): amend STAR-LANG-004 for RFC authority URIs
 ```
 
 ## Repository paths changed, last 14 days
@@ -170,7 +168,6 @@ roam/design/cl-gserver/SENTO-000-managed-component-runtime.org
 roam/design/government-data/STAR-GOVDATA-DESIGN-004-franklin-county-starlang-actor-system.org
 roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/design/star-lang/STAR-LANG-002-durable-actor-runtime.org
-roam/design/star-lang/STAR-LANG-004-star-service-uri-discovery.org
 roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org
 roam/design/star-lang/STAR-LANG-006-final-package-extraction.org
 roam/design/star-lang/STAR-LANG-007-selectable-logic-and-expert-systems.org
@@ -210,7 +207,6 @@ roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
-roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
 roam/indexes/star-server/STAR-TITANIC-INDEX-033-durable-actor-jobs.org
 roam/indexes/starintel-discord-tool/STAR-DISCORD-INDEX-000-operations-interface.org
 roam/internal/OSINT-TOOLS-LEDGER.org
