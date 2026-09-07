@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-06T23:57:39Z`
+- generated: `2026-09-07T04:47:29Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`eda24d2540c3c847199a361cbf011bd597360e95`](https://github.com/lost-rob0t/starintel-auto-research/commit/eda24d2540c3c847199a361cbf011bd597360e95)
@@ -143,23 +143,6 @@
 2026-08-24 24c9fc70cb66b9c0a4c3d49058c8847d380ad815 index: record approved StarRouter and RFC URI rework
 2026-08-24 0b2941c76d9a460e26b8e4ae5f968d0f55802c26 design: rebuild STAR URI extension on RFC 3986
 2026-08-24 c69d37e9312f06f6de5e584dc68c037651a190dc research: rework STAR URI findings around RFC 3986
-2026-08-24 5316c96a45c266602771826d30486a3420c90ca1 Merge pull request #139 from lost-rob0t/adar/star-protocol-authority-routing-fediwatch
-2026-08-24 e74f85911c666ea970bd507ed7e0ffe7f365fd50 docs: reconcile STAR protocol index with router 040
-2026-08-24 a5853bff3bd50d3ab2ef2dab4609fd2438fffda3 docs: carry canonical StarRouter 040 review design
-2026-08-24 85c30bb4e3d053d0e7c5f1e22b0725f5f70eeca5 design: reconcile STAR URI extension with StarRouter 040
-2026-08-24 d7f42eb81740edd836589746c69fee7b6dbb7284 docs: add STAR protocol authority-routing index
-2026-08-24 6cdfdb84cb9040003006514898a1152c8704459b design: add STAR authority routing protocol review
-2026-08-24 d0f653a06a188cf03991d3d8fc64aae6047b31a9 research: add unified STAR URI and FediWatch transport ADARD
-2026-08-23 40bcfc2bd39a459b769a783ad90fcec05428e2b4 docs: approve Meta MCP and publish StarIntel MCP ADARD
-2026-08-23 42b57575a91e3eff91046f33391d35b833b4be8e design: reuse StarIntel gserver client for MCP
-2026-08-23 f8aa34f9631542482f7dbb4c996c7153d9f54d5a research: reconcile StarIntel MCP with existing gserver client
-2026-08-23 89f5fbde91a647070e93d7f53ce23c69008f7b8a research: add full StarIntel MCP ADARD track
-2026-08-23 c1eef65a426937777d53d4e76feaabc553b10efa docs: insert full StarIntel MCP phase before Meta
-2026-08-23 b968f9ca21997f4925f7b37974bd2d1f170e7f2b docs: record Meta MCP approval in ADARD index
-2026-08-23 f4b8a2558797b165dcb98f12a883f3ac67e4d272 research: approve Meta MCP search/fetch boundary
-2026-08-23 0c28f4909ad2bd770ecd10c3ee93a7c63cf301fa docs: approve Meta MCP without crawl
-2026-08-23 8f191a995255eec5118d4aaced050d760f2a4ab9 research: Meta MCP execution plane ADARD (#132)
-2026-08-23 32ecdb2e3bf0a8218c95063ba77d5069fdc91654 research: broaden ZeroMQ into StarRouter transport/API overhaul (#129)
 ```
 
 ## Repository paths changed, last 14 days
@@ -200,7 +183,6 @@ roam/design/auto-research/STAR-RESEARCH-PIPELINE-001-adaptive-research-dag-evalu
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-002-deep-research-execution-adapters.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-003-government-data-acquisition-actors.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-005-starintel-meta-mcp-execution-plane.org
-roam/design/auto-research/STAR-RESEARCH-PIPELINE-006-starintel-mcp-authoritative-platform-interface.org
 roam/design/auto-research/government-data-protocol-compatibility-redirect.org
 roam/design/cl-gserver/SENTO-000-managed-component-runtime.org
 roam/design/government-data/STAR-GOVDATA-DESIGN-004-franklin-county-starlang-actor-system.org

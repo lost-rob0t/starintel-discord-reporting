@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-06T23:57:48Z`
+- generated: `2026-09-07T04:47:36Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -307,19 +307,6 @@
 2026-08-24 529e564350a9e738036525984aa505b7e3bee42a refactor: isolate Agent Zero adapter
 2026-08-24 718abd0df30c0507ceb816ec2f494948cfa15340 Merge pull request #177 from lost-rob0t/codex/sol-high-integration
 2026-08-24 90a054137a38b5b5231e6a45037597e52a5b5f2d feat: add Agent Zero symbolic integration
-2026-08-21 468deb40cf13ce991757074e1609606bfdd6960f Canonicalize evolution candidates and constraints
-2026-08-21 ed634b8a3e93d646c3d75794d270e81f5776fdd6 Strengthen evolution closed-data regressions
-2026-08-21 5431c78a43f29d777e452d81f8a9ad9445d7fe72 Preserve control exceptions across Future await
-2026-08-21 f651d5ace002eee967d5528342ecbc19922f7295 Add red Future control-exception regressions
-2026-08-21 fc94a2584f238ab8289d761c38cd197616f90efc fix(prompt): canonicalize closed anonymous-dict schemas
-2026-08-21 73eb13e2063844bbb99a46d7136808766321d455 test(core): register closed-data regression suite
-2026-08-21 594b7e45eb4b196749d50e1f9c7e92f1bf0aeb2f test(core): prove anonymous dict tags are representation-only
-2026-08-21 a16f3dbd21f5abc248db3e63ec8beb18328bc31b feat(core): add deterministic closed-data normalizer
-2026-08-21 bbc3bba197a24ac9f224b1ce29ae4da692c3bcf1 fix(loader): reclaim registry state through explicit destroy hook
-2026-08-21 568c1ed47766afc1e1c09bc24c1e7f820152ead0 fix(tool): add explicit registry destroy hook boundary
-2026-08-21 57ee547e71f23ebf690b44f4af46ec21d925faa0 test(effect): cover anonymous dict normalization
-2026-08-21 076e1d9b7ff0d357907bb4d9db51bf3795e7aa08 fix(effect): treat anonymous dict tags as representation-only
-2026-08-21 62dfbfc8d303415540966e885f796df4483cdaf1 fix(authority): canonicalize anonymous dict tags in fingerprints
 ```
 
 ## Repository paths changed, last 14 days
@@ -431,7 +418,6 @@ prolog/rlm_authority.pl
 prolog/rlm_benchmark.pl
 prolog/rlm_chain.pl
 prolog/rlm_cli.pl
-prolog/rlm_closed_data.pl
 prolog/rlm_completion.pl
 prolog/rlm_completion_async.pl
 prolog/rlm_context.pl
@@ -442,7 +428,6 @@ prolog/rlm_conversation_persist.pl
 prolog/rlm_conversation_warm.pl
 prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
-prolog/rlm_effect.pl
 prolog/rlm_effect_migration.pl
 prolog/rlm_evolution.pl
 prolog/rlm_native_tool.pl
@@ -567,7 +552,6 @@ test/rlm_chain_control_test.pl
 test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
 test/rlm_cli_test.pl
-test/rlm_closed_data_test.pl
 test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
@@ -754,7 +738,6 @@ test/rlm_chain_control_test.pl
 test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
 test/rlm_cli_test.pl
-test/rlm_closed_data_test.pl
 test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl

@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-06T23:57:35Z`
+- generated: `2026-09-07T04:47:27Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`c06b8fc466ea765ef2a857b137d43d6b2535c90f`](https://github.com/lost-rob0t/starintel-server/commit/c06b8fc466ea765ef2a857b137d43d6b2535c90f)
-- head date: `2026-09-06T15:51:51-04:00`
-- head subject: Merge pull request #134 from lost-rob0t/fix/v09-false-value-pipeline
+- head: [`4721efaf8141fd7199b6e1ceb1011b9ad970796e`](https://github.com/lost-rob0t/starintel-server/commit/4721efaf8141fd7199b6e1ceb1011b9ad970796e)
+- head date: `2026-09-06T20:00:59-04:00`
+- head subject: Merge pull request #145 from lost-rob0t/fix/target-dispatch-data-shape
 
 ## Git log, last 14 days
 
 ```text
+2026-09-06 4721efaf8141fd7199b6e1ceb1011b9ad970796e Merge pull request #145 from lost-rob0t/fix/target-dispatch-data-shape
+2026-09-06 9d80cc1710cfe2a5c62c54fc8a2a23b9b7c564f3 fix: emit v0.9-valid data.*-shaped target documents from both routes
 2026-09-06 c06b8fc466ea765ef2a857b137d43d6b2535c90f Merge pull request #134 from lost-rob0t/fix/v09-false-value-pipeline
 2026-09-06 0b1ab8d6bbbaac9b5b73df5d7f66af29057522a1 test: follow consolidated documentation paths
 2026-09-06 cc86eca9e623ba3b990a2029b4b51f0f46fada77 Merge commit 'e1af325ea1e1d9ff83c1b41c999d5519af76f8d6' into debug/json-pr-refresh
@@ -120,11 +122,6 @@
 2026-08-24 5ab38615990b8c37695e0b28f3de33faa39d5584 feat: serve scoped public search and aggregate stats
 2026-08-24 a0ba6a8efb0dd73ea078edeacd906c81920dcbe3 feat: contract public v1 search and stats
 2026-08-24 bdf763baf47758a5898a5e5bf96bb0b0ff263603 test: define public v1 search and stats authority contract
-2026-08-24 8f6e50701081f0335c7552082dba5ff392b859e5 Merge pull request #104 from lost-rob0t/agent/gserver-client-admin-contract
-2026-08-24 5e5838c627a2bf57d7360e64b150b5f073a1cb56 fix(client): reject truncated JSON responses
-2026-08-24 068afa1aef1c417b1492335d6170325ed8736af9 test(client): cover request options constructor lifecycle
-2026-08-24 9c4fa2dd276be14b329d8cc66a4e67c4cae2f36c fix(client): keep request options constructor callable
-2026-08-23 820b54519c8811cb87d8fdf15d8b48c5285e85f9 fix(client): avoid constructor redefinition warning
 ```
 
 ## Repository paths changed, last 14 days
@@ -139,7 +136,6 @@ README.org
 addons/bixby/bixby.lisp
 addons/bixby/package.lisp
 cli/client-convenience.lisp
-cli/client-runtime-final.lisp
 cli/http-contract-final.lisp
 cli/http-contract-targets.lisp
 cli/http-contract.lisp
@@ -255,7 +251,6 @@ starintel-gserver-integration-tests.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
-t/gserver-client-final-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
@@ -289,7 +284,6 @@ starintel-gserver-integration-tests.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
-t/gserver-client-final-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
