@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-07T12:40:05Z`
+- generated: `2026-09-07T18:45:08Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`fe6e8eee30d6beb153c2a399a79d325e017f2b02`](https://github.com/lost-rob0t/zara/commit/fe6e8eee30d6beb153c2a399a79d325e017f2b02)
@@ -1151,14 +1151,6 @@
 2026-08-29 4acbda423f605f2f5edb5d34aa3e8871ea480b54 docs(rage): open ZARA-016 iteration log for issue 17
 2026-08-28 a04435d2b73b44dffd52e00aff3bf478d5a48d6b Merge pull request #221 from lost-rob0t/build/flake-update-2026-08
 2026-08-28 6567bce87d6a60cc9891a22bb9699484a5f24a6b build(flake): update nixpkgs, pin python313, adopt nixpkgs sherpa-onnx
-2026-08-24 8dc7448e3d130e1ad4600e27621e72d5cd772b53 Merge pull request #214 from lost-rob0t/rage/191-post-merge-evidence-2
-2026-08-24 51356e3cee216c3fb7f51aae308463b7e8f15c55 Merge pull request #213 from lost-rob0t/rage/191-zara1-tool-approvals-2
-2026-08-24 ab34d02cdc958d95e9964489a291f3b19434c4b9 docs(rage): record issue 191 merge outcome
-2026-08-24 c6c4e3080e7d3fb126824eae9dffaaa3dfa15e00 feat(protocol): carry authenticated tool approvals over ZARA/1
-2026-08-24 55f4f76b2906a05f289f3720e339702d5139aa6d RAGE #209: record merge outcome (#212)
-2026-08-24 ddc30c737ee7eff030dd424949a490f5c6cf52dd Merge pull request #211 from lost-rob0t/rage/209-runtime-tool-approvals
-2026-08-24 ac0917228a912923de0807fe93fe71afee2e7dba docs(rage): record issue 209 merge outcome
-2026-08-24 394a0ede032b0528b9eb727512666db9a822e09f docs(rage): record issue 209 local gates
 ```
 
 ## Repository paths changed, last 14 days
@@ -1430,9 +1422,6 @@ rage/178-android-release-matrix.org
 rage/178-android-uri-intent-abuse-r4.org
 rage/178-android-voice-hello-json-depth-r1.org
 rage/178-capability-json-depth-bound.org
-rage/191-zara1-tool-approvals-2-design.org
-rage/191-zara1-tool-approvals-2-research.org
-rage/191-zara1-tool-approvals-2.org
 rage/195-samsung-assistant-research.org
 rage/196-android-assistant-role.org
 rage/196-ui-closed-runtime.org
@@ -1453,7 +1442,6 @@ rage/203-android-ui-error-redaction-r2.org
 rage/203-android-voice-diagnostic-redaction-r2.org
 rage/203-android-voice-runtime-invalidation-primitives-r2.org
 rage/203-android-voice-session-invalidation-r4.org
-rage/209-runtime-tool-approvals.org
 rage/216-transcript-normalization-contract-r2.org
 rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
@@ -1540,8 +1528,6 @@ scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
 scripts/test-zara1-device-actions.sh
-scripts/test-zara1-protocol.sh
-scripts/test-zara1-tool-approvals.sh
 server_main.pl
 t/api_service.pl
 t/capability_plans.pl
@@ -1600,8 +1586,6 @@ t/test_plugin_tool_approval.py
 t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
 t/test_prolog_frame_adapter.py
-t/test_protocol.py
-t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_registered_target_recovery.py
@@ -1669,11 +1653,9 @@ t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
-t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
 t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
-t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 wiki/agent-mode.org
@@ -1684,7 +1666,6 @@ wiki/customization.org
 wiki/install.org
 wiki/long-horizon-tasks.org
 wiki/plugins.org
-wiki/tool-approvals.org
 zara/__main__.py
 zara/agent/__init__.py
 zara/agent/graph.py
@@ -1885,8 +1866,6 @@ scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
 scripts/test-zara1-device-actions.sh
-scripts/test-zara1-protocol.sh
-scripts/test-zara1-tool-approvals.sh
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
@@ -1944,8 +1923,6 @@ t/test_plugin_tool_approval.py
 t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
 t/test_prolog_frame_adapter.py
-t/test_protocol.py
-t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_registered_target_recovery.py
@@ -2013,11 +1990,9 @@ t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
-t/test_zara1_tool_approvals.py
 t/test_zara_hooks_registry.py
 t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
-t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 ```

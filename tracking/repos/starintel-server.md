@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-07T12:39:45Z`
+- generated: `2026-09-07T18:44:58Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`4721efaf8141fd7199b6e1ceb1011b9ad970796e`](https://github.com/lost-rob0t/starintel-server/commit/4721efaf8141fd7199b6e1ceb1011b9ad970796e)
@@ -62,34 +62,6 @@
 2026-08-24 7da237f1e93ce1ab6e0bc3d373d0fbabe1cf64ab test: surface Bixby add-on load cause without weakening failure
 2026-08-24 d4425f7514e0db1a8675ed4fa2fcbda1b279370c fix: parse OAuth space-delimited scopes at provider boundary
 2026-08-24 685c672c1b24acc6cc7f253936de365ee3fa2c8b test: repair OAuth wrong-password regression reader syntax
-2026-08-24 f9da9c7e136dd08abe256d205f55f2df47aa51d9 Serialize add-on lifecycle operations
-2026-08-24 f1b54e6d1176c1d05fb940b4dddb2594eab9d269 Use public core OAuth API from Bixby add-on
-2026-08-24 96c70d5a4fbe318af3cc44b30ab41f247e59a7c9 Export reusable OAuth validation helpers
-2026-08-24 d4d4555353f3a1cf58ba3ae9a885e2b61cc7d81e Prove add-on configuration survives reload
-2026-08-24 8b8d3f40acb2f486bb11ff6c79a7189c58220a38 Preserve Bixby configuration across reloads
-2026-08-24 f4c123b0bda9767099bc9515ea852b6fbe8578e5 Document built-in OAuth authorization-code provider
-2026-08-24 fe6b6b547355c3752f22e5ecedb6d2d1fe195fe3 Document StarIntel Common Lisp add-on lifecycle
-2026-08-24 298fab5a61f85eaf61c6e4e67921d30f9ccda805 Keep optional Bixby package out of test reader dependencies
-2026-08-24 433ad78be951dacb95dd6345b3818b53852dc20e Require add-on lifecycle suite in unit gate
-2026-08-24 b9079a7aa9ab9f917269f3eb4b498e8ec7a1c452 Wire add-on lifecycle tests
-2026-08-24 1e6c2839e052687b916daee00a62dd2664258ebf Test add-on loading reload and Bixby package boundary
-2026-08-24 abc8e7be26fea9ba896c5a814cf7a46d6792d4a7 Make add-on reload rollback restore prior definition
-2026-08-24 b24a41bc1bf58bf2b2da3d198e6179cd959bb68e Load add-on lifecycle before init configuration
-2026-08-24 0a196fe8032625b19426d4b345134eddb7bd73eb Implement Bixby add-on configuration over core OAuth
-2026-08-24 3105fede8b996d7b51eb340b82798c3ce7475698 Define Bixby add-on package boundary
-2026-08-24 0d6d2ff3d22d940679b7910e6c30ef3718accc76 Add optional StarIntel Bixby add-on system
-2026-08-24 208d83dcd118558714c0328f5bf5f7c6cfeb7f62 Formalize ASDF add-on lifecycle and stable reloads
-2026-08-24 9258d76901568eadddf2e71ee1ef2d54c9802955 Load OAuth provider HTTP routes
-2026-08-24 bc206691c5a0746552afb9b99f921f3551cc3ba4 Expose OAuth protocol paths without bearer auth
-2026-08-24 995b65ee7379e35a92913b4b1bba38e5f6e63362 Implement standard OAuth authorization-code HTTP provider
-2026-08-24 2f3d9a5379372982d4bd9cbe7b4f8e032ef0a542 Wire OAuth provider contract tests
-2026-08-24 140c8d515a871ee83a2572c6c15e7089dd58ce2e Add OAuth provider HTTP contract tests
-2026-08-24 20cc5fccbe3865f149852bc4cfc49039fc4a4ebe API v1: public search and watch-safe stats (#110)
-2026-08-24 b27b2121af19195e70955177f1c4a6c178a49f44 ci: use CouchDB 3.5 Clouseau distribution
-2026-08-24 a435575ffe244dccac107e2ff938855f0a49defa ci: provision Clouseau for service-backed search gate
-2026-08-24 c5e1e2f08ebeb3ef1c4c07d663cda8ceecba4a6a test: assert public mode with valid FiveAM form
-2026-08-24 8e209ca24ae469e815a668dc45305ab1262fee00 ci: retain service-backed smoke failure logs
-2026-08-24 13c4fd1b76d95fc5a219330b34a4a3fe1a3a85d1 test: expose public API integration failures
 ```
 
 ## Repository paths changed, last 14 days
@@ -97,12 +69,10 @@
 ```text
 .forgejo/workflows/doc-coverage.yml
 .github/workflows/doc-coverage.yml
-.github/workflows/smoke-tests.yml
 .gitignore
 Makefile
 README.org
 addons/bixby/bixby.lisp
-addons/bixby/package.lisp
 cli/client-convenience.lisp
 cli/http-contract-targets.lisp
 cli/http-contract.lisp
@@ -150,7 +120,6 @@ docs/addons.org
 docs/document-spec.org
 docs/http-api-docs.org
 docs/messaging.org
-docs/oauth-provider.org
 docs/v09-runtime.org
 flake.lock
 flake.nix
@@ -163,7 +132,6 @@ source/actors.lisp
 source/actors/couchdb-service.lisp
 source/addons.lisp
 source/auth/core.lisp
-source/auth/oauth-package.lisp
 source/auth/oauth.lisp
 source/auth/store.lisp
 source/auth/users.lisp
@@ -207,13 +175,11 @@ source/starintel-gserver.asd
 source/target-dispatch-fixes.lisp
 source/target-dispatch.lisp
 source/target-recovery.lisp
-starintel-bixby.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
-t/http-public-api-integration-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
 t/oauth-http-provider-test.lisp
@@ -229,19 +195,16 @@ ui/ui-server.lisp
 
 ```text
 .github/workflows/doc-coverage.yml
-.github/workflows/smoke-tests.yml
 cli/starintel-gserver-client.asd
 flake.nix
 scripts/doc-authoring.py
 scripts/insert-docstrings.py
 source/starintel-gserver.asd
-starintel-bixby.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
-t/http-public-api-integration-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
 t/oauth-http-provider-test.lisp

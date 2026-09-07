@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-07T12:40:01Z`
+- generated: `2026-09-07T18:45:06Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -290,11 +290,6 @@
 2026-08-24 e6f04bb641d5f15d2b806eca4bd00d2718615034 Record PR 182 main reconciliation evidence
 2026-08-24 97ed737f12770e2fcd925cb7a7c4896fd262a540 Harden trusted binding replay conformance
 2026-08-24 329cdc690c77d14ab4959f104837b546c22dca02 ci: require pinned paid OpenRouter model
-2026-08-24 0d8e1008ba525f0ec7e51cba2de34ede8a63cf6f Merge pull request #180 from lost-rob0t/rage/144-fallback-closure
-2026-08-24 c56c82dd5c774e976cf1af5858addea4e97c5619 Close bounded subagent possession gaps
-2026-08-24 843337e85efdd2833a4308b1a6e1a4376eab72f2 Merge pull request #149 from lost-rob0t/agent/subagent-supervised-call-conformance
-2026-08-24 f477c6ed279afd78757c1fac130a694438bbdf3c Merge pull request #179 from lost-rob0t/rage/164-conversation-metadata
-2026-08-24 00d6da45539d1e8912a4c825bf91dc7ac55b0f9d Fix conversation closed-data metadata
 ```
 
 ## Repository paths changed, last 14 days
@@ -426,8 +421,6 @@ prolog/rlm_tool.pl
 prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
 rage/117-skill-compiler-reconciliation.org
-rage/144-fallback-closure.org
-rage/164-conversation-metadata.org
 rage/172-typed-delegation-policy.org
 rage/181-binding-replay-race.org
 rage/190-cli-help-success.org
@@ -504,7 +497,6 @@ test/load_all.pl
 test/pack_load_smoke.pl
 test/prolog_agent_ui_fixture_command_codec_test.pl
 test/prolog_agent_ui_v1_test.pl
-test/rlm_agent_graph_async_test.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_chain_app_attribution_test.pl
 test/rlm_chain_message_metadata_test.pl
@@ -521,7 +513,6 @@ test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
-test/rlm_conversation_test.pl
 test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
@@ -554,7 +545,6 @@ test/rlm_subagent_deadline_test.pl
 test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
 test/rlm_tool_effect_test.pl
-test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
@@ -659,7 +649,6 @@ test/load_all.pl
 test/pack_load_smoke.pl
 test/prolog_agent_ui_fixture_command_codec_test.pl
 test/prolog_agent_ui_v1_test.pl
-test/rlm_agent_graph_async_test.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_chain_app_attribution_test.pl
 test/rlm_chain_message_metadata_test.pl
@@ -676,7 +665,6 @@ test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
-test/rlm_conversation_test.pl
 test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
@@ -709,7 +697,6 @@ test/rlm_subagent_deadline_test.pl
 test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
 test/rlm_tool_effect_test.pl
-test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
