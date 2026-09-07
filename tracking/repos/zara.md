@@ -1,15 +1,17 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-07T04:47:38Z`
+- generated: `2026-09-07T12:40:05Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`207e3b689399464de413d3faba7c2ed763168ca3`](https://github.com/lost-rob0t/zara/commit/207e3b689399464de413d3faba7c2ed763168ca3)
-- head date: `2026-09-07T03:45:30Z`
-- head subject: release(android): prepare v0.1.0-alpha APK (#618)
+- head: [`fe6e8eee30d6beb153c2a399a79d325e017f2b02`](https://github.com/lost-rob0t/zara/commit/fe6e8eee30d6beb153c2a399a79d325e017f2b02)
+- head date: `2026-09-07T09:07:43Z`
+- head subject: fix(tts): stop idle zara-server CPU busy-spin (#660)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-07 fe6e8eee30d6beb153c2a399a79d325e017f2b02 fix(tts): stop idle zara-server CPU busy-spin (#660)
+2026-09-07 80307569fd13cd047d4cc6fbe834c8bb507f6624 docs(android): freeze canonical symbolic workspace design (#649)
 2026-09-06 207e3b689399464de413d3faba7c2ed763168ca3 release(android): prepare v0.1.0-alpha APK (#618)
 2026-09-06 b09b6e6fcc2225118fe80f0a038bedad6f5df80e Merge pull request #617 from lost-rob0t/rage/core/324-expanded-history-sidebar-r2
 2026-09-06 12bf147480cc6b088524eee793248dee7e2701e0 fix: place expanded history beside canonical chat
@@ -1157,52 +1159,6 @@
 2026-08-24 ddc30c737ee7eff030dd424949a490f5c6cf52dd Merge pull request #211 from lost-rob0t/rage/209-runtime-tool-approvals
 2026-08-24 ac0917228a912923de0807fe93fe71afee2e7dba docs(rage): record issue 209 merge outcome
 2026-08-24 394a0ede032b0528b9eb727512666db9a822e09f docs(rage): record issue 209 local gates
-2026-08-24 77d403c54c0c170ebb63fddc42ca5321e4c188af test(runtime): close approval coverage gaps
-2026-08-24 39addc5ae729617c8bb3d9417a5fbf43aa60e927 fix(runtime): harden approval metadata
-2026-08-24 630cf2ffdf5b9229314fe25a32a52db146e6312f feat(runtime): add resumable tool approvals
-2026-08-24 72c8fae70df57beee3689854b9a8c2d10f2f2d31 test(runtime): prove missing tool approval gate
-2026-08-24 3d2b40045354fbc93881c3f01469ca63055d77e0 docs(rage): design runtime tool approvals
-2026-08-24 2c608e7d4d79dc76ebfcc16bf8f064174a38df3b RAGE #191: expose missing runtime approval prerequisite
-2026-08-24 935bd914c1c66f261b8ebeee4b6a1b1847cb5a0a docs(rage): start issue 209 runtime approvals
-2026-08-24 b739619a09287c8633391a68147ee67b63b41990 docs(rage): record and fix issue 191 whitespace gate
-2026-08-24 2d827c5413fd5da534bfc55ee4e25095ce1debc2 Merge remote-tracking branch 'origin/master' into rage/191-zara1-tool-approvals
-2026-08-24 47a6dcb566111ba9794fd5b23687a56eb2b047bb Merge pull request #208 from lost-rob0t/codex/theme-settings
-2026-08-24 abded68049a6b86a7a5e3a2252a72185ac92d406 docs(rage): record issue 191 decision gates
-2026-08-24 56a75f433d99cef7d4998b60ca524462cc188fff docs(rage): reject premature tool approval wire
-2026-08-24 71b72994db30cfc04d5d7b4c5dc66a61eff0f330 feat(desktop): add themes settings and Prolog editor
-2026-08-24 3b6d1ef1ac91a721c162442e5a133c3b89f00466 feat(desktop): redesign Copilot with Signal Cabin UI
-2026-08-24 9d6fa5ec4aa8014bce6e347f2a8c4223e24d73a3 docs(rage): start issue 191 tool approvals
-2026-08-24 a41877367f7e0af8d936e91982e88e03912dd5c2 RAGE #132: record visible STT merge evidence
-2026-08-24 30b165e4b3d08aeac2ea5be0934d63cd296ebdb5 RAGE #132: restore client-visible streaming STT events
-2026-08-24 99c0913e4bb0d502903416343ca7d7ea65c6180d docs(rage): close visible STT regression evidence
-2026-08-24 d63bdf350e99ca5c8fc06c4e1239b8a94e7ae51e docs(rage): record visible STT pre-publication gates
-2026-08-24 103de087aa74b64d7f05f4be45647d2f816bc702 docs: record local gates and coverage audit
-2026-08-24 c9dd9989b34104dc8fe4e8e0c631af66c1c1a665 refactor: use canonical voice event publisher
-2026-08-24 0e675a7a1b6335487657558e11b3ea69eaa38d69 test: close visible STT integration coverage
-2026-08-24 3e4f796fe7f505fc2b986f6b0f2353a68a7c7e1e docs: record full-gate environment failure
-2026-08-24 a50c156965854378dc1f86d067df63eddc98ce1e docs: record cancellation race evidence
-2026-08-24 810da2405d0db02db472ff94331167b36b7137a6 fix: serialize visible STT cancellation
-2026-08-24 c90b5383b67b76628fc16b303da4dc3f7d9fff40 docs: record visible STT red-green evidence
-2026-08-24 919096d2b0a74f81d29f1098cc971a5da90fd180 fix: carry visible STT events across ZARA/1
-2026-08-24 903217e07d7dc06dcb78e9757e5e936610832469 test: close visible STT protocol and principal boundaries
-2026-08-24 0cb03e78d0e1a7dfc31a327a5ba29391e5e4801a docs(rage): record corrected #132 TDD red gate
-2026-08-24 dd081f9ada718d6b485e36675f7bb26189378ca1 test: align client STT events with canonical runtime vocabulary
-2026-08-24 26cc031e79902cc29e2c6c96caafad1a618f25f6 test: align visible STT wire spec with canonical runtime events
-2026-08-24 457c127ac7d84c9be3d6ad585ee2efb1220d3f4d test: require visible STT events through ZaraClient boundary
-2026-08-24 ebd803081219733e6792720c555ff82ced9ac04e test: specify visible STT ZARA/1 event codec
-2026-08-24 17e89f0cc77802730770a02dca6aa39e0ff2150a test: fence in-flight STT publication against cancel
-2026-08-24 bc4e411238d9392e3d647385389ae689397ecfad docs(rage): reconcile #132 regression transaction state
-2026-08-24 b7328da9e937a0fbbeff44b46f7b0ec9382d89c6 fix: preserve final voice submission without observer seam
-2026-08-24 f2059d0dbb91bf76a0c479d7cc40dde4f4dd4e35 feat: publish visible STT events through principal runtime bus
-2026-08-24 335ed17d71b7d1b2525e1747881d3c837af6a7b7 feat: add correlated runtime STT events
-2026-08-24 3160346b774ff749b3dbd66d8cb68067e3222d6c test: specify reopened #132 runtime STT visibility
-2026-08-24 79b0ce18dfbbaab152905ea955632c08ada82d56 rage: design reopened #132 STT visibility repair
-2026-08-24 f3dea12058fb027a4b57798bd270a9e88815ceda rage: research reopened #132 STT visibility regression
-2026-08-24 db6243b5261608af143d1cb532948a4e0dd35fc3 chore: persist Zara Auto-RAGE control plane
-2026-08-24 ae23557201425090c2c325a285f1486d0427bb96 rage: initialize reopened #132 STT visibility iteration
-2026-08-24 0df76da7511994f097af05ab2fccb4dd98439917 docs(rage): record #134 Auto-RAGE decision gate
-2026-08-24 1356c43680a3ea6313476ec89f67ad8a4e36af10 docs(rage): design blocker-aware #134 release gate
-2026-08-24 05b339b9f27b620a69e3b67d53e6e3ba45a851ca docs(rage): record #134 adversarial release research
 ```
 
 ## Repository paths changed, last 14 days
@@ -1212,14 +1168,12 @@
 .github/workflows/rage-159-apply.yml
 .github/workflows/rage-575-apply-green.yml
 .github/workflows/release-v0.1.0-alpha.yml
-.impeccable/design.json
-.impeccable/surfaces/zara-desktop-windows-quick-py.md
-.rage.toml
 AGENTS.md
-DESIGN.md
 PRODUCT.md
 README.org
 android/.gitignore
+android/AGENTS.md
+android/DESIGN.md
 android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
 android/app/src/main/assets/prolog/.gitkeep
@@ -1387,6 +1341,7 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
 android/build-trealla.sh
 android/build.gradle.kts
+android/design/reference-2026-09-07.svg
 android/flake.lock
 android/flake.nix
 android/gradle.properties
@@ -1397,7 +1352,6 @@ android/settings.gradle.kts
 docs/README.org
 docs/STT.md
 docs/architecture.org
-docs/desktop-copilot-design.md
 docs/development.org
 docs/intentframe-contract.md
 docs/research/002-unified-copilot-voice-visual-ci.md
@@ -1426,14 +1380,9 @@ modules/sound.pl
 modules/zara_hooks.pl
 planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
-rage/132-visible-stt-regression-design.org
-rage/132-visible-stt-regression-research.org
-rage/132-visible-stt-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
-rage/134-daemon-release-design.org
 rage/134-daemon-release-gate.org
-rage/134-daemon-release-research.org
 rage/154-intentframe-design.org
 rage/154-intentframe-research.org
 rage/154-intentframe.org
@@ -1484,9 +1433,6 @@ rage/178-capability-json-depth-bound.org
 rage/191-zara1-tool-approvals-2-design.org
 rage/191-zara1-tool-approvals-2-research.org
 rage/191-zara1-tool-approvals-2.org
-rage/191-zara1-tool-approvals-design.org
-rage/191-zara1-tool-approvals-research.org
-rage/191-zara1-tool-approvals.org
 rage/195-samsung-assistant-research.org
 rage/196-android-assistant-role.org
 rage/196-ui-closed-runtime.org
@@ -1507,8 +1453,6 @@ rage/203-android-ui-error-redaction-r2.org
 rage/203-android-voice-diagnostic-redaction-r2.org
 rage/203-android-voice-runtime-invalidation-primitives-r2.org
 rage/203-android-voice-session-invalidation-r4.org
-rage/209-runtime-tool-approvals-design.org
-rage/209-runtime-tool-approvals-research.org
 rage/209-runtime-tool-approvals.org
 rage/216-transcript-normalization-contract-r2.org
 rage/217-s1-mini-normalizer-r4.org
@@ -1589,7 +1533,6 @@ scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
-scripts/test-runtime-tool-approvals.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-llm.sh
 scripts/test-streaming-tts.sh
@@ -1599,7 +1542,6 @@ scripts/test-user-command-persistence.sh
 scripts/test-zara1-device-actions.sh
 scripts/test-zara1-protocol.sh
 scripts/test-zara1-tool-approvals.sh
-scripts/test-zara1-voice.sh
 server_main.pl
 t/api_service.pl
 t/capability_plans.pl
@@ -1641,40 +1583,32 @@ t/test_database_fetch_locking.py
 t/test_desktop_control.py
 t/test_desktop_launch_surface.py
 t/test_desktop_preferences.py
-t/test_desktop_settings_window.py
-t/test_desktop_shell.py
-t/test_desktop_theme.py
 t/test_desktop_toggle_control.py
 t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
 t/test_dialogue_script.py
 t/test_dictation_vulkan_backend.py
-t/test_full_chat.py
 t/test_hooks_config.py
 t/test_host_api_service.py
 t/test_json_limits.py
 t/test_latency_metrics.py
 t/test_llm.py
 t/test_llm_streaming.py
-t/test_memory.py
 t/test_plan_executor.py
 t/test_plans.py
 t/test_plugin_tool_approval.py
 t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
 t/test_prolog_frame_adapter.py
-t/test_prolog_studio.py
 t/test_protocol.py
 t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
-t/test_quick_handoff_edges.py
 t/test_registered_target_recovery.py
 t/test_runtime_backend_publisher.py
 t/test_runtime_host.py
 t/test_runtime_host_clarification.py
 t/test_runtime_intent_routing.py
-t/test_runtime_tool_approval.py
 t/test_s1_mini_normalizer.py
 t/test_s1_mini_numeric_bounds.py
 t/test_security_admin_permissions_placeholder.py
@@ -1721,9 +1655,7 @@ t/test_user_command_compiler.py
 t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_user_python_hooks.py
-t/test_visible_stt_runtime.py
 t/test_voice_runtime_ingress.py
-t/test_voice_zmq_client.py
 t/test_wake_clarification.py
 t/test_wake_daemon_client.py
 t/test_wake_fail_closed.py
@@ -1755,7 +1687,6 @@ wiki/plugins.org
 wiki/tool-approvals.org
 zara/__main__.py
 zara/agent/__init__.py
-zara/agent/approval.py
 zara/agent/graph.py
 zara/agent/hooks.py
 zara/agent/loops.py
@@ -1770,20 +1701,14 @@ zara/config.py
 zara/console.py
 zara/database.py
 zara/desktop/app.py
-zara/desktop/chat_widgets.py
 zara/desktop/control.py
 zara/desktop/controller.py
 zara/desktop/preferences.py
-zara/desktop/prolog_studio.py
-zara/desktop/theme.py
-zara/desktop/tray/tray.py
 zara/desktop/ui_fixtures.py
 zara/desktop/windows/__init__.py
-zara/desktop/windows/chat.py
 zara/desktop/windows/copilot.py
 zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
-zara/desktop/windows/status.py
 zara/device_action_replay.py
 zara/dictate.py
 zara/json_limits.py
@@ -1953,7 +1878,6 @@ scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-rlm-rewrite.sh
-scripts/test-runtime-tool-approvals.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-llm.sh
 scripts/test-streaming-tts.sh
@@ -1963,7 +1887,6 @@ scripts/test-user-command-persistence.sh
 scripts/test-zara1-device-actions.sh
 scripts/test-zara1-protocol.sh
 scripts/test-zara1-tool-approvals.sh
-scripts/test-zara1-voice.sh
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
@@ -2004,40 +1927,32 @@ t/test_database_fetch_locking.py
 t/test_desktop_control.py
 t/test_desktop_launch_surface.py
 t/test_desktop_preferences.py
-t/test_desktop_settings_window.py
-t/test_desktop_shell.py
-t/test_desktop_theme.py
 t/test_desktop_toggle_control.py
 t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
 t/test_dialogue_script.py
 t/test_dictation_vulkan_backend.py
-t/test_full_chat.py
 t/test_hooks_config.py
 t/test_host_api_service.py
 t/test_json_limits.py
 t/test_latency_metrics.py
 t/test_llm.py
 t/test_llm_streaming.py
-t/test_memory.py
 t/test_plan_executor.py
 t/test_plans.py
 t/test_plugin_tool_approval.py
 t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
 t/test_prolog_frame_adapter.py
-t/test_prolog_studio.py
 t/test_protocol.py
 t/test_protocol_runtime.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
-t/test_quick_handoff_edges.py
 t/test_registered_target_recovery.py
 t/test_runtime_backend_publisher.py
 t/test_runtime_host.py
 t/test_runtime_host_clarification.py
 t/test_runtime_intent_routing.py
-t/test_runtime_tool_approval.py
 t/test_s1_mini_normalizer.py
 t/test_s1_mini_numeric_bounds.py
 t/test_security_admin_permissions_placeholder.py
@@ -2084,9 +1999,7 @@ t/test_user_command_compiler.py
 t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_user_python_hooks.py
-t/test_visible_stt_runtime.py
 t/test_voice_runtime_ingress.py
-t/test_voice_zmq_client.py
 t/test_wake_clarification.py
 t/test_wake_daemon_client.py
 t/test_wake_fail_closed.py

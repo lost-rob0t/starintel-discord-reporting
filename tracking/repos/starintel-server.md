@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-07T04:47:27Z`
+- generated: `2026-09-07T12:39:45Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`4721efaf8141fd7199b6e1ceb1011b9ad970796e`](https://github.com/lost-rob0t/starintel-server/commit/4721efaf8141fd7199b6e1ceb1011b9ad970796e)
@@ -90,38 +90,6 @@
 2026-08-24 c5e1e2f08ebeb3ef1c4c07d663cda8ceecba4a6a test: assert public mode with valid FiveAM form
 2026-08-24 8e209ca24ae469e815a668dc45305ab1262fee00 ci: retain service-backed smoke failure logs
 2026-08-24 13c4fd1b76d95fc5a219330b34a4a3fe1a3a85d1 test: expose public API integration failures
-2026-08-24 1c565541c0ec32697ed458d5a980f5d4d6af2a95 Merge pull request #115 from lost-rob0t/rage/111-bixby-oauth-authority
-2026-08-24 99b5a3ecbc29774b75054366f433db426a5c7f69 fix: authenticate OAuth bearer tokens at HTTP boundary
-2026-08-24 d1e5e00b94d432199cb3d34158aa697fc83ca034 fix: load OAuth bearer dispatcher before HTTP auth
-2026-08-24 a4ec98b77626646315a2cc6a0a6610346ccf477f fix: dispatch bearer credentials across OAuth and API keys
-2026-08-24 4d4e5cd48c4e6b7a39f53d22e60eb4590b8eb821 test: cover OAuth bearer middleware dispatch
-2026-08-24 aeae9bdeb621db142e1f94e5e75eec2a74a275b5 test: load OAuth bearer dispatch coverage
-2026-08-24 34d20c90603eb3dd5a82053b713ca75dbdbef8a7 test: require OAuth bearer HTTP dispatch
-2026-08-24 9cbf1a2b4e9f0b4b0e23325999f4bd3fa5917b92 test: bind OAuth clock through auth package
-2026-08-24 a31b6ad1199bf2cc6910e4c95117f6c59c2a224b test: require OAuth suite in hermetic gate
-2026-08-24 cb787d8d0c05d97f4d3e2939cda08e067d4c3680 feat: load OAuth authorization-code core
-2026-08-24 aa16c041d43cc14c38ee37dca4b3072594036142 feat: expose OAuth auth contract
-2026-08-24 912a6db155147bbe625386ca990a1d20252c1844 feat: add bounded OAuth credential lifetimes
-2026-08-24 67ef1029658ccc0d74a024f65c80f39cd2aded32 feat: implement OAuth authorization-code security core
-2026-08-24 3038baed85b9aabe5f279df5735ae012f2199562 feat: reserve OAuth records in auth store
-2026-08-24 858486dffde5f3b72adc4745feed0b35ab09532a test: load OAuth authorization-code suite
-2026-08-24 969738105b9a8f0cef5ddf18908fd873606bec72 test: require OAuth authorization-code security core
-2026-08-24 7f8cee487a8e4559b3a6ab04f557bac7df6f2a28 Fix admin CLI Compose secret-file resolution (#113)
-2026-08-24 118fc8ce725d84e067d423384719920cda021740 fix: make public mode override default public read paths
-2026-08-24 8e77fd360916cd8447a215b733ba2154ffef17e0 feat: report effective public mode in capabilities
-2026-08-24 9d67b2fa396ffe9c99be61f46b8509533e45a8b5 fix: stop hardcoding public read paths
-2026-08-24 636034bd23fbd9a3cc0772366e827f98fb0a759c fix: evaluate public mode at auth boundary
-2026-08-24 7d854ed75987d439e440d557cfa69b3139cc05db docs: make public mode explicit in init example
-2026-08-24 716c48df3783678c96521340d901159958da2043 test: reference init public mode setting internally
-2026-08-24 033ff09bab6e27936e42c86223fbc52ec3b5dbb6 feat: add default-on public read mode setting
-2026-08-24 9d8bc81354fb621d6b54cc116693e10a182f3a22 test: gate public read API behind init public mode
-2026-08-24 610b4945e0578c4d8e31a69a1b522877b54fc8d1 test: load public API integration coverage
-2026-08-24 ef462b7ffe88b99d6299d49b08fb2c837c5a510b test: prove public reads and protected mutations over HTTP
-2026-08-24 b3b626d685a210e04095ee7062bf731f332d5506 test: bind public search scope at its owning boundary
-2026-08-24 c8e9e2803029b0f61e34a79e38cf173c22a35ac3 feat: advertise public and privileged API authority
-2026-08-24 5ab38615990b8c37695e0b28f3de33faa39d5584 feat: serve scoped public search and aggregate stats
-2026-08-24 a0ba6a8efb0dd73ea078edeacd906c81920dcbe3 feat: contract public v1 search and stats
-2026-08-24 bdf763baf47758a5898a5e5bf96bb0b0ff263603 test: define public v1 search and stats authority contract
 ```
 
 ## Repository paths changed, last 14 days
@@ -136,7 +104,6 @@ README.org
 addons/bixby/bixby.lisp
 addons/bixby/package.lisp
 cli/client-convenience.lisp
-cli/http-contract-final.lisp
 cli/http-contract-targets.lisp
 cli/http-contract.lisp
 cli/starintel-gserver-client.asd
@@ -179,27 +146,23 @@ doc/server-admin.org
 doc/target-lease-semantics.org
 doc/testing.md
 doc/v09-runtime.org
-docker/star-server-init.lisp
 docs/addons.org
 docs/document-spec.org
 docs/http-api-docs.org
 docs/messaging.org
 docs/oauth-provider.org
 docs/v09-runtime.org
-example_configs/init.lisp
 flake.lock
 flake.nix
 qlfile.lock
 scripts/doc-authoring.py
 scripts/insert-docstrings.py
-scripts/stack-test.sh
 source/actor-systems/event-actor.lisp
 source/actor-systems/matcher-actor.lisp
 source/actors.lisp
 source/actors/couchdb-service.lisp
 source/addons.lisp
 source/auth/core.lisp
-source/auth/oauth-bearer.lisp
 source/auth/oauth-package.lisp
 source/auth/oauth.lisp
 source/auth/store.lisp
@@ -226,8 +189,6 @@ source/frontends/http-authorization.lisp
 source/frontends/http-boundary-core.lisp
 source/frontends/http-boundary-routes.lisp
 source/frontends/http-bulk-jobs.lisp
-source/frontends/http-capabilities.lisp
-source/frontends/http-contract-routes.lisp
 source/frontends/http-document-update.lisp
 source/frontends/http-oauth-provider.lisp
 source/frontends/http-target-v1-auth.lisp
@@ -247,18 +208,14 @@ source/target-dispatch-fixes.lisp
 source/target-dispatch.lisp
 source/target-recovery.lisp
 starintel-bixby.asd
-starintel-gserver-integration-tests.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
-t/http-capabilities-test.lisp
 t/http-public-api-integration-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
-t/oauth-authorization-code-test.lisp
-t/oauth-http-bearer-test.lisp
 t/oauth-http-provider-test.lisp
 t/run-tests.lisp
 t/v09-runtime-test.lisp
@@ -277,21 +234,16 @@ cli/starintel-gserver-client.asd
 flake.nix
 scripts/doc-authoring.py
 scripts/insert-docstrings.py
-scripts/stack-test.sh
 source/starintel-gserver.asd
 starintel-bixby.asd
-starintel-gserver-integration-tests.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
 t/authorization-policy-test.lisp
 t/http-api-test.lisp
 t/http-boundary-test.lisp
-t/http-capabilities-test.lisp
 t/http-public-api-integration-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
-t/oauth-authorization-code-test.lisp
-t/oauth-http-bearer-test.lisp
 t/oauth-http-provider-test.lisp
 t/run-tests.lisp
 t/v09-runtime-test.lisp

@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-07T04:47:36Z`
+- generated: `2026-09-07T12:40:01Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -295,25 +295,11 @@
 2026-08-24 843337e85efdd2833a4308b1a6e1a4376eab72f2 Merge pull request #149 from lost-rob0t/agent/subagent-supervised-call-conformance
 2026-08-24 f477c6ed279afd78757c1fac130a694438bbdf3c Merge pull request #179 from lost-rob0t/rage/164-conversation-metadata
 2026-08-24 00d6da45539d1e8912a4c825bf91dc7ac55b0f9d Fix conversation closed-data metadata
-2026-08-24 a70539ddd6d635faac84a5f45f6a5aba900fe5d3 Complete supervised subagent result propagation
-2026-08-24 ab426de54a54101ca3a6d8197db77e4c1f9d009f Merge pull request #161 from lost-rob0t/fix/160-context-adapter-closed-data
-2026-08-24 8ba55dbcd3119acd9439e686ada04b1f4e2cfa81 fix(async): keep workers alive across cancellation races
-2026-08-24 a4720be0025918fb9b714ede7f5abdb06f1eab4c fix(test): normalize parameterized result identity
-2026-08-24 0c5acab9425bc40c4667885f70959f968a141288 test(runner): assert portable timeout invariants
-2026-08-24 dc6ec9f419ccdbe785c0da798d763995b6e9db28 fix(test): normalize PlUnit 9.0 results
-2026-08-24 6d54589899cdd15e7aa226972e167307d3ad1fb3 fix(ci): support SWI 9.0 in integrity gate
-2026-08-24 6d33648992e31ada255bb635c72bf3803c23fd9b fix(context): canonicalize adapter closed data
-2026-08-24 7c3561bcc34de55fba875dfd18b773211a3d3420 Merge pull request #178 from lost-rob0t/codex/move-agent-zero-adaptor
-2026-08-24 529e564350a9e738036525984aa505b7e3bee42a refactor: isolate Agent Zero adapter
-2026-08-24 718abd0df30c0507ceb816ec2f494948cfa15340 Merge pull request #177 from lost-rob0t/codex/sol-high-integration
-2026-08-24 90a054137a38b5b5231e6a45037597e52a5b5f2d feat: add Agent Zero symbolic integration
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.env.example
-.envrc
 .github/issue-191-trigger
 .github/patches/issue-185.py
 .github/workflows/agent-prolog-ui.yml
@@ -328,7 +314,6 @@
 .github/workflows/rage-176-realize-once.yml
 .github/workflows/report-workflow-failures.yml
 .github/workflows/tree-sitter.yml
-.gitignore
 .gitmodules
 .opencode/skills/debug-io/SKILL.md
 .prolog/.gitignore
@@ -376,17 +361,13 @@ c/rlm_tree_sitter_parser.c
 c/rlm_tree_sitter_query.c
 c/rlm_tree_sitter_support.c
 docs/agent-runtime.md
-docs/agent-zero-adapter.md
 docs/async-runtime.md
 docs/authority-runtime.md
-docs/chain-runtime.md
 docs/completion-runtime.md
-docs/conversation-cold-context.md
 docs/conversation-runtime.md
 docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/evolution-kernel.md
-docs/external-tool-libraries.md
 docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-source-registry.md
@@ -411,28 +392,19 @@ prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/prolog_agent_ui_v1.pl
 prolog/rlm.pl
-prolog/rlm_agent.pl
-prolog/rlm_agent_zero_adapter.pl
-prolog/rlm_async.pl
-prolog/rlm_authority.pl
-prolog/rlm_benchmark.pl
 prolog/rlm_chain.pl
 prolog/rlm_cli.pl
 prolog/rlm_completion.pl
 prolog/rlm_completion_async.pl
-prolog/rlm_context.pl
 prolog/rlm_context_budget.pl
 prolog/rlm_context_mount.pl
 prolog/rlm_conversation.pl
 prolog/rlm_conversation_persist.pl
-prolog/rlm_conversation_warm.pl
 prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
-prolog/rlm_effect_migration.pl
 prolog/rlm_evolution.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
-prolog/rlm_outcome.pl
 prolog/rlm_plan.pl
 prolog/rlm_plan_graph.pl
 prolog/rlm_project_grammar_pack.pl
@@ -447,13 +419,10 @@ prolog/rlm_runtime_status.pl
 prolog/rlm_skill.pl
 prolog/rlm_skill_eval.pl
 prolog/rlm_skill_graph.pl
-prolog/rlm_spec.pl
 prolog/rlm_spec_strategy.pl
-prolog/rlm_spec_workflow.pl
 prolog/rlm_subagent.pl
 prolog/rlm_text.pl
 prolog/rlm_tool.pl
-prolog/rlm_tool_loader.pl
 prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
 rage/117-skill-compiler-reconciliation.org
@@ -517,8 +486,6 @@ skills/core/rlm-facts/SKILL.md
 skills/core/rlm-operate/SKILL.md
 skills/core/rlm-recurse/SKILL.md
 test/deterministic_corpus.pl
-test/deterministic_runner.pl
-test/effect_migration_crash_worker.pl
 test/fixtures/prolog_agent_ui_v1_session.ndjson
 test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
 test/fixtures/skills/engineering/enriched/SKILL.md
@@ -534,21 +501,12 @@ test/live_conversation_scale_openrouter_test.pl
 test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
 test/load_all.pl
-test/load_error_status_test.pl
 test/pack_load_smoke.pl
 test/prolog_agent_ui_fixture_command_codec_test.pl
 test/prolog_agent_ui_v1_test.pl
-test/rlm_agent_authority_test.pl
 test/rlm_agent_graph_async_test.pl
-test/rlm_agent_test.pl
 test/rlm_agent_zero_adapter_test.pl
-test/rlm_artifact_test.pl
-test/rlm_async_control_test.pl
-test/rlm_authority_hardening_test.pl
-test/rlm_authority_lifecycle_test.pl
-test/rlm_authority_test.pl
 test/rlm_chain_app_attribution_test.pl
-test/rlm_chain_control_test.pl
 test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
 test/rlm_cli_test.pl
@@ -558,29 +516,17 @@ test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
-test/rlm_context_adapter_test.pl
 test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
-test/rlm_conversation_warm_test.pl
 test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
-test/rlm_effect_adversarial_test.pl
-test/rlm_effect_authority_test.pl
-test/rlm_effect_executor_test.pl
-test/rlm_effect_hardening_test.pl
-test/rlm_effect_migration_restart_test.pl
-test/rlm_effect_migration_test.pl
-test/rlm_effect_test.pl
 test/rlm_evolution_test.pl
-test/rlm_graph_authority_test.pl
-test/rlm_mcp_declaration_security_test.pl
-test/rlm_mcp_dual_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
@@ -596,7 +542,6 @@ test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
 test/rlm_prompt_compiler_test.pl
-test/rlm_recursion_runtime_test.pl
 test/rlm_research_approval_test.pl
 test/rlm_result_accept_test.pl
 test/rlm_runtime_status_test.pl
@@ -605,14 +550,10 @@ test/rlm_skill_graph_test.pl
 test/rlm_skill_symlink_test.pl
 test/rlm_skill_test.pl
 test/rlm_spec_strategy_test.pl
-test/rlm_spec_verify_test.pl
-test/rlm_spec_workflow_test.pl
 test/rlm_subagent_deadline_test.pl
 test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
 test/rlm_tool_effect_test.pl
-test/rlm_tool_loader_security_test.pl
-test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
@@ -620,7 +561,6 @@ test/rlm_tree_sitter_query_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
-test/run_runner_integrity_tests.pl
 test/run_tree_sitter_tests.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -630,8 +570,6 @@ test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-test/support/runner_integrity_test.pl
-test/support/runner_unstrict_load_probe.pl
 test/support/tool_effect_test_support.pl
 third_party/mattpocock-skills/LICENSE
 third_party/mattpocock-skills/UPSTREAM.md
@@ -703,8 +641,6 @@ scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
 scripts/validate_research_approval.pl
 test/deterministic_corpus.pl
-test/deterministic_runner.pl
-test/effect_migration_crash_worker.pl
 test/fixtures/prolog_agent_ui_v1_session.ndjson
 test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
 test/fixtures/skills/engineering/enriched/SKILL.md
@@ -720,21 +656,12 @@ test/live_conversation_scale_openrouter_test.pl
 test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
 test/load_all.pl
-test/load_error_status_test.pl
 test/pack_load_smoke.pl
 test/prolog_agent_ui_fixture_command_codec_test.pl
 test/prolog_agent_ui_v1_test.pl
-test/rlm_agent_authority_test.pl
 test/rlm_agent_graph_async_test.pl
-test/rlm_agent_test.pl
 test/rlm_agent_zero_adapter_test.pl
-test/rlm_artifact_test.pl
-test/rlm_async_control_test.pl
-test/rlm_authority_hardening_test.pl
-test/rlm_authority_lifecycle_test.pl
-test/rlm_authority_test.pl
 test/rlm_chain_app_attribution_test.pl
-test/rlm_chain_control_test.pl
 test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
 test/rlm_cli_test.pl
@@ -744,29 +671,17 @@ test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
 test/rlm_completion_tool_visibility_test.pl
-test/rlm_context_adapter_test.pl
 test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
 test/rlm_conversation_test.pl
-test/rlm_conversation_warm_test.pl
 test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
-test/rlm_effect_adversarial_test.pl
-test/rlm_effect_authority_test.pl
-test/rlm_effect_executor_test.pl
-test/rlm_effect_hardening_test.pl
-test/rlm_effect_migration_restart_test.pl
-test/rlm_effect_migration_test.pl
-test/rlm_effect_test.pl
 test/rlm_evolution_test.pl
-test/rlm_graph_authority_test.pl
-test/rlm_mcp_declaration_security_test.pl
-test/rlm_mcp_dual_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
@@ -782,7 +697,6 @@ test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
 test/rlm_prompt_compiler_test.pl
-test/rlm_recursion_runtime_test.pl
 test/rlm_research_approval_test.pl
 test/rlm_result_accept_test.pl
 test/rlm_runtime_status_test.pl
@@ -791,14 +705,10 @@ test/rlm_skill_graph_test.pl
 test/rlm_skill_symlink_test.pl
 test/rlm_skill_test.pl
 test/rlm_spec_strategy_test.pl
-test/rlm_spec_verify_test.pl
-test/rlm_spec_workflow_test.pl
 test/rlm_subagent_deadline_test.pl
 test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
 test/rlm_tool_effect_test.pl
-test/rlm_tool_loader_security_test.pl
-test/rlm_tool_loader_test.pl
 test/rlm_tool_mcp_async_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
@@ -806,7 +716,6 @@ test/rlm_tree_sitter_query_test.pl
 test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
-test/run_runner_integrity_tests.pl
 test/run_tree_sitter_tests.pl
 test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
@@ -816,8 +725,6 @@ test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-test/support/runner_integrity_test.pl
-test/support/runner_unstrict_load_probe.pl
 test/support/tool_effect_test_support.pl
 third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
 ```

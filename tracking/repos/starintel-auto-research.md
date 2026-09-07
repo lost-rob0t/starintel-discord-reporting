@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-07T04:47:29Z`
+- generated: `2026-09-07T12:39:49Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`eda24d2540c3c847199a361cbf011bd597360e95`](https://github.com/lost-rob0t/starintel-auto-research/commit/eda24d2540c3c847199a361cbf011bd597360e95)
@@ -125,24 +125,6 @@
 2026-08-26 e1bc3d8aff01cbcac7c4b3fdabf83e75e4fef0a6 research: define generic target-create v1 boundary
 2026-08-24 4e3d987f2febd8e3be71438accea0ea64008acaa docs(protocol): index amended STAR-LANG-004 URI model
 2026-08-24 d72fc1633dfe0502b37753258b3ec2072b4f1ae2 docs(star-lang): amend STAR-LANG-004 for RFC authority URIs
-2026-08-24 6b40eb6a3eeab5c91ba8a9729d94b4aabfac0fcf Merge pull request #145 from lost-rob0t/rage/144-bixby-oauth-provider-adadr
-2026-08-24 ce4edb3248a4c64c6780b010325d850eadef0558 docs: index Bixby user OAuth work
-2026-08-24 df87adfb7e993e8c49a999c162687b91a47cf84c docs: design StarIntel Bixby OAuth provider
-2026-08-24 23937bfa3ca95480edb7971e9b848c682c96951c docs: research Bixby OAuth provider boundary
-2026-08-24 ce6465861e04a9894a2730ddcbc3909c683bb9b9 Merge pull request #143 from lost-rob0t/rage/130-reconcile-star-server-040-approval
-2026-08-24 45fd46ec928ffacb584dc6482d053398842c529f docs: record STAR-SERVER-040 operator approval
-2026-08-24 8dc2eb98f248a2c0d68d2c3bfdcc6a30ae5696e8 research: drop conflicting STAR-RESEARCH-041 allocation
-2026-08-24 09822e4d9bedda565ae20f6c823d5ee3572bae00 research: repair strict JSON control-plane metadata
-2026-08-24 3d200b090c9f1ad1da71d52370c4db3ba60e1390 research: capture strict JSON HTTP boundary defect
-2026-08-24 84b157749b3aa937cec037f6d75bd5734b9bc9ef docs: approve STAR-SERVER-041
-2026-08-24 4a0f31eeb2129bbdce5f4f6e008ee9da2861e101 docs: sync protocol index after 041 approval
-2026-08-24 9b4884558261e2d51c05a90b7d93ec3a0308d998 docs: close STAR-RESEARCH-041 approval loop
-2026-08-24 c9ea02f7f9862fdaec8fdd0a94f39d039b5bbd67 docs: record operator approval of STAR-SERVER-041
-2026-08-24 b488f13a6c32568855115a694c868927f1aae362 research: rework STAR URI on RFC 3986
-2026-08-24 37eb0583498f624f86e38d49aa7fa8d814cf48e8 fix: repair STAR-LANG-004 research link
-2026-08-24 24c9fc70cb66b9c0a4c3d49058c8847d380ad815 index: record approved StarRouter and RFC URI rework
-2026-08-24 0b2941c76d9a460e26b8e4ae5f968d0f55802c26 design: rebuild STAR URI extension on RFC 3986
-2026-08-24 c69d37e9312f06f6de5e584dc68c037651a190dc research: rework STAR URI findings around RFC 3986
 ```
 
 ## Repository paths changed, last 14 days
@@ -203,9 +185,6 @@ roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
 roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
 roam/design/star-server/STAR-SERVER-000-composable-intelligence-gservers.org
 roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
-roam/design/star-server/STAR-SERVER-040-starrouter-zeromq-transport-api-overhaul.org
-roam/design/star-server/STAR-SERVER-041-star-uri-authority-routing-protocol.org
-roam/design/star-server/STAR-SERVER-042-bixby-oauth-authorization-code-provider.org
 roam/design/star-server/STAR-SERVER-042-workload-dispatchers-router-pools.org
 roam/design/star-server/STAR-SERVER-043-sento-bounded-admission.org
 roam/design/star-server/STAR-SERVER-044-deployment-config-trusted-init.org
@@ -231,7 +210,6 @@ roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
-roam/indexes/star-server/STAR-OAUTH-INDEX-042-bixby-user-authorization.org
 roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
 roam/indexes/star-server/STAR-TITANIC-INDEX-033-durable-actor-jobs.org
 roam/indexes/starintel-discord-tool/STAR-DISCORD-INDEX-000-operations-interface.org
@@ -360,7 +338,6 @@ roam/research/star-server/STAR-RESEARCH-039-machine-readable-http-contract-and-c
 roam/research/star-server/STAR-RESEARCH-040-explicit-library-api-runtime-ports.org
 roam/research/star-server/STAR-RESEARCH-040-starrouter-zeromq-transport-api-overhaul.org
 roam/research/star-server/STAR-RESEARCH-041-concrete-adapter-extraction.org
-roam/research/star-server/STAR-RESEARCH-041-strict-json-http-boundary.org
 roam/research/star-server/STAR-RESEARCH-041-unified-star-uri-authority-routing-and-fediwatch-rabbitmq.org
 roam/research/star-server/STAR-RESEARCH-042-bixby-oauth-authorization-code-provider.org
 roam/research/star-server/STAR-RESEARCH-042-component-handles-registry-readiness-health.org
