@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-08T04:42:41Z`
+- generated: `2026-09-08T11:23:51Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22)
@@ -114,29 +114,6 @@
 2026-08-27 aa28f12911c9f24e806bc5f6ac5897275a7e03a1 agent: use native latest Prolog-RLM planner path
 2026-08-27 4e9873c2f13a7aa30bcca46f0e1df712d3ab2cca Merge pull request #2287 from lost-rob0t/auto-dig-prolog/2026-08-24-bootstrap
 2026-08-26 b79a0ec9e8b289c4e6eaa7eaa7e0158eb43c7d5e test: avoid unbound dict projection in MCP catalog assertion
-2026-08-25 ad90cdcfb38fee5a7ad730b234b7d5cada14bcce test: isolate Auto-Dig MCP lifecycle boundaries
-2026-08-25 2cb735eb3c11e6d12d6914a059a3d91c3fde4eb3 fix: make MCP lifecycle inputs ground and phase failures explicit
-2026-08-25 797ded062f31477dd773870679824c206c28c0af fix: resolve Prolog-RLM MCP modules through library path
-2026-08-25 e1acbe82f350796511429699f3ef470ae2accfb2 ci: exercise explicit Auto-Dig MCP lifecycle
-2026-08-25 dfaa31a275c6693fec7b5ded4fba71646e38d2db test: exercise Auto-Dig MCP lifecycle and capability boundary
-2026-08-25 f80c45157373d9ff245f536768508ec15d58a978 feat: add explicit Auto-Dig MCP lifecycle runner
-2026-08-25 d695ec1abadcaf03b875b58aa78d882e9019c09a feat: scope Auto-Dig MCP capabilities by server set
-2026-08-25 eed4e6e81b59acd6164ac249fdc47399e91e2e57 Harvest mature Flock request #2112 Dunwoody evidence (#2292)
-2026-08-25 eb18b4c82300d27280f7e1983f06182eb1d388ba Harvest mature Tompkins County request #1904 evidence (#2291)
-2026-08-25 edd02d9a42654dfb40b697977b3d4fbc9b4a493a ci: pin production Auto-Dig to landed Prolog-RLM
-2026-08-25 e7d51107a801d783174ac9cdd230f877b289c0e2 ci: pin Auto-Dig checks to Prolog-RLM capability fix
-2026-08-25 c4e4c7a8e21da9c968f95b7fada22389eacbee07 test: verify fetch config remains reference-based
-2026-08-25 680dea12d69c1ebefc4911600956e400c27e879a feat: configure bounded fetch output through config ref
-2026-08-25 d6ec8e3b9337a83606e71aa29e811d779b73ef7d ci: verify trusted MCP research policy
-2026-08-25 88e1e280750bde83b91d9dfb05209143ea37afd9 test: lock down Auto-Dig MCP host policy
-2026-08-25 7ea5c2f9a36dbcebe3fd01a82d12f92f96de1452 feat: declare trusted read-only research MCP servers
-2026-08-25 b18175560c3521f32f81cc84880979396a1e3382 test: cover ground JSON supervision boundary
-2026-08-25 00bf8ecc60b612d11def78cfbefcc16949317e93 fix: ground JSON before supervised actor calls
-2026-08-25 d7f939028297fe2ae8445f7fb5ab4645e663c9e7 ci: validate reasoning CLI with upstream tests
-2026-08-25 b9630311d7a1558fdad99338e1fee042dc898d96 ci: use real CLI tests for reasoning contract
-2026-08-25 7035c46ea42acc4492fbf2c1cdec4c3b4c5766fe docs: describe expert model routing contract
-2026-08-25 5fce67a5c64840a805d1b7c0712d26fec7e5d90d feat: enforce Prolog expert model routing in live actor
-2026-08-25 8eb420f68dc3674cc68293967e79f30e13c1ecf1 ci: exercise expert model routing with reasoning controls
 ```
 
 ## Repository paths changed, last 14 days
@@ -173,10 +150,6 @@ agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
-digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
-digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
-harvest-manifests/request-1904-2026-08-25.json
-harvest-manifests/request-2112-2026-08-25.json
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/import-starintel-documents.py

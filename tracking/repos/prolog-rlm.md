@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-08T04:42:54Z`
+- generated: `2026-09-08T11:24:02Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -234,76 +234,19 @@
 2026-08-25 575fdbfa68b2fd4189e65ba72d44451abcb5da57 test: preserve expected failure binding
 2026-08-25 5e7623d8dd55f00550afbde663a8caa17d27b02f test: capture root planner projection defect
 2026-08-25 49d86f88730b4a0f5dc4a7cf300b8f09ef5845b0 feat: add typed skill-aware delegation policy (#172)
-2026-08-25 36cb418b833c77e24438fa94e596062a90088fa3 docs: record issue 206 RAGE evidence
-2026-08-25 15e67f26e38e57418ce0edae7896469ee9772338 feat: execute closed prompt commands via typed tools
-2026-08-25 d0b5fe918fcbda0d6c9ca703e4edf5bddaf66402 test: harden prompt command execution boundary
-2026-08-25 b4b98d5500a1628d1ada698cdcf35a42ddef9515 test: define typed prompt command execution contract
-2026-08-25 8054606971ffbbb6aa9484b4e915caa4c655929b docs: record issue 203 RAGE evidence
-2026-08-25 a37944913c5b48999371995fb7ec7610a86dcbd4 test: use ground invalid subagent role fixture
-2026-08-25 88177b217d912d6ab995b33e21681c12904c27f2 test: respect normalized agent metadata shape
-2026-08-25 c375b3ff52fc4efa4f0afb7aa001ef55a8b397c3 fix: preserve subagent ABI and ground failures
-2026-08-25 28c73239b54ceac5e6d99408ec41da81d5a7e993 feat: carry trusted subagent delegation provenance
-2026-08-25 0ba8c1ef8df220972541ece84baae0ca9f27663c test: define subagent skill role provenance contract
-2026-08-25 a79e9c862b74449d73bcadc729d2a38b5163e10d docs: record issue 200 RAGE evidence
-2026-08-25 7582481aea6d007f33f68dede31cf75af8c94b80 feat: project permanent context into plan providers
-2026-08-25 1ae390af36fae4f9c3fc4c831a25f088e675d69f feat: add host-owned provider context wrapper
-2026-08-25 c2cbb50e1b151c3b18234ac94c248800838b0500 test: reproduce issue 200 provider context gap
-2026-08-25 2ceba4c0f4a64e95233849a92def6e4fbf95b8b7 docs: record issue 190 realization evidence
-2026-08-25 c77034d6e962aaa0328fa333a5bdcd03f429bb96 fix: make CLI help a successful dispatch path
-2026-08-25 2ef65e438c68917487767f0901da95478c0594fc test: reproduce issue 190 help failure
-2026-08-25 521b00b53cb02383928a264df38097d041d37878 test: define issue 190 RAGE contract
-2026-08-25 1636c7111389ce2d5430bcc111f064635b933fca fix: preserve completion budget usage
-2026-08-25 b82b975d9ba86c4bd8443aaafe43d15af4cfe88c feat: add Prolog-owned automatic skill activation
-2026-08-25 30c620bae7ef6d4c21a98ffdf17bb969b2686638 test: register issue 191 planner visibility regression
-2026-08-25 bb93a9fdb1a708897a80c87d092534ec257a41d3 ci: remove temporary issue 191 patch workflow
-2026-08-25 5581ebfba3fbbc67048c54d7d782ad847c5ea904 ci: remove issue 191 trigger
-2026-08-25 4143c76d73d6571f39a1ac1183e4d2490e2a6bbb fix: filter planner tool schemas by capabilities
-2026-08-25 ed46e9cbb395af4b99974b88d151072f840126ba test: inspect planner request through messages
-2026-08-25 3bc5655bc00c49297cfe7f76aafc8504b8b09f7a ci: fix issue 191 patch workflow syntax
-2026-08-25 d55bf74973439ae2f59a9786b8f4085c50210d2d ci: trigger issue 191 patch verification
-2026-08-25 9a20edefda67350468213af0a4da33ddb5b4763e ci: apply and verify issue 191 tool visibility patch
-2026-08-25 c1bc90429c56089fc8e5077a341d33bfdf745e2c test: reproduce planner visibility capability leak
-2026-08-25 a5e0a28b47fada46a15fe439d58bf2940ec224e7 chore: remove temporary issue 185 patch script
-2026-08-25 3607d4caae7179504a2cc774e926195ae4fc5cce chore: remove temporary issue 185 patch workflow
-2026-08-25 5d0d6cf78b0c39fffb5567815dae5c6a32080725 fix: propagate reasoning effort through completion runtime
-2026-08-25 ae071ce5d23ad58ac4acedeb543506892a9ad640 ci: apply and verify issue 185 reasoning patch
-2026-08-25 a6a040d0923f3b528901972d30a2da8eb27c4693 chore: stage issue 185 reasoning patch
-2026-08-25 71a9313b56e9caf33ae59ed918da13e46bbf3298 docs: remove nested AgentProlog authority references
-2026-08-25 2d7a877f6c3a976b76b29ce09bf186ec213aadf5 docs: remove nested AgentProlog async reference
-2026-08-25 81a845bdcfe6bef00843560d483c552b39db1fed docs: make AgentProlog roadmap explicitly downstream
-2026-08-25 623754ebaf32c2edaa07fb9238b336fed352a0b0 docs: point coding product ownership downstream
-2026-08-25 4de3d7c7c8e47f609a926c326ace2f5859a446de docs: describe frontend protocol as core runtime boundary
-2026-08-25 95c0337d70383f250e18a5b2f691c15f71c617a2 fix: preserve protocol bytes during harness extraction
-2026-08-25 59b42dfdc68094240c5a917ebc9287776360297c cleanup: remove legacy nested AgentProlog harness
-2026-08-25 24b9ddedcf742c2df65ad62e56ca36770be8f8bd test: load frontend protocol from core runtime
-2026-08-25 fc89f942551904a9768bda898a6f69e2326d4c8d test: load protocol fixture from test support
-2026-08-25 0470643d7630d6205bde66494d5ff1d2bd356791 test: point UI protocol coverage at core paths
-2026-08-25 e8f04b1646bd7586a8a768b9f8b9035d3d41144f test: relocate protocol golden session
-2026-08-25 aceda682073672bf128369d221836d24a16e5a17 test: relocate protocol fixture launcher
-2026-08-25 2aa8628c72b18b6884b5a75427dbc9322a7dee6e test: relocate frontend protocol fixture
-2026-08-25 aead75c9697436417087fe717edb192d992bcbd8 refactor: move frontend facade into core runtime
-2026-08-25 173b35eb26e7841663c86bd4cf164f87e30745f3 refactor: move UI protocol into core runtime
-2026-08-25 89d1b0b7f3782667c9704c63dd2f51d2a23814bc ci: report workflow failures as GitHub issues
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.github/issue-191-trigger
-.github/patches/issue-185.py
-.github/workflows/agent-prolog-ui.yml
 .github/workflows/ci.yml
 .github/workflows/fix-298-self-patch.yml
 .github/workflows/fix-304-self-patch.yml
-.github/workflows/issue-185-patch.yml
-.github/workflows/issue-191-patch.yml
 .github/workflows/nix.yml
 .github/workflows/pack-install.yml
 .github/workflows/paid-openrouter.yml
 .github/workflows/rage-176-realize-once.yml
-.github/workflows/report-workflow-failures.yml
 .github/workflows/tree-sitter.yml
-.gitmodules
 .opencode/skills/debug-io/SKILL.md
 .prolog/.gitignore
 .prolog/facts.kb
@@ -317,26 +260,6 @@ agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.com
 agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.specifics.md
-agentProlog/README.md
-agentProlog/bin/prolog-agent-ui-fixture.pl
-agentProlog/fixtures/prolog_agent_ui_v1_session.ndjson
-agentProlog/prolog/prolog_agent_ui_facade.pl
-agentProlog/prolog/prolog_agent_ui_fixture.pl
-agentProlog/prolog/prolog_agent_ui_v1.pl
-agentProlog/ui/opentui/README.md
-agentProlog/ui/opentui/bunfig.toml
-agentProlog/ui/opentui/package.json
-agentProlog/ui/opentui/src/app.tsx
-agentProlog/ui/opentui/src/client.ts
-agentProlog/ui/opentui/src/index.tsx
-agentProlog/ui/opentui/src/protocol.ts
-agentProlog/ui/opentui/src/transport.ts
-agentProlog/ui/opentui/test/client-close.test.ts
-agentProlog/ui/opentui/test/client.test.ts
-agentProlog/ui/opentui/test/protocol.test.ts
-agentProlog/ui/opentui/test/render.test.tsx
-agentProlog/ui/opentui/test/transport.integration.ts
-agentProlog/ui/opentui/tsconfig.json
 benchmark/rlm_constraint_problem.pl
 benchmark/rlm_constraint_verify.pl
 benchmark/rlm_live_deep_experiment.pl
@@ -351,7 +274,6 @@ c/rlm_tree_sitter_query.c
 c/rlm_tree_sitter_support.c
 docs/agent-runtime.md
 docs/async-runtime.md
-docs/authority-runtime.md
 docs/completion-runtime.md
 docs/conversation-runtime.md
 docs/delegation-runtime.md
@@ -361,7 +283,6 @@ docs/project-query.md
 docs/project-source-registry.md
 docs/project-syntax.md
 docs/prolog-agent-roadmap.md
-docs/prolog-agent-ui-v1.md
 docs/prompt-compiler.md
 docs/providers.md
 docs/research-record-template.org
@@ -371,14 +292,12 @@ docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
 docs/result-acceptance.md
 docs/skill-graph.md
-docs/skills.md
 docs/tool-result-projection.md
 docs/tools.md
 docs/typed-plans.md
 flake.nix
 prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
-prolog/prolog_agent_ui_v1.pl
 prolog/rlm.pl
 prolog/rlm_chain.pl
 prolog/rlm_cli.pl
@@ -412,12 +331,7 @@ prolog/rlm_text.pl
 prolog/rlm_tool.pl
 prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
-rage/117-skill-compiler-reconciliation.org
 rage/172-typed-delegation-policy.org
-rage/190-cli-help-success.org
-rage/200-permanent-rlm-context.org
-rage/203-subagent-skill-role-provenance.org
-rage/206-prompt-command-runtime.org
 rage/264-real-recursive-final-handoff.org
 rage/277-planner-protocol-context.org
 rage/288-final-review-report.md
@@ -470,13 +384,6 @@ skills/core/rlm-facts/SKILL.md
 skills/core/rlm-operate/SKILL.md
 skills/core/rlm-recurse/SKILL.md
 test/deterministic_corpus.pl
-test/fixtures/prolog_agent_ui_v1_session.ndjson
-test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
-test/fixtures/skills/engineering/enriched/SKILL.md
-test/fixtures/skills/engineering/tdd/SKILL.md
-test/fixtures/skills/engineering/tdd/tests.md
-test/fixtures/skills/misc/unrelated/SKILL.md
-test/fixtures/skills/productivity/grill-me/SKILL.md
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
 test/live_completion_openrouter_test.pl
@@ -485,9 +392,6 @@ test/live_conversation_scale_openrouter_test.pl
 test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
 test/load_all.pl
-test/pack_load_smoke.pl
-test/prolog_agent_ui_fixture_command_codec_test.pl
-test/prolog_agent_ui_v1_test.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_chain_app_attribution_test.pl
 test/rlm_chain_message_metadata_test.pl
@@ -522,17 +426,13 @@ test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
-test/rlm_prompt_compiler_test.pl
 test/rlm_research_approval_test.pl
 test/rlm_result_accept_test.pl
 test/rlm_runtime_status_test.pl
 test/rlm_skill_eval_test.pl
 test/rlm_skill_graph_test.pl
-test/rlm_skill_symlink_test.pl
-test/rlm_skill_test.pl
 test/rlm_spec_strategy_test.pl
 test/rlm_subagent_deadline_test.pl
-test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
@@ -545,69 +445,21 @@ test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
-test/support/prolog-agent-ui-fixture.pl
-test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-third_party/mattpocock-skills/LICENSE
-third_party/mattpocock-skills/UPSTREAM.md
-third_party/mattpocock-skills/skills/README.md
-third_party/mattpocock-skills/skills/engineering/code-review/SKILL.md
-third_party/mattpocock-skills/skills/engineering/codebase-design/DEEPENING.md
-third_party/mattpocock-skills/skills/engineering/codebase-design/DESIGN-IT-TWICE.md
-third_party/mattpocock-skills/skills/engineering/codebase-design/SKILL.md
-third_party/mattpocock-skills/skills/engineering/diagnosing-bugs/SKILL.md
-third_party/mattpocock-skills/skills/engineering/domain-modeling/ADR-FORMAT.md
-third_party/mattpocock-skills/skills/engineering/domain-modeling/CONTEXT-FORMAT.md
-third_party/mattpocock-skills/skills/engineering/domain-modeling/SKILL.md
-third_party/mattpocock-skills/skills/engineering/grill-with-docs/SKILL.md
-third_party/mattpocock-skills/skills/engineering/implement/SKILL.md
-third_party/mattpocock-skills/skills/engineering/prototype/LOGIC.md
-third_party/mattpocock-skills/skills/engineering/prototype/SKILL.md
-third_party/mattpocock-skills/skills/engineering/prototype/UI.md
-third_party/mattpocock-skills/skills/engineering/research/SKILL.md
-third_party/mattpocock-skills/skills/engineering/resolving-merge-conflicts/SKILL.md
-third_party/mattpocock-skills/skills/engineering/tdd/SKILL.md
-third_party/mattpocock-skills/skills/engineering/tdd/mocking.md
-third_party/mattpocock-skills/skills/engineering/tdd/tests.md
-third_party/mattpocock-skills/skills/engineering/wizard/SKILL.md
-third_party/mattpocock-skills/skills/engineering/wizard/template.sh
-third_party/mattpocock-skills/skills/misc/README.md
-third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/SKILL.md
-third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/agents/openai.yaml
-third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
-third_party/mattpocock-skills/skills/misc/migrate-to-shoehorn/SKILL.md
-third_party/mattpocock-skills/skills/misc/migrate-to-shoehorn/agents/openai.yaml
-third_party/mattpocock-skills/skills/misc/scaffold-exercises/SKILL.md
-third_party/mattpocock-skills/skills/misc/scaffold-exercises/agents/openai.yaml
-third_party/mattpocock-skills/skills/misc/setup-pre-commit/SKILL.md
-third_party/mattpocock-skills/skills/misc/setup-pre-commit/agents/openai.yaml
-third_party/mattpocock-skills/skills/productivity/grill-me/SKILL.md
-third_party/mattpocock-skills/skills/productivity/grilling/SKILL.md
-third_party/mattpocock-skills/skills/productivity/handoff/SKILL.md
-third_party/mattpocock-skills/upstream
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/agent-prolog-ui.yml
 .github/workflows/ci.yml
 .github/workflows/fix-298-self-patch.yml
 .github/workflows/fix-304-self-patch.yml
-.github/workflows/issue-185-patch.yml
-.github/workflows/issue-191-patch.yml
 .github/workflows/nix.yml
 .github/workflows/pack-install.yml
 .github/workflows/paid-openrouter.yml
 .github/workflows/rage-176-realize-once.yml
-.github/workflows/report-workflow-failures.yml
 .github/workflows/tree-sitter.yml
-agentProlog/ui/opentui/test/client-close.test.ts
-agentProlog/ui/opentui/test/client.test.ts
-agentProlog/ui/opentui/test/protocol.test.ts
-agentProlog/ui/opentui/test/render.test.tsx
-agentProlog/ui/opentui/test/transport.integration.ts
 flake.nix
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
@@ -619,13 +471,6 @@ scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
 scripts/validate_research_approval.pl
 test/deterministic_corpus.pl
-test/fixtures/prolog_agent_ui_v1_session.ndjson
-test/fixtures/skills/engineering/diagnosing-bugs/SKILL.md
-test/fixtures/skills/engineering/enriched/SKILL.md
-test/fixtures/skills/engineering/tdd/SKILL.md
-test/fixtures/skills/engineering/tdd/tests.md
-test/fixtures/skills/misc/unrelated/SKILL.md
-test/fixtures/skills/productivity/grill-me/SKILL.md
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
 test/live_completion_openrouter_test.pl
@@ -634,9 +479,6 @@ test/live_conversation_scale_openrouter_test.pl
 test/live_direct_native_openrouter_test.pl
 test/live_planner_context_openrouter_test.pl
 test/load_all.pl
-test/pack_load_smoke.pl
-test/prolog_agent_ui_fixture_command_codec_test.pl
-test/prolog_agent_ui_v1_test.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_chain_app_attribution_test.pl
 test/rlm_chain_message_metadata_test.pl
@@ -671,17 +513,13 @@ test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
 test/rlm_prompt_command_test.pl
-test/rlm_prompt_compiler_test.pl
 test/rlm_research_approval_test.pl
 test/rlm_result_accept_test.pl
 test/rlm_runtime_status_test.pl
 test/rlm_skill_eval_test.pl
 test/rlm_skill_graph_test.pl
-test/rlm_skill_symlink_test.pl
-test/rlm_skill_test.pl
 test/rlm_spec_strategy_test.pl
 test/rlm_subagent_deadline_test.pl
-test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
@@ -694,9 +532,6 @@ test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
-test/support/prolog-agent-ui-fixture.pl
-test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
 ```

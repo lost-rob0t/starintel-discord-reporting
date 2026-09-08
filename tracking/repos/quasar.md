@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-08T04:42:44Z`
+- generated: `2026-09-08T11:23:54Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`44f977cdecb91d78cd77e35cb287503c135dee50`](https://github.com/lost-rob0t/quasar/commit/44f977cdecb91d78cd77e35cb287503c135dee50)
@@ -79,35 +79,6 @@
 2026-08-25 7f321ecf452bb3263b8c34edee9f738d27a1391a test: make Auto-Dig reclaim RED deterministic
 2026-08-25 a548bf608fbc6f1e9a3f230615ca98b929863637 test: run stale Auto-Dig worker reclaim spec
 2026-08-25 ff779d67c94ed2f65e4f97aae352cb6f0d3770fa test: specify stale Auto-Dig worker reclaim
-2026-08-25 562c3ea00a773b44198430f940b3ce43cc00e21c fix: validate test bootstrap against web test graph
-2026-08-25 9a7f7afc82e6d404a80d0afd732ef14e26b92743 fix: preload web deps for autodig auth tests
-2026-08-25 91d723a88572d9671c898bd31b2da9dbaf0597f2 test: load WebSocket auth surface for worker session tests
-2026-08-25 2ae4ed3e4383057c7759f2d747b95d26661a2f31 build: load Auto-Dig worker session policy in quasar-web
-2026-08-25 ebd4163d407a18ffeddc3b4a0ed58627a17f037b feat: register least-privilege Auto-Dig worker sessions
-2026-08-25 7e06ba6a699f9b3aa074303aa79304da2909a361 fix: preserve package declarations while exporting worker session
-2026-08-25 38177e6172a08dd1bfdf0486909506101ae7f6be feat: export Auto-Dig worker session registration
-2026-08-25 1409f5385de4c055ec8956b4dc5f84b48ad534e8 Merge PR #46: repair real-stack E2E baseline
-2026-08-25 fdbb0b7266957172852af79847a5e8edd4130568 style: restore final newline for prettier
-2026-08-25 cf7f1ba4c20ce0be2ad2af36fec110c64461966b style: keep graph count assertion within formatter width
-2026-08-25 23321324dae2f3562be4226e01302ea00a1e62e1 style: format large-import e2e assertion
-2026-08-25 04a543c4a6822301fde34b03ae240e8d8df5d19f test: match canonical graph node count rendering
-2026-08-25 71f118726c1c2a45556229876d89da64c2e9eecc test: inspect private default WebSocket capability set correctly
-2026-08-25 74bba8dcaf8fb55ce67295946d9c7d929bac8c07 test: load Auto-Dig WebSocket auth contract
-2026-08-25 f1890a9ab929af1cb1f31ba07cf9b8238c635d0d test: specify least-privilege Auto-Dig worker WebSocket session
-2026-08-25 04b5ae2b9b50fdb4e6330dceb0ca0b936fe3947f ci: retain Playwright diagnostics while fixing baseline
-2026-08-25 ad4742ab4ab35b8abcd85416176db9e41afcc305 test: clear unrelated notice before full viewport toggle
-2026-08-25 40b696e08fce83cba5d636a1b29389ceff67e1da test: clear unrelated notice before graph viewport interaction
-2026-08-25 fe24e24a9db623df6d27ff415cb5c49b4ba5c6c5 test: use current graph focus control
-2026-08-25 ceb85b7e54d46a500f9b7c1b181e043980d5e073 test: assert formatted large-import counts
-2026-08-25 c5546690d2f6d6a2a62d4d254ca1ec1da3e381ab test: target exact radial graph categories
-2026-08-25 0f01529312413e47f44ad89e8cecfc235b15412e test: align application E2E with current graph layout control
-2026-08-25 10f3f223ec066d6250cb0ce238802456d0ce9bf8 feat: fence Auto-Dig worker lifecycle
-2026-08-25 db93ffcf838a57e2fad1c72fcfa6b0181010016b test: specify fenced Auto-Dig worker lifecycle
-2026-08-25 d3e6610f1919673aec2efb58d3d191625087d897 build: load Auto-Dig control-plane lifecycle
-2026-08-25 387c0e8bfd2fbd082e6ba176c3936f79dde81b5a feat: add durable Auto-Dig control-plane lifecycle
-2026-08-25 15941301907063f436029e086a716720bfe26648 test: expand durable Auto-Dig lifecycle contract
-2026-08-25 a640874c4004a05045fcd2732fdb0009bedb5c0c test: run Auto-Dig control contract suite
-2026-08-25 c7855139ffb7d1052d2f88f61a93bbb7901ce350 test: specify typed Auto-Dig control lifecycle
 ```
 
 ## Repository paths changed, last 14 days
@@ -125,9 +96,7 @@ control-plane/src/command-authority-context.lisp
 control-plane/src/config.lisp
 control-plane/src/configured-main.lisp
 control-plane/src/debug-logging.lisp
-control-plane/src/packages.lisp
 control-plane/src/websocket-server.lisp
-control-plane/tests/autodig-control-tests.lisp
 control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp
 control-plane/tests/autodig-principal-isolation-tests.lisp
@@ -139,12 +108,6 @@ flake.lock
 flake.nix
 frontend/benchmarks/graph-renderer.html
 frontend/docs/gpu-renderer-benchmark.md
-frontend/e2e/application.spec.ts
-frontend/e2e/graph-controls.spec.ts
-frontend/e2e/graph-fullscreen.spec.ts
-frontend/e2e/graph-viewport.spec.ts
-frontend/e2e/large-import.spec.ts
-frontend/e2e/mobile-fit-agent-disclosure.spec.ts
 frontend/package.json
 frontend/scripts/benchmark-graph-renderer.mjs
 frontend/src/graph/GraphAdapter.js
@@ -176,7 +139,6 @@ systems/quasar-web.asd
 ```text
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
-control-plane/tests/autodig-control-tests.lisp
 control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp
 control-plane/tests/autodig-principal-isolation-tests.lisp

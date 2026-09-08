@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-08T04:42:39Z`
+- generated: `2026-09-08T11:23:48Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`4721efaf8141fd7199b6e1ceb1011b9ad970796e`](https://github.com/lost-rob0t/starintel-server/commit/4721efaf8141fd7199b6e1ceb1011b9ad970796e)
@@ -48,10 +48,6 @@
 2026-08-25 01a1b921717749e7fff95ce369ca10db1e688f64 test: refine v1 target idempotency around durable request ledger
 2026-08-25 cec80fe9e59ccebec767c8cc99a35a30505e071d test: load v1 target creation contract
 2026-08-25 156df4eac0a476e7caf65944832414ebdc2af3df test: specify idempotent v1 target creation boundary
-2026-08-25 52948721d8981e9aa5ccad4efd77185e52af845b Merge pull request #119 from lost-rob0t/agent/v09-canonical-runtime-cutover
-2026-08-25 922bda3c8bb346b4eb1700281417d7a018253621 test: separate canonical and legacy HTTP fixtures
-2026-08-25 2d6d88dbc188f64fcf76b53a8411b576b62c6a44 fix: correct star-cl flake nar hash
-2026-08-25 69b8a03d4d152c5015f500f3b59334d6177731ce feat: enforce canonical v0.9 runtime boundaries
 ```
 
 ## Repository paths changed, last 14 days
@@ -106,13 +102,9 @@ doc/server-admin.org
 doc/target-lease-semantics.org
 doc/testing.md
 doc/v09-runtime.org
-docs/document-spec.org
-docs/http-api-docs.org
-docs/messaging.org
 docs/v09-runtime.org
 flake.lock
 flake.nix
-qlfile.lock
 scripts/doc-authoring.py
 scripts/insert-docstrings.py
 source/actor-systems/event-actor.lisp
@@ -124,29 +116,24 @@ source/auth/core.lisp
 source/auth/oauth.lisp
 source/auth/store.lisp
 source/auth/users.lisp
-source/authorization/package.lisp
 source/authorization/policy.lisp
 source/authorization/services.lisp
 source/consumers/consumers.lisp
 source/consumers/retry-policy.lisp
 source/databases/couchdb.lisp
-source/databases/document-update-package.lisp
 source/databases/document-update.lisp
 source/databases/outbox.lisp
 source/databases/quarantine.lisp
 source/databases/target-acceptance.lisp
 source/databases/view-registry.lisp
 source/databases/view-request.lisp
-source/document-access-package.lisp
 source/document-access.lisp
 source/frontends/http-api.lisp
 source/frontends/http-auth.lisp
 source/frontends/http-authorization-routes.lisp
-source/frontends/http-authorization.lisp
 source/frontends/http-boundary-core.lisp
 source/frontends/http-boundary-routes.lisp
 source/frontends/http-bulk-jobs.lisp
-source/frontends/http-document-update.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
@@ -156,7 +143,6 @@ source/leases/memory-store.lisp
 source/leases/protocol.lisp
 source/leases/valkey-store.lisp
 source/main.lisp
-source/package.lisp
 source/producers/producers.lisp
 source/rabbit.lisp
 source/starintel-gserver.asd
@@ -165,8 +151,6 @@ source/target-dispatch.lisp
 source/target-recovery.lisp
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
-t/authorization-policy-test.lisp
-t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
@@ -189,8 +173,6 @@ scripts/insert-docstrings.py
 source/starintel-gserver.asd
 starintel-gserver-tests.asd
 t/addon-system-test.lisp
-t/authorization-policy-test.lisp
-t/http-api-test.lisp
 t/http-boundary-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
