@@ -1,9 +1,5 @@
 {
   "backlog_blockers": {
-    "reports/starintel-updates-changelog/2026-08-26T07-36-00Z-report.md": {
-      "reason": "missing configured destination secret for starintel-updates-changelog",
-      "status": "blocked"
-    },
     "reports/starintel-updates-changelog/2026-09-03T05-48-00Z-report.md": {
       "reason": "duplicate report: exact report body already delivered as reports/starintel-updates-changelog/2026-09-03T06-00-00Z-report.md",
       "status": "blocked"
@@ -2180,7 +2176,7 @@
       "findings-shitposts": 0,
       "starintel-updates-changelog": 0
     },
-    "stale_blockers_pruned": 0,
+    "stale_blockers_pruned": 1,
     "total_reports": 184,
     "verified_deliveries": 175
   },
