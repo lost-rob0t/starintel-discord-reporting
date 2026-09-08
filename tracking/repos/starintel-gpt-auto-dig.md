@@ -1,15 +1,27 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-08T16:41:06Z`
+- generated: `2026-09-08T21:12:47Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`a24c39f3232e65ee39695dc79995b8fb02412cd6`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/a24c39f3232e65ee39695dc79995b8fb02412cd6)
-- head date: `2026-09-08T12:26:06-04:00`
-- head subject: Auto-Dig: materialize shard C area-code pass 3 (#2355)
+- head: [`59e44cbcd25d282e913407fa9c9b3ef4c97b5487`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/59e44cbcd25d282e913407fa9c9b3ef4c97b5487)
+- head date: `2026-09-08T16:48:12-04:00`
+- head subject: research: expand Dayton and Athens Food Not Bombs chapters
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 59e44cbcd25d282e913407fa9c9b3ef4c97b5487 research: expand Dayton and Athens Food Not Bombs chapters
+2026-09-08 5d4a7df8af6a2af4ecb4bfd811b684c43af94abd Auto-Dig: materialize shard C area-code pass 7 (#2376)
+2026-09-08 0adb335f836ca70e2fbd01403353d184890abf37 Public communications enumeration pass 7 (#2379)
+2026-09-08 517850d1b2a3bdd888d21bcea8d60779a88c2e45 research: expand Cleveland Food Not Bombs locals and accounts
+2026-09-08 88d3c70a2dd726e86c2250e6a6a26fef88ac5f53 research: add public communications enumeration pass 6 (#2373)
+2026-09-08 4f3c177a078424b7b00ffb136c9f03445586920c research: expand Black & Pink chapter network (#2372)
+2026-09-08 ac1cac61cea12eed8acc469cbc666d642c70af80 Auto-Dig: materialize shard C area-code pass 5 (#2366)
+2026-09-08 8ef8e2de2ded97f0f2ebd90d5432760abc1f1c48 research: enumerate Mobile Bay public communications surfaces (#2368)
+2026-09-08 ae4f6c88fbf40642fcb48fec9e1789ece924bddb research: expand Boston-area Food Not Bombs network
+2026-09-08 22ae63532aa2f28ccdeea5924b46485c201197a5 Auto-Dig: materialize shard C area-code pass 4 (#2361)
+2026-09-08 d5766b6309e78c6953fa0470a1cbc63a7d630302 Auto-Dig: public communications enumeration pass 4
+2026-09-08 c6aaccbc688cf04e04c4d30ddf7ed697bf812dad research: expand Canton Food Not Bombs network (#2362)
 2026-09-08 a24c39f3232e65ee39695dc79995b8fb02412cd6 Auto-Dig: materialize shard C area-code pass 3 (#2355)
 2026-09-08 b75874279f1351d9b61bc255d164f134a73da52b research: bounded Victoria mutual-aid chapter expansion
 2026-09-08 72d551c672821a7f07ac63dfa56f1bc81a6b082f research: bounded Food Not Bombs network expansion
@@ -173,13 +185,52 @@ digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-002.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-003.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-4/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-4/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-4/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-4/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-4/starintel-documents-part-005.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-4/starintel-documents-part-006.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-5/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-5/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-5/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-5/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-004.jsonl
 digs/anarchist-violence/2026-09-08-area-codes-a-207-216/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/README.md
+digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/starintel-documents-01.jsonl
+digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/starintel-documents-02.jsonl
+digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/starintel-documents-03.jsonl
 digs/anarchist-violence/2026-09-08-black-rose-local-expansion/chapter-expansion-state.md
 digs/anarchist-violence/2026-09-08-black-rose-local-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-boston-fnb-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-boston-fnb-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-canton-fnb-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-canton-fnb-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-cleveland-fnb-chapter-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-cleveland-fnb-chapter-expansion/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-food-not-bombs-network-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-food-not-bombs-network-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-ohio-fnb-dayton-athens-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-ohio-fnb-dayton-athens-expansion/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass2/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass3/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass4/starintel-documents-00.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass4/starintel-documents-01.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass4/starintel-documents-02.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass4/starintel-documents-03.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-mobile-bay/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass6/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-00.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-01.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-02.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-03.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-04.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-05.jsonl
 digs/anarchist-violence/2026-09-08-public-communications/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/starintel-documents.jsonl

@@ -1,15 +1,19 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-08T16:41:07Z`
+- generated: `2026-09-08T21:12:49Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`e8fcf7091f25b7cfca2e93eab6e1e662a8648674`](https://github.com/lost-rob0t/starintel-auto-research/commit/e8fcf7091f25b7cfca2e93eab6e1e662a8648674)
-- head date: `2026-09-08T16:23:52Z`
-- head subject: research: slim ARDR-ISSUE-206 transaction to issue authority + pass ledger
+- head: [`5807365a02616441d4476d317baace5d42a5d2b4`](https://github.com/lost-rob0t/starintel-auto-research/commit/5807365a02616441d4476d317baace5d42a5d2b4)
+- head date: `2026-09-08T19:15:54Z`
+- head subject: research: STAR-RESEARCH-061 enumerates open questions up front
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 5807365a02616441d4476d317baace5d42a5d2b4 research: STAR-RESEARCH-061 enumerates open questions up front
+2026-09-08 bdb9302c4f400e8ce24cf7ae153702b68d01990e research: STAR-RESEARCH-061 normalization authority revised to Prolog-first
+2026-09-08 a8923dd1b8ad64ab5f790c446bf0984c7e00b992 research: replace dangling ARDR-ISSUE-206 link in STAR-RESEARCH-061
+2026-09-08 d1327088e8e3e66c17dfbc4f1948693fb8848d99 research: remove ARDR-ISSUE-206 transaction file per operator correction
 2026-09-08 e8fcf7091f25b7cfca2e93eab6e1e662a8648674 research: slim ARDR-ISSUE-206 transaction to issue authority + pass ledger
 2026-09-08 def44350cd87136ddf3bbbe14a028d6f1ac8f9ca research: STAR-RESEARCH-061 canonical identifier normalization (operator placement)
 2026-09-08 3992b46b4b14314c87ad10a425a9c3e88eea8f65 research: ARDR-ISSUE-206 pass 1 platform identifier semantics for normalization contract

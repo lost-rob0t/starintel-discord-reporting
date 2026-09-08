@@ -1,15 +1,30 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-08T16:41:17Z`
+- generated: `2026-09-08T21:13:05Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`fe6e8eee30d6beb153c2a399a79d325e017f2b02`](https://github.com/lost-rob0t/zara/commit/fe6e8eee30d6beb153c2a399a79d325e017f2b02)
-- head date: `2026-09-07T09:07:43Z`
-- head subject: fix(tts): stop idle zara-server CPU busy-spin (#660)
+- head: [`291f5e3474c33911dfd1ead833230fa8c4c71e4b`](https://github.com/lost-rob0t/zara/commit/291f5e3474c33911dfd1ead833230fa8c4c71e4b)
+- head date: `2026-09-08T17:40:58Z`
+- head subject: fix(client): use the configured Zara daemon by default (#664)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 291f5e3474c33911dfd1ead833230fa8c4c71e4b fix(client): use the configured Zara daemon by default (#664)
+2026-09-08 c6a557964f11f892aaa984ad52a2e5b1b2e829f2 Merge pull request #661 from lost-rob0t/ui/650-outrun-shell
+2026-09-08 de1543adefa5b6c009dc7a4e80a848bd1a2d171d test(android): drop stray blank line at eof
+2026-09-08 e4ff21def40cde100d5fb6f39a178a7c5e04d793 fix(android): match system bar icon contrast to the resolved theme
+2026-09-08 501456994a3221f8a982a5d99ef0aa96f9f964cb fix(android): keep shell below system bars and make drawer routes scrollable
+2026-09-08 c336f7260ba76ea6221bd6cf7e7c71c141c36d35 feat(android): wire themes surface with persisted immediate token switching
+2026-09-08 2429cba429fc42f72d994b981ee5ee66f9a37da4 feat(android): resolve all frozen themes through one semantic hierarchy
+2026-09-08 d160c600860c7904fb26315a30a25d26b74d04ec fix(android): isolate interop fixture lease from the running user server
+2026-09-08 2581875a8c3cd37b5789c320ede0c2f49a446d22 test(android): make device navigation scroll in both directions and record geometry
+2026-09-08 01fd38f4191602f801c1c9eef6481249b259cfce test(android): add installed-device drawer and theme screenshot acceptance
+2026-09-08 c843b944e534aff943c997cbb53f6015ebce87b6 test(android): specify frozen theme palette and reduced glow behavior
+2026-09-08 5814288fbe8997937e6407714997e98c324b2a1e fix(android): remove inaccessible Compose weight import
+2026-09-07 d85362851cc5f18e91b38506478b59eceb20fb6d fix(android): remove platform light action bar
+2026-09-07 d4e0e5dc3f816bc733fd88d692e74fe15590161d feat(android): replace generic shell with Outrun drawer UI
+2026-09-07 4e75e362355c544deb0153fdfb9a348f719f0e80 test(android): freeze Outrun drawer shell expectations
 2026-09-07 fe6e8eee30d6beb153c2a399a79d325e017f2b02 fix(tts): stop idle zara-server CPU busy-spin (#660)
 2026-09-07 80307569fd13cd047d4cc6fbe834c8bb507f6624 docs(android): freeze canonical symbolic workspace design (#649)
 2026-09-06 207e3b689399464de413d3faba7c2ed763168ca3 release(android): prepare v0.1.0-alpha APK (#618)
@@ -1218,6 +1233,7 @@ android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
 android/app/src/main/java/ai/zara/app/ui/AssistantSetupGuidance.kt
+android/app/src/main/java/ai/zara/app/ui/ThemePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/UiOperationFailure.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
 android/app/src/main/java/ai/zara/app/voice/AndroidAudioFocusPlatform.kt
@@ -1298,6 +1314,7 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
@@ -1338,6 +1355,7 @@ android/flake.lock
 android/flake.nix
 android/gradle.properties
 android/gradle/libs.versions.toml
+android/integration/device_acceptance.py
 android/integration/stock_zara_server_fixture.py
 android/patch-trealla-module-path.sh
 android/settings.gradle.kts
@@ -1507,6 +1525,7 @@ scripts/import-backlog.py
 scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
 scripts/test-all.sh
+scripts/test-android-device.sh
 scripts/test-android-release.sh
 scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
@@ -1563,6 +1582,7 @@ t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
+t/test_daemon_client_config.py
 t/test_daemon_intent_router.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
@@ -1680,6 +1700,7 @@ zara/agent/user_hooks.py
 zara/command_gate.py
 zara/config.py
 zara/console.py
+zara/daemon_client.py
 zara/database.py
 zara/desktop/app.py
 zara/desktop/control.py
@@ -1805,6 +1826,7 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
@@ -1845,6 +1867,7 @@ scripts/import-backlog.py
 scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
 scripts/test-all.sh
+scripts/test-android-device.sh
 scripts/test-android-release.sh
 scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
@@ -1900,6 +1923,7 @@ t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
+t/test_daemon_client_config.py
 t/test_daemon_intent_router.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
