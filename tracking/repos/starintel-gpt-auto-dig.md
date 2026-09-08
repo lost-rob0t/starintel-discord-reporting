@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-07T22:51:34Z`
+- generated: `2026-09-08T04:42:41Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`8f31d347f64dd9de25cf570c7990d2e6f93cb962`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8f31d347f64dd9de25cf570c7990d2e6f93cb962)
-- head date: `2026-09-01T12:29:54-04:00`
-- head subject: [auto-dig-live-test] accept heading-anchored reports (#2330)
+- head: [`c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22)
+- head date: `2026-09-07T05:59:50Z`
+- head subject: Merge pull request 'feat(auto-dig): read-only StarIntel corpus MCP tools + standalone service runner landing' (#2149) from feat/prolog-actor-starintel-tools into main
 
 ## Git log, last 14 days
 
 ```text
+2026-09-07 c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22 Merge pull request 'feat(auto-dig): read-only StarIntel corpus MCP tools + standalone service runner landing' (#2149) from feat/prolog-actor-starintel-tools into main
+2026-09-06 5ba3db06b4ee9e0942b0b11ea0807998ca2752d4 feat(auto-dig): read-only StarIntel corpus tools over the MCP policy
+2026-09-06 244ba82edff9d38943de6f99669617b626660653 feat(auto-dig): standalone service runner with gateway provider support
 2026-09-01 8f31d347f64dd9de25cf570c7990d2e6f93cb962 [auto-dig-live-test] accept heading-anchored reports (#2330)
 2026-09-01 bba0b493a5956ca28acbc58c055f465cbc2b1cc4 fix(auto-dig): consume merged synthesis runtime (#2329)
 2026-09-01 e7cbefbc16787fb6463c76e48f66ff2fd9402358 [auto-dig-live-test] inject synthesis transition at tool cutoff (#2328)
@@ -134,27 +137,6 @@
 2026-08-25 7035c46ea42acc4492fbf2c1cdec4c3b4c5766fe docs: describe expert model routing contract
 2026-08-25 5fce67a5c64840a805d1b7c0712d26fec7e5d90d feat: enforce Prolog expert model routing in live actor
 2026-08-25 8eb420f68dc3674cc68293967e79f30e13c1ecf1 ci: exercise expert model routing with reasoning controls
-2026-08-24 e59e2b7069e96246ba7c3d219302d4f051d30cf2 Harvest The Wire Oregon verification for request #2286
-2026-08-24 08fb635d943a1a67e7a0a589aea567d16f0f6d26 Harvest mature Seattle request #2106 RTCC/FUSUS evidence
-2026-08-24 216577814426ef75c261e2277eda5e8c36b2f87f Harvest mature Worldcoin request #2095 evidence (#2288)
-2026-08-24 01512391157c6a1f63d150cf87525dbee986d82c test: cover expert model routing policy
-2026-08-24 004608ee3a0f6e5af40060ae35cb601761817596 feat: add expert model routing KB
-2026-08-24 e7de0ad406ecda4bf8107171d8a5fe2678f9f037 fix: use canonical supervised actor call
-2026-08-24 4aa9510c14702f3883e3419a1cd273ff7fafc97c ci: expose actor CLI smoke diagnostics
-2026-08-24 c72c6253b30c4ff6e04f84e561e10b70e796e084 fix: use SWI main/1 actor entrypoint
-2026-08-24 c978cda8e700753c5829d640e08b9df9a118e85b test: cover fair high-priority recurrence
-2026-08-24 bd9e4e8440603d6754f1811ed2ab74fd93068162 fix: keep high-priority recurrence fair
-2026-08-24 10680bdae16eee9e5f01a3196264d9de4feef8d5 ci: add credential-free Auto-Dig Prolog actor gate
-2026-08-24 335c3ab997281bfa4cf3f7c61e78ea12b9b56148 fix: parse SWI argv atoms in actor CLI
-2026-08-24 455ddc74795aff4b405bcaa362820a9e0ea9020c docs: add Auto-Dig Prolog actor state schema
-2026-08-24 cd91765ca845a4522885cac55a8c27f61f079bc5 docs: define Auto-Dig Prolog actor contract
-2026-08-24 92bb871ae978597a9d5310ad1ddfc8e80b99b538 ci: run Auto-Dig through Prolog-RLM actor
-2026-08-24 11ec3dd71991a7f98206bd623969b9896227c8e5 fix: emit closed JSON actor decisions
-2026-08-24 e6010bd5769c44f070908c163e3a2bca2a00b96a test: cover Auto-Dig Prolog actor selection policy
-2026-08-24 093b32e0386666bf0d7b3b58010325b6ae773683 feat: add supervised Auto-Dig Prolog actor
-2026-08-24 ed60a476792ccee83e41973f96e86914b8943dba chore: pin OpenCode web MCP versions
-2026-08-24 4fb9a45fdb0784c45b86ba34b3a3aa10081f3d38 chore: add Brave Search and web fetch MCPs for OpenCode
-2026-08-24 cdaa15e118f00eb471320c44a7b17d2aaad4e4a9 Harvest mature Rensselaer Sheriff evidence from request #1901
 ```
 
 ## Repository paths changed, last 14 days
@@ -166,9 +148,9 @@
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/auto-dig-prolog-failure-report.yml
 .github/workflows/import-starintel-documents.yml
-.github/workflows/materialize-harvest.yml
 .github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
+.gitignore
 agents/.keep-observability
 agents/README.md
 agents/auto_dig_failure_report.py
@@ -176,9 +158,10 @@ agents/auto_dig_mcp_runner.pl
 agents/auto_dig_mcp_tools.pl
 agents/auto_dig_model_router.pl
 agents/auto_dig_prolog_actor.pl
-agents/auto_dig_prolog_state.schema.json
 agents/auto_dig_rlm_runner.pl
 agents/auto_dig_safe_log.pl
+agents/auto_dig_service.py
+agents/starintel_corpus_mcp_server.py
 agents/test_auto_dig_deadline_synthesis_hotfix.pl
 agents/test_auto_dig_failure_report.py
 agents/test_auto_dig_mcp_runner.pl
@@ -190,27 +173,19 @@ agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
-digs/flock/2026-08-24-request-1901-harvest/README.md
-digs/flock/2026-08-24-request-1901-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-1904-harvest/starintel-documents.jsonl
 digs/flock/2026-08-25-request-2112-harvest/starintel-documents.jsonl
-digs/seattle/2026-08-25-request-2106-harvest/starintel-documents.jsonl
-digs/violent-offenders/2026-08-25-request-2286-wire-oregon/starintel-documents.jsonl
-digs/worldcoin/2026-08-25-request-2095-harvest/starintel-documents.jsonl
 harvest-manifests/request-1904-2026-08-25.json
-harvest-manifests/request-2095-2026-08-25.json
-harvest-manifests/request-2106-2026-08-25.json
 harvest-manifests/request-2112-2026-08-25.json
-harvest-manifests/request-2286-oregon-2026-08-25.json
-opencode.jsonc
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
-scripts/materialize_harvest.py
+tests/test_auto_dig_service.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
+tests/test_starintel_corpus_mcp_server.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -221,15 +196,15 @@ tests/test_influencewatch_import.py
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/auto-dig-prolog-failure-report.yml
 .github/workflows/import-starintel-documents.yml
-.github/workflows/materialize-harvest.yml
 .github/workflows/publish-pages.yml
 .github/workflows/upgrade-prolog-rlm-298.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
-scripts/materialize_harvest.py
+tests/test_auto_dig_service.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
+tests/test_starintel_corpus_mcp_server.py
 ```

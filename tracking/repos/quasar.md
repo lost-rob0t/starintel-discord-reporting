@@ -1,15 +1,18 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-07T22:51:35Z`
+- generated: `2026-09-08T04:42:44Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`ffd3f903d21abd4adec83b7d47230dc02df922c8`](https://github.com/lost-rob0t/quasar/commit/ffd3f903d21abd4adec83b7d47230dc02df922c8)
-- head date: `2026-08-31T15:36:02-04:00`
-- head subject: ci: remove software-rendered graph benchmark
+- head: [`44f977cdecb91d78cd77e35cb287503c135dee50`](https://github.com/lost-rob0t/quasar/commit/44f977cdecb91d78cd77e35cb287503c135dee50)
+- head date: `2026-09-06T19:48:04Z`
+- head subject: Merge hosted Common Lisp runtime
 
 ## Git log, last 14 days
 
 ```text
+2026-09-06 44f977cdecb91d78cd77e35cb287503c135dee50 Merge hosted Common Lisp runtime
+2026-09-06 cb55fdf24505c1edfd226db6c3cbcfbb0af1d22b build: package the hosted Common Lisp runtime
+2026-09-06 b2839355a40a006b33f0b203032fe0bfc4d461d5 build: publish web-dist package for the standalone web edition (#70)
 2026-08-31 ffd3f903d21abd4adec83b7d47230dc02df922c8 ci: remove software-rendered graph benchmark
 2026-08-31 cc88bc9f71fc60deb78c6106ca2731aa2043b692 benchmark: show graph performance tier
 2026-08-31 382eb54960ef647771735e33ab3454a1b3dd8f5a perf: hide labels during viewport motion
@@ -132,6 +135,7 @@ control-plane/tests/autodig-websocket-auth-tests.lisp
 control-plane/tests/autodig-worker-reclaim-tests.lisp
 docs/CONFIGURATION.md
 example_configs/init.lisp
+flake.lock
 flake.nix
 frontend/benchmarks/graph-renderer.html
 frontend/docs/gpu-renderer-benchmark.md
@@ -151,6 +155,7 @@ frontend/src/graph/graph-renderer.test.js
 frontend/src/graph/renderer-benchmark.js
 frontend/src/lib/graph-style.js
 noop
+package-lock.json
 package.json
 scripts/bootstrap-lisp-deps
 scripts/check-control-plane-deps.mjs

@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-07T22:51:40Z`
+- generated: `2026-09-08T04:42:54Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -284,11 +284,6 @@
 2026-08-25 aead75c9697436417087fe717edb192d992bcbd8 refactor: move frontend facade into core runtime
 2026-08-25 173b35eb26e7841663c86bd4cf164f87e30745f3 refactor: move UI protocol into core runtime
 2026-08-25 89d1b0b7f3782667c9704c63dd2f51d2a23814bc ci: report workflow failures as GitHub issues
-2026-08-24 982bad23c59dba0dd9157c1904e7723950889717 fix: harden evolution evaluator boundary
-2026-08-21 ec54214a02fc8e612c922fd698e55332f13331bf feat: evaluate evolution candidates through bounded futures
-2026-08-21 76fb91994ed2b7820db3088f739c8ce4bdcf85c1 test: specify async evolution evaluator contract
-2026-08-24 e6f04bb641d5f15d2b806eca4bd00d2718615034 Record PR 182 main reconciliation evidence
-2026-08-24 97ed737f12770e2fcd925cb7a7c4896fd262a540 Harden trusted binding replay conformance
 ```
 
 ## Repository paths changed, last 14 days
@@ -361,7 +356,6 @@ docs/completion-runtime.md
 docs/conversation-runtime.md
 docs/delegation-runtime.md
 docs/direct-runtime.md
-docs/evolution-kernel.md
 docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-source-registry.md
@@ -396,7 +390,6 @@ prolog/rlm_conversation.pl
 prolog/rlm_conversation_persist.pl
 prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
-prolog/rlm_evolution.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_plan.pl
@@ -421,7 +414,6 @@ prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
 rage/117-skill-compiler-reconciliation.org
 rage/172-typed-delegation-policy.org
-rage/181-binding-replay-race.org
 rage/190-cli-help-success.org
 rage/200-permanent-rlm-context.org
 rage/203-subagent-skill-role-provenance.org
@@ -516,7 +508,6 @@ test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
-test/rlm_evolution_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
@@ -543,7 +534,6 @@ test/rlm_spec_strategy_test.pl
 test/rlm_subagent_deadline_test.pl
 test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
-test/rlm_tool_effect_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
@@ -559,7 +549,6 @@ test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-test/support/tool_effect_test_support.pl
 third_party/mattpocock-skills/LICENSE
 third_party/mattpocock-skills/UPSTREAM.md
 third_party/mattpocock-skills/skills/README.md
@@ -668,7 +657,6 @@ test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
-test/rlm_evolution_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_nested_usage_test.pl
@@ -695,7 +683,6 @@ test/rlm_spec_strategy_test.pl
 test/rlm_subagent_deadline_test.pl
 test/rlm_subagent_supervision_test.pl
 test/rlm_subagent_test.pl
-test/rlm_tool_effect_test.pl
 test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
@@ -711,6 +698,5 @@ test/support/prolog-agent-ui-fixture.pl
 test/support/prolog_agent_ui_fixture.pl
 test/support/rlm_constraint_benchmark_test.pl
 test/support/rlm_delegation_runtime_cases.pl
-test/support/tool_effect_test_support.pl
 third_party/mattpocock-skills/skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh
 ```
