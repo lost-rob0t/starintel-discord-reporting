@@ -1,15 +1,28 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-08T11:23:51Z`
+- generated: `2026-09-08T16:41:06Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22)
-- head date: `2026-09-07T05:59:50Z`
-- head subject: Merge pull request 'feat(auto-dig): read-only StarIntel corpus MCP tools + standalone service runner landing' (#2149) from feat/prolog-actor-starintel-tools into main
+- head: [`a24c39f3232e65ee39695dc79995b8fb02412cd6`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/a24c39f3232e65ee39695dc79995b8fb02412cd6)
+- head date: `2026-09-08T12:26:06-04:00`
+- head subject: Auto-Dig: materialize shard C area-code pass 3 (#2355)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 a24c39f3232e65ee39695dc79995b8fb02412cd6 Auto-Dig: materialize shard C area-code pass 3 (#2355)
+2026-09-08 b75874279f1351d9b61bc255d164f134a73da52b research: bounded Victoria mutual-aid chapter expansion
+2026-09-08 72d551c672821a7f07ac63dfa56f1bc81a6b082f research: bounded Food Not Bombs network expansion
+2026-09-08 d002c69edc4f34878ddb6e3a8606ab7210fb09b6 research: bounded ABCF chapter expansion
+2026-09-08 55b78fca96ecf591a7133598659f46a5d2359155 materialize public communications enumeration pass 3 (#2349)
+2026-09-08 c6be8dac599dc271f42ec9e0df79291e5d3a7dc4 fix(auto-dig): add durable deterministic coverage backlog state
+2026-09-08 03cdb786a6bf5ed0d0e22fc5fde6ddef89d4d7f4 Merge pull request #2346 from lost-rob0t/auto-dig/public-comms-enum-2026-09-08-pass2
+2026-09-08 385b22605013cdfce45ba492e61ab19d3c9f18fe materialize bounded public communications enumeration pass
+2026-09-08 79554864b292e037c093199cdf8c4bf2c914491b research: expand Black Rose current locals (#2345)
+2026-09-08 626d43f59fb9eabca93d816f7c504404eb5d842e Materialize 2026-09-08 public communications discoveries
+2026-09-08 1eea917b024e7c92beb03df212884cc223cbae5c revert accidental noop file
+2026-09-08 8d34ad64cd2bb73e56cb72963f4ada5bc9b82eba noop
+2026-09-08 9de89e21e796b389cd51bab51276ace49df5839b research: add anarchist-violence area-code shard A seeds (#2340)
 2026-09-07 c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22 Merge pull request 'feat(auto-dig): read-only StarIntel corpus MCP tools + standalone service runner landing' (#2149) from feat/prolog-actor-starintel-tools into main
 2026-09-06 5ba3db06b4ee9e0942b0b11ea0807998ca2752d4 feat(auto-dig): read-only StarIntel corpus tools over the MCP policy
 2026-09-06 244ba82edff9d38943de6f99669617b626660653 feat(auto-dig): standalone service runner with gateway provider support
@@ -135,9 +148,11 @@ agents/auto_dig_mcp_runner.pl
 agents/auto_dig_mcp_tools.pl
 agents/auto_dig_model_router.pl
 agents/auto_dig_prolog_actor.pl
+agents/auto_dig_prolog_state.schema.json
 agents/auto_dig_rlm_runner.pl
 agents/auto_dig_safe_log.pl
 agents/auto_dig_service.py
+agents/coverage_backlog.pl
 agents/starintel_corpus_mcp_server.py
 agents/test_auto_dig_deadline_synthesis_hotfix.pl
 agents/test_auto_dig_failure_report.py
@@ -148,8 +163,30 @@ agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
+agents/test_coverage_backlog.pl
+digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-00.jsonl
+digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-01.jsonl
+digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-02.jsonl
+digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-03.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-a-207-216/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-black-rose-local-expansion/chapter-expansion-state.md
+digs/anarchist-violence/2026-09-08-black-rose-local-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-food-not-bombs-network-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-food-not-bombs-network-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass2/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass3/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-public-communications/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/starintel-documents.jsonl
+digs/anarchist-violence/area-code-coverage-a.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
+noop
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/import-starintel-documents.py

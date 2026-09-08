@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-08T11:24:02Z`
+- generated: `2026-09-08T16:41:14Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -233,7 +233,6 @@
 2026-08-25 4bda83043add14764b40c0caa26ce2f6a9a5d9ef chore: realize #176 compiler projection slice
 2026-08-25 575fdbfa68b2fd4189e65ba72d44451abcb5da57 test: preserve expected failure binding
 2026-08-25 5e7623d8dd55f00550afbde663a8caa17d27b02f test: capture root planner projection defect
-2026-08-25 49d86f88730b4a0f5dc4a7cf300b8f09ef5845b0 feat: add typed skill-aware delegation policy (#172)
 ```
 
 ## Repository paths changed, last 14 days
@@ -318,7 +317,6 @@ prolog/rlm_project_query.pl
 prolog/rlm_project_query_persist.pl
 prolog/rlm_project_source.pl
 prolog/rlm_project_syntax.pl
-prolog/rlm_prompt_command.pl
 prolog/rlm_prompt_compiler.pl
 prolog/rlm_result_accept.pl
 prolog/rlm_runtime_status.pl
@@ -331,7 +329,6 @@ prolog/rlm_text.pl
 prolog/rlm_tool.pl
 prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
-rage/172-typed-delegation-policy.org
 rage/264-real-recursive-final-handoff.org
 rage/277-planner-protocol-context.org
 rage/288-final-review-report.md

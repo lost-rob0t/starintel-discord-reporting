@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-08T11:23:54Z`
+- generated: `2026-09-08T16:41:08Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`44f977cdecb91d78cd77e35cb287503c135dee50`](https://github.com/lost-rob0t/quasar/commit/44f977cdecb91d78cd77e35cb287503c135dee50)
@@ -73,12 +73,6 @@
 2026-08-26 3acef088009137a737647b79c404dde615b96c1d RAGE #50: delegated Auto-Dig user session authority (#51)
 2026-08-26 aa33622089b7a09745ec41f049c3e03ec3280cd1 Merge pull request #43 from lost-rob0t/rage/41-autodig-lifecycle
 2026-08-26 e0e662be968568adbe0f9a22b00b417c92db9ad7 Merge pull request #47 from lost-rob0t/main
-2026-08-25 ddcfd62bb63818714605c75de637ed595082177c test: expire worker lease across Sento actor thread
-2026-08-25 aea61e9602696a76f5d561e7f0873e501a7ab536 fix: accept persisted numeric Auto-Dig lease timestamps
-2026-08-25 19e2a1f057d207794964ad5b4498c388efcd3847 fix: reclaim expired Auto-Dig worker leases
-2026-08-25 7f321ecf452bb3263b8c34edee9f738d27a1391a test: make Auto-Dig reclaim RED deterministic
-2026-08-25 a548bf608fbc6f1e9a3f230615ca98b929863637 test: run stale Auto-Dig worker reclaim spec
-2026-08-25 ff779d67c94ed2f65e4f97aae352cb6f0d3770fa test: specify stale Auto-Dig worker reclaim
 ```
 
 ## Repository paths changed, last 14 days
@@ -87,7 +81,6 @@
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
 README.md
-control-plane/src/autodig-control.lisp
 control-plane/src/autodig-persistence-bridge.lisp
 control-plane/src/autodig-principal-isolation.lisp
 control-plane/src/autodig-store.lisp
@@ -101,7 +94,6 @@ control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp
 control-plane/tests/autodig-principal-isolation-tests.lisp
 control-plane/tests/autodig-websocket-auth-tests.lisp
-control-plane/tests/autodig-worker-reclaim-tests.lisp
 docs/CONFIGURATION.md
 example_configs/init.lisp
 flake.lock
@@ -143,7 +135,6 @@ control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp
 control-plane/tests/autodig-principal-isolation-tests.lisp
 control-plane/tests/autodig-websocket-auth-tests.lisp
-control-plane/tests/autodig-worker-reclaim-tests.lisp
 flake.nix
 frontend/scripts/benchmark-graph-renderer.mjs
 scripts/bootstrap-lisp-deps

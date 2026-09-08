@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-08T11:23:52Z`
+- generated: `2026-09-08T16:41:07Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`eda24d2540c3c847199a361cbf011bd597360e95`](https://github.com/lost-rob0t/starintel-auto-research/commit/eda24d2540c3c847199a361cbf011bd597360e95)
-- head date: `2026-09-05T04:12:24-04:00`
-- head subject: research: seed Confoederatio in OSINT source backlog
+- head: [`e8fcf7091f25b7cfca2e93eab6e1e662a8648674`](https://github.com/lost-rob0t/starintel-auto-research/commit/e8fcf7091f25b7cfca2e93eab6e1e662a8648674)
+- head date: `2026-09-08T16:23:52Z`
+- head subject: research: slim ARDR-ISSUE-206 transaction to issue authority + pass ledger
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 e8fcf7091f25b7cfca2e93eab6e1e662a8648674 research: slim ARDR-ISSUE-206 transaction to issue authority + pass ledger
+2026-09-08 def44350cd87136ddf3bbbe14a028d6f1ac8f9ca research: STAR-RESEARCH-061 canonical identifier normalization (operator placement)
+2026-09-08 3992b46b4b14314c87ad10a425a9c3e88eea8f65 research: ARDR-ISSUE-206 pass 1 platform identifier semantics for normalization contract
 2026-09-05 eda24d2540c3c847199a361cbf011bd597360e95 research: seed Confoederatio in OSINT source backlog
 2026-09-05 5cd6092f4504b7fe47fecd1bd1d26cd32f492c17 research: add Confoederatio world-model source reconnaissance
 2026-08-31 e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced Remove orphaned StarLang prototype CI (#114)
@@ -237,6 +240,7 @@ roam/research/ardr-issues/ARDR-ISSUE-180-identity-email-google-enrichment.org
 roam/research/ardr-issues/ARDR-ISSUE-188-workload-dispatchers-router-pools.org
 roam/research/ardr-issues/ARDR-ISSUE-190-sento-bounded-mailbox-admission.org
 roam/research/ardr-issues/ARDR-ISSUE-191-deployment-config-secrets-contract.org
+roam/research/ardr-issues/ARDR-ISSUE-206-identifier-normalization.org
 roam/research/auto-dig/ADAR-APPROVAL-001-dashboard-ux.org
 roam/research/auto-dig/ADAR-RESEARCH-001-dashboard-ux-and-cross-site-navigation.org
 roam/research/auto-research/STAR-AUTO-RESEARCH-000-rd-agent-pipeline-analysis.org
@@ -360,6 +364,7 @@ roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-005-hcaptcha-provider-selec
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-006-captcha-challenge-provider-landscape.org
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-007-captcha-broker-transport-selection.org
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-008-self-sourced-captcha-solver-stack.org
+roam/research/starintel-server/STAR-RESEARCH-061-identifier-normalization.org
 roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
 scripts/build-research-pending.py
 scripts/install-agent-zero.sh
