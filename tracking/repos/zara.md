@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-08T21:13:05Z`
+- generated: `2026-09-09T00:18:07Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`291f5e3474c33911dfd1ead833230fa8c4c71e4b`](https://github.com/lost-rob0t/zara/commit/291f5e3474c33911dfd1ead833230fa8c4c71e4b)
-- head date: `2026-09-08T17:40:58Z`
-- head subject: fix(client): use the configured Zara daemon by default (#664)
+- head: [`f8394af0ba8cfd222d94a5c2bff1555d60161694`](https://github.com/lost-rob0t/zara/commit/f8394af0ba8cfd222d94a5c2bff1555d60161694)
+- head date: `2026-09-08T22:31:27Z`
+- head subject: release: Zara v0.1.1-alpha (#665)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 f8394af0ba8cfd222d94a5c2bff1555d60161694 release: Zara v0.1.1-alpha (#665)
 2026-09-08 291f5e3474c33911dfd1ead833230fa8c4c71e4b fix(client): use the configured Zara daemon by default (#664)
 2026-09-08 c6a557964f11f892aaa984ad52a2e5b1b2e829f2 Merge pull request #661 from lost-rob0t/ui/650-outrun-shell
 2026-09-08 de1543adefa5b6c009dc7a4e80a848bd1a2d171d test(android): drop stray blank line at eof
@@ -1175,6 +1176,7 @@
 .github/workflows/rage-159-apply.yml
 .github/workflows/rage-575-apply-green.yml
 .github/workflows/release-v0.1.0-alpha.yml
+.github/workflows/release.yml
 AGENTS.md
 PRODUCT.md
 README.org
@@ -1768,6 +1770,7 @@ zara/zmq_transport.py
 .github/workflows/rage-159-apply.yml
 .github/workflows/rage-575-apply-green.yml
 .github/workflows/release-v0.1.0-alpha.yml
+.github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AppScopedAssistantRuntimeContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt

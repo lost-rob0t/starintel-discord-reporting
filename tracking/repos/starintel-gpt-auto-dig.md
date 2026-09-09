@@ -1,17 +1,34 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-08T21:12:47Z`
+- generated: `2026-09-09T00:17:57Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`59e44cbcd25d282e913407fa9c9b3ef4c97b5487`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/59e44cbcd25d282e913407fa9c9b3ef4c97b5487)
-- head date: `2026-09-08T16:48:12-04:00`
-- head subject: research: expand Dayton and Athens Food Not Bombs chapters
+- head: [`cd896676507c5212d24d990ac64b321313caf280`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/cd896676507c5212d24d990ac64b321313caf280)
+- head date: `2026-09-08T20:13:40-04:00`
+- head subject: research(area-code-hunt): shard A 270 276 279 303 (#2410)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-08 cd896676507c5212d24d990ac64b321313caf280 research(area-code-hunt): shard A 270 276 279 303 (#2410)
+2026-09-08 40ab2b25988024897a1b02bb4c9a91345a52af5c research: expand NEED and HEPPAC organizational links (#2407)
+2026-09-08 205e2d65d20613ccfc0f48ca22a69319f20db1a2 research: advance shard A area codes 234-267 (#2405)
+2026-09-08 0bc54189ff969337fc93524acbc6fb988002a292 research: enumerate shard B area codes 406 409 412 (#2403)
+2026-09-08 60234709df8f917693037b6d51a9b3f7b23043f9 research: recover shard A area codes 219-231 on fresh main (#2399)
+2026-09-08 4b2457064baffbdc74efc4a9ac6784f576427f79 research: expand Long Haul projects and hosted orgs (#2396)
+2026-09-08 b4c71827ebc76571434813ba1adb1db330b087a1 research(area-code-hunt): shard C 347 350 353 (#2394)
+2026-09-08 54fc7514030aa006f308972df1377e4c14042f57 research(area-code-hunt): shard B 361 364 385 (#2393)
+2026-09-08 be518dfd9015069aec6800fa2a3feb45ce338db8 research: expand ABC No Rio autonomous collectives (#2389)
+2026-09-08 25966800ef2b3b164f78041092fe8ccba4f66624 Merge pull request #2385 from lost-rob0t/area-code-hunt/b-337-346-352-2026-09-08
+2026-09-08 96f09185c22a6ebdc93a1bae7276f29221d24590 Merge pull request #2381 from lost-rob0t/area-code-hunt/b-325-331-334-2026-09-09
+2026-09-08 af0920988aac9a267337919785525b5b24aecf96 Auto-Dig: materialize shard C area-code pass 9 (#2386)
+2026-09-08 2937c439a4ed5e8df32f0633358a11af494e0639 Auto-Dig: materialize shard C area-code pass 8 (#2382)
+2026-09-08 12d9c265332e8969db45d27cf9aa49fa15f4714d state(area-code-hunt): complete shard B 337 346 352
+2026-09-08 51380a3263cfe1b733adc2f39adde754c102c14e research(area-code-hunt): materialize shard B 337 346 352
 2026-09-08 59e44cbcd25d282e913407fa9c9b3ef4c97b5487 research: expand Dayton and Athens Food Not Bombs chapters
 2026-09-08 5d4a7df8af6a2af4ecb4bfd811b684c43af94abd Auto-Dig: materialize shard C area-code pass 7 (#2376)
+2026-09-08 3d9e3d9bc0a396f0c8e6cf26e2fb0d9985ba2194 research(area-code-hunt): advance durable shard B coverage through 334
+2026-09-08 f6d9a37cb9c9fadd8948e347e75fdd85c1cdeaa1 research(area-code-hunt): materialize shard B 325 331 334
 2026-09-08 0adb335f836ca70e2fbd01403353d184890abf37 Public communications enumeration pass 7 (#2379)
 2026-09-08 517850d1b2a3bdd888d21bcea8d60779a88c2e45 research: expand Cleveland Food Not Bombs locals and accounts
 2026-09-08 88d3c70a2dd726e86c2250e6a6a26fef88ac5f53 research: add public communications enumeration pass 6 (#2373)
@@ -176,11 +193,23 @@ agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
 agents/test_coverage_backlog.pl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-005.jsonl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-006.jsonl
+digs/anarchist-violence/2026-09-08-abc-no-rio-collective-expansion/starintel-documents-part-007.jsonl
 digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-00.jsonl
 digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-01.jsonl
 digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-02.jsonl
 digs/anarchist-violence/2026-09-08-abcf-chapter-expansion/starintel-documents-03.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-10/starintel-documents-347.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-10/starintel-documents-350.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-10/starintel-documents-353.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-10/starintel-research-pass.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-001.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-002.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-3/starintel-documents-part-003.jsonl
@@ -199,7 +228,24 @@ digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-002.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-003.jsonl
 digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-7/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-8/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-8/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-8/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-8/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-9/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-9/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-9/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-9/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-08-area-code-shard-c-pass-9/starintel-documents-part-005.jsonl
 digs/anarchist-violence/2026-09-08-area-codes-a-207-216/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-a-219-231/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-a-234-267/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-a-270-303/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-b-325-331-334/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-b-337-346-352/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-b-361-364-385/report.md
+digs/anarchist-violence/2026-09-08-area-codes-b-361-364-385/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-area-codes-b-406-409-412/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/README.md
 digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-black-pink-national-chapter-expansion/starintel-documents-01.jsonl
@@ -215,6 +261,11 @@ digs/anarchist-violence/2026-09-08-cleveland-fnb-chapter-expansion/expansion-sta
 digs/anarchist-violence/2026-09-08-cleveland-fnb-chapter-expansion/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-food-not-bombs-network-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-food-not-bombs-network-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-08-long-haul-affiliate-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-long-haul-affiliate-expansion/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-08-long-haul-affiliate-expansion/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-08-need-heppac-affiliate-expansion/expansion-state.md
+digs/anarchist-violence/2026-09-08-need-heppac-affiliate-expansion/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-ohio-fnb-dayton-athens-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-ohio-fnb-dayton-athens-expansion/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-public-comms-enumeration-pass2/starintel-documents.jsonl
@@ -235,6 +286,7 @@ digs/anarchist-violence/2026-09-08-public-communications/starintel-documents.jso
 digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a.json
+digs/anarchist-violence/area-code-hunt-shard-b-state.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
 noop
