@@ -1,15 +1,47 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-09T12:59:20Z`
+- generated: `2026-09-09T17:50:59Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`420db3c5649a03cd559be3760c6de6033ab6d093`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/420db3c5649a03cd559be3760c6de6033ab6d093)
-- head date: `2026-09-09T08:35:50-04:00`
-- head subject: research(area-code-hunt): shard C 641 650 656 current-base replay (#2525)
+- head: [`2faaf480214d974614ebbf2e402f2e1fa97d8790`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/2faaf480214d974614ebbf2e402f2e1fa97d8790)
+- head date: `2026-09-09T13:15:24-04:00`
+- head subject: research(area-code-hunt): shard A 717 720 726 729 (#2538)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-09 2faaf480214d974614ebbf2e402f2e1fa97d8790 research(area-code-hunt): shard A 717 720 726 729 (#2538)
+2026-09-09 e4d2c91883830bd9b5aae6bfe24c55b8553965fa research(area-code-hunt): record pass24 coverage delta
+2026-09-09 ac7e2175146c558c99a9a78d414a3c8b76ca0953 research(area-code-hunt): add pass24 research record
+2026-09-09 5bc0d4456370adcb172b5632eb964f681d26dfd5 research(area-code-hunt): add pass24 relations
+2026-09-09 9b1e0bdd2fa2b12c96a469e44e8b41d47f1a2746 research(area-code-hunt): add pass24 orgs and targets
+2026-09-09 9c335bb2279e045f124bbc058c30367ebb42dddb research(area-code-hunt): add pass24 sources
+2026-09-09 d4fb5dbe9f4c9d9ad6bcda5b414a27b72fc7a04f research(area-code-hunt): shard A 681 684 702 708 (#2536)
+2026-09-09 9372347eaf8a852d540fdc5f121a7d0cdab6e003 research(area-code-hunt): advance shard A coverage through 708
+2026-09-09 78a6d3d710ab7df65af6c044f58dcc5de532da2b research(area-code-hunt): add pass23 research record
+2026-09-09 2f76dc6314591172aaa9b7dd009b947526297237 research(area-code-hunt): add pass23 relations
+2026-09-09 6f55634797e8e08bf9a3fa9d18ca4d9e11e90458 research(area-code-hunt): add pass23 orgs and targets
+2026-09-09 dad26de5ec9bc659e1d8792eba4d8cb4f4c3ae9e research(area-code-hunt): add pass23 sources
+2026-09-09 6c6160623c50889fca3844281e7d0179fcd88de1 research(area-code-hunt): shard A 657 660 669 678 (#2534)
+2026-09-09 4e73ce26b1436a4b24899c244ecb27abb8b7e129 research(area-code-hunt): advance shard A coverage through 678
+2026-09-09 ace74f588ab623a89eec8109cfed26ea5a0a1501 research(area-code-hunt): add shard A pass 22 research-pass
+2026-09-09 d50abd2a43b7aba83b7a5dc93447adf9eed11085 research(area-code-hunt): add shard A pass 22 relations
+2026-09-09 7de577345df668228b03e431b6e557123217b98c research(area-code-hunt): add shard A pass 22 orgs and targets
+2026-09-09 0ddaac1bed1d30531f40bd7e79cde1590277a3d5 research(area-code-hunt): add shard A pass 22 sources
+2026-09-09 4439a08b6dc9f07988b422130697ed8b612afd7a research(area-code-hunt): shard C 686 689 701 (#2532)
+2026-09-09 363843fdd59295a9daaf8d5277e2f2c692cf7a1f research(area-code-hunt): shard A 630 636 645 651 (#2531)
+2026-09-09 276e175802a01fd27cd045fd2095ba5226e45540 research(area-code-hunt): advance shard A coverage through 651
+2026-09-09 0210fa873b27d016310e67f80325c6b952511ea5 research(area-code-hunt): record pass 21 statistics
+2026-09-09 30469cce0b517f799d44cab379f2f92294548665 research(area-code-hunt): add pass 21 relations
+2026-09-09 0bcf84c820ed49703cef3fb7003825bb0ad0ed54 research(area-code-hunt): add pass 21 org records
+2026-09-09 b1e4efddae0f19ce6b2cd018f42a6344753003aa research(area-code-hunt): add pass 21 source records
+2026-09-09 8c96a8d6b56c51a5b621e8777b2123c8c73c392b research(area-code-hunt): shard C 659 662 680 (#2528)
+2026-09-09 df060923b3aae541d73352f1601cfbf8cffc1541 research(area-code-hunt): shard A 612 615 618 621 (#2527)
+2026-09-09 72475f217128ee1c701e9fbb0d7b3c506aedc3a6 research(area-code-hunt): advance shard A coverage through 621
+2026-09-09 7ccfe546f3b67f7dbcc6594a2ed04bb4a690e917 research(area-code-hunt): record shard A pass 20
+2026-09-09 20f3baebbff02aedde9e1bd9d254c38959c70ae2 research(area-code-hunt): add shard A pass 20 relations
+2026-09-09 1e33a9cdcd57705b47cde7acb03f5b3716ca8ecf research(area-code-hunt): add shard A pass 20 orgs and targets
+2026-09-09 3365e10af9eb96106160b7fe34a27808de0c60df research(area-code-hunt): add shard A pass 20 sources
 2026-09-09 420db3c5649a03cd559be3760c6de6033ab6d093 research(area-code-hunt): shard C 641 650 656 current-base replay (#2525)
 2026-09-09 718f32c149b6bfabb957dae6c10202bb886a3021 research(area-code-hunt): shard-A pass 19 current-base replay (#2524)
 2026-09-09 f35409f344810547b3b4d58b56ce7a239d27b514 research(area-code-hunt): replay shard-A pass 19 on current main
@@ -421,6 +453,26 @@ digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-003.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-004.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-005.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-20/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-20/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-20/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-20/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-21/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-21/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-21/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-21/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-22/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-22/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-22/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-22/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-23/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-23/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-23/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-23/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-24/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-24/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-24/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-24/starintel-documents-part-004.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-13/starintel-documents-area-relations.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-13/starintel-documents-orgs.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-13/starintel-documents-person-relations.jsonl
@@ -486,6 +538,16 @@ digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-orgs-targ
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-people-relations.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-research-pass.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-24/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-24/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-24/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-24/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-24/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-25/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-25/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-25/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-25/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-25/starintel-sources.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-a-309-318/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-a-321-330/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-b-415-424-430/starintel-documents.jsonl
@@ -565,6 +627,7 @@ digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/expansion-state.m
 digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/relations.jsonl
 digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/research-pass.jsonl
 digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/sources.jsonl
+digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a.json
 digs/anarchist-violence/area-code-hunt-shard-b-state.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
