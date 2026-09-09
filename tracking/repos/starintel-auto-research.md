@@ -1,15 +1,19 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-09T00:17:58Z`
+- generated: `2026-09-09T07:25:07Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`5807365a02616441d4476d317baace5d42a5d2b4`](https://github.com/lost-rob0t/starintel-auto-research/commit/5807365a02616441d4476d317baace5d42a5d2b4)
-- head date: `2026-09-08T19:15:54Z`
-- head subject: research: STAR-RESEARCH-061 enumerates open questions up front
+- head: [`72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47`](https://github.com/lost-rob0t/starintel-auto-research/commit/72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47)
+- head date: `2026-09-09T01:02:51Z`
+- head subject: fix: repair canonical-born approval provenance
 
 ## Git log, last 14 days
 
 ```text
+2026-08-29 72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47 fix: repair canonical-born approval provenance
+2026-09-09 1d14b9867d660cc972ce8ccc7ad55cf28c7661b5 fix: repair remaining doc-link and approval-metadata failures (Org-roam Pages, Kindle EPUB)
+2026-09-09 73aea680b84a430866dbf8049006331acb9a23ce fix: renumber duplicate canonical document IDs (STAR-SERVER-050 sento, STAR-RESEARCH-002 osint backlog)
+2026-09-09 7e140704de5b2c7452469b6d580da2bb2da19cfa research: STAR-RESEARCH-062 prolog star client and actor runtime prototype analysis
 2026-09-08 5807365a02616441d4476d317baace5d42a5d2b4 research: STAR-RESEARCH-061 enumerates open questions up front
 2026-09-08 bdb9302c4f400e8ce24cf7ae153702b68d01990e research: STAR-RESEARCH-061 normalization authority revised to Prolog-first
 2026-09-08 a8923dd1b8ad64ab5f790c446bf0984c7e00b992 research: replace dangling ARDR-ISSUE-206 link in STAR-RESEARCH-061
@@ -124,12 +128,6 @@
 2026-08-27 d78caa33ff308788860b76031d2d2639099f8922 research: reconcile strict JSON canonical identity
 2026-08-27 5d01182e45a0cda1c4e062183469abd0be43e6af feat(pages): add research pending review dashboard
 2026-08-27 1a2a979ea0cb3c5e763f5b69f6be3219d49e942c Merge pull request #146 from lost-rob0t/agent/amend-star-lang-004-rfc3986
-2026-08-26 52530279e1513da61d99195d985135a9d06fe94c fix: remove misleading approval signal from STAR-RESEARCH-059
-2026-08-26 a826d55bc9a5cfa97637d6f5596de26d9f86e297 Fix STAR-SERVER-059 approval table states
-2026-08-26 2510e13c803ea6ea0537a8bcebec02499d14650e Fix STAR-RESEARCH-059 approval table states
-2026-08-26 babe14bded6020688ed90f50d6130e8240283383 Merge pull request #149 from lost-rob0t/rage/server-059-target-create-v1
-2026-08-26 a5f865e16e39383650813f39d9274035c5b6bf95 design: specify generic target-create v1
-2026-08-26 e1bc3d8aff01cbcac7c4b3fdabf83e75e4fef0a6 research: define generic target-create v1 boundary
 ```
 
 ## Repository paths changed, last 14 days
@@ -202,8 +200,8 @@ roam/design/star-server/STAR-SERVER-050-workload-dispatchers-router-pools.org
 roam/design/star-server/STAR-SERVER-051-observability-correlation-audit-contract.org
 roam/design/star-server/STAR-SERVER-052-end-to-end-idempotency-duplicate-suppression.org
 roam/design/star-server/STAR-SERVER-053-public-contract-package-api-doc-coherence.org
-roam/design/star-server/STAR-SERVER-059-generic-target-create-v1.org
 roam/design/star-server/STAR-SERVER-060-strict-json-http-boundary.org
+roam/design/star-server/STAR-SERVER-061-sento-total-concurrency-accounting.org
 roam/design/starintel-discord-tool/STAR-DISCORD-002-operations-interface-architecture.org
 roam/implement/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
@@ -359,6 +357,8 @@ roam/research/star-server/STAR-RESEARCH-053-end-to-end-idempotency-duplicate-sup
 roam/research/star-server/STAR-RESEARCH-054-public-contract-package-api-doc-coherence.org
 roam/research/star-server/STAR-RESEARCH-059-generic-target-create-v1.org
 roam/research/star-server/STAR-RESEARCH-060-strict-json-http-boundary.org
+roam/research/star-server/STAR-RESEARCH-062-prolog-star-client-actor-runtime.org
+roam/research/star-server/STAR-RESEARCH-063-awesome-osint-research-backlog.org
 roam/research/starintel-discord-tool/STAR-DISCORD-RESEARCH-001-operations-interface.org
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-001-nonecap-hcaptcha-provider.org
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-002-nopecha-hcaptcha-provider.org
@@ -370,6 +370,7 @@ roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-007-captcha-broker-transpor
 roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-008-self-sourced-captcha-solver-stack.org
 roam/research/starintel-server/STAR-RESEARCH-061-identifier-normalization.org
 roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
+scripts/__pycache__/save-research.cpython-313.pyc
 scripts/build-research-pending.py
 scripts/install-agent-zero.sh
 scripts/list-unreviewed-research.py
@@ -384,6 +385,7 @@ scripts/verify_research_approval_history.py
 skills/save-research/SKILL.md
 tests/test_canonical_document_ids.py
 tests/test_research_approval_history.py
+tests/test_research_approval_history_external_base_repair.py
 tests/test_research_approval_migration.py
 tests/test_research_pending.py
 tests/test_research_persistence_contract.py
@@ -405,6 +407,7 @@ tools/generate-government-jurisdiction-todos.py
 .github/workflows/star-lang-constructors.yml
 .github/workflows/star-lang-dispatch-idempotency-identity.yml
 .github/workflows/star-lang-loader.yml
+scripts/__pycache__/save-research.cpython-313.pyc
 scripts/build-research-pending.py
 scripts/install-agent-zero.sh
 scripts/list-unreviewed-research.py
@@ -418,6 +421,7 @@ scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
 tests/test_canonical_document_ids.py
 tests/test_research_approval_history.py
+tests/test_research_approval_history_external_base_repair.py
 tests/test_research_approval_migration.py
 tests/test_research_pending.py
 tests/test_research_persistence_contract.py

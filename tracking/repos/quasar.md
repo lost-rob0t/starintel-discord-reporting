@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-09T00:17:59Z`
+- generated: `2026-09-09T07:25:09Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`44f977cdecb91d78cd77e35cb287503c135dee50`](https://github.com/lost-rob0t/quasar/commit/44f977cdecb91d78cd77e35cb287503c135dee50)
@@ -69,10 +69,6 @@
 2026-08-27 15cda7cbcc3f1427ffb1e6c95bd0f35111158ccf fix: preflight native runtime before dev startup
 2026-08-27 c9e673b949f43b8134b9203d82fe32470b0046a1 test: add native runtime preflight
 2026-08-26 9311c9cc26d6c15b6625b814452072bb4e7513ba RAGE #61: filesystem Auto-Dig persistence and initfile config (#62)
-2026-08-26 c1e5439b4ae84af2ba069c4b3bd363e78aef702d RAGE #52: carry delegated principal through live WebSocket dispatch (#53)
-2026-08-26 3acef088009137a737647b79c404dde615b96c1d RAGE #50: delegated Auto-Dig user session authority (#51)
-2026-08-26 aa33622089b7a09745ec41f049c3e03ec3280cd1 Merge pull request #43 from lost-rob0t/rage/41-autodig-lifecycle
-2026-08-26 e0e662be968568adbe0f9a22b00b417c92db9ad7 Merge pull request #47 from lost-rob0t/main
 ```
 
 ## Repository paths changed, last 14 days
@@ -82,18 +78,11 @@
 .github/workflows/gpu-benchmark.yml
 README.md
 control-plane/src/autodig-persistence-bridge.lisp
-control-plane/src/autodig-principal-isolation.lisp
 control-plane/src/autodig-store.lisp
-control-plane/src/autodig-websocket-session.lisp
-control-plane/src/command-authority-context.lisp
 control-plane/src/config.lisp
 control-plane/src/configured-main.lisp
-control-plane/src/debug-logging.lisp
-control-plane/src/websocket-server.lisp
 control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp
-control-plane/tests/autodig-principal-isolation-tests.lisp
-control-plane/tests/autodig-websocket-auth-tests.lisp
 docs/CONFIGURATION.md
 example_configs/init.lisp
 flake.lock
@@ -133,8 +122,6 @@ systems/quasar-web.asd
 .github/workflows/gpu-benchmark.yml
 control-plane/tests/autodig-persistence-adversarial-tests.lisp
 control-plane/tests/autodig-persistence-tests.lisp
-control-plane/tests/autodig-principal-isolation-tests.lisp
-control-plane/tests/autodig-websocket-auth-tests.lisp
 flake.nix
 frontend/scripts/benchmark-graph-renderer.mjs
 scripts/bootstrap-lisp-deps

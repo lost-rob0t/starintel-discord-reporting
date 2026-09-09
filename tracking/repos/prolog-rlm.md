@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-09T00:18:04Z`
+- generated: `2026-09-09T07:25:18Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -222,17 +222,6 @@
 2026-08-26 a11d6b0abeda243b67a0aca3ee75ad3f4c17cb68 docs: define numeric tool schema bounds
 2026-08-26 330f185cd88385babd3aeafda4629bfe648a3336 fix: enforce numeric tool schema bounds
 2026-08-26 989a5b3eee49568ae26967be7d4829d716d41bad test: pin numeric schema bound contract
-2026-08-26 267697bef10a3fffff7c093e1435ece770e7444b docs: reconcile AgentProlog compiler readiness
-2026-08-26 ebe0fdf72abf4dd9b4562138434e13c56684baea docs: define prompt compiler visibility contract
-2026-08-26 302e1bf4e6df3f2d02105558f4a0ecb0ad86148a docs: document compiler-owned tool visibility
-2026-08-25 72674314558388f198014c8194450f6675020611 test: assert compiled planner tool projection
-2026-08-25 333e6ca839c3048aef964ca939c2f5c37c9ce068 feat: compile root planner tool projection
-2026-08-25 f03a57fd1e3cb8daf5e84b894f6e57a8943595cb test: pin invalid prompt compile mode contract
-2026-08-25 a6b00bb4e28bff253fb01d500cb83225ff4e6be9 test: separate compiled and all-tools visibility contracts
-2026-08-25 24cc8053e2b5fb7be1d265dc68a9dea9c782838f chore: remove temporary #176 realization runner
-2026-08-25 4bda83043add14764b40c0caa26ce2f6a9a5d9ef chore: realize #176 compiler projection slice
-2026-08-25 575fdbfa68b2fd4189e65ba72d44451abcb5da57 test: preserve expected failure binding
-2026-08-25 5e7623d8dd55f00550afbde663a8caa17d27b02f test: capture root planner projection defect
 ```
 
 ## Repository paths changed, last 14 days
@@ -244,7 +233,6 @@
 .github/workflows/nix.yml
 .github/workflows/pack-install.yml
 .github/workflows/paid-openrouter.yml
-.github/workflows/rage-176-realize-once.yml
 .github/workflows/tree-sitter.yml
 .opencode/skills/debug-io/SKILL.md
 .prolog/.gitignore
@@ -399,7 +387,6 @@ test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
-test/rlm_completion_tool_visibility_test.pl
 test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
@@ -455,7 +442,6 @@ test/support/rlm_delegation_runtime_cases.pl
 .github/workflows/nix.yml
 .github/workflows/pack-install.yml
 .github/workflows/paid-openrouter.yml
-.github/workflows/rage-176-realize-once.yml
 .github/workflows/tree-sitter.yml
 flake.nix
 scripts/build-tree-sitter-test-grammars.sh
@@ -486,7 +472,6 @@ test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
-test/rlm_completion_tool_visibility_test.pl
 test/rlm_context_mount_test.pl
 test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
