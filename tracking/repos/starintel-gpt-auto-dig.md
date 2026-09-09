@@ -1,15 +1,45 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-09T07:25:05Z`
+- generated: `2026-09-09T12:59:20Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`99f00164614a6f8304411fed1ee839727fec2893`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/99f00164614a6f8304411fed1ee839727fec2893)
-- head date: `2026-09-09T03:05:55-04:00`
-- head subject: research(area-code-hunt): shard C 512 515 518 current-base replay
+- head: [`420db3c5649a03cd559be3760c6de6033ab6d093`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/420db3c5649a03cd559be3760c6de6033ab6d093)
+- head date: `2026-09-09T08:35:50-04:00`
+- head subject: research(area-code-hunt): shard C 641 650 656 current-base replay (#2525)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-09 420db3c5649a03cd559be3760c6de6033ab6d093 research(area-code-hunt): shard C 641 650 656 current-base replay (#2525)
+2026-09-09 718f32c149b6bfabb957dae6c10202bb886a3021 research(area-code-hunt): shard-A pass 19 current-base replay (#2524)
+2026-09-09 f35409f344810547b3b4d58b56ce7a239d27b514 research(area-code-hunt): replay shard-A pass 19 on current main
+2026-09-09 e953629b7c26d99877f665b016ac826a7ac17d3c research(chapter-expansion): expand ABCF child endpoints and Philly affiliate (#2521)
+2026-09-09 e7358eca5fb8be412f15b335ceac1e9b98afb819 research(chapter-expansion): replay ABCF child affiliate pass on current main
+2026-09-09 5be7ddf62eca660e657576337811e3cf2f40da1e research(person-expander): expand public people from local groups pass 1 (#2516)
+2026-09-09 c5d4bb8f9b3e67e09ebebfc3ed68d58b2ce8b229 Merge pull request #2513 from lost-rob0t/auto-dig/area-code-shard-a-567-570-573-582-20260909-pass18-current-base
+2026-09-09 9d5749322725c0905876bfda803e879cb4669464 research(area-code-hunt): shard B 661 667 679 current-base replay (#2512)
+2026-09-09 884ad5f548a7da2a9e147f88b56c78e4bf01e176 research(area-code-hunt): shard A 567 570 573 582 current-base replay
+2026-09-09 dcabab4050eed56f2af3cf26607ab0e11ffff1db research(area-code-hunt): shard C 623 626 629 current-base replay (#2510)
+2026-09-09 ef59bdcb4cd5c572ffc6917ab8a7aba33755270f Merge pull request #2505 from lost-rob0t/auto-dig/area-code-shard-a-534-540-561-564-20260909-pass17-replay-current-main2
+2026-09-09 2c3cdd308fdc57489edebf46be9764b9007e6d29 research(area-code-hunt): replay shard A 534 540 561 564 on current main 2
+2026-09-09 f25920804ca9a3eda22748eb5fcd9ea3786fbf77 research(area-code-hunt): shard B 631 640 646 (#2501)
+2026-09-09 c4a7eb6fa913972d72db50168c0f392dd514c739 research(chapter-expansion): replay WRI network on current main (#2498)
+2026-09-09 b62e2c51502eac3b18e6fd3edc8ee6203168dd87 research(area-code-hunt): shard C 608 617 620 (#2495)
+2026-09-09 aa3479dd92a4ecc3939161946f4a7bbbd998e74e research(chapter-expansion): replay ENAAT member network on current main (#2492)
+2026-09-09 f6d161e701e02cb39fa35fe0720cd7a101ef1bc1 research(area-code-hunt): shard C 575 602 605 current-base replay (#2490)
+2026-09-09 41dacd87000997b8509c9792d87bffdab99d3b87 research(area-code-hunt): shard B 616 619 628 (#2488)
+2026-09-09 ece42c63863ff277b2d2c3bf8178f8fa328156ca research(area-code-hunt): shard A 510 513 516 531 (#2486)
+2026-09-09 76dc4bf51ea28ebd4cc6ca084b71dec73b952c99 research(area-code-hunt): record shard A pass 16 yield
+2026-09-09 7588ecd63a2c6d3baaf23d94f632aea02d37179c research(area-code-hunt): advance shard A durable coverage to 534
+2026-09-09 6efa296b886b48b8fe837cfa6899a33f57a582aa research(area-code-hunt): materialize shard A 510 513 516 531
+2026-09-09 ce531c15cad0eae87357c3c5a37a06d61cee848c research(auto-dig): expand Stop ReArm Europe coordination roster (#2485)
+2026-09-09 723a3a0fac8e990cffe08a225c16a10e18794217 research(area-code-hunt): shard C 557 563 572 (#2482)
+2026-09-09 9ac280f15a0b120f9f942efa20415ed99deabcd4 research(area-code-hunt): shard B 601 607 610 (#2481)
+2026-09-09 410d988c4e6b0ed0191622389f2e4a46fb37f4ee Merge pull request #2480 from lost-rob0t/auto-dig/area-code-a-483-501-504-507-20260909-pass15-replay-0401
+2026-09-09 d83889327a370525564d63e45475733954c16838 research(area-code-hunt): replay shard A 483 501 504 507 on current main
+2026-09-09 29a43bda6102bdeca02a392b2fec0ed270130b71 research(chapter-expansion): expand WBW into Stop ReArm Europe coalition (#2478)
+2026-09-09 21c87da6e98b88661f6e5924b7dcf5364ce132a8 research(area-code-hunt): shard C 530 539 551 (#2476)
+2026-09-09 7a764311c79ff84c7d24f03e6c8f512d6dd94d84 research(area-code-hunt): shard B 574 580 586 (#2475)
 2026-09-09 99f00164614a6f8304411fed1ee839727fec2893 research(area-code-hunt): shard C 512 515 518 current-base replay
 2026-09-09 d0fe0beee7ef7833309b00bc9c3f540561a2a626 research: replay WBW Europe Berlin Wanfried network on latest main (#2471)
 2026-09-09 a62b034b1dfa7ded19019f9e2b519d6c267bc9c1 research(area-code-hunt): shard B 559 562 571 (#2470)
@@ -218,7 +248,6 @@
 2026-08-27 fce24df9f13a23ddf25e1a7f9235f839ed1b2046 test: lock latest RLM feature contract
 2026-08-27 aa28f12911c9f24e806bc5f6ac5897275a7e03a1 agent: use native latest Prolog-RLM planner path
 2026-08-27 4e9873c2f13a7aa30bcca46f0e1df712d3ab2cca Merge pull request #2287 from lost-rob0t/auto-dig-prolog/2026-08-24-bootstrap
-2026-08-26 b79a0ec9e8b289c4e6eaa7eaa7e0158eb43c7d5e test: avoid unbound dict projection in MCP catalog assertion
 ```
 
 ## Repository paths changed, last 14 days
@@ -252,7 +281,6 @@ agents/coverage_backlog.pl
 agents/starintel_corpus_mcp_server.py
 agents/test_auto_dig_deadline_synthesis_hotfix.pl
 agents/test_auto_dig_failure_report.py
-agents/test_auto_dig_mcp_runner.pl
 agents/test_auto_dig_mcp_tools.pl
 agents/test_auto_dig_model_router.pl
 agents/test_auto_dig_native_cutoff_hotfix.pl
@@ -368,6 +396,8 @@ digs/anarchist-violence/2026-09-08-public-comms-pass7/starintel-documents-05.jso
 digs/anarchist-violence/2026-09-08-public-communications/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-08-victoria-mutual-aid-expansion/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-abcf-child-affiliate-expansion-pass-1/expansion-state.md
+digs/anarchist-violence/2026-09-09-abcf-child-affiliate-expansion-pass-1/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-11/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-12/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-13/starintel-documents-orgs.jsonl
@@ -376,6 +406,21 @@ digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-13/starintel-documents
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-13/starintel-documents-sources.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-13/starintel-documents-targets.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-14/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-15/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-16/report.md
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-16/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-17/report.md
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-17/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-18/report.md
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-18/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-18/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-18/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/report.md
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-001.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-002.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-003.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-004.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-a-pass-19/starintel-documents-part-005.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-13/starintel-documents-area-relations.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-13/starintel-documents-orgs.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-13/starintel-documents-person-relations.jsonl
@@ -411,6 +456,36 @@ digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-17/starintel-research-
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-17/starintel-sources-part-001.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-17/starintel-sources-part-002.jsonl
 digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-17/starintel-targets-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-18/starintel-orgs.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-18/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-18/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-18/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-18/starintel-targets-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-19/starintel-orgs.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-19/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-19/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-19/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-19/starintel-targets-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-20/starintel-orgs.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-20/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-20/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-20/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-20/starintel-targets-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-21/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-21/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-21/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-21/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-21/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-22/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-22/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-22/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-22/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-22/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-09-area-code-shard-c-pass-23/starintel-sources.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-a-309-318/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-a-321-330/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-b-415-424-430/starintel-documents.jsonl
@@ -429,6 +504,27 @@ digs/anarchist-violence/2026-09-09-area-codes-b-517-520-541/starintel-people.jso
 digs/anarchist-violence/2026-09-09-area-codes-b-559-562-571/report.md
 digs/anarchist-violence/2026-09-09-area-codes-b-559-562-571/starintel-documents-parent.jsonl
 digs/anarchist-violence/2026-09-09-area-codes-b-559-562-571/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-codes-b-574-580-586/report.md
+digs/anarchist-violence/2026-09-09-area-codes-b-574-580-586/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-codes-b-601-607-610/report.md
+digs/anarchist-violence/2026-09-09-area-codes-b-601-607-610/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-codes-b-616-619-628/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-codes-b-631-640-646/report.md
+digs/anarchist-violence/2026-09-09-area-codes-b-631-640-646/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-area-codes-b-661-667-679/report.md
+digs/anarchist-violence/2026-09-09-area-codes-b-661-667-679/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/entities.jsonl
+digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/expansion-state.md
+digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/relations.jsonl
+digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/research-pass.jsonl
+digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/sources.jsonl
+digs/anarchist-violence/2026-09-09-person-expander-local-groups-pass-1/report.md
+digs/anarchist-violence/2026-09-09-person-expander-local-groups-pass-1/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-stop-rearm-coordination-expansion-pass6/entities.jsonl
+digs/anarchist-violence/2026-09-09-stop-rearm-coordination-expansion-pass6/expansion-state.md
+digs/anarchist-violence/2026-09-09-stop-rearm-coordination-expansion-pass6/relations.jsonl
+digs/anarchist-violence/2026-09-09-stop-rearm-coordination-expansion-pass6/research-pass.jsonl
+digs/anarchist-violence/2026-09-09-stop-rearm-coordination-expansion-pass6/sources.jsonl
 digs/anarchist-violence/2026-09-09-syracuse-chapter-people-expansion/entities.jsonl
 digs/anarchist-violence/2026-09-09-syracuse-chapter-people-expansion/expansion-state.md
 digs/anarchist-violence/2026-09-09-syracuse-chapter-people-expansion/relations.jsonl
@@ -459,6 +555,16 @@ digs/anarchist-violence/2026-09-09-wbw-europe-chapter-expansion-pass3/expansion-
 digs/anarchist-violence/2026-09-09-wbw-europe-chapter-expansion-pass3/relations.jsonl
 digs/anarchist-violence/2026-09-09-wbw-europe-chapter-expansion-pass3/research-pass.jsonl
 digs/anarchist-violence/2026-09-09-wbw-europe-chapter-expansion-pass3/sources.jsonl
+digs/anarchist-violence/2026-09-09-wbw-stop-rearm-coalition-expansion-pass5/entities.jsonl
+digs/anarchist-violence/2026-09-09-wbw-stop-rearm-coalition-expansion-pass5/expansion-state.md
+digs/anarchist-violence/2026-09-09-wbw-stop-rearm-coalition-expansion-pass5/relations.jsonl
+digs/anarchist-violence/2026-09-09-wbw-stop-rearm-coalition-expansion-pass5/research-pass.jsonl
+digs/anarchist-violence/2026-09-09-wbw-stop-rearm-coalition-expansion-pass5/sources.jsonl
+digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/entities.jsonl
+digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/expansion-state.md
+digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/relations.jsonl
+digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/research-pass.jsonl
+digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/sources.jsonl
 digs/anarchist-violence/area-code-coverage-a.json
 digs/anarchist-violence/area-code-hunt-shard-b-state.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json

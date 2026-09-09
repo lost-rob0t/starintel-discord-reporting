@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-09T07:25:09Z`
+- generated: `2026-09-09T12:59:24Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`44f977cdecb91d78cd77e35cb287503c135dee50`](https://github.com/lost-rob0t/quasar/commit/44f977cdecb91d78cd77e35cb287503c135dee50)
@@ -68,7 +68,6 @@
 2026-08-27 1095da21f5507ad52bc7967aa0c6a3d29cdfc0b1 fix: cover all declared Nix runtime libraries
 2026-08-27 15cda7cbcc3f1427ffb1e6c95bd0f35111158ccf fix: preflight native runtime before dev startup
 2026-08-27 c9e673b949f43b8134b9203d82fe32470b0046a1 test: add native runtime preflight
-2026-08-26 9311c9cc26d6c15b6625b814452072bb4e7513ba RAGE #61: filesystem Auto-Dig persistence and initfile config (#62)
 ```
 
 ## Repository paths changed, last 14 days
@@ -77,14 +76,7 @@
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
 README.md
-control-plane/src/autodig-persistence-bridge.lisp
-control-plane/src/autodig-store.lisp
-control-plane/src/config.lisp
 control-plane/src/configured-main.lisp
-control-plane/tests/autodig-persistence-adversarial-tests.lisp
-control-plane/tests/autodig-persistence-tests.lisp
-docs/CONFIGURATION.md
-example_configs/init.lisp
 flake.lock
 flake.nix
 frontend/benchmarks/graph-renderer.html
@@ -110,9 +102,6 @@ scripts/run-production
 scripts/smoke-production.mjs
 scripts/smoke-startup.mjs
 scripts/test-lisp
-systems/quasar-control.asd
-systems/quasar-tests.asd
-systems/quasar-web.asd
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -120,8 +109,6 @@ systems/quasar-web.asd
 ```text
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
-control-plane/tests/autodig-persistence-adversarial-tests.lisp
-control-plane/tests/autodig-persistence-tests.lisp
 flake.nix
 frontend/scripts/benchmark-graph-renderer.mjs
 scripts/bootstrap-lisp-deps
@@ -133,7 +120,4 @@ scripts/run-production
 scripts/smoke-production.mjs
 scripts/smoke-startup.mjs
 scripts/test-lisp
-systems/quasar-control.asd
-systems/quasar-tests.asd
-systems/quasar-web.asd
 ```

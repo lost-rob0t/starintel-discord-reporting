@@ -1,15 +1,20 @@
 # lost-rob0t/star-cl
 
-- generated: `2026-09-09T07:25:25Z`
+- generated: `2026-09-09T12:59:43Z`
 - canonical branch: `master`
 - changelog eligible: `no`
-- head: [`138e3ff3334954491db862ab583058058e35e64d`](https://github.com/lost-rob0t/star-cl/commit/138e3ff3334954491db862ab583058058e35e64d)
-- head date: `2026-09-08T22:01:55-04:00`
-- head subject: Merge pull request #12 from lost-rob0t/feat/operation-dtype-151
+- head: [`9ce8f88f57fb7ac143851f7fd2c75dccd6a40cc3`](https://github.com/lost-rob0t/star-cl/commit/9ce8f88f57fb7ac143851f7fd2c75dccd6a40cc3)
+- head date: `2026-09-09T08:12:52-04:00`
+- head subject: Merge pull request #13 from lost-rob0t/fix/canonical-operation-v091-sync
 
 ## Git log, last 14 days
 
 ```text
+2026-09-09 9ce8f88f57fb7ac143851f7fd2c75dccd6a40cc3 Merge pull request #13 from lost-rob0t/fix/canonical-operation-v091-sync
+2026-09-09 149309ed53f1ed1eefee4535545d438eb6afe1d3 ci: remove one-shot schema sync workflow
+2026-09-09 7d6780dc3a90602e86609cc95b557c7eebd661f0 ci: prove vendored schema matches canonical lock
+2026-09-09 9d8b137e2a11206bb10fd3506db25ca910675750 fix(schema): vendor exact pinned 0.9.1 artifacts
+2026-09-09 473633b3cd32c935df3a128a13767e67d21b2088 ci: sync pinned canonical schema artifacts
 2026-09-08 138e3ff3334954491db862ab583058058e35e64d Merge pull request #12 from lost-rob0t/feat/operation-dtype-151
 2026-09-08 63bd1734497912980562bd01d9410ffd81cf0ac1 chore(schema): pin merged operation 0.9.1 canonical commit
 2026-09-08 a64d040e86c838071da106cea6f3fe448c6882bb chore(schema): repin operation 0.9.1 canonical head
@@ -31,7 +36,11 @@
 
 ```text
 .github/workflows/conformance.yml
+.github/workflows/sync-pinned-schema-once.yml
 schema/starintel-schema.lock.json
+schemas/starintel-doc-v0.9.0.expansion.json
+schemas/starintel-doc-v0.9.0.manifest.json
+schemas/starintel-doc-v0.9.0.schema.json
 src/exports-v09.lisp
 src/operations.lisp
 src/schema-org.lisp
@@ -45,6 +54,7 @@ tests/test_v09_contract.py
 
 ```text
 .github/workflows/conformance.yml
+.github/workflows/sync-pinned-schema-once.yml
 src/starintel.asd
 starintel-test.asd
 t/operations-test.lisp
