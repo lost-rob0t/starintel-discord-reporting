@@ -1,15 +1,22 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-10T16:27:25Z`
+- generated: `2026-09-10T20:54:52Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`09cf220c377d028cab3c6b00f4836dfc7b3a67e6`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/09cf220c377d028cab3c6b00f4836dfc7b3a67e6)
-- head date: `2026-09-10T12:07:47-04:00`
-- head subject: Merge pull request #2590 from lost-rob0t/auto-dig/election-protection-coalition-pass-29
+- head: [`b369e0ae780f49c478aacba6c68048c11bef4fd3`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/b369e0ae780f49c478aacba6c68048c11bef4fd3)
+- head date: `2026-09-10T16:40:00-04:00`
+- head subject: research(area-code-hunt): shard C 707 713 719 (#2596)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 b369e0ae780f49c478aacba6c68048c11bef4fd3 research(area-code-hunt): shard C 707 713 719 (#2596)
+2026-09-10 60fd01b8d5d4c518735d8ab440030f264fc953ee Merge pull request #2595 from lost-rob0t/auto-dig/nationbuilder-organizing-platform-pass-33
+2026-09-10 903b3136a4b45faa7f0a0fa1479ad44f1771f42a Auto-Dig pass 33: add NationBuilder bounded-pass report
+2026-09-10 1bcfc108978ebf711d29dc3a2878bea5051f7a4a Auto-Dig pass 33: add NationBuilder integration relations B and recursive target
+2026-09-10 eab8deb47c6b0a549cec10279950bf3e1b515023 Auto-Dig pass 33: add NationBuilder integration relations A
+2026-09-10 90b69cd2e94f0963059c9b1f1a9b47c8753098f8 Auto-Dig pass 33: add NationBuilder products and public professional people
+2026-09-10 231663765fb29daa3233d999df2f76a42e9e3fd9 Auto-Dig pass 33: add NationBuilder source and organization packet
 2026-09-10 09cf220c377d028cab3c6b00f4836dfc7b3a67e6 Merge pull request #2590 from lost-rob0t/auto-dig/election-protection-coalition-pass-29
 2026-09-10 75a9d65576c54b97d72b10d2b4766027a314cf14 auto-dig: fix social account dtypes in pass 29
 2026-09-10 f580f4a58a6d56bc91a068d4e4bd4c9b36716a67 auto-dig: document election protection coalition pass 29
@@ -706,6 +713,11 @@ digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-32/starintel-documents
 digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-33/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-34/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-35/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-26/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-26/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-26/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-26/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-26/starintel-sources.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/report.md
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/report.md
@@ -724,6 +736,11 @@ digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/report
 digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-protection-coalition-pass-29/report.md
 digs/anarchist-violence/2026-09-10-election-protection-coalition-pass-29/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/report.md
+digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-entities.jsonl
+digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-relations-a.jsonl
+digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-relations-b.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json

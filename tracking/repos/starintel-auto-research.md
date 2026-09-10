@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-10T16:27:27Z`
+- generated: `2026-09-10T20:54:52Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47`](https://github.com/lost-rob0t/starintel-auto-research/commit/72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47)
-- head date: `2026-09-09T01:02:51Z`
-- head subject: fix: repair canonical-born approval provenance
+- head: [`c356475a38a0f205c5599c1674419f602068ea90`](https://github.com/lost-rob0t/starintel-auto-research/commit/c356475a38a0f205c5599c1674419f602068ea90)
+- head date: `2026-09-10T16:18:19-04:00`
+- head subject: research: add shared Prolog knowledge plane ARADR pass
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 c356475a38a0f205c5599c1674419f602068ea90 research: add shared Prolog knowledge plane ARADR pass
 2026-08-29 72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47 fix: repair canonical-born approval provenance
 2026-09-09 1d14b9867d660cc972ce8ccc7ad55cf28c7661b5 fix: repair remaining doc-link and approval-metadata failures (Org-roam Pages, Kindle EPUB)
 2026-09-09 73aea680b84a430866dbf8049006331acb9a23ce fix: renumber duplicate canonical document IDs (STAR-SERVER-050 sento, STAR-RESEARCH-002 osint backlog)
@@ -143,6 +144,7 @@ roam/design/auto-research/STAR-RESEARCH-PIPELINE-005-starintel-meta-mcp-executio
 roam/design/auto-research/government-data-protocol-compatibility-redirect.org
 roam/design/cl-gserver/SENTO-000-managed-component-runtime.org
 roam/design/government-data/STAR-GOVDATA-DESIGN-004-franklin-county-starlang-actor-system.org
+roam/design/star-kb/STAR-KB-001-canonical-knowledge-authoring-and-query-plane.org
 roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/design/star-lang/STAR-LANG-002-durable-actor-runtime.org
 roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org
@@ -180,6 +182,7 @@ roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/auto-research/STAR-RESEARCH-PIPELINE-INDEX-000-adaptive-research.org
 roam/indexes/drunk-drivers/DRUNK-DRIVER-INDEX-000-national-crash-identity-resolution.org
+roam/indexes/star-kb/STAR-KB-INDEX-000-prolog-knowledge-system.org
 roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
@@ -227,6 +230,7 @@ roam/research/auto-research/STAR-MCP-RESEARCH-001-authoritative-platform-interfa
 roam/research/cl-gserver/SENTO-ZMQ-RESEARCH-000-zeromq-transport-analysis.org
 roam/research/cl-gserver/SENTO-ZMQ-RESEARCH-001-pzmq-binding-audit.org
 roam/research/drunk-drivers/DRUNK-DRIVER-RESEARCH-000-national-fars-identity-resolution.org
+roam/research/star-kb/STAR-KB-RESEARCH-001-shared-prolog-knowledge-plane-and-dialect-enrichment.org
 roam/research/star-lang/STAR-LANG-RESEARCH-000-language-design-foundations.org
 roam/research/star-lang/STAR-LANG-RESEARCH-019-common-lisp-library-gap-analysis.org
 roam/research/star-lang/STAR-LANG-RESEARCH-020-hygienic-macro-expansion.org

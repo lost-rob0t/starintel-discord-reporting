@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-10T16:27:38Z`
+- generated: `2026-09-10T20:54:59Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -167,7 +167,6 @@
 2026-08-28 c5f0f2d596dfa58e603d10b478d88aed9109a49d docs(research): fold adversarial review into RLM-RESEARCH-027 and reconcile #288
 2026-08-28 8b00e9dfce1fb748a93d0232afa0cf880dac6192 docs(research): RLM-RESEARCH-027 spec/plan graph executor + #288 contract gate
 2026-08-28 9b90098e93c24190a1b0c55161b9102f6c9945ef docs(rage): open #288 spec/plan graph iteration log
-2026-08-27 7165680e31fa67053f19887026cd00e4e59ed0aa docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
 ```
 
 ## Repository paths changed, last 14 days
@@ -256,7 +255,6 @@ rage/97-query-capture-apis.org
 rage/97-query-capture-notes.org
 rage/97-query-capture-realize-prompt.md
 research/README.md
-research/RLM-RESEARCH-025-lem-ui.org
 research/RLM-RESEARCH-027-spec-plan-graph-executor.org
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
