@@ -1,15 +1,19 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-10T11:25:03Z`
+- generated: `2026-09-10T16:27:25Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`ac004a4bcc38b026cb69ee8f0c90b23cfa2027b0`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/ac004a4bcc38b026cb69ee8f0c90b23cfa2027b0)
-- head date: `2026-09-10T05:08:53-04:00`
-- head subject: Merge pull request #2583 from lost-rob0t/auto-dig/election-comms-mobilization-infrastructure-pass-22
+- head: [`09cf220c377d028cab3c6b00f4836dfc7b3a67e6`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/09cf220c377d028cab3c6b00f4836dfc7b3a67e6)
+- head date: `2026-09-10T12:07:47-04:00`
+- head subject: Merge pull request #2590 from lost-rob0t/auto-dig/election-protection-coalition-pass-29
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 09cf220c377d028cab3c6b00f4836dfc7b3a67e6 Merge pull request #2590 from lost-rob0t/auto-dig/election-protection-coalition-pass-29
+2026-09-10 75a9d65576c54b97d72b10d2b4766027a314cf14 auto-dig: fix social account dtypes in pass 29
+2026-09-10 f580f4a58a6d56bc91a068d4e4bd4c9b36716a67 auto-dig: document election protection coalition pass 29
+2026-09-10 0dd82006bd27036dc34448d91fe148095f9dd8f0 auto-dig: add election protection coalition pass 29
 2026-09-10 ac004a4bcc38b026cb69ee8f0c90b23cfa2027b0 Merge pull request #2583 from lost-rob0t/auto-dig/election-comms-mobilization-infrastructure-pass-22
 2026-09-10 0eaa21a4d3a6615987fff6ac1417f80a296df30d auto-dig: fix person schema fields in pass 22
 2026-09-10 a034b772f40994745bb3a835bc72955b8e230bad auto-dig: document mobilization infrastructure pass 22
@@ -326,52 +330,14 @@
 2026-08-29 d616cc4e431ba0c776962ed733b10aa62ae92e27 ci: pin latest Prolog-RLM direct runtime
 2026-08-29 b5e455358a2055670d4b0e96bbf6a4ab5ba0da7a test: cover direct-mode Auto-Dig runtime policy
 2026-08-29 1f8882388a4d80bf589c733df4a8c6a8c38024a5 fix: run Auto-Dig research through direct RLM mode
-2026-08-27 f9854092a34b60767e95a19ddea4332cdb6720eb Merge pull request #2301 from lost-rob0t/fix/auto-dig-rlm-observability-2026-08-27
-2026-08-27 b52b96140681b149170979010a6976ac7f317f91 Make emission scrubber progress-safe on SWI 9.0
-2026-08-27 c33a0b578dce1ebe81eed26037e8ae7b9f2dd5bb Fix UTC timestamp formatting on SWI 9.0
-2026-08-27 501c0a8be018a546a7869f337c4133af5d28fc6d Sanitize persisted RLM diagnostics before write
-2026-08-27 bfe97b0850ea9777fbeb7804625c065ce0a7ea8c Emit sanitized failures from actor workflow
-2026-08-27 5e0b760691b699c21a41dbd9e4067e8f1b0506fb Sanitize live diagnostics before emission
-2026-08-27 3c8654c62edb0ceb7399626aae1ff54212dee409 Inline failure reporting with actor emission path
-2026-08-27 cbd4e39aacf83fb73862d6cff32ef8bd8ec913ee Route MCP diagnostics through safe emitter
-2026-08-27 ed6f4fd4281d0d670fb935351f05512bf3ad7543 Route RLM diagnostics through safe emitter
-2026-08-27 52fb094fa289c91e34641065aed7f7c4d7a9bee2 Sanitize Auto-Dig logs at emission boundary
-2026-08-27 34dedda1042818f8830d3ba0108006d59ab834ee Remove post-hoc redaction gate test
-2026-08-27 edab8674ceb1b869e7311859438aa8713f5b0ea9 Remove post-hoc redaction gate
-2026-08-27 d31fdde4d49c7888faa19edbc549bfbb6fe3d3b0 Remove accidental marker
-2026-08-27 7d4f0ac259871ded1493fab09609b90e2b956343 No-op marker
-2026-08-27 26c4591e06cac6d39645f6ed8c84200542a5a41c Add failure report redaction CI gate
-2026-08-27 105401f97cf1261a5409e53a5cfdac27abdfabb2 Report sanitized actor failures back to issues
-2026-08-27 d81155ca5bb82bd209ede49ea8e16005ca3001ae Stream MCP lifecycle logs to Actions output
-2026-08-27 304b3f1211da784d81a7140b8065a193c9823e4c Stream RLM phase logs to Actions output
-2026-08-27 48464dd78ce302fd1279618ff4fcabb9b78e0af6 Log MCP lifecycle phases safely
-2026-08-27 cc10f4e477efd7c444b9cef5552be714b3717a31 Test Auto-Dig failure report redaction
-2026-08-27 4456c5b6a107098cad5fb6a7fd8110253d409996 Add secret-safe Auto-Dig failure reporter
-2026-08-27 bda20bf63fcc52076d584efb6ab7b8e408b5588d Surface structured RLM failures in actor logs
-2026-08-27 54dcf62874b96da458ee1d36ab300f8fe3bfee49 Lock Auto-Dig RLM budget at 50k tokens
-2026-08-27 5f0cf64cfd10c3725dfcee7c21cd7a82ac49dd3c Raise Auto-Dig RLM token budget to 50k
-2026-08-27 8e6c735465340a9660a649576267e08efe609992 Merge pull request #2298 from lost-rob0t/auto-dig-prolog/2026-08-27-latest-rlm
-2026-08-27 632efcc6a71022b703a8a09c5e792e5045f5bbea Document live Brave and Fetch MCP research
-2026-08-27 0d6477b1eca85e02a8c20950a20c85c84ab148fa Enable Brave MCP in live Auto-Dig research
-2026-08-27 c68ee2208a435b9f031b90edcdb07e4780fc9e6d Test MCP projection in native RLM runner
-2026-08-27 1b16ed332eb9f41dcda409937a7803fd418ae2b3 Wire Brave and Fetch MCP into native RLM runner
-2026-08-27 d486cfa37df22d6fe7d8ae0f546922bb2167c5ff fix: keep Auto-Dig RLM query valid Prolog
-2026-08-27 1321cc05aafdd85e28136b0c98f7e66ab292c3f8 docs: describe current RLM actor features and secrets
-2026-08-27 41a27a27aef94117243b8fe4575dfa7b54bd4f35 agent: run current Prolog-RLM native planner features
-2026-08-27 68d2d32cd1620a9d299a1631798031f58aa3a8bc ci: gate Auto-Dig against current Prolog-RLM
-2026-08-27 fce24df9f13a23ddf25e1a7f9235f839ed1b2046 test: lock latest RLM feature contract
-2026-08-27 aa28f12911c9f24e806bc5f6ac5897275a7e03a1 agent: use native latest Prolog-RLM planner path
-2026-08-27 4e9873c2f13a7aa30bcca46f0e1df712d3ab2cca Merge pull request #2287 from lost-rob0t/auto-dig-prolog/2026-08-24-bootstrap
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .forgejo/workflows/import-starintel-documents.yml
-.github/workflows/auto-dig-failure-report-check.yml
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
-.github/workflows/auto-dig-prolog-failure-report.yml
 .github/workflows/import-starintel-documents.yml
 .github/workflows/operation-canonical-091-sync.yml
 .github/workflows/operation-release-sync.yml
@@ -381,21 +347,16 @@
 .github/workflows/validate-db.yml
 .gitignore
 AGENTS.md
-agents/.keep-observability
 agents/README.md
-agents/auto_dig_failure_report.py
-agents/auto_dig_mcp_runner.pl
 agents/auto_dig_mcp_tools.pl
 agents/auto_dig_model_router.pl
 agents/auto_dig_prolog_actor.pl
 agents/auto_dig_prolog_state.schema.json
 agents/auto_dig_rlm_runner.pl
-agents/auto_dig_safe_log.pl
 agents/auto_dig_service.py
 agents/coverage_backlog.pl
 agents/starintel_corpus_mcp_server.py
 agents/test_auto_dig_deadline_synthesis_hotfix.pl
-agents/test_auto_dig_failure_report.py
 agents/test_auto_dig_mcp_tools.pl
 agents/test_auto_dig_model_router.pl
 agents/test_auto_dig_native_cutoff_hotfix.pl
@@ -761,6 +722,8 @@ digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/repor
 digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/report.md
 digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-protection-coalition-pass-29/report.md
+digs/anarchist-violence/2026-09-10-election-protection-coalition-pass-29/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json
@@ -801,10 +764,8 @@ tests/test_starintel_corpus_mcp_server.py
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/auto-dig-failure-report-check.yml
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
-.github/workflows/auto-dig-prolog-failure-report.yml
 .github/workflows/import-starintel-documents.yml
 .github/workflows/operation-canonical-091-sync.yml
 .github/workflows/operation-release-sync.yml

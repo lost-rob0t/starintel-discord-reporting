@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-10T11:25:17Z`
+- generated: `2026-09-10T16:27:38Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -168,18 +168,6 @@
 2026-08-28 8b00e9dfce1fb748a93d0232afa0cf880dac6192 docs(research): RLM-RESEARCH-027 spec/plan graph executor + #288 contract gate
 2026-08-28 9b90098e93c24190a1b0c55161b9102f6c9945ef docs(rage): open #288 spec/plan graph iteration log
 2026-08-27 7165680e31fa67053f19887026cd00e4e59ed0aa docs(research): approved RLM-RESEARCH-025-lem-ui [skip ci]
-2026-08-27 87189f7128bacfe97cd09874e958dd07e03322d3 fix: make durable mount recovery race safe
-2026-08-27 73ac81404aa1bd68cf1900a9121cfc733e3e621f fix: bind artifact value before mount projection
-2026-08-27 a9bb8379c17b03799723740102b4b01cfbb50b24 test: pin concurrent durable mount races
-2026-08-27 bfbf44e9e48ac7ce9bd03b2666f7e80e4b1d6e14 test: pin artifact mount public projection ordering
-2026-08-27 9c30f9e427dabac71f5130b3a002492032d73303 fix: decode canonical persisted mount sources
-2026-08-27 a1424822613894574bb1848f73ebc6eed011f452 test: pin canonical persisted mount rehydration
-2026-08-27 362f4faaa61a42e26040fe9ec90712af2c605901 test: expose durable mount failure stage
-2026-08-27 751817f181676ce1ad1f36d71c0c39e1ec0e8b8f fix: partition persistent mount cache by artifact store
-2026-08-27 efa0d22a1c5764b1e3b1a5460bb6ee53a2e492f0 test: remove unregistered duplicate mount suite
-2026-08-27 26b01404f025446be181e9f086cf30418501c51a test: reproduce persistent mount cross-store cache leak
-2026-08-27 2bcd5ffae692211e918e7355a8a5ff2cfadb38c1 test: pin cross-store context mount cache isolation
-2026-08-27 7eb36ea9aada51ec6490c1219c434e654b8aeeba recover durable context mount baseline from #228
 ```
 
 ## Repository paths changed, last 14 days
@@ -236,7 +224,6 @@ prolog/rlm_chain.pl
 prolog/rlm_completion.pl
 prolog/rlm_completion_async.pl
 prolog/rlm_context_budget.pl
-prolog/rlm_context_mount.pl
 prolog/rlm_conversation.pl
 prolog/rlm_conversation_persist.pl
 prolog/rlm_direct.pl
@@ -303,8 +290,6 @@ test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
-test/rlm_context_mount_test.pl
-test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
@@ -371,8 +356,6 @@ test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
-test/rlm_context_mount_test.pl
-test/rlm_context_test.pl
 test/rlm_conversation_cold_test.pl
 test/rlm_conversation_runtime_test.pl
 test/rlm_conversation_scale_test.pl
