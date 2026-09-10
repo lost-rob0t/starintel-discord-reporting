@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-10T04:54:33Z`
+- generated: `2026-09-10T11:25:07Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`44f977cdecb91d78cd77e35cb287503c135dee50`](https://github.com/lost-rob0t/quasar/commit/44f977cdecb91d78cd77e35cb287503c135dee50)
@@ -58,16 +58,6 @@
 2026-08-31 3ec774dad4d26f32f11f843d801a6f8c3648fa93 graph: add GPU renderer capability selection
 2026-08-31 80553699fa6c9dec227d4ddff629c3ab3a8b8010 chore: remove accidental placeholder
 2026-08-31 f0e96b5437ed5fa071a9255988d405322c58fe91 x
-2026-08-27 b608fd91379e35ff65ef71f34867050d2983c077 Merge pull request #66 from lost-rob0t/ci/exhaustive-runtime-startup-2026-08-27
-2026-08-27 b864b62ec90e122504e7c0eaeba502512c22a913 fix: enforce repository Nix runtime contract
-2026-08-27 11efe0254b2f0f2d332b66683ede20573433c940 ci: test Ubuntu and fresh Nix runtime startup paths
-2026-08-27 0f19e95d526d0f5e15fa697b80c33d080aca7a18 test: enforce Lisp and native runtime dependency contracts
-2026-08-27 90e493e228e3ca3be7fd1a282aa40b12409d5b6b build: align production Lisp and native runtime contracts
-2026-08-27 720a864a6367bbdb2d1f0a4751401517402bd419 test: fail startup smoke immediately on child exit
-2026-08-27 5de67530e97abd55386ec14bb8fd401338e0cbbf build: make Nix dev shell self-contained for bootstrap
-2026-08-27 1095da21f5507ad52bc7967aa0c6a3d29cdfc0b1 fix: cover all declared Nix runtime libraries
-2026-08-27 15cda7cbcc3f1427ffb1e6c95bd0f35111158ccf fix: preflight native runtime before dev startup
-2026-08-27 c9e673b949f43b8134b9203d82fe32470b0046a1 test: add native runtime preflight
 ```
 
 ## Repository paths changed, last 14 days
@@ -75,7 +65,6 @@
 ```text
 .github/workflows/ci.yml
 .github/workflows/gpu-benchmark.yml
-README.md
 control-plane/src/configured-main.lisp
 flake.lock
 flake.nix
@@ -93,15 +82,6 @@ frontend/src/lib/graph-style.js
 noop
 package-lock.json
 package.json
-scripts/bootstrap-lisp-deps
-scripts/check-control-plane-deps.mjs
-scripts/check-native-runtime.mjs
-scripts/dev.mjs
-scripts/run-control-plane
-scripts/run-production
-scripts/smoke-production.mjs
-scripts/smoke-startup.mjs
-scripts/test-lisp
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -111,13 +91,4 @@ scripts/test-lisp
 .github/workflows/gpu-benchmark.yml
 flake.nix
 frontend/scripts/benchmark-graph-renderer.mjs
-scripts/bootstrap-lisp-deps
-scripts/check-control-plane-deps.mjs
-scripts/check-native-runtime.mjs
-scripts/dev.mjs
-scripts/run-control-plane
-scripts/run-production
-scripts/smoke-production.mjs
-scripts/smoke-startup.mjs
-scripts/test-lisp
 ```

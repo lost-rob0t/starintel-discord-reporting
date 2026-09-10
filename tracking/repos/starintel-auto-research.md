@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-10T04:54:32Z`
+- generated: `2026-09-10T11:25:04Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47`](https://github.com/lost-rob0t/starintel-auto-research/commit/72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47)
@@ -126,7 +126,6 @@
 2026-08-27 54dbb10a30727a6dc989dbb735205df7dd4141a3 Merge current main into strict JSON research
 2026-08-27 641a1b50ad64543c7feffb7522502636dc1cc99d research: remove collided strict JSON identity
 2026-08-27 d78caa33ff308788860b76031d2d2639099f8922 research: reconcile strict JSON canonical identity
-2026-08-27 5d01182e45a0cda1c4e062183469abd0be43e6af feat(pages): add research pending review dashboard
 ```
 
 ## Repository paths changed, last 14 days
@@ -159,9 +158,7 @@ agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.spec
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel/prompts/agent.system.main.specifics.md
-pages/static/research-pending.css
 pages/static/research-pending.js
-pages/static/site.js
 roam/design/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-001-adaptive-research-dag-evaluation-harness.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-002-deep-research-execution-adapters.org
@@ -372,8 +369,6 @@ roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
 scripts/__pycache__/save-research.cpython-313.pyc
 scripts/build-research-pending.py
 scripts/install-agent-zero.sh
-scripts/list-unreviewed-research.py
-scripts/publish-pages
 scripts/research_approval_migration.py
 scripts/research_queue.py
 scripts/save-research.py
@@ -409,8 +404,6 @@ tools/generate-government-jurisdiction-todos.py
 scripts/__pycache__/save-research.cpython-313.pyc
 scripts/build-research-pending.py
 scripts/install-agent-zero.sh
-scripts/list-unreviewed-research.py
-scripts/publish-pages
 scripts/research_approval_migration.py
 scripts/research_queue.py
 scripts/save-research.py

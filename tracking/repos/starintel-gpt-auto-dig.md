@@ -1,15 +1,29 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-10T04:54:31Z`
+- generated: `2026-09-10T11:25:03Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`547bdae7636f99a829a3488ff0afdc601ea06fc9`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/547bdae7636f99a829a3488ff0afdc601ea06fc9)
-- head date: `2026-09-10T00:00:56-04:00`
-- head subject: Merge pull request #2570 from lost-rob0t/auto-dig/election-comms-voter-poll-media-pass-17
+- head: [`ac004a4bcc38b026cb69ee8f0c90b23cfa2027b0`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/ac004a4bcc38b026cb69ee8f0c90b23cfa2027b0)
+- head date: `2026-09-10T05:08:53-04:00`
+- head subject: Merge pull request #2583 from lost-rob0t/auto-dig/election-comms-mobilization-infrastructure-pass-22
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 ac004a4bcc38b026cb69ee8f0c90b23cfa2027b0 Merge pull request #2583 from lost-rob0t/auto-dig/election-comms-mobilization-infrastructure-pass-22
+2026-09-10 0eaa21a4d3a6615987fff6ac1417f80a296df30d auto-dig: fix person schema fields in pass 22
+2026-09-10 a034b772f40994745bb3a835bc72955b8e230bad auto-dig: document mobilization infrastructure pass 22
+2026-09-10 0311d52e3dac2ff7c0a96b228ae912a89c8959fc auto-dig: add election mobilization infrastructure pass 22
+2026-09-10 d27ab1fdf5a9bb43b4ef14efda5503eccb86ea4f Merge pull request #2582 from lost-rob0t/auto-dig/election-comms-poll-worker-infrastructure-pass-21
+2026-09-10 c7bcc7d10a84c2aff7c68824033a7c510947f096 auto-dig: document pass 21 coverage
+2026-09-10 f048da0b10b45479f342342873e913bace9d978c auto-dig: add pass 21 relations part 3
+2026-09-10 69356ffc70964655beb58a98883ebf932b454454 auto-dig: add pass 21 relations part 2
+2026-09-10 72067b5f27efecde45a40cefcd9443525b139553 auto-dig: add pass 21 relations part 1
+2026-09-10 2bf7ec415ba08146a7eafcbde0f075a9850dbdbd auto-dig: add pass 21 entities
+2026-09-10 8246b5e4bb88c4a62b4c14d8fc8281dd900956e9 auto-dig: add pass 21 sources and recursive target
+2026-09-10 d526dae500412e3ec74345ecac64faaa5cb67a63 Merge pull request #2581 from lost-rob0t/auto-dig/election-comms-voter-roll-data-pass-20
+2026-09-10 ee0f739caf68a136cf6626e164842232b4cc1744 research: add voter-roll data pass 20 report
+2026-09-10 4985394f40a5f2bfb4aacad1cefacb879b7466a5 research: add voter-roll data infrastructure pass 20
 2026-09-10 547bdae7636f99a829a3488ff0afdc601ea06fc9 Merge pull request #2570 from lost-rob0t/auto-dig/election-comms-voter-poll-media-pass-17
 2026-09-09 efea0f774949dcb016c5ba12c574e8b6d0020b56 research: document voter-poll media pass 17
 2026-09-09 b24af4ab8fbb4193f4a81ed6c4225e1393c91f2f research: add voter-poll media ecosystem pass 17
@@ -733,10 +747,20 @@ digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-34/starintel-documents
 digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-35/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/report.md
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/report.md
+digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-entities.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-relations-a.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-relations-b.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-relations-c.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-legal-information-pass-16/report.md
 digs/anarchist-violence/2026-09-10-election-comms-legal-information-pass-16/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-mobilization-infrastructure-pass-22/report.md
+digs/anarchist-violence/2026-09-10-election-comms-mobilization-infrastructure-pass-22/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/report.md
 digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/report.md
+digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json

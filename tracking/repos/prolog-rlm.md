@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-10T04:54:39Z`
+- generated: `2026-09-10T11:25:17Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -180,22 +180,6 @@
 2026-08-27 26b01404f025446be181e9f086cf30418501c51a test: reproduce persistent mount cross-store cache leak
 2026-08-27 2bcd5ffae692211e918e7355a8a5ff2cfadb38c1 test: pin cross-store context mount cache isolation
 2026-08-27 7eb36ea9aada51ec6490c1219c434e654b8aeeba recover durable context mount baseline from #228
-2026-08-27 7f0050f524db6de5293163241176ac4660f04349 docs: correct exact-head evidence
-2026-08-27 e58798c55342a0010791286ae6067c6e63e3c016 docs: record final handoff evidence
-2026-08-27 eb64e5dc349f9c4a577cdb3daaf1f2adf1015285 fix: keep fixed CLI plans within budget
-2026-08-27 474facb0ddc6fae677b326ee49979220ea443cba fix: separate planner context from final output
-2026-08-27 e6e4c2a7d53de4830181bfe7e015e336176d1301 fix core typed-plan contract ownership
-2026-08-27 7f2f5d5d99181aef96818a982de419ecaf581ad0 test typed-plan benchmark contract regression
-2026-08-27 61ab893f0bf53b21fa8bedabf33a009f8c2af217 fix benchmark typed-plan planner contract
-2026-08-27 e9a2a6753470fc10c92226a8a88a35cc8fa0409a Fix live CSP planner truncation
-2026-08-27 3d4f574b5f31324411eddd0bb2d6c4a5aef61df8 CI: validate model-selected constraint lanes
-2026-08-27 6a8a90d814cd935a8fdb06227abf70ef1e7f2405 CI: validate requested constraint depth lanes
-2026-08-27 8fdc72e7bb3731cb8b333ee1ef3b3a2ad6d0459c CI: validate six-lane constraint benchmark
-2026-08-27 97232523921a52c47961b02b69e7d7af41f67e50 CI: expose and validate constraint benchmark report
-2026-08-27 4074c4635c1dbb5c30a0e3fc26d55511ecefe85f Recover #223 constraint benchmark on current main
-2026-08-27 b891c27c3d488ab336ebc125e9e04821351b0f22 docs(research): approved RLM-RESEARCH-011-managed-context-tool-discovery [skip ci]
-2026-08-27 ad655ca51f57148833f1294f511c0b5d1f24cdde docs(research): record approval migration audit
-2026-08-27 c92f59062b141cb8502c81b34d8c4e5dbeb6ea59 docs(research): standardize approval metadata
 ```
 
 ## Repository paths changed, last 14 days
@@ -221,11 +205,7 @@ agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.com
 agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.specifics.md
-benchmark/rlm_constraint_problem.pl
-benchmark/rlm_constraint_verify.pl
 benchmark/rlm_live_deep_experiment.pl
-benchmark/rlm_live_deep_smoke.pl
-benchmark/run.pl
 c/rlm_tree_sitter.c
 c/rlm_tree_sitter_internal.h
 c/rlm_tree_sitter_lifetime.c
@@ -241,9 +221,7 @@ docs/project-query.md
 docs/project-source-registry.md
 docs/project-syntax.md
 docs/prolog-agent-roadmap.md
-docs/prompt-compiler.md
 docs/providers.md
-docs/research-record-template.org
 docs/research/expert-direct-tool-projection.md
 docs/research/expert-direct-tool-projection.org
 docs/research/plan-graph-executor-design.md
@@ -255,7 +233,6 @@ prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/rlm.pl
 prolog/rlm_chain.pl
-prolog/rlm_cli.pl
 prolog/rlm_completion.pl
 prolog/rlm_completion_async.pl
 prolog/rlm_context_budget.pl
@@ -279,7 +256,6 @@ prolog/rlm_subagent.pl
 prolog/rlm_text.pl
 prolog/rlm_tool.pl
 prolog/rlm_tree_sitter.pl
-rage/264-real-recursive-final-handoff.org
 rage/277-planner-protocol-context.org
 rage/288-final-review-report.md
 rage/288-review-research-report.md
@@ -293,25 +269,7 @@ rage/97-query-capture-apis.org
 rage/97-query-capture-notes.org
 rage/97-query-capture-realize-prompt.md
 research/README.md
-research/RLM-RESEARCH-000-foundations.org
-research/RLM-RESEARCH-001-prolog-runtime-design.org
-research/RLM-RESEARCH-002-agentic-harness.org
-research/RLM-RESEARCH-003-typed-symbolic-execution.org
-research/RLM-RESEARCH-004-prologmcp-repair-loop.org
-research/RLM-RESEARCH-005-swi-agent-runtime.org
-research/RLM-RESEARCH-006-mcp-dual-version-runtime.org
-research/RLM-RESEARCH-007-langchain-langgraph-port.org
-research/RLM-RESEARCH-008-adaptive-recursion.org
-research/RLM-RESEARCH-009-durable-artifact-context.org
-research/RLM-RESEARCH-010-symbolic-prompt-compiler.org
-research/RLM-RESEARCH-011-managed-context-tool-discovery.org
-research/RLM-RESEARCH-020-prolog-agent-ui-contract.org
-research/RLM-RESEARCH-021-javascript-ui.org
-research/RLM-RESEARCH-022-common-lisp-ui.org
-research/RLM-RESEARCH-023-nim-ui.org
-research/RLM-RESEARCH-024-emacs-ui.org
 research/RLM-RESEARCH-025-lem-ui.org
-research/RLM-RESEARCH-026-task-deadlines.org
 research/RLM-RESEARCH-027-spec-plan-graph-executor.org
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
@@ -322,10 +280,8 @@ scripts/design_gate.pl
 scripts/openrouter_completion.sh
 scripts/plan_graph_contract_check.pl
 scripts/plan_graph_contract_check.sh
-scripts/research_approval_validator.pl
 scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
-scripts/validate_research_approval.pl
 skills/core/rlm-constraints/SKILL.md
 skills/core/rlm-facts/SKILL.md
 skills/core/rlm-operate/SKILL.md
@@ -369,19 +325,15 @@ test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
-test/rlm_research_approval_test.pl
 test/rlm_spec_strategy_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
-test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
-test/support/rlm_constraint_benchmark_test.pl
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -400,10 +352,8 @@ scripts/design_gate.pl
 scripts/openrouter_completion.sh
 scripts/plan_graph_contract_check.pl
 scripts/plan_graph_contract_check.sh
-scripts/research_approval_validator.pl
 scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
-scripts/validate_research_approval.pl
 test/deterministic_corpus.pl
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
@@ -443,17 +393,13 @@ test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
-test/rlm_research_approval_test.pl
 test/rlm_spec_strategy_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
-test/run_constraint_benchmark.pl
 test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/completion_final_handoff_support.pl
 test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
-test/support/rlm_constraint_benchmark_test.pl
 ```
