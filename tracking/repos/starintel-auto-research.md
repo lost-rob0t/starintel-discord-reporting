@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-10T00:17:09Z`
+- generated: `2026-09-10T04:54:32Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47`](https://github.com/lost-rob0t/starintel-auto-research/commit/72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47)
@@ -127,7 +127,6 @@
 2026-08-27 641a1b50ad64543c7feffb7522502636dc1cc99d research: remove collided strict JSON identity
 2026-08-27 d78caa33ff308788860b76031d2d2639099f8922 research: reconcile strict JSON canonical identity
 2026-08-27 5d01182e45a0cda1c4e062183469abd0be43e6af feat(pages): add research pending review dashboard
-2026-08-27 1a2a979ea0cb3c5e763f5b69f6be3219d49e942c Merge pull request #146 from lost-rob0t/agent/amend-star-lang-004-rfc3986
 ```
 
 ## Repository paths changed, last 14 days

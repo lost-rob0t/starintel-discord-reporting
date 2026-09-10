@@ -1,15 +1,43 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-10T00:17:07Z`
+- generated: `2026-09-10T04:54:31Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`7e3e1dfd25393812a3bdcd8ccca8f1aaca7f1e10`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/7e3e1dfd25393812a3bdcd8ccca8f1aaca7f1e10)
-- head date: `2026-09-09T19:20:43-04:00`
-- head subject: Merge pull request #2552 from lost-rob0t/auto-dig/area-code-shard-a-pass-30-20260909-1858
+- head: [`547bdae7636f99a829a3488ff0afdc601ea06fc9`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/547bdae7636f99a829a3488ff0afdc601ea06fc9)
+- head date: `2026-09-10T00:00:56-04:00`
+- head subject: Merge pull request #2570 from lost-rob0t/auto-dig/election-comms-voter-poll-media-pass-17
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 547bdae7636f99a829a3488ff0afdc601ea06fc9 Merge pull request #2570 from lost-rob0t/auto-dig/election-comms-voter-poll-media-pass-17
+2026-09-09 efea0f774949dcb016c5ba12c574e8b6d0020b56 research: document voter-poll media pass 17
+2026-09-09 b24af4ab8fbb4193f4a81ed6c4225e1393c91f2f research: add voter-poll media ecosystem pass 17
+2026-09-09 d4ccf1699b1725e9168fd27e35c085b375ae39c0 Merge pull request #2569 from lost-rob0t/auto-dig/area-code-shard-a-pass35-978-correction-20260910
+2026-09-09 218d6b83647732014a09b39f5de2c741e190941a research: correct shard-A coverage for omitted NPA 978
+2026-09-09 a0dd1daf43f4cdfa0ec7dcf9a0e065b7cd6abb22 research: add shard-A pass 35 NPA 978 correction packet
+2026-09-09 25213eb05abf852a2a4f25ace5d3b7305a0ae6e2 Merge pull request #2568 from lost-rob0t/auto-dig/area-code-shard-a-pass34-replay-20260910-1
+2026-09-09 090e0e5a8ba21e46cbe78cb5a8ffa3b635112980 research: replay shard A pass 34 on current main
+2026-09-09 59afff69c1a9a9d2aa0ddccd5eecd9b6f9f9025c Auto-Dig: 2026 election legal/information ecosystem pass 16
+2026-09-09 759386a44d590fafc6ae32f2cb47f2a1ff849708 docs: report election legal/information ecosystem pass 16
+2026-09-09 6de5fc7ee94405f415b718ec7ac985c0c51fe492 research: add election legal/information ecosystem pass 16 packet
+2026-09-09 424c0bf31052a223ea499d1e0fe5b0c3e69fa4c9 Merge pull request #2565 from lost-rob0t/auto-dig/area-code-shard-a-pass33-20260910
+2026-09-09 b6c716ff1e29b2e2474e32f22c402532fded4de5 research: record shard-A area-code pass 33 coverage
+2026-09-09 b385c5ec427ce1462f7c2ba2f4a027aed703b5a3 research: add shard-A area-code pass 33 packet
+2026-09-09 ded77550df9fb2c47288bf7a1d11054ae0db9bfa Merge pull request #2564 from lost-rob0t/auto-dig/election-comms-admin-coordination-pass-15-20260910
+2026-09-09 c583667faa615215e33a5b60919872688d74e208 research: document election administration coordination pass 15
+2026-09-09 06eadf035576e560a0b6e04865b74eab9621d1d8 research: add election administration coordination pass 15 packet
+2026-09-09 26e2ec44550175dc3e4c2d50ef58c6f28192a8a4 Merge pull request #2563 from lost-rob0t/auto-dig/area-code-shard-a-pass-32-20260910-0101
+2026-09-09 7b62d32f15ce97d6127545c72cef60dac4018a99 research(area-code-hunt): record shard A pass 32 coverage
+2026-09-09 70a27c5fe687fd682ef837456fbabc9b1637e0cf research(anarchist-violence): area-code shard A pass 32 packet
+2026-09-09 b8605c2f9b0579a7cc19360114800466bc8fbc8c Merge pull request #2554 from lost-rob0t/auto-dig/area-code-shard-a-pass-31-20260909-2001
+2026-09-09 62b803b2c68dee54d106e77be20e759c0d8466e0 research(anarchist-violence): materialize shard A pass 31 research pass
+2026-09-09 40803a9e6ddbdc701ef5222d000e02566535b23a research(anarchist-violence): materialize shard A pass 31 sources
+2026-09-09 cf2767f8c10706dfb69d0f330edf210ac2105730 research(anarchist-violence): materialize shard A pass 31 communications edges
+2026-09-09 73097f8f4e9d18c8221061ef7c928df8f983f62b research(anarchist-violence): materialize shard A pass 31 locality edges
+2026-09-09 ca84596c45c304dec7b4663371fd866a411830c5 research(anarchist-violence): materialize shard A pass 31 targets
+2026-09-09 49d8564af84890ed54685a353a7402db07014051 research(anarchist-violence): materialize shard A pass 31 orgs
+2026-09-09 bb0343183b0c0fe0b9778b8092116bf78bd3e996 research(anarchist-violence): record shard A pass 31 coverage
 2026-09-09 7e3e1dfd25393812a3bdcd8ccca8f1aaca7f1e10 Merge pull request #2552 from lost-rob0t/auto-dig/area-code-shard-a-pass-30-20260909-1858
 2026-09-09 9ec0a329002ffd422070160950102863d8ae4c64 fix(area-code-hunt): keep coverage in durable state file
 2026-09-09 eab11387f94b905bd6b6be98a468d251e8f17e48 fix(area-code-hunt): conform pass 30 packet to executable v0.9 schema
@@ -693,12 +721,33 @@ digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/expansion-state.m
 digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/relations.jsonl
 digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/research-pass.jsonl
 digs/anarchist-violence/2026-09-09-wri-network-expansion-pass8/sources.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-31/starintel-communications-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-31/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-31/starintel-location-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-31/starintel-orgs.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-31/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-31/starintel-targets.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-32/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-33/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-34/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-a-pass-35/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/report.md
+digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-legal-information-pass-16/report.md
+digs/anarchist-violence/2026-09-10-election-comms-legal-information-pass-16/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/report.md
+digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json
 digs/anarchist-violence/area-code-coverage-a-pass28.json
 digs/anarchist-violence/area-code-coverage-a-pass29.json
 digs/anarchist-violence/area-code-coverage-a-pass30.json
+digs/anarchist-violence/area-code-coverage-a-pass31.json
+digs/anarchist-violence/area-code-coverage-a-pass32.json
+digs/anarchist-violence/area-code-coverage-a-pass33.json
+digs/anarchist-violence/area-code-coverage-a-pass34.json
+digs/anarchist-violence/area-code-coverage-a-pass35.json
 digs/anarchist-violence/area-code-coverage-a.json
 digs/anarchist-violence/area-code-hunt-shard-b-state.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json

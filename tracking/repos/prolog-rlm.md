@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-10T00:17:21Z`
+- generated: `2026-09-10T04:54:39Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
@@ -196,32 +196,6 @@
 2026-08-27 b891c27c3d488ab336ebc125e9e04821351b0f22 docs(research): approved RLM-RESEARCH-011-managed-context-tool-discovery [skip ci]
 2026-08-27 ad655ca51f57148833f1294f511c0b5d1f24cdde docs(research): record approval migration audit
 2026-08-27 c92f59062b141cb8502c81b34d8c4e5dbeb6ea59 docs(research): standardize approval metadata
-2026-08-27 2e1264d80d02fecfb9f946e1328caaf1053e7a3b test: load salvaged runtime status in production-module gate
-2026-08-27 fd6554ecf48c5d7e34f8cac794410c31d50440be test: retain only reusable runtime status salvage
-2026-08-27 ad52a1dd79caf1f65e1910961fd93d6798723b35 feat: salvage renderer-neutral runtime status projection
-2026-08-27 15892c6a9491bb397d17e14533786a1afa12dfb8 test: salvage run alias and canonical runtime status contract
-2026-08-27 8c162f4f8690881a935f0ec57a803734ea286def test: fold runtime status coverage into existing deterministic suite
-2026-08-27 32714974750a788d4c1c2637a0bb82ab00354533 test: specify renderer-neutral runtime status projection
-2026-08-26 7fa4c2547b387acdbe5fc269e8ebcb4919249b97 test: register planner validation retry on current corpus
-2026-08-26 56af9287f218fe62096d03af63447c7c4e5548c6 fix: retry structurally invalid planner candidates
-2026-08-26 c238eb0ef3f19c89a06fc9d6a11993f9d0fddb71 test: register skill-selection evaluator in current corpus
-2026-08-26 4d665585a720fa9ed8d29f34c36666a47e638ebe feat: add deterministic skill-selection evaluation metrics
-2026-08-26 385eba3d12f431704c876bae7b92c2bb56e721c4 feat: add normalized skill catalog graph
-2026-08-26 340dd0aec4d2e1b555aac7b108beed9c29706a65 feat: add proof-carrying child result acceptance boundary
-2026-08-26 7eb60f98ed100423880b18b57724899d718cd5f3 feat: wire unresolved delegation into bounded parent resume
-2026-08-26 e4509ee8b5e4a53b85fcc6dd36e4cd048eb3b26a test: align deadline bounds with schema preflight
-2026-08-26 8722f5379b9080846e6827cd2363e4d84cc26003 feat: recover host-owned subagent deadline policy
-2026-08-26 a35e1400951dc9364169eabffe09041ba24d8547 feat: normalize provider tool-choice compatibility before dispatch
-2026-08-26 bd11d65703820a8b525544051d22891a8c95290c test: cover canonical tool-result projection presets
-2026-08-26 d7686492731bc94891e8bbd46b7ff013884ad6e2 feat: add tool-result projection policy module
-2026-08-26 5d37c8fe2198cf7b63b4bbde99c6cbbb5ff1d8df docs: document tool-result projection presets
-2026-08-26 c836b500b2a024637487401ec3312c4616822df5 chore: remove unrelated metadata-context edit
-2026-08-26 00f040f03cb86ffed306c19a24253e1a1ba78a0f revert: restore numeric schema candidate after failed cleanup edit
-2026-08-26 c09692e3ceb0744e601f3a2c84487e7dd4c92a74 chore: remove unrelated metadata-context edit
-2026-08-26 6f39f3c6c32046edd6e58f0529fdcfa8b4a18ab1 refactor: keep numeric bound checks closed
-2026-08-26 a11d6b0abeda243b67a0aca3ee75ad3f4c17cb68 docs: define numeric tool schema bounds
-2026-08-26 330f185cd88385babd3aeafda4629bfe648a3336 fix: enforce numeric tool schema bounds
-2026-08-26 989a5b3eee49568ae26967be7d4829d716d41bad test: pin numeric schema bound contract
 ```
 
 ## Repository paths changed, last 14 days
@@ -259,11 +233,8 @@ c/rlm_tree_sitter_node.c
 c/rlm_tree_sitter_parser.c
 c/rlm_tree_sitter_query.c
 c/rlm_tree_sitter_support.c
-docs/agent-runtime.md
-docs/async-runtime.md
 docs/completion-runtime.md
 docs/conversation-runtime.md
-docs/delegation-runtime.md
 docs/direct-runtime.md
 docs/plan-graph-runtime.md
 docs/project-query.md
@@ -277,9 +248,6 @@ docs/research/expert-direct-tool-projection.md
 docs/research/expert-direct-tool-projection.org
 docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
-docs/result-acceptance.md
-docs/skill-graph.md
-docs/tool-result-projection.md
 docs/tools.md
 docs/typed-plans.md
 flake.nix
@@ -294,7 +262,6 @@ prolog/rlm_context_budget.pl
 prolog/rlm_context_mount.pl
 prolog/rlm_conversation.pl
 prolog/rlm_conversation_persist.pl
-prolog/rlm_delegation_runtime.pl
 prolog/rlm_direct.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
@@ -306,16 +273,11 @@ prolog/rlm_project_query_persist.pl
 prolog/rlm_project_source.pl
 prolog/rlm_project_syntax.pl
 prolog/rlm_prompt_compiler.pl
-prolog/rlm_result_accept.pl
-prolog/rlm_runtime_status.pl
 prolog/rlm_skill.pl
-prolog/rlm_skill_eval.pl
-prolog/rlm_skill_graph.pl
 prolog/rlm_spec_strategy.pl
 prolog/rlm_subagent.pl
 prolog/rlm_text.pl
 prolog/rlm_tool.pl
-prolog/rlm_tool_projection.pl
 prolog/rlm_tree_sitter.pl
 rage/264-real-recursive-final-handoff.org
 rage/277-planner-protocol-context.org
@@ -379,9 +341,7 @@ test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_chain_app_attribution_test.pl
-test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
-test/rlm_cli_test.pl
 test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
@@ -409,16 +369,8 @@ test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
-test/rlm_prompt_command_test.pl
 test/rlm_research_approval_test.pl
-test/rlm_result_accept_test.pl
-test/rlm_runtime_status_test.pl
-test/rlm_skill_eval_test.pl
-test/rlm_skill_graph_test.pl
 test/rlm_spec_strategy_test.pl
-test/rlm_subagent_deadline_test.pl
-test/rlm_subagent_test.pl
-test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_constraint_benchmark.pl
@@ -430,7 +382,6 @@ test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
 test/support/rlm_constraint_benchmark_test.pl
-test/support/rlm_delegation_runtime_cases.pl
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -464,9 +415,7 @@ test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_chain_app_attribution_test.pl
-test/rlm_chain_message_metadata_test.pl
 test/rlm_chain_test.pl
-test/rlm_cli_test.pl
 test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
@@ -494,16 +443,8 @@ test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
-test/rlm_prompt_command_test.pl
 test/rlm_research_approval_test.pl
-test/rlm_result_accept_test.pl
-test/rlm_runtime_status_test.pl
-test/rlm_skill_eval_test.pl
-test/rlm_skill_graph_test.pl
 test/rlm_spec_strategy_test.pl
-test/rlm_subagent_deadline_test.pl
-test/rlm_subagent_test.pl
-test/rlm_tool_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_constraint_benchmark.pl
@@ -515,5 +456,4 @@ test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
 test/support/rlm_constraint_benchmark_test.pl
-test/support/rlm_delegation_runtime_cases.pl
 ```
