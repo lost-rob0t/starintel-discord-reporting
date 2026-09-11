@@ -1,15 +1,23 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-11T00:13:32Z`
+- generated: `2026-09-11T04:46:46Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`3965c4e2b7ffec9c10d4d406c176c0b91810c17b`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/3965c4e2b7ffec9c10d4d406c176c0b91810c17b)
-- head date: `2026-09-10T19:38:26-04:00`
-- head subject: research(area-code-hunt): shard C pass 29 — 770/773/779 (#2602)
+- head: [`30b9a31708e766f49f69f5790932a2a3a0b781ac`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/30b9a31708e766f49f69f5790932a2a3a0b781ac)
+- head date: `2026-09-11T00:40:32-04:00`
+- head subject: research(area-code-hunt): shard C pass 36 — 914/917/920 (#2614)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-11 30b9a31708e766f49f69f5790932a2a3a0b781ac research(area-code-hunt): shard C pass 36 — 914/917/920 (#2614)
+2026-09-11 7ee233d22191ee88aa72954d85ce306555e244c2 research(area-code-hunt): shard C pass 35 — 872/878/908 (#2613)
+2026-09-11 e7c2ba3bd37154f4de2a724b3d0af0080a7c1e9c research(auto-dig): PDI / OutreachCircle election communications pass 41 (#2611)
+2026-09-10 8002a0621fbdc0a37fef1c2aedd23463bcdd9c72 research(area-code-hunt): shard C pass 34 — 857/860/863 (#2610)
+2026-09-10 ba74358e0c298b731e6801c020a55e3158d72a0d research(area-code-hunt): shard C pass 33 — 845/848/854 (#2609)
+2026-09-10 6f88d8c7c4e6cdd80f475becceb5d229875e0bf9 research(area-code-hunt): shard C pass 32 — 821/830/839 (#2607)
+2026-09-10 a6d16c0e3e2ffa514cd81d53ff925ef613fa7fda research(area-code-hunt): shard C pass 31 — 812/815/818 (#2605)
+2026-09-10 2820a47278047f169bef4b8d4f9658ea4d720006 research(area-code-hunt): shard C pass 30 — 785/803/806 (#2604)
 2026-09-10 3965c4e2b7ffec9c10d4d406c176c0b91810c17b research(area-code-hunt): shard C pass 29 — 770/773/779 (#2602)
 2026-09-10 659086964894f409c5bd25d2aa0c0fa0c5bd4047 research(area-code-hunt): shard C 737 740 743 (#2600)
 2026-09-10 47cec21ad4025f4d4ea50387c95b4538e92db1a7 research(area-code-hunt): shard C 725 731 734 (#2598)
@@ -736,6 +744,21 @@ digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-29/starintel-orgs-targ
 digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-29/starintel-people-relations.jsonl
 digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-29/starintel-research-pass.jsonl
 digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-29/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-30/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-30/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-30/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-30/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-30/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-31/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-31/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-31/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-31/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-31/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-sources.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/report.md
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/report.md
@@ -759,6 +782,28 @@ digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/sta
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-entities.jsonl
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-relations-a.jsonl
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-relations-b.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-34/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-34/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-34/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-34/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-34/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-35/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-35/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-35/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-35/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-35/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-area-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-orgs-targets.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-people-relations.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-research-pass.jsonl
+digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-11-election-comms-pdi-outreach-pass-41/report.md
+digs/anarchist-violence/2026-09-11-election-comms-pdi-outreach-pass-41/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json

@@ -1,15 +1,20 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-11T00:13:33Z`
+- generated: `2026-09-11T04:46:48Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`448f313bc75c0dcd95bdcaedc98b97b3ae53ab7b`](https://github.com/lost-rob0t/starintel-auto-research/commit/448f313bc75c0dcd95bdcaedc98b97b3ae53ab7b)
-- head date: `2026-09-10T19:59:16-04:00`
-- head subject: research: answer portable rule safety questions
+- head: [`b8490fe8d9afa0138a08530f07b5e78094234575`](https://github.com/lost-rob0t/starintel-auto-research/commit/b8490fe8d9afa0138a08530f07b5e78094234575)
+- head date: `2026-09-10T20:31:38-04:00`
+- head subject: index: advance portable rule reuse to design
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 b8490fe8d9afa0138a08530f07b5e78094234575 index: advance portable rule reuse to design
+2026-09-10 771ca14fb64d800e7fe20b0d2a25a12820c309ec research: approve portable rule reuse and advance to design
+2026-09-10 4f50d468f000e5ffb894d4bbed58bfe6179f8dcc design: add portable logic package and sandbox actor design
+2026-09-10 e128a9c25a7aa0e26171e247f552eeed2ed01bc2 research: index resolved star-kb operational questions
+2026-09-10 7f15c4ebccc06831a9e649c7e5c8d70d109cf351 research: answer star-kb operational open questions
 2026-09-10 448f313bc75c0dcd95bdcaedc98b97b3ae53ab7b research: answer portable rule safety questions
 2026-09-10 392e7c9eef11a91a97705696cc06c78944a5c63c research: index portable logic rule reuse
 2026-09-10 a47ded331be2f5d3025f8e7ca603070d17ece4e8 research: add portable rule reuse across logic actors
@@ -161,6 +166,7 @@ roam/design/cl-gserver/SENTO-000-managed-component-runtime.org
 roam/design/government-data/STAR-GOVDATA-DESIGN-004-franklin-county-starlang-actor-system.org
 roam/design/star-kb/STAR-KB-001-canonical-knowledge-authoring-and-query-plane.org
 roam/design/star-kb/STAR-KB-001-v0.1-shared-prolog-knowledge-library.org
+roam/design/star-kb/STAR-KB-002-portable-logic-packages-and-sandboxed-actors.org
 roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/design/star-lang/STAR-LANG-002-durable-actor-runtime.org
 roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org

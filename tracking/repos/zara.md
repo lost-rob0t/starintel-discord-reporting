@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-11T00:13:48Z`
+- generated: `2026-09-11T04:47:05Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`23ad58013f8590a88e3514165c39318d1a641b29`](https://github.com/lost-rob0t/zara/commit/23ad58013f8590a88e3514165c39318d1a641b29)
-- head date: `2026-09-10T19:20:43-04:00`
-- head subject: fix(prolog): actionable diagnostic for hyphenated user config atoms (#670)
+- head: [`8c32d458c8781063950e9d5d18dffc6a13482092`](https://github.com/lost-rob0t/zara/commit/8c32d458c8781063950e9d5d18dffc6a13482092)
+- head date: `2026-09-10T22:20:42-04:00`
+- head subject: fix(transport): tolerate loaded hosts and surface silent route drops (#669) (#859)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 8c32d458c8781063950e9d5d18dffc6a13482092 fix(transport): tolerate loaded hosts and surface silent route drops (#669) (#859)
 2026-09-10 23ad58013f8590a88e3514165c39318d1a641b29 fix(prolog): actionable diagnostic for hyphenated user config atoms (#670)
 2026-09-08 f8394af0ba8cfd222d94a5c2bff1555d60161694 release: Zara v0.1.1-alpha (#665)
 2026-09-08 291f5e3474c33911dfd1ead833230fa8c4c71e4b fix(client): use the configured Zara daemon by default (#664)
@@ -1167,7 +1168,6 @@
 2026-08-29 7985353d048e46e9120276256f335eaa73a28ab4 fix(llm): classify arity-2 socket_error as connection failure
 2026-08-29 4acbda423f605f2f5edb5d34aa3e8871ea480b54 docs(rage): open ZARA-016 iteration log for issue 17
 2026-08-28 a04435d2b73b44dffd52e00aff3bf478d5a48d6b Merge pull request #221 from lost-rob0t/build/flake-update-2026-08
-2026-08-28 6567bce87d6a60cc9891a22bb9699484a5f24a6b build(flake): update nixpkgs, pin python313, adopt nixpkgs sherpa-onnx
 ```
 
 ## Repository paths changed, last 14 days
@@ -1523,6 +1523,7 @@ rage/575-stock-interop-diagnostics.org
 rage/575-transient-send-backpressure-r3.org
 rage/587-dictation-vulkan.org
 rage/668-config-loader-diagnostic.org
+rage/669-turn-event-loss.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
 scripts/import-backlog.py
@@ -1680,6 +1681,7 @@ t/test_zara1_device_actions_adversarial.py
 t/test_zara_hooks_registry.py
 t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
+t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 wiki/agent-mode.org
@@ -2022,6 +2024,7 @@ t/test_zara1_device_actions_adversarial.py
 t/test_zara_hooks_registry.py
 t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
+t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
 ```
