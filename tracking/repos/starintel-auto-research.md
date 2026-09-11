@@ -1,15 +1,30 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-10T20:54:52Z`
+- generated: `2026-09-11T00:13:33Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`c356475a38a0f205c5599c1674419f602068ea90`](https://github.com/lost-rob0t/starintel-auto-research/commit/c356475a38a0f205c5599c1674419f602068ea90)
-- head date: `2026-09-10T16:18:19-04:00`
-- head subject: research: add shared Prolog knowledge plane ARADR pass
+- head: [`448f313bc75c0dcd95bdcaedc98b97b3ae53ab7b`](https://github.com/lost-rob0t/starintel-auto-research/commit/448f313bc75c0dcd95bdcaedc98b97b3ae53ab7b)
+- head date: `2026-09-10T19:59:16-04:00`
+- head subject: research: answer portable rule safety questions
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 448f313bc75c0dcd95bdcaedc98b97b3ae53ab7b research: answer portable rule safety questions
+2026-09-10 392e7c9eef11a91a97705696cc06c78944a5c63c research: index portable logic rule reuse
+2026-09-10 a47ded331be2f5d3025f8e7ca603070d17ece4e8 research: add portable rule reuse across logic actors
+2026-09-10 e98eeec79261fb00f20e8e6a234d9b26e380f663 research: index weighted-salience dialect findings
+2026-09-10 49b1d361bed64068c47ab4f64a3840f3083f3ce2 research: answer dialect open questions with weighted salience
+2026-09-10 f7f137387b4e4087278efaaab3b16c23abbd25ad research: index dialect evidence pass
+2026-09-10 9269137a189577e0c720ded3a4699cc796e98422 research: add dialect enrichment evidence pass
+2026-09-10 37f95b28608404c0653084ab454612147b71889c design: clarify canonical repo boundary and pending approval
+2026-09-10 e5cf03950c83544c6a4b4bc068ff340e81878b9b research: record STAR-KB research approval
+2026-09-10 f5fba51bf33b9216f36ada66e4133c5c03460638 docs: correct STAR-KB research/design lifecycle
+2026-09-10 19107c0e4f0a41dbf950b264da9e3e9f0ae12294 design: add pending STAR-KB v0.1 deep design
+2026-09-10 a1eb9b14491e8d74abba9a4e9a0e80fbb75a726e research: record STAR-KB approval and correct design authority
+2026-09-10 dc33e99aa9924b6ecee4a676166bc2f0f397e5cf research: fix canonical-born approval provenance
+2026-09-10 2bd3fdca9885c94ddcad25a563ff4776b449f367 research: reclassify STAR-KB architecture findings
+2026-09-10 ff5726263c07738c64f4f06aa908c6f61d1c56ce research: second-pass STAR-KB design and jargon glossary
 2026-09-10 c356475a38a0f205c5599c1674419f602068ea90 research: add shared Prolog knowledge plane ARADR pass
 2026-08-29 72ec24f58b9c00fc6ab4f638d2f4a1abe415ef47 fix: repair canonical-born approval provenance
 2026-09-09 1d14b9867d660cc972ce8ccc7ad55cf28c7661b5 fix: repair remaining doc-link and approval-metadata failures (Org-roam Pages, Kindle EPUB)
@@ -145,6 +160,7 @@ roam/design/auto-research/government-data-protocol-compatibility-redirect.org
 roam/design/cl-gserver/SENTO-000-managed-component-runtime.org
 roam/design/government-data/STAR-GOVDATA-DESIGN-004-franklin-county-starlang-actor-system.org
 roam/design/star-kb/STAR-KB-001-canonical-knowledge-authoring-and-query-plane.org
+roam/design/star-kb/STAR-KB-001-v0.1-shared-prolog-knowledge-library.org
 roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/design/star-lang/STAR-LANG-002-durable-actor-runtime.org
 roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org
@@ -231,6 +247,9 @@ roam/research/cl-gserver/SENTO-ZMQ-RESEARCH-000-zeromq-transport-analysis.org
 roam/research/cl-gserver/SENTO-ZMQ-RESEARCH-001-pzmq-binding-audit.org
 roam/research/drunk-drivers/DRUNK-DRIVER-RESEARCH-000-national-fars-identity-resolution.org
 roam/research/star-kb/STAR-KB-RESEARCH-001-shared-prolog-knowledge-plane-and-dialect-enrichment.org
+roam/research/star-kb/STAR-KB-RESEARCH-002-canonical-knowledge-plane-architecture-findings.org
+roam/research/star-kb/STAR-KB-RESEARCH-003-dialect-enrichment-corpus-and-inference-evidence.org
+roam/research/star-kb/STAR-KB-RESEARCH-004-portable-rule-reuse-across-logic-actors.org
 roam/research/star-lang/STAR-LANG-RESEARCH-000-language-design-foundations.org
 roam/research/star-lang/STAR-LANG-RESEARCH-019-common-lisp-library-gap-analysis.org
 roam/research/star-lang/STAR-LANG-RESEARCH-020-hygienic-macro-expansion.org

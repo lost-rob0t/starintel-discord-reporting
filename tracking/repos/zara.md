@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-10T20:55:03Z`
+- generated: `2026-09-11T00:13:48Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`f8394af0ba8cfd222d94a5c2bff1555d60161694`](https://github.com/lost-rob0t/zara/commit/f8394af0ba8cfd222d94a5c2bff1555d60161694)
-- head date: `2026-09-08T22:31:27Z`
-- head subject: release: Zara v0.1.1-alpha (#665)
+- head: [`23ad58013f8590a88e3514165c39318d1a641b29`](https://github.com/lost-rob0t/zara/commit/23ad58013f8590a88e3514165c39318d1a641b29)
+- head date: `2026-09-10T19:20:43-04:00`
+- head subject: fix(prolog): actionable diagnostic for hyphenated user config atoms (#670)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-10 23ad58013f8590a88e3514165c39318d1a641b29 fix(prolog): actionable diagnostic for hyphenated user config atoms (#670)
 2026-09-08 f8394af0ba8cfd222d94a5c2bff1555d60161694 release: Zara v0.1.1-alpha (#665)
 2026-09-08 291f5e3474c33911dfd1ead833230fa8c4c71e4b fix(client): use the configured Zara daemon by default (#664)
 2026-09-08 c6a557964f11f892aaa984ad52a2e5b1b2e829f2 Merge pull request #661 from lost-rob0t/ui/650-outrun-shell
@@ -1521,6 +1522,7 @@ rage/575-gateway-send-diagnostics.org
 rage/575-stock-interop-diagnostics.org
 rage/575-transient-send-backpressure-r3.org
 rage/587-dictation-vulkan.org
+rage/668-config-loader-diagnostic.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
 scripts/import-backlog.py

@@ -17,13 +17,13 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/star-synthdata](./star-synthdata.md) `687d9f17be92`
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
 - [lost-rob0t/starRouter](./starRouter.md) `449349fb19ee`
-- [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `c356475a38a0`
+- [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `448f313bc75c`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `b55316bae294`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `5857914a1e34`
-- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `b369e0ae780f`
+- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `3965c4e2b7ff`
 - [lost-rob0t/starintel-server](./starintel-server.md) `4721efaf8141`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `ecaf2f3b50c0`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
 - [lost-rob0t/tek9](./tek9.md) `1cb978084da8`
-- [lost-rob0t/zara](./zara.md) `f8394af0ba8c`
+- [lost-rob0t/zara](./zara.md) `23ad58013f85`
