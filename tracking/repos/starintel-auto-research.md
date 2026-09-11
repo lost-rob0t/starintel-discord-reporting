@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-11T04:46:48Z`
+- generated: `2026-09-11T11:26:52Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`b8490fe8d9afa0138a08530f07b5e78094234575`](https://github.com/lost-rob0t/starintel-auto-research/commit/b8490fe8d9afa0138a08530f07b5e78094234575)
@@ -112,23 +112,6 @@
 2026-08-29 844eb1cbc40f32f92a8b340b83e30204b5a0e837 chore: remove accidental noop file
 2026-08-29 e66a85241571e41f8fb6d8d7d0e05e4030149328 noop
 2026-08-29 5f6380f30c35bd2c9ee4b9bee681ec93b6b2a595 Persist ARDR research issues to durable Org files
-2026-08-28 36ce245209dccbc9645a1ae9532a8604bdd27b0b Validate human-gated ADARD stage worker profiles
-2026-08-28 4e7c025eb7a04c92e237d7a8dc76a66bd553d26b Document human-gated ADARD stage workers
-2026-08-28 e3f646e9fd02e2a909606a08c999f077be93c587 Add verification worker communication rules
-2026-08-28 180725a39d179553c3f7d706f6e9da8b4f5554a4 Add verification and conformance approval worker
-2026-08-28 0b92af78def864dca8062734fe2b46e569b86666 Add implementation worker communication rules
-2026-08-28 9357ed1931921606b24a0ad7c60a32dc9e804ee3 Add human-approved implementation worker
-2026-08-28 337e8343b4ef1e01a485c88903aff6b897b458c4 Add contract audit communication rules
-2026-08-28 bc8a2e49f93ed48ff0ac4f58085b3c93387dc162 Add contract and version audit worker
-2026-08-28 a89acad86ed9d300b51e6f1d980e9c6b8b3261f7 Add source enrichment communication rules
-2026-08-28 2975f49ea82bcd88bf1c846a55ec2639f51d679f Add source enrichment research worker
-2026-08-28 40eae0c79cccbab03caf0deee5be99be7f3ee200 Add ADARD coordinator communication rules
-2026-08-28 ea4ae2cd8b922c0a012d8ff6a661f0fd73614ef1 Add human-gated ADARD implementation coordinator worker
-2026-08-28 c7ce7e087881483959a61fbe576bf804d82ad315 captcha: add init-file configuration contract
-2026-08-28 a3658c2cc082c38ab3148793499beceedbe52a23 design: approve CAPTCHA domain server and repository boundary
-2026-08-28 7405ebcb0d9d2411ac6940f329b7bd669e926798 research: add deep username enumeration engine dossier
-2026-08-28 25d201ee5a1344281cdf3e8f6e428b497b11f936 research: expand OSINT tool ledger with deep feature records
-2026-08-28 b979ffbf310d47049b50106a26d690cbdd2106bc research: add internal OSINT tool ledger
 ```
 
 ## Repository paths changed, last 14 days
@@ -147,13 +130,10 @@ __noop__
 agent-zero/README.md
 agent-zero/usr/agents/starintel-adard-gated/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-adard-gated/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-contract-audit/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-contract-audit/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-implementation/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-implementation/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel/prompts/agent.system.main.specifics.md
 roam/design/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
@@ -179,7 +159,6 @@ roam/design/star-lang/STAR-LANG-013-explicit-agents-prolog-rlm.org
 roam/design/star-server/QUASAR-006-auto-dig-fork-and-bridge-boundary.org
 roam/design/star-server/QUASAR-008-lisp-actor-discovery-and-actor-studio.org
 roam/design/star-server/STAR-ADR-004-cl-discord-self-public-read-only-approval.org
-roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
 roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
 roam/design/star-server/STAR-SERVER-000-composable-intelligence-gservers.org
 roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
@@ -211,8 +190,6 @@ roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
 roam/indexes/star-server/STAR-TITANIC-INDEX-033-durable-actor-jobs.org
 roam/indexes/starintel-discord-tool/STAR-DISCORD-INDEX-000-operations-interface.org
-roam/internal/OSINT-TOOLS-LEDGER.org
-roam/internal/osint/OSINT-IDENTITY-ENUMERATION-ENGINES.org
 roam/research/ardr-issues/ARDR-ISSUE-072-starintel-ontology-foundation.org
 roam/research/ardr-issues/ARDR-ISSUE-128-operator-research-decisions.org
 roam/research/ardr-issues/ARDR-ISSUE-133-meta-mcp-execution-plane.org
@@ -298,7 +275,6 @@ scripts/install-agent-zero.sh
 scripts/save-research.py
 scripts/validate-changed-docs.py
 scripts/validate-docs.py
-scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
 skills/save-research/SKILL.md
 tests/test_canonical_document_ids.py
@@ -325,7 +301,6 @@ scripts/install-agent-zero.sh
 scripts/save-research.py
 scripts/validate-changed-docs.py
 scripts/validate-docs.py
-scripts/validate_agent_pack.py
 scripts/verify_research_approval_history.py
 tests/test_canonical_document_ids.py
 tests/test_research_approval_history.py

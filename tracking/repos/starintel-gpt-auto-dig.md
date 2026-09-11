@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-11T04:46:46Z`
+- generated: `2026-09-11T11:26:51Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`30b9a31708e766f49f69f5790932a2a3a0b781ac`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/30b9a31708e766f49f69f5790932a2a3a0b781ac)
-- head date: `2026-09-11T00:40:32-04:00`
-- head subject: research(area-code-hunt): shard C pass 36 — 914/917/920 (#2614)
+- head: [`385fe7549cc92c0f1d5ff58aff3d915075d33da9`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/385fe7549cc92c0f1d5ff58aff3d915075d33da9)
+- head date: `2026-09-11T01:02:42-04:00`
+- head subject: ops: hard-pause Auto-Dig through repo control plane (#2617)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-11 385fe7549cc92c0f1d5ff58aff3d915075d33da9 ops: hard-pause Auto-Dig through repo control plane (#2617)
 2026-09-11 30b9a31708e766f49f69f5790932a2a3a0b781ac research(area-code-hunt): shard C pass 36 — 914/917/920 (#2614)
 2026-09-11 7ee233d22191ee88aa72954d85ce306555e244c2 research(area-code-hunt): shard C pass 35 — 872/878/908 (#2613)
 2026-09-11 e7c2ba3bd37154f4de2a724b3d0af0080a7c1e9c research(auto-dig): PDI / OutreachCircle election communications pass 41 (#2611)
@@ -382,6 +383,7 @@ agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_rlm_runner.pl
 agents/test_coverage_backlog.pl
+config/auto-dig-control.json
 conformance/__init__.py
 conformance/fixtures.py
 conformance/implementations.json
@@ -819,6 +821,7 @@ digs/anarchist-violence/area-code-coverage-a.json
 digs/anarchist-violence/area-code-hunt-shard-b-state.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
+docs/auto-dig-pause-control.md
 docs/operation-object.md
 noop
 schemas/starintel-doc-v0.9.0.expansion.json
@@ -826,13 +829,16 @@ schemas/starintel-doc-v0.9.0.manifest.json
 schemas/starintel-doc-v0.9.0.schema.json
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
+scripts/check-auto-dig-control.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
 starintel_auto_dig.nimble
 starintel_doc/operation_spec.py
 starintel_doc/schema_org.py
 starintel_doc/validation.py
+tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
+tests/test_check_auto_dig_control.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
@@ -855,9 +861,12 @@ tests/test_starintel_corpus_mcp_server.py
 .github/workflows/validate-db.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
+scripts/check-auto-dig-control.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
+tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
+tests/test_check_auto_dig_control.py
 tests/test_counterevidence_packet_identity.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py

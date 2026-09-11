@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-11T04:47:05Z`
+- generated: `2026-09-11T11:27:05Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`8c32d458c8781063950e9d5d18dffc6a13482092`](https://github.com/lost-rob0t/zara/commit/8c32d458c8781063950e9d5d18dffc6a13482092)
-- head date: `2026-09-10T22:20:42-04:00`
-- head subject: fix(transport): tolerate loaded hosts and surface silent route drops (#669) (#859)
+- head: [`81a8cdcd04dd8bb3748cceda111b9296ad750d97`](https://github.com/lost-rob0t/zara/commit/81a8cdcd04dd8bb3748cceda111b9296ad750d97)
+- head date: `2026-09-11T00:56:26-04:00`
+- head subject: test(transport): guard client connection failures end-to-end (#669) (#860)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-11 81a8cdcd04dd8bb3748cceda111b9296ad750d97 test(transport): guard client connection failures end-to-end (#669) (#860)
 2026-09-10 8c32d458c8781063950e9d5d18dffc6a13482092 fix(transport): tolerate loaded hosts and surface silent route drops (#669) (#859)
 2026-09-10 23ad58013f8590a88e3514165c39318d1a641b29 fix(prolog): actionable diagnostic for hyphenated user config atoms (#670)
 2026-09-08 f8394af0ba8cfd222d94a5c2bff1555d60161694 release: Zara v0.1.1-alpha (#665)
@@ -1167,7 +1168,6 @@
 2026-08-29 fe43c9e8cf1966ef3d08051f15f5e99dead882b6 docs(rage): record ZARA-016 gate evidence
 2026-08-29 7985353d048e46e9120276256f335eaa73a28ab4 fix(llm): classify arity-2 socket_error as connection failure
 2026-08-29 4acbda423f605f2f5edb5d34aa3e8871ea480b54 docs(rage): open ZARA-016 iteration log for issue 17
-2026-08-28 a04435d2b73b44dffd52e00aff3bf478d5a48d6b Merge pull request #221 from lost-rob0t/build/flake-update-2026-08
 ```
 
 ## Repository paths changed, last 14 days
@@ -1524,6 +1524,7 @@ rage/575-transient-send-backpressure-r3.org
 rage/587-dictation-vulkan.org
 rage/668-config-loader-diagnostic.org
 rage/669-turn-event-loss.org
+rage/client-connection-guards.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
 scripts/import-backlog.py
@@ -1579,6 +1580,7 @@ t/test_clarification_session.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client.py
+t/test_client_connection_resolution.py
 t/test_command_routing.py
 t/test_config.py
 t/test_conversation_flow.py
@@ -1588,6 +1590,7 @@ t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_client_config.py
+t/test_daemon_connection_guards.py
 t/test_daemon_intent_router.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
@@ -1922,6 +1925,7 @@ t/test_clarification_session.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client.py
+t/test_client_connection_resolution.py
 t/test_command_routing.py
 t/test_config.py
 t/test_conversation_flow.py
@@ -1931,6 +1935,7 @@ t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_client_config.py
+t/test_daemon_connection_guards.py
 t/test_daemon_intent_router.py
 t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py

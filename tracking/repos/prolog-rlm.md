@@ -1,15 +1,21 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-11T04:47:01Z`
+- generated: `2026-09-11T11:27:02Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`e1ed6c2b5f717d9bb380fcf22d144737299197f8`](https://github.com/lost-rob0t/prolog-rlm/commit/e1ed6c2b5f717d9bb380fcf22d144737299197f8)
-- head date: `2026-09-05T03:18:36Z`
-- head subject: Merge pull request 'fix: preserve Agent Zero skills through canonical skill graph' (#364) from fix/339-agent-zero-skill-graph into main
+- head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
+- head date: `2026-09-11T05:33:42Z`
+- head subject: Merge pull request 'fix: #98 review — semantic knowledge review fixes' (#458) from rage/98-semantic-project-knowledge into main
 
 ## Git log, last 14 days
 
 ```text
+2026-09-11 51d2530f0e18c84cff860b7c0bf3afcc3c488057 Merge pull request 'fix: #98 review — semantic knowledge review fixes' (#458) from rage/98-semantic-project-knowledge into main
+2026-09-11 dfc96cb120c6b33399450acf4d20124905ce0151 ci: install nix via determinate script in the flake workflow
+2026-09-11 fbdb276a4da5e8b322b33cc67909e997524e7b12 ci: re-run PR gates after environmental nix-flake runner failure (flake check/build/pack-load/develop-load all pass locally)
+2026-09-11 fa41aa355e9fb3b9e248d07d7134792abbc14dd0 fix: #98 review — atomic semantic journal, complete index coherence, incomplete resolution, hydration, host adapters, true project isolation
+2026-09-10 d868c110877ff4462ba231f63eef51416623f9ca ci: re-trigger PR gates after paid-lane variable provisioning
+2026-09-10 42a7cf64edb60b9976957a73dd4f41a38579eb7e feat: implement #98 semantic project knowledge normalization
 2026-09-05 e1ed6c2b5f717d9bb380fcf22d144737299197f8 Merge pull request 'fix: preserve Agent Zero skills through canonical skill graph' (#364) from fix/339-agent-zero-skill-graph into main
 2026-09-05 4b34741f1d0bac3049d821314263471790fcbb39 Merge branch 'main' into fix/339-agent-zero-skill-graph
 2026-09-04 6092c2a9ba2359d83356a9c2d8c1dfc75e0e5506 Merge pull request 'ci: run tree-sitter FFI gate on a container-safe nix runner' (#359) from ci/tree-sitter-runner-labels into main
@@ -145,28 +151,6 @@
 2026-08-29 eea576f9b13e9ed3f974a4af4944c9c87183e841 fix: render runtime any as unconstrained JSON Schema
 2026-08-29 1a7bb00115366603dfe38a3ec6838d055f1f7160 ci: apply and test issue 298 schema fix
 2026-08-29 af94929ebd094c69fa64795152bdabb9e054938b test: reproduce MCP any-schema direct projection failure
-2026-08-28 71a10ae238dd0fa288005bf10892dc8d865ef2f3 fix(plan-graph): final-review hardening for #288
-2026-08-28 496e48fdd43ff47a4b6c867d70d13d46d723123f feat(plan-graph): closed project-op vocabulary and ready_step dependency-graph executor
-2026-08-27 a89175bf925df3afa358f8d05a370fe2a03e2117 feat: run typed-plan model steps through native provider sessions
-2026-08-27 1c6022821064b10481acbd08a55d97dcdb89c351 docs: treat typed plans as first-class
-2026-08-27 5a365bbf0560292856f87aedd4c08e2f9ab2dde5 fix: preserve contextual compilation in direct mode
-2026-08-27 d87c467b9af445b01bbf55895fd68878f0f2e03b feat: add provider-native direct runtime
-2026-08-27 c43c26fcb103cf727521a6bced9722dd81acdcef test: add live 40k conversation retrieval
-2026-08-27 cc002c55effcf8400512ba0d0fc1fbc1ba3a98b0 perf: bound large conversation context packing
-2026-08-27 fecc31a20d1b0da73235b59eace0a18d2297b68f feat: give root planner calls a scoped agent identity system message
-2026-08-27 4668871829aefa1d05b6c0866f7f9e7ef26446c9 feat: give executed model steps a scoped system message
-2026-08-27 eae6d7cd529fcaf3f599da7d58f18c178f1a40f3 docs: frame rlm-recurse as the rlm plan tool, tighten facts/constraints
-2026-08-27 5aff7f8be265d2ebca29663e4605cdee2e9f935e docs: restructure rlm-operate skill as a plan-tool catalog
-2026-08-27 1328ad198c1125dc43a1d90a4e9024712b85d802 feat: attribute OpenRouter requests to the runtime
-2026-08-27 fa730876c4c9b0a1a5986412219ce8bc2df530c8 fix: fit direct root answers in planner token ceiling
-2026-08-27 6f3079d584136e8efda479541e24dfa3b41fa92d fix: make registry tool-envelope field hops repairable
-2026-08-27 4b1a5dd8c5320edac180b65f343ea1c92ec7a95b fix: close direct-or-plan root decision in rlm_completion
-2026-08-27 2ef6b66a81faac2397476e4a91d7352183f82ab4 test: add live planner context acceptance
-2026-08-27 6b58e0f6f690597a3e59b8571f4c1fbe0e483da2 fix: add corrective planner context
-2026-08-28 3899fb2c11b68a6e90e9ab8f2e83c49f88aa14a6 docs(design): plan-graph executor design record for #288
-2026-08-28 c5f0f2d596dfa58e603d10b478d88aed9109a49d docs(research): fold adversarial review into RLM-RESEARCH-027 and reconcile #288
-2026-08-28 8b00e9dfce1fb748a93d0232afa0cf880dac6192 docs(research): RLM-RESEARCH-027 spec/plan graph executor + #288 contract gate
-2026-08-28 9b90098e93c24190a1b0c55161b9102f6c9945ef docs(rage): open #288 spec/plan graph iteration log
 ```
 
 ## Repository paths changed, last 14 days
@@ -176,23 +160,25 @@
 .github/workflows/fix-298-self-patch.yml
 .github/workflows/fix-304-self-patch.yml
 .github/workflows/nix.yml
-.github/workflows/pack-install.yml
 .github/workflows/paid-openrouter.yml
 .github/workflows/tree-sitter.yml
-.opencode/skills/debug-io/SKILL.md
 .prolog/.gitignore
 .prolog/facts.kb
+.prolog/kb/debugging-recipes.pl
+.prolog/kb/index.pl
+.prolog/kb/project-knowledge-pipeline.pl
+.prolog/kb/tree-sitter-ffi.pl
 .prolog/verify.pl
 AGENTS.md
 Makefile
 README.md
+TODO.md
 agent-zero/README.md
 agent-zero/install.sh
 agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.specifics.md
-benchmark/rlm_live_deep_experiment.pl
 c/rlm_tree_sitter.c
 c/rlm_tree_sitter_internal.h
 c/rlm_tree_sitter_lifetime.c
@@ -201,50 +187,38 @@ c/rlm_tree_sitter_parser.c
 c/rlm_tree_sitter_query.c
 c/rlm_tree_sitter_support.c
 docs/completion-runtime.md
-docs/conversation-runtime.md
 docs/direct-runtime.md
 docs/plan-graph-runtime.md
 docs/project-query.md
+docs/project-semantic.md
 docs/project-source-registry.md
 docs/project-syntax.md
 docs/prolog-agent-roadmap.md
-docs/providers.md
 docs/research/expert-direct-tool-projection.md
 docs/research/expert-direct-tool-projection.org
 docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
-docs/tools.md
 docs/typed-plans.md
 flake.nix
 prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
-prolog/rlm.pl
-prolog/rlm_chain.pl
 prolog/rlm_completion.pl
-prolog/rlm_completion_async.pl
-prolog/rlm_context_budget.pl
-prolog/rlm_conversation.pl
-prolog/rlm_conversation_persist.pl
 prolog/rlm_direct.pl
 prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
-prolog/rlm_plan.pl
 prolog/rlm_plan_graph.pl
 prolog/rlm_project_grammar_pack.pl
 prolog/rlm_project_query.pl
 prolog/rlm_project_query_persist.pl
+prolog/rlm_project_semantic.pl
+prolog/rlm_project_semantic_pack.pl
+prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
 prolog/rlm_project_syntax.pl
 prolog/rlm_prompt_compiler.pl
 prolog/rlm_skill.pl
-prolog/rlm_spec_strategy.pl
-prolog/rlm_subagent.pl
 prolog/rlm_text.pl
-prolog/rlm_tool.pl
 prolog/rlm_tree_sitter.pl
-rage/277-planner-protocol-context.org
-rage/288-final-review-report.md
-rage/288-review-research-report.md
 rage/288-spec-plan-graph-executor.org
 rage/290-adversarial-review-report.md
 rage/290-findings-fix-prompt.md
@@ -255,63 +229,48 @@ rage/97-query-capture-apis.org
 rage/97-query-capture-notes.org
 rage/97-query-capture-realize-prompt.md
 research/README.md
-research/RLM-RESEARCH-027-spec-plan-graph-executor.org
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
 research/spec-plan-refinement-kb.pl
 research/tree-sitter-query-capture.org
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
-scripts/openrouter_completion.sh
 scripts/plan_graph_contract_check.pl
-scripts/plan_graph_contract_check.sh
 scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
-skills/core/rlm-constraints/SKILL.md
-skills/core/rlm-facts/SKILL.md
 skills/core/rlm-operate/SKILL.md
-skills/core/rlm-recurse/SKILL.md
 test/deterministic_corpus.pl
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
 test/live_completion_openrouter_test.pl
 test/live_completion_stream_openrouter_test.pl
 test/live_conversation_scale_openrouter_test.pl
-test/live_direct_native_openrouter_test.pl
-test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
-test/rlm_chain_app_attribution_test.pl
-test/rlm_chain_test.pl
-test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
-test/rlm_conversation_cold_test.pl
-test/rlm_conversation_runtime_test.pl
-test/rlm_conversation_scale_test.pl
 test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
-test/rlm_nested_usage_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
-test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
 test/rlm_project_query_restart_phase1.pl
 test/rlm_project_query_restart_phase2.pl
 test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
+test/rlm_project_semantic_restart_phase1.pl
+test/rlm_project_semantic_restart_phase2.pl
+test/rlm_project_semantic_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
-test/rlm_spec_strategy_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
-test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
 test/support/completion_test_support.pl
@@ -326,15 +285,12 @@ test/support/plan_graph_test_tools.pl
 .github/workflows/fix-298-self-patch.yml
 .github/workflows/fix-304-self-patch.yml
 .github/workflows/nix.yml
-.github/workflows/pack-install.yml
 .github/workflows/paid-openrouter.yml
 .github/workflows/tree-sitter.yml
 flake.nix
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
-scripts/openrouter_completion.sh
 scripts/plan_graph_contract_check.pl
-scripts/plan_graph_contract_check.sh
 scripts/spec_plan_authority_check.pl
 scripts/spec_plan_authority_check.sh
 test/deterministic_corpus.pl
@@ -343,41 +299,32 @@ test/live_compiler_cache_openrouter_test.pl
 test/live_completion_openrouter_test.pl
 test/live_completion_stream_openrouter_test.pl
 test/live_conversation_scale_openrouter_test.pl
-test/live_direct_native_openrouter_test.pl
-test/live_planner_context_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
-test/rlm_chain_app_attribution_test.pl
-test/rlm_chain_test.pl
-test/rlm_completion_final_handoff_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
-test/rlm_conversation_cold_test.pl
-test/rlm_conversation_runtime_test.pl
-test/rlm_conversation_scale_test.pl
 test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
-test/rlm_nested_usage_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
-test/rlm_plan_test.pl
 test/rlm_project_grammar_pack_test.pl
 test/rlm_project_query_restart_phase1.pl
 test/rlm_project_query_restart_phase2.pl
 test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
+test/rlm_project_semantic_restart_phase1.pl
+test/rlm_project_semantic_restart_phase2.pl
+test/rlm_project_semantic_test.pl
 test/rlm_project_source_test.pl
 test/rlm_project_syntax_test.pl
-test/rlm_spec_strategy_test.pl
 test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
-test/run_live_compiler_cache_openrouter.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
 test/support/completion_test_support.pl
