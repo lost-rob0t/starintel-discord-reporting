@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-11T11:26:51Z`
+- generated: `2026-09-11T16:31:52Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`385fe7549cc92c0f1d5ff58aff3d915075d33da9`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/385fe7549cc92c0f1d5ff58aff3d915075d33da9)
-- head date: `2026-09-11T01:02:42-04:00`
-- head subject: ops: hard-pause Auto-Dig through repo control plane (#2617)
+- head: [`19483014e9b1172c9589f48439cda8583251c05a`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/19483014e9b1172c9589f48439cda8583251c05a)
+- head date: `2026-09-11T14:46:15Z`
+- head subject: Revert "ops: operator resume of Auto-Dig control plane"
 
 ## Git log, last 14 days
 
 ```text
+2026-09-11 19483014e9b1172c9589f48439cda8583251c05a Revert "ops: operator resume of Auto-Dig control plane"
+2026-09-11 4d7a6011076447ac869cb80df376651c595587f9 ops: operator resume of Auto-Dig control plane
+2026-09-11 fb20a8a69c6c069006be966150a6bead9ef53050 docs: close Netflix UK social attribution dig
 2026-09-11 385fe7549cc92c0f1d5ff58aff3d915075d33da9 ops: hard-pause Auto-Dig through repo control plane (#2617)
 2026-09-11 30b9a31708e766f49f69f5790932a2a3a0b781ac research(area-code-hunt): shard C pass 36 — 914/917/920 (#2614)
 2026-09-11 7ee233d22191ee88aa72954d85ce306555e244c2 research(area-code-hunt): shard C pass 35 — 872/878/908 (#2613)
@@ -821,6 +824,7 @@ digs/anarchist-violence/area-code-coverage-a.json
 digs/anarchist-violence/area-code-hunt-shard-b-state.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
+digs/netflix-uk/2026-09-11-netflixuk-social-attribution/README.md
 docs/auto-dig-pause-control.md
 docs/operation-object.md
 noop
