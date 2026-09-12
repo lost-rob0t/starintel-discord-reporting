@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-12T07:11:25Z`
+- generated: `2026-09-12T12:12:11Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`3e1f78523f377a94f43fda7a3cc1fc6622d7269d`](https://github.com/lost-rob0t/starintel-server/commit/3e1f78523f377a94f43fda7a3cc1fc6622d7269d)
@@ -46,9 +46,6 @@
 2026-09-06 d0be4b5fb5c7c61ea11c2a140c5854ee3a2c0b51 test: load JSON literal preservation regression
 2026-09-06 7437b65edbd1b7f83383f12482ba1f421982e048 test: cover JSON false/null preservation
 2026-09-06 89a8fa0939823f3ad3b68b54b176c44196146220 fix: restore canonical star-cl flake hash
-2026-08-29 204fa0d0376772bd3586e56a6912bb9a739eb0b0 fix: preserve JSON false/null through the document pipeline
-2026-08-29 8fb297d146e7332fae7e38170b5b49d49530ac53 Merge pull request #132 from lost-rob0t/agent/emacs-client-contract
-2026-08-29 3768df68dc0172c64fa803d6e10c285d1f84d3b0 feat: rewrite emacs client as async contract layer with ERT suite
 ```
 
 ## Repository paths changed, last 14 days
@@ -64,8 +61,6 @@ Makefile
 README.org
 cli/client-convenience.lisp
 cli/http-contract.lisp
-client-test.el
-client.el
 doc/actors.org
 doc/addons.org
 doc/api/index.org

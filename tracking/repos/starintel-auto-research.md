@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-12T07:11:27Z`
+- generated: `2026-09-12T12:12:17Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`d49f1e6e56cdbddd0843ad2c1c962c3ff758075f`](https://github.com/lost-rob0t/starintel-auto-research/commit/d49f1e6e56cdbddd0843ad2c1c962c3ff758075f)
@@ -113,7 +113,6 @@
 2026-08-29 26cdfccd164f80363bb702c6d4baeae8b72a7170 x
 2026-08-29 844eb1cbc40f32f92a8b340b83e30204b5a0e837 chore: remove accidental noop file
 2026-08-29 e66a85241571e41f8fb6d8d7d0e05e4030149328 noop
-2026-08-29 5f6380f30c35bd2c9ee4b9bee681ec93b6b2a595 Persist ARDR research issues to durable Org files
 ```
 
 ## Repository paths changed, last 14 days
@@ -130,11 +129,9 @@
 __fetchtest__
 __noop__
 agent-zero/README.md
-agent-zero/usr/agents/starintel-adard-gated/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-adard-gated/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-contract-audit/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-implementation/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.communication.md
 agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel/prompts/agent.system.main.specifics.md
@@ -192,29 +189,7 @@ roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
 roam/indexes/star-server/STAR-TITANIC-INDEX-033-durable-actor-jobs.org
 roam/indexes/starintel-discord-tool/STAR-DISCORD-INDEX-000-operations-interface.org
-roam/research/ardr-issues/ARDR-ISSUE-072-starintel-ontology-foundation.org
-roam/research/ardr-issues/ARDR-ISSUE-128-operator-research-decisions.org
 roam/research/ardr-issues/ARDR-ISSUE-133-meta-mcp-execution-plane.org
-roam/research/ardr-issues/ARDR-ISSUE-136-starintel-mcp-authoritative-interface.org
-roam/research/ardr-issues/ARDR-ISSUE-137-unified-star-uri-routing-fediwatch.org
-roam/research/ardr-issues/ARDR-ISSUE-147-threat-intelligence-feeds.org
-roam/research/ardr-issues/ARDR-ISSUE-151-webhook-subscriptions-durable-delivery.org
-roam/research/ardr-issues/ARDR-ISSUE-153-reconcile-research-implementation-evidence.org
-roam/research/ardr-issues/ARDR-ISSUE-156-starlang-v09-research-refresh.org
-roam/research/ardr-issues/ARDR-ISSUE-157-recover-operator-research-approvals.org
-roam/research/ardr-issues/ARDR-ISSUE-158-approve-starlang-research-batch.org
-roam/research/ardr-issues/ARDR-ISSUE-159-mailaccess-identity-domain-server.org
-roam/research/ardr-issues/ARDR-ISSUE-160-username-account-enumeration.org
-roam/research/ardr-issues/ARDR-ISSUE-161-email-google-identity-pivots.org
-roam/research/ardr-issues/ARDR-ISSUE-162-infrastructure-discovery-attack-surface.org
-roam/research/ardr-issues/ARDR-ISSUE-163-spiderfoot-orchestration-correlation.org
-roam/research/ardr-issues/ARDR-ISSUE-164-intelowl-analysis-lifecycle.org
-roam/research/ardr-issues/ARDR-ISSUE-165-starlang-osint-orchestration-gaps.org
-roam/research/ardr-issues/ARDR-ISSUE-169-starlang-source-acquisition-scraping.org
-roam/research/ardr-issues/ARDR-ISSUE-170-ardr-auto-research-policy.org
-roam/research/ardr-issues/ARDR-ISSUE-176-runtime-thread-budget.org
-roam/research/ardr-issues/ARDR-ISSUE-178-bixby-zitadel-account-linking.org
-roam/research/ardr-issues/ARDR-ISSUE-180-identity-email-google-enrichment.org
 roam/research/ardr-issues/ARDR-ISSUE-188-workload-dispatchers-router-pools.org
 roam/research/ardr-issues/ARDR-ISSUE-190-sento-bounded-mailbox-admission.org
 roam/research/ardr-issues/ARDR-ISSUE-191-deployment-config-secrets-contract.org
@@ -276,11 +251,9 @@ roam/research/starintel-server/STAR-RESEARCH-061-identifier-normalization.org
 roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
 scripts/__pycache__/save-research.cpython-313.pyc
 scripts/install-agent-zero.sh
-scripts/save-research.py
 scripts/validate-changed-docs.py
 scripts/validate-docs.py
 scripts/verify_research_approval_history.py
-skills/save-research/SKILL.md
 tests/test_canonical_document_ids.py
 tests/test_research_approval_history.py
 tests/test_research_approval_history_external_base_repair.py
@@ -302,7 +275,6 @@ tools/generate-government-jurisdiction-todos.py
 .github/workflows/star-lang-loader.yml
 scripts/__pycache__/save-research.cpython-313.pyc
 scripts/install-agent-zero.sh
-scripts/save-research.py
 scripts/validate-changed-docs.py
 scripts/validate-docs.py
 scripts/verify_research_approval_history.py

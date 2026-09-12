@@ -1,15 +1,30 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-12T07:11:26Z`
+- generated: `2026-09-12T12:12:15Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`7c4f427f79ff453bf5f1848ffe594b7b5a9131c5`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/7c4f427f79ff453bf5f1848ffe594b7b5a9131c5)
-- head date: `2026-09-11T17:10:47-04:00`
-- head subject: Merge pull request #2622 from lost-rob0t/osint/2594-reddit-columbus-thread
+- head: [`01383deda1e8aa6486ebee7c7dcde9c79ace2e72`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/01383deda1e8aa6486ebee7c7dcde9c79ace2e72)
+- head date: `2026-09-12T08:03:00-04:00`
+- head subject: Merge pull request #2627 from lost-rob0t/fix/diff-ingest-no-duplicates
 
 ## Git log, last 14 days
 
 ```text
+2026-09-12 01383deda1e8aa6486ebee7c7dcde9c79ace2e72 Merge pull request #2627 from lost-rob0t/fix/diff-ingest-no-duplicates
+2026-09-12 2c7c94de21beb3ba41d66f934a580d7143d1ebad ci: remove full import trigger
+2026-09-12 ad891a0e305a493a1cbd2ef880f2d9f37ff0316e ci: run diff duplicate regression tests
+2026-09-12 75e97f347d491c123902687a8f9fd7fe8f3ccdcf test: cover diff ingest duplicate suppression
+2026-09-12 95d5f26b65c340b72190d74ff62315fe42b36bdc ingest: dedupe merge diffs by logical document
+2026-09-12 b5817cfdd9ecf7fc742b93a020bfebe5783e70d3 ci: enforce diff-only StarIntel ingest
+2026-09-12 4d95c19e5aa0d5e09bed8a791f680a0bf2149830 Merge pull request #2626 from lost-rob0t/chore/full-import-trigger-20260912
+2026-09-12 4390a7ad68c92cacd059196469a8d39c00568a40 ci: request full StarIntel backfill
+2026-09-12 248dd2aa8bf35764af57af7a0c07a186d66ded2d ci: add merge-triggered full import sentinel
+2026-09-12 741a47ea472218d476ac740f6df1962f19ee3e4c Merge pull request #2625 from lost-rob0t/fix/nim-threaded-auto-ingest
+2026-09-12 21359264e848e66a9a2750cadbee4e945e0670a6 ci: validate and run threaded Nim auto-ingest
+2026-09-12 bb27c0f8e76f00dde3ca3fa6fe9be9da5db1f4c6 test: exercise threaded Nim ingest core
+2026-09-12 3132fc01fd169a812c3f35ad388db422fd6df6f8 ingest: build threaded Nim core
+2026-09-12 3f601e5a411163a0e443a19ca2c4ee99c84f256d ingest: add threaded Nim bulk importer
+2026-09-12 a52b5752cf9f6e9dae97a754f396c7c3602d74f8 ingest: add canonical document exporter for Nim core
 2026-09-11 7c4f427f79ff453bf5f1848ffe594b7b5a9131c5 Merge pull request #2622 from lost-rob0t/osint/2594-reddit-columbus-thread
 2026-09-11 c733bd90dc41998b50945f71d0bda2871b31edc2 Merge pull request #2621 from lost-rob0t/osint/2514-danbury-pd-enum
 2026-09-11 45de0b09eb26934b29571e31594b5b04ede986c4 osint(2594): scrape Reddit r/Columbus thread 1wcmaeh — full packet, accounts, relations, targets
@@ -362,6 +377,7 @@
 
 ```text
 .forgejo/workflows/import-starintel-documents.yml
+.github/full-import-trigger
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/import-starintel-documents.yml
@@ -1579,8 +1595,10 @@ schemas/starintel-doc-v0.9.0.schema.json
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/check-auto-dig-control.py
+scripts/export_starintel_documents.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
+scripts/starintel_ingest_core.nim
 starintel_auto_dig.nimble
 starintel_doc/operation_spec.py
 starintel_doc/schema_org.py
@@ -1589,11 +1607,13 @@ tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
 tests/test_counterevidence_packet_identity.py
+tests/test_export_starintel_documents.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_operation_document.py
 tests/test_operation_registry.py
 tests/test_starintel_corpus_mcp_server.py
+tests/test_starintel_ingest_core.py
 tmp/pack/build.py
 tmp/pack/pack.jsonl
 ```
@@ -1613,15 +1633,19 @@ tmp/pack/pack.jsonl
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/check-auto-dig-control.py
+scripts/export_starintel_documents.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
+scripts/starintel_ingest_core.nim
 tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
 tests/test_counterevidence_packet_identity.py
+tests/test_export_starintel_documents.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_operation_document.py
 tests/test_operation_registry.py
 tests/test_starintel_corpus_mcp_server.py
+tests/test_starintel_ingest_core.py
 ```

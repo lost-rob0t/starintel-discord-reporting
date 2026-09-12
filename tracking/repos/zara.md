@@ -1,15 +1,47 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-12T07:11:36Z`
+- generated: `2026-09-12T12:12:31Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`336fddb9840a7699cc0316b107545a6990488319`](https://github.com/lost-rob0t/zara/commit/336fddb9840a7699cc0316b107545a6990488319)
-- head date: `2026-09-12T00:38:05-04:00`
-- head subject: Merge pull request #865 from lost-rob0t/fix/daemon-vulkan-qwen-e2e
+- head: [`a6605f5e1dd36273834cd3c58aca89a55b07bba8`](https://github.com/lost-rob0t/zara/commit/a6605f5e1dd36273834cd3c58aca89a55b07bba8)
+- head date: `2026-09-12T04:41:22-04:00`
+- head subject: Merge pull request #874 from lost-rob0t/feat/adb-pairing-scripts
 
 ## Git log, last 14 days
 
 ```text
+2026-09-12 a6605f5e1dd36273834cd3c58aca89a55b07bba8 Merge pull request #874 from lost-rob0t/feat/adb-pairing-scripts
+2026-09-12 96577589a2bb9bf476e1cb78a528d64f08a395af Merge master into feat/adb-pairing-scripts
+2026-09-12 6ba387fb46342d51f9b21ea5ad8a0a0bff869c9e test(android): gate wireless ADB pairing helper
+2026-09-12 d1f0ce0cbbcf20d6bbe2b8bf624e95d179ed1474 Merge pull request #871 from lost-rob0t/rage/866-wear-foundation
+2026-09-12 7f06dc88b7ba3072a705d8bf74dc8a9885668e30 android: make adb helpers executable
+2026-09-12 adcc8e730f75809dd1ea79eea2977d4f602efd9f android: keep qr pairing nix-first
+2026-09-12 de9ec42627e8093dd63ae621870ad38120de080d test: cover adb qr pairing flow
+2026-09-12 9b40b8f31ead13417d51f553a9da075d24d17919 android: add watch adb pairing alias
+2026-09-12 ebc715cb91796905dfc44588bc818d51caeea93f android: add adb qr pairing flow
+2026-09-12 3ce2f954ff041d48c3d5b9d0371d038c315ca799 android: add reusable adb pairing helper
+2026-09-12 163cc7d0fbefa702bccb090f341a43ee3be6ac07 test(android): keep interop diagnostics contract task-list agnostic
+2026-09-12 3ee772a88ee68d26ffb0735ba03f485acbea65eb ci(android): publish phone and Wear debug APKs
+2026-09-12 b998df6b76d8972e1ccabe12a83730a0ef83db33 test(android): gate phone, shared theme, and Wear APK together
+2026-09-12 a595f5891f19bf188ebb0c4360789d7962378709 test(android): wire shared theme unit tests
+2026-09-12 4ae87072f7f1171c89986fea51cec42a22100468 test(android): cover canonical shared Zara themes
+2026-09-12 994483b3fb610d53b0cf89ae4851b4ad97612aa8 build(wear): pin stable Wear Material3 independently
+2026-09-12 fed6778d22f0b99c059769f3dca87d064271c393 test(android): validate shared theme source after Wear extraction
+2026-09-12 7d4688733cde947031f45f7209231ac78f7acc76 test(android): use shared Zara theme type
+2026-09-12 7da7ad1f9f6b3a959f13a176770313e87db87122 refactor(android): consume shared Zara theme type
+2026-09-12 4af9424a047669a3c86d2118853f03eba92158a3 refactor(android): import shared Zara theme in preference store
+2026-09-12 a445826ee14e0f00b5b850730b3296d90d097494 refactor(android): consume canonical shared Zara theme tokens
+2026-09-12 da2fc3234c214b45263a78498b5e75ca772e6fa3 feat(wear): add Zara-themed round watch client shell
+2026-09-12 ae6f685cd10b1bcb83a0e50983c12ff54c21853c feat(wear): declare standalone watch application
+2026-09-12 319eab08fc5eb60632fb9c5ebe08af19fe3293ee feat(wear): add standalone Zara Wear application module
+2026-09-12 a750a2a577303f3cff0fefa68d69ad4f6e6d38a8 build(android): consume shared Zara theme module from phone app
+2026-09-12 1efc53e2aeee56c4d31dc78f5d6d6ad3b2a800b2 build(android): register shared UI and Wear app modules
+2026-09-12 71f125640620e1fabfaa6b62fb7581c0fc57f4cf build(android): register library plugin for shared Wear UI
+2026-09-12 6c05ccf1efba01442e6aa60f1ec25286ded0ee4a build(android): add Wear Compose and library plugin aliases
+2026-09-12 e637256c71798f91ac01df2405e644e1d8e6e694 build(android): add shared UI library module
+2026-09-12 e342888b5e608505b3b7ca390236d165c729d67f feat(android): add canonical shared Zara theme tokens
+2026-09-12 6504b3176d269a21374ebdc062bc89c17ef40dc5 test(android): define RED Wear shared-theme contract
+2026-09-12 a9c4af23036df5b9f79c6d546b9ebc88b2d7931b docs(rage): start Wear foundation iteration for #866
 2026-09-12 336fddb9840a7699cc0316b107545a6990488319 Merge pull request #865 from lost-rob0t/fix/daemon-vulkan-qwen-e2e
 2026-09-12 240f9b86597e406ba28c38a8bd1c7b078ea0e89e fix(kb): preserve existing project loaders
 2026-09-12 3c1065c3ce273f2c85cc704d5e64a97b46e108d7 fix(stt): route daemon Vulkan through whisper.cpp
@@ -1158,21 +1190,6 @@
 2026-08-29 5fce64fa43e994efa934077e7d8f0ca67f2506be feat(wake): Zarathushtra wake word with edit-distance matching
 2026-08-29 e5a4f26e37f65289b225aaeffc7d692512765ff1 Merge pull request #227 from lost-rob0t/perf/zara-027-streaming-llm
 2026-08-29 3d12c6df67c1b716f337820bfac017db0b9870a7 docs(rage): record 28 streaming LLM research and design artifacts
-2026-08-29 dc51f12ac17a9b771b63345a2539285319bf7939 Merge pull request #226 from lost-rob0t/docs/134-reentry-assessment
-2026-08-29 bb171a8d251f6e3865afccd9010ee3f04978879b docs(rage): record 134 re-entry assessment and queue correction
-2026-08-29 6811cdf56ba232f8cc1ec1610cbe60b662e0cbd4 Merge pull request #190 from lost-rob0t/rage/134-daemon-release-gate
-2026-08-29 fcc4af3080d6258b5aec484424194df6f44bd4df Merge branch 'master' into rage/134-daemon-release-gate
-2026-08-29 429f99614b30497ca012cd1e9106a89e1deee98c Merge pull request #184 from lost-rob0t/rage/131-merge-closeout
-2026-08-29 823aab5bada50f2b30b6bf56a2f417455d147160 Merge branch 'master' into rage/131-merge-closeout
-2026-08-29 ff8f4b47a50e12882b569105ea7c61ee7d00c728 Merge pull request #146 from lost-rob0t/docs/rage-130-merge-outcome
-2026-08-29 85e6dfa4c7b5cd3c264e27bc435129ab2c1442ec Merge branch 'master' into rage/131-merge-closeout
-2026-08-29 44ee97f35f3a2a96a324fdf98afe0e1ffc6f39cd Merge branch 'master' into docs/rage-130-merge-outcome
-2026-08-29 cea85d3c523e5690170f7a40bce0da5303bce9f0 Merge pull request #225 from lost-rob0t/docs/rage-17-merge-outcome
-2026-08-29 634b105b67b989b7e68c7893f976adb6c7d1e7de Merge pull request #224 from lost-rob0t/fix/zara-016-llm-provider-contracts
-2026-08-29 a503012ba0cfda67c57640a17243d15035787264 docs(rage): record issue 17 merge outcome
-2026-08-29 fe43c9e8cf1966ef3d08051f15f5e99dead882b6 docs(rage): record ZARA-016 gate evidence
-2026-08-29 7985353d048e46e9120276256f335eaa73a28ab4 fix(llm): classify arity-2 socket_error as connection failure
-2026-08-29 4acbda423f605f2f5edb5d34aa3e8871ea480b54 docs(rage): open ZARA-016 iteration log for issue 17
 ```
 
 ## Repository paths changed, last 14 days
@@ -1328,6 +1345,7 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
+android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
@@ -1371,6 +1389,12 @@ android/integration/device_acceptance.py
 android/integration/stock_zara_server_fixture.py
 android/patch-trealla-module-path.sh
 android/settings.gradle.kts
+android/shared-ui/build.gradle.kts
+android/shared-ui/src/main/java/ai/zara/ui/theme/ZaraTheme.kt
+android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
+android/wear-app/build.gradle.kts
+android/wear-app/src/main/AndroidManifest.xml
+android/wear-app/src/main/java/ai/zara/wear/WearMainActivity.kt
 docs/README.org
 docs/STT.md
 docs/architecture.org
@@ -1404,7 +1428,6 @@ planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
-rage/134-daemon-release-gate.org
 rage/154-intentframe-design.org
 rage/154-intentframe-research.org
 rage/154-intentframe.org
@@ -1420,7 +1443,6 @@ rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
-rage/17-zara016-provider-contracts.org
 rage/170-android-bakeoff.org
 rage/171-android-skeleton.org
 rage/172-android-asset-staging.org
@@ -1533,10 +1555,14 @@ rage/575-transient-send-backpressure-r3.org
 rage/587-dictation-vulkan.org
 rage/668-config-loader-diagnostic.org
 rage/669-turn-event-loss.org
+rage/866-wear-foundation.org
 rage/client-connection-guards.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
 scripts/import-backlog.py
+scripts/pair-android-qr.sh
+scripts/pair-android.sh
+scripts/pair-watch.sh
 scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
 scripts/test-all.sh
@@ -1549,6 +1575,7 @@ scripts/test-capability-plans.sh
 scripts/test-command-routing.sh
 scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
+scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
@@ -1847,6 +1874,7 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
+android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
@@ -1880,9 +1908,13 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
 android/flake.nix
+android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 flake.nix
 scripts/benchmark-voice.py
 scripts/import-backlog.py
+scripts/pair-android-qr.sh
+scripts/pair-android.sh
+scripts/pair-watch.sh
 scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
 scripts/test-all.sh
@@ -1895,6 +1927,7 @@ scripts/test-capability-plans.sh
 scripts/test-command-routing.sh
 scripts/test-hooks.sh
 scripts/test-openrouter-live.sh
+scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
