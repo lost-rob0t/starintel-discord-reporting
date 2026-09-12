@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-12T18:26:23Z`
+- generated: `2026-09-12T22:20:46Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`d49f1e6e56cdbddd0843ad2c1c962c3ff758075f`](https://github.com/lost-rob0t/starintel-auto-research/commit/d49f1e6e56cdbddd0843ad2c1c962c3ff758075f)
@@ -70,15 +70,6 @@
 2026-08-29 a236d70af29bb0d3c6c470ad7fd62ce677745cc0 research: reconcile actor and dataset manifest runtime planning
 2026-08-29 b370e64e4976380d847feb1c87251451c5a60016 design: add runtime component handle registry
 2026-08-29 908f5106143b47cff47a2d78ea2bb6833d96cba0 research: define runtime component handle registry
-2026-08-29 f2f7de3b074b252ddbb6ace4d8491880619197ce design: extract adapters behind typed runtime ports
-2026-08-29 1dc386f0c96595f8a3d859db993e33e9623b154a research: define concrete adapter extraction boundary
-2026-08-29 641b98d5cdad9d218c7974bb1c0f445ff9d26838 index: link explicit library runtime research and design
-2026-08-29 afd0eb5613b6063fda4fe187e6a48fa6963add71 design: explicit StarIntel library API and runtime ports
-2026-08-29 7a562ae77440e6fe042a78cd061ff3b3b5f0a68f research: define explicit StarIntel library API and runtime ports
-2026-08-29 e6dbde75fc189e39d308387b0d4ad0e260d4c470 design: bound embeddable server core extraction
-2026-08-29 fc6d203d1fe3107bd256ad3ce0db3179df77e985 research: define embeddable server library boundary
-2026-08-29 f14c413672efb3ad5f561254936cd1313e82940b design: define strict JSON HTTP boundary
-2026-08-29 619266ccc42e4c39345af01f78142449f7aa8e79 research: advance strict JSON boundary with current parser evidence
 ```
 
 ## Repository paths changed, last 14 days
@@ -126,7 +117,6 @@ roam/design/star-server/STAR-SERVER-050-workload-dispatchers-router-pools.org
 roam/design/star-server/STAR-SERVER-051-observability-correlation-audit-contract.org
 roam/design/star-server/STAR-SERVER-052-end-to-end-idempotency-duplicate-suppression.org
 roam/design/star-server/STAR-SERVER-053-public-contract-package-api-doc-coherence.org
-roam/design/star-server/STAR-SERVER-060-strict-json-http-boundary.org
 roam/design/star-server/STAR-SERVER-061-sento-total-concurrency-accounting.org
 roam/design/starintel-discord-tool/STAR-DISCORD-002-operations-interface-architecture.org
 roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
@@ -172,10 +162,7 @@ roam/research/star-server/STAR-RESEARCH-008-beam-lfe-large-scale-ingest-continge
 roam/research/star-server/STAR-RESEARCH-009-thunder-audio-weather-geolocation.org
 roam/research/star-server/STAR-RESEARCH-035-titanic-backend-and-transport-comparison.org
 roam/research/star-server/STAR-RESEARCH-037-titanic-polyglot-zmq-transport-correction.org
-roam/research/star-server/STAR-RESEARCH-039-embeddable-server-library-boundary.org
-roam/research/star-server/STAR-RESEARCH-040-explicit-library-api-runtime-ports.org
 roam/research/star-server/STAR-RESEARCH-040-starrouter-zeromq-transport-api-overhaul.org
-roam/research/star-server/STAR-RESEARCH-041-concrete-adapter-extraction.org
 roam/research/star-server/STAR-RESEARCH-042-component-handles-registry-readiness-health.org
 roam/research/star-server/STAR-RESEARCH-043-manifest-runtime-plan-composition.org
 roam/research/star-server/STAR-RESEARCH-045-target-lease-recovery-race-matrix.org
@@ -188,7 +175,6 @@ roam/research/star-server/STAR-RESEARCH-051-document-pattern-ingress-url-extract
 roam/research/star-server/STAR-RESEARCH-052-observability-correlation-audit-contract.org
 roam/research/star-server/STAR-RESEARCH-053-end-to-end-idempotency-duplicate-suppression.org
 roam/research/star-server/STAR-RESEARCH-054-public-contract-package-api-doc-coherence.org
-roam/research/star-server/STAR-RESEARCH-060-strict-json-http-boundary.org
 roam/research/star-server/STAR-RESEARCH-062-prolog-star-client-actor-runtime.org
 roam/research/star-server/STAR-RESEARCH-063-awesome-osint-research-backlog.org
 roam/research/starintel-android/STARINTEL-ANDROID-RESEARCH-001-abcl-starlang-field-runtime.org

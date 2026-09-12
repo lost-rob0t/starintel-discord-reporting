@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-12T18:26:22Z`
+- generated: `2026-09-12T22:20:44Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`0a1c403f157587a322de0d9171c2991829f3ccef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0a1c403f157587a322de0d9171c2991829f3ccef)
@@ -382,7 +382,6 @@
 2026-08-31 7fbdc2684d22c1c3e43cee38002bb41dd90b663e Include actor code in guarded live-test trigger [auto-dig-live-test]
 2026-08-31 4278516533cae083014fcc88cef60324d71306d1 Fix stale Auto-Dig MCP allow-list regression test
 2026-08-31 c5eec01de8971f5b5c91d7cf570a6846c289b55d Re-enable Auto-Dig actor with current RLM harness [auto-dig-live-test]
-2026-08-29 e75a02a22813a2e5b337ba1939490f357675efa7 Temporarily disable Auto-Dig Prolog actor runner
 ```
 
 ## Repository paths changed, last 14 days
