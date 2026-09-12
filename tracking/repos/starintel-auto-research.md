@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-12T15:34:39Z`
+- generated: `2026-09-12T18:26:23Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`d49f1e6e56cdbddd0843ad2c1c962c3ff758075f`](https://github.com/lost-rob0t/starintel-auto-research/commit/d49f1e6e56cdbddd0843ad2c1c962c3ff758075f)
@@ -79,13 +79,6 @@
 2026-08-29 fc6d203d1fe3107bd256ad3ce0db3179df77e985 research: define embeddable server library boundary
 2026-08-29 f14c413672efb3ad5f561254936cd1313e82940b design: define strict JSON HTTP boundary
 2026-08-29 619266ccc42e4c39345af01f78142449f7aa8e79 research: advance strict JSON boundary with current parser evidence
-2026-08-29 f9a5c187ebed3044fc6ca0cb7a9ead02e8c5679c index: add target lease recovery race proof layer
-2026-08-29 affc8bec7819622bfdfcfb39d42dc1843c7aff46 design: define target lease recovery race proof harness
-2026-08-29 17bbc8528ee89e1891c9c1ea85e3ee936591b3ff research: define target lease recovery and race proof model
-2026-08-29 3fe200ee6d2546fcee01fa7a8cca9ed958ed9c1a design: refresh target lease HTTP integration boundary
-2026-08-29 a73bdadd3da7a9803ed0e863d27fba8ff51c4adf research: refresh target lease execution against current server
-2026-08-29 1960e7db63e1a7847a25c47465cd31680dd5fba6 design: define data config and trusted init boundary
-2026-08-29 0beda5eb4552715d40a7e26000c604a18249f8ed research: audit residual deployment config and secret boundary
 ```
 
 ## Repository paths changed, last 14 days
@@ -123,8 +116,6 @@ roam/design/star-server/QUASAR-008-lisp-actor-discovery-and-actor-studio.org
 roam/design/star-server/STAR-ADR-004-cl-discord-self-public-read-only-approval.org
 roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
 roam/design/star-server/STAR-SERVER-000-composable-intelligence-gservers.org
-roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
-roam/design/star-server/STAR-SERVER-044-deployment-config-trusted-init.org
 roam/design/star-server/STAR-SERVER-045-target-lease-recovery-race-matrix.org
 roam/design/star-server/STAR-SERVER-046-embeddable-server-library-boundary.org
 roam/design/star-server/STAR-SERVER-047-explicit-library-api-runtime-ports.org
@@ -179,8 +170,6 @@ roam/research/star-server/STAR-RESEARCH-002-C23C24-confoederatio-world-model.org
 roam/research/star-server/STAR-RESEARCH-002-awesome-osint-research-backlog.org
 roam/research/star-server/STAR-RESEARCH-008-beam-lfe-large-scale-ingest-contingency.org
 roam/research/star-server/STAR-RESEARCH-009-thunder-audio-weather-geolocation.org
-roam/research/star-server/STAR-RESEARCH-032-authenticated-target-lease-http-execution.org
-roam/research/star-server/STAR-RESEARCH-033-target-lease-recovery-race-matrix.org
 roam/research/star-server/STAR-RESEARCH-035-titanic-backend-and-transport-comparison.org
 roam/research/star-server/STAR-RESEARCH-037-titanic-polyglot-zmq-transport-correction.org
 roam/research/star-server/STAR-RESEARCH-039-embeddable-server-library-boundary.org

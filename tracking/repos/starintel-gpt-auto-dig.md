@@ -1,15 +1,31 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-12T15:34:38Z`
+- generated: `2026-09-12T18:26:22Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`8265d79bf4571239c3aea53a26a21c9a198d6fef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8265d79bf4571239c3aea53a26a21c9a198d6fef)
-- head date: `2026-09-12T09:17:22-04:00`
-- head subject: test: E2E diff-ingest canary for #2630
+- head: [`0a1c403f157587a322de0d9171c2991829f3ccef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0a1c403f157587a322de0d9171c2991829f3ccef)
+- head date: `2026-09-12T14:22:32-04:00`
+- head subject: [auto-dig-live-test] fix: recover unsupported read-only context selectors (#2637)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-12 0a1c403f157587a322de0d9171c2991829f3ccef [auto-dig-live-test] fix: recover unsupported read-only context selectors (#2637)
+2026-09-12 aaa02bdafdc1b38f6ca2fbd974146714aaed2853 fix: recover unsupported read-only context selectors (#2636)
+2026-09-12 046b61f0ace895ab0315fee824028fa07c825df3 [auto-dig-live-test] test: verify resumed actor (#2635)
+2026-09-12 53383b12a6928095722a22e1e60ccff8501857c2 test: prepare guarded resumed Auto-Dig live smoke (#2633)
+2026-09-12 177c621e1aee1a43bf575ef860555b366e76fc0f ops: resume Auto-Dig after explicit operator authorization (#2634)
+2026-09-12 b0d478efc33164cbacb21fdb121c6d6f7f53d881 test: make Auto-Dig pause gate state-independent (#2633)
+2026-09-12 2262612d80e83888f8e3c73e98d9891acf3f94c6 ops: resume Auto-Dig after explicit operator authorization (#2633)
+2026-09-12 65439204b28ddff5e2247056c3a1828af5fbd6d4 ci: retire Forgejo Auto-Dig ingest path
+2026-09-12 b443d6256d1f1469f855eb739f5d671fdb251cb4 ci: normalize and classify ingest bearer credential
+2026-09-12 18df2c7dd0a60a8a15252ff579e624c22084b858 ci: fix ingest auth preflight workflow syntax
+2026-09-12 d8f02da3dec9ea80833771289b5c796dc9a326c2 ci: preserve hardened diff-only workflow
+2026-09-12 1bb1974851e461be5a23f96f157c390933e6b583 ci: preserve hardened diff-only workflow
+2026-09-12 6c9c0f766d01a40669af9ea511ff41358b301d5d ci: keep restored diff-only workflow canonical
+2026-09-12 9db2158723379b1bce0e866c71446f9863bd6c5a ci: normalize restored diff-only ingest workflow
+2026-09-12 98acdf525d395875aa2f671c636143c364bad757 ci: restore and harden diff-only ingest workflow
+2026-09-12 7b1c5ed8f80f6fd9fe845186e5a929f7b902ef98 noop
 2026-09-12 8265d79bf4571239c3aea53a26a21c9a198d6fef test: E2E diff-ingest canary for #2630
 2026-09-12 dd53ce024207f63e86c333017ede6ec02ddacc72 test: add canonical diff-ingest canary packet
 2026-09-12 ef9b37218d6d0af26c7c10966f6c31fdb3eb84c1 test: move ingest canary into canonical watched packet path
@@ -385,6 +401,7 @@
 .gitignore
 AGENTS.md
 agents/README.md
+agents/auto_dig_live_test_trigger.pl
 agents/auto_dig_mcp_tools.pl
 agents/auto_dig_model_router.pl
 agents/auto_dig_prolog_actor.pl
@@ -399,6 +416,7 @@ agents/test_auto_dig_model_router.pl
 agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
+agents/test_auto_dig_provider_retry_hotfix_base.pl
 agents/test_auto_dig_rlm_runner.pl
 agents/test_coverage_backlog.pl
 config/auto-dig-control.json
@@ -1591,6 +1609,7 @@ schemas/starintel-doc-v0.9.0.manifest.json
 schemas/starintel-doc-v0.9.0.schema.json
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
+scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
 scripts/export_starintel_documents.py
 scripts/import-starintel-documents.py
@@ -1628,6 +1647,7 @@ tmp/pack/pack.jsonl
 .github/workflows/validate-db.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
+scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
 scripts/export_starintel_documents.py
 scripts/import-starintel-documents.py
