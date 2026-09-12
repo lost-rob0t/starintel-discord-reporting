@@ -17,11 +17,11 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/star-synthdata](./star-synthdata.md) `687d9f17be92`
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
 - [lost-rob0t/starRouter](./starRouter.md) `449349fb19ee`
-- [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `b8490fe8d9af`
+- [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `d49f1e6e56cd`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `b55316bae294`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `5857914a1e34`
-- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `19483014e9b1`
+- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `7c4f427f79ff`
 - [lost-rob0t/starintel-server](./starintel-server.md) `3e1f78523f37`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `ecaf2f3b50c0`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`

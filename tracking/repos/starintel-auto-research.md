@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-11T21:00:05Z`
+- generated: `2026-09-12T00:20:46Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`b8490fe8d9afa0138a08530f07b5e78094234575`](https://github.com/lost-rob0t/starintel-auto-research/commit/b8490fe8d9afa0138a08530f07b5e78094234575)
-- head date: `2026-09-10T20:31:38-04:00`
-- head subject: index: advance portable rule reuse to design
+- head: [`d49f1e6e56cdbddd0843ad2c1c962c3ff758075f`](https://github.com/lost-rob0t/starintel-auto-research/commit/d49f1e6e56cdbddd0843ad2c1c962c3ff758075f)
+- head date: `2026-09-11T20:12:02-04:00`
+- head subject: Research starintel-java as ABCL-backed JVM binding
 
 ## Git log, last 14 days
 
 ```text
+2026-09-11 d49f1e6e56cdbddd0843ad2c1c962c3ff758075f Research starintel-java as ABCL-backed JVM binding
+2026-09-11 81a4593fbee531cf7ccae1099809620367191d77 Research StarIntel Android ABCL + StarLang/Sento runtime
 2026-09-10 b8490fe8d9afa0138a08530f07b5e78094234575 index: advance portable rule reuse to design
 2026-09-10 771ca14fb64d800e7fe20b0d2a25a12820c309ec research: approve portable rule reuse and advance to design
 2026-09-10 4f50d468f000e5ffb894d4bbed58bfe6179f8dcc design: add portable logic package and sandbox actor design
@@ -268,6 +270,8 @@ roam/research/star-server/STAR-RESEARCH-054-public-contract-package-api-doc-cohe
 roam/research/star-server/STAR-RESEARCH-060-strict-json-http-boundary.org
 roam/research/star-server/STAR-RESEARCH-062-prolog-star-client-actor-runtime.org
 roam/research/star-server/STAR-RESEARCH-063-awesome-osint-research-backlog.org
+roam/research/starintel-android/STARINTEL-ANDROID-RESEARCH-001-abcl-starlang-field-runtime.org
+roam/research/starintel-java/STARINTEL-JAVA-RESEARCH-001-abcl-backed-jvm-binding.org
 roam/research/starintel-server/STAR-RESEARCH-061-identifier-normalization.org
 roam/todos/government-data/STAR-GOVDATA-TODO-000-jurisdiction-source-catalog.org
 scripts/__pycache__/save-research.cpython-313.pyc
