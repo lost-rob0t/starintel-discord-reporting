@@ -1,15 +1,20 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-12T00:21:02Z`
+- generated: `2026-09-12T07:11:36Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`81a8cdcd04dd8bb3748cceda111b9296ad750d97`](https://github.com/lost-rob0t/zara/commit/81a8cdcd04dd8bb3748cceda111b9296ad750d97)
-- head date: `2026-09-11T00:56:26-04:00`
-- head subject: test(transport): guard client connection failures end-to-end (#669) (#860)
+- head: [`336fddb9840a7699cc0316b107545a6990488319`](https://github.com/lost-rob0t/zara/commit/336fddb9840a7699cc0316b107545a6990488319)
+- head date: `2026-09-12T00:38:05-04:00`
+- head subject: Merge pull request #865 from lost-rob0t/fix/daemon-vulkan-qwen-e2e
 
 ## Git log, last 14 days
 
 ```text
+2026-09-12 336fddb9840a7699cc0316b107545a6990488319 Merge pull request #865 from lost-rob0t/fix/daemon-vulkan-qwen-e2e
+2026-09-12 240f9b86597e406ba28c38a8bd1c7b078ea0e89e fix(kb): preserve existing project loaders
+2026-09-12 3c1065c3ce273f2c85cc704d5e64a97b46e108d7 fix(stt): route daemon Vulkan through whisper.cpp
+2026-09-11 12f202ba31bed0a0c641e45a57fbfb3a14a582ac fix(wake): share daemon endpoint and CURVE configuration (#864)
+2026-09-11 db97e030215a49614a7fa533a83b0ecfb2066ea0 fix(wake): read audio_output_format from the client contract (#861) (#862)
 2026-09-11 81a8cdcd04dd8bb3748cceda111b9296ad750d97 test(transport): guard client connection failures end-to-end (#669) (#860)
 2026-09-10 8c32d458c8781063950e9d5d18dffc6a13482092 fix(transport): tolerate loaded hosts and surface silent route drops (#669) (#859)
 2026-09-10 23ad58013f8590a88e3514165c39318d1a641b29 fix(prolog): actionable diagnostic for hyphenated user config atoms (#670)
@@ -1178,6 +1183,10 @@
 .github/workflows/rage-575-apply-green.yml
 .github/workflows/release-v0.1.0-alpha.yml
 .github/workflows/release.yml
+.prolog/kb/daemon_startup.pl
+.prolog/kb/index.pl
+.prolog/kb/voice_ingress_stt.pl
+.prolog/kb/wake_connection.pl
 AGENTS.md
 PRODUCT.md
 README.org
