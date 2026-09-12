@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-12T12:12:28Z`
+- generated: `2026-09-12T15:34:47Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -143,22 +143,12 @@
 2026-08-29 6a31baa944e15ef70d5fb6577c7cb9c793282aff docs(design): executable design gate for SPEC/PLAN authority rewrite
 2026-08-28 0e1bd9a3f0afb8826ef650400bcc604192c43cad docs(design): SPEC/PLAN authority refinement for PR #290
 2026-08-28 802ddceb90eaed29f4c72969f5066fb0f66c4a12 docs: define spec-seeded symbolic planning
-2026-08-29 b654831a0150a593821179da1d3886dfd64deb5c chore: remove temporary issue 304 patch workflow
-2026-08-29 25c0194ca98a0a9ad7e6ae221700b21ed99cffd6 fix: align context peek validation with native schema
-2026-08-29 3a860a0b8c2ec986d06d4301b757d3ec938b8deb ci: apply and test issue 304 selector fix
-2026-08-29 2275cdfe0eb1f3c593467a4f153bbedc2dea05f1 test: reproduce live context peek selector contract mismatch
-2026-08-29 eb2411afdaf981a0a121f55b7ddf23dc9fcef812 chore: remove temporary issue 298 patch workflow
-2026-08-29 eea576f9b13e9ed3f974a4af4944c9c87183e841 fix: render runtime any as unconstrained JSON Schema
-2026-08-29 1a7bb00115366603dfe38a3ec6838d055f1f7160 ci: apply and test issue 298 schema fix
-2026-08-29 af94929ebd094c69fa64795152bdabb9e054938b test: reproduce MCP any-schema direct projection failure
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .github/workflows/ci.yml
-.github/workflows/fix-298-self-patch.yml
-.github/workflows/fix-304-self-patch.yml
 .github/workflows/nix.yml
 .github/workflows/paid-openrouter.yml
 .github/workflows/tree-sitter.yml
@@ -255,7 +245,6 @@ test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
-test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
@@ -282,8 +271,6 @@ test/support/plan_graph_test_tools.pl
 
 ```text
 .github/workflows/ci.yml
-.github/workflows/fix-298-self-patch.yml
-.github/workflows/fix-304-self-patch.yml
 .github/workflows/nix.yml
 .github/workflows/paid-openrouter.yml
 .github/workflows/tree-sitter.yml
@@ -309,7 +296,6 @@ test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
-test/rlm_native_any_schema_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl

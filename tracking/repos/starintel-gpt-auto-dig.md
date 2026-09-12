@@ -1,15 +1,26 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-12T12:12:15Z`
+- generated: `2026-09-12T15:34:38Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`01383deda1e8aa6486ebee7c7dcde9c79ace2e72`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/01383deda1e8aa6486ebee7c7dcde9c79ace2e72)
-- head date: `2026-09-12T08:03:00-04:00`
-- head subject: Merge pull request #2627 from lost-rob0t/fix/diff-ingest-no-duplicates
+- head: [`8265d79bf4571239c3aea53a26a21c9a198d6fef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/8265d79bf4571239c3aea53a26a21c9a198d6fef)
+- head date: `2026-09-12T09:17:22-04:00`
+- head subject: test: E2E diff-ingest canary for #2630
 
 ## Git log, last 14 days
 
 ```text
+2026-09-12 8265d79bf4571239c3aea53a26a21c9a198d6fef test: E2E diff-ingest canary for #2630
+2026-09-12 dd53ce024207f63e86c333017ede6ec02ddacc72 test: add canonical diff-ingest canary packet
+2026-09-12 ef9b37218d6d0af26c7c10966f6c31fdb3eb84c1 test: move ingest canary into canonical watched packet path
+2026-09-12 e35217764c772d9ed1f5d86ead85ab0577636b3c test: add diff ingest canary for #2630
+2026-09-12 a252cda1cc6982ce2863f4330940de3b4f2726fb Merge pull request #2629 from lost-rob0t/fix/ingest-runtime-debug
+2026-09-12 f2cf467945740336a9e7ab24c3b787deb2f4caea tests: cover ambiguous bulk retry failures
+2026-09-12 b49f1d17c8e0eaab28b720786979683f36a0fff2 ingest: fail closed on ambiguous bulk retries
+2026-09-12 37dfed6a9fdc053b8bea3910210cb67d70d8be7c Merge pull request #2628 from lost-rob0t/fix/importer-ci-id-dispatch
+2026-09-12 b6174f42559638767d0f7f6b6f2ab29d7cde3fba ci: make importer merge-diff and manual-id driven
+2026-09-12 b1071c04982ffd83e813dd9338f570fcff40dae3 tests: cover importer id selection and colon paths
+2026-09-12 cfb93c7477d084601a7344827aeac273635f2a1d importer: support explicit id dispatch safely
 2026-09-12 01383deda1e8aa6486ebee7c7dcde9c79ace2e72 Merge pull request #2627 from lost-rob0t/fix/diff-ingest-no-duplicates
 2026-09-12 2c7c94de21beb3ba41d66f934a580d7143d1ebad ci: remove full import trigger
 2026-09-12 ad891a0e305a493a1cbd2ef880f2d9f37ff0316e ci: run diff duplicate regression tests
@@ -356,21 +367,6 @@
 2026-08-31 4278516533cae083014fcc88cef60324d71306d1 Fix stale Auto-Dig MCP allow-list regression test
 2026-08-31 c5eec01de8971f5b5c91d7cf570a6846c289b55d Re-enable Auto-Dig actor with current RLM harness [auto-dig-live-test]
 2026-08-29 e75a02a22813a2e5b337ba1939490f357675efa7 Temporarily disable Auto-Dig Prolog actor runner
-2026-08-29 a4b73884d1556cf8eb3bc1ec924d4dd947800733 Merge pull request #2305 from lost-rob0t/fix/use-prolog-rlm-298-schema-fix
-2026-08-29 c5210c524fb0445597853128c44c66ab7ce5a5cb chore: remove temporary Prolog-RLM upgrade workflow
-2026-08-29 9ede514e70ac2d92f61366b1e259815394e6b60e test: restore complete 14-tool direct inventory
-2026-08-29 e12b7edcc096231f88726e2d6e6248b890c93b0e fix: restore full Brave direct tool inventory
-2026-08-29 f8d8e623cb45e47d43de37d8c4a02de568b4f48a fix: pin Prolog-RLM any-schema renderer
-2026-08-29 4ad80f280ee983a4f9b5d997405cd7b18b0b29c5 ci: apply and test Prolog-RLM schema upgrade
-2026-08-29 46fdb4f497d2628c1797bd570467121f3ebdf373 Merge pull request #2304 from lost-rob0t/fix/auto-dig-skip-unprojectable-llm-context
-2026-08-29 fb4944574bf21b8775d6cb9a9c7624f7bb4f3ff9 test: require 13 projectable research tools
-2026-08-29 99336a4dfdbb3e6df292bb9d84a0e991a0faedb4 fix: skip MCP schema Prolog-RLM cannot project yet
-2026-08-29 22d70678c0aa26c15c9e24d06ccea0d10dbcf885 Merge pull request #2303 from lost-rob0t/fix/auto-dig-direct-rlm-2026-08-29
-2026-08-29 f0cb6cad309df6d76d48c2739bdaf88eb0d479f4 test: require complete direct research tool inventory
-2026-08-29 afd59d775f781b49b5eba5a26460b881e28e7f15 feat: expose full read-only research MCP inventory
-2026-08-29 d616cc4e431ba0c776962ed733b10aa62ae92e27 ci: pin latest Prolog-RLM direct runtime
-2026-08-29 b5e455358a2055670d4b0e96bbf6a4ab5ba0da7a test: cover direct-mode Auto-Dig runtime policy
-2026-08-29 1f8882388a4d80bf589c733df4a8c6a8c38024a5 fix: run Auto-Dig research through direct RLM mode
 ```
 
 ## Repository paths changed, last 14 days
@@ -385,7 +381,6 @@
 .github/workflows/operation-release-sync.yml
 .github/workflows/operation-schema-sync.yml
 .github/workflows/publish-pages.yml
-.github/workflows/upgrade-prolog-rlm-298.yml
 .github/workflows/validate-db.yml
 .gitignore
 AGENTS.md
@@ -410,6 +405,7 @@ config/auto-dig-control.json
 conformance/__init__.py
 conformance/fixtures.py
 conformance/implementations.json
+dataset-testing-debug/e2e-diff-ingest-canary-2630.json
 db/analysis/starintel:analysis:danbury-pd-enum-2026-09-11.ndjson
 db/analysis/starintel:analysis:reddit-1wcmaeh-scrape-pass-1.ndjson
 db/event/starintel:event:danbury-council-vote-2026-09-02-police-eligibility-ordinance.ndjson
@@ -1585,6 +1581,7 @@ digs/danbury/2026-09-11-danbury-pd-enum/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
 digs/netflix-uk/2026-09-11-netflixuk-social-attribution/README.md
+digs/testing-debug/2026-09-12-e2e-diff-ingest-2630/starintel-documents.jsonl
 docs/auto-dig-pause-control.md
 docs/operation-object.md
 noop
@@ -1628,7 +1625,6 @@ tmp/pack/pack.jsonl
 .github/workflows/operation-release-sync.yml
 .github/workflows/operation-schema-sync.yml
 .github/workflows/publish-pages.yml
-.github/workflows/upgrade-prolog-rlm-298.yml
 .github/workflows/validate-db.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py

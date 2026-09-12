@@ -1,15 +1,34 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-12T12:12:11Z`
+- generated: `2026-09-12T15:34:37Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`3e1f78523f377a94f43fda7a3cc1fc6622d7269d`](https://github.com/lost-rob0t/starintel-server/commit/3e1f78523f377a94f43fda7a3cc1fc6622d7269d)
-- head date: `2026-09-11T01:12:19-04:00`
-- head subject: Merge pull request #153 from lost-rob0t/feat/operation-object-151
+- head: [`436a96bd2feffb18c1fc41beaaf48a28781906c7`](https://github.com/lost-rob0t/starintel-server/commit/436a96bd2feffb18c1fc41beaaf48a28781906c7)
+- head date: `2026-09-12T08:56:58-04:00`
+- head subject: Merge pull request #173 from lost-rob0t/test/172-target-tenant-http-stack
 
 ## Git log, last 14 days
 
 ```text
+2026-09-12 436a96bd2feffb18c1fc41beaaf48a28781906c7 Merge pull request #173 from lost-rob0t/test/172-target-tenant-http-stack
+2026-09-12 46a1bbfd54434a21fc40d2941bf3b05b905268fe test: exercise non-default target tenant over HTTP stack
+2026-09-12 75bea2624ec773f4737aaa2bd6b0a65ac5c6c462 Merge pull request #176 from lost-rob0t/fix/174-rabbit-startup-retry
+2026-09-12 2eec346eb38e91a84ca8609268ddad8e0f83df62 test: cover Rabbit consumer startup retry boundaries
+2026-09-12 ab928d8381a5fa7c889a51d6b3c2d8d6861f4ea6 fix: destroy partial Rabbit connection after open failure
+2026-09-12 7ad03c3fae771a3e4ff3bab175eb6eed73be5ef5 fix: scope startup retry to retrying Rabbit streams
+2026-09-12 a21c16b5e8895afcb029ad30b025ea1065f8208f build: load Rabbit startup retry before runtime lifecycle
+2026-09-12 a785b27b3463cc474d441caaad71c237f78f5766 fix: add bounded Rabbit consumer startup retry
+2026-09-12 09e44169e9b1b65b4ceecd964b9a782f5655cc0e Merge pull request #171 from lost-rob0t/fix/169-target-tenant-isolation-20260912
+2026-09-12 77f4be34c4b98b0988f974b24acc1707c3a5361c docs: keep exported target-list contract text stable
+2026-09-12 b8d29c1970000087b564793758dbcacec53c107c test: cover optional target-list scope narrowing
+2026-09-12 059a09552dc82a3ced250cd62575dd4f827ca58d fix: preserve optional target-list scope restrictions
+2026-09-12 e4d6b213d4a1fc23b1a8113def9b846d273e1c8c test: require tenant isolation suite in canonical unit gate
+2026-09-12 303596cb9e93fab27493d6717e6a3900bba89eed test: load target tenant isolation suite
+2026-09-12 0148fa146278bb355edffe4038ccb4df14d2d2b5 fix: reject poisoned cross-actor target rows
+2026-09-12 0ee99822babbbbe1250e3bc16eefd1a060d87c6b test: cover target tenant isolation regressions and adverse responses
+2026-09-12 9a60e506174177d35981a96082c96926071662ae fix: keep target-list authorization to tenant and actor scopes
+2026-09-12 39c3db953032f4d257ac212836d05b365a207b81 fix: add tenant-scoped target view
+2026-09-12 cc5a00974b320de0598ffd25af229eb02dc58a0e fix: scope target reads by requested tenant
 2026-09-11 3e1f78523f377a94f43fda7a3cc1fc6622d7269d Merge pull request #153 from lost-rob0t/feat/operation-object-151
 2026-09-11 8dd6b4afb871f0b2b059fb2ff08ed2d75cd19006 test: pin operation 0.9.1 release in contract checks
 2026-09-09 6748f685051fd147447c77d3b1de9e557648415d ci: remove one-shot operation runtime sync
@@ -106,6 +125,7 @@ schema/starintel-schema.lock.json
 scripts/check-starintel-schema-lock.py
 scripts/doc-authoring.py
 scripts/insert-docstrings.py
+scripts/stack-test.sh
 source/actor-systems/event-actor.lisp
 source/actor-systems/matcher-actor.lisp
 source/actors.lisp
@@ -118,7 +138,9 @@ source/auth/users.lisp
 source/authorization/policy.lisp
 source/authorization/services.lisp
 source/consumers/consumers.lisp
+source/consumers/owner-fixes.lisp
 source/consumers/retry-policy.lisp
+source/consumers/startup-retry.lisp
 source/databases/couchdb.lisp
 source/databases/document-update.lisp
 source/databases/outbox.lisp
@@ -142,12 +164,17 @@ source/leases/valkey-store.lisp
 source/main.lisp
 source/producers/producers.lisp
 source/rabbit.lisp
+source/starintel-gserver.asd
 source/target-dispatch.lisp
 source/target-recovery.lisp
+source/views/targets.json
 starintel-gserver-tests.asd
+t/consumers-test.lisp
 t/http-boundary-test.lisp
+t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
+t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
 t/valkey-lease-review-regression-test.lisp
@@ -167,10 +194,15 @@ flake.nix
 scripts/check-starintel-schema-lock.py
 scripts/doc-authoring.py
 scripts/insert-docstrings.py
+scripts/stack-test.sh
+source/starintel-gserver.asd
 starintel-gserver-tests.asd
+t/consumers-test.lisp
 t/http-boundary-test.lisp
+t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/json-literal-preservation-test.lisp
+t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
 t/valkey-lease-review-regression-test.lisp

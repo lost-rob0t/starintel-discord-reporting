@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-12T12:12:17Z`
+- generated: `2026-09-12T15:34:39Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`d49f1e6e56cdbddd0843ad2c1c962c3ff758075f`](https://github.com/lost-rob0t/starintel-auto-research/commit/d49f1e6e56cdbddd0843ad2c1c962c3ff758075f)
@@ -86,33 +86,6 @@
 2026-08-29 a73bdadd3da7a9803ed0e863d27fba8ff51c4adf research: refresh target lease execution against current server
 2026-08-29 1960e7db63e1a7847a25c47465cd31680dd5fba6 design: define data config and trusted init boundary
 2026-08-29 0beda5eb4552715d40a7e26000c604a18249f8ed research: audit residual deployment config and secret boundary
-2026-08-29 e276099814b4650894709db0eb6970a245fe33a6 design: preserve Sento bounded mailboxes for admission
-2026-08-29 d923d30a67c09375d20a42d838f333afe65b303d research: ground overload control in Sento bounded mailboxes
-2026-08-29 a3e3182d87a7cfb3a5c72e2dbc0c61aef438f9e2 design: preserve Sento semantics and cap total concurrency
-2026-08-29 f315d3a94f30bc06c0ebcf379b300f20a0769119 research: deepen Sento concurrency accounting model
-2026-08-29 62bb68fee4814f125395a099cf6057a73d133568 design: workload dispatchers and managed router pools
-2026-08-29 7f2eb185e3f156a84b796b7b4c8611afa7578b4a research: P0 workload dispatchers and router pools
-2026-08-29 ba32ac4cfede4722344ab73cc8f8ff49d863e916 design: StarLang explicit agents over Prolog-RLM
-2026-08-29 b56271ce08f07fcf8013e788fa28d96dc5f3b6e9 research: define explicit StarLang agents over Prolog-RLM
-2026-08-29 e7a135bf66c8f20c80635abd403a57b7e54e3c6f fix(approval): verify canonical-born research history
-2026-08-29 0d5cc908b59ebe2097e1a18c9b217237214ba227 test(approval): reproduce canonical-born history failure
-2026-08-29 7e5d3d2c92b058086ca0be824f614485ac51a7c9 fix(approval): reconcile canonical ADAR-001 design
-2026-08-29 660103cd4041e2f1d26178eca3f738a9149f0168 fix(approval): separate StarLang authorization from completion
-2026-08-29 42240a6358ba6497b053952d668359a2f408cde5 fix(approval): reconcile StarLang implementation authorization
-2026-08-29 dcd3af4b816f470e17bee79dc5717269acf05cd7 fix(approval): reconcile active ADAR-001 slot
-2026-08-29 2461d0e58d86647beb06eef892d01c3f4e5350a6 fix(approval): materialize ADAR-001 implementation authorization
-2026-08-29 968ee13618e2c4a5942800df5498a30a0d88002f fix(star-lang): preserve canonical repository boundary markers
-2026-08-29 e04cf38847207f71ee4d81805fefb0bd5ef04cdb docs(star-lang): update implementation index for approved designs
-2026-08-29 23247a08414065658f82373667dcbed2c7aaf37e docs(star-lang): approve N-Prolog backend in current format
-2026-08-29 c40fbbc93608abb35c5bb34682d7bb750da8e0ad docs(star-lang): approve SWI-Prolog backend in current format
-2026-08-29 91a7994da79687aca60fb17a6604bcea6a7b4326 docs(star-lang): approve LISA backend in current format
-2026-08-29 4702ac0a6cd8b748f67d64139aec99398c476a8a docs(star-lang): approve selectable logic architecture in current format
-2026-08-29 92c48ca1c6dd5ae7206d01da9a752f2b41e5ee07 docs(star-lang): approve package extraction and harden prototype retirement
-2026-08-29 fe4d422003b7a52cbb916a1b0ef3dcb6ce5ca212 docs(star-lang): approve resolver ports and retire prototype path
-2026-08-29 33ac7b4547858ddc95274a6db2be90d69f25acc7 chore: remove accidental fetch test file
-2026-08-29 26cdfccd164f80363bb702c6d4baeae8b72a7170 x
-2026-08-29 844eb1cbc40f32f92a8b340b83e30204b5a0e837 chore: remove accidental noop file
-2026-08-29 e66a85241571e41f8fb6d8d7d0e05e4030149328 noop
 ```
 
 ## Repository paths changed, last 14 days
@@ -126,8 +99,6 @@
 .github/workflows/star-lang-constructors.yml
 .github/workflows/star-lang-dispatch-idempotency-identity.yml
 .github/workflows/star-lang-loader.yml
-__fetchtest__
-__noop__
 agent-zero/README.md
 agent-zero/usr/agents/starintel-adard-gated/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-contract-audit/prompts/agent.system.main.specifics.md
@@ -135,7 +106,6 @@ agent-zero/usr/agents/starintel-implementation/prompts/agent.system.main.specifi
 agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/starintel/prompts/agent.system.main.specifics.md
-roam/design/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-001-adaptive-research-dag-evaluation-harness.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-002-deep-research-execution-adapters.org
 roam/design/auto-research/STAR-RESEARCH-PIPELINE-003-government-data-acquisition-actors.org
@@ -148,21 +118,12 @@ roam/design/star-kb/STAR-KB-001-v0.1-shared-prolog-knowledge-library.org
 roam/design/star-kb/STAR-KB-002-portable-logic-packages-and-sandboxed-actors.org
 roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/design/star-lang/STAR-LANG-002-durable-actor-runtime.org
-roam/design/star-lang/STAR-LANG-005-resolver-effect-ports.org
-roam/design/star-lang/STAR-LANG-006-final-package-extraction.org
-roam/design/star-lang/STAR-LANG-007-selectable-logic-and-expert-systems.org
-roam/design/star-lang/STAR-LANG-010-lisa-expert-system-backend.org
-roam/design/star-lang/STAR-LANG-011-swi-prolog-expert-system-backend.org
-roam/design/star-lang/STAR-LANG-012-n-prolog-expert-system-backend.org
-roam/design/star-lang/STAR-LANG-013-explicit-agents-prolog-rlm.org
 roam/design/star-server/QUASAR-006-auto-dig-fork-and-bridge-boundary.org
 roam/design/star-server/QUASAR-008-lisp-actor-discovery-and-actor-studio.org
 roam/design/star-server/STAR-ADR-004-cl-discord-self-public-read-only-approval.org
 roam/design/star-server/STAR-MANIFEST-001-document-contracts.org
 roam/design/star-server/STAR-SERVER-000-composable-intelligence-gservers.org
 roam/design/star-server/STAR-SERVER-032-authenticated-target-lease-http-execution.org
-roam/design/star-server/STAR-SERVER-042-workload-dispatchers-router-pools.org
-roam/design/star-server/STAR-SERVER-043-sento-bounded-admission.org
 roam/design/star-server/STAR-SERVER-044-deployment-config-trusted-init.org
 roam/design/star-server/STAR-SERVER-045-target-lease-recovery-race-matrix.org
 roam/design/star-server/STAR-SERVER-046-embeddable-server-library-boundary.org
@@ -177,24 +138,20 @@ roam/design/star-server/STAR-SERVER-053-public-contract-package-api-doc-coherenc
 roam/design/star-server/STAR-SERVER-060-strict-json-http-boundary.org
 roam/design/star-server/STAR-SERVER-061-sento-total-concurrency-accounting.org
 roam/design/starintel-discord-tool/STAR-DISCORD-002-operations-interface-architecture.org
-roam/implement/auto-dig/ADAR-001-auto-dig-auto-research-dashboard-and-navigation.org
 roam/implement/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/auto-research/STAR-RESEARCH-PIPELINE-INDEX-000-adaptive-research.org
 roam/indexes/drunk-drivers/DRUNK-DRIVER-INDEX-000-national-crash-identity-resolution.org
 roam/indexes/star-kb/STAR-KB-INDEX-000-prolog-knowledge-system.org
 roam/indexes/star-lang/STAR-LANG-INDEX-000-language-research.org
-roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/star-server/STAR-LEASE-INDEX-030-backend-neutral-kv-leases.org
 roam/indexes/star-server/STAR-TITANIC-INDEX-033-durable-actor-jobs.org
 roam/indexes/starintel-discord-tool/STAR-DISCORD-INDEX-000-operations-interface.org
 roam/research/ardr-issues/ARDR-ISSUE-133-meta-mcp-execution-plane.org
-roam/research/ardr-issues/ARDR-ISSUE-188-workload-dispatchers-router-pools.org
 roam/research/ardr-issues/ARDR-ISSUE-190-sento-bounded-mailbox-admission.org
 roam/research/ardr-issues/ARDR-ISSUE-191-deployment-config-secrets-contract.org
 roam/research/ardr-issues/ARDR-ISSUE-206-identifier-normalization.org
-roam/research/auto-dig/ADAR-APPROVAL-001-dashboard-ux.org
 roam/research/auto-research/STAR-AUTO-RESEARCH-000-rd-agent-pipeline-analysis.org
 roam/research/auto-research/STAR-AUTO-RESEARCH-001-logic-engine-selection-for-adard.org
 roam/research/auto-research/STAR-AUTO-RESEARCH-002-deep-research-execution-adapter-analysis.org
