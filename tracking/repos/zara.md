@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-12T22:21:00Z`
+- generated: `2026-09-13T04:53:08Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`a6605f5e1dd36273834cd3c58aca89a55b07bba8`](https://github.com/lost-rob0t/zara/commit/a6605f5e1dd36273834cd3c58aca89a55b07bba8)
@@ -1181,15 +1181,6 @@
 2026-08-30 f42f0cad1126dbcf23df282e02f880bf6ffb62b9 docs(rage): freeze IntentFrame v1 contract with 154 research and migration design
 2026-08-30 0661a2d56d2f8ebcc02fcecdc7f2be8334e90983 Merge pull request #231 from lost-rob0t/chore/backlog-import
 2026-08-30 88b6b53ebdf301c4efee5947efe84af769ccad1a feat(planning): import backlog state from GitHub issues with Prolog-verifiable mirror
-2026-08-29 90b0c821f944d6b5edc2e381b0318ea44a116224 Merge pull request #230 from lost-rob0t/rage/195-samsung-assistant-research
-2026-08-29 b53a469ec08e71f4b075e69d85814b51709df416 docs(rage): record 195 Samsung assistant research gate and decision record
-2026-08-29 38e98a4c6e683d590d8682af98803ba9987f3418 Merge pull request #229 from lost-rob0t/feat/android-app
-2026-08-29 2d3f9c57eccb58f611a2d294f170bdf7a1b19655 Merge branch 'master' into feat/android-app
-2026-08-29 b09d9e44c4693aa8bb9518f3911cbefec749b5b3 feat(android): Android skeleton with reproducible Nix/Gradle gate (#170, #171)
-2026-08-29 ad2f43d2cfe914f1ac1c2b06f9048d477a2d4c9b Merge pull request #228 from lost-rob0t/feature/wake-words-edit-distance
-2026-08-29 5fce64fa43e994efa934077e7d8f0ca67f2506be feat(wake): Zarathushtra wake word with edit-distance matching
-2026-08-29 e5a4f26e37f65289b225aaeffc7d692512765ff1 Merge pull request #227 from lost-rob0t/perf/zara-027-streaming-llm
-2026-08-29 3d12c6df67c1b716f337820bfac017db0b9870a7 docs(rage): record 28 streaming LLM research and design artifacts
 ```
 
 ## Repository paths changed, last 14 days
@@ -1207,12 +1198,10 @@
 AGENTS.md
 PRODUCT.md
 README.org
-android/.gitignore
 android/AGENTS.md
 android/DESIGN.md
 android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
-android/app/src/main/assets/prolog/.gitkeep
 android/app/src/main/assets/prolog/portable/semantic_core.pl
 android/app/src/main/assets/prolog/portable/semantic_fixtures.json
 android/app/src/main/cpp/CMakeLists.txt
@@ -1383,7 +1372,6 @@ android/build.gradle.kts
 android/design/reference-2026-09-07.svg
 android/flake.lock
 android/flake.nix
-android/gradle.properties
 android/gradle/libs.versions.toml
 android/integration/device_acceptance.py
 android/integration/stock_zara_server_fixture.py
@@ -1443,8 +1431,6 @@ rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
-rage/170-android-bakeoff.org
-rage/171-android-skeleton.org
 rage/172-android-asset-staging.org
 rage/172-android-fixture-runner.org
 rage/172-android-jni-bridge.org
@@ -1474,7 +1460,6 @@ rage/178-android-release-matrix.org
 rage/178-android-uri-intent-abuse-r4.org
 rage/178-android-voice-hello-json-depth-r1.org
 rage/178-capability-json-depth-bound.org
-rage/195-samsung-assistant-research.org
 rage/196-android-assistant-role.org
 rage/196-ui-closed-runtime.org
 rage/197-compose-first-usable.org
@@ -1528,7 +1513,6 @@ rage/260-python-user-hooks-design.org
 rage/260-python-user-hooks-research.org
 rage/260-python-user-hooks.org
 rage/260-service-plugin-advice.org
-rage/28-streaming-llm-design.org
 rage/28-streaming-llm.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
@@ -1713,7 +1697,6 @@ t/test_wake_lifecycle.py
 t/test_wake_model_debug.py
 t/test_wake_principal_isolation.py
 t/test_wake_speaker.py
-t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
@@ -2064,7 +2047,6 @@ t/test_wake_lifecycle.py
 t/test_wake_model_debug.py
 t/test_wake_principal_isolation.py
 t/test_wake_speaker.py
-t/test_wake_words.py
 t/test_whisper_cpp.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py

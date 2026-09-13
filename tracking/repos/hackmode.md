@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-12T22:20:59Z`
+- generated: `2026-09-13T04:53:07Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -106,34 +106,13 @@
 2026-08-30 d9a842a74d34eb6a8f127d884d5119271212103a Remove agent-framework terminology from product README
 2026-08-30 71b3f5d817eb61adebf0f90d6eb2e47929bda083 Hackpert: add typed active action protocol (#44)
 2026-08-30 10fa9855449ea2be8d6ed047f457558bdebd0a4e Database: establish typed execution graph foundation (#42)
-2026-08-30 1434f339a99824a3ce1c37ba0a80b57ee1bd1505 Keep RAGE entirely inside Agent Zero (#41)
-2026-08-30 17361df8d693224746a8aab2a08d25b7ef2c72fa Correct Auto-RAGE rollback boundary
-2026-08-30 348996ea48020bb20be3a078488f7fb5d8768103 Declare Agent Zero as the only RAGE implementation boundary
-2026-08-30 02dc5c60d351d2286c3e89dc1f1ced75a5e6357d Keep database Auto-RAGE orchestration inside Agent Zero
-2026-08-30 c9eeb3db5db80d23abbd43ec2d8a91d0615ff84f Keep Auto-RAGE orchestration inside Agent Zero
-2026-08-30 22ab63639dc9367f9ec6ee595f265a4031a9a801 Add generic Agent Zero PR lane guard
-2026-08-30 768449965676ac4160f93b47a8aeb02f47f1ebf1 Keep Auto-RAGE PR lane configuration in Agent Zero
-2026-08-30 b797757697dedc5ba59ec1c01c452f05132beb82 Remove RAGE-specific CI implementation
-2026-08-30 1624d6847a9f1a4e79bad84614a2092c28a43054 Move RAGE ownership policy out of product architecture
-2026-08-30 7e61ecdf599c3fc472f70c21699c9504b5fddacd Remove RAGE orchestration tests from Hackmode runtime
-2026-08-30 e37eb0511e79d456787a4f6f34bf6a0e7f2e49d4 Remove RAGE orchestration from Hackmode runtime
-2026-08-30 ce8fd8a22107fd999f5b226ddcd2de7156a171b2 Remove RAGE worker tests from Hackmode core
-2026-08-30 3f5b7ade24921ac2d705999d0f0a68153edef6dd Remove RAGE worker runtime from Hackmode core
-2026-08-30 aa6bf69351f89b7d52548c54b01dbb5e8d0180cd Serialize Auto-RAGE pull requests per worker lane (#39)
-2026-08-30 a0fcf261bcbb5d957d4818501b152316f427426e Add Auto-RAGE PR serialization guard
-2026-08-30 dec92721cd32334850d0dec2915c2787dbe95fc7 Hackpert: establish explicit passive/active engine authority (#40)
-2026-08-30 049ab9212296ae6dfcb5b4e7e069449e183c4b38 Add two non-overlapping Hackmode Auto-RAGE development workers (#37)
-2026-08-30 c64ae3f244c200a0e6fceaa28a9ebff1a8dfbdb4 Move RAGE worker scope into Hackmode with StarIntel BBP-only policy (#36)
-2026-08-29 dca7592da8a684696556a89cefe782ee19dddfcc Adapt Hackpert into Hackmode as an optional Prolog expert layer (#25)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .github/workflows/agent-framework-boundary.yml
-.github/workflows/agent-pr-serialization.yml
 .github/workflows/core.yml
-.github/workflows/rage-pr-serialization.yml
 AGENTS.md
 README.org
 agent-zero/README.md
@@ -147,10 +126,7 @@ agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.main.communica
 agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/hackmode-rage-tooling/prompts/agent.system.communication.md
 agent-zero/usr/agents/hackmode-rage-tooling/prompts/agent.system.main.specifics.md
-docs/architecture/expert-layer.org
 docs/architecture/ipx.org
-docs/architecture/rage-workers.org
-flake.nix
 source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
 source/hackmode-core/capture-replay.lisp
@@ -180,7 +156,6 @@ source/hackmode-core/http-requester.lisp
 source/hackmode-core/http-transport-profile.lisp
 source/hackmode-core/investigation-views.lisp
 source/hackmode-core/package.lisp
-source/hackmode-core/rage-worker.lisp
 source/hackmode-core/tests/capture-provider.lisp
 source/hackmode-core/tests/expert-budget-inspection.lisp
 source/hackmode-core/tests/expert-budget.lisp
@@ -206,7 +181,6 @@ source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/ipx-replay.lisp
-source/hackmode-core/tests/rage-worker.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-core/visual-evidence-outbox.lisp
 source/hackmode-database/db.lisp
@@ -252,10 +226,7 @@ tools/ipx/mitmproxy-addon.py
 
 ```text
 .github/workflows/agent-framework-boundary.yml
-.github/workflows/agent-pr-serialization.yml
 .github/workflows/core.yml
-.github/workflows/rage-pr-serialization.yml
-flake.nix
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/tests/capture-provider.lisp
@@ -283,7 +254,6 @@ source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/ipx-replay.lisp
-source/hackmode-core/tests/rage-worker.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
