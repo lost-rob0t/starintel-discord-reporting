@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-13T04:53:07Z`
+- generated: `2026-09-13T11:57:30Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -84,39 +84,14 @@
 2026-08-30 b939c0bbcb2e9323940f2ae62ac406711a4ed0a8 Database: import provenance-safe KB seed lists (#65)
 2026-08-30 ae09008407040a86f4f338b85ec54217f7a17f31 Hackpert: add first recon expert action selector (#63)
 2026-08-30 6f6250f29e90237067d66287d32baec167d4c385 Database: add typed reusable KB reads (#61)
-2026-08-30 9e80edbe8affef1a862e144cb67d3fa4c6c075c0 Hackpert: rebuild expert snapshots from canonical operation state (#60)
-2026-08-30 78d24647b52805bf47f172d17914651fce4e4ef4 Database: add typed operation snapshot reads (#58)
-2026-08-30 d3ffd6df26009b3f31f5dfd40005cb211fb48b64 Hackpert: add generic plan and playbook primitives (#56)
-2026-08-30 38b270e6b2f3ac2924068983b9d79afe469fc2cc Database: make graph and KB replay conflict-safe (#55)
-2026-08-30 dda01c91636afdd8f22f4db2afdbfe304b19d30b Hackpert: project execution graph and operational KB into expert snapshots (#54)
-2026-08-30 573b4c93c3f22be145d98734e9313efa9f8d481b Database: add explicit global KB export lifecycle (#53)
-2026-08-30 7a9edae29772845f5a916df244cfee23246e5888 Hackpert: add concrete recon providers (#52)
-2026-08-30 8ad7fb8100996eae6094dcd0da8df4fb9de0eaf6 Database: add evidence-backed long-term KB promotion (#49)
-2026-08-30 9b8cbafa95310ae803c25553ef46aab8a65807f4 Hackpert: route typed dispatch actions through provider runtime (#50)
-2026-08-30 01cfaf29d513e7669da8fc73ad62c4ddef8cc540 Database: add operation-scoped operational KB mutations (#45)
-2026-08-30 6d32648578677ae03cfbad41b517fead92c62d11 Enforce Agent Zero terminology isolation (#46)
-2026-08-30 736ee5ac1929e44e45968de833e7708f89351808 Add repository-wide agent terminology boundary
-2026-08-30 bf8fa419004a62887564f1eb49ec1a785f0a94b3 Enforce Agent Zero lexical isolation in CI
-2026-08-30 10abf1d8da9126b9c8fc2ed9f3373bcb7e134622 Add Agent Zero product-tree denylist
-2026-08-30 133cedea19eb5c39f1b501cf6e4a555f86d7f7d3 Mirror Agent Zero lexical boundary in database communication prompt
-2026-08-30 91879c45ee3965b4b32e14c5f3f4c71681e1393d Mirror Agent Zero lexical boundary in Hackpert communication prompt
-2026-08-30 041502da4851702177e85371a5e970644b5bb35f Make database worker prompt forbid product-tree RAGE references
-2026-08-30 dbde62177caa8076aa94fecee85a652e840159cf Make Hackpert worker prompt forbid product-tree RAGE references
-2026-08-30 30b21fdff1afa05e73854052a2e1084d7a1d9b23 Make Agent Zero lexical boundary explicit
-2026-08-30 d9a842a74d34eb6a8f127d884d5119271212103a Remove agent-framework terminology from product README
-2026-08-30 71b3f5d817eb61adebf0f90d6eb2e47929bda083 Hackpert: add typed active action protocol (#44)
-2026-08-30 10fa9855449ea2be8d6ed047f457558bdebd0a4e Database: establish typed execution graph foundation (#42)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.github/workflows/agent-framework-boundary.yml
 .github/workflows/core.yml
 AGENTS.md
-README.org
 agent-zero/README.md
-agent-zero/forbidden-outside-agent-zero.txt
 agent-zero/install.sh
 agent-zero/pr-lanes.txt
 agent-zero/usr/agents/hackmode-rage-database/prompts/agent.system.main.communication.md
@@ -130,8 +105,6 @@ docs/architecture/ipx.org
 source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
 source/hackmode-core/capture-replay.lisp
-source/hackmode-core/expert.lisp
-source/hackmode-core/expert/actions.lisp
 source/hackmode-core/expert/budget-inspection.lisp
 source/hackmode-core/expert/budget-loop.lisp
 source/hackmode-core/expert/budget.lisp
@@ -142,8 +115,6 @@ source/hackmode-core/expert/inspection-accessors.lisp
 source/hackmode-core/expert/inspection.lisp
 source/hackmode-core/expert/loop.lisp
 source/hackmode-core/expert/objective.lisp
-source/hackmode-core/expert/orchestration.lisp
-source/hackmode-core/expert/plan.lisp
 source/hackmode-core/expert/recon.lisp
 source/hackmode-core/expert/selection-inspection.lisp
 source/hackmode-core/expert/selection.lisp
@@ -166,8 +137,6 @@ source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-loop.lisp
 source/hackmode-core/tests/expert-objective.lisp
-source/hackmode-core/tests/expert-orchestration.lisp
-source/hackmode-core/tests/expert-plan.lisp
 source/hackmode-core/tests/expert-recon.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
@@ -175,7 +144,6 @@ source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
 source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
-source/hackmode-core/tests/expert.lisp
 source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
@@ -193,14 +161,11 @@ source/hackmode-database/hackmode-database.asd
 source/hackmode-database/http-exchange-headers.lisp
 source/hackmode-database/kb-seed-import.lisp
 source/hackmode-database/long-term-kb.lisp
-source/hackmode-database/operational-kb.lisp
 source/hackmode-database/package.lisp
-source/hackmode-database/replay.lisp
 source/hackmode-database/tests/capture-checkpoint.lisp
 source/hackmode-database/tests/capture-quarantine.lisp
 source/hackmode-database/tests/capture-source-rotation.lisp
 source/hackmode-database/tests/effective-operational-kb.lisp
-source/hackmode-database/tests/execution-graph.lisp
 source/hackmode-database/tests/execution-outcome-kb.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
@@ -209,23 +174,14 @@ source/hackmode-database/tests/kb-seed-import.lisp
 source/hackmode-database/tests/long-term-kb-singular-fetch.lisp
 source/hackmode-database/tests/long-term-kb.lisp
 source/hackmode-database/tests/operational-kb-retraction-target.lisp
-source/hackmode-database/tests/replay-conflict.lisp
 source/hackmode-database/tests/visual-evidence.lisp
 source/hackmode-database/visual-evidence.lisp
-source/hackmode-providers/recon/hackmode-provider-recon-tests.asd
-source/hackmode-providers/recon/hackmode-provider-recon.asd
-source/hackmode-providers/recon/http-runner.lisp
-source/hackmode-providers/recon/package.lisp
-source/hackmode-providers/recon/recon.lisp
-source/hackmode-providers/recon/registration.lisp
-source/hackmode-providers/recon/tests/recon-tests.lisp
 tools/ipx/mitmproxy-addon.py
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/agent-framework-boundary.yml
 .github/workflows/core.yml
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
@@ -239,8 +195,6 @@ source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-loop.lisp
 source/hackmode-core/tests/expert-objective.lisp
-source/hackmode-core/tests/expert-orchestration.lisp
-source/hackmode-core/tests/expert-plan.lisp
 source/hackmode-core/tests/expert-recon.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
@@ -248,7 +202,6 @@ source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
 source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
-source/hackmode-core/tests/expert.lisp
 source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
@@ -261,7 +214,6 @@ source/hackmode-database/tests/capture-checkpoint.lisp
 source/hackmode-database/tests/capture-quarantine.lisp
 source/hackmode-database/tests/capture-source-rotation.lisp
 source/hackmode-database/tests/effective-operational-kb.lisp
-source/hackmode-database/tests/execution-graph.lisp
 source/hackmode-database/tests/execution-outcome-kb.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
@@ -270,9 +222,5 @@ source/hackmode-database/tests/kb-seed-import.lisp
 source/hackmode-database/tests/long-term-kb-singular-fetch.lisp
 source/hackmode-database/tests/long-term-kb.lisp
 source/hackmode-database/tests/operational-kb-retraction-target.lisp
-source/hackmode-database/tests/replay-conflict.lisp
 source/hackmode-database/tests/visual-evidence.lisp
-source/hackmode-providers/recon/hackmode-provider-recon-tests.asd
-source/hackmode-providers/recon/hackmode-provider-recon.asd
-source/hackmode-providers/recon/tests/recon-tests.lisp
 ```

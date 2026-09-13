@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-13T04:53:08Z`
+- generated: `2026-09-13T11:57:31Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`a6605f5e1dd36273834cd3c58aca89a55b07bba8`](https://github.com/lost-rob0t/zara/commit/a6605f5e1dd36273834cd3c58aca89a55b07bba8)
@@ -1174,13 +1174,6 @@
 2026-08-31 95b10090095cd096ff63da5ed5b494a516fa474d Merge pull request #234 from lost-rob0t/feature/openrouter-rlm-directmode
 2026-08-31 04734f220b5345e94ad7ff5ffe6ae3869b2ff85c docs(rage): record #155 run identity, research, design, adversarial review
 2026-08-31 e60b5bd69ddf24c3b5580668a393c9452a45fef6 test: add OpenRouter live smoke scripts for client and RLM direct mode
-2026-08-30 7ad29b117ab8aa8b6f708b6341793eaedeb6a723 Merge pull request #233 from lost-rob0t/feature/openrouter-rlm-directmode
-2026-08-30 708bb515c365e1cfc62dd7a37d214cbb9bb1c5d9 merge: resolve kb/config and prolog_config conflicts with master wake_word
-2026-08-30 be17d2dbbc4a8cd4c0b70cafc87929a8638dd91b feat: add OpenRouter provider and Prolog-RLM direct-mode rewrites
-2026-08-30 0aed7d6c89f4be5c1733a3ced4b1fd423cb5b23e Merge pull request #232 from lost-rob0t/rage/154-intentframe-contract
-2026-08-30 f42f0cad1126dbcf23df282e02f880bf6ffb62b9 docs(rage): freeze IntentFrame v1 contract with 154 research and migration design
-2026-08-30 0661a2d56d2f8ebcc02fcecdc7f2be8334e90983 Merge pull request #231 from lost-rob0t/chore/backlog-import
-2026-08-30 88b6b53ebdf301c4efee5947efe84af769ccad1a feat(planning): import backlog state from GitHub issues with Prolog-verifiable mirror
 ```
 
 ## Repository paths changed, last 14 days
@@ -1387,7 +1380,6 @@ docs/README.org
 docs/STT.md
 docs/architecture.org
 docs/development.org
-docs/intentframe-contract.md
 docs/research/002-unified-copilot-voice-visual-ci.md
 docs/server.org
 flake.lock
@@ -1407,18 +1399,13 @@ modules/dictate.pl
 modules/hooks_loader.pl
 modules/intent_frames.pl
 modules/intent_resolver.pl
-modules/llm_client.pl
 modules/normalizer.pl
-modules/rlm_rewrite.pl
 modules/sound.pl
 modules/zara_hooks.pl
 planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
-rage/154-intentframe-design.org
-rage/154-intentframe-research.org
-rage/154-intentframe.org
 rage/155-clarification-dialogue.org
 rage/156-prolog-frames.org
 rage/157-execution-plans.org
@@ -1543,7 +1530,6 @@ rage/866-wear-foundation.org
 rage/client-connection-guards.org
 rage/long-horizon-tasks.org
 scripts/benchmark-voice.py
-scripts/import-backlog.py
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1565,7 +1551,6 @@ scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
-scripts/test-rlm-rewrite.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-llm.sh
 scripts/test-streaming-tts.sh
@@ -1577,7 +1562,6 @@ server_main.pl
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
-t/llm_clients.pl
 t/process_safety.pl
 t/prolog_config.pl
 t/prolog_config_recovery.pl
@@ -1594,7 +1578,6 @@ t/test_agent_mode_voice_barge_in.py
 t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_backend_turn_services.py
-t/test_backlog_import.py
 t/test_capability_plans.py
 t/test_clarification_session.py
 t/test_cli_client_migration.py
@@ -1616,7 +1599,6 @@ t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
 t/test_desktop_control.py
 t/test_desktop_launch_surface.py
-t/test_desktop_preferences.py
 t/test_desktop_toggle_control.py
 t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
@@ -1626,7 +1608,6 @@ t/test_hooks_config.py
 t/test_host_api_service.py
 t/test_json_limits.py
 t/test_latency_metrics.py
-t/test_llm.py
 t/test_llm_streaming.py
 t/test_plan_executor.py
 t/test_plans.py
@@ -1733,12 +1714,10 @@ zara/database.py
 zara/desktop/app.py
 zara/desktop/control.py
 zara/desktop/controller.py
-zara/desktop/preferences.py
 zara/desktop/ui_fixtures.py
 zara/desktop/windows/__init__.py
 zara/desktop/windows/copilot.py
 zara/desktop/windows/quick.py
-zara/desktop/windows/settings.py
 zara/device_action_replay.py
 zara/dictate.py
 zara/json_limits.py
@@ -1894,7 +1873,6 @@ android/flake.nix
 android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 flake.nix
 scripts/benchmark-voice.py
-scripts/import-backlog.py
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1916,7 +1894,6 @@ scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
 scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
-scripts/test-rlm-rewrite.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-llm.sh
 scripts/test-streaming-tts.sh
@@ -1927,7 +1904,6 @@ scripts/test-zara1-device-actions.sh
 t/api_service.pl
 t/capability_plans.pl
 t/dictation_lifecycle.pl
-t/llm_clients.pl
 t/process_safety.pl
 t/prolog_config.pl
 t/prolog_config_recovery.pl
@@ -1944,7 +1920,6 @@ t/test_agent_mode_voice_barge_in.py
 t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_backend_turn_services.py
-t/test_backlog_import.py
 t/test_capability_plans.py
 t/test_clarification_session.py
 t/test_cli_client_migration.py
@@ -1966,7 +1941,6 @@ t/test_daemon_tts_output.py
 t/test_database_fetch_locking.py
 t/test_desktop_control.py
 t/test_desktop_launch_surface.py
-t/test_desktop_preferences.py
 t/test_desktop_toggle_control.py
 t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
@@ -1976,7 +1950,6 @@ t/test_hooks_config.py
 t/test_host_api_service.py
 t/test_json_limits.py
 t/test_latency_metrics.py
-t/test_llm.py
 t/test_llm_streaming.py
 t/test_plan_executor.py
 t/test_plans.py
