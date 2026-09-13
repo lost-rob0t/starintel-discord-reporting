@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-13T11:57:30Z`
+- generated: `2026-09-13T16:22:14Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -78,12 +78,6 @@
 2026-08-30 22d1dd98955990c7145798c939b7afe1230e9768 Hackpert: add run-scoped objective budget accounting (#79)
 2026-08-30 c7753a5497007caa3b38dd4e2ebe80c53918ddbe Database: derive KB candidates from execution outcomes (#77)
 2026-08-30 40001b9a08a4632deb116be77f70e7fc82245856 Hackpert: re-evaluate objectives and explain extension selection (#76)
-2026-08-30 d6ef37797da21bd6a0f948269d5d07c2183e64ed Hackpert: add objective extension registry (#73)
-2026-08-30 f39066deb6ac902b4f152d3c389aeddaca3f51dd Hackpert: add normalized objective specification model (#70)
-2026-08-30 eeca3cf48c265f5fa31863996d0185cfc8722a77 Hackpert: add loop stop and escalation control (#67)
-2026-08-30 b939c0bbcb2e9323940f2ae62ac406711a4ed0a8 Database: import provenance-safe KB seed lists (#65)
-2026-08-30 ae09008407040a86f4f338b85ec54217f7a17f31 Hackpert: add first recon expert action selector (#63)
-2026-08-30 6f6250f29e90237067d66287d32baec167d4c385 Database: add typed reusable KB reads (#61)
 ```
 
 ## Repository paths changed, last 14 days
@@ -110,12 +104,10 @@ source/hackmode-core/expert/budget-loop.lisp
 source/hackmode-core/expert/budget.lisp
 source/hackmode-core/expert/direct-candidate.lisp
 source/hackmode-core/expert/extension.lisp
-source/hackmode-core/expert/hackmode_expert.pl
 source/hackmode-core/expert/inspection-accessors.lisp
 source/hackmode-core/expert/inspection.lisp
 source/hackmode-core/expert/loop.lisp
 source/hackmode-core/expert/objective.lisp
-source/hackmode-core/expert/recon.lisp
 source/hackmode-core/expert/selection-inspection.lisp
 source/hackmode-core/expert/selection.lisp
 source/hackmode-core/expert/state-snapshot.lisp
@@ -137,7 +129,6 @@ source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-loop.lisp
 source/hackmode-core/tests/expert-objective.lisp
-source/hackmode-core/tests/expert-recon.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/expert-selection-inspection.lisp
@@ -155,12 +146,10 @@ source/hackmode-database/db.lisp
 source/hackmode-database/effective-operational-kb.lisp
 source/hackmode-database/execution-graph.lisp
 source/hackmode-database/execution-outcome-kb.lisp
-source/hackmode-database/global-kb.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
 source/hackmode-database/http-exchange-headers.lisp
 source/hackmode-database/kb-seed-import.lisp
-source/hackmode-database/long-term-kb.lisp
 source/hackmode-database/package.lisp
 source/hackmode-database/tests/capture-checkpoint.lisp
 source/hackmode-database/tests/capture-quarantine.lisp
@@ -195,7 +184,6 @@ source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-loop.lisp
 source/hackmode-core/tests/expert-objective.lisp
-source/hackmode-core/tests/expert-recon.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/expert-selection-inspection.lisp
