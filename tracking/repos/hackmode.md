@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-13T16:22:14Z`
+- generated: `2026-09-13T20:53:37Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -69,15 +69,6 @@
 2026-08-30 842563fd02619bcc306d0642f243d0bd1261edc5 Hackpert: expose bounded action inspection state (#95)
 2026-08-30 b2ffadaf951038d742774061915cdc531d425eff Database: quarantine malformed capture evidence (#93)
 2026-08-30 1ace3c2620de7698d5933afb5f1563a0b7302098 Hackpert: expose typed plan inspection state (#92)
-2026-08-30 d018476a144db62c776d0f91165aa0a82810d5dd Hackpert: expose typed run inspection state (#89)
-2026-08-30 0fd076b43f649ffe25c83b8e30ed6307a224b11e Database: persist durable capture replay checkpoints (#87)
-2026-08-30 a858a6f4fd3e2192dc0a3d98901f62d29784672d Hackpert: project HTTP exchange evidence into passive snapshots (#86)
-2026-08-30 d39fdafe627bc3363ef89fc02a96fa931c9b07f6 Database: persist typed HTTP exchange evidence in execution graph (#84)
-2026-08-30 cd9405f993e51855716cefaa408c6ab3d9e129f5 Hackpert: derive loop budget stops from typed budget state (#82)
-2026-08-30 8b763bcc8c9e679663eb58427b44d3e709f8c108 Database: add effective operational KB snapshots (#80)
-2026-08-30 22d1dd98955990c7145798c939b7afe1230e9768 Hackpert: add run-scoped objective budget accounting (#79)
-2026-08-30 c7753a5497007caa3b38dd4e2ebe80c53918ddbe Database: derive KB candidates from execution outcomes (#77)
-2026-08-30 40001b9a08a4632deb116be77f70e7fc82245856 Hackpert: re-evaluate objectives and explain extension selection (#76)
 ```
 
 ## Repository paths changed, last 14 days
@@ -100,8 +91,6 @@ source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
 source/hackmode-core/capture-replay.lisp
 source/hackmode-core/expert/budget-inspection.lisp
-source/hackmode-core/expert/budget-loop.lisp
-source/hackmode-core/expert/budget.lisp
 source/hackmode-core/expert/direct-candidate.lisp
 source/hackmode-core/expert/extension.lisp
 source/hackmode-core/expert/inspection-accessors.lisp
@@ -110,7 +99,6 @@ source/hackmode-core/expert/loop.lisp
 source/hackmode-core/expert/objective.lisp
 source/hackmode-core/expert/selection-inspection.lisp
 source/hackmode-core/expert/selection.lisp
-source/hackmode-core/expert/state-snapshot.lisp
 source/hackmode-core/expert/transition-inspection.lisp
 source/hackmode-core/functions.lisp
 source/hackmode-core/hackmode-tests.asd
@@ -121,19 +109,16 @@ source/hackmode-core/investigation-views.lisp
 source/hackmode-core/package.lisp
 source/hackmode-core/tests/capture-provider.lisp
 source/hackmode-core/tests/expert-budget-inspection.lisp
-source/hackmode-core/tests/expert-budget.lisp
 source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
 source/hackmode-core/tests/expert-inspection-copy.lisp
 source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
-source/hackmode-core/tests/expert-loop.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
-source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
@@ -143,19 +128,14 @@ source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-core/visual-evidence-outbox.lisp
 source/hackmode-database/db.lisp
-source/hackmode-database/effective-operational-kb.lisp
 source/hackmode-database/execution-graph.lisp
-source/hackmode-database/execution-outcome-kb.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
 source/hackmode-database/http-exchange-headers.lisp
 source/hackmode-database/kb-seed-import.lisp
 source/hackmode-database/package.lisp
-source/hackmode-database/tests/capture-checkpoint.lisp
 source/hackmode-database/tests/capture-quarantine.lisp
 source/hackmode-database/tests/capture-source-rotation.lisp
-source/hackmode-database/tests/effective-operational-kb.lisp
-source/hackmode-database/tests/execution-outcome-kb.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
 source/hackmode-database/tests/http-exchange-graph.lisp
@@ -176,19 +156,16 @@ source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/tests/capture-provider.lisp
 source/hackmode-core/tests/expert-budget-inspection.lisp
-source/hackmode-core/tests/expert-budget.lisp
 source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
 source/hackmode-core/tests/expert-inspection-copy.lisp
 source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
-source/hackmode-core/tests/expert-loop.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
-source/hackmode-core/tests/expert-state-snapshot.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
@@ -198,11 +175,8 @@ source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
-source/hackmode-database/tests/capture-checkpoint.lisp
 source/hackmode-database/tests/capture-quarantine.lisp
 source/hackmode-database/tests/capture-source-rotation.lisp
-source/hackmode-database/tests/effective-operational-kb.lisp
-source/hackmode-database/tests/execution-outcome-kb.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
 source/hackmode-database/tests/http-exchange-graph.lisp
