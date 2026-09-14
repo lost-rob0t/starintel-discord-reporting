@@ -1,15 +1,23 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-14T12:54:32Z`
+- generated: `2026-09-14T19:24:41Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`0a1c403f157587a322de0d9171c2991829f3ccef`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0a1c403f157587a322de0d9171c2991829f3ccef)
-- head date: `2026-09-12T14:22:32-04:00`
-- head subject: [auto-dig-live-test] fix: recover unsupported read-only context selectors (#2637)
+- head: [`beb5bb0289db3dfc2955d3adb9d97585fd136f95`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/beb5bb0289db3dfc2955d3adb9d97585fd136f95)
+- head date: `2026-09-14T14:04:17-04:00`
+- head subject: agents: separate StarIntel release from base schema authority
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 beb5bb0289db3dfc2955d3adb9d97585fd136f95 agents: separate StarIntel release from base schema authority
+2026-09-14 76c53adb064b4e93391a72c5cf4e8db8a4f0d38a test: exercise real schema release bump in isolation
+2026-09-14 9b2bbd8e1ed8bd62efc48caa05311384f899948e fix: respect expansion profile-only release metadata
+2026-09-14 398561be849009e50b9152d75aa7f8278984fd4f ci: verify canonical schema release tooling
+2026-09-14 86e73432af0c46bd3b48d0ce073c8de411bfa540 fix: keep expansion metadata and hash in schema release bump
+2026-09-14 ec2d9a9eedf7d8556a5c9911bf3a6cc0554471b5 docs: define lock-driven StarIntel release version workflow
+2026-09-14 d4a893ca8a82b3cb2d5253af97bb4427b11ff1bd test: cover canonical schema release helper
+2026-09-14 33fbd4ecc633dbe98abddb26bcbb6dcc0a41f2f5 tools: add canonical schema release bump workflow
 2026-09-12 0a1c403f157587a322de0d9171c2991829f3ccef [auto-dig-live-test] fix: recover unsupported read-only context selectors (#2637)
 2026-09-12 aaa02bdafdc1b38f6ca2fbd974146714aaed2853 fix: recover unsupported read-only context selectors (#2636)
 2026-09-12 046b61f0ace895ab0315fee824028fa07c825df3 [auto-dig-live-test] test: verify resumed actor (#2635)
@@ -396,6 +404,7 @@
 .github/workflows/operation-release-sync.yml
 .github/workflows/operation-schema-sync.yml
 .github/workflows/publish-pages.yml
+.github/workflows/schema-release.yml
 .github/workflows/validate-db.yml
 .gitignore
 AGENTS.md
@@ -1601,6 +1610,7 @@ digs/netflix-uk/2026-09-11-netflixuk-social-attribution/README.md
 digs/testing-debug/2026-09-12-e2e-diff-ingest-2630/starintel-documents.jsonl
 docs/auto-dig-pause-control.md
 docs/operation-object.md
+docs/schema-release-versioning.md
 noop
 recursive-targets.jsonl
 schemas/starintel-doc-v0.9.0.expansion.json
@@ -1613,6 +1623,7 @@ scripts/check-auto-dig-control.py
 scripts/export_starintel_documents.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
+scripts/schema-release.py
 scripts/starintel_ingest_core.nim
 starintel_auto_dig.nimble
 starintel_doc/operation_spec.py
@@ -1627,6 +1638,7 @@ tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_operation_document.py
 tests/test_operation_registry.py
+tests/test_schema_release.py
 tests/test_starintel_corpus_mcp_server.py
 tests/test_starintel_ingest_core.py
 tmp/pack/build.py
@@ -1643,6 +1655,7 @@ tmp/pack/pack.jsonl
 .github/workflows/operation-release-sync.yml
 .github/workflows/operation-schema-sync.yml
 .github/workflows/publish-pages.yml
+.github/workflows/schema-release.yml
 .github/workflows/validate-db.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
@@ -1651,6 +1664,7 @@ scripts/check-auto-dig-control.py
 scripts/export_starintel_documents.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
+scripts/schema-release.py
 scripts/starintel_ingest_core.nim
 tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
@@ -1661,6 +1675,7 @@ tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_operation_document.py
 tests/test_operation_registry.py
+tests/test_schema_release.py
 tests/test_starintel_corpus_mcp_server.py
 tests/test_starintel_ingest_core.py
 ```

@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-14T12:54:45Z`
+- generated: `2026-09-14T19:24:52Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -105,18 +105,6 @@
 2026-08-31 de8d47c1e9395760fcda9c80753bb88d879d3f2c test: reproduce raw native argument batch abort (#325)
 2026-08-31 774c9cc20f01b0203d3cf122c16fc1c1f647f138 fix: preserve resolved bindings through recoverable preflight faults
 2026-08-31 c13c37066cda798e2dacbb59c8ce41eb610457fe test: add RED regressions for original-request effect isolation (#316)
-2026-08-31 6957c30c88f9548137a8ff9c3a0720f9bdadb210 fix: isolate recoverable native preflight faults per call (#313)
-2026-08-31 b8206c728549f4128e8b18f0611d2d0456dc5b2d fix(312): derive context_peek schema and validation from one selector contract
-2026-08-31 0c9b8fc6102cbc720d54e81f2a5b832bb0260202 chore: drop corpus entries duplicated by the rebase onto main
-2026-08-29 781b526744678101f9de51536935fd1ffd4cbdd8 fix: align context_peek selector contract with projected schema
-2026-08-31 e9b0c187fd0f776d2b511f06685029ab436771d0 docs(agents): work in git worktrees under ~/git/worktrees
-2026-08-31 a3628d3aa81d1651b27af9b46de233a69c5b0c6e fix(runtime): propagate wall-time limits through skill compilation
-2026-08-31 02b724214f2ddfeb2f6be9944feee5147798e7e4 fix(completion): narrow the child model-step session to child_capabilities
-2026-08-31 241dfb47495095a7ac3dfa7599c40b99828f0c2c review(319): rename stale cache-test name, tidy indentation, keep grep gate strict
-2026-08-31 0d2c935f4129b2bc22c27941a0121a6d95d7cc75 ci(paid): CLI smoke surfaces the CLI error payload instead of dying blind
-2026-08-31 59d5033c7d45d79c5e84ed657bd08068b747bd4d test(live): streaming sentinel request gets reasoning headroom
-2026-08-31 72d1888a386822d1dde8c3bada770438a14085b9 fix(direct): advertise the context alias only when context ops are granted
-2026-08-31 149b7b2c13b33c663505950f2271032f32648ab3 test(live): replace the 120b cache pin with the pinned paid model
 ```
 
 ## Repository paths changed, last 14 days
@@ -124,7 +112,6 @@
 ```text
 .github/workflows/ci.yml
 .github/workflows/nix.yml
-.github/workflows/paid-openrouter.yml
 .github/workflows/tree-sitter.yml
 .prolog/.gitignore
 .prolog/facts.kb
@@ -178,8 +165,6 @@ prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
 prolog/rlm_project_syntax.pl
-prolog/rlm_prompt_compiler.pl
-prolog/rlm_skill.pl
 prolog/rlm_text.pl
 prolog/rlm_tree_sitter.pl
 rage/288-spec-plan-graph-executor.org
@@ -197,15 +182,11 @@ scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
-test/live_chain_stream_openrouter_test.pl
-test/live_compiler_cache_openrouter_test.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
-test/rlm_completion_test.pl
-test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
@@ -235,22 +216,17 @@ test/support/plan_graph_test_tools.pl
 ```text
 .github/workflows/ci.yml
 .github/workflows/nix.yml
-.github/workflows/paid-openrouter.yml
 .github/workflows/tree-sitter.yml
 flake.nix
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
-test/live_chain_stream_openrouter_test.pl
-test/live_compiler_cache_openrouter_test.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
-test/rlm_completion_test.pl
-test/rlm_direct_context_peek_contract_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl

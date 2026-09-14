@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-14T12:54:49Z`
+- generated: `2026-09-14T19:24:55Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`a6605f5e1dd36273834cd3c58aca89a55b07bba8`](https://github.com/lost-rob0t/zara/commit/a6605f5e1dd36273834cd3c58aca89a55b07bba8)
@@ -1151,29 +1151,6 @@
 2026-08-31 4f77de3c7dec0cebf711a5ffdad04fd136354693 Merge pull request #243 from lost-rob0t/rage/156-prolog-frames
 2026-08-31 7d5e17693463d2f9f9479df564474d3eea3fc958 Merge branch 'master' into rage/156-prolog-frames
 2026-08-31 8f2581cefd79890788ca83d46dedb2c4f0fd4d7b feat(prolog): adapt resolution to IntentFrame with canonical semantic corpus
-2026-08-31 de7c91c80a1380781ef41d0b6a85d0f1725d812a Merge pull request #242 from lost-rob0t/fix/agent-openrouter-server-entrypoint
-2026-08-31 8e212f8ccba35ea1a31e2faae2b058455e8951b0 fix(server): keep one PrincipalContext under the -m entrypoint
-2026-08-31 34a0638ec83a9c9fc0b44be72be390454f7be714 fix(agent): add OpenRouter provider to the agent ChatModel factory
-2026-08-31 5fef90c22c64508ca7595018b4e02281182e7936 docs: define external plugin configuration contract
-2026-08-31 170d33bc71221c1eacb069609274425e8b893c50 Merge pull request #239 from lost-rob0t/rage/28-post-merge-evidence
-2026-08-31 1ff26122e32baba1446f6a07461a668412db6afc Merge pull request #237 from lost-rob0t/perf/zara-027-streaming-llm-impl
-2026-08-31 da4e70eb619ac131143b94ba38e28bb50bfc2667 docs(rage): record issue 28 merge closeout
-2026-08-31 14a6fdfdf0b5a1d165ffdb1986f71e89b4d84d00 Merge remote-tracking branch 'origin/master' into perf/zara-027-streaming-llm-impl
-2026-08-31 c72a930da2127870f01513f0d6fde90c3f57252a docs: record ZARA-027 exact-head gate results
-2026-08-31 aa5c396a75a336fae86fcbd13c35aca2161a7092 docs: record ZARA-027 RAGE implementation evidence and update wiki
-2026-08-31 24643d71de59acd75c498af9e5c9832de6cb2dae feat(agent,llm): stream LLM/agent output with cancellation-safe text events
-2026-08-31 a4ccec2c7947038fcd30e546c421ac55a3073897 feat(agent): add typed stream events and pure sentence chunker
-2026-08-31 64ee53c1ee107fc93c46ed92568bd538e33f9de1 docs(rage): record #156 run identity, research, design, adversarial review
-2026-08-31 55b3bb84c649afb620a139d9e4c28eadbc26d48f docs(rage): record #155 merge evidence; regenerate backlog post-merge
-2026-08-31 f053f41f2997a8c4054baef5238a84554d0826d8 Merge pull request #236 from lost-rob0t/rage/155-typed-slots
-2026-08-31 7c31c456add5ae637cbe161932b3421073aaf03b Merge branch 'master' into rage/155-typed-slots
-2026-08-31 0f5734b64d71a02f1a9aa9d42e5d54cb131a0ee3 docs(rage): record #155 TDD and gate evidence; regenerate backlog mirror
-2026-08-31 1911487a925f7808a08ee643a1b93356cf9fc4e7 feat(runtime): typed slots and principal/conversation-scoped clarification dialogue
-2026-08-31 ec89bd448e9812fbf6cfc722cdc8616e0eaab8ec Merge pull request #235 from lost-rob0t/test/live-smoke-reasoning-budgets
-2026-08-31 29107ad04a3ef0d3214611ca717584ba342af39e test: raise live smoke token budget for reasoning models
-2026-08-31 95b10090095cd096ff63da5ed5b494a516fa474d Merge pull request #234 from lost-rob0t/feature/openrouter-rlm-directmode
-2026-08-31 04734f220b5345e94ad7ff5ffe6ae3869b2ff85c docs(rage): record #155 run identity, research, design, adversarial review
-2026-08-31 e60b5bd69ddf24c3b5580668a393c9452a45fef6 test: add OpenRouter live smoke scripts for client and RLM direct mode
 ```
 
 ## Repository paths changed, last 14 days
@@ -1406,7 +1383,6 @@ planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
-rage/155-clarification-dialogue.org
 rage/156-prolog-frames.org
 rage/157-execution-plans.org
 rage/158-api-service-providers.org
@@ -1500,7 +1476,6 @@ rage/260-python-user-hooks-design.org
 rage/260-python-user-hooks-research.org
 rage/260-python-user-hooks.org
 rage/260-service-plugin-advice.org
-rage/28-streaming-llm.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
 rage/309-prolog-config-recovery-design.org
@@ -1529,7 +1504,6 @@ rage/669-turn-event-loss.org
 rage/866-wear-foundation.org
 rage/client-connection-guards.org
 rage/long-horizon-tasks.org
-scripts/benchmark-voice.py
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1544,15 +1518,12 @@ scripts/test-api-service.sh
 scripts/test-capability-plans.sh
 scripts/test-command-routing.sh
 scripts/test-hooks.sh
-scripts/test-openrouter-live.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
-scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-s1-mini-normalizer.sh
-scripts/test-streaming-llm.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
@@ -1579,7 +1550,6 @@ t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_backend_turn_services.py
 t/test_capability_plans.py
-t/test_clarification_session.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client.py
@@ -1602,7 +1572,6 @@ t/test_desktop_launch_surface.py
 t/test_desktop_toggle_control.py
 t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
-t/test_dialogue_script.py
 t/test_dictation_vulkan_backend.py
 t/test_hooks_config.py
 t/test_host_api_service.py
@@ -1643,7 +1612,6 @@ t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_corpus.py
 t/test_semantic_first_runtime.py
-t/test_sentence_chunker.py
 t/test_server.py
 t/test_service_plugin_advice.py
 t/test_task_approval_flow.py
@@ -1701,8 +1669,6 @@ zara/agent/graph.py
 zara/agent/hooks.py
 zara/agent/loops.py
 zara/agent/prompting.py
-zara/agent/sentence_chunker.py
-zara/agent/stream_events.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/agent/user_hooks.py
@@ -1721,23 +1687,18 @@ zara/desktop/windows/quick.py
 zara/device_action_replay.py
 zara/dictate.py
 zara/json_limits.py
-zara/latency.py
-zara/llm.py
 zara/plugins/api.py
 zara/plugins/builtin/__init__.py
 zara/plugins/builtin/agent_mode.py
 zara/plugins/builtin/agent_mode_hooks.py
 zara/plugins/manager.py
-zara/principals.py
 zara/prolog_engine.py
 zara/protocol.py
 zara/protocol_runtime.py
 zara/python_skills.py
 zara/runtime/api_service.py
 zara/runtime/backend.py
-zara/runtime/clarification.py
 zara/runtime/events.py
-zara/runtime/frames.py
 zara/runtime/host.py
 zara/runtime/intent_router.py
 zara/runtime/plans.py
@@ -1872,7 +1833,6 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
 android/flake.nix
 android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 flake.nix
-scripts/benchmark-voice.py
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1887,15 +1847,12 @@ scripts/test-api-service.sh
 scripts/test-capability-plans.sh
 scripts/test-command-routing.sh
 scripts/test-hooks.sh
-scripts/test-openrouter-live.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
-scripts/test-prolog-rlm-live.sh
 scripts/test-replies.sh
 scripts/test-s1-mini-normalizer.sh
-scripts/test-streaming-llm.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
@@ -1921,7 +1878,6 @@ t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_backend_turn_services.py
 t/test_capability_plans.py
-t/test_clarification_session.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client.py
@@ -1944,7 +1900,6 @@ t/test_desktop_launch_surface.py
 t/test_desktop_toggle_control.py
 t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
-t/test_dialogue_script.py
 t/test_dictation_vulkan_backend.py
 t/test_hooks_config.py
 t/test_host_api_service.py
@@ -1985,7 +1940,6 @@ t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_corpus.py
 t/test_semantic_first_runtime.py
-t/test_sentence_chunker.py
 t/test_server.py
 t/test_service_plugin_advice.py
 t/test_task_approval_flow.py

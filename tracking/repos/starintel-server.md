@@ -1,15 +1,52 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-14T12:54:28Z`
+- generated: `2026-09-14T19:24:38Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`436a96bd2feffb18c1fc41beaaf48a28781906c7`](https://github.com/lost-rob0t/starintel-server/commit/436a96bd2feffb18c1fc41beaaf48a28781906c7)
-- head date: `2026-09-12T08:56:58-04:00`
-- head subject: Merge pull request #173 from lost-rob0t/test/172-target-tenant-http-stack
+- head: [`d94922d21c65f0c0a2c35f0eacaf9beb727e656a`](https://github.com/lost-rob0t/starintel-server/commit/d94922d21c65f0c0a2c35f0eacaf9beb727e656a)
+- head date: `2026-09-14T15:20:57-04:00`
+- head subject: Merge pull request #181 from lost-rob0t/feat/ingest-tenant-adapter
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 d94922d21c65f0c0a2c35f0eacaf9beb727e656a Merge pull request #181 from lost-rob0t/feat/ingest-tenant-adapter
+2026-09-14 136d182e28c9ebea74d2b78ab6d606e355e32f14 ci: remove temporary PR hardening workflow
+2026-09-14 6af2600f869db9856030e137d6995a4ff49b4762 fix: authorize persisted tenant before egress redaction
+2026-09-14 44dc21e511a7f376defdc97d98de6a4fe2aa7512 ci: fix temporary hardening workflow syntax
+2026-09-14 593720a2233467bb9652e5f30f0293e3ccbc4395 ci: harden PR 181 authorization ordering
+2026-09-14 7cea12d857965c4816fd804364569a66a1256818 docs: regenerate API reference with org-doc
+2026-09-14 a7315ecd5e864e0b35373ba187195b3a6b055785 ci: temporary org-doc sync for PR 181
+2026-09-14 2a1e400191c3f06dc7eca8355f37d0500d524561 fix: strip tenant across FTS fields and outbox payloads (#180)
+2026-09-14 00b6f51dee23a7339f2398ed2e5739fb72b941ef fix: redact tenant from FTS fields and outbox payloads on egress (#180)
+2026-09-14 d5bfa0ae4c875f757545c79a0d45056c593bd0bc fix: tolerate raw JSON strings when stripping tenant on egress (#180)
+2026-09-14 19bc77e8139eb52dfef7d9705b2bbea69a7cbc5e test: cover consumer tenant exemption with canonical encoder (#180)
+2026-09-14 e0cd015da368a6c9aa477066d417bb4895abd449 fix: exempt server-injected tenant_id from consumer strict validation (#180)
+2026-09-14 2dc861b1800e9084f28202614df99bd252b4d1e2 fix: apply STAR_TENANT_* from runtime env in server init (#180)
+2026-09-14 b9124e1ae2cef8bca7d27a75bda7a0dd59c87361 feat: wire STAR_TENANT_* through compose and treat empty env as unset (#180)
+2026-09-14 507d2e4d5a2f21e12515de930ccaf138677a554e feat: inject tenant_id server-side before MQ/DB and redact it on egress (#180)
+2026-09-14 fb9401f227cc90b7c9fb5ae3e3a5cc9edc1d06a1 agents: require StarIntel schema lock preflight
+2026-09-14 1631854bead966de5b2d31b047c9e7e4a966cb53 feat: server-side tenant adapter for tenant-less documents (#180)
+2026-09-14 7602e3432087dd052e25b4d3fe735c603a82e034 Merge pull request 'chore: record reconciliation evidence; prune merged mirror branches' (#16) from chore/reconcile-evidence into master
+2026-09-14 f8e20c0b5629a34580c937a5e9ec56834e324802 chore: record reconciliation evidence; prune merged mirror branches
+2026-09-14 51713d561b06a24f2954e8aa37a8339329c3a435 Merge pull request 'fix: treat running no-healthcheck containers as healthy in stack wait' (#15) from fix/stack-wait-no-healthcheck into master
+2026-09-14 160df606a3fd9e909439748be0aa22fc364c9218 fix: treat running no-healthcheck containers as healthy in stack wait
+2026-09-14 c3c6f154fbdab865fce69c3b1491ccee18593afb Merge pull request 'fix: use env: provider syntax in otelcol gateway endpoint' (#14) from fix/otelcol-env-syntax into master
+2026-09-14 17bc37168ddea01f97236d5a5ef167f79d9b77a2 fix: use env: provider syntax in otelcol gateway endpoint
+2026-09-14 99937377c23b81596df034836cc39d045ac34974 Merge pull request 'fix: drop duplicate healthcheck key in docker-compose' (#13) from fix/compose-duplicate-healthcheck into master
+2026-09-14 09b236bffdfee147fcb94e508086175afd7fc1c4 fix: drop duplicate healthcheck key in docker-compose server service
+2026-09-14 e4ba2f63d344169e07ffb00d353ddfbad3127cb8 Merge pull request 'Reconcile master divergence (merge github mirror) + fix ingest observability path' (#12) from reconcile/master-2026-09-14 into master
+2026-09-14 cca6b600992bfa8dedf507e4cff386187e29ec73 chore: track .prolog verification and KB state
+2026-09-14 448a0ffb86f3c62ebcd29e51c222d25bfd222a4f fix: qualify observability-active-p for the actor publish path
+2026-09-14 1599100ec1c9267d773573fdd9d679d00791106c Merge github/master to reconcile master divergence
+2026-09-14 f8caa4dfd5c6bc32be1e621a9ed27bcba7339dc5 Merge pull request #178 from lost-rob0t/chore/opencode-issue-loop-2026-09-14
+2026-09-14 bac77beb382242582c61e56bc3d37934f070dd19 chore: add YAGNI issue voter
+2026-09-14 1858494c6f54e875d6e6ae985dc952596193a505 chore: add issue verification voter
+2026-09-14 844d335182a618a81e94864900aced7434a21056 chore: add issue research voter
+2026-09-14 53916dd742b64217ee05c8a9ee3fa7f5703813ff chore: add issue ownership voter
+2026-09-14 e3904855f2e46c200e83a7677169e2bae49d3113 chore: add issue reality voter
+2026-09-14 9ee741aae5fc87143b65d0122db5bbef989cc1e8 chore: add OpenCode issue loop command
+2026-09-14 8033fad2c6094c1d84700cc2c3f22db90e86a312 chore: add issue-first agent contract
 2026-09-12 436a96bd2feffb18c1fc41beaaf48a28781906c7 Merge pull request #173 from lost-rob0t/test/172-target-tenant-http-stack
 2026-09-12 46a1bbfd54434a21fc40d2941bf3b05b905268fe test: exercise non-default target tenant over HTTP stack
 2026-09-12 75bea2624ec773f4737aaa2bd6b0a65ac5c6c462 Merge pull request #176 from lost-rob0t/fix/174-rabbit-startup-retry
@@ -29,6 +66,8 @@
 2026-09-12 9a60e506174177d35981a96082c96926071662ae fix: keep target-list authorization to tenant and actor scopes
 2026-09-12 39c3db953032f4d257ac212836d05b365a207b81 fix: add tenant-scoped target view
 2026-09-12 cc5a00974b320de0598ffd25af229eb02dc58a0e fix: scope target reads by requested tenant
+2026-09-11 8533dc40943dc7230b62533458e287a58db527ce Merge pull request 'leases: wire the Valkey lease store into the runtime with the observability metrics hook' (#11) from feat/valkey-lease-runtime into master
+2026-09-11 5a753c4498645ad829c0181dd061fd2d14d1f9f3 leases: wire the Valkey lease store into the runtime with the observability metrics hook
 2026-09-11 3e1f78523f377a94f43fda7a3cc1fc6622d7269d Merge pull request #153 from lost-rob0t/feat/operation-object-151
 2026-09-11 8dd6b4afb871f0b2b059fb2ff08ed2d75cd19006 test: pin operation 0.9.1 release in contract checks
 2026-09-09 6748f685051fd147447c77d3b1de9e557648415d ci: remove one-shot operation runtime sync
@@ -49,6 +88,15 @@
 2026-09-11 aeae5bf2757f23121d5ef2eabf24a0a35231d9d4 Merge pull request #154 from lost-rob0t/fix/valkey-pool-wait-recheck
 2026-09-11 05b079ab270991bd3ffd56166fb26cb9c77b9291 docs: regenerate api docs for lease fix base
 2026-09-11 b3e9ab3e50b1f7ec4ed28346d5d18ebfef35e9de fix: make valkey lease concurrency outcomes deterministic
+2026-09-11 15a417102881f216e0fe8977d2e95af4a71dd603 Merge pull request 'observability: StarIntel telemetry abstraction + OTLP instrumentation (addon, opt-in)' (#9) from feat/observability-slice into master
+2026-09-10 bc64bd02fd6c469946ec518e9c42abd9e6724b32 docs: regenerate API reference for the observability systems
+2026-09-10 87622e0c9d1f9a5184a062b5d58f6cfaecb6d67d observability: StarIntel telemetry abstraction + OTLP instrumentation
+2026-09-09 d62c8a8cc50a1ec7dde395d0e84180ed0e109e4f Merge pull request 'Staging stack: youtube-actor service (actors profile) + image build target' (#7) from rage/staging-youtube-actor into master
+2026-09-09 b79094ebce6560d863cc7a2ccef1209d86da5028 Add starintel-youtube actor service to the staging stack (actors profile)
+2026-09-09 73de00962f532b1d75e5b862937e71f9b9cdb280 Merge pull request 'Contract versioned document operations (registry-first) + fix /dataset-size shadowing' (#6) from rage/5-http-contract-documents into master
+2026-09-09 f2ee0ca8cb8a120c7d96a4e1cb639b508f692622 docs: per-run integration provisioning decision (operator convention)
+2026-09-08 273e70309fa633fc40fe6b0e69e0c4002e368279 docs: record exact-head gate evidence in RAGE run log
+2026-09-08 972da6a8d325464bc4df4e18f5b1a9b139307b66 feat: contract versioned document operations + fix /dataset-size shadowing
 2026-09-06 4721efaf8141fd7199b6e1ceb1011b9ad970796e Merge pull request #145 from lost-rob0t/fix/target-dispatch-data-shape
 2026-09-06 9d80cc1710cfe2a5c62c54fc8a2a23b9b7c564f3 fix: emit v0.9-valid data.*-shaped target documents from both routes
 2026-09-06 c06b8fc466ea765ef2a857b137d43d6b2535c90f Merge pull request #134 from lost-rob0t/fix/v09-false-value-pipeline
@@ -75,11 +123,42 @@
 .github/workflows/operation-091-star-cl-sync.yml
 .github/workflows/starintel-schema-lock.yml
 .github/workflows/sync-operation-runtime-once.yml
+.github/workflows/tmp-org-doc-sync.yml
 .gitignore
+.opencode/agents/issue-ownership.md
+.opencode/agents/issue-reality.md
+.opencode/agents/issue-research.md
+.opencode/agents/issue-verification.md
+.opencode/agents/issue-yagni.md
+.opencode/commands/issue.md
+.prolog/facts.kb
+.prolog/kb/git-remotes.pl
+.prolog/kb/index.pl
+.prolog/kb/root-causes.pl
+.prolog/kb/tooling.pl
+.prolog/result.json
+.prolog/runs/run-09b236bffdfee147fcb94e508086175afd7fc1c4.pl
+.prolog/runs/run-1599100ec1c9267d773573fdd9d679d00791106c.pl
+.prolog/runs/run-160df606a3fd9e909439748be0aa22fc364c9218.pl
+.prolog/runs/run-17bc37168ddea01f97236d5a5ef167f79d9b77a2.pl
+.prolog/runs/run-3e1f78523f377a94f43fda7a3cc1fc6622d7269d.pl
+.prolog/runs/run-4721efaf8141fd7199b6e1ceb1011b9ad970796e.pl
+.prolog/runs/run-51713d561b06a24f2954e8aa37a8339329c3a435.pl
+.prolog/runs/run-81d500c412f69b96a917173326a4b5b0929dd09d.pl
+.prolog/runs/run-8533dc40943dc7230b62533458e287a58db527ce.pl
+.prolog/runs/run-cca6b600992bfa8dedf507e4cff386187e29ec73.pl
+.prolog/runs/run-d62c8a8cc50a1ec7dde395d0e84180ed0e109e4f.pl
+.prolog/runs/run-e4ba2f63d344169e07ffb00d353ddfbad3127cb8.pl
+.prolog/verify.pl
+AGENTS.md
 Makefile
 README.org
 cli/client-convenience.lisp
+cli/http-contract-documents.lisp
+cli/http-contract-final.lisp
+cli/http-contract-package.lisp
 cli/http-contract.lisp
+cli/starintel-gserver-client.asd
 doc/actors.org
 doc/addons.org
 doc/api/index.org
@@ -112,15 +191,21 @@ doc/lease-store-usage.org
 doc/messaging.org
 doc/next-implementation-loop-prompt.org
 doc/oauth-provider.org
+doc/observability.org
 doc/operation-object.org
 doc/relation-deduplication.org
 doc/server-admin.org
 doc/target-lease-semantics.org
 doc/testing.md
 doc/v09-runtime.org
+docker-compose.yml
+docker/otelcol-sidecar.yaml
+docker/star-server-init.lisp
+example_configs/init.lisp
 flake.lock
 flake.nix
 qlfile.lock
+rage/5-http-contract-documents.org
 schema/starintel-schema.lock.json
 scripts/check-starintel-schema-lock.py
 scripts/doc-authoring.py
@@ -152,28 +237,49 @@ source/document-access.lisp
 source/frontends/http-api.lisp
 source/frontends/http-auth.lisp
 source/frontends/http-authorization-routes.lisp
+source/frontends/http-authorization.lisp
 source/frontends/http-boundary-core.lisp
 source/frontends/http-boundary-routes.lisp
 source/frontends/http-bulk-jobs.lisp
+source/frontends/http-capabilities.lisp
+source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1.lisp
 source/gserver-settings.lisp
 source/init-loader.lisp
+source/lease-store-runtime.lisp
 source/leases/memory-store.lisp
 source/leases/protocol.lisp
 source/leases/valkey-store.lisp
 source/main.lisp
+source/observability-consumers.lisp
+source/observability-gserver.lisp
+source/observability/api.lisp
+source/observability/config.lisp
+source/observability/http-middleware.lisp
+source/observability/otlp.lisp
+source/observability/package.lisp
+source/observability/redaction.lisp
+source/observability/trace.lisp
+source/package.lisp
 source/producers/producers.lisp
 source/rabbit.lisp
+source/runtime-lifecycle.lisp
 source/starintel-gserver.asd
 source/target-dispatch.lisp
 source/target-recovery.lisp
 source/views/targets.json
 starintel-gserver-tests.asd
+starintel-observability.asd
+t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/http-boundary-test.lisp
+t/http-contract-documents-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
+t/http-tenant-injection-test.lisp
 t/json-literal-preservation-test.lisp
+t/lease-store-runtime-test.lisp
+t/observability-test.lisp
 t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
@@ -190,6 +296,8 @@ ui/ui-server.lisp
 .github/workflows/operation-091-star-cl-sync.yml
 .github/workflows/starintel-schema-lock.yml
 .github/workflows/sync-operation-runtime-once.yml
+.github/workflows/tmp-org-doc-sync.yml
+cli/starintel-gserver-client.asd
 flake.nix
 scripts/check-starintel-schema-lock.py
 scripts/doc-authoring.py
@@ -197,11 +305,17 @@ scripts/insert-docstrings.py
 scripts/stack-test.sh
 source/starintel-gserver.asd
 starintel-gserver-tests.asd
+starintel-observability.asd
+t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/http-boundary-test.lisp
+t/http-contract-documents-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
+t/http-tenant-injection-test.lisp
 t/json-literal-preservation-test.lisp
+t/lease-store-runtime-test.lisp
+t/observability-test.lisp
 t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp

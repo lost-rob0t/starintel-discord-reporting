@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-14T12:54:34Z`
+- generated: `2026-09-14T19:24:42Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`d49f1e6e56cdbddd0843ad2c1c962c3ff758075f`](https://github.com/lost-rob0t/starintel-auto-research/commit/d49f1e6e56cdbddd0843ad2c1c962c3ff758075f)
-- head date: `2026-09-11T20:12:02-04:00`
-- head subject: Research starintel-java as ABCL-backed JVM binding
+- head: [`d67d79fdef56f729757a0d183ea78192749faf59`](https://github.com/lost-rob0t/starintel-auto-research/commit/d67d79fdef56f729757a0d183ea78192749faf59)
+- head date: `2026-09-14T13:55:40-04:00`
+- head subject: skills: resolve StarIntel spec from canonical lock
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 d67d79fdef56f729757a0d183ea78192749faf59 skills: resolve StarIntel spec from canonical lock
 2026-09-11 d49f1e6e56cdbddd0843ad2c1c962c3ff758075f Research starintel-java as ABCL-backed JVM binding
 2026-09-11 81a4593fbee531cf7ccae1099809620367191d77 Research StarIntel Android ABCL + StarLang/Sento runtime
 2026-09-10 b8490fe8d9afa0138a08530f07b5e78094234575 index: advance portable rule reuse to design
@@ -46,28 +47,11 @@
 2026-09-08 3992b46b4b14314c87ad10a425a9c3e88eea8f65 research: ARDR-ISSUE-206 pass 1 platform identifier semantics for normalization contract
 2026-09-05 eda24d2540c3c847199a361cbf011bd597360e95 research: seed Confoederatio in OSINT source backlog
 2026-09-05 5cd6092f4504b7fe47fecd1bd1d26cd32f492c17 research: add Confoederatio world-model source reconnaissance
-2026-08-31 e4ba42e6d9cb792a79cd91c3bc3b5fb609040ced Remove orphaned StarLang prototype CI (#114)
-2026-08-31 c3e5d568d9321d2dd859fc3e00fcf7a1bb2f7715 Retire autonomous StarIntel product worker profiles after Hackmode migration (#204)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.github/workflows/star-lang-bbp-domain.yml
-.github/workflows/star-lang-bbp-journal-restart.yml
-.github/workflows/star-lang-bbp-run-idempotency.yml
-.github/workflows/star-lang-bbp-runtime-journal.yml
-.github/workflows/star-lang-common-lisp.yml
-.github/workflows/star-lang-constructors.yml
-.github/workflows/star-lang-dispatch-idempotency-identity.yml
-.github/workflows/star-lang-loader.yml
-agent-zero/README.md
-agent-zero/usr/agents/starintel-adard-gated/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-contract-audit/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-implementation/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-source-enrichment/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel-verification/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/starintel/prompts/agent.system.main.specifics.md
 roam/design/star-kb/STAR-KB-001-canonical-knowledge-authoring-and-query-plane.org
 roam/design/star-kb/STAR-KB-001-v0.1-shared-prolog-knowledge-library.org
 roam/design/star-kb/STAR-KB-002-portable-logic-packages-and-sandboxed-actors.org
@@ -96,28 +80,15 @@ roam/research/starintel-android/STARINTEL-ANDROID-RESEARCH-001-abcl-starlang-fie
 roam/research/starintel-java/STARINTEL-JAVA-RESEARCH-001-abcl-backed-jvm-binding.org
 roam/research/starintel-server/STAR-RESEARCH-061-identifier-normalization.org
 scripts/__pycache__/save-research.cpython-313.pyc
-scripts/install-agent-zero.sh
 scripts/verify_research_approval_history.py
+skills/document-spec/SKILL.md
 tests/test_research_approval_history_external_base_repair.py
-tests/test_research_persistence_contract.py
-tests/test_research_source_of_truth_contract.py
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/star-lang-bbp-domain.yml
-.github/workflows/star-lang-bbp-journal-restart.yml
-.github/workflows/star-lang-bbp-run-idempotency.yml
-.github/workflows/star-lang-bbp-runtime-journal.yml
-.github/workflows/star-lang-common-lisp.yml
-.github/workflows/star-lang-constructors.yml
-.github/workflows/star-lang-dispatch-idempotency-identity.yml
-.github/workflows/star-lang-loader.yml
 scripts/__pycache__/save-research.cpython-313.pyc
-scripts/install-agent-zero.sh
 scripts/verify_research_approval_history.py
 tests/test_research_approval_history_external_base_repair.py
-tests/test_research_persistence_contract.py
-tests/test_research_source_of_truth_contract.py
 ```

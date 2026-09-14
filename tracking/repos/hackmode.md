@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-14T12:54:47Z`
+- generated: `2026-09-14T19:24:54Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -37,19 +37,6 @@
 2026-08-31 e9eb6286413d0875c49dcb5616d9e6277c797ade Database: enforce visual evidence operation/run write scope (#156)
 2026-08-31 26675e5e59eda6ac9014abaaa5abe93ad55d60ba IPX: wire versioned mitmproxy spool addon (#154)
 2026-08-31 40389abcc10ad561be76219a4e665bc873fcc2de Capture: supervise operation-scoped mitmdump lifecycle (#147)
-2026-08-31 a795ecb08ac2e30363f9538fbc1a1008a93faf25 Database: add canonical visual evidence persistence (#145)
-2026-08-31 b5bc9d5b007ff722cbe42c023d18482031bec951 Hackpert: defend run inspection reason strings (#132)
-2026-08-31 9179e059e2582570805992a60090e0b9b8e5b638 Merge pull request #134 from lost-rob0t/hackmode-rage-database/http-header-policy-20260831-1343
-2026-08-31 bd7843a259c32ffe661aeca55d3649aca06001fa build(database): load HTTP header evidence contract
-2026-08-31 595e2fd330c889b2c82bd2509665755564f3446e fix(database): validate canonical HTTP header evidence
-2026-08-31 706efb1ca5729042f3dccf81577a7979c273f983 test(database): require bounded redacted HTTP headers
-2026-08-31 7ca45628dbd5536b5f5e93bfac5dca170f37ef93 Merge pull request #129 from lost-rob0t/hackmode-rage-database/typed-global-fetch-20260831-1102
-2026-08-31 c8a418db108a6a7373dfe5f958926f8183c1c0bf Return typed singular global KB exports
-2026-08-31 d43cee30cdbc692b33d91448563bc49ca2d87909 Hackpert: defend loop reason strings from caller mutation (#131)
-2026-08-31 bbd743cafe91c66dec69f0773bc080169f7703e8 Test typed singular global KB fetch
-2026-08-31 d9e358d97830018ffd0760c99fa4a67642e5272f Hackpert: defend loop scope strings from caller mutation (#128)
-2026-08-31 cf28a581d36a2f63e6df29d4888ab010a325f8de Database: return typed singular long-term KB promotions (#124)
-2026-08-31 4dfed971f03f728eef1c935e5c5f7d86b3a36c68 Hackpert: defend direct candidate accessors (#126)
 ```
 
 ## Repository paths changed, last 14 days
@@ -71,11 +58,9 @@ docs/architecture/ipx.org
 source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
 source/hackmode-core/capture-replay.lisp
-source/hackmode-core/expert/direct-candidate.lisp
 source/hackmode-core/expert/extension.lisp
 source/hackmode-core/expert/inspection-accessors.lisp
 source/hackmode-core/expert/inspection.lisp
-source/hackmode-core/expert/loop.lisp
 source/hackmode-core/expert/objective.lisp
 source/hackmode-core/expert/selection.lisp
 source/hackmode-core/hackmode-tests.asd
@@ -85,11 +70,8 @@ source/hackmode-core/http-transport-profile.lisp
 source/hackmode-core/investigation-views.lisp
 source/hackmode-core/package.lisp
 source/hackmode-core/tests/capture-provider.lisp
-source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
-source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-objective.lisp
-source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
@@ -97,15 +79,7 @@ source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-core/visual-evidence-outbox.lisp
-source/hackmode-database/db.lisp
 source/hackmode-database/execution-graph.lisp
-source/hackmode-database/hackmode-database-tests.asd
-source/hackmode-database/hackmode-database.asd
-source/hackmode-database/http-exchange-headers.lisp
-source/hackmode-database/package.lisp
-source/hackmode-database/tests/global-kb.lisp
-source/hackmode-database/tests/http-exchange-graph.lisp
-source/hackmode-database/tests/long-term-kb-singular-fetch.lisp
 source/hackmode-database/tests/visual-evidence.lisp
 source/hackmode-database/visual-evidence.lisp
 tools/ipx/mitmproxy-addon.py
@@ -118,21 +92,13 @@ tools/ipx/mitmproxy-addon.py
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/tests/capture-provider.lisp
-source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
-source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-objective.lisp
-source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
-source/hackmode-database/hackmode-database-tests.asd
-source/hackmode-database/hackmode-database.asd
-source/hackmode-database/tests/global-kb.lisp
-source/hackmode-database/tests/http-exchange-graph.lisp
-source/hackmode-database/tests/long-term-kb-singular-fetch.lisp
 source/hackmode-database/tests/visual-evidence.lisp
 ```

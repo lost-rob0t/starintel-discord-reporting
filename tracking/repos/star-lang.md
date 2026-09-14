@@ -1,15 +1,17 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-09-14T12:54:42Z`
+- generated: `2026-09-14T19:24:50Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`0343d653e14bcc96eea02dd63b956aa3867ebc15`](https://github.com/lost-rob0t/star-lang/commit/0343d653e14bcc96eea02dd63b956aa3867ebc15)
-- head date: `2026-09-10T22:22:55-04:00`
-- head subject: compiler: extract closed parser and actor lowering from prototype (#64)
+- head: [`f701583aa7ab6132967742e73c3309aea0b2d6b6`](https://github.com/lost-rob0t/star-lang/commit/f701583aa7ab6132967742e73c3309aea0b2d6b6)
+- head date: `2026-09-14T09:54:48-04:00`
+- head subject: cli: add first-class final-system starlang-cli command surface (#66)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 f701583aa7ab6132967742e73c3309aea0b2d6b6 cli: add first-class final-system starlang-cli command surface (#66)
+2026-09-14 9238112c16546673bcef6e4a41b8f0f91ce7ef56 prototype: register repository tree first in the ASDF source registry (#65)
 2026-09-10 0343d653e14bcc96eea02dd63b956aa3867ebc15 compiler: extract closed parser and actor lowering from prototype (#64)
 2026-09-10 87b4628edd66fd97708396fb333c7090edf76a9e cleanup: remove IPX application code from StarLang (#63)
 2026-09-10 7d800f9267d1d2b860f0a8ea460b3ec7e3bb9f9a artifact: add canonical JSON file writer actor (#44)
@@ -28,6 +30,7 @@
 .github/workflows/logic-swi.yml
 .github/workflows/nix.yml
 .github/workflows/production-readiness.yml
+.prolog/kb/cli-surface.pl
 .prolog/kb/compiler-ownership.pl
 .prolog/kb/load.pl
 .prolog/kb/testing.pl
@@ -54,6 +57,7 @@ nix/sento-remoting.nix
 prototype/actor-wire-prototype.lisp
 prototype/bbp-domain-remoting-tests.lisp
 prototype/cl-gserver-runtime-facade-prototype.lisp
+prototype/core-surface-load-tests.lisp
 prototype/core-surface-prototype.lisp
 prototype/message-lifecycle-bindings-prototype.lisp
 prototype/message-lifecycle-tests.lisp
@@ -97,6 +101,14 @@ star-sento-compat/tests/integration/packages.lisp
 star-sento-compat/tests/integration/real-actor-system-tests.lisp
 star-sento-compat/tests/star-sento-compat-integration-tests.asd
 star-sento-compat/tests/star-sento-compat-tests.lisp
+starlang-cli/src/cli.lisp
+starlang-cli/src/packages.lisp
+starlang-cli/starlang-cli.asd
+starlang-cli/starlang-cli.lisp
+starlang-cli/tests/cli-proof.lisp
+starlang-cli/tests/cli-tests.lisp
+starlang-cli/tests/fixtures/actor-unknown-option.star
+starlang-cli/tests/starlang-cli-tests.asd
 starlang-compiler/src/actor-ir.lisp
 starlang-compiler/src/actor-manifest.lisp
 starlang-compiler/src/actor-source.lisp
@@ -148,6 +160,11 @@ star-sento-compat/tests/integration/packages.lisp
 star-sento-compat/tests/integration/real-actor-system-tests.lisp
 star-sento-compat/tests/star-sento-compat-integration-tests.asd
 star-sento-compat/tests/star-sento-compat-tests.lisp
+starlang-cli/starlang-cli.asd
+starlang-cli/tests/cli-proof.lisp
+starlang-cli/tests/cli-tests.lisp
+starlang-cli/tests/fixtures/actor-unknown-option.star
+starlang-cli/tests/starlang-cli-tests.asd
 starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/actor-compiler-proof.lisp
 starlang-compiler/tests/actor-compiler-tests.lisp
