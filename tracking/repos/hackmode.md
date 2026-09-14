@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-13T20:53:37Z`
+- generated: `2026-09-14T00:14:33Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -66,9 +66,6 @@
 2026-08-30 691b8baadd59d83be1fe806a084c7ca9b7ea74d5 Core: repair find-apis arity regression (#103)
 2026-08-30 f67a114d66856699a75ae04f5000844049635712 Database: persist capture source rotation lineage (#96)
 2026-08-30 7496a31fc476f4d230343953db4bd2714f92da73 Hackpert: expose typed action admission inspection (#98)
-2026-08-30 842563fd02619bcc306d0642f243d0bd1261edc5 Hackpert: expose bounded action inspection state (#95)
-2026-08-30 b2ffadaf951038d742774061915cdc531d425eff Database: quarantine malformed capture evidence (#93)
-2026-08-30 1ace3c2620de7698d5933afb5f1563a0b7302098 Hackpert: expose typed plan inspection state (#92)
 ```
 
 ## Repository paths changed, last 14 days
@@ -134,7 +131,6 @@ source/hackmode-database/hackmode-database.asd
 source/hackmode-database/http-exchange-headers.lisp
 source/hackmode-database/kb-seed-import.lisp
 source/hackmode-database/package.lisp
-source/hackmode-database/tests/capture-quarantine.lisp
 source/hackmode-database/tests/capture-source-rotation.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
@@ -175,7 +171,6 @@ source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
-source/hackmode-database/tests/capture-quarantine.lisp
 source/hackmode-database/tests/capture-source-rotation.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
