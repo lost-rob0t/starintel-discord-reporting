@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-14T05:05:10Z`
+- generated: `2026-09-14T12:54:45Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -117,32 +117,6 @@
 2026-08-31 59d5033c7d45d79c5e84ed657bd08068b747bd4d test(live): streaming sentinel request gets reasoning headroom
 2026-08-31 72d1888a386822d1dde8c3bada770438a14085b9 fix(direct): advertise the context alias only when context ops are granted
 2026-08-31 149b7b2c13b33c663505950f2271032f32648ab3 test(live): replace the 120b cache pin with the pinned paid model
-2026-08-30 fb45be06a5c183653ac3c38796d62fa87888a03d test(live): deduplicate all_steps_ok and keep helper clauses contiguous
-2026-08-30 ac92c2c6f5d84c4549bb4c0501daa8ffaf62b378 docs(review): resolution addendum — 120B lane characterization after diagnostics work
-2026-08-30 9c77925665275a18006bb16be9b8ba55f13b6d1f fix(completion): actionable planner repair diagnostics for envelope and capability faults
-2026-08-29 0b0e782e9fe0ec26e868980a9c28a7915d37b812 docs(review): resolution addendum — BASE published, corpus fix, 120B lane status
-2026-08-29 e47469228c97d11b3ec48a092229d70ee42e4ca6 fix(ci): manifest entries for main's peek-contract and any-schema tests
-2026-08-29 c62333b405c340165c12ecd29aac5736f3d145a1 docs(review): #290 findings resolution map
-2026-08-29 eea15eeffff901e413e21edc3a0ee04255e96d30 fix(live): child reasoning-effort + completion headroom (m6 follow-up)
-2026-08-29 45855ccbef0e28fb69cb9303fcb4d6aa13381093 docs(design): recount design gate 59 checks in 13 groups (m1)
-2026-08-29 774c2beee036bc9691f490853ac8aa19a81c83a6 fix(live): assert retrieval contract, not one model-authored plan shape (m6)
-2026-08-29 e71ee13ae820c986125539e6380dc42aa7e021de fix(gate): path templates may be embedded in paths (m4)
-2026-08-29 33dc165bce478abebb500553cfd10c0d0992fd18 docs(typed-plans): rlm/2 not rlm/3; strategy_mode/2 normalization (m3)
-2026-08-29 482759c42e5bfd25a237746ac525066f4f7e3e11 docs(design): fix IMPLEMENTED/UNMERGED classification of model_step_handler (M4)
-2026-08-29 6521d53414a405c94ec8e5ca14377b69301e48ce docs(design): declare D6-9/D6-10 BASE deltas + permanent gate pins (M8)
-2026-08-29 60d1395aafcf63a35fdfcdd70e0386251ef2eee6 fix(gate): machine-checked KB evidence refs + d12/d06 design-level backing (M7)
-2026-08-29 585f85ba71668fc28807652b77ab0269f8cb1fe1 fix(gate): resolved arg shapes re-validated in the dataflow round trip (m2)
-2026-08-29 d123e9c9540da3438ef65661a9e2a15dce4a8b18 fix(gate): defined capability shapes for index-backed observers (M5, m5)
-2026-08-29 ed3ce5c5bc54adc303b960eb2d079ec1bdaa188f fix(gate): expert_contract.inner_capabilities schema + closed contract values (M6)
-2026-08-29 33c915f81c87978903d78664379729051ddc9604 fix(gate): ungameable obligation coverage + full-chain patch validation (M2)
-2026-08-29 f2adce786f41dcaa3fa64becd23b925a1114f6a7 fix(gate): one dangling grammar that includes environment inputs (M3)
-2026-08-29 2ab2f857f8992fe1c70ebd0e4c7b1aad67c3ab6a fix(gate): non-vacuous capability-safety evidence (M1, m2)
-2026-08-29 22db851666f1c995177110fbc06ae86b33e8add7 fix(gate): resolve design-gate BASE via pinned id + candidate list
-2026-08-29 7add3aebe827a6c573c620d7804ae85dc2076f5f docs(review): #290 adversarial review report + findings work order
-2026-08-29 36c41f5e0ac96bab30460bbc254844a3022a1550 docs(design): forward-projection durability and multi-run state readability
-2026-08-29 6a31baa944e15ef70d5fb6577c7cb9c793282aff docs(design): executable design gate for SPEC/PLAN authority rewrite
-2026-08-28 0e1bd9a3f0afb8826ef650400bcc604192c43cad docs(design): SPEC/PLAN authority refinement for PR #290
-2026-08-28 802ddceb90eaed29f4c72969f5066fb0f66c4a12 docs: define spec-seeded symbolic planning
 ```
 
 ## Repository paths changed, last 14 days
@@ -188,7 +162,6 @@ docs/research/expert-direct-tool-projection.md
 docs/research/expert-direct-tool-projection.org
 docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
-docs/typed-plans.md
 flake.nix
 prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
@@ -210,8 +183,6 @@ prolog/rlm_skill.pl
 prolog/rlm_text.pl
 prolog/rlm_tree_sitter.pl
 rage/288-spec-plan-graph-executor.org
-rage/290-adversarial-review-report.md
-rage/290-findings-fix-prompt.md
 rage/325-native-call-isolation.org
 rage/336-text-streaming-design.org
 rage/96-versioned-syntax-facts.org
@@ -221,24 +192,17 @@ rage/97-query-capture-realize-prompt.md
 research/README.md
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
-research/spec-plan-refinement-kb.pl
 research/tree-sitter-query-capture.org
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
-scripts/spec_plan_authority_check.pl
-scripts/spec_plan_authority_check.sh
-skills/core/rlm-operate/SKILL.md
 test/deterministic_corpus.pl
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
-test/live_completion_openrouter_test.pl
 test/live_completion_stream_openrouter_test.pl
-test/live_conversation_scale_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_module_boundary_test.pl
-test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
 test/rlm_direct_context_peek_contract_test.pl
@@ -262,7 +226,6 @@ test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
 ```
@@ -278,18 +241,13 @@ flake.nix
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
-scripts/spec_plan_authority_check.pl
-scripts/spec_plan_authority_check.sh
 test/deterministic_corpus.pl
 test/live_chain_stream_openrouter_test.pl
 test/live_compiler_cache_openrouter_test.pl
-test/live_completion_openrouter_test.pl
 test/live_completion_stream_openrouter_test.pl
-test/live_conversation_scale_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_module_boundary_test.pl
-test/rlm_completion_planner_validation_retry_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_completion_test.pl
 test/rlm_direct_context_peek_contract_test.pl
@@ -313,7 +271,6 @@ test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/completion_test_support.pl
 test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
 ```

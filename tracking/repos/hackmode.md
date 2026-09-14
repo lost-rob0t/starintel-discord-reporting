@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-14T05:05:12Z`
+- generated: `2026-09-14T12:54:47Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -50,16 +50,6 @@
 2026-08-31 d9e358d97830018ffd0760c99fa4a67642e5272f Hackpert: defend loop scope strings from caller mutation (#128)
 2026-08-31 cf28a581d36a2f63e6df29d4888ab010a325f8de Database: return typed singular long-term KB promotions (#124)
 2026-08-31 4dfed971f03f728eef1c935e5c5f7d86b3a36c68 Hackpert: defend direct candidate accessors (#126)
-2026-08-31 22d818c0b646d038795b95496fa86638663ea300 Hackpert: normalize direct progress into typed candidates (#123)
-2026-08-31 47858e3868726540a8d2a148ef471eaed3bc4bbe Database: return typed operational KB entries from singular fetch (#121)
-2026-08-31 54e61994188ab99276a64dac7454cd9f01c8dc12 Hackpert: re-evaluate objective on each loop step (#120)
-2026-08-31 4899575812020e3438c26389aea459de27c4b6fb Database: make operational KB seed imports atomic (#115)
-2026-08-31 6086587bfb3fe4e29f9b32c6450c15e994968e4a Hackpert: defend transition reason inspection strings (#118)
-2026-08-31 feef4fc04c4b2b9f2111be8dac09d6de59dd057c Hackpert: defend inspection snapshots from mutable string aliasing (#116)
-2026-08-31 00b1e2c086c2ffc56ec7b7519a1b012871399848 Database: reject non-assertion operational KB retraction targets (#113)
-2026-08-31 e2b1b7e6ced734d7bbdb85e862ca83ad6ea60c28 Hackpert: expose typed budget inspection (#112)
-2026-08-31 8d77cada9b6e38da5c1b3cab1d79fb98f5a06158 database: require canonical long-term source for global KB export (#111)
-2026-08-31 c51f029415eeb2b653a1b213ae78f14cdeef0a0b database: require live canonical source for long-term promotion (#108)
 ```
 
 ## Repository paths changed, last 14 days
@@ -81,7 +71,6 @@ docs/architecture/ipx.org
 source/hackmode-core/assets.lisp
 source/hackmode-core/capture-provider.lisp
 source/hackmode-core/capture-replay.lisp
-source/hackmode-core/expert/budget-inspection.lisp
 source/hackmode-core/expert/direct-candidate.lisp
 source/hackmode-core/expert/extension.lisp
 source/hackmode-core/expert/inspection-accessors.lisp
@@ -89,7 +78,6 @@ source/hackmode-core/expert/inspection.lisp
 source/hackmode-core/expert/loop.lisp
 source/hackmode-core/expert/objective.lisp
 source/hackmode-core/expert/selection.lisp
-source/hackmode-core/expert/transition-inspection.lisp
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/http-requester.lisp
@@ -97,16 +85,12 @@ source/hackmode-core/http-transport-profile.lisp
 source/hackmode-core/investigation-views.lisp
 source/hackmode-core/package.lisp
 source/hackmode-core/tests/capture-provider.lisp
-source/hackmode-core/tests/expert-budget-inspection.lisp
 source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
-source/hackmode-core/tests/expert-inspection-copy.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
-source/hackmode-core/tests/expert-selection.lisp
-source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
@@ -118,15 +102,10 @@ source/hackmode-database/execution-graph.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
 source/hackmode-database/http-exchange-headers.lisp
-source/hackmode-database/kb-seed-import.lisp
 source/hackmode-database/package.lisp
-source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
 source/hackmode-database/tests/http-exchange-graph.lisp
-source/hackmode-database/tests/kb-seed-import.lisp
 source/hackmode-database/tests/long-term-kb-singular-fetch.lisp
-source/hackmode-database/tests/long-term-kb.lisp
-source/hackmode-database/tests/operational-kb-retraction-target.lisp
 source/hackmode-database/tests/visual-evidence.lisp
 source/hackmode-database/visual-evidence.lisp
 tools/ipx/mitmproxy-addon.py
@@ -139,16 +118,12 @@ tools/ipx/mitmproxy-addon.py
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/tests/capture-provider.lisp
-source/hackmode-core/tests/expert-budget-inspection.lisp
 source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
-source/hackmode-core/tests/expert-inspection-copy.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
-source/hackmode-core/tests/expert-selection.lisp
-source/hackmode-core/tests/expert-transition-inspection.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
@@ -156,12 +131,8 @@ source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
-source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
 source/hackmode-database/tests/http-exchange-graph.lisp
-source/hackmode-database/tests/kb-seed-import.lisp
 source/hackmode-database/tests/long-term-kb-singular-fetch.lisp
-source/hackmode-database/tests/long-term-kb.lisp
-source/hackmode-database/tests/operational-kb-retraction-target.lisp
 source/hackmode-database/tests/visual-evidence.lisp
 ```
