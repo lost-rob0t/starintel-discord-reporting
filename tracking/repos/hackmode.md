@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-14T00:14:33Z`
+- generated: `2026-09-14T05:05:12Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -60,12 +60,6 @@
 2026-08-31 e2b1b7e6ced734d7bbdb85e862ca83ad6ea60c28 Hackpert: expose typed budget inspection (#112)
 2026-08-31 8d77cada9b6e38da5c1b3cab1d79fb98f5a06158 database: require canonical long-term source for global KB export (#111)
 2026-08-31 c51f029415eeb2b653a1b213ae78f14cdeef0a0b database: require live canonical source for long-term promotion (#108)
-2026-08-31 3e58dab3d6207e9182c1d52286f41414397b38bf Hackpert: expose loop strategy transition inspection (#107)
-2026-08-31 3ca1da553db6c2218a16524f7b8e7b204686b25d Database: reject divergent capture source rotation forks (#105)
-2026-08-30 ef737401687c5197e8e3173fd434f87d7a81cb04 Hackpert: expose objective selection inspection (#104)
-2026-08-30 691b8baadd59d83be1fe806a084c7ca9b7ea74d5 Core: repair find-apis arity regression (#103)
-2026-08-30 f67a114d66856699a75ae04f5000844049635712 Database: persist capture source rotation lineage (#96)
-2026-08-30 7496a31fc476f4d230343953db4bd2714f92da73 Hackpert: expose typed action admission inspection (#98)
 ```
 
 ## Repository paths changed, last 14 days
@@ -94,10 +88,8 @@ source/hackmode-core/expert/inspection-accessors.lisp
 source/hackmode-core/expert/inspection.lisp
 source/hackmode-core/expert/loop.lisp
 source/hackmode-core/expert/objective.lisp
-source/hackmode-core/expert/selection-inspection.lisp
 source/hackmode-core/expert/selection.lisp
 source/hackmode-core/expert/transition-inspection.lisp
-source/hackmode-core/functions.lisp
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/http-requester.lisp
@@ -109,15 +101,12 @@ source/hackmode-core/tests/expert-budget-inspection.lisp
 source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
 source/hackmode-core/tests/expert-inspection-copy.lisp
-source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
-source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
-source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
@@ -131,7 +120,6 @@ source/hackmode-database/hackmode-database.asd
 source/hackmode-database/http-exchange-headers.lisp
 source/hackmode-database/kb-seed-import.lisp
 source/hackmode-database/package.lisp
-source/hackmode-database/tests/capture-source-rotation.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
 source/hackmode-database/tests/http-exchange-graph.lisp
@@ -155,15 +143,12 @@ source/hackmode-core/tests/expert-budget-inspection.lisp
 source/hackmode-core/tests/expert-direct-candidate.lisp
 source/hackmode-core/tests/expert-extension.lisp
 source/hackmode-core/tests/expert-inspection-copy.lisp
-source/hackmode-core/tests/expert-inspection.lisp
 source/hackmode-core/tests/expert-loop-scope-copy.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-run-inspection-copy.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
-source/hackmode-core/tests/expert-selection-inspection.lisp
 source/hackmode-core/tests/expert-selection.lisp
 source/hackmode-core/tests/expert-transition-inspection.lisp
-source/hackmode-core/tests/functions.lisp
 source/hackmode-core/tests/http-requester.lisp
 source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
@@ -171,7 +156,6 @@ source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-database/hackmode-database-tests.asd
 source/hackmode-database/hackmode-database.asd
-source/hackmode-database/tests/capture-source-rotation.lisp
 source/hackmode-database/tests/global-kb-canonical-source.lisp
 source/hackmode-database/tests/global-kb.lisp
 source/hackmode-database/tests/http-exchange-graph.lisp
