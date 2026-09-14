@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-14T19:24:55Z`
+- generated: `2026-09-14T23:10:25Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`a6605f5e1dd36273834cd3c58aca89a55b07bba8`](https://github.com/lost-rob0t/zara/commit/a6605f5e1dd36273834cd3c58aca89a55b07bba8)
@@ -1140,17 +1140,6 @@
 2026-08-31 a3646137a51bfb71a723edd4905072a47e33ebc5 test(gate): capability plan phase; docs(wiki): capability plans page
 2026-08-31 205da6eb983c1ba468ae8d86f946b85475566021 feat(runtime): typed ExecutionPlan mirror, PrologEngine plan boundary, PlanExecutor
 2026-08-31 3da07e5168ace5aa768b1283906eed0fa2e1c05b feat(prolog): pure capability reasoning with typed ExecutionPlans
-2026-08-31 f0ddfef3250d834ce6d3b11872035dc14b691f31 docs(rage): record issue 244 research and design artifacts
-2026-08-31 930088c6b6b2f488243b84c025f62039125ca3f5 docs(rage): record 157 adversarial review
-2026-08-31 4d08f7f152c45a778ab53af464c8329dd9f8b880 docs(rage): record 157 research, design, adversarial-review decisions
-2026-08-31 13b7b1d863dde90966d5ee12524891b5b2c0bb75 docs(rage): record 157 run identity and queue state at consumption
-2026-08-31 f58b551df7ce411d17277d4073a8121b47824145 docs(rage): record #156 merge evidence; regenerate backlog post-merge
-2026-08-31 7ae4b7f7a716f302f3ad9299df3f3b1d9322e3a5 Merge pull request #245 from lost-rob0t/chore/backlog-244
-2026-08-31 18659368cd00d57f3ea8c6da5534cb141e05f8c0 docs: define external plugin configuration contract
-2026-08-31 37410f988055939579e5bbbfb8e4a789e3d299fb chore(backlog): import issue 244 and refresh closed-issue mirror
-2026-08-31 4f77de3c7dec0cebf711a5ffdad04fd136354693 Merge pull request #243 from lost-rob0t/rage/156-prolog-frames
-2026-08-31 7d5e17693463d2f9f9479df564474d3eea3fc958 Merge branch 'master' into rage/156-prolog-frames
-2026-08-31 8f2581cefd79890788ca83d46dedb2c4f0fd4d7b feat(prolog): adapt resolution to IntentFrame with canonical semantic corpus
 ```
 
 ## Repository paths changed, last 14 days
@@ -1365,7 +1354,6 @@ kb/capabilities.pl
 kb/config.pl
 kb/device_providers.pl
 kb/intents.pl
-kb/semantic_corpus.pl
 kb/server_providers.pl
 main.pl
 modules/capability_plans.pl
@@ -1383,7 +1371,6 @@ planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
-rage/156-prolog-frames.org
 rage/157-execution-plans.org
 rage/158-api-service-providers.org
 rage/159-zara1-device-actions-design.org
@@ -1445,7 +1432,6 @@ rage/203-android-voice-session-invalidation-r4.org
 rage/216-transcript-normalization-contract-r2.org
 rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
-rage/244-wake-daemon-voice-design.org
 rage/244-wake-daemon-voice-research.org
 rage/244-wake-daemon-voice.org
 rage/246-todo-toggle-recovery.org
@@ -1583,7 +1569,6 @@ t/test_plans.py
 t/test_plugin_tool_approval.py
 t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
-t/test_prolog_frame_adapter.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_registered_target_recovery.py
@@ -1610,7 +1595,6 @@ t/test_security_threat_model.py
 t/test_security_threat_protocol_depth.py
 t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
-t/test_semantic_corpus.py
 t/test_semantic_first_runtime.py
 t/test_server.py
 t/test_service_plugin_advice.py
@@ -1911,7 +1895,6 @@ t/test_plans.py
 t/test_plugin_tool_approval.py
 t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
-t/test_prolog_frame_adapter.py
 t/test_qt_runtime_bridge.py
 t/test_quick_copilot.py
 t/test_registered_target_recovery.py
@@ -1938,7 +1921,6 @@ t/test_security_threat_model.py
 t/test_security_threat_protocol_depth.py
 t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
-t/test_semantic_corpus.py
 t/test_semantic_first_runtime.py
 t/test_server.py
 t/test_service_plugin_advice.py

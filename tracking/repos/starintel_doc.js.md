@@ -1,15 +1,20 @@
 # lost-rob0t/starintel_doc.js
 
-- generated: `2026-09-14T19:25:16Z`
+- generated: `2026-09-14T23:10:44Z`
 - canonical branch: `master`
 - changelog eligible: `no`
-- head: [`ecaf2f3b50c0452ed7ac4db99cedf5aa6c02dd96`](https://github.com/lost-rob0t/starintel_doc.js/commit/ecaf2f3b50c0452ed7ac4db99cedf5aa6c02dd96)
-- head date: `2026-09-08T22:01:34-04:00`
-- head subject: Merge pull request #12 from lost-rob0t/feat/operation-091
+- head: [`5023309dfced5dd7b2c7328509b543e29819ec21`](https://github.com/lost-rob0t/starintel_doc.js/commit/5023309dfced5dd7b2c7328509b543e29819ec21)
+- head date: `2026-09-14T16:46:38-04:00`
+- head subject: Merge pull request #16 from lost-rob0t/fix/readme-starintel-091
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 5023309dfced5dd7b2c7328509b543e29819ec21 Merge pull request #16 from lost-rob0t/fix/readme-starintel-091
+2026-09-14 7f0672150aaa13ca60be4be39a3e5c0c1df1b440 docs: align README with StarIntel 0.9.1
+2026-09-14 42767e1cd598406328955050397618997d6f50a4 Merge pull request #14 from lost-rob0t/agent/canonical-schema-bytes-091
+2026-09-14 d861a207cdf2a79c665f5611bf55d689800106bd Sync canonical StarIntel v0.9 schema bundle
+2026-09-14 ba84f65d40eaa624ac01b21df866641c0ff875af fix(schema): preserve canonical artifact bytes
 2026-09-08 ecaf2f3b50c0452ed7ac4db99cedf5aa6c02dd96 Merge pull request #12 from lost-rob0t/feat/operation-091
 2026-09-08 566faffdea598cc0af747a81cf0ce594430c1321 chore(schema): pin merged operation 0.9.1 canonical commit
 2026-09-08 fd1bb301210c76d773857f9619064e5d48596068 ci: make canonical schema preflight read-only
@@ -44,6 +49,7 @@
 .github/workflows/conformance.yml
 .github/workflows/operation-091-fix.yml
 .github/workflows/operation-schema-sync.yml
+README.md
 package-lock.json
 package.json
 schema/starintel-doc-v0.9.0.expansion.json

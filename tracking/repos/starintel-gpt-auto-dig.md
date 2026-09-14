@@ -1,15 +1,64 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-14T19:24:41Z`
+- generated: `2026-09-14T23:10:12Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`beb5bb0289db3dfc2955d3adb9d97585fd136f95`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/beb5bb0289db3dfc2955d3adb9d97585fd136f95)
-- head date: `2026-09-14T14:04:17-04:00`
-- head subject: agents: separate StarIntel release from base schema authority
+- head: [`d621b701b76e3c006951ea65c088098ace526fbb`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/d621b701b76e3c006951ea65c088098ace526fbb)
+- head date: `2026-09-14T18:57:47-04:00`
+- head subject: research: replay election ecosystem pass 15 on current main (#2533)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 d621b701b76e3c006951ea65c088098ace526fbb research: replay election ecosystem pass 15 on current main (#2533)
+2026-09-14 812f0cf711c4a61db0d43b12d37983e9d400b08a Enumerate 2026 election ecosystem breadth graph pass 8 (#2484)
+2026-09-14 faa86008b4ed13c5ac79883ed8ed0e2b6912e927 research: replay election ecosystem pass 14 on current main (#2530)
+2026-09-14 c1a53ce1d82db2b9f62508495d3ef88456b91fb5 research(auto-dig): public election communications infrastructure pass 37 (#2603)
+2026-09-14 b6c22d8bb01d49ba003e0447a9847cba01c2b3cb research: replay Higher Ground Labs pass 39 on current main (#2606)
+2026-09-14 1ef7f252ae7849cd04eec892072d0a4e7836721a Auto-Dig: 2026 voter-data infrastructure pass 24 (#2585)
+2026-09-14 d7fa6a05b6bb7cc09af389d68e0389894dd45819 Auto-Dig: 2026 election admin vendor communications pass 31 (#2592)
+2026-09-14 4a70ebd07abfded970f12c4d836660b6adad3ac1 Auto-Dig: Georgia Election Protection ecosystem pass 30 (#2591)
+2026-09-14 4d1d9395c1365b69a1b983fa7442d932e0eeb560 Auto-Dig: political texting and messaging compliance ecosystem pass 19 (#2580)
+2026-09-14 97b677eec65a0b8f809145d7a437c4d159179140 Auto-Dig: 2026 poll-worker recruitment infrastructure pass 28 (#2589)
+2026-09-14 ba9d6d3ef8141a6857002a241d6856cd2ee417bb research: replay NGP VAN pass 36 on current main (#2643)
+2026-09-14 e5e2538cd44db7f31b20defe02d080987e021d75 osint: Indivisible Dallas / DATA coalition network pass (#2623)
+2026-09-14 5f11868a01467b501ce53fb0a584157c21f37750 research: replay GP3 network pass 25 on latest main (#2586)
+2026-09-14 3ee418e2b70cc29087accf6516e8462da3c4b646 replay pass 27 on latest main (#2588)
+2026-09-14 ccda4dcaafa5fb453a64c01e5b6f9d6251ef65cf auto-dig: replay election results media distribution pass 32 (#2593)
+2026-09-14 b779586dba5d0b76013ca9e6062bd76abec12bc3 research: replay Scale to Win pass 40 on current main (#2608)
+2026-09-14 d40ca6a9d9f621b5c015246c4ab06aeba54a3dfc research: replay political messaging verification pass 34 on current main (#2597)
+2026-09-14 ee1f79c70940ed8a860694041ea6fb6c7b222046 ci: run full backlog with target routing fix
+2026-09-14 044c525fa8a15c81c6f77be0f3b98b0d6691758d ci: remove temporary target routing helper v2
+2026-09-14 0a4058bc82318c04290d34813a6668570df1ef84 ci: remove temporary target routing helper
+2026-09-14 e106c862b3f7de840920e6bc7119be0eaf3a7f08 fix: route backlog target documents through target dispatch
+2026-09-14 edd73ed9013f4047afcda97707041e4e324f00d0 ci: let target routing helper push source only
+2026-09-14 de71ca51b4e3a905cd6f5cb6ca9a2e9e021142c6 ci: rerun target routing fix with corrected regression test
+2026-09-14 e6f25f602449556ea7327852f99439cb90a4d215 ci: add one-time target routing fix
+2026-09-14 c518cf82e0ac740deaf4de084b3bf1e3c4a6c3bb ci: retry full backlog after tenant cleanup
+2026-09-14 a1ed0a17feaac97e375dc36de8a64b86fc662d3a data: strip server-side tenant_id from corpus
+2026-09-14 192ca019c9f16c55ea1fbd8df85b6b09f71e938e ci: add one-time corpus tenant cleanup
+2026-09-14 a353467746a4b3778c97cbe3969f3f4b8f0495bf ci: isolate backlog denial one document at a time
+2026-09-14 04dd1f3884d1fa03cea99abcc7157f6ac5f9e4a0 ci: retry backlog ingest from current main
+2026-09-14 678e8edb0a41703fb72f85274f5d064766dedc63 Merge pull request #2642 from lost-rob0t/replay/2401-xzspace-current-main
+2026-09-14 7330e0ac4fff54b104d4e1ba13afcc66e46e7503 ci: refresh xzspace replay after schema normalization
+2026-09-14 b585e2cd4d138171ed8f251206c04775a183a736 fix: normalize xzspace dates for current schema
+2026-09-14 b7c644ae51cad54fade6498d41ce85b4195b71cc ci: temporary xzspace date normalization helper
+2026-09-14 27fb9841896ba22af1cb85e2b3f2e285de8afef0 replay: xzspace StarIntel attribution packet from #2401
+2026-09-14 d289fa80c2a6665653b628e98157d216c3f77b90 Merge pull request #2624 from lost-rob0t/osint/2335-potateking-crossplatform
+2026-09-14 29549058a1e0970ff26660bede1a7091b2e0253a ci: refresh PR #2624 after backlog 413 fix
+2026-09-14 ba3a516524db68e21b3ae29ac2708508d80a23a7 Merge pull request #2641 from lost-rob0t/ops/fix-backlog-413-split
+2026-09-14 693cd6d1da5e6b86d1cfa4520730572e4f972b22 ci: cover adaptive backlog batch splitting
+2026-09-14 3d9cbec1f814e5bc5651de69982e8c15b795b5b9 test: prove clean 413 batch bisection and ledgers
+2026-09-14 c5d53394be14359c3057e983a4398b43eda98d33 fix: adapt backlog batches to nginx 413
+2026-09-14 248a847eb53f5ec04de576a3756fe46c531637de ci: refresh PR #2624 after backlog importer merge
+2026-09-14 7fdc2aaf421800fda38f9d68f9607d7c27a1325e Merge pull request #2640 from lost-rob0t/ops/tmp-backlog-import-10k
+2026-09-14 f32af37abc5d797cb19102580b59bdd03e4b89ad ops: resume backlog from exact ledger source commit
+2026-09-14 dab4007c0da8a11a794d86abf34ef70bf830ab0f ci: refresh PR #2624 against current main
+2026-09-14 566bb0b7c95a4637128c69c58a50b022a46085be fix: quarantine conflicting canonical backlog ids
+2026-09-14 bd32ffa09bb9675e94314ef21fa1cbf631f81a44 ci: validate temp backlog importer on pull requests
+2026-09-14 1b61a12d00092b9ffb9d12d87693d168e67eacca ops: add one-time 10k backlog import action
+2026-09-14 a74fdfdb186d63357d691a523dd35215ff9eb1f1 ops: add canonical backlog import ledgers
+2026-09-14 50fefc44881ca43825b433aee478b8df1b75f3cc ops: add bounded backlog importer
 2026-09-14 beb5bb0289db3dfc2955d3adb9d97585fd136f95 agents: separate StarIntel release from base schema authority
 2026-09-14 76c53adb064b4e93391a72c5cf4e8db8a4f0d38a test: exercise real schema release bump in isolation
 2026-09-14 9b2bbd8e1ed8bd62efc48caa05311384f899948e fix: respect expansion profile-only release metadata
@@ -60,8 +109,11 @@
 2026-09-12 3132fc01fd169a812c3f35ad388db422fd6df6f8 ingest: build threaded Nim core
 2026-09-12 3f601e5a411163a0e443a19ca2c4ee99c84f256d ingest: add threaded Nim bulk importer
 2026-09-12 a52b5752cf9f6e9dae97a754f396c7c3602d74f8 ingest: add canonical document exporter for Nim core
+2026-09-11 81466891b576175743da42a8bc026f7acb497b82 Merge remote-tracking branch 'origin/main' into osint/2335-potateking-crossplatform
 2026-09-11 7c4f427f79ff453bf5f1848ffe594b7b5a9131c5 Merge pull request #2622 from lost-rob0t/osint/2594-reddit-columbus-thread
 2026-09-11 c733bd90dc41998b50945f71d0bda2871b31edc2 Merge pull request #2621 from lost-rob0t/osint/2514-danbury-pd-enum
+2026-09-11 87b93e274386ee62f4596bd31f9984000200a4e7 osint(#2335): fix unresolved relation endpoints; add canonical YouTube media docs
+2026-09-11 2a10f4dee7f42e9decf74ca63ad737cdf0cdd4f0 osint(#2335): potateking/realpotateking cross-platform attribution pass
 2026-09-11 45de0b09eb26934b29571e31594b5b04ede986c4 osint(2594): scrape Reddit r/Columbus thread 1wcmaeh — full packet, accounts, relations, targets
 2026-09-11 645986a64910fcaf0cdc71d8f120bf19429dd793 osint(#2514): Danbury PD sworn-force enumeration + LPR/DACA eligibility policy pass
 2026-09-11 19483014e9b1172c9589f48439cda8583251c05a Revert "ops: operator resume of Auto-Dig control plane"
@@ -382,14 +434,6 @@
 2026-09-01 0b8e6f0dc824c76ecf5c5658042bdfa96ac47272 Add Forgejo StarIntel ingest workflow
 2026-09-01 cec7398b35742572f4fc873cf50979ffc04efab2 Add manual StarIntel ingest workflow dispatch
 2026-09-01 960537291a11a9c843e049e411b1907f59a72868 Add ingest backfill script and diff-only CI
-2026-08-31 76f5ae00cd6b7ec4a140ca2aded4c2e92cdb2185 chore: pin Auto-Dig actor to latest Prolog-RLM
-2026-08-31 79de77717cc8178e162f77ca49697774615418fc chore: pin Auto-Dig checks to latest Prolog-RLM
-2026-08-31 ff1e1d11be560d1691887736c4616b9806443710 Pin validated tool-result wire fix [auto-dig-live-test]
-2026-08-31 4daa25e8b67db1568fec32e430a7f13deb9dbdc2 Test bounded Auto-Dig raw-JSON repair [auto-dig-live-test]
-2026-08-31 e6b9ba5944045c46cacd3649ffcabd10060535a1 Harden Auto-Dig native-call harness
-2026-08-31 7fbdc2684d22c1c3e43cee38002bb41dd90b663e Include actor code in guarded live-test trigger [auto-dig-live-test]
-2026-08-31 4278516533cae083014fcc88cef60324d71306d1 Fix stale Auto-Dig MCP allow-list regression test
-2026-08-31 c5eec01de8971f5b5c91d7cf570a6846c289b55d Re-enable Auto-Dig actor with current RLM harness [auto-dig-live-test]
 ```
 
 ## Repository paths changed, last 14 days
@@ -405,6 +449,11 @@
 .github/workflows/operation-schema-sync.yml
 .github/workflows/publish-pages.yml
 .github/workflows/schema-release.yml
+.github/workflows/temp-backlog-import.yml
+.github/workflows/temp-fix-backlog-target-routing-v2.yml
+.github/workflows/temp-fix-backlog-target-routing.yml
+.github/workflows/temp-strip-tenant-id.yml
+.github/workflows/tmp-fix-xzspace-dates.yml
 .github/workflows/validate-db.yml
 .gitignore
 AGENTS.md
@@ -434,9 +483,24 @@ conformance/implementations.json
 dataset-testing-debug/e2e-diff-ingest-canary-2630.json
 db/analysis/starintel:analysis:danbury-pd-enum-2026-09-11.ndjson
 db/analysis/starintel:analysis:reddit-1wcmaeh-scrape-pass-1.ndjson
+db/entity/starintel:entity:lemon8-account-realpotateking.ndjson
+db/entity/starintel:entity:linktree-davemfgrimes.ndjson
+db/entity/starintel:entity:reddit-account-alternative-park5963.ndjson
+db/entity/starintel:entity:tiktok-account-davemuthafukkingr.ndjson
+db/entity/starintel:entity:twitch-account-potateking.ndjson
+db/entity/starintel:entity:x-account-realpotateking.ndjson
+db/entity/starintel:entity:youtube-account-potateking.ndjson
+db/entity/starintel:entity:youtube-jimmytalks-unresolved.ndjson
+db/event/starintel:event:dallas-march-on-rnc-midterm-convention-2026-09-10.ndjson
 db/event/starintel:event:danbury-council-vote-2026-09-02-police-eligibility-ordinance.ndjson
+db/event/starintel:event:epstein-files-reading-room-dallas-2026-09-08.ndjson
+db/event/starintel:event:we-the-people-rally-for-democracy-2026-09-10.ndjson
 db/investigation-target/starintel:investigation-target:starintel-account-reddit-deleted-1wcmaeh-a0ba0d1650916bb9851a.ndjson
 db/investigation-target/starintel:investigation-target:starintel-analysis-danbury-pd-enum-2026-09-11-4607f44c856f3f8cf98c.ndjson
+db/investigation-target/starintel:investigation-target:starintel-entity-lemon8-account-realpotateking-a83e707edbbf668f2b7d.ndjson
+db/investigation-target/starintel:investigation-target:starintel-entity-linktree-davemfgrimes-1f1cab1059ad0e2de1bb.ndjson
+db/investigation-target/starintel:investigation-target:starintel-entity-tiktok-account-davemuthafukkingr-372358a60cdaf295db48.ndjson
+db/investigation-target/starintel:investigation-target:starintel-event-dallas-march-on-rnc-midterm-convention-2026-09-1-e616d82e8a585f72fe2e.ndjson
 db/investigation-target/starintel:investigation-target:starintel-reddit-comment-t1-p8yvhji-c75cb90aadf918087bbb.ndjson
 db/investigation-target/starintel:investigation-target:starintel-reddit-comment-t1-p8ywh3h-2ed4d50cc03712fbe220.ndjson
 db/investigation-target/starintel:investigation-target:starintel-reddit-comment-t1-p8ywjbf-1ea74613da60699af9cd.ndjson
@@ -456,8 +520,19 @@ db/investigation-target/starintel:investigation-target:starintel-reddit-comment-
 db/investigation-target/starintel:investigation-target:starintel-reddit-comment-t1-p8yytwr-58feebd6505dc7fe44a5.ndjson
 db/investigation-target/starintel:investigation-target:starintel-reddit-comment-t1-p8yyxgu-9c6abd4d1d5f5b47900e.ndjson
 db/investigation-target/starintel:investigation-target:starintel-reddit-comment-t1-p8yze1a-4f92661d9508e573e43e.ndjson
+db/investigation-target/starintel:investigation-target:starintel-source-lemon8-profile-davemuthafukkingr-2026-09-11-8ab0b1efd0c355605352.ndjson
+db/investigation-target/starintel:investigation-target:starintel-source-linktree-davemfgrimes-2026-09-11-ff386ca1c658e4cc2d20.ndjson
+db/media/starintel:media:youtube-short-Fwjf-TMow-Q.ndjson
+db/media/starintel:media:youtube-video-3m-9mf7NVRg.ndjson
+db/org/starintel:org:dallas-against-the-trump-agenda-coalition.ndjson
 db/org/starintel:org:danbury-city-council.ndjson
 db/org/starintel:org:danbury-police-department.ndjson
+db/org/starintel:org:dfw-anti-war-committee.ndjson
+db/org/starintel:org:el-movimiento.ndjson
+db/org/starintel:org:freedom-road-socialist-organization.ndjson
+db/org/starintel:org:indivisible-dallas.ndjson
+db/org/starintel:org:naarpr-dfw.ndjson
+db/org/starintel:org:we-the-people-dallas.ndjson
 db/person/starintel:person:danbury-pd-antonelli.ndjson
 db/person/starintel:person:danbury-pd-carroccio.ndjson
 db/person/starintel:person:danbury-pd-civilian-henry.ndjson
@@ -484,6 +559,7 @@ db/person/starintel:person:danbury-pd-sturdevant.ndjson
 db/person/starintel:person:danbury-pd-wakeman.ndjson
 db/person/starintel:person:danbury-pd-williams.ndjson
 db/person/starintel:person:danbury-pd-wochek.ndjson
+db/person/starintel:person:sonja-olson.ndjson
 db/policy/starintel:policy:danbury-police-applicant-eligibility-ordinance-2026.ndjson
 db/relation/starintel:relation:danbury-pd-admin-services-headed-by-primus.ndjson
 db/relation/starintel:relation:danbury-pd-command-carroccio-reports-ridenhour.ndjson
@@ -516,6 +592,21 @@ db/relation/starintel:relation:danbury-pd-employment-sturdevant.ndjson
 db/relation/starintel:relation:danbury-pd-employment-wakeman.ndjson
 db/relation/starintel:relation:danbury-pd-employment-williams.ndjson
 db/relation/starintel:relation:danbury-pd-employment-wochek.ndjson
+db/relation/starintel:relation:data-coalition-organizes-march-2026.ndjson
+db/relation/starintel:relation:data-coalition-permit-interaction-dallas-police.ndjson
+db/relation/starintel:relation:dfw-anti-war-committee-partner-data-coalition.ndjson
+db/relation/starintel:relation:el-movimiento-partner-data-coalition.ndjson
+db/relation/starintel:relation:freedom-road-socialist-organization-partner-data-coalition.ndjson
+db/relation/starintel:relation:indivisible-dallas-coorganizes-data-coalition.ndjson
+db/relation/starintel:relation:lemon8-to-linktree-declared.ndjson
+db/relation/starintel:relation:lemon8-to-x-declared.ndjson
+db/relation/starintel:relation:lemon8-to-youtube-candidate-identity.ndjson
+db/relation/starintel:relation:lemon8-to-youtube-declared.ndjson
+db/relation/starintel:relation:linktree-to-tiktok-declared.ndjson
+db/relation/starintel:relation:linktree-to-twitch-declared.ndjson
+db/relation/starintel:relation:linktree-to-x-declared.ndjson
+db/relation/starintel:relation:naarpr-dfw-partner-data-coalition.ndjson
+db/relation/starintel:relation:reddit-authorship-1qjpk7p.ndjson
 db/relation/starintel:relation:reddit-authorship-t1_p8yvhji.ndjson
 db/relation/starintel:relation:reddit-authorship-t1_p8ywh3h.ndjson
 db/relation/starintel:relation:reddit-authorship-t1_p8ywjbf.ndjson
@@ -879,7 +970,16 @@ db/relation/starintel:relation:reddit-reply-t1_p958xio.ndjson
 db/relation/starintel:relation:reddit-reply-t1_p95ic3l.ndjson
 db/relation/starintel:relation:reddit-reply-t1_p95iiyi.ndjson
 db/relation/starintel:relation:reddit-reply-t1_p95okav.ndjson
+db/relation/starintel:relation:reddit-targets-jimmytalks.ndjson
+db/relation/starintel:relation:sonja-olson-member-indivisible-dallas.ndjson
+db/relation/starintel:relation:sonja-olson-spokesperson-march-2026.ndjson
+db/relation/starintel:relation:wethepeople-dallas-coorganizes-data-coalition.ndjson
+db/relation/starintel:relation:youtube-authorship-short-Fwjf.ndjson
+db/relation/starintel:relation:youtube-authorship-video-3m.ndjson
+db/research-pass/starintel:research-pass:2026-09-11-indivisible-dallas-network.ndjson
 db/research-pass/starintel:research-pass:danbury-pd-enum-2026-09-11.ndjson
+db/research-pass/starintel:research-pass:potateking-crossplatform-2026-09-11.ndjson
+db/social-media-post/starintel:entity:reddit-account-alternative-park5963:post:1qjpk7p.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8yvhji.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8ywh3h.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8ywjbf.ndjson
@@ -1100,8 +1200,24 @@ db/social-media-post/starintel:reddit-comment:t1_p95khqa.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p95mcw9.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p95okav.ndjson
 db/social-media-post/starintel:reddit-post:t3_1wcmaeh.ndjson
+db/source/starintel:source:actionnetwork-rally-march-rmc.ndjson
+db/source/starintel:source:christianpost-dallas-pulls-permit.ndjson
+db/source/starintel:source:dallasnews-22387625-nationwide-turnout.ndjson
+db/source/starintel:source:dallasnews-22395590-olson.ndjson
+db/source/starintel:source:dallasnews-22425580-anti-trump-march.ndjson
+db/source/starintel:source:dallasvoice-dallas-against-the-trump-agenda.ndjson
+db/source/starintel:source:forward-observer-briefing-v78Syf14qs4.ndjson
+db/source/starintel:source:foxnews-two-arrested-socialist-anti-trump-protest.ndjson
+db/source/starintel:source:indivisibledallas-org-events.ndjson
+db/source/starintel:source:lemon8-profile-davemuthafukkingr-2026-09-11.ndjson
+db/source/starintel:source:linktree-davemfgrimes-2026-09-11.ndjson
+db/source/starintel:source:narativ-0908-dallas.ndjson
 db/source/starintel:source:reddit-comments-1wcmaeh.ndjson
+db/source/starintel:source:reddit-post-1qjpk7p-2026-09-11.ndjson
 db/source/starintel:source:reddit-post-1wcmaeh.ndjson
+db/source/starintel:source:youtube-channel-potateking-2026-09-11.ndjson
+db/source/starintel:source:youtube-short-Fwjf-TMow-Q-2026-09-11.ndjson
+db/source/starintel:source:youtube-video-3m-9mf7NVRg-2026-09-11.ndjson
 db/user/starintel:account:reddit:_-_apex_-_.ndjson
 db/user/starintel:account:reddit:alive_surprise8262.ndjson
 db/user/starintel:account:reddit:alphagalgadot.ndjson
@@ -1444,6 +1560,12 @@ digs/anarchist-violence/2026-09-09-election-comms-adtech-pass-10/report.md
 digs/anarchist-violence/2026-09-09-election-comms-adtech-pass-10/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-election-comms-fundraising-data-pass-11/report.md
 digs/anarchist-violence/2026-09-09-election-comms-fundraising-data-pass-11/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-election-ecosystem-breadth-pass14/report.md
+digs/anarchist-violence/2026-09-09-election-ecosystem-breadth-pass14/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-election-ecosystem-breadth-pass15/report.md
+digs/anarchist-violence/2026-09-09-election-ecosystem-breadth-pass15/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-09-election-ecosystem-breadth-pass8/README.md
+digs/anarchist-violence/2026-09-09-election-ecosystem-breadth-pass8/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/entities.jsonl
 digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/expansion-state.md
 digs/anarchist-violence/2026-09-09-enaat-member-expansion-pass7/relations.jsonl
@@ -1541,8 +1663,12 @@ digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-orgs-targ
 digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-people-relations.jsonl
 digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-research-pass.jsonl
 digs/anarchist-violence/2026-09-10-area-code-shard-c-pass-32/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-10-election-admin-vendor-comms-pass-31/report.md
+digs/anarchist-violence/2026-09-10-election-admin-vendor-comms-pass-31/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/report.md
 digs/anarchist-violence/2026-09-10-election-comms-admin-coordination-pass-15/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-gp3-network-pass-25/report.md
+digs/anarchist-violence/2026-09-10-election-comms-gp3-network-pass-25/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/report.md
 digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-info-distribution-pass-21/starintel-entities.jsonl
@@ -1553,17 +1679,38 @@ digs/anarchist-violence/2026-09-10-election-comms-legal-information-pass-16/repo
 digs/anarchist-violence/2026-09-10-election-comms-legal-information-pass-16/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-mobilization-infrastructure-pass-22/report.md
 digs/anarchist-violence/2026-09-10-election-comms-mobilization-infrastructure-pass-22/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-ngp-van-pass-36/report.md
+digs/anarchist-violence/2026-09-10-election-comms-ngp-van-pass-36/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-poll-worker-recruitment-pass-28/report.md
+digs/anarchist-violence/2026-09-10-election-comms-poll-worker-recruitment-pass-28/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-poll-worker-recruitment-pass-28/starintel-relations.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-poll-worker-recruitment-pass-28/starintel-target.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-voter-data-infrastructure-pass-24/report.md
+digs/anarchist-violence/2026-09-10-election-comms-voter-data-infrastructure-pass-24/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/report.md
 digs/anarchist-violence/2026-09-10-election-comms-voter-poll-media-pass-17/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/report.md
 digs/anarchist-violence/2026-09-10-election-comms-voter-roll-data-pass-20/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-voting-system-certification-pass-27/public-people.jsonl
+digs/anarchist-violence/2026-09-10-election-comms-voting-system-certification-pass-27/report.md
+digs/anarchist-violence/2026-09-10-election-comms-voting-system-certification-pass-27/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-election-protection-coalition-pass-29/report.md
 digs/anarchist-violence/2026-09-10-election-protection-coalition-pass-29/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-results-media-distribution-pass-32/report.md
+digs/anarchist-violence/2026-09-10-election-results-media-distribution-pass-32/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-election-texting-compliance-pass-19/report.md
+digs/anarchist-violence/2026-09-10-election-texting-compliance-pass-19/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-georgia-election-protection-pass-30/report.md
+digs/anarchist-violence/2026-09-10-georgia-election-protection-pass-30/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/report.md
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-entities.jsonl
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-relations-a.jsonl
 digs/anarchist-violence/2026-09-10-nationbuilder-organizing-platform-pass-33/starintel-relations-b.jsonl
+digs/anarchist-violence/2026-09-10-political-messaging-verification-pass-34/report.md
+digs/anarchist-violence/2026-09-10-political-messaging-verification-pass-34/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-10-votepro-gotv-pass-37/README.md
+digs/anarchist-violence/2026-09-10-votepro-gotv-pass-37/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-area-relations.jsonl
 digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-orgs-targets.jsonl
 digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-33/starintel-people-relations.jsonl
@@ -1584,8 +1731,12 @@ digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-orgs-targ
 digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-people-relations.jsonl
 digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-research-pass.jsonl
 digs/anarchist-violence/2026-09-11-area-code-shard-c-pass-36/starintel-sources.jsonl
+digs/anarchist-violence/2026-09-11-election-comms-hgl-ai-pass-39/report.md
+digs/anarchist-violence/2026-09-11-election-comms-hgl-ai-pass-39/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-11-election-comms-pdi-outreach-pass-41/report.md
 digs/anarchist-violence/2026-09-11-election-comms-pdi-outreach-pass-41/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-11-election-comms-scale-to-win-pass-40/report.md
+digs/anarchist-violence/2026-09-11-election-comms-scale-to-win-pass-40/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json
@@ -1603,11 +1754,15 @@ digs/columbus/2026-09-11-reddit-1wcmaeh/delta-docs.jsonl
 digs/columbus/2026-09-11-reddit-1wcmaeh/recursive-targets.jsonl
 digs/columbus/2026-09-11-reddit-1wcmaeh/research-pass.jsonl
 digs/columbus/2026-09-11-reddit-1wcmaeh/starintel-documents.jsonl
+digs/dallas/2026-09-11-indivisible-dallas-network/starintel-documents.jsonl
 digs/danbury/2026-09-11-danbury-pd-enum/starintel-documents.jsonl
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/manifest.json
 digs/dnc/2026-08-01-key-people-accountability-counterevidence/starintel-documents.jsonl
 digs/netflix-uk/2026-09-11-netflixuk-social-attribution/README.md
+digs/potateking/2026-09-11-crossplatform-attribution/README.md
+digs/potateking/2026-09-11-crossplatform-attribution/starintel-documents.jsonl
 digs/testing-debug/2026-09-12-e2e-diff-ingest-2630/starintel-documents.jsonl
+digs/xzspace-starintel/2026-09-08-attribution/starintel-documents.jsonl
 docs/auto-dig-pause-control.md
 docs/operation-object.md
 docs/schema-release-versioning.md
@@ -1621,6 +1776,7 @@ scripts/apply_prolog_rlm_hotfix.py
 scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
 scripts/export_starintel_documents.py
+scripts/import-starintel-backlog.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
 scripts/schema-release.py
@@ -1634,6 +1790,7 @@ tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
 tests/test_counterevidence_packet_identity.py
 tests/test_export_starintel_documents.py
+tests/test_import_starintel_backlog.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_operation_document.py
@@ -1656,12 +1813,18 @@ tmp/pack/pack.jsonl
 .github/workflows/operation-schema-sync.yml
 .github/workflows/publish-pages.yml
 .github/workflows/schema-release.yml
+.github/workflows/temp-backlog-import.yml
+.github/workflows/temp-fix-backlog-target-routing-v2.yml
+.github/workflows/temp-fix-backlog-target-routing.yml
+.github/workflows/temp-strip-tenant-id.yml
+.github/workflows/tmp-fix-xzspace-dates.yml
 .github/workflows/validate-db.yml
 scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
 scripts/export_starintel_documents.py
+scripts/import-starintel-backlog.py
 scripts/import-starintel-documents.py
 scripts/influencewatch/network.py
 scripts/schema-release.py
@@ -1671,6 +1834,7 @@ tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
 tests/test_counterevidence_packet_identity.py
 tests/test_export_starintel_documents.py
+tests/test_import_starintel_backlog.py
 tests/test_import_starintel_documents.py
 tests/test_influencewatch_import.py
 tests/test_operation_document.py

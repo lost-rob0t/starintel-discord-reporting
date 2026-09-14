@@ -1,6 +1,6 @@
 # lost-rob0t/hackmode
 
-- generated: `2026-09-14T19:24:54Z`
+- generated: `2026-09-14T23:10:23Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`420b788df3bb6432fcb16de69be3fbc044f64640`](https://github.com/lost-rob0t/hackmode/commit/420b788df3bb6432fcb16de69be3fbc044f64640)
@@ -33,17 +33,12 @@
 2026-08-31 3ebcedf63b15ceafb7c620a083135bc00d6a6d0f Hackpert: harden objective identity snapshots (#164)
 2026-08-31 8d23204bf95fc7053a4c4ac7ac1b27a97330b50a HTTP: add typed requester contract (#162)
 2026-08-31 5a828d9890a6563361784bd292a60446a462aee1 Visual evidence: project accepted records through durable outbox (#161)
-2026-08-31 d34d58dac33f3bcd221198ddd5675707a84d59ab HTTP: add typed transport and browser profile policy (#158)
-2026-08-31 e9eb6286413d0875c49dcb5616d9e6277c797ade Database: enforce visual evidence operation/run write scope (#156)
-2026-08-31 26675e5e59eda6ac9014abaaa5abe93ad55d60ba IPX: wire versioned mitmproxy spool addon (#154)
-2026-08-31 40389abcc10ad561be76219a4e665bc873fcc2de Capture: supervise operation-scoped mitmdump lifecycle (#147)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .github/workflows/core.yml
-AGENTS.md
 agent-zero/README.md
 agent-zero/install.sh
 agent-zero/pr-lanes.txt
@@ -54,9 +49,7 @@ agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.main.communica
 agent-zero/usr/agents/hackmode-rage-hackpert/prompts/agent.system.main.specifics.md
 agent-zero/usr/agents/hackmode-rage-tooling/prompts/agent.system.communication.md
 agent-zero/usr/agents/hackmode-rage-tooling/prompts/agent.system.main.specifics.md
-docs/architecture/ipx.org
 source/hackmode-core/assets.lisp
-source/hackmode-core/capture-provider.lisp
 source/hackmode-core/capture-replay.lisp
 source/hackmode-core/expert/extension.lisp
 source/hackmode-core/expert/inspection-accessors.lisp
@@ -66,23 +59,17 @@ source/hackmode-core/expert/selection.lisp
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
 source/hackmode-core/http-requester.lisp
-source/hackmode-core/http-transport-profile.lisp
 source/hackmode-core/investigation-views.lisp
 source/hackmode-core/package.lisp
-source/hackmode-core/tests/capture-provider.lisp
 source/hackmode-core/tests/expert-extension.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/http-requester.lisp
-source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
 source/hackmode-core/visual-evidence-outbox.lisp
 source/hackmode-database/execution-graph.lisp
-source/hackmode-database/tests/visual-evidence.lisp
-source/hackmode-database/visual-evidence.lisp
-tools/ipx/mitmproxy-addon.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -91,14 +78,11 @@ tools/ipx/mitmproxy-addon.py
 .github/workflows/core.yml
 source/hackmode-core/hackmode-tests.asd
 source/hackmode-core/hackmode.asd
-source/hackmode-core/tests/capture-provider.lisp
 source/hackmode-core/tests/expert-extension.lisp
 source/hackmode-core/tests/expert-objective.lisp
 source/hackmode-core/tests/expert-selection-copy.lisp
 source/hackmode-core/tests/http-requester.lisp
-source/hackmode-core/tests/http-transport-profile.lisp
 source/hackmode-core/tests/investigation-views.lisp
 source/hackmode-core/tests/ipx-replay.lisp
 source/hackmode-core/tests/visual-evidence-outbox.lisp
-source/hackmode-database/tests/visual-evidence.lisp
 ```

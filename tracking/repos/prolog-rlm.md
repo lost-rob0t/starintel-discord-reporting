@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-14T19:24:52Z`
+- generated: `2026-09-14T23:10:22Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -98,13 +98,6 @@
 2026-08-31 0c51cb6c621e1baa8357ac61049302eeb9769ff6 Keep tool-result fix surgical
 2026-08-31 b7479b920eb155b5803b46d71ee4416108e049dd Test provider-safe dotted tool result messages
 2026-08-31 8732c3b6a47b9dc2791d07897cf4c0153aa49d69 Fix OpenRouter tool-result wire correlation
-2026-08-31 a89711d504e6cc6c3fac789b7f0b6b0453aea23b docs: record exact-head gate evidence for #325
-2026-08-31 7828fd8ef8254112fd0f5417ffd3324f26dd07a9 docs: state wire-text retention boundary for classify (#325)
-2026-08-31 c39ea277d9873b875531ecdf19e7a7d800c6fa1b fix: keep partial normalization entries wire-safe (#325)
-2026-08-31 ae1a27165b6071785373d8bd44e23cec42446b12 fix: isolate malformed native argument parsing per call (#325)
-2026-08-31 de8d47c1e9395760fcda9c80753bb88d879d3f2c test: reproduce raw native argument batch abort (#325)
-2026-08-31 774c9cc20f01b0203d3cf122c16fc1c1f647f138 fix: preserve resolved bindings through recoverable preflight faults
-2026-08-31 c13c37066cda798e2dacbb59c8ce41eb610457fe test: add RED regressions for original-request effect isolation (#316)
 ```
 
 ## Repository paths changed, last 14 days
@@ -168,7 +161,6 @@ prolog/rlm_project_syntax.pl
 prolog/rlm_text.pl
 prolog/rlm_tree_sitter.pl
 rage/288-spec-plan-graph-executor.org
-rage/325-native-call-isolation.org
 rage/336-text-streaming-design.org
 rage/96-versioned-syntax-facts.org
 rage/97-query-capture-apis.org
@@ -188,7 +180,6 @@ test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_direct_deadline_test.pl
-test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_plan_graph_test.pl
@@ -228,7 +219,6 @@ test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_direct_deadline_test.pl
-test/rlm_direct_partial_batch_test.pl
 test/rlm_direct_test.pl
 test/rlm_native_tool_test.pl
 test/rlm_plan_graph_test.pl

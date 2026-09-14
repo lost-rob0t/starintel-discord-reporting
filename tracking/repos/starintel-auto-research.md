@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-14T19:24:42Z`
+- generated: `2026-09-14T23:10:14Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`d67d79fdef56f729757a0d183ea78192749faf59`](https://github.com/lost-rob0t/starintel-auto-research/commit/d67d79fdef56f729757a0d183ea78192749faf59)
-- head date: `2026-09-14T13:55:40-04:00`
-- head subject: skills: resolve StarIntel spec from canonical lock
+- head: [`b8c08859cee98c7ae568db6f41d3c9f71d2a49dd`](https://github.com/lost-rob0t/starintel-auto-research/commit/b8c08859cee98c7ae568db6f41d3c9f71d2a49dd)
+- head date: `2026-09-14T16:08:48-04:00`
+- head subject: research: reconcile target lease execution authority with current server
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 b8c08859cee98c7ae568db6f41d3c9f71d2a49dd research: reconcile target lease execution authority with current server
 2026-09-14 d67d79fdef56f729757a0d183ea78192749faf59 skills: resolve StarIntel spec from canonical lock
 2026-09-11 d49f1e6e56cdbddd0843ad2c1c962c3ff758075f Research starintel-java as ABCL-backed JVM binding
 2026-09-11 81a4593fbee531cf7ccae1099809620367191d77 Research StarIntel Android ABCL + StarLang/Sento runtime
@@ -69,6 +70,7 @@ roam/research/star-server/QUASAR-RESEARCH-006-lisp-actor-discovery-and-actor-stu
 roam/research/star-server/STAR-RESEARCH-002-C23C24-confoederatio-world-model.org
 roam/research/star-server/STAR-RESEARCH-002-awesome-osint-research-backlog.org
 roam/research/star-server/STAR-RESEARCH-009-thunder-audio-weather-geolocation.org
+roam/research/star-server/STAR-RESEARCH-032-authenticated-target-lease-http-execution.org
 roam/research/star-server/STAR-RESEARCH-050-manifest-runtime-plan-composition.org
 roam/research/star-server/STAR-RESEARCH-051-document-pattern-ingress-url-extraction.org
 roam/research/star-server/STAR-RESEARCH-052-observability-correlation-audit-contract.org

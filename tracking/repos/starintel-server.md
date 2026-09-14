@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-14T19:24:38Z`
+- generated: `2026-09-14T23:10:08Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`d94922d21c65f0c0a2c35f0eacaf9beb727e656a`](https://github.com/lost-rob0t/starintel-server/commit/d94922d21c65f0c0a2c35f0eacaf9beb727e656a)
-- head date: `2026-09-14T15:20:57-04:00`
-- head subject: Merge pull request #181 from lost-rob0t/feat/ingest-tenant-adapter
+- head: [`60191023ac73bcc719fd550d6788322a95c92bc0`](https://github.com/lost-rob0t/starintel-server/commit/60191023ac73bcc719fd550d6788322a95c92bc0)
+- head date: `2026-09-14T16:51:34-04:00`
+- head subject: Merge pull request #184 from lost-rob0t/fix/docs-starintel-0.9.1-terminology
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 60191023ac73bcc719fd550d6788322a95c92bc0 Merge pull request #184 from lost-rob0t/fix/docs-starintel-0.9.1-terminology
+2026-09-14 aee5e5b61931fe13994238961e97b34b1feef735 docs(spec): distinguish 0.9.1 release from v0.9 wire schema
 2026-09-14 d94922d21c65f0c0a2c35f0eacaf9beb727e656a Merge pull request #181 from lost-rob0t/feat/ingest-tenant-adapter
 2026-09-14 136d182e28c9ebea74d2b78ab6d606e355e32f14 ci: remove temporary PR hardening workflow
 2026-09-14 6af2600f869db9856030e137d6995a4ff49b4762 fix: authorize persisted tenant before egress redaction
