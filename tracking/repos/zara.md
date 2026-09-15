@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-15T04:58:43Z`
+- generated: `2026-09-15T11:49:25Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`e317c51e437cae3aaebd9432453439172ee1161b`](https://github.com/lost-rob0t/zara/commit/e317c51e437cae3aaebd9432453439172ee1161b)
-- head date: `2026-09-14T23:55:50-04:00`
-- head subject: Speak Qwen3-TTS through the OpenAI-compatible streaming API (#878)
+- head: [`88b8db66d04e2f97e291a84c6f5790a6f7cb4bce`](https://github.com/lost-rob0t/zara/commit/88b8db66d04e2f97e291a84c6f5790a6f7cb4bce)
+- head date: `2026-09-15T01:21:17-04:00`
+- head subject: fix(wake): match client READY enum and await reconnect future (#879)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-15 88b8db66d04e2f97e291a84c6f5790a6f7cb4bce fix(wake): match client READY enum and await reconnect future (#879)
 2026-09-14 e317c51e437cae3aaebd9432453439172ee1161b Speak Qwen3-TTS through the OpenAI-compatible streaming API (#878)
 2026-09-14 6a5f98f414b437c91dc6a8fffd25a1a2bc3a262d fix(desktop): project daemon startup completion (#877)
 2026-09-12 a6605f5e1dd36273834cd3c58aca89a55b07bba8 Merge pull request #874 from lost-rob0t/feat/adb-pairing-scripts
@@ -1087,19 +1088,6 @@
 2026-09-01 30d6b52609de219cb58b144cb85c2b7aad1a10d2 RAGE #260: recover hooks policy onto current master
 2026-09-01 2833e8b2d4bd50a14b0674c34f688749b3b01f54 RAGE #172: package Android portable semantic assets (gate recovery) (#275)
 2026-09-01 a77e4e866d38019f24af7ec3518f419e86f91e35 fix: rebase built-in todo surface toggle on current master (#272)
-2026-09-01 928aee7105842cc50b9eff73c7b56980c414ef3b RAGE #172: portable Android Prolog semantic contract (#269)
-2026-09-01 ed683b454bc15d14ca4fdec329640a1bf1d431d1 Merge pull request #259 from lost-rob0t/feature/agent-mode-core
-2026-09-01 f17175e65f91bb00c100613d8a987da8bf3e9d82 rage: record PR 259 current-master recovery
-2026-09-01 204ffe5f149df984af8ef04433133f11ac762bdd recover: rebase agent hooks and barge-in on current master
-2026-09-01 4e539b5a74d95ccecf67976c132ccf68ed10485a Merge pull request #267 from lost-rob0t/rage/244-wake-daemon-voice
-2026-09-01 8687662306224516feaaf13c9f7bbc2e0208f5a1 Merge pull request #265 from lost-rob0t/docs/244-merge-evidence
-2026-09-01 d1f2cf666ec5e7e8c7314e2f6ed1e58d04eeed89 fix(wake): restore ack player wiring broken by the daemon migration
-2026-09-01 ce3271bde9df5215754c91f97ea1d8986af00022 Merge pull request #263 from lost-rob0t/rage/244-wake-daemon-voice
-2026-09-01 e0b29ec0b482b90efbc354a67979136be725e8e4 docs(rage): record issue 244 merge evidence
-2026-09-01 ddfad5f8453691ccaba05e4d30d8a7d9070c06f3 chore(rage): fix wake research whitespace gate
-2026-09-01 867c7ce219489b525889d6aa827a962e27d17583 test: extend agent-mode backend double for the latency_trace contract
-2026-09-01 8ef404126afa149b9b7d9b54eb494f6fb574c482 Merge remote-tracking branch 'origin/master' into rage/244-wake-daemon-voice
-2026-09-01 45bc17c60c0b74b51872c72a172600d46b2b1991 docs(rage): record issue 244 implementation evidence and gate results
 ```
 
 ## Repository paths changed, last 14 days
@@ -1383,10 +1371,7 @@ rage/203-android-voice-session-invalidation-r4.org
 rage/216-transcript-normalization-contract-r2.org
 rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
-rage/244-wake-daemon-voice-research.org
-rage/244-wake-daemon-voice.org
 rage/246-todo-toggle-recovery.org
-rage/259-agent-hooks-recovery.org
 rage/260-agent-loop-backend-registry.org
 rage/260-agent-loop-integration-design.org
 rage/260-agent-loop-integration-research.org
@@ -1467,8 +1452,6 @@ t/test_adaptive_copilot.py
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
-t/test_agent_mode_core_plugin.py
-t/test_agent_mode_voice_barge_in.py
 t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_cli_client_migration.py
@@ -1542,6 +1525,7 @@ t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_voice_runtime_ingress.py
 t/test_wake_daemon_client.py
+t/test_wake_fail_closed.py
 t/test_wake_import.py
 t/test_wake_principal_isolation.py
 t/test_zara1_device_actions.py
@@ -1552,7 +1536,6 @@ t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
 t/zara_hooks_registry.pl
-wiki/agent-mode.org
 wiki/android.org
 wiki/api-service.org
 wiki/customization.org
@@ -1563,7 +1546,6 @@ zara/__main__.py
 zara/agent/__init__.py
 zara/agent/hooks.py
 zara/agent/loops.py
-zara/agent/prompting.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/agent/user_hooks.py
@@ -1583,8 +1565,6 @@ zara/device_action_replay.py
 zara/dictate.py
 zara/json_limits.py
 zara/plugins/api.py
-zara/plugins/builtin/agent_mode.py
-zara/plugins/builtin/agent_mode_hooks.py
 zara/plugins/manager.py
 zara/protocol.py
 zara/python_skills.py
@@ -1601,7 +1581,6 @@ zara/security_state.py
 zara/security_transport.py
 zara/server.py
 zara/server_core.py
-zara/speech_activity.py
 zara/tasks/__init__.py
 zara/tasks/runner.py
 zara/tasks/store.py
@@ -1756,8 +1735,6 @@ t/test_adaptive_copilot.py
 t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
-t/test_agent_mode_core_plugin.py
-t/test_agent_mode_voice_barge_in.py
 t/test_android_gate_diagnostics.py
 t/test_api_service.py
 t/test_cli_client_migration.py
@@ -1831,6 +1808,7 @@ t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_voice_runtime_ingress.py
 t/test_wake_daemon_client.py
+t/test_wake_fail_closed.py
 t/test_wake_import.py
 t/test_wake_principal_isolation.py
 t/test_zara1_device_actions.py

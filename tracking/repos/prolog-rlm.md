@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-15T04:58:40Z`
+- generated: `2026-09-15T11:49:21Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -84,16 +84,6 @@
 2026-09-01 2fa4c2428655a24ddec4820226c0bc77151958af test: assert the synthesis-reservation invariant and self-report outcomes
 2026-09-01 ca0d9774b607299390ef983f1b18f314f169bf13 test: make the synthesis-reservation transition race-free and budget-coherent
 2026-09-01 ef192d98e0ff690e5262d63913bc62a5654fbe51 fix: type direct-mode deadline failures and reserve synthesis wall clock
-2026-09-01 8e7b00934824f329acb373ea086be6294f67f9d3 Add Prolog-RLM feature-freeze worker installer
-2026-09-01 e1a4428a8bf4ced57cd7794090757c7ac56f8452 Add AgentProlog integration worker communication policy
-2026-09-01 bf87efa5055034116baaffe83e1f168418baf7cb Add AgentProlog integration RAGE profile
-2026-09-01 308a865f5b71a04ec97bfed28d777c76471de331 Add Prolog-RLM hardening worker communication policy
-2026-09-01 da1fb6b48165b33c42f8ad23c2015423610c52f4 Add Prolog-RLM hardening RAGE profile
-2026-09-01 b16f6cf7e0ce859cd422d1cc3de7cddbbbcece24 Add Prolog-RLM RAGE feature-freeze workers
-2026-09-01 3a4c2d10f4bd26c5c66346fe503d4a4b0eb9c5bb fix: add native-call batch cardinality admission (#323)
-2026-09-01 7a8a5c59d4b4483de53c4450d5ddab00e0203222 test: reproduce native batch cardinality admission gaps (#323)
-2026-09-01 eed1639d0b20a7efb26e02c94b3e896e790c5bae fix: break rlm_completion <-> rlm_direct import cycle (#328)
-2026-09-01 889eb66e28eb5c09773dbd04f94dcac769951197 test: reproduce hostile host text_string corruption (#328)
 ```
 
 ## Repository paths changed, last 14 days
@@ -113,12 +103,6 @@ AGENTS.md
 Makefile
 README.md
 TODO.md
-agent-zero/README.md
-agent-zero/install.sh
-agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.communication.md
-agent-zero/usr/agents/agentprolog-rage-integration/prompts/agent.system.main.specifics.md
-agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.communication.md
-agent-zero/usr/agents/prolog-rlm-rage-hardening/prompts/agent.system.main.specifics.md
 c/rlm_tree_sitter.c
 c/rlm_tree_sitter_internal.h
 c/rlm_tree_sitter_lifetime.c
@@ -127,7 +111,6 @@ c/rlm_tree_sitter_parser.c
 c/rlm_tree_sitter_query.c
 c/rlm_tree_sitter_support.c
 docs/completion-runtime.md
-docs/direct-runtime.md
 docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-semantic.md
@@ -153,7 +136,6 @@ prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
 prolog/rlm_project_syntax.pl
-prolog/rlm_text.pl
 prolog/rlm_tree_sitter.pl
 rage/288-spec-plan-graph-executor.org
 rage/336-text-streaming-design.org
@@ -172,10 +154,8 @@ test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
-test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_direct_deadline_test.pl
-test/rlm_direct_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
 test/rlm_project_grammar_pack_test.pl
@@ -192,7 +172,6 @@ test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
 ```
 
@@ -210,10 +189,8 @@ test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
-test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_direct_deadline_test.pl
-test/rlm_direct_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
 test/rlm_project_grammar_pack_test.pl
@@ -230,6 +207,5 @@ test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/issue328_hostile_host.pl
 test/support/plan_graph_test_tools.pl
 ```
