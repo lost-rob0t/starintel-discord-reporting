@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-15T11:49:21Z`
+- generated: `2026-09-15T17:03:29Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -78,12 +78,6 @@
 2026-09-01 fc4def9991a85658e5a1a14e9a36304c819b66a4 test: keep graph fixture bindings outside assertions
 2026-09-01 b19da3b240bdd15c4d2884aa2ab4cbf4e94857da feat: adapt Agent Zero packages into skill graph
 2026-09-01 e569015b969f2028de89c30767ac1d71c2d3ceef test: specify Agent Zero skill graph adapter
-2026-09-01 39b278589dae8518e583778cd6671a6cb1e026c7 test: import library(http/json) for atom_json_dict on SWI 9
-2026-09-01 7a701578a50735d1383cf1709e1d32a3a6af0ed8 test: isolate the tool-cutoff test from the wall-clock reservation
-2026-09-01 d5e2cecfeb1f887f46b8513a4be92b3f888b4f7c fix: bound evidence by response count with deterministic closing turns
-2026-09-01 2fa4c2428655a24ddec4820226c0bc77151958af test: assert the synthesis-reservation invariant and self-report outcomes
-2026-09-01 ca0d9774b607299390ef983f1b18f314f169bf13 test: make the synthesis-reservation transition race-free and budget-coherent
-2026-09-01 ef192d98e0ff690e5262d63913bc62a5654fbe51 fix: type direct-mode deadline failures and reserve synthesis wall clock
 ```
 
 ## Repository paths changed, last 14 days
@@ -125,8 +119,6 @@ flake.nix
 prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/rlm_completion.pl
-prolog/rlm_direct.pl
-prolog/rlm_openai_compatible.pl
 prolog/rlm_plan_graph.pl
 prolog/rlm_project_grammar_pack.pl
 prolog/rlm_project_query.pl
@@ -155,7 +147,6 @@ test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_stream_test.pl
-test/rlm_direct_deadline_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
 test/rlm_project_grammar_pack_test.pl
@@ -190,7 +181,6 @@ test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_stream_test.pl
-test/rlm_direct_deadline_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
 test/rlm_project_grammar_pack_test.pl

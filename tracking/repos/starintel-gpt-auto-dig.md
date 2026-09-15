@@ -1,15 +1,41 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-15T11:49:07Z`
+- generated: `2026-09-15T17:03:14Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`171a84fabf1f98cef8bb2af5d8c4b2b4d4dd7666`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/171a84fabf1f98cef8bb2af5d8c4b2b4d4dd7666)
-- head date: `2026-09-15T07:36:21-04:00`
-- head subject: Auto-Dig #2514: preserve Danbury late-stage ordinance procedure (#2663)
+- head: [`68b42100d968fee6256ebda3c4e726db3c90d083`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/68b42100d968fee6256ebda3c4e726db3c90d083)
+- head date: `2026-09-15T12:50:08-04:00`
+- head subject: Auto-Dig #1907: extend Onondaga incoming-sharing portal history (#2689)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-15 68b42100d968fee6256ebda3c4e726db3c90d083 Auto-Dig #1907: extend Onondaga incoming-sharing portal history (#2689)
+2026-09-15 970e5797d6b3ae8da936ac1e67911164234165f0 Auto-Dig #2576: add Dallas booking-charge follow-up (#2688)
+2026-09-15 a5821cb2cbf0da9a2fba8e84b96373e30fbe6d9c Auto-Dig #2341: advance shard-B area-code coverage through 730 (#2687)
+2026-09-15 923d3e3af5c8884fa28a3e27ca678f1079d327b4 Auto-Dig #2100: canonicalize Fusus 2026.31 ALPR controls (#2686)
+2026-09-15 651c78e089142ee8b9189b1c1c8733e066921fb3 Auto-Dig #1904: canonicalize Tompkins renewal-hearing baseline (#2685)
+2026-09-15 7b744e86335a1fef1a710dda22c02722ba49a3fb Auto-Dig #2111: add Texas habitual-DWI comparator baseline (#2683)
+2026-09-15 32708a8f43dd2999a665a94fb9caca851b6a846b Auto-Dig #1894: add five incoming-sharing portal observations (#2684)
+2026-09-15 b79ad36734eb13895e2b6f89b43edc301ae554f2 Auto-Dig #2341: advance shard-B area-code coverage through 718 (#2682)
+2026-09-15 48f4a5035ec38989d1b4bbf41a6649e51de2f2ab Auto-Dig #1907: canonicalize Camillus Flock operator baseline (#2681)
+2026-09-15 28ad91b014d0ec79a35a776a5b889bd25c52139a Auto-Dig #2514: canonicalize September 1 audiovisual record (#2680)
+2026-09-15 e593e3cf2a46a74d51aa7261acf5247dc5c1c92d Auto-Dig #2111: canonicalize Zavala parole-eligibility boundary (#2679)
+2026-09-15 64aaf7f50225e16c13aeb2ffada0c516c4ffd84d Auto-Dig #2112: canonicalize Georgia lobbying-registry baseline (#2678)
+2026-09-15 f4188825b0ccca0e50fd7723d99eb8e09569e6aa Auto-Dig #2341: advance shard-B area-code coverage through 706 (#2676)
+2026-09-15 3a96bba4b6ed435989105206679c6071766a97ac Auto-Dig #1902: reconcile Stewart's rejection and control boundary (#2677)
+2026-09-15 5b6695960f52800e8831d30a1f06b73a39303290 Auto-Dig #1907: add Onondaga incoming-sharing portal baseline (#2675)
+2026-09-15 5f34e033514905bafeb2256dbb514db322fb826b Auto-Dig #2112: canonicalize Verona and Eagle offboarding lifecycle (#2674)
+2026-09-15 a47a6adfd870c0a071acec6a76c522c8a33a3fbe Auto-Dig #2514: reconcile POSTC citizenship-waiver authority (#2671)
+2026-09-15 13accf995e7cf67aec7ca6e92182f75ffaa767cd Auto-Dig #2111: canonicalize Zavala sentencing baseline (#2673)
+2026-09-15 716b2d9c4bad87cdc888aab53059d4292e4af06a Auto-Dig #1902: narrow Hudson Stewart's proposal candidates (#2672)
+2026-09-15 024e6bdba1e2b33ef9106f1545b2bd30f62ffd5f Auto-Dig #2100: canonicalize Axon ALPR platform controls (#2670)
+2026-09-15 025730bbfc356f230457e030f08195e6931953d9 Auto-Dig #1899: bound Ithaca pre-termination sharing scope (#2669)
+2026-09-15 93cc6ffe0956e05e42c47cd3103c174244d52361 Auto-Dig #2646: add Maryland Beth Din civil-review evidence (#2667)
+2026-09-15 695fc85dce8a80e1e69f996b52576f8dc37fa417 Auto-Dig #2575: reconcile Dallas permit bypass and DPD coordination (#2668)
+2026-09-15 942c952a56d94d7d073cde4d740b91b57d21e586 Auto-Dig #1901: add Parma incoming-sharing snapshot (#2666)
+2026-09-15 36124737941065a9fba7027073b009321bbf3310 Auto-Dig #1904: bound Flock termination notice deadline (#2665)
+2026-09-15 ba9cf60a33d1c783c83dcfd9ab950e7d5d31f7de Auto-Dig #1900: preserve Cornell security-control implementation prerequisites (#2664)
 2026-09-15 171a84fabf1f98cef8bb2af5d8c4b2b4d4dd7666 Auto-Dig #2514: preserve Danbury late-stage ordinance procedure (#2663)
 2026-09-15 db1ff1732351c153ea29c33ccf5b168342c9b682 Auto-Dig #2576: reconcile Dallas protest permit and outcome (#2662)
 2026-09-15 f5f0b13895ccaf252e91022c54ad03df5a734dcd Auto-Dig #1903: preserve Syracuse Axon procurement baseline (#2661)
@@ -450,19 +476,6 @@
 2026-09-07 c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22 Merge pull request 'feat(auto-dig): read-only StarIntel corpus MCP tools + standalone service runner landing' (#2149) from feat/prolog-actor-starintel-tools into main
 2026-09-06 5ba3db06b4ee9e0942b0b11ea0807998ca2752d4 feat(auto-dig): read-only StarIntel corpus tools over the MCP policy
 2026-09-06 244ba82edff9d38943de6f99669617b626660653 feat(auto-dig): standalone service runner with gateway provider support
-2026-09-01 8f31d347f64dd9de25cf570c7990d2e6f93cb962 [auto-dig-live-test] accept heading-anchored reports (#2330)
-2026-09-01 bba0b493a5956ca28acbc58c055f465cbc2b1cc4 fix(auto-dig): consume merged synthesis runtime (#2329)
-2026-09-01 e7cbefbc16787fb6463c76e48f66ff2fd9402358 [auto-dig-live-test] inject synthesis transition at tool cutoff (#2328)
-2026-09-01 94d593227375d87a1aeca28fc45baa7b91514189 [auto-dig-live-test] make synthesis transition explicit (#2327)
-2026-09-01 7e1b027005c4b342ce8d5cc8a8e2eb3f9f297767 [auto-dig-live-test] force GLM synthesis earlier (#2326)
-2026-09-01 eb639f448bef12711a44744c16564daeb37812fb [auto-dig-live-test] reserve provider latency before synthesis (#2325)
-2026-09-01 325c9968125239647629366927ff77b75352b86b [auto-dig-live-test] reserve wall-clock headroom for synthesis (#2324)
-2026-09-01 3f3cbbdfb40e90c4a64a2b6edd2001a69794e8a1 [auto-dig-live-test] recover read-only context alias errors (#2323)
-2026-09-01 cf3035d8c75bd7440b2ec577e4a67700dded7d50 [auto-dig-live-test] render full actor report for humans
-2026-09-01 7fd164cb16f62551832c6409670baa256e35f393 test(auto-dig): require terminal report emission
-2026-09-01 329ec1063e7347f94a7408c90e3bfe094296a573 fix(auto-dig): print validated actor report to terminal
-2026-09-01 eb70d42050f9f4e0bac149d2842a8575e69b7b2e [auto-dig-live-test] make forced target selection authoritative (#2321)
-2026-09-01 70df13d86a56077e963b44a9cd67cdee3ba532c4 [auto-dig-live-test] require real research output (#2318)
 ```
 
 ## Repository paths changed, last 14 days
@@ -472,7 +485,6 @@
 .forgejo/workflows/import-starintel-documents.yml
 .github/full-import-trigger
 .github/workflows/auto-dig-prolog-actor-check.yml
-.github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/autodig-lifecycle.yml
 .github/workflows/dark-academia-institutions-foundations-wave-3.yml
 .github/workflows/import-starintel-documents.yml
@@ -491,17 +503,13 @@ AGENTS.md
 agents/README.md
 agents/auto_dig_live_test_trigger.pl
 agents/auto_dig_mcp_tools.pl
-agents/auto_dig_model_router.pl
 agents/auto_dig_prolog_actor.pl
 agents/auto_dig_prolog_state.schema.json
 agents/auto_dig_rlm_runner.pl
 agents/auto_dig_service.py
 agents/coverage_backlog.pl
 agents/starintel_corpus_mcp_server.py
-agents/test_auto_dig_deadline_synthesis_hotfix.pl
 agents/test_auto_dig_mcp_tools.pl
-agents/test_auto_dig_model_router.pl
-agents/test_auto_dig_native_cutoff_hotfix.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_provider_retry_hotfix_base.pl
@@ -520,12 +528,34 @@ conformance/__init__.py
 conformance/fixtures.py
 conformance/implementations.json
 dataset-testing-debug/e2e-diff-ingest-canary-2630.json
+db/analysis/starintel:analysis:axon-alpr-platform-controls-request-2100-2026-09-15.ndjson
+db/analysis/starintel:analysis:axon-fusus-2026-31-search-audit-controls-request-2100-2026-09-15.ndjson
+db/analysis/starintel:analysis:beth-din-maryland-civil-review-ledger-pass3-2026-09-15.ndjson
+db/analysis/starintel:analysis:dallas-protest-booking-charge-followup-request-2576-2026-09-15.ndjson
 db/analysis/starintel:analysis:dallas-protest-logistics-outcome-request-2576-2026-09-15.ndjson
+db/analysis/starintel:analysis:dallas-protest-permit-coordination-request-2575-2026-09-15.ndjson
 db/analysis/starintel:analysis:danbury-pd-enum-2026-09-11.ndjson
+db/analysis/starintel:analysis:danbury-postc-citizenship-waiver-and-publication-state-2026-09-15.ndjson
+db/analysis/starintel:analysis:danbury-september-1-av-record-publication-state-2026-09-15.ndjson
+db/analysis/starintel:analysis:flock-request-2112-georgia-lobbying-registry-2026-09-15.ndjson
+db/analysis/starintel:analysis:flock-request-2112-verona-eagle-offboarding-2026-09-15.ndjson
 db/analysis/starintel:analysis:issue-2109-garden-city-native-public-context-2026-09-15.ndjson
+db/analysis/starintel:analysis:ithaca-request-1899-pretermination-sharing-baseline-2026-09-15.ndjson
+db/analysis/starintel:analysis:onondaga-camillus-flock-public-portal-baseline-2026-09-15.ndjson
+db/analysis/starintel:analysis:onondaga-county-incoming-sharing-public-portal-history-2026-09-15.ndjson
+db/analysis/starintel:analysis:onondaga-county-incoming-sharing-public-portal-history-batch2-2026-09-15.ndjson
 db/analysis/starintel:analysis:reddit-1wcmaeh-scrape-pass-1.ndjson
+db/analysis/starintel:analysis:rensselaer-sheriff-five-new-incoming-portal-edges-request-1894-2026-09-15.ndjson
+db/analysis/starintel:analysis:rensselaer-sheriff-parma-incoming-share-request-1901-2026-09-15.ndjson
+db/analysis/starintel:analysis:stewarts-five-sites-rejection-controls-request-1902-2026-09-15.ndjson
+db/analysis/starintel:analysis:stewarts-hudson-proposal-candidate-resolution-request-1902-2026-09-15.ndjson
 db/analysis/starintel:analysis:syracuse-axon-policy-activation-request-1903-2026-09-15.ndjson
 db/analysis/starintel:analysis:syracuse-axon-procurement-baseline-request-1903-2026-09-15.ndjson
+db/analysis/starintel:analysis:tompkins-request-1904-notice-deadline-2026-09-15.ndjson
+db/analysis/starintel:analysis:tompkins-request-1904-renewal-hearing-baseline-2026-09-15.ndjson
+db/analysis/starintel:analysis:zavala-fifth-dwi-sentencing-baseline-request-2111-2026-09-15.ndjson
+db/analysis/starintel:analysis:zavala-habitual-dwi-comparator-baseline-request-2111-2026-09-15.ndjson
+db/analysis/starintel:analysis:zavala-parole-boundary-request-2111-2026-09-15.ndjson
 db/dataset-manifest/starintel:dataset-manifest:asia-society-public-roster.ndjson
 db/dataset-manifest/starintel:dataset-manifest:belfer-center-public-roster.ndjson
 db/dataset-manifest/starintel:dataset-manifest:carnegie-corporation-public-roster.ndjson
@@ -867,6 +897,14 @@ db/event/starintel:event:tacos-el-tapatio-robbery-2024-07-01.ndjson
 db/event/starintel:event:tdp-paxton-mobile-billboard-dallas-2026.ndjson
 db/event/starintel:event:we-the-people-rally-for-democracy-2026-09-10.ndjson
 db/evidence-record/starintel:evidence-record:rincon-gcpd-attributed-robbery-identification-2024.ndjson
+db/investigation-target/starintel:investigation-target:bed-stuy-strong-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:camillus-flock-network-control.ndjson
+db/investigation-target/starintel:investigation-target:downstate-illinois-trans-organization-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:fort-worth-community-collaborative-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:grassroots-westmoreland-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:la-colectiva-ntx-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:power-up-eau-claire-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:progressive-peoples-action-pinellas-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:rincon-finney-county-native-case-disposition.ndjson
 db/investigation-target/starintel:investigation-target:starintel-account-reddit-deleted-1wcmaeh-a0ba0d1650916bb9851a.ndjson
 db/investigation-target/starintel:investigation-target:starintel-analysis-danbury-pd-enum-2026-09-11-4607f44c856f3f8cf98c.ndjson
@@ -902,11 +940,16 @@ db/investigation-target/starintel:investigation-target:starintel-social-media-po
 db/investigation-target/starintel:investigation-target:starintel-source-lemon8-profile-davemuthafukkingr-2026-09-11-8ab0b1efd0c355605352.ndjson
 db/investigation-target/starintel:investigation-target:starintel-source-linktree-davemfgrimes-2026-09-11-ff386ca1c658e4cc2d20.ndjson
 db/investigation-target/starintel:investigation-target:starintel-source-statesman-paxton-billboard-gop-convention-d921277bc0b626b0d9ce.ndjson
+db/investigation-target/starintel:investigation-target:support-siouxland-soldiers-area-code-expansion.ndjson
+db/legal-case/starintel:legal-case:vogel-v-vogel-2119-september-term-2023.ndjson
 db/location/starintel:location:garden-city-finney-kansas.ndjson
 db/media/starintel:media:youtube-short-Fwjf-TMow-Q.ndjson
 db/media/starintel:media:youtube-video-3m-9mf7NVRg.ndjson
 db/org/starintel:org:asia-society.ndjson
+db/org/starintel:org:athens-mutual-aid-network.ndjson
+db/org/starintel:org:bed-stuy-strong.ndjson
 db/org/starintel:org:belfer-center.ndjson
+db/org/starintel:org:camillus-town-village-ny-police-department.ndjson
 db/org/starintel:org:carnegie-corporation-of-new-york.ndjson
 db/org/starintel:org:cato-institute.ndjson
 db/org/starintel:org:center-for-american-progress.ndjson
@@ -916,23 +959,32 @@ db/org/starintel:org:dallas-against-the-trump-agenda-coalition.ndjson
 db/org/starintel:org:danbury-city-council.ndjson
 db/org/starintel:org:danbury-police-department.ndjson
 db/org/starintel:org:dfw-anti-war-committee.ndjson
+db/org/starintel:org:downstate-illinois-trans-organization.ndjson
 db/org/starintel:org:el-movimiento.ndjson
 db/org/starintel:org:eurasia-group.ndjson
 db/org/starintel:org:ford-foundation.ndjson
+db/org/starintel:org:fort-worth-community-collaborative.ndjson
 db/org/starintel:org:freedom-road-socialist-organization.ndjson
+db/org/starintel:org:grassroots-westmoreland.ndjson
 db/org/starintel:org:heritage-foundation.ndjson
 db/org/starintel:org:hoover-institution.ndjson
 db/org/starintel:org:hudson-institute.ndjson
 db/org/starintel:org:indivisible-dallas.ndjson
 db/org/starintel:org:international-chamber-of-commerce.ndjson
 db/org/starintel:org:international-crisis-group.ndjson
+db/org/starintel:org:la-colectiva-ntx.ndjson
 db/org/starintel:org:naarpr-dfw.ndjson
 db/org/starintel:org:new-america.ndjson
+db/org/starintel:org:northern-virginia-mutual-aid.ndjson
 db/org/starintel:org:odi-global.ndjson
+db/org/starintel:org:power-up-eau-claire.ndjson
+db/org/starintel:org:progressive-peoples-action-pinellas.ndjson
 db/org/starintel:org:quincy-institute.ndjson
+db/org/starintel:org:rabbinical-court-cong-agudath-israel-los-angeles.ndjson
 db/org/starintel:org:rockefeller-brothers-fund.ndjson
 db/org/starintel:org:royal-united-services-institute.ndjson
 db/org/starintel:org:stockholm-international-peace-research-institute.ndjson
+db/org/starintel:org:support-siouxland-soldiers.ndjson
 db/org/starintel:org:texas-democratic-party.ndjson
 db/org/starintel:org:we-the-people-dallas.ndjson
 db/org/starintel:org:world-business-council-for-sustainable-development.ndjson
@@ -7316,6 +7368,8 @@ db/policy/starintel:policy:syracuse-police-alpr-policy-427-2026-07-28.ndjson
 db/relation/starintel:relation:asia-society:hong-kong-member_of-asia-society.ndjson
 db/relation/starintel:relation:asia-society:new-york-member_of-asia-society.ndjson
 db/relation/starintel:relation:asia-society:osborn-elliott-prize-member_of-asia-society.ndjson
+db/relation/starintel:relation:athens-mutual-aid-network-enumerated-from-npa-706-worker5-20260915.ndjson
+db/relation/starintel:relation:bed-stuy-strong-enumerated-from-npa-718-worker5-20260915.ndjson
 db/relation/starintel:relation:belfer-center:a-bradley-potter-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:a-kadir-yildirim-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:aad-correlje-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
@@ -8885,6 +8939,7 @@ db/relation/starintel:relation:belfer-center:yasmeen-abu-fraiha-affiliated_with-
 db/relation/starintel:relation:belfer-center:yiwei-shi-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:yujie-wu-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:ziad-daoud-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
+db/relation/starintel:relation:camillus-town-village-ny-pd-uses-flock-safety-2026-07-24.ndjson
 db/relation/starintel:relation:center-for-american-progress:abby-stuckrath-affiliated_with-center-for-american-progress.ndjson
 db/relation/starintel:relation:center-for-american-progress:adam-conner-affiliated_with-center-for-american-progress.ndjson
 db/relation/starintel:relation:center-for-american-progress:akua-amaning-affiliated_with-center-for-american-progress.ndjson
@@ -9205,6 +9260,7 @@ db/relation/starintel:relation:dark-academia:cross-listing-fa167a33903d1f6a3757.
 db/relation/starintel:relation:data-coalition-organizes-march-2026.ndjson
 db/relation/starintel:relation:data-coalition-permit-interaction-dallas-police.ndjson
 db/relation/starintel:relation:dfw-anti-war-committee-partner-data-coalition.ndjson
+db/relation/starintel:relation:downstate-illinois-trans-organization-enumerated-from-npa-730-worker5-20260915.ndjson
 db/relation/starintel:relation:el-movimiento-partner-data-coalition.ndjson
 db/relation/starintel:relation:eurasia-group:alexander-kazan-affiliated_with-eurasia-group.ndjson
 db/relation/starintel:relation:eurasia-group:alexander-kliment-affiliated_with-eurasia-group.ndjson
@@ -9224,6 +9280,7 @@ db/relation/starintel:relation:eurasia-group:mujtaba-rahman-affiliated_with-eura
 db/relation/starintel:relation:eurasia-group:risa-grais-targow-affiliated_with-eurasia-group.ndjson
 db/relation/starintel:relation:eurasia-group:willis-sparks-affiliated_with-eurasia-group.ndjson
 db/relation/starintel:relation:ford-foundation:heather-gerken-executive_of-ford-foundation.ndjson
+db/relation/starintel:relation:fort-worth-community-collaborative-enumerated-from-npa-682-worker5-20260915.ndjson
 db/relation/starintel:relation:freedom-road-socialist-organization-partner-data-coalition.ndjson
 db/relation/starintel:relation:gates-foundation:abby-chapin-member_of-gates-foundation.ndjson
 db/relation/starintel:relation:gates-foundation:adam-tucker-member_of-gates-foundation.ndjson
@@ -9486,6 +9543,7 @@ db/relation/starintel:relation:gates-foundation:young-rhee-member_of-gates-found
 db/relation/starintel:relation:gates-foundation:zahira-el-marzouki-member_of-gates-foundation.ndjson
 db/relation/starintel:relation:gates-foundation:zameer-brey-member_of-gates-foundation.ndjson
 db/relation/starintel:relation:gates-foundation:zhi-jie-zheng-member_of-gates-foundation.ndjson
+db/relation/starintel:relation:grassroots-westmoreland-enumerated-from-npa-724-worker5-20260915.ndjson
 db/relation/starintel:relation:hoover-institution:adam-ross-fellow_of-hoover-institution.ndjson
 db/relation/starintel:relation:hoover-institution:alan-vorwald-fellow_of-hoover-institution.ndjson
 db/relation/starintel:relation:hoover-institution:allan-hoover-iii-fellow_of-hoover-institution.ndjson
@@ -11044,6 +11102,7 @@ db/relation/starintel:relation:international-chamber-of-commerce:claudia-salomon
 db/relation/starintel:relation:international-chamber-of-commerce:eduardo-zuleta-executive_of-international-chamber-of-commerce.ndjson
 db/relation/starintel:relation:international-chamber-of-commerce:mark-friedman-executive_of-international-chamber-of-commerce.ndjson
 db/relation/starintel:relation:international-chamber-of-commerce:mohamed-s-abdel-wahab-chair_of-international-chamber-of-commerce.ndjson
+db/relation/starintel:relation:la-colectiva-ntx-enumerated-from-npa-682-worker5-20260915.ndjson
 db/relation/starintel:relation:lemon8-to-linktree-declared.ndjson
 db/relation/starintel:relation:lemon8-to-x-declared.ndjson
 db/relation/starintel:relation:lemon8-to-youtube-candidate-identity.ndjson
@@ -11453,6 +11512,7 @@ db/relation/starintel:relation:new-america:walter-russell-mead-board_member_of-n
 db/relation/starintel:relation:new-america:william-w-gerrity-board_member_of-new-america.ndjson
 db/relation/starintel:relation:new-america:zachary-karabell-board_member_of-new-america.ndjson
 db/relation/starintel:relation:new-america:zeshawn-ali-fellow_of-new-america.ndjson
+db/relation/starintel:relation:northern-virginia-mutual-aid-enumerated-from-npa-703-worker5-20260915.ndjson
 db/relation/starintel:relation:open-society-foundations:alex-soros-chair-member_of-open-society-foundations.ndjson
 db/relation/starintel:relation:open-society-foundations:awarded-grants-member_of-open-society-foundations.ndjson
 db/relation/starintel:relation:open-society-foundations:binaifer-nowrojee-president-member_of-open-society-foundations.ndjson
@@ -11472,6 +11532,8 @@ db/relation/starintel:relation:paxton-billboard-02.ndjson
 db/relation/starintel:relation:paxton-billboard-03.ndjson
 db/relation/starintel:relation:paxton-billboard-04.ndjson
 db/relation/starintel:relation:paxton-billboard-05.ndjson
+db/relation/starintel:relation:power-up-eau-claire-enumerated-from-npa-715-worker5-20260915.ndjson
+db/relation/starintel:relation:progressive-peoples-action-pinellas-enumerated-from-npa-727-worker5-20260915.ndjson
 db/relation/starintel:relation:quincy-institute:aaron-david-miller-affiliated_with-quincy-institute-for-responsible-statecraft.ndjson
 db/relation/starintel:relation:quincy-institute:aaron-sobczak-affiliated_with-quincy-institute-for-responsible-statecraft.ndjson
 db/relation/starintel:relation:quincy-institute:abdulwahab-alkebsi-affiliated_with-quincy-institute-for-responsible-statecraft.ndjson
@@ -14457,6 +14519,7 @@ db/relation/starintel:relation:sipri:zoe-gorman-affiliated_with-stockholm-intern
 db/relation/starintel:relation:sipri:zubaida-a-karim-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sonja-olson-member-indivisible-dallas.ndjson
 db/relation/starintel:relation:sonja-olson-spokesperson-march-2026.ndjson
+db/relation/starintel:relation:support-siouxland-soldiers-enumerated-from-npa-712-worker5-20260915.ndjson
 db/relation/starintel:relation:wethepeople-dallas-coorganizes-data-coalition.ndjson
 db/relation/starintel:relation:world-government-summit:future-outlook-february-04-member_of-world-governments-summit.ndjson
 db/relation/starintel:relation:yall-dfw-featured-on-data-rnc-march-promo.ndjson
@@ -14465,14 +14528,39 @@ db/relation/starintel:relation:youtube-authorship-short-Fwjf.ndjson
 db/relation/starintel:relation:youtube-authorship-video-3m.ndjson
 db/research-pass/starintel:research-pass:2026-09-11-indivisible-dallas-network.ndjson
 db/research-pass/starintel:research-pass:2026-09-11-paxton-billboard-comms.ndjson
+db/research-pass/starintel:research-pass:area-code-hunt-b-682-703-706-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:area-code-hunt-b-712-715-718-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:area-code-hunt-b-724-727-730-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:danbury-pd-enum-2026-09-11.ndjson
 db/research-pass/starintel:research-pass:dark-academia-membership-recursion-wave-3-2026-07-31.ndjson
 db/research-pass/starintel:research-pass:issue-2109-garden-city-native-public-context-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:issue-2109-rincon-garden-city-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:potateking-crossplatform-2026-09-11.ndjson
+db/research-pass/starintel:research-pass:request-1894-five-incoming-portal-edges-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1899-pretermination-sharing-baseline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1901-parma-incoming-share-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1902-hudson-candidate-resolution-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1902-stewarts-rejection-controls-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1903-syracuse-axon-policy-activation-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1903-syracuse-axon-procurement-baseline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1904-notice-deadline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1904-renewal-hearing-baseline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1907-camillus-operator-baseline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1907-onondaga-incoming-sharing-history-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1907-onondaga-incoming-sharing-history-batch2-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2100-axon-fusus-2026-31-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2100-axon-platform-control-baseline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2111-zavala-habitual-dwi-comparators-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2111-zavala-parole-boundary-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2111-zavala-sentencing-baseline-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2112-georgia-lobbying-registry-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2112-verona-eagle-offboarding-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2514-postc-citizenship-waiver-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2514-september-1-av-record-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2575-dallas-permit-coordination-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2576-dallas-booking-charge-followup-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-2576-dallas-event-outcome-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-2646-maryland-civil-review-pass3-2026-09-15.ndjson
 db/social-media-post/starintel:entity:reddit-account-alternative-park5963:post:1qjpk7p.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8yvhji.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8ywh3h.ndjson
@@ -14697,38 +14785,70 @@ db/social-media-post/starintel:reddit-post:t3_1wcmaeh.ndjson
 db/social-media-post/starintel:social-media-post:tdp-x-2098086654602891349.ndjson
 db/source/starintel:source:actionnetwork-rally-march-rmc.ndjson
 db/source/starintel:source:actionnetwork-yall-dfw.ndjson
+db/source/starintel:source:athens-mutual-aid-opencollective-2026-08-03.ndjson
+db/source/starintel:source:axon-fusus-release-2026-31-2026-08-31.ndjson
+db/source/starintel:source:bed-stuy-strong-official-2026-09-15.ndjson
 db/source/starintel:source:central-current-syracuse-axon-go-live-2026-07-29.ndjson
 db/source/starintel:source:christianpost-dallas-pulls-permit.ndjson
+db/source/starintel:source:ct-postc-51-rev-3-25.ndjson
+db/source/starintel:source:ct-postc-general-notice-25-05-citizenship-waiver.ndjson
 db/source/starintel:source:dallas-observer-40710308-permit-cancel.ndjson
+db/source/starintel:source:dallas-observer-rnc-protest-permit-cancellation-2026-09-02.ndjson
 db/source/starintel:source:dallas-ose-special-event-permit-portal-2026-09-15.ndjson
 db/source/starintel:source:dallasexpress-2026-09-01-data-yall-dfw.ndjson
 db/source/starintel:source:dallasnews-22387625-nationwide-turnout.ndjson
 db/source/starintel:source:dallasnews-22395590-olson.ndjson
 db/source/starintel:source:dallasnews-22425580-anti-trump-march.ndjson
 db/source/starintel:source:dallasvoice-dallas-against-the-trump-agenda.ndjson
+db/source/starintel:source:danbury-granicus-city-council-meeting-2026-09-01.ndjson
+db/source/starintel:source:dito-bluesky-2026-09-15.ndjson
+db/source/starintel:source:flock-camillus-transparency-portal-2026-07-24.ndjson
+db/source/starintel:source:fort-worth-community-collaborative-official-2026-09-15.ndjson
 db/source/starintel:source:fortworthreport-gop-convention-dallas.ndjson
 db/source/starintel:source:forward-observer-briefing-v78Syf14qs4.ndjson
 db/source/starintel:source:foxnews-two-arrested-socialist-anti-trump-protest.ndjson
+db/source/starintel:source:ga-ethics-flock-lobbyist-group-results-2006-plus.ndjson
+db/source/starintel:source:ga-ethics-nicholas-juliano-profile.ndjson
 db/source/starintel:source:garden-city-july-2024-master-activity-report.ndjson
+db/source/starintel:source:grassroots-westmoreland-official-2026-09-15.ndjson
 db/source/starintel:source:hutch-post-rincon-garden-city-2024-07-06.ndjson
 db/source/starintel:source:indivisibledallas-org-events.ndjson
 db/source/starintel:source:kera-dallas-first-amendment-permit-process-2026-09-01.ndjson
 db/source/starintel:source:kwch-joyeria-america-initial-report-2024-05-06.ndjson
 db/source/starintel:source:kwch-rincon-garden-city-2024-07-05.ndjson
+db/source/starintel:source:la-colectiva-ntx-official-2026-09-15.ndjson
 db/source/starintel:source:lemon8-profile-davemuthafukkingr-2026-09-11.ndjson
 db/source/starintel:source:linktree-davemfgrimes-2026-09-11.ndjson
+db/source/starintel:source:mcdao-zavala-republished-release-2026-07-23.ndjson
+db/source/starintel:source:mdcourts-vogel-v-vogel-2119s23-2025.ndjson
+db/source/starintel:source:nanpa-682-703-706.ndjson
+db/source/starintel:source:nanpa-712-715-718.ndjson
+db/source/starintel:source:nanpa-724-727-730.ndjson
 db/source/starintel:source:narativ-0908-dallas.ndjson
 db/source/starintel:source:nbcdfw-dallas-rnc-protest-arrests-2026-09-10.ndjson
+db/source/starintel:source:nova-mawg-distribution-2026-05-17.ndjson
 db/source/starintel:source:npr-gop-midterm-convention-dallas.ndjson
+db/source/starintel:source:power-up-eau-claire-official-2026-09-15.ndjson
+db/source/starintel:source:progressive-peoples-action-pinellas-official-2026-09-15.ndjson
 db/source/starintel:source:reddit-comments-1wcmaeh.ndjson
 db/source/starintel:source:reddit-post-1qjpk7p-2026-09-11.ndjson
 db/source/starintel:source:reddit-post-1wcmaeh.ndjson
 db/source/starintel:source:statesman-paxton-billboard-gop-convention.ndjson
+db/source/starintel:source:support-siouxland-soldiers-official-2026-09-15.ndjson
 db/source/starintel:source:syracuse-alpr-policy-427-2026-07-28.ndjson
 db/source/starintel:source:syracuse-stwg-axon-alpr-procurement-2026-01-27.ndjson
+db/source/starintel:source:tdcj-parole-eligibility-2026-09-15.ndjson
 db/source/starintel:source:tdp-x-post-billboard.ndjson
 db/source/starintel:source:texas-aflcio-young-active-labor-leaders.ndjson
+db/source/starintel:source:tompkins-legislature-flock-renewal-hearing-2025-10-07.ndjson
+db/source/starintel:source:tx-appeals-green-11-03-00083-cr.ndjson
+db/source/starintel:source:tx-appeals-mueller-04-20-00356-cr.ndjson
+db/source/starintel:source:tx-appeals-sutton-03-23-00357-cr.ndjson
+db/source/starintel:source:tx-appeals-villnave-05-13-00617-cr.ndjson
+db/source/starintel:source:tx-bpp-parole-review-process-2026-09-15.ndjson
+db/source/starintel:source:wbap-dallas-rnc-protest-booking-charges-2026-09-12.ndjson
 db/source/starintel:source:wichita-eagle-rincon-garden-city-2024-07-06.ndjson
+db/source/starintel:source:wskg-ithaca-flock-sharing-debrief-2026-03-06.ndjson
 db/source/starintel:source:yahoo-paxton-protects-pedos-billboard.ndjson
 db/source/starintel:source:youtube-channel-potateking-2026-09-11.ndjson
 db/source/starintel:source:youtube-short-Fwjf-TMow-Q-2026-09-11.ndjson
@@ -21857,6 +21977,12 @@ digs/anarchist-violence/2026-09-11-election-comms-pdi-outreach-pass-41/report.md
 digs/anarchist-violence/2026-09-11-election-comms-pdi-outreach-pass-41/starintel-documents.jsonl
 digs/anarchist-violence/2026-09-11-election-comms-scale-to-win-pass-40/report.md
 digs/anarchist-violence/2026-09-11-election-comms-scale-to-win-pass-40/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-15-area-codes-b-682-703-706/report.md
+digs/anarchist-violence/2026-09-15-area-codes-b-682-703-706/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-15-area-codes-b-712-715-718/report.md
+digs/anarchist-violence/2026-09-15-area-codes-b-712-715-718/starintel-documents.jsonl
+digs/anarchist-violence/2026-09-15-area-codes-b-724-727-730/report.md
+digs/anarchist-violence/2026-09-15-area-codes-b-724-727-730/starintel-documents.jsonl
 digs/anarchist-violence/area-code-coverage-a-pass24.json
 digs/anarchist-violence/area-code-coverage-a-pass25.json
 digs/anarchist-violence/area-code-coverage-a-pass26.json
@@ -21870,6 +21996,10 @@ digs/anarchist-violence/area-code-coverage-a-pass34.json
 digs/anarchist-violence/area-code-coverage-a-pass35.json
 digs/anarchist-violence/area-code-coverage-a.json
 digs/anarchist-violence/area-code-hunt-shard-b-state.json
+digs/axon/2026-09-15-request-2100-fusus-2026-31/README.md
+digs/axon/2026-09-15-request-2100-fusus-2026-31/starintel-documents.jsonl
+digs/axon/2026-09-15-request-2100-platform-control-baseline/README.md
+digs/axon/2026-09-15-request-2100-platform-control-baseline/starintel-documents.jsonl
 digs/columbus/2026-09-11-reddit-1wcmaeh/delta-docs.jsonl
 digs/columbus/2026-09-11-reddit-1wcmaeh/recursive-targets.jsonl
 digs/columbus/2026-09-11-reddit-1wcmaeh/research-pass.jsonl
@@ -21877,26 +22007,66 @@ digs/columbus/2026-09-11-reddit-1wcmaeh/starintel-documents.jsonl
 digs/dallas/2026-09-11-indivisible-dallas-network/starintel-documents.jsonl
 digs/dallas/2026-09-15-forward-observer-source-caption-resolution/report.md
 digs/dallas/2026-09-15-forward-observer-source-caption-resolution/starintel-documents.jsonl
+digs/dallas/2026-09-15-request-2575-dallas-permit-coordination/README.md
+digs/dallas/2026-09-15-request-2575-dallas-permit-coordination/starintel-documents.jsonl
+digs/dallas/2026-09-15-request-2576-booking-charge-followup/README.md
+digs/dallas/2026-09-15-request-2576-booking-charge-followup/starintel-documents.jsonl
 digs/dallas/2026-09-15-request-2576-dallas-event-outcome/README.md
 digs/dallas/2026-09-15-request-2576-dallas-event-outcome/starintel-documents.jsonl
 digs/danbury/2026-09-11-danbury-pd-enum/starintel-documents.jsonl
 digs/danbury/2026-09-15-request-2514-late-stage-procedural-records/README.md
 digs/danbury/2026-09-15-request-2514-late-stage-procedural-records/starintel-documents.jsonl
+digs/danbury/2026-09-15-request-2514-postc-waiver-reconciliation/README.md
+digs/danbury/2026-09-15-request-2514-postc-waiver-reconciliation/starintel-documents.jsonl
 digs/danbury/2026-09-15-request-2514-primary-record-reconciliation/README.md
 digs/danbury/2026-09-15-request-2514-primary-record-reconciliation/starintel-documents.jsonl
+digs/danbury/2026-09-15-request-2514-september-1-av-record/README.md
+digs/danbury/2026-09-15-request-2514-september-1-av-record/starintel-documents.jsonl
 digs/dark-academia/dark-academia-membership-recursion-wave-3-2026-07-31/starintel-documents.jsonl
+digs/drunk-drivers/2026-09-15-request-2111-zavala-habitual-dwi-comparators/README.md
+digs/drunk-drivers/2026-09-15-request-2111-zavala-habitual-dwi-comparators/starintel-documents.jsonl
+digs/drunk-drivers/2026-09-15-request-2111-zavala-parole-boundary/README.md
+digs/drunk-drivers/2026-09-15-request-2111-zavala-parole-boundary/starintel-documents.jsonl
+digs/drunk-drivers/2026-09-15-request-2111-zavala-sentencing-baseline/README.md
+digs/drunk-drivers/2026-09-15-request-2111-zavala-sentencing-baseline/starintel-documents.jsonl
 digs/fed/2026-08-19-national-security-adviser-eop-location/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1894-five-incoming-portal-edges/README.md
+digs/flock/2026-09-15-request-1894-five-incoming-portal-edges/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1899-native-termination-resolution/README.md
 digs/flock/2026-09-15-request-1899-native-termination-resolution/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1899-pretermination-sharing-baseline/README.md
+digs/flock/2026-09-15-request-1899-pretermination-sharing-baseline/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1900-cornell-data-control/README.md
 digs/flock/2026-09-15-request-1900-cornell-data-control/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1900-cornell-mou-authority/README.md
 digs/flock/2026-09-15-request-1900-cornell-mou-authority/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1900-cornell-policy-implementation-prereqs/README.md
+digs/flock/2026-09-15-request-1900-cornell-policy-implementation-prereqs/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1901-parma-incoming-share/README.md
+digs/flock/2026-09-15-request-1901-parma-incoming-share/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1902-hudson-candidate-resolution/README.md
+digs/flock/2026-09-15-request-1902-hudson-candidate-resolution/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1902-stewarts-rejection-controls/README.md
+digs/flock/2026-09-15-request-1902-stewarts-rejection-controls/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1903-syracuse-axon-policy/README.md
 digs/flock/2026-09-15-request-1903-syracuse-axon-policy/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1903-syracuse-axon-procurement-baseline/README.md
 digs/flock/2026-09-15-request-1903-syracuse-axon-procurement-baseline/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1904-notice-deadline/README.md
+digs/flock/2026-09-15-request-1904-notice-deadline/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1904-pre-renewal-portal-state/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1904-renewal-hearing-baseline/README.md
+digs/flock/2026-09-15-request-1904-renewal-hearing-baseline/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1907-camillus-operator-baseline/README.md
+digs/flock/2026-09-15-request-1907-camillus-operator-baseline/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history-batch2/README.md
+digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history-batch2/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history/README.md
+digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history/starintel-documents.jsonl
+digs/flock/2026-09-15-request-2112-georgia-lobbying-registry/README.md
+digs/flock/2026-09-15-request-2112-georgia-lobbying-registry/starintel-documents.jsonl
+digs/flock/2026-09-15-request-2112-verona-eagle-offboarding/README.md
+digs/flock/2026-09-15-request-2112-verona-eagle-offboarding/starintel-documents.jsonl
 digs/netflix-uk/2026-09-11-netflixuk-social-attribution/README.md
 digs/palantir/2026-07-25-related-orgs-access/starintel-documents.jsonl
 digs/palantir/2026-07-25-vance-thiel-executive-branch/starintel-documents.jsonl
@@ -21910,6 +22080,8 @@ digs/religious-courts/2026-09-15-beth-din-civil-review-pass2/README.md
 digs/religious-courts/2026-09-15-beth-din-civil-review-pass2/starintel-documents.jsonl
 digs/religious-courts/2026-09-15-beth-din-evidence-baseline/README.md
 digs/religious-courts/2026-09-15-beth-din-evidence-baseline/starintel-documents.jsonl
+digs/religious-courts/2026-09-15-beth-din-maryland-civil-review-pass3/README.md
+digs/religious-courts/2026-09-15-beth-din-maryland-civil-review-pass3/starintel-documents.jsonl
 digs/testing-debug/2026-09-12-e2e-diff-ingest-2630/starintel-documents.jsonl
 digs/violent-offenders/2026-09-15-issue-2109-native-public-context-followup/README.md
 digs/violent-offenders/2026-09-15-issue-2109-native-public-context-followup/starintel-documents.jsonl
@@ -21937,7 +22109,6 @@ requirements/backend.txt
 schemas/starintel-doc-v0.9.0.expansion.json
 schemas/starintel-doc-v0.9.0.manifest.json
 schemas/starintel-doc-v0.9.0.schema.json
-scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
@@ -21985,7 +22156,6 @@ tmp/pack/pack.jsonl
 
 ```text
 .github/workflows/auto-dig-prolog-actor-check.yml
-.github/workflows/auto-dig-prolog-actor.yml
 .github/workflows/autodig-lifecycle.yml
 .github/workflows/dark-academia-institutions-foundations-wave-3.yml
 .github/workflows/import-starintel-documents.yml
@@ -22000,7 +22170,6 @@ tmp/pack/pack.jsonl
 .github/workflows/tmp-fix-xzspace-dates.yml
 .github/workflows/validate-db.yml
 backend/tests/test_app.py
-scripts/apply_prolog_rlm_deadline_hotfix.py
 scripts/apply_prolog_rlm_hotfix.py
 scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
