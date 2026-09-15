@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-15T17:03:32Z`
+- generated: `2026-09-15T21:24:45Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`88b8db66d04e2f97e291a84c6f5790a6f7cb4bce`](https://github.com/lost-rob0t/zara/commit/88b8db66d04e2f97e291a84c6f5790a6f7cb4bce)
@@ -1063,27 +1063,6 @@
 2026-09-01 be75c73c0b32ca4cabd4837ca41e685d967e1ae3 docs(rage): record #172 stale-base recovery
 2026-09-01 934aa4e6049b3b82202820f559b38a740e6518a8 merge(master): refresh Android #172 candidate
 2026-09-01 800a740a36b57969cb5cf6bafbbf9dd52d68e4fe Merge pull request #281 from lost-rob0t/rage/260-hooks-prolog-config
-2026-09-01 eadbd238f83abb8283332961e785e3d3e0af0ff1 Merge master into rage/260-hooks-prolog-config
-2026-09-01 59de1e9a468672353f83ca6064bcc9070f658246 docs(rage): record Android semantic contract compile fix
-2026-09-01 2c708f71f1fbe4cd1e1ad4c65233b2bcc233d3b2 fix(android): match semantic result terms contract
-2026-09-01 1e2b9501fefa9fc1cb5e42fc6ee56991710c5889 docs: record hook policy RED and implementation
-2026-09-01 632c7ec9edc935a2ca98a711e69fc9cc6490e615 test: create config directory in hook fixture
-2026-09-01 78c2b2bc69be6802837785e80dd672d02536befa docs: define fail-closed hook policy projection
-2026-09-01 6fa447ba2ae5672fa2dcb35cbd2eb6c7f4a76c8b feat: project hook policy from canonical TOML
-2026-09-01 49c658bbde0c109826bf2f93d3073dca50e7740b test: keep daemon wiring scope unchanged
-2026-09-01 496be51db4e8efbafc01a12f5d4eaab9bb367eaf test: drive hook policy from canonical TOML
-2026-09-01 54525963735b792cd3d8945bb512ed939bcb6103 test: preserve existing runtime wiring coverage
-2026-09-01 7e53146bd29278b6f15ebe3984cf22501cd0f01a test: apply hook policy at daemon Prolog boundary
-2026-09-01 2344f338c3a8d63cdd9a1921b7ba1d1b6a92dcc5 feat: enforce explicit Prolog hook policy
-2026-09-01 67c4367329bcacc8455780b846d8985b6313b222 test: gate user hooks behind explicit policy
-2026-09-01 e3d5c4d8ed75aa580dadb3d97befc0901464dce1 RAGE #172 GREEN: add Trealla semantic runtime lifecycle
-2026-09-01 ecec0caabf42efd5fc1d0040e559775872a148a0 RAGE #172 RED: specify Trealla semantic runtime lifecycle
-2026-09-01 501923450ebed99670049ba6e0b45b4d92f909b1 RAGE #172: record Trealla runtime lifecycle iteration
-2026-09-01 82eddb0a1c81dd1ae92c5e575e90e7d485a17bc8 Merge pull request #280 from lost-rob0t/rage/android-172-fixture-runner
-2026-09-01 ae40572020ae59536ebe3c6834bc65919560753e Merge master into RAGE #260 recovery
-2026-09-01 c82aea0a041411709b510c38ca6394dd8cce6e36 rage: record #172 cross-runtime runner iteration
-2026-09-01 93dcd05ab5ce903a43f4d5b70fea8cff57a8eb9e RAGE #172 GREEN: add fail-closed semantic parity runner
-2026-09-01 1a48be8515637f14494f34ed768e319f70d26081 RAGE #172 RED: require cross-runtime semantic fixture runner
 ```
 
 ## Repository paths changed, last 14 days
@@ -1135,7 +1114,6 @@ android/app/src/main/java/ai/zara/app/device/RegistryDeviceActionHandler.kt
 android/app/src/main/java/ai/zara/app/prolog/NativeTreallaBridge.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticAssetStager.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
-android/app/src/main/java/ai/zara/app/prolog/SemanticFixtureRunner.kt
 android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
 android/app/src/main/java/ai/zara/app/runtime/AndroidTextSessionController.kt
 android/app/src/main/java/ai/zara/app/runtime/ClientStateStore.kt
@@ -1203,8 +1181,6 @@ android/app/src/test/java/ai/zara/app/prolog/PortableResolverPackagingContractTe
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
-android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
-android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1295,7 +1271,6 @@ kb/config.pl
 modules/command_loop.pl
 modules/commands.pl
 modules/config_loader.pl
-modules/hooks_loader.pl
 modules/intent_frames.pl
 modules/normalizer.pl
 rage/13-open-app-allowlist-regression.org
@@ -1310,7 +1285,6 @@ rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
 rage/172-android-asset-staging.org
-rage/172-android-fixture-runner.org
 rage/172-android-jni-bridge.org
 rage/172-android-native-adapter.org
 rage/172-android-resolver-parity.org
@@ -1367,7 +1341,6 @@ rage/260-customization-diagnostics-design.org
 rage/260-customization-diagnostics-research.org
 rage/260-customization-diagnostics.org
 rage/260-customization-wiki.org
-rage/260-hooks-prolog-config-design.org
 rage/260-hooks-prolog-config.org
 rage/260-prolog-command-advice-design.org
 rage/260-prolog-command-advice-research.org
@@ -1458,7 +1431,6 @@ t/test_device_action_sequence_wiring.py
 t/test_dictation_vulkan_backend.py
 t/test_json_limits.py
 t/test_plugin_tool_approval.py
-t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
 t/test_quick_copilot.py
 t/test_qwen_openai_client.py
@@ -1517,7 +1489,6 @@ t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
-t/zara_hooks_registry.pl
 wiki/android.org
 wiki/api-service.org
 wiki/customization.org
@@ -1615,8 +1586,6 @@ android/app/src/test/java/ai/zara/app/prolog/PortableResolverPackagingContractTe
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
-android/app/src/test/java/ai/zara/app/prolog/SemanticFixtureRunnerTest.kt
-android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1734,7 +1703,6 @@ t/test_device_action_sequence_wiring.py
 t/test_dictation_vulkan_backend.py
 t/test_json_limits.py
 t/test_plugin_tool_approval.py
-t/test_principal_runtime_wiring.py
 t/test_production_secure_listener.py
 t/test_quick_copilot.py
 t/test_qwen_openai_client.py
@@ -1793,5 +1761,4 @@ t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
-t/zara_hooks_registry.pl
 ```

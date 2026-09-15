@@ -1,15 +1,20 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-15T17:03:14Z`
+- generated: `2026-09-15T21:24:34Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`68b42100d968fee6256ebda3c4e726db3c90d083`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/68b42100d968fee6256ebda3c4e726db3c90d083)
-- head date: `2026-09-15T12:50:08-04:00`
-- head subject: Auto-Dig #1907: extend Onondaga incoming-sharing portal history (#2689)
+- head: [`f9e3370b79a3c49662a3af9aeb24ecc5b242d89f`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/f9e3370b79a3c49662a3af9aeb24ecc5b242d89f)
+- head date: `2026-09-15T14:36:05-04:00`
+- head subject: Auto-Dig #1897: reconcile North Greenbush Town Hall camera disposition
 
 ## Git log, last 14 days
 
 ```text
+2026-09-15 f9e3370b79a3c49662a3af9aeb24ecc5b242d89f Auto-Dig #1897: reconcile North Greenbush Town Hall camera disposition
+2026-09-15 f122b9141381e896455f14588238ce38e3464629 Auto-Dig #1894: add official Rensselaer locality universe (#2693)
+2026-09-15 1d72f245cbf6371cb958b7cb4060b0bc90aa9274 Auto-Dig #1907: add official Onondaga locality universe (#2692)
+2026-09-15 92bffbe78c5adcca6db472ea7fe24649c4b7ee5a Auto-Dig #1894: add Woonsocket and Newtown incoming-sharing observations (#2691)
+2026-09-15 7ad5afbc77665984d7747b52cd4c5bdaed04d5f0 Auto-Dig #1951: add Syracuse Axon approval control-chain record (#2690)
 2026-09-15 68b42100d968fee6256ebda3c4e726db3c90d083 Auto-Dig #1907: extend Onondaga incoming-sharing portal history (#2689)
 2026-09-15 970e5797d6b3ae8da936ac1e67911164234165f0 Auto-Dig #2576: add Dallas booking-charge follow-up (#2688)
 2026-09-15 a5821cb2cbf0da9a2fba8e84b96373e30fbe6d9c Auto-Dig #2341: advance shard-B area-code coverage through 730 (#2687)
@@ -541,14 +546,19 @@ db/analysis/starintel:analysis:flock-request-2112-georgia-lobbying-registry-2026
 db/analysis/starintel:analysis:flock-request-2112-verona-eagle-offboarding-2026-09-15.ndjson
 db/analysis/starintel:analysis:issue-2109-garden-city-native-public-context-2026-09-15.ndjson
 db/analysis/starintel:analysis:ithaca-request-1899-pretermination-sharing-baseline-2026-09-15.ndjson
+db/analysis/starintel:analysis:north-greenbush-town-hall-camera-disposition-request-1897-2026-09-15.ndjson
 db/analysis/starintel:analysis:onondaga-camillus-flock-public-portal-baseline-2026-09-15.ndjson
 db/analysis/starintel:analysis:onondaga-county-incoming-sharing-public-portal-history-2026-09-15.ndjson
 db/analysis/starintel:analysis:onondaga-county-incoming-sharing-public-portal-history-batch2-2026-09-15.ndjson
+db/analysis/starintel:analysis:onondaga-county-official-locality-universe-2026-09-15.ndjson
 db/analysis/starintel:analysis:reddit-1wcmaeh-scrape-pass-1.ndjson
+db/analysis/starintel:analysis:rensselaer-county-official-locality-universe-2026-09-15.ndjson
 db/analysis/starintel:analysis:rensselaer-sheriff-five-new-incoming-portal-edges-request-1894-2026-09-15.ndjson
 db/analysis/starintel:analysis:rensselaer-sheriff-parma-incoming-share-request-1901-2026-09-15.ndjson
+db/analysis/starintel:analysis:rensselaer-sheriff-woonsocket-newtown-incoming-portal-edges-request-1894-2026-09-15.ndjson
 db/analysis/starintel:analysis:stewarts-five-sites-rejection-controls-request-1902-2026-09-15.ndjson
 db/analysis/starintel:analysis:stewarts-hudson-proposal-candidate-resolution-request-1902-2026-09-15.ndjson
+db/analysis/starintel:analysis:syracuse-axon-approval-control-chain-request-1951-2026-09-15.ndjson
 db/analysis/starintel:analysis:syracuse-axon-policy-activation-request-1903-2026-09-15.ndjson
 db/analysis/starintel:analysis:syracuse-axon-procurement-baseline-request-1903-2026-09-15.ndjson
 db/analysis/starintel:analysis:tompkins-request-1904-notice-deadline-2026-09-15.ndjson
@@ -14537,6 +14547,9 @@ db/research-pass/starintel:research-pass:issue-2109-garden-city-native-public-co
 db/research-pass/starintel:research-pass:issue-2109-rincon-garden-city-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:potateking-crossplatform-2026-09-11.ndjson
 db/research-pass/starintel:research-pass:request-1894-five-incoming-portal-edges-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1894-rensselaer-official-locality-universe-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1894-woonsocket-newtown-incoming-portal-edges-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1897-north-greenbush-town-hall-camera-disposition-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1899-pretermination-sharing-baseline-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1901-parma-incoming-share-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1902-hudson-candidate-resolution-2026-09-15.ndjson
@@ -14548,6 +14561,8 @@ db/research-pass/starintel:research-pass:request-1904-renewal-hearing-baseline-2
 db/research-pass/starintel:research-pass:request-1907-camillus-operator-baseline-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1907-onondaga-incoming-sharing-history-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-1907-onondaga-incoming-sharing-history-batch2-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1907-onondaga-official-locality-universe-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:request-1951-syracuse-axon-approval-control-chain-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-2100-axon-fusus-2026-31-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-2100-axon-platform-control-baseline-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-2111-zavala-habitual-dwi-comparators-2026-09-15.ndjson
@@ -14837,6 +14852,7 @@ db/source/starintel:source:statesman-paxton-billboard-gop-convention.ndjson
 db/source/starintel:source:support-siouxland-soldiers-official-2026-09-15.ndjson
 db/source/starintel:source:syracuse-alpr-policy-427-2026-07-28.ndjson
 db/source/starintel:source:syracuse-stwg-axon-alpr-procurement-2026-01-27.ndjson
+db/source/starintel:source:syracuse-stwg-axon-approval-control-chain-2026-02-10.ndjson
 db/source/starintel:source:tdcj-parole-eligibility-2026-09-15.ndjson
 db/source/starintel:source:tdp-x-post-billboard.ndjson
 db/source/starintel:source:texas-aflcio-young-active-labor-leaders.ndjson
@@ -22032,6 +22048,12 @@ digs/drunk-drivers/2026-09-15-request-2111-zavala-sentencing-baseline/starintel-
 digs/fed/2026-08-19-national-security-adviser-eop-location/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1894-five-incoming-portal-edges/README.md
 digs/flock/2026-09-15-request-1894-five-incoming-portal-edges/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1894-rensselaer-official-locality-universe/README.md
+digs/flock/2026-09-15-request-1894-rensselaer-official-locality-universe/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1894-woonsocket-newtown-incoming-portal-edges/README.md
+digs/flock/2026-09-15-request-1894-woonsocket-newtown-incoming-portal-edges/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1897-north-greenbush-town-hall-camera-disposition/README.md
+digs/flock/2026-09-15-request-1897-north-greenbush-town-hall-camera-disposition/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1899-native-termination-resolution/README.md
 digs/flock/2026-09-15-request-1899-native-termination-resolution/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1899-pretermination-sharing-baseline/README.md
@@ -22063,6 +22085,10 @@ digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history-batch2/READ
 digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history-batch2/starintel-documents.jsonl
 digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history/README.md
 digs/flock/2026-09-15-request-1907-onondaga-incoming-sharing-history/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1907-onondaga-official-locality-universe/README.md
+digs/flock/2026-09-15-request-1907-onondaga-official-locality-universe/starintel-documents.jsonl
+digs/flock/2026-09-15-request-1951-syracuse-axon-approval-control-chain/README.md
+digs/flock/2026-09-15-request-1951-syracuse-axon-approval-control-chain/starintel-documents.jsonl
 digs/flock/2026-09-15-request-2112-georgia-lobbying-registry/README.md
 digs/flock/2026-09-15-request-2112-georgia-lobbying-registry/starintel-documents.jsonl
 digs/flock/2026-09-15-request-2112-verona-eagle-offboarding/README.md

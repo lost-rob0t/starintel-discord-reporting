@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-15T17:03:29Z`
+- generated: `2026-09-15T21:24:42Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -74,10 +74,6 @@
 2026-09-02 31f744c94ffdeed62ffc919690663c477ce72a2b research: record RLM-RESEARCH-012 approval
 2026-09-02 4ab728553c65b574c440066f02aadbf9e9893225 research: author RLM-RESEARCH-012 for #97 query/capture APIs
 2026-09-01 156bfe9b2caffa1b967e77bee51263ee9e85fb50 Add versioned project syntax observations
-2026-09-01 b12561cf888f62c5bfe692cc6669eae50eb1b634 test: match skill graph with explicit dict access
-2026-09-01 fc4def9991a85658e5a1a14e9a36304c819b66a4 test: keep graph fixture bindings outside assertions
-2026-09-01 b19da3b240bdd15c4d2884aa2ab4cbf4e94857da feat: adapt Agent Zero packages into skill graph
-2026-09-01 e569015b969f2028de89c30767ac1d71c2d3ceef test: specify Agent Zero skill graph adapter
 ```
 
 ## Repository paths changed, last 14 days
@@ -116,7 +112,6 @@ docs/research/expert-direct-tool-projection.org
 docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
 flake.nix
-prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/rlm_completion.pl
 prolog/rlm_plan_graph.pl
@@ -145,7 +140,6 @@ scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
-test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
@@ -179,7 +173,6 @@ scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
-test/rlm_agent_zero_adapter_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
