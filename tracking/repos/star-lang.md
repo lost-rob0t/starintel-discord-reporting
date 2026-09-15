@@ -1,17 +1,20 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-09-14T23:10:20Z`
+- generated: `2026-09-15T04:58:38Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`f701583aa7ab6132967742e73c3309aea0b2d6b6`](https://github.com/lost-rob0t/star-lang/commit/f701583aa7ab6132967742e73c3309aea0b2d6b6)
-- head date: `2026-09-14T09:54:48-04:00`
-- head subject: cli: add first-class final-system starlang-cli command surface (#66)
+- head: [`7db89986450d4e513ff4b5c9617bf4d196b3cfb4`](https://github.com/lost-rob0t/star-lang/commit/7db89986450d4e513ff4b5c9617bf4d196b3cfb4)
+- head date: `2026-09-14T23:08:47-04:00`
+- head subject: Merge branch 'main' of github.com:lost-rob0t/star-lang (PR #65/#66 KB promotions)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 7db89986450d4e513ff4b5c9617bf4d196b3cfb4 Merge branch 'main' of github.com:lost-rob0t/star-lang (PR #65/#66 KB promotions)
 2026-09-14 f701583aa7ab6132967742e73c3309aea0b2d6b6 cli: add first-class final-system starlang-cli command surface (#66)
 2026-09-14 9238112c16546673bcef6e4a41b8f0f91ce7ef56 prototype: register repository tree first in the ASDF source registry (#65)
+2026-09-11 b4d25ad4be855285ae6e38aa07dfc764b7a4330e cli: add first-class final-system starlang-cli command surface
+2026-09-11 a3c42bfec77fc3b82e3d8fee79a3730166f1a2f3 prototype: register repository tree first in the ASDF source registry
 2026-09-10 0343d653e14bcc96eea02dd63b956aa3867ebc15 compiler: extract closed parser and actor lowering from prototype (#64)
 2026-09-10 87b4628edd66fd97708396fb333c7090edf76a9e cleanup: remove IPX application code from StarLang (#63)
 2026-09-10 7d800f9267d1d2b860f0a8ea460b3ec7e3bb9f9a artifact: add canonical JSON file writer actor (#44)

@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-14T23:10:14Z`
+- generated: `2026-09-15T04:58:31Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`b8c08859cee98c7ae568db6f41d3c9f71d2a49dd`](https://github.com/lost-rob0t/starintel-auto-research/commit/b8c08859cee98c7ae568db6f41d3c9f71d2a49dd)
-- head date: `2026-09-14T16:08:48-04:00`
-- head subject: research: reconcile target lease execution authority with current server
+- head: [`825689da3ad669a29a9a7af585e7cdc8db2693b1`](https://github.com/lost-rob0t/starintel-auto-research/commit/825689da3ad669a29a9a7af585e7cdc8db2693b1)
+- head date: `2026-09-14T22:44:53-04:00`
+- head subject: research: correct actor registry vs StarLang routing ownership
 
 ## Git log, last 14 days
 
 ```text
+2026-09-14 825689da3ad669a29a9a7af585e7cdc8db2693b1 research: correct actor registry vs StarLang routing ownership
+2026-09-14 3126d671fdc58aaef1da05ea8e0698818c45d056 research: make StarLang sole actor/service registry authority
 2026-09-14 b8c08859cee98c7ae568db6f41d3c9f71d2a49dd research: reconcile target lease execution authority with current server
 2026-09-14 d67d79fdef56f729757a0d183ea78192749faf59 skills: resolve StarIntel spec from canonical lock
 2026-09-11 d49f1e6e56cdbddd0843ad2c1c962c3ff758075f Research starintel-java as ABCL-backed JVM binding

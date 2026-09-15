@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-14T23:10:22Z`
+- generated: `2026-09-15T04:58:40Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -94,10 +94,6 @@
 2026-09-01 7a8a5c59d4b4483de53c4450d5ddab00e0203222 test: reproduce native batch cardinality admission gaps (#323)
 2026-09-01 eed1639d0b20a7efb26e02c94b3e896e790c5bae fix: break rlm_completion <-> rlm_direct import cycle (#328)
 2026-09-01 889eb66e28eb5c09773dbd04f94dcac769951197 test: reproduce hostile host text_string corruption (#328)
-2026-08-31 7e1e992772290fa869e3573182c77e570cb667bb test: pin tool-result correlation without optional name (#326)
-2026-08-31 0c51cb6c621e1baa8357ac61049302eeb9769ff6 Keep tool-result fix surgical
-2026-08-31 b7479b920eb155b5803b46d71ee4416108e049dd Test provider-safe dotted tool result messages
-2026-08-31 8732c3b6a47b9dc2791d07897cf4c0153aa49d69 Fix OpenRouter tool-result wire correlation
 ```
 
 ## Repository paths changed, last 14 days
@@ -147,7 +143,6 @@ prolog/adaptors/rlm_agent_zero_adapter.pl
 prolog/prolog_agent_ui_facade.pl
 prolog/rlm_completion.pl
 prolog/rlm_direct.pl
-prolog/rlm_native_tool.pl
 prolog/rlm_openai_compatible.pl
 prolog/rlm_plan_graph.pl
 prolog/rlm_project_grammar_pack.pl
@@ -181,7 +176,6 @@ test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_test.pl
-test/rlm_native_tool_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
 test/rlm_project_grammar_pack_test.pl
@@ -220,7 +214,6 @@ test/rlm_completion_module_boundary_test.pl
 test/rlm_completion_stream_test.pl
 test/rlm_direct_deadline_test.pl
 test/rlm_direct_test.pl
-test/rlm_native_tool_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
 test/rlm_project_grammar_pack_test.pl
