@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-16T13:32:17Z`
+- generated: `2026-09-16T18:12:58Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`d48fa939402abf701fa1cc4079dfb8bedfad8d4a`](https://github.com/lost-rob0t/starintel-server/commit/d48fa939402abf701fa1cc4079dfb8bedfad8d4a)
-- head date: `2026-09-16T09:24:55-04:00`
-- head subject: Merge pull request #188 from lost-rob0t/fix/187-concurrent-ulid-quarantine
+- head: [`1ac298b797bd4bc0e71cfde083c6a59af55ccc6f`](https://github.com/lost-rob0t/starintel-server/commit/1ac298b797bd4bc0e71cfde083c6a59af55ccc6f)
+- head date: `2026-09-16T10:05:28-04:00`
+- head subject: Merge pull request #190 from lost-rob0t/fix/189-release-terminal-bulk-payloads
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 1ac298b797bd4bc0e71cfde083c6a59af55ccc6f Merge pull request #190 from lost-rob0t/fix/189-release-terminal-bulk-payloads
+2026-09-16 5d22fc362259d21d4c18d1fa3e5b7511b797f426 Regenerate bulk job API reference
+2026-09-16 7c2e839ab99e081970c2cd71801ab49ca7c5ed7e Release terminal bulk job request payloads
 2026-09-16 d48fa939402abf701fa1cc4079dfb8bedfad8d4a Merge pull request #188 from lost-rob0t/fix/187-concurrent-ulid-quarantine
 2026-09-16 ace720b1dbe4be0139b5f52ea3ab6d0a1f5e3038 test: prove concurrent quarantine IDs are distinct
 2026-09-16 b0dab216b40952e5eaba30632a16cf327c154638 kb: correct loader invocation
@@ -146,6 +149,7 @@
 .opencode/agents/issue-yagni.md
 .opencode/commands/issue.md
 .prolog/facts.kb
+.prolog/kb/bulk-jobs.pl
 .prolog/kb/git-remotes.pl
 .prolog/kb/index.pl
 .prolog/kb/root-causes.pl

@@ -1,15 +1,21 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-16T13:32:21Z`
+- generated: `2026-09-16T18:13:02Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`5ce2612ee0513b317434d172ca7dff4c822df8d3`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/5ce2612ee0513b317434d172ca7dff4c822df8d3)
-- head date: `2026-09-16T09:14:49-04:00`
-- head subject: Merge pull request #2695 from lost-rob0t/fix/backlog-resume-latest-ledger
+- head: [`2999b9794373c5c922babe9fac422a701dd55115`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/2999b9794373c5c922babe9fac422a701dd55115)
+- head date: `2026-09-16T11:19:40-04:00`
+- head subject: Merge pull request #2708 from lost-rob0t/fix/backlog-canonical-target-bulk
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 2999b9794373c5c922babe9fac422a701dd55115 Merge pull request #2708 from lost-rob0t/fix/backlog-canonical-target-bulk
+2026-09-16 5f355969b0124f1b62f4b549552641d06422d3e5 Import canonical targets through authorized bulk route
+2026-09-16 d62036b67c0449d9d7c823436a6c4181ed32f086 Merge pull request #2707 from lost-rob0t/fix/backlog-legacy-source-normalization
+2026-09-16 be67899fb2ba0365d724c3c86a9487b63ccb2839 Normalize legacy DNC source records for backlog ingest
+2026-09-16 94f8674c6b363b558bff1e9326e9131cb2263a25 Merge pull request #2697 from lost-rob0t/fix/backlog-manual-dispatch-only
+2026-09-16 637e6ca6bf75506194a817afacd96770f6f2aa55 Make temporary backlog import manual dispatch only
 2026-09-16 5ce2612ee0513b317434d172ca7dff4c822df8d3 Merge pull request #2695 from lost-rob0t/fix/backlog-resume-latest-ledger
 2026-09-16 97c95009e4c7814c6ebc31fdd291513c3c7a653d fix: restore latest backlog ledger artifact on rerun
 2026-09-16 e26d28b0d63e4e563df0cecbe730e8e1525b2607 chore: fix backlog workflow test path [skip ci]
@@ -508,6 +514,9 @@
 .github/workflows/tmp-fix-xzspace-dates.yml
 .github/workflows/validate-db.yml
 .gitignore
+.prolog/kb/backlog-import.pl
+.prolog/kb/index.pl
+.prolog/kb/workflow-guard.pl
 AGENTS.md
 agents/README.md
 agents/auto_dig_live_test_trigger.pl
@@ -14821,6 +14830,9 @@ db/source/starintel:source:dallasnews-22425580-anti-trump-march.ndjson
 db/source/starintel:source:dallasvoice-dallas-against-the-trump-agenda.ndjson
 db/source/starintel:source:danbury-granicus-city-council-meeting-2026-09-01.ndjson
 db/source/starintel:source:dito-bluesky-2026-09-15.ndjson
+db/source/starintel:source:dnc-2024-call-for-convention.ndjson
+db/source/starintel:source:dnc-2024-delegate-selection-rules.ndjson
+db/source/starintel:source:dnc-charter-bylaws-2025-10.ndjson
 db/source/starintel:source:flock-camillus-transparency-portal-2026-07-24.ndjson
 db/source/starintel:source:fort-worth-community-collaborative-official-2026-09-15.ndjson
 db/source/starintel:source:fortworthreport-gop-convention-dallas.ndjson

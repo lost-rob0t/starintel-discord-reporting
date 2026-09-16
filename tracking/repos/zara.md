@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-16T13:32:35Z`
+- generated: `2026-09-16T18:13:19Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`812d202c0b061a05a081ae8c94f5b02a349954ad`](https://github.com/lost-rob0t/zara/commit/812d202c0b061a05a081ae8c94f5b02a349954ad)
@@ -948,40 +948,6 @@
 2026-09-02 b8cdbbdab66792dede09971d5826bb3494d1f6ff Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
 2026-09-02 9a62ab423b5ed80c023d0de9b11c356ef6855b93 docs(rage): record Trealla normalizer portability failure
 2026-09-02 5bcba65649accc0b7757fb1b59a85c330e624084 fix(android): make shared normalizer portable to Trealla
-2026-09-02 b7cc0a85a6d84352c668d8e892e01b2b5f5e0e79 RAGE #264: expose principal identity through runtime backend
-2026-09-02 7d363fe7a3f6c532a9fb9cf41d87c0175246e311 rage: record Android parity diagnostic recovery
-2026-09-02 cfa53c3358fd1cdd83145024d8f417db4832b48d ci(android): upload semantic parity diagnostics
-2026-09-02 783a5d1a3c7ad1a23989aa00fa03c804be64e270 test(android): preserve parity failure diagnostics
-2026-09-02 fdff7ef91a13a57199c1f6637b77006a8fc73907 RAGE #264: apply narrow long-horizon task config delta
-2026-09-02 bbcc59fe880c114e7761cdde9407f27a81d8f5c3 RAGE #264: isolate historical task config delta
-2026-09-02 3c8d07a9336884e4789abc01a936a304bb4c6968 RAGE #264: drop unrelated config rewrite churn
-2026-09-02 442d0571ff6af830e5c1cf3375ff35bb61ae874b RAGE #264: port long-horizon tasks onto current RuntimeHost
-2026-09-02 b60b826c146ec36f367573665d31360efc4bc87f RAGE #264: port bounded long-horizon task configuration
-2026-09-02 9b999de0f5aee37fdeccc5ab4516e00debfb79ba build(android): declare fail-closed Trealla patch tooling
-2026-09-02 8c624c5b4196e1760e25a26e5f7700c66a00c32c test(android): bind parity to native Trealla compatibility patch
-2026-09-02 ca791c8161a61e9a184639cee868c8f823e2e2e8 test(android): keep staging contract source-faithful
-2026-09-02 38804a6894e4b7fee85483a2e6eaf0c47a1c8b24 test(android): parity uses patched Trealla runtime
-2026-09-02 27a9774ab034c93d10f424a5bbb9709b2f38b320 fix(android): patch Trealla module source paths
-2026-09-02 6728c3499c7c47ccc102f549514b08cfb2cebe14 fix(android): preserve Trealla module source paths
-2026-09-02 85425ad4813537641119adaf1dac10dfec305b4d test(android): require cwd-independent semantic loader
-2026-09-02 2b6b3f49cbfee70b1026c517dcf8a4d6005cf80c RAGE #264: isolate long-horizon task turns at runtime backend
-2026-09-02 dc698488011ace1c90575aa501bd64e42f1cc793 RAGE #264: port task turn context through current agent advice loop
-2026-09-02 a4cfa984999f549682370c838a39c723e944c49c RAGE #172: record headless Trealla build recovery
-2026-09-02 866c22ee932ef3148231ad21ab81c347f05ed061 RAGE #172: build headless pinned Trealla for parity
-2026-09-02 0f10ea918eacbca6edc443c02c7b3b289c79b0a9 RAGE #172: correct parity target to canonical corpus
-2026-09-02 3c72bfc97eab77173ba273220c784034247ce4b6 RAGE #172: keep parity toolchain minimal
-2026-09-02 7112e1025af4341f97544b0db23e858d2db18aea RAGE #172: execute full canonical semantic corpus
-2026-09-02 ba916142d4d3f87dd9a675f61052c0659649e40f RAGE #172: require canonical corpus in parity gate
-2026-09-02 4854917a80731636c9f896b8db7dce50c1199042 RAGE #172: record RED and parity implementation
-2026-09-02 137842cd801e0904a5da9aff164be40779d14d94 RAGE #172: wire executable semantic parity into Android gate
-2026-09-02 94a66f2f190fd702ff0683d27efbf5679fdcac94 RAGE #172: add executable SWI Trealla parity gate
-2026-09-02 249e51b4246b6f54523fcf51ecfeb8a48db81e22 RAGE #172: add parity runtimes to Android dev shell
-2026-09-02 52e16d5d02cb2d8ba2b4a0074a84bcad4bd04133 RAGE #172: add RED cross-runtime parity gate contract
-2026-09-02 90896a3821d3448fa7b7d0c8c460075256affd79 RAGE #172: record cross-runtime parity design
-2026-09-02 9a05d0021e84b978dee009ceac288cfb07faa398 RAGE #264: port task runtime events onto current event model
-2026-09-02 7c78907d42a067c457fff920e54aeaf3da342002 RAGE #264: rebase long-horizon task core onto current master
-2026-09-02 9f3b779b876df360001b12d0100698f334beb8b8 Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
-2026-09-02 575e841503628f28c1cca3cfc638c7202b7e0d81 merge current master into Android #172 resolver parity
 ```
 
 ## Repository paths changed, last 14 days
@@ -998,7 +964,6 @@
 .prolog/kb/index.pl
 .prolog/kb/voice_ingress_stt.pl
 .prolog/kb/wake_connection.pl
-AGENTS.md
 DESIGN.md
 PRODUCT.md
 README.org
@@ -1089,9 +1054,7 @@ android/app/src/test/java/ai/zara/app/device/OpenAppAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
-android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1154,14 +1117,11 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
-android/build-trealla.sh
 android/build.gradle.kts
 android/design/reference-2026-09-07.svg
-android/flake.nix
 android/gradle/libs.versions.toml
 android/integration/device_acceptance.py
 android/integration/stock_zara_server_fixture.py
-android/patch-trealla-module-path.sh
 android/settings.gradle.kts
 android/shared-ui/build.gradle.kts
 android/shared-ui/src/main/java/ai/zara/ui/theme/ZaraTheme.kt
@@ -1278,7 +1238,6 @@ rage/880-882-voice-pipeline-merge-closeout.org
 rage/880-882-voice-pipeline-research.org
 rage/880-882-voice-pipeline.org
 rage/client-connection-guards.org
-rage/long-horizon-tasks.org
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1321,7 +1280,6 @@ t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_client_config.py
 t/test_daemon_connection_guards.py
-t/test_database_fetch_locking.py
 t/test_desktop_control.py
 t/test_desktop_launch_surface.py
 t/test_desktop_shell.py
@@ -1360,14 +1318,6 @@ t/test_security_threat_transport.py
 t/test_semantic_first_runtime.py
 t/test_service_plugin_advice.py
 t/test_stt_beam_plumbing.py
-t/test_task_approval_flow.py
-t/test_task_host_wiring.py
-t/test_task_observability.py
-t/test_task_runner.py
-t/test_task_store.py
-t/test_task_tools.py
-t/test_task_turn_context.py
-t/test_tasks_config.py
 t/test_toolnode_dispatch_contract.py
 t/test_transcript_normalization.py
 t/test_transcript_normalization_config.py
@@ -1398,19 +1348,16 @@ wiki/android.org
 wiki/api-service.org
 wiki/customization.org
 wiki/install.org
-wiki/long-horizon-tasks.org
 wiki/plugins.org
 zara/__main__.py
 zara/agent/__init__.py
 zara/agent/hooks.py
 zara/agent/loops.py
-zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/audio.py
 zara/command_gate.py
 zara/config.py
 zara/daemon_client.py
-zara/database.py
 zara/desktop/app.py
 zara/desktop/chat_widgets.py
 zara/desktop/control.py
@@ -1427,7 +1374,6 @@ zara/plugins/api.py
 zara/plugins/manager.py
 zara/protocol.py
 zara/runtime/backend.py
-zara/runtime/events.py
 zara/runtime/host.py
 zara/runtime/intent_router.py
 zara/runtime/tts_output.py
@@ -1440,9 +1386,6 @@ zara/security_transport.py
 zara/server.py
 zara/server_core.py
 zara/streaming_stt.py
-zara/tasks/__init__.py
-zara/tasks/runner.py
-zara/tasks/store.py
 zara/transcript_normalization.py
 zara/transcript_normalization_config.py
 zara/transcript_normalization_selection.py
@@ -1486,9 +1429,7 @@ android/app/src/test/java/ai/zara/app/device/OpenAppAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
-android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1551,7 +1492,6 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
-android/flake.nix
 android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 flake.nix
 scripts/pair-android-qr.sh
@@ -1596,7 +1536,6 @@ t/test_copilot_screenshot_fixtures.py
 t/test_customization_diagnostics.py
 t/test_daemon_client_config.py
 t/test_daemon_connection_guards.py
-t/test_database_fetch_locking.py
 t/test_desktop_control.py
 t/test_desktop_launch_surface.py
 t/test_desktop_shell.py
@@ -1635,14 +1574,6 @@ t/test_security_threat_transport.py
 t/test_semantic_first_runtime.py
 t/test_service_plugin_advice.py
 t/test_stt_beam_plumbing.py
-t/test_task_approval_flow.py
-t/test_task_host_wiring.py
-t/test_task_observability.py
-t/test_task_runner.py
-t/test_task_store.py
-t/test_task_tools.py
-t/test_task_turn_context.py
-t/test_tasks_config.py
 t/test_toolnode_dispatch_contract.py
 t/test_transcript_normalization.py
 t/test_transcript_normalization_config.py
