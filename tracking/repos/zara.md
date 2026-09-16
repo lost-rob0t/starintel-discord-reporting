@@ -1,15 +1,21 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-16T18:13:19Z`
+- generated: `2026-09-16T21:22:20Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`812d202c0b061a05a081ae8c94f5b02a349954ad`](https://github.com/lost-rob0t/zara/commit/812d202c0b061a05a081ae8c94f5b02a349954ad)
-- head date: `2026-09-15T23:36:09-04:00`
-- head subject: Merge pull request #885 from lost-rob0t/feat/chat-ui-overhaul
+- head: [`43d8fa8c98771e02aff5ee1850ad5f2be7c35377`](https://github.com/lost-rob0t/zara/commit/43d8fa8c98771e02aff5ee1850ad5f2be7c35377)
+- head date: `2026-09-16T15:36:56-04:00`
+- head subject: Merge pull request #890 from lost-rob0t/fix/android-connection-fix
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 43d8fa8c98771e02aff5ee1850ad5f2be7c35377 Merge pull request #890 from lost-rob0t/fix/android-connection-fix
+2026-09-16 3e6c61c2f00963296a7d90b8266372e48bdfd2cf release(android): prepare v0.1.2-alpha in GitHub Actions
+2026-09-16 66b976e65da06e68f2277bebc1762cde40836c85 feat(android): add Zara adaptive launcher icon
+2026-09-16 d3c829f9ef04800137ec158bec8752397d1400f0 fix(android): expose connection stages and allow explicit server repin
+2026-09-16 e030ca4cd3667d533fa7005514bb89ca847c7bb4 Merge pull request #886 from lost-rob0t/fix/android-remote-listener
+2026-09-16 a04b5a7c2b7e7eb433396f0b08196cd68ceb7094 feat(server): serve authenticated Android TCP alongside local IPC
 2026-09-15 812d202c0b061a05a081ae8c94f5b02a349954ad Merge pull request #885 from lost-rob0t/feat/chat-ui-overhaul
 2026-09-15 a5bb0650e18648b57d416a89e50aeeb6843139cb feat(desktop): modernize copilot conversation UI
 2026-09-15 a08db0d8be2059ef0d9c5afb18dad4f5a4175772 docs(rage): #880/#881/#882 merge closeout (PR #883, 8bb90979) (#884)
@@ -940,14 +946,6 @@
 2026-09-02 7e72d98e0cfc262294f01ed177416a3b2c3bf275 Merge pull request #298 from lost-rob0t/rage/260-prolog-command-advice
 2026-09-02 d74f89ca0173db2cac2ccecbca4aef318de97b56 fix(android): compare portable parity attestations
 2026-09-02 94416a0bcee155440d78966549c8c6b7ddb00d62 fix(android): handle empty utterances portably
-2026-09-02 6a30b3d254478237b4f2557d28ed534e4e8845a1 rage: record Trealla string_to_atom recovery
-2026-09-02 3853fea309de9040e5042f95315ba3766569ee3c fix(android): remove Trealla string_to_atom dependency
-2026-09-02 3e6e4352c62055f621d2b73ac63fcba19a29c19e RAGE #260: implement gated Prolog command-loop advice
-2026-09-02 bd50e6b235daeb0af347274d12ac68031fb57e39 fix(android): preserve state-control frame semantics
-2026-09-02 5416af7be1b814af70a980bdf05e32fa56fcac94 fix(android): remove atom_string from portable intent entrypoint
-2026-09-02 b8cdbbdab66792dede09971d5826bb3494d1f6ff Merge pull request #264 from lost-rob0t/feature/long-horizon-tasks
-2026-09-02 9a62ab423b5ed80c023d0de9b11c356ef6855b93 docs(rage): record Trealla normalizer portability failure
-2026-09-02 5bcba65649accc0b7757fb1b59a85c330e624084 fix(android): make shared normalizer portable to Trealla
 ```
 
 ## Repository paths changed, last 14 days
@@ -1033,6 +1031,9 @@ android/app/src/main/java/ai/zara/app/voice/ZaraVoiceAckCodec.kt
 android/app/src/main/java/ai/zara/app/voice/ZaraVoiceCodec.kt
 android/app/src/main/java/ai/zara/app/voice/ZaraVoiceInboundCodec.kt
 android/app/src/main/java/ai/zara/app/voice/ZaraVoiceStreamCodec.kt
+android/app/src/main/res/drawable/ic_zara_foreground.xml
+android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+android/app/src/main/res/values/zara_icon_colors.xml
 android/app/src/main/res/xml/voice_interaction_service.xml
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AppScopedAssistantRuntimeContractTest.kt
@@ -1119,6 +1120,7 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
 android/build.gradle.kts
 android/design/reference-2026-09-07.svg
+android/design/zara-launcher-icon.svg
 android/gradle/libs.versions.toml
 android/integration/device_acceptance.py
 android/integration/stock_zara_server_fixture.py
@@ -1142,7 +1144,6 @@ modules/command_loop.pl
 modules/commands.pl
 modules/config_loader.pl
 modules/intent_frames.pl
-modules/normalizer.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
@@ -1154,7 +1155,6 @@ rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
-rage/172-cross-runtime-parity.org
 rage/173-android-auth.org
 rage/173-android-client-continuity.org
 rage/174-android-device-capabilities.org
@@ -1203,9 +1203,6 @@ rage/260-customization-diagnostics-design.org
 rage/260-customization-diagnostics-research.org
 rage/260-customization-diagnostics.org
 rage/260-customization-wiki.org
-rage/260-prolog-command-advice-design.org
-rage/260-prolog-command-advice-research.org
-rage/260-prolog-command-advice.org
 rage/260-service-plugin-advice.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
@@ -1238,6 +1235,7 @@ rage/880-882-voice-pipeline-merge-closeout.org
 rage/880-882-voice-pipeline-research.org
 rage/880-882-voice-pipeline.org
 rage/client-connection-guards.org
+scripts/check-android-apk-signer.sh
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1252,7 +1250,6 @@ scripts/test-android.sh
 scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
-scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
@@ -1494,6 +1491,7 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 flake.nix
+scripts/check-android-apk-signer.sh
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
@@ -1508,7 +1506,6 @@ scripts/test-android.sh
 scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
-scripts/test-prolog-command-advice.sh
 scripts/test-prolog-config.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh

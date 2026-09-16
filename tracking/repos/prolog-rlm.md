@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-16T18:13:15Z`
+- generated: `2026-09-16T21:22:17Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -68,12 +68,6 @@
 2026-09-02 91f5b2993881dea088cef428c72403c441ae6f86 research: operator rejects relaxing single-effect-call rule (closes OQ5)
 2026-09-02 ca29ec1c26a3995c6993b3ee44712a933afa4561 research: answer operator note on effect batching (open question 5)
 2026-09-02 5a6e89c4c08d1ad18917df5796c6b91a5584e77c research: convert record to canonical org template (RLM-RESEARCH-353)
-2026-09-02 59f2a72f0d9849db37096323abfcc786dd95c401 research: experts as native direct-mode tools (verified analysis)
-2026-09-02 eba9609b6831ee9873c8880e420434d028ab02c8 design: record #97 design approval and hand off realization to next slice
-2026-09-02 bb729f427eb9e711964ca1474ec513c8d9ca6349 design: record #97 query/capture ADADR design
-2026-09-02 31f744c94ffdeed62ffc919690663c477ce72a2b research: record RLM-RESEARCH-012 approval
-2026-09-02 4ab728553c65b574c440066f02aadbf9e9893225 research: author RLM-RESEARCH-012 for #97 query/capture APIs
-2026-09-01 156bfe9b2caffa1b967e77bee51263ee9e85fb50 Add versioned project syntax observations
 ```
 
 ## Repository paths changed, last 14 days
@@ -97,14 +91,12 @@ c/rlm_tree_sitter.c
 c/rlm_tree_sitter_internal.h
 c/rlm_tree_sitter_lifetime.c
 c/rlm_tree_sitter_node.c
-c/rlm_tree_sitter_parser.c
 c/rlm_tree_sitter_query.c
 c/rlm_tree_sitter_support.c
 docs/completion-runtime.md
 docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-semantic.md
-docs/project-source-registry.md
 docs/project-syntax.md
 docs/prolog-agent-roadmap.md
 docs/research/expert-direct-tool-projection.md
@@ -115,25 +107,20 @@ flake.nix
 prolog/prolog_agent_ui_facade.pl
 prolog/rlm_completion.pl
 prolog/rlm_plan_graph.pl
-prolog/rlm_project_grammar_pack.pl
 prolog/rlm_project_query.pl
 prolog/rlm_project_query_persist.pl
 prolog/rlm_project_semantic.pl
 prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
-prolog/rlm_project_syntax.pl
 prolog/rlm_tree_sitter.pl
 rage/288-spec-plan-graph-executor.org
 rage/336-text-streaming-design.org
-rage/96-versioned-syntax-facts.org
 rage/97-query-capture-apis.org
 rage/97-query-capture-notes.org
-rage/97-query-capture-realize-prompt.md
 research/README.md
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
-research/tree-sitter-query-capture.org
 scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
@@ -143,7 +130,6 @@ test/load_all.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
-test/rlm_project_grammar_pack_test.pl
 test/rlm_project_query_restart_phase1.pl
 test/rlm_project_query_restart_phase2.pl
 test/rlm_project_query_restart_test.pl
@@ -151,9 +137,6 @@ test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
 test/rlm_project_semantic_test.pl
-test/rlm_project_source_test.pl
-test/rlm_project_syntax_test.pl
-test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
@@ -176,7 +159,6 @@ test/load_all.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
-test/rlm_project_grammar_pack_test.pl
 test/rlm_project_query_restart_phase1.pl
 test/rlm_project_query_restart_phase2.pl
 test/rlm_project_query_restart_test.pl
@@ -184,9 +166,6 @@ test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
 test/rlm_project_semantic_test.pl
-test/rlm_project_source_test.pl
-test/rlm_project_syntax_test.pl
-test/rlm_tree_sitter_cancellation_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
