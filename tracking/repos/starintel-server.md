@@ -1,15 +1,23 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-16T07:43:34Z`
+- generated: `2026-09-16T13:32:17Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`d4e8447c6049eaed65a93e81668ae1ec4b65c25c`](https://github.com/lost-rob0t/starintel-server/commit/d4e8447c6049eaed65a93e81668ae1ec4b65c25c)
-- head date: `2026-09-16T01:58:50-04:00`
-- head subject: Merge verified Prolog shard actor deployment (#186)
+- head: [`d48fa939402abf701fa1cc4079dfb8bedfad8d4a`](https://github.com/lost-rob0t/starintel-server/commit/d48fa939402abf701fa1cc4079dfb8bedfad8d4a)
+- head date: `2026-09-16T09:24:55-04:00`
+- head subject: Merge pull request #188 from lost-rob0t/fix/187-concurrent-ulid-quarantine
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 d48fa939402abf701fa1cc4079dfb8bedfad8d4a Merge pull request #188 from lost-rob0t/fix/187-concurrent-ulid-quarantine
+2026-09-16 ace720b1dbe4be0139b5f52ea3ab6d0a1f5e3038 test: prove concurrent quarantine IDs are distinct
+2026-09-16 b0dab216b40952e5eaba30632a16cf327c154638 kb: correct loader invocation
+2026-09-16 6f428549f6a62b2ea75b37f8ee6004e30215151b kb: preserve shared predicates across focused files
+2026-09-16 72e784c87673737e7c68d55ba74dc12989dfefa4 kb: record quarantine collision and safe bulk reconciliation
+2026-09-16 8c7d6e1969ce7a57b9b0295ff995ba7fb756551b docs: regenerate API reference for ULID helper
+2026-09-16 7ab5e79acce842352380ffad659b4844a254675d docs: document synchronized ULID helper
+2026-09-16 d90a9f762df12891fca9bcd54e0182cb5b9e219d fix: serialize server ULIDs and contain settlement failures
 2026-09-16 d4e8447c6049eaed65a93e81668ae1ec4b65c25c Merge verified Prolog shard actor deployment (#186)
 2026-09-16 d984f1308655cafdebf44b57cb86669cbcd87c29 Install pinned YAML parser for deployment contract tests
 2026-09-16 94ff88d421abe795882ecd6f289f38dbf61550f7 Wire persistent Prolog shard actor into existing actor deployment
@@ -142,6 +150,7 @@
 .prolog/kb/index.pl
 .prolog/kb/root-causes.pl
 .prolog/kb/tooling.pl
+.prolog/kb/ulid-quarantine.pl
 .prolog/result.json
 .prolog/runs/run-09b236bffdfee147fcb94e508086175afd7fc1c4.pl
 .prolog/runs/run-1599100ec1c9267d773573fdd9d679d00791106c.pl
@@ -176,6 +185,7 @@ doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
 doc/api/star-documents.org
 doc/api/star-http-contract.org
+doc/api/star-ids.org
 doc/api/star-leases.org
 doc/api/star-producers.org
 doc/api/star-rabbit.org
@@ -252,6 +262,7 @@ source/frontends/http-capabilities.lisp
 source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1.lisp
 source/gserver-settings.lisp
+source/ids.lisp
 source/init-loader.lisp
 source/lease-store-runtime.lisp
 source/leases/memory-store.lisp

@@ -1,15 +1,19 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-16T07:43:37Z`
+- generated: `2026-09-16T13:32:21Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`f9e3370b79a3c49662a3af9aeb24ecc5b242d89f`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/f9e3370b79a3c49662a3af9aeb24ecc5b242d89f)
-- head date: `2026-09-15T14:36:05-04:00`
-- head subject: Auto-Dig #1897: reconcile North Greenbush Town Hall camera disposition
+- head: [`5ce2612ee0513b317434d172ca7dff4c822df8d3`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/5ce2612ee0513b317434d172ca7dff4c822df8d3)
+- head date: `2026-09-16T09:14:49-04:00`
+- head subject: Merge pull request #2695 from lost-rob0t/fix/backlog-resume-latest-ledger
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 5ce2612ee0513b317434d172ca7dff4c822df8d3 Merge pull request #2695 from lost-rob0t/fix/backlog-resume-latest-ledger
+2026-09-16 97c95009e4c7814c6ebc31fdd291513c3c7a653d fix: restore latest backlog ledger artifact on rerun
+2026-09-16 e26d28b0d63e4e563df0cecbe730e8e1525b2607 chore: fix backlog workflow test path [skip ci]
+2026-09-16 2437a8f829da0ded6bce1d45ebb0bfbe8d589869 chore: trigger full Auto-Dig backlog ingest
 2026-09-15 f9e3370b79a3c49662a3af9aeb24ecc5b242d89f Auto-Dig #1897: reconcile North Greenbush Town Hall camera disposition
 2026-09-15 f122b9141381e896455f14588238ce38e3464629 Auto-Dig #1894: add official Rensselaer locality universe (#2693)
 2026-09-15 1d72f245cbf6371cb958b7cb4060b0bc90aa9274 Auto-Dig #1907: add official Onondaga locality universe (#2692)

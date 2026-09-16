@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-16T07:43:50Z`
+- generated: `2026-09-16T13:32:35Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`812d202c0b061a05a081ae8c94f5b02a349954ad`](https://github.com/lost-rob0t/zara/commit/812d202c0b061a05a081ae8c94f5b02a349954ad)
@@ -982,24 +982,6 @@
 2026-09-02 7c78907d42a067c457fff920e54aeaf3da342002 RAGE #264: rebase long-horizon task core onto current master
 2026-09-02 9f3b779b876df360001b12d0100698f334beb8b8 Merge pull request #296 from lost-rob0t/rage/android-172-resolver-parity
 2026-09-02 575e841503628f28c1cca3cfc638c7202b7e0d81 merge current master into Android #172 resolver parity
-2026-09-02 4746ef00f973513d56112687553db32a3c13e3ba Merge pull request #297 from lost-rob0t/rage/260-python-user-hooks
-2026-09-02 0e6f4ed0c6c8c76447acb29f18f7d4cdf659a104 merge master into Android #172 resolver parity
-2026-09-02 2007e16928017b68956d8284bcf4ddbcc69b6668 docs(rage): record user hooks red and implementation
-2026-09-02 deda2f310bf5fe71d997d61d7f315dd692462f8b feat(hooks): autoload mutable user hooks in agent runtime
-2026-09-02 a628b8c093451a739da23ff8117337a6b11432b6 feat(hooks): load mutable user Python hooks
-2026-09-02 416a88584a3b1c6aaefe9f9cd3d52c510fb978e0 docs(rage): record Android unit contract recovery
-2026-09-02 8e4281b6244613bcbcfc8dbafa21a25602cf8f7f test(android): update portable resource contract for shared resolver
-2026-09-02 5c1809c501f2a038d9a2f0b86f8ab0881e51de72 test #260: define Python user hook loader contract RED
-2026-09-02 229bc423a9a435844e0de3e7669feb9e37935320 rage #260: record Python user hooks design
-2026-09-02 b2ec0ee9c46ba94cedff7ec784f540b0bd9a6a00 rage #260: record Python user hooks research
-2026-09-02 d281d2bacca4166105d861ecab0ed73b74bd03dc rage #260: start Python user hooks slice
-2026-09-02 e66f43e0f5d3f22f79668ccc71a7098a3417883f docs(rage): record Android gate failure and output recovery
-2026-09-02 39af84ecdc9262cfd761c5b8dbba7e32cee00b99 fix(android): configure portable semantic asset output
-2026-09-02 f078a2d3f1bd10b60914153de486130bce787380 Merge pull request #293 from lost-rob0t/rage/260-agent-loop-integration
-2026-09-02 09a27707d16246cc91e74d62b36efe8a15ab887f docs(rage): record Android gate failure recovery
-2026-09-02 8824f042a482cb1019d89f70dd9b9db91d90ebe1 test(android): require bounded generated asset inputs
-2026-09-02 2440469422b73ac101879317b26b82b7b5ceb832 fix(android): bound portable asset task inputs
-2026-09-02 b8ba54f81cbbfd0a750b880466b183eb4a76b7c4 Merge master into rage/260-agent-loop-integration
 ```
 
 ## Repository paths changed, last 14 days
@@ -1110,8 +1092,6 @@ android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
 android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1214,7 +1194,6 @@ rage/162-user-command-persistence.org
 rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
-rage/172-android-resolver-parity.org
 rage/172-cross-runtime-parity.org
 rage/173-android-auth.org
 rage/173-android-client-continuity.org
@@ -1267,9 +1246,6 @@ rage/260-customization-wiki.org
 rage/260-prolog-command-advice-design.org
 rage/260-prolog-command-advice-research.org
 rage/260-prolog-command-advice.org
-rage/260-python-user-hooks-design.org
-rage/260-python-user-hooks-research.org
-rage/260-python-user-hooks.org
 rage/260-service-plugin-advice.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
@@ -1404,7 +1380,6 @@ t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
 t/test_user_command_persistence.py
 t/test_user_command_runtime.py
-t/test_user_python_hooks.py
 t/test_voice_runtime_ingress.py
 t/test_wake_capture_stall.py
 t/test_wake_daemon_client.py
@@ -1431,7 +1406,6 @@ zara/agent/hooks.py
 zara/agent/loops.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
-zara/agent/user_hooks.py
 zara/audio.py
 zara/command_gate.py
 zara/config.py
@@ -1515,8 +1489,6 @@ android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
 android/app/src/test/java/ai/zara/app/prolog/CrossRuntimeParityGateContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetStagerTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PortableSemanticAssetsTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PortableSemanticCoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1683,7 +1655,6 @@ t/test_user_command_authoring_acceptance.py
 t/test_user_command_compiler.py
 t/test_user_command_persistence.py
 t/test_user_command_runtime.py
-t/test_user_python_hooks.py
 t/test_voice_runtime_ingress.py
 t/test_wake_capture_stall.py
 t/test_wake_daemon_client.py
