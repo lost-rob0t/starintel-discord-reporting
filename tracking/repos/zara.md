@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-15T21:24:45Z`
+- generated: `2026-09-16T00:24:58Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`88b8db66d04e2f97e291a84c6f5790a6f7cb4bce`](https://github.com/lost-rob0t/zara/commit/88b8db66d04e2f97e291a84c6f5790a6f7cb4bce)
-- head date: `2026-09-15T01:21:17-04:00`
-- head subject: fix(wake): match client READY enum and await reconnect future (#879)
+- head: [`8bb909798047eb3558623bd139e610ede87c44f6`](https://github.com/lost-rob0t/zara/commit/8bb909798047eb3558623bd139e610ede87c44f6)
+- head date: `2026-09-15T20:19:38-04:00`
+- head subject: fix(voice): Pulse playback sink, capture-stall watchdog, configurable STT decode (#880 #881 #882) (#883)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-15 8bb909798047eb3558623bd139e610ede87c44f6 fix(voice): Pulse playback sink, capture-stall watchdog, configurable STT decode (#880 #881 #882) (#883)
 2026-09-15 88b8db66d04e2f97e291a84c6f5790a6f7cb4bce fix(wake): match client READY enum and await reconnect future (#879)
 2026-09-14 e317c51e437cae3aaebd9432453439172ee1161b Speak Qwen3-TTS through the OpenAI-compatible streaming API (#878)
 2026-09-14 6a5f98f414b437c91dc6a8fffd25a1a2bc3a262d fix(desktop): project daemon startup completion (#877)
@@ -1051,18 +1052,6 @@
 2026-09-01 518fef14a710b04c99f4509235ef244bdf4f9f34 docs(rage): record Python hooks RED and implementation
 2026-09-01 e1c61a38b68fb0601f49152ca4d2205e4a5c41f7 Merge pull request #286 from lost-rob0t/rage/android-172-jni-bridge
 2026-09-01 9e7895bd7087b947613093b6bb55ff3b045e5c27 feat(agent): implement bounded advice registry
-2026-09-01 f2a9c09da861890e161bc30a7f01e8b3c13c350a test: RED Python hook/advice registry contract
-2026-09-01 4012ddb16586da0bde8168026294484f60cce8bd rage: design #260 Python hook/advice registry
-2026-09-01 579c9a5548bd8812050d52cc398ac9ee5a5aeeb7 rage: research #260 Python hook/advice seam
-2026-09-01 7ea61cf90c37dd3ab467f4d302bb86431577f063 rage: start #260 Python hooks/advice iteration
-2026-09-01 bb82778cca98de8eb2c4d1220a64900b80bd7f77 docs(rage): record #172 JNI bridge design and TDD evidence
-2026-09-01 b26fc07dc3b06c50c08fb14efce988092e938c48 feat(android): add fail-closed Trealla JNI bridge boundary
-2026-09-01 44427e416ce1613e8774ee42a059389f3191511d test(android): define Trealla JNI bridge fail-closed contract
-2026-09-01 0988bbe5249ce5530144110ebabdb8d2986af080 rage(android): start #172 JNI bridge iteration
-2026-09-01 89e6fbc6f17df0a86083b5e66dd1496c89555daf Merge pull request #283 from lost-rob0t/rage/android-172-trealla-runtime
-2026-09-01 be75c73c0b32ca4cabd4837ca41e685d967e1ae3 docs(rage): record #172 stale-base recovery
-2026-09-01 934aa4e6049b3b82202820f559b38a740e6518a8 merge(master): refresh Android #172 candidate
-2026-09-01 800a740a36b57969cb5cf6bafbbf9dd52d68e4fe Merge pull request #281 from lost-rob0t/rage/260-hooks-prolog-config
 ```
 
 ## Repository paths changed, last 14 days
@@ -1111,7 +1100,6 @@ android/app/src/main/java/ai/zara/app/device/OpenAppAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriPolicy.kt
 android/app/src/main/java/ai/zara/app/device/RegistryDeviceActionHandler.kt
-android/app/src/main/java/ai/zara/app/prolog/NativeTreallaBridge.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticAssetStager.kt
 android/app/src/main/java/ai/zara/app/prolog/PortableSemanticCore.kt
 android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
@@ -1285,10 +1273,8 @@ rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
 rage/172-android-asset-staging.org
-rage/172-android-jni-bridge.org
 rage/172-android-native-adapter.org
 rage/172-android-resolver-parity.org
-rage/172-android-trealla-runtime.org
 rage/172-cross-runtime-parity.org
 rage/173-android-auth.org
 rage/173-android-client-continuity.org
@@ -1345,8 +1331,6 @@ rage/260-hooks-prolog-config.org
 rage/260-prolog-command-advice-design.org
 rage/260-prolog-command-advice-research.org
 rage/260-prolog-command-advice.org
-rage/260-python-hooks-advice-design.org
-rage/260-python-hooks-advice-research.org
 rage/260-python-user-hooks-design.org
 rage/260-python-user-hooks-research.org
 rage/260-python-user-hooks.org
@@ -1377,6 +1361,9 @@ rage/587-dictation-vulkan.org
 rage/668-config-loader-diagnostic.org
 rage/669-turn-event-loss.org
 rage/866-wear-foundation.org
+rage/880-882-voice-pipeline-design.org
+rage/880-882-voice-pipeline-research.org
+rage/880-882-voice-pipeline.org
 rage/client-connection-guards.org
 rage/long-horizon-tasks.org
 scripts/pair-android-qr.sh
@@ -1384,6 +1371,7 @@ scripts/pair-android.sh
 scripts/pair-watch.sh
 scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
+scripts/stt-phrase-benchmark.py
 scripts/test-all.sh
 scripts/test-android-device.sh
 scripts/test-android-release.sh
@@ -1407,11 +1395,11 @@ t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
-t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
 t/test_android_gate_diagnostics.py
 t/test_api_service.py
+t/test_audio_shared_input.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
@@ -1432,6 +1420,7 @@ t/test_dictation_vulkan_backend.py
 t/test_json_limits.py
 t/test_plugin_tool_approval.py
 t/test_production_secure_listener.py
+t/test_pulse_output_stream.py
 t/test_quick_copilot.py
 t/test_qwen_openai_client.py
 t/test_registered_target_recovery.py
@@ -1457,6 +1446,7 @@ t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_first_runtime.py
 t/test_service_plugin_advice.py
+t/test_stt_beam_plumbing.py
 t/test_task_approval_flow.py
 t/test_task_host_wiring.py
 t/test_task_observability.py
@@ -1479,10 +1469,13 @@ t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_voice_runtime_ingress.py
+t/test_wake_capture_stall.py
 t/test_wake_daemon_client.py
 t/test_wake_fail_closed.py
 t/test_wake_import.py
+t/test_wake_lifecycle.py
 t/test_wake_principal_isolation.py
+t/test_wake_speaker.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
 t/test_zmq_send_diagnostics.py
@@ -1502,6 +1495,7 @@ zara/agent/loops.py
 zara/agent/tools/builtin_tools.py
 zara/agent/tools/registry.py
 zara/agent/user_hooks.py
+zara/audio.py
 zara/command_gate.py
 zara/config.py
 zara/daemon_client.py
@@ -1532,6 +1526,7 @@ zara/security_state.py
 zara/security_transport.py
 zara/server.py
 zara/server_core.py
+zara/streaming_stt.py
 zara/tasks/__init__.py
 zara/tasks/runner.py
 zara/tasks/store.py
@@ -1656,6 +1651,7 @@ scripts/pair-android.sh
 scripts/pair-watch.sh
 scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
+scripts/stt-phrase-benchmark.py
 scripts/test-all.sh
 scripts/test-android-device.sh
 scripts/test-android-release.sh
@@ -1679,11 +1675,11 @@ t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
-t/test_agent_hooks.py
 t/test_agent_loop_advice_integration.py
 t/test_agent_loop_backend_registry.py
 t/test_android_gate_diagnostics.py
 t/test_api_service.py
+t/test_audio_shared_input.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
@@ -1704,6 +1700,7 @@ t/test_dictation_vulkan_backend.py
 t/test_json_limits.py
 t/test_plugin_tool_approval.py
 t/test_production_secure_listener.py
+t/test_pulse_output_stream.py
 t/test_quick_copilot.py
 t/test_qwen_openai_client.py
 t/test_registered_target_recovery.py
@@ -1729,6 +1726,7 @@ t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_first_runtime.py
 t/test_service_plugin_advice.py
+t/test_stt_beam_plumbing.py
 t/test_task_approval_flow.py
 t/test_task_host_wiring.py
 t/test_task_observability.py
@@ -1751,10 +1749,13 @@ t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_user_python_hooks.py
 t/test_voice_runtime_ingress.py
+t/test_wake_capture_stall.py
 t/test_wake_daemon_client.py
 t/test_wake_fail_closed.py
 t/test_wake_import.py
+t/test_wake_lifecycle.py
 t/test_wake_principal_isolation.py
+t/test_wake_speaker.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
 t/test_zmq_send_diagnostics.py
