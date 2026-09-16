@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-16T00:24:49Z`
+- generated: `2026-09-16T07:43:34Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`60191023ac73bcc719fd550d6788322a95c92bc0`](https://github.com/lost-rob0t/starintel-server/commit/60191023ac73bcc719fd550d6788322a95c92bc0)
-- head date: `2026-09-14T16:51:34-04:00`
-- head subject: Merge pull request #184 from lost-rob0t/fix/docs-starintel-0.9.1-terminology
+- head: [`d4e8447c6049eaed65a93e81668ae1ec4b65c25c`](https://github.com/lost-rob0t/starintel-server/commit/d4e8447c6049eaed65a93e81668ae1ec4b65c25c)
+- head date: `2026-09-16T01:58:50-04:00`
+- head subject: Merge verified Prolog shard actor deployment (#186)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 d4e8447c6049eaed65a93e81668ae1ec4b65c25c Merge verified Prolog shard actor deployment (#186)
+2026-09-16 d984f1308655cafdebf44b57cb86669cbcd87c29 Install pinned YAML parser for deployment contract tests
+2026-09-16 94ff88d421abe795882ecd6f289f38dbf61550f7 Wire persistent Prolog shard actor into existing actor deployment
 2026-09-14 60191023ac73bcc719fd550d6788322a95c92bc0 Merge pull request #184 from lost-rob0t/fix/docs-starintel-0.9.1-terminology
 2026-09-14 aee5e5b61931fe13994238961e97b34b1feef735 docs(spec): distinguish 0.9.1 release from v0.9 wire schema
 2026-09-14 d94922d21c65f0c0a2c35f0eacaf9beb727e656a Merge pull request #181 from lost-rob0t/feat/ingest-tenant-adapter
@@ -123,6 +126,7 @@
 .forgejo/workflows/doc-coverage.yml
 .github/workflows/doc-coverage.yml
 .github/workflows/operation-091-star-cl-sync.yml
+.github/workflows/operational-salvage.yml
 .github/workflows/starintel-schema-lock.yml
 .github/workflows/sync-operation-runtime-once.yml
 .github/workflows/tmp-org-doc-sync.yml
@@ -203,6 +207,7 @@ doc/v09-runtime.org
 docker-compose.yml
 docker/otelcol-sidecar.yaml
 docker/star-server-init.lisp
+docs/prolog-shard-actor.org
 example_configs/init.lisp
 flake.lock
 flake.nix
@@ -287,6 +292,7 @@ t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
 t/valkey-lease-review-regression-test.lisp
 tests/test_operational_salvage_contract.py
+tests/test_prolog_shard_deployment.py
 tests/test_v09_runtime_contract.py
 ui/ui-server.lisp
 ```
@@ -296,6 +302,7 @@ ui/ui-server.lisp
 ```text
 .github/workflows/doc-coverage.yml
 .github/workflows/operation-091-star-cl-sync.yml
+.github/workflows/operational-salvage.yml
 .github/workflows/starintel-schema-lock.yml
 .github/workflows/sync-operation-runtime-once.yml
 .github/workflows/tmp-org-doc-sync.yml
@@ -323,5 +330,6 @@ t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
 t/valkey-lease-review-regression-test.lisp
 tests/test_operational_salvage_contract.py
+tests/test_prolog_shard_deployment.py
 tests/test_v09_runtime_contract.py
 ```

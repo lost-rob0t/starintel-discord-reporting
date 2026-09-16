@@ -12,7 +12,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/star-config](./star-config.md) `18fe264cea86`
 - [lost-rob0t/star-db-bot](./star-db-bot.md) `f376c60eec13`
 - [lost-rob0t/star-formatter](./star-formatter.md) `2cc01b708208`
-- [lost-rob0t/star-lang](./star-lang.md) `7db89986450d`
+- [lost-rob0t/star-lang](./star-lang.md) `f2f606f34ada`
 - [lost-rob0t/star-router-cli](./star-router-cli.md) `5c9be69ae8fe`
 - [lost-rob0t/star-synthdata](./star-synthdata.md) `687d9f17be92`
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
@@ -22,8 +22,8 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `b55316bae294`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `5857914a1e34`
 - [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `f9e3370b79a3`
-- [lost-rob0t/starintel-server](./starintel-server.md) `60191023ac73`
+- [lost-rob0t/starintel-server](./starintel-server.md) `d4e8447c6049`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `5023309dfced`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
 - [lost-rob0t/tek9](./tek9.md) `1cb978084da8`
-- [lost-rob0t/zara](./zara.md) `8bb909798047`
+- [lost-rob0t/zara](./zara.md) `812d202c0b06`
