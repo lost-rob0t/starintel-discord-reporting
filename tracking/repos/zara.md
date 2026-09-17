@@ -1,15 +1,16 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-17T18:17:31Z`
+- generated: `2026-09-17T22:52:30Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b98470a28fc564cead85d6f6b28df78aef73b0fa`](https://github.com/lost-rob0t/zara/commit/b98470a28fc564cead85d6f6b28df78aef73b0fa)
-- head date: `2026-09-17T15:18:19Z`
-- head subject: feat(config): make project identity Prolog-driven (#914)
+- head: [`2403f81435b3b85e74e5793361c7d605d37dc40e`](https://github.com/lost-rob0t/zara/commit/2403f81435b3b85e74e5793361c7d605d37dc40e)
+- head date: `2026-09-17T19:51:53Z`
+- head subject: fix(android): replay Assistant qualification on current master (#898)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-17 2403f81435b3b85e74e5793361c7d605d37dc40e fix(android): replay Assistant qualification on current master (#898)
 2026-09-17 b98470a28fc564cead85d6f6b28df78aef73b0fa feat(config): make project identity Prolog-driven (#914)
 2026-09-17 52e4cbc853c711d947687f160174081d25465422 fix(android): harden verified self-update lifecycle (#899)
 2026-09-17 6769f3a2e6e42d99e1d5fa359e85a20a621683bc Merge pull request #876 from lost-rob0t/feature/android-wireless-pairing
@@ -860,16 +861,6 @@
 2026-09-03 ae0d49d89dd5b910b43134fc3ffc2cbf56af5bdc RAGE #162: complete typed command definition persistence
 2026-09-03 9693cf1082491a0247dece1695224bbc3729379d docs: record #162 acceptance-gap iteration
 2026-09-03 c189c26dcda56eb363fcfee3586c97a5361da2a3 test: cover full user command persistence contract
-2026-09-03 4cd886cecb2e71e5e054dc08daa0202f13b17d34 test: add user command persistence gate
-2026-09-03 a573ddcb7c10c17165a0c38d696a77e29f205668 feat: persist principal-scoped semantic commands
-2026-09-03 3184fff6e25ae055773a9b77341e3e19580582e1 docs: record #162 RED evidence
-2026-09-03 5c757371475cd823c6f59bc251c03e0c7c9ea1f7 test: cover user command persistence invariants
-2026-09-03 7110b3a693ba566e1259fd8d3ba8a09bc38dadad test: define first user command persistence contract
-2026-09-03 6e85c351f0c197c032983f538e17669e76cd4564 rage: consume issue 162
-2026-09-03 f25aea5f9e5bceb747cb282b6a28c43f07e5b727 Merge pull request #310 from lost-rob0t/rage/309-prolog-config-recovery
-2026-09-03 3c91e35849e38927285a495b3147a2804b6054a6 rage #309: record Nix contract cleanup
-2026-09-03 fdffbe5184d11ddd232e7ca83dd409dcbf02fe17 fix #309: drop Prolog-RLM lock input
-2026-09-03 704b937f04f01e5f8149e5fc61fb067afe3b04e8 fix #309: remove Prolog-RLM Nix wiring
 ```
 
 ## Repository paths changed, last 14 days
@@ -909,6 +900,7 @@ android/app/src/main/java/ai/zara/app/assistant/AssistantLifecycleFence.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantRoleController.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantRoleVoicePolicy.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantVoiceSessionBridge.kt
+android/app/src/main/java/ai/zara/app/assistant/ZaraRecognitionService.kt
 android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionService.kt
 android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionSession.kt
 android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionSessionService.kt
@@ -1009,6 +1001,7 @@ android/app/src/main/res/drawable/ic_zara_foreground.xml
 android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
 android/app/src/main/res/values/strings.xml
 android/app/src/main/res/values/zara_icon_colors.xml
+android/app/src/main/res/xml/recognition_service.xml
 android/app/src/main/res/xml/voice_interaction_service.xml
 android/app/src/main/res/xml/zara_accessibility_service.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
@@ -1136,8 +1129,6 @@ docs/architecture.org
 docs/development.org
 docs/research/002-unified-copilot-voice-visual-ci.md
 docs/server.org
-flake.lock
-flake.nix
 kb/config.pl
 modules/commands.pl
 modules/config_loader.pl
@@ -1196,7 +1187,6 @@ rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
-rage/309-prolog-config-recovery.org
 rage/315-route-backpressure-test-contract.org
 rage/324-expanded-history-sidebar-r2.org
 rage/324-unified-copilot-r2.org
@@ -1240,7 +1230,6 @@ scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
-scripts/test-user-command-persistence.sh
 skills/zara-android-release/SKILL.md
 skills/zara-android-release/agents/openai.yaml
 t/process_safety.pl
@@ -1493,7 +1482,6 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
 android/app/src/test/java/ai/zara/app/watch/WatchInstallPolicyTest.kt
 android/app/src/test/java/ai/zara/app/watch/WatchInstallerContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
-flake.nix
 scripts/check-android-apk-signer.sh
 scripts/import-backlog.py
 scripts/pair-android-qr.sh
@@ -1511,7 +1499,6 @@ scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
-scripts/test-user-command-persistence.sh
 t/process_safety.pl
 t/prolog_config.pl
 t/security_threat_catalog.py
