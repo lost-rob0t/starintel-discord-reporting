@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-17T00:35:10Z`
+- generated: `2026-09-17T07:44:21Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -43,13 +43,6 @@
 2026-09-04 fd8a7af7e10f5c6b643b248252363787957ff1e5 research: RLM-RESEARCH-336 text streaming through the completion boundary
 2026-09-04 d2cc7a99879b845260bdbb8f82cb2925625cab70 chore(verify): record CI whitespace fix evidence
 2026-09-04 43405ed73d66da49564eb3ac255f0efaaf3d31a7 style(plan-graph): remove EOF whitespace blocking CI
-2026-09-03 56901058ec3034c231dbb2462a715420787605bf chore(verify): record #293 adoption gate evidence at head 92550f5
-2026-09-03 92550f5cbe241db3deffddc9b3c5aaf008882bd4 feat(plan-graph): reconcile #293 adoption with D6-11 dispatch and design gate
-2026-09-03 6d5b872972b998d20cb797a8f6f385fc59da5e24 Merge commit '653fed1' into issue-293
-2026-09-03 d5cb6c619f679c9da8939a4178c8a7dd94fbd80e Merge rage/288-spec-plan-graph-executor (71a10ae) into main
-2026-09-02 653fed13ad35b4f8880221c0cff0e60a02cd3dc3 feat(plan-graph): D6-11 plan-native deterministic mutations (#355)
-2026-09-03 466bde0d4c3fc17f62d3bba1b40465e4c2ba6832 Merge pull request 'cd: reference nix-installer-action by full upstream URL' (#298) from cd/nix-installer-action-url into main
-2026-09-02 c6e921363c32e05923a98577e3c89be6b7782e52 cd: reference nix-installer-action by full upstream URL
 ```
 
 ## Repository paths changed, last 14 days
@@ -69,13 +62,9 @@ README.md
 TODO.md
 c/rlm_tree_sitter_query.c
 docs/completion-runtime.md
-docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-semantic.md
 docs/prolog-agent-roadmap.md
-docs/research/expert-direct-tool-projection.org
-docs/research/plan-graph-executor-design.md
-docs/research/spec-plan-authority.md
 flake.nix
 prolog/prolog_agent_ui_facade.pl
 prolog/rlm_completion.pl
@@ -85,19 +74,14 @@ prolog/rlm_project_semantic.pl
 prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
-rage/288-spec-plan-graph-executor.org
 rage/336-text-streaming-design.org
 research/README.md
 research/RLM-RESEARCH-336-text-streaming.org
-research/spec-plan-refinement-kb-state.pl
-scripts/design_gate.pl
-scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
-test/rlm_plan_native_ops_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
@@ -105,7 +89,6 @@ test/rlm_project_semantic_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/plan_graph_test_tools.pl
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -115,14 +98,11 @@ test/support/plan_graph_test_tools.pl
 .github/workflows/nix.yml
 .github/workflows/tree-sitter.yml
 flake.nix
-scripts/design_gate.pl
-scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
-test/rlm_plan_native_ops_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
@@ -130,5 +110,4 @@ test/rlm_project_semantic_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/run_live_openrouter.pl
 test/run_tree_sitter_tests.pl
-test/support/plan_graph_test_tools.pl
 ```

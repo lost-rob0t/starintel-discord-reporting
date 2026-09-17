@@ -1,15 +1,26 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-17T00:35:00Z`
+- generated: `2026-09-17T07:44:02Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`1ac298b797bd4bc0e71cfde083c6a59af55ccc6f`](https://github.com/lost-rob0t/starintel-server/commit/1ac298b797bd4bc0e71cfde083c6a59af55ccc6f)
-- head date: `2026-09-16T10:05:28-04:00`
-- head subject: Merge pull request #190 from lost-rob0t/fix/189-release-terminal-bulk-payloads
+- head: [`e49c67d88d60dbcc0fcba1b4ba76c1a0a6d6655c`](https://github.com/lost-rob0t/starintel-server/commit/e49c67d88d60dbcc0fcba1b4ba76c1a0a6d6655c)
+- head date: `2026-09-16T22:16:45-04:00`
+- head subject: observability: audit search queries and wire hosted telemetry
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 e49c67d88d60dbcc0fcba1b4ba76c1a0a6d6655c observability: audit search queries and wire hosted telemetry
+2026-09-16 61499b8509e6f7c7bb6c0ac54248d1f99863fc99 fix: keep observability transport installation idempotent
+2026-09-16 cd4546871543f6a314fb2eafe901417935042166 observability: pass explicit gate and sidecar endpoint into server
+2026-09-16 5a2cb973ceb82c44b61d1419e4ed8a20d11b0c0e test: call hosted observability helper as internal seam
+2026-09-16 3d09cdad7ea235524abd3a9dfd9a9454a203756f test: cover hosted observability autoload gate
+2026-09-16 e00d4ad79d291134dfcea5e77b847c704b93c31c docs: describe hosted observability autoload gate
+2026-09-16 b88a1d39c34302d2f74a27dfade68f798e131f8b observability: autoload addon for explicit hosted opt-in
+2026-09-16 0ab34b42e9fc47e9c373d868451e3f7dff1c4ac4 docs: define search query audit telemetry
+2026-09-16 ead99ef657f7d5d5235b6993b1481d483016098d test: cover search query audit events
+2026-09-16 6ca67e4328ac7514256594ea3562a4913161a4c2 observability: audit every authorized search query entry
+2026-09-16 414bfba309e2c7de8a40e2625458a7c806ebbf08 observability: make telemetry export explicit opt-in
 2026-09-16 1ac298b797bd4bc0e71cfde083c6a59af55ccc6f Merge pull request #190 from lost-rob0t/fix/189-release-terminal-bulk-payloads
 2026-09-16 5d22fc362259d21d4c18d1fa3e5b7511b797f426 Regenerate bulk job API reference
 2026-09-16 7c2e839ab99e081970c2cd71801ab49ca7c5ed7e Release terminal bulk job request payloads
@@ -242,6 +253,7 @@ source/auth/oauth.lisp
 source/auth/store.lisp
 source/auth/users.lisp
 source/authorization/policy.lisp
+source/authorization/services-final.lisp
 source/authorization/services.lisp
 source/consumers/consumers.lisp
 source/consumers/owner-fixes.lisp
@@ -292,7 +304,9 @@ source/target-recovery.lisp
 source/views/targets.json
 starintel-gserver-tests.asd
 starintel-observability.asd
+t/addon-system-test.lisp
 t/authorization-policy-test.lisp
+t/authorization-services-final-test.lisp
 t/consumers-test.lisp
 t/http-boundary-test.lisp
 t/http-contract-documents-test.lisp
@@ -330,7 +344,9 @@ scripts/stack-test.sh
 source/starintel-gserver.asd
 starintel-gserver-tests.asd
 starintel-observability.asd
+t/addon-system-test.lisp
 t/authorization-policy-test.lisp
+t/authorization-services-final-test.lisp
 t/consumers-test.lisp
 t/http-boundary-test.lisp
 t/http-contract-documents-test.lisp

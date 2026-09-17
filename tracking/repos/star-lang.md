@@ -1,19 +1,28 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-09-17T00:35:08Z`
+- generated: `2026-09-17T07:44:18Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`d320172e42ddc4448da0334fc67c8b7bd6a001e5`](https://github.com/lost-rob0t/star-lang/commit/d320172e42ddc4448da0334fc67c8b7bd6a001e5)
-- head date: `2026-09-16T06:58:39-04:00`
-- head subject: Merge pull request #106 from lost-rob0t/impl5/80-actor-option-keys
+- head: [`c9d56a38e04ef5cc1cfe90924da1551c7125bf3e`](https://github.com/lost-rob0t/star-lang/commit/c9d56a38e04ef5cc1cfe90924da1551c7125bf3e)
+- head date: `2026-09-16T23:29:22-04:00`
+- head subject: canonical-json: add RFC 8785 binary64 foundation
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 c9d56a38e04ef5cc1cfe90924da1551c7125bf3e canonical-json: add RFC 8785 binary64 foundation
+2026-09-16 3c7d2bbb7f4677f42215843e4a00f1b93c1c6216 merge: reconcile current main into binary64 foundation
+2026-09-16 878cd2a99cc99b31f502242ba6adca19cf4815e3 ZMQ transport, managed Nim actors, and StarLang runtime E2E (#112)
+2026-09-16 1abae0372fdb270653d2a38e952a03b30b328a17 Merge current main into #5 canonical JSON branch
+2026-09-16 fe06c3d31d8fb5952da4ff52b5f208b69dceb8c2 canonical-json: reject non-finite binary64 before decode
 2026-09-16 d320172e42ddc4448da0334fc67c8b7bd6a001e5 Merge pull request #106 from lost-rob0t/impl5/80-actor-option-keys
 2026-09-16 2c9d4bb2cf9ff57b1c6b5103df6a4276247a4bbf Merge main into impl5/80-actor-option-keys
+2026-09-16 bdffb8578f714d588d7dce0bb650f3da53bdb29e canonical-json: test exact binary64 range constants
+2026-09-16 93537f382ebb4de6527dae2ef6a8d381a5332ccb canonical-json: use standard binary64 range probes
 2026-09-16 7799dcac1edabd281f6ba2f198c7d3f5d5d653c9 process: harden supervised lifecycle port (#101)
 2026-09-16 06072bd1438b410c6312f6c72249d59d9c423362 Merge main into impl5/80-actor-option-keys
+2026-09-16 8d82fe6e33d762d3e68792dd7e97e781c0140c61 canonical-json: cover shortest lower-bound regression
+2026-09-16 dbaf5783e8656cb310fdc693815cc52697391b79 canonical-json: fix positive-exponent Ryu lower-bound handling
 2026-09-16 ac1d2cfe78e77bed5f44e4d1dc2ec2ea461e7698 http: extract and harden Dexador backend (#100)
 2026-09-16 9d627d50552ea037511e04dcc4d89619f8305dc3 Merge current main into impl/70-dexador-backend
 2026-09-16 7638658b28ccb97babadb228bf9f35a7592a3104 compiler: preserve existing actor diagnostic phase outside option errors
@@ -28,10 +37,15 @@
 2026-09-16 dde8eaf9da68124799d769bc9aa492d93edd436e test(runtime): run ownership regressions
 2026-09-16 0f306f68676c243c529404224e108dab4dd4e017 test(runtime): expose raw actor ownership violations
 2026-09-16 65ee3474a8ce4fb1ee1e12d08b36acd230507e85 process: distinguish forced capture truncation
+2026-09-16 0d95b12dafa6389f8e314d48a982150f112a28ae test: guard binary64 ownership and printer independence
+2026-09-16 38241b1902182477700925562d1662bf978828f3 feat: serialize double-float through canonical binary64 path
+2026-09-16 08998a70fa9748fa6ba6c9e0e4e25905004d88f4 build: load binary64 canonicalizer in final system
+2026-09-16 f2d4e5f9d60a4f2f2acc64aae5e36b2b18f1a7e0 feat: add pure Common Lisp binary64 canonicalization
 2026-09-16 7a5d275b9e1031186f621ee52f6974f7cc7c68b2 process: treat forced capture stop as truncation
 2026-09-16 b153e18ae142793f077e53a4aedbdd11b0861242 docs(process): document bounded inherited-pipe cleanup
 2026-09-16 ba8a0b275ad3c36c02a5046e62d4857e8b1146ec process: bound capture cleanup after root reap
 2026-09-16 5ee19da9a1848f187d0b0f7c080b04d60db3d5f6 process: add bounded capture thread controls
+2026-09-16 85d1e0e84dbb6f8a79f1d7f2bcbcf8319c20cabf test: add RFC 8785 binary64 RED coverage
 2026-09-16 c4a25807dc78ba420a45812f5202c65487562941 test(process): isolate inherited-pipe watchdog red
 2026-09-16 d5be573fa06f715dcb98745d483c7923fa99b911 test(process): reproduce inherited pipe hang
 2026-09-16 b675d3000c1f932097ceb780806898bd43cc0f56 test(process): add inherited-pipe fixture modes
@@ -152,6 +166,7 @@
 .github/workflows/logic-swi.yml
 .github/workflows/nix.yml
 .github/workflows/production-readiness.yml
+.github/workflows/zmq-local.yml
 .prolog/kb/cli-surface.pl
 .prolog/kb/compiler-ownership.pl
 .prolog/kb/load.pl
@@ -197,7 +212,11 @@ star-artifact/src/json-file-output.lisp
 star-artifact/src/packages.lisp
 star-artifact/star-artifact.asd
 star-artifact/tests/star-artifact-tests.lisp
+star-canonical-json/src/binary64.lisp
+star-canonical-json/src/canonical-json.lisp
 star-canonical-json/src/starlang-wire-json.lisp
+star-canonical-json/star-canonical-json.asd
+star-canonical-json/tests/star-canonical-json-tests.lisp
 star-canonical-json/tests/starlang-wire-json-tests.lisp
 star-http-dexador/src/dexador-client.lisp
 star-http-dexador/src/packages.lisp
@@ -251,6 +270,28 @@ star-sento-compat/tests/integration/packages.lisp
 star-sento-compat/tests/integration/real-actor-system-tests.lisp
 star-sento-compat/tests/star-sento-compat-integration-tests.asd
 star-sento-compat/tests/star-sento-compat-tests.lisp
+star-zmq/README.md
+star-zmq/flake.lock
+star-zmq/flake.nix
+star-zmq/nim/actor.nim
+star-zmq/nim/peer.nim
+star-zmq/nim/star_zmq.nim
+star-zmq/python/pyproject.toml
+star-zmq/python/star_zmq.py
+star-zmq/src/peer.lisp
+star-zmq/src/poll.lisp
+star-zmq/src/runtime-adapter.lisp
+star-zmq/src/transport.lisp
+star-zmq/src/wire.lisp
+star-zmq/star-zmq-actors.asd
+star-zmq/star-zmq-runtime.asd
+star-zmq/star-zmq.asd
+star-zmq/tests/actor_conformance.py
+star-zmq/tests/actors.lisp
+star-zmq/tests/adversarial_peer.py
+star-zmq/tests/native.lisp
+star-zmq/tests/runtime-e2e.lisp
+star-zmq/tests/test_transport.py
 starlang-cli/src/cli.lisp
 starlang-cli/src/packages.lisp
 starlang-cli/starlang-cli.asd
@@ -296,6 +337,7 @@ starlang-runtime/tests/wire-dispatcher-failure-settlement-tests.lisp
 .github/workflows/logic-swi.yml
 .github/workflows/nix.yml
 .github/workflows/production-readiness.yml
+.github/workflows/zmq-local.yml
 ci/check-prototype-migration.sh
 ci/check-repository-contracts.sh
 ci/check-swi-adapter-contracts.sh
@@ -309,6 +351,8 @@ star-actor-protocol/tests/portable-snapshot-tests.lisp
 star-actor-protocol/tests/star-actor-protocol-tests.asd
 star-artifact/star-artifact.asd
 star-artifact/tests/star-artifact-tests.lisp
+star-canonical-json/star-canonical-json.asd
+star-canonical-json/tests/star-canonical-json-tests.lisp
 star-canonical-json/tests/starlang-wire-json-tests.lisp
 star-http-dexador/star-http-dexador.asd
 star-http-dexador/tests/star-http-dexador-ownership-tests.lisp
@@ -338,6 +382,16 @@ star-sento-compat/tests/integration/packages.lisp
 star-sento-compat/tests/integration/real-actor-system-tests.lisp
 star-sento-compat/tests/star-sento-compat-integration-tests.asd
 star-sento-compat/tests/star-sento-compat-tests.lisp
+star-zmq/flake.nix
+star-zmq/star-zmq-actors.asd
+star-zmq/star-zmq-runtime.asd
+star-zmq/star-zmq.asd
+star-zmq/tests/actor_conformance.py
+star-zmq/tests/actors.lisp
+star-zmq/tests/adversarial_peer.py
+star-zmq/tests/native.lisp
+star-zmq/tests/runtime-e2e.lisp
+star-zmq/tests/test_transport.py
 starlang-cli/starlang-cli.asd
 starlang-cli/tests/cli-proof.lisp
 starlang-cli/tests/cli-tests.lisp

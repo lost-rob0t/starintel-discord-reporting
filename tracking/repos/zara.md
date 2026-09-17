@@ -1,15 +1,22 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-17T00:35:11Z`
+- generated: `2026-09-17T07:44:25Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b03cbf5c7ed3653c023588db079c87a8a1ed940a`](https://github.com/lost-rob0t/zara/commit/b03cbf5c7ed3653c023588db079c87a8a1ed940a)
-- head date: `2026-09-16T20:25:42-04:00`
-- head subject: Merge pull request #891 from lost-rob0t/feature/android-local-prolog-studio
+- head: [`6cbc73c6f894231e1216df9a5f63e51bfa75cd80`](https://github.com/lost-rob0t/zara/commit/6cbc73c6f894231e1216df9a5f63e51bfa75cd80)
+- head date: `2026-09-17T06:32:09Z`
+- head subject: feat(android): add Prolog-driven Samsung Health plugin (#971)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-17 6cbc73c6f894231e1216df9a5f63e51bfa75cd80 feat(android): add Prolog-driven Samsung Health plugin (#971)
+2026-09-17 8a11e9c583a5539c187633bcf87901111e2cc827 fix(android): restore local-first runtime and automation on-device (#941)
+2026-09-17 ec9756e56537ee85f165291499ceb6312ee84451 feat(android): host embedded local AI and offline TTS service (#907)
+2026-09-17 e8e8382ddea3a48b1b67de9146e5e8ae6d17645f Android: Prolog automation, special access, and Git config templates (#915)
+2026-09-16 5910759379ff623dad83bbd5703629445e3a063a feat(android): install Zara Wear from the phone (#903)
+2026-09-16 ab1ff39f14437db63ac5f47b1ab82bf48248798f ci(android): publish reproducible releases and direct latest APKs (#902)
+2026-09-16 82496e16b9081ff84c59ce52bfab02af0c4e0f5f feat(android): complete expert logic authoring studio (#894)
 2026-09-16 b03cbf5c7ed3653c023588db079c87a8a1ed940a Merge pull request #891 from lost-rob0t/feature/android-local-prolog-studio
 2026-09-16 130dd414b38350607f8a14644e059468934d0a42 feat(android): add local Prolog studio and verified updates
 2026-09-16 43d8fa8c98771e02aff5ee1850ad5f2be7c35377 Merge pull request #890 from lost-rob0t/fix/android-connection-fix
@@ -894,52 +901,13 @@
 2026-09-03 ea787f5807d54ef1801e083e9f250d1bf386e762 docs(rage): record #260 customization wiki slice
 2026-09-03 e15fe203c69ef8196430aa5479158ccfde2e2322 Merge pull request #306 from lost-rob0t/rage/260-customization-diagnostics
 2026-09-03 ad1fe996c6c221c30004e7012fbc9dbfc2b88a74 test: complete diagnostics manager fixture
-2026-09-03 f014ff791568d5001eec7b3838c8218b18a3fb72 RAGE #159 RED: include adversarial device-action tests
-2026-09-03 6dcc6c0ecafb908d13181053f62cb1f64b2976e0 RAGE #159 RED: harden action lifecycle contract
-2026-09-03 4fe812d6a0097144a2cfc5ffae5a418b9ae67ccd RAGE #159: remove one-shot apply harness
-2026-09-03 aa963063bdabc8e6dbd69c88fb16c0354911cb5d RAGE #159: remove one-shot apply workflow
-2026-09-03 c64c408b051e618904b0b25f7eca9728af032eb9 docs(rage): record diagnostics red and implementation
-2026-09-03 f57abe38d6f002694805215bf64e2709e5c41e56 test(rage): use canonical runtime host shutdown
-2026-09-03 c37c0a6539e963ed2784abdf9d5cd7213ab02af0 feat(rage): expose customization diagnostics from runtime host
-2026-09-03 8180f79b6c0bf598fbe8023c61fb595784baee04 [rage159-applied] RAGE #159: implement typed device actions
-2026-09-03 f08caa98e76fafc2209bed0ea3fdde1112e08df9 RAGE #159: tighten gateway patch anchor
-2026-09-03 f3274ad75adc78f58599ae6d1b4b399ca9fc3731 feat(rage): expose runtime customization diagnostics
-2026-09-03 50d522dbbcecbcd294f8282a358ceb8ab8847e93 RAGE #159: run one-shot implementation harness
-2026-09-03 6cd63f28f03a6b9e6679cf4fbc21b8fe5307f0f6 feat(rage): expose bounded customization diagnostics
-2026-09-03 1ed47f4dfd365646b429adc4258e693c0505200a RAGE #159: add one-shot implementation harness
-2026-09-03 1b3008aabd0919a64f127ede4b3c666313316497 feat(rage): add safe backend diagnostics projection
-2026-09-03 b410fe531bdd4e620b2835b0db556b3805c705c4 feat(rage): add safe advice diagnostics projection
-2026-09-03 fa1e5e74bc89f56a84c40a69ce35109320683d2a test(rage): require runtime customization diagnostics seam
-2026-09-03 0387f8adf2e3627fac291ae48b3682338f698e9f RAGE #159: freeze device-action design
-2026-09-03 832c2ec4fa2cac125f03df9651c0bab586e5de5c RAGE #159: record protocol research
-2026-09-03 8f602872227903c8a6c1110068e84e47c3e1f83a RAGE #159 RED: add focused device-action gate
-2026-09-03 b8f2413a149230f247f99b904ab494c489c1bf7d RAGE #159 RED: require typed device-action protocol
-2026-09-03 b6d2754ef6b2c25e3bfeb2ba80b8840d2c674021 RAGE #159: consume typed device-action protocol
-2026-09-03 94aeeae839da4f4d71241100d018f4b4b83c1bdb test: define #260 customization diagnostic contract
-2026-09-03 d04e2a38a07f94c2c4b322c7f912d7a597324184 rage: design #260 customization diagnostics
-2026-09-03 7c70219cb393302145582d31c28b00f214f112d6 rage: research #260 customization diagnostics
-2026-09-03 41c323131f9a0df73f934d72e3388c3183eb3539 rage: start #260 customization diagnostics
-2026-09-03 6141ac7d28c5eb32f0a8e78b31643792aa2c0fd7 Merge pull request #305 from lost-rob0t/rage/260-agent-loop-backend-registry
-2026-09-03 fc573aa8898478187fe9500c69ae81eedae44c76 rage: record override policy for loop backend selection
-2026-09-03 acf10a9f2e1167dc22b47ef451e5b71aecec9db2 test: enforce override gate for custom loop backend
-2026-09-03 44f81d910a73a606eb53c97faac1e035f57a01e5 fix: enforce hook override gate for custom loop backends
-2026-09-03 27994cd898af42dce339b222f3eafed782349c9b feat: gate custom loop backends behind override policy
-2026-09-03 fa6a6699045fe759188c0d8c60df0a1847435056 test: cover implicit langgraph backend default
-2026-09-03 b17cbe3e34f724e023992bc8f75fefa85684d33d feat: resolve configured agent loop through registry
-2026-09-03 dc78c7c970c564584649ccf3b85fee387ffa11c1 feat: add owner-safe agent loop backend registry
-2026-09-03 2c6f9707220828d4318b4c5c9f7cd9ac5559c18c test: define RED contract for named agent loop backends
-2026-09-03 4953cf0cb3fc3c932e7ca73e13d2c2d6f93d394a rage: record #260 agent backend registry design
-2026-09-02 7a89d6d0efeac92ba2ff47203882c2a89b663ede Merge pull request #304 from lost-rob0t/rage/260-service-plugin-advice
-2026-09-02 70413aabc66c077d4757c1bc9663253d3478230a RAGE #260: wire service-plugin advice through RuntimeHost
-2026-09-02 08c2bef5e317065820da49f927ebcee0e16c9fd0 Merge pull request #299 from lost-rob0t/rage/android-172-cross-runtime-parity
-2026-09-02 27aa25c12258f76c7018aeb8f765150ad34dd25c chore(android): reconcile #172 parity with current master
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
+.github/workflows/android-latest.yml
 .github/workflows/ci.yml
-.github/workflows/rage-159-apply.yml
 .github/workflows/rage-575-apply-green.yml
 .github/workflows/release-v0.1.0-alpha.yml
 .github/workflows/release.yml
@@ -949,17 +917,23 @@
 .prolog/kb/index.pl
 .prolog/kb/voice_ingress_stt.pl
 .prolog/kb/wake_connection.pl
+AGENTS.md
 DESIGN.md
 PRODUCT.md
 README.org
+android/.gitignore
 android/AGENTS.md
 android/DESIGN.md
+android/THIRD_PARTY_NOTICES.md
 android/app/build.gradle.kts
+android/app/libs/README.md
 android/app/src/main/AndroidManifest.xml
 android/app/src/main/cpp/zara_trealla_jni.c
 android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/ZaraApplication.kt
+android/app/src/main/java/ai/zara/app/accessibility/AccessibilityAutomationAdapter.kt
+android/app/src/main/java/ai/zara/app/accessibility/ZaraAccessibilityService.kt
 android/app/src/main/java/ai/zara/app/assistant/AndroidAssistantRolePlatform.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantInvocationGate.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantLifecycleFence.kt
@@ -973,14 +947,33 @@ android/app/src/main/java/ai/zara/app/auth/AndroidCredentialCipher.kt
 android/app/src/main/java/ai/zara/app/auth/AuthCore.kt
 android/app/src/main/java/ai/zara/app/auth/EnrollmentRepository.kt
 android/app/src/main/java/ai/zara/app/auth/JeroMqAuth.kt
+android/app/src/main/java/ai/zara/app/automation/AutomationActivity.kt
+android/app/src/main/java/ai/zara/app/control/AndroidControlAccess.kt
+android/app/src/main/java/ai/zara/app/device/AndroidAppAliases.kt
 android/app/src/main/java/ai/zara/app/device/AndroidAppLauncher.kt
+android/app/src/main/java/ai/zara/app/device/AndroidAppSearchLauncher.kt
 android/app/src/main/java/ai/zara/app/device/AndroidUriLauncher.kt
+android/app/src/main/java/ai/zara/app/device/AppSearchAdapter.kt
 android/app/src/main/java/ai/zara/app/device/DeviceActionTypes.kt
 android/app/src/main/java/ai/zara/app/device/DeviceCapabilityRegistry.kt
 android/app/src/main/java/ai/zara/app/device/OpenAppAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriPolicy.kt
 android/app/src/main/java/ai/zara/app/device/RegistryDeviceActionHandler.kt
+android/app/src/main/java/ai/zara/app/localai/AndroidOfflineTtsBackend.kt
+android/app/src/main/java/ai/zara/app/localai/LiteRtLocalLlmBackend.kt
+android/app/src/main/java/ai/zara/app/localai/LocalAiAbi.kt
+android/app/src/main/java/ai/zara/app/localai/LocalAiContracts.kt
+android/app/src/main/java/ai/zara/app/localai/LocalAiProvider.kt
+android/app/src/main/java/ai/zara/app/localai/LocalAiRuntime.kt
+android/app/src/main/java/ai/zara/app/localai/LocalAiService.kt
+android/app/src/main/java/ai/zara/app/localai/LocalAiServiceClient.kt
+android/app/src/main/java/ai/zara/app/localai/LocalModelStore.kt
+android/app/src/main/java/ai/zara/app/localai/LocalTtsContracts.kt
+android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
+android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
+android/app/src/main/java/ai/zara/app/prolog/GitConfigTemplateImporter.kt
+android/app/src/main/java/ai/zara/app/prolog/LogicLanguage.kt
 android/app/src/main/java/ai/zara/app/prolog/NativeTreallaBridge.kt
 android/app/src/main/java/ai/zara/app/prolog/PrologStudio.kt
 android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
@@ -1000,11 +993,15 @@ android/app/src/main/java/ai/zara/app/runtime/ZaraDeviceActionCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
+android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthAndroidPlugin.kt
+android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthPlugin.kt
 android/app/src/main/java/ai/zara/app/ui/AssistantSetupGuidance.kt
+android/app/src/main/java/ai/zara/app/ui/LocalEmbeddingPreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/PrologStudioSurface.kt
 android/app/src/main/java/ai/zara/app/ui/RuntimeModePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/ThemePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/UiOperationFailure.kt
+android/app/src/main/java/ai/zara/app/ui/WatchSetupSurface.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
 android/app/src/main/java/ai/zara/app/update/AndroidUpdateManager.kt
 android/app/src/main/java/ai/zara/app/update/UpdateInstallReceiver.kt
@@ -1028,10 +1025,24 @@ android/app/src/main/java/ai/zara/app/voice/ZaraVoiceAckCodec.kt
 android/app/src/main/java/ai/zara/app/voice/ZaraVoiceCodec.kt
 android/app/src/main/java/ai/zara/app/voice/ZaraVoiceInboundCodec.kt
 android/app/src/main/java/ai/zara/app/voice/ZaraVoiceStreamCodec.kt
+android/app/src/main/java/ai/zara/app/watch/BluetoothWatchScanner.kt
+android/app/src/main/java/ai/zara/app/watch/WatchAdbConnection.kt
+android/app/src/main/java/ai/zara/app/watch/WatchAdbIdentity.kt
+android/app/src/main/java/ai/zara/app/watch/WatchAdbTransfer.kt
+android/app/src/main/java/ai/zara/app/watch/WatchDebugDiscovery.kt
+android/app/src/main/java/ai/zara/app/watch/WatchInstallPolicy.kt
+android/app/src/main/java/ai/zara/app/watch/WatchSetupActivity.kt
+android/app/src/main/java/ai/zara/app/watch/WatchSetupController.kt
+android/app/src/main/java/ai/zara/app/watch/WatchSetupState.kt
+android/app/src/main/java/ai/zara/app/watch/WearApkRepository.kt
+android/app/src/main/java/ai/zara/app/watch/WearNodeScanner.kt
 android/app/src/main/res/drawable/ic_zara_foreground.xml
 android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+android/app/src/main/res/values/strings.xml
 android/app/src/main/res/values/zara_icon_colors.xml
 android/app/src/main/res/xml/voice_interaction_service.xml
+android/app/src/main/res/xml/zara_accessibility_service.xml
+android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AppScopedAssistantRuntimeContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt
@@ -1046,12 +1057,22 @@ android/app/src/test/java/ai/zara/app/assistant/AssistantVoiceSessionBridgeTest.
 android/app/src/test/java/ai/zara/app/assistant/PlaybackSessionInvalidationContractTest.kt
 android/app/src/test/java/ai/zara/app/auth/AuthenticationRevocationAdversarialTest.kt
 android/app/src/test/java/ai/zara/app/auth/AuthenticationTest.kt
+android/app/src/test/java/ai/zara/app/automation/AutomationManifestContractTest.kt
 android/app/src/test/java/ai/zara/app/device/AndroidUriLauncherContractTest.kt
+android/app/src/test/java/ai/zara/app/device/AppSearchAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/DeviceCapabilityRegistryTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
+android/app/src/test/java/ai/zara/app/localai/EmbeddedLocalAiContractTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalAiProviderContractTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalHybridRoutingContractTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalModelStoreTest.kt
+android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
+android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
+android/app/src/test/java/ai/zara/app/prolog/GitConfigTemplateImporterContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
@@ -1082,8 +1103,11 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
+android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiringContractTest.kt
+android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/AndroidPrologStudioContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/RuntimeModePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
@@ -1120,6 +1144,8 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
+android/app/src/test/java/ai/zara/app/watch/WatchInstallPolicyTest.kt
+android/app/src/test/java/ai/zara/app/watch/WatchInstallerContractTest.kt
 android/build.gradle.kts
 android/design/reference-2026-09-07.svg
 android/design/zara-launcher-icon.svg
@@ -1133,6 +1159,7 @@ android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 android/wear-app/build.gradle.kts
 android/wear-app/src/main/AndroidManifest.xml
 android/wear-app/src/main/java/ai/zara/wear/WearMainActivity.kt
+android/wear-app/src/main/res/values/wear.xml
 docs/README.org
 docs/STT.md
 docs/architecture.org
@@ -1145,11 +1172,10 @@ kb/config.pl
 modules/command_loop.pl
 modules/commands.pl
 modules/config_loader.pl
+planning/backlog.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
-rage/159-zara1-device-actions-design.org
-rage/159-zara1-device-actions-research.org
 rage/159-zara1-device-actions.org
 rage/160-semantic-first-runtime.org
 rage/162-user-command-persistence.org
@@ -1199,12 +1225,7 @@ rage/203-android-voice-session-invalidation-r4.org
 rage/216-transcript-normalization-contract-r2.org
 rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
-rage/260-agent-loop-backend-registry.org
-rage/260-customization-diagnostics-design.org
-rage/260-customization-diagnostics-research.org
-rage/260-customization-diagnostics.org
 rage/260-customization-wiki.org
-rage/260-service-plugin-advice.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
 rage/309-prolog-config-recovery-design.org
@@ -1234,12 +1255,13 @@ rage/880-882-voice-pipeline-design.org
 rage/880-882-voice-pipeline-merge-closeout.org
 rage/880-882-voice-pipeline-research.org
 rage/880-882-voice-pipeline.org
+rage/895-android-prolog-ide.org
 rage/client-connection-guards.org
 scripts/check-android-apk-signer.sh
+scripts/import-backlog.py
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
-scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
 scripts/stt-phrase-benchmark.py
 scripts/test-all.sh
@@ -1255,7 +1277,8 @@ scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
-scripts/test-zara1-device-actions.sh
+skills/zara-android-release/SKILL.md
+skills/zara-android-release/agents/openai.yaml
 t/process_safety.pl
 t/prolog_config.pl
 t/prolog_config_recovery.pl
@@ -1263,10 +1286,11 @@ t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
-t/test_agent_loop_backend_registry.py
 t/test_android_gate_diagnostics.py
+t/test_android_release_contract.py
 t/test_api_service.py
 t/test_audio_shared_input.py
+t/test_backlog_import.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
@@ -1312,7 +1336,6 @@ t/test_security_threat_protocol_depth.py
 t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_first_runtime.py
-t/test_service_plugin_advice.py
 t/test_stt_beam_plumbing.py
 t/test_toolnode_dispatch_contract.py
 t/test_transcript_normalization.py
@@ -1340,16 +1363,17 @@ t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
+wiki/android-automation.org
+wiki/android-local-ai.org
 wiki/android-prolog-studio.org
+wiki/android-samsung-health.org
+wiki/android-watch-install.org
 wiki/android.org
 wiki/api-service.org
 wiki/customization.org
 wiki/install.org
 wiki/plugins.org
 zara/__main__.py
-zara/agent/__init__.py
-zara/agent/hooks.py
-zara/agent/loops.py
 zara/agent/tools/registry.py
 zara/audio.py
 zara/command_gate.py
@@ -1367,11 +1391,8 @@ zara/desktop/windows/quick.py
 zara/device_action_replay.py
 zara/dictate.py
 zara/json_limits.py
-zara/plugins/api.py
-zara/plugins/manager.py
 zara/protocol.py
 zara/runtime/backend.py
-zara/runtime/host.py
 zara/runtime/intent_router.py
 zara/runtime/tts_output.py
 zara/s1_mini_normalizer.py
@@ -1401,8 +1422,8 @@ zara/zmq_transport.py
 ## Test and CI paths touched, last 14 days
 
 ```text
+.github/workflows/android-latest.yml
 .github/workflows/ci.yml
-.github/workflows/rage-159-apply.yml
 .github/workflows/rage-575-apply-green.yml
 .github/workflows/release-v0.1.0-alpha.yml
 .github/workflows/release.yml
@@ -1420,12 +1441,22 @@ android/app/src/test/java/ai/zara/app/assistant/AssistantVoiceSessionBridgeTest.
 android/app/src/test/java/ai/zara/app/assistant/PlaybackSessionInvalidationContractTest.kt
 android/app/src/test/java/ai/zara/app/auth/AuthenticationRevocationAdversarialTest.kt
 android/app/src/test/java/ai/zara/app/auth/AuthenticationTest.kt
+android/app/src/test/java/ai/zara/app/automation/AutomationManifestContractTest.kt
 android/app/src/test/java/ai/zara/app/device/AndroidUriLauncherContractTest.kt
+android/app/src/test/java/ai/zara/app/device/AppSearchAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/DeviceCapabilityRegistryTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
+android/app/src/test/java/ai/zara/app/localai/EmbeddedLocalAiContractTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalAiProviderContractTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalHybridRoutingContractTest.kt
+android/app/src/test/java/ai/zara/app/localai/LocalModelStoreTest.kt
+android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
+android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
+android/app/src/test/java/ai/zara/app/prolog/GitConfigTemplateImporterContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
@@ -1456,8 +1487,11 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
+android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiringContractTest.kt
+android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/AndroidPrologStudioContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/RuntimeModePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
@@ -1494,13 +1528,15 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceInboundCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamPayloadLimitTest.kt
+android/app/src/test/java/ai/zara/app/watch/WatchInstallPolicyTest.kt
+android/app/src/test/java/ai/zara/app/watch/WatchInstallerContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/theme/ZaraThemeTest.kt
 flake.nix
 scripts/check-android-apk-signer.sh
+scripts/import-backlog.py
 scripts/pair-android-qr.sh
 scripts/pair-android.sh
 scripts/pair-watch.sh
-scripts/rage-159-apply.py
 scripts/security-fuzz-soak.sh
 scripts/stt-phrase-benchmark.py
 scripts/test-all.sh
@@ -1516,7 +1552,6 @@ scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
 scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
-scripts/test-zara1-device-actions.sh
 t/process_safety.pl
 t/prolog_config.pl
 t/prolog_config_recovery.pl
@@ -1524,10 +1559,11 @@ t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
-t/test_agent_loop_backend_registry.py
 t/test_android_gate_diagnostics.py
+t/test_android_release_contract.py
 t/test_api_service.py
 t/test_audio_shared_input.py
+t/test_backlog_import.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
@@ -1573,7 +1609,6 @@ t/test_security_threat_protocol_depth.py
 t/test_security_threat_reconnect.py
 t/test_security_threat_transport.py
 t/test_semantic_first_runtime.py
-t/test_service_plugin_advice.py
 t/test_stt_beam_plumbing.py
 t/test_toolnode_dispatch_contract.py
 t/test_transcript_normalization.py

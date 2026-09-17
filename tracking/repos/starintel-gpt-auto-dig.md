@@ -1,15 +1,27 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-17T00:35:02Z`
+- generated: `2026-09-17T07:44:07Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`2999b9794373c5c922babe9fac422a701dd55115`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/2999b9794373c5c922babe9fac422a701dd55115)
-- head date: `2026-09-16T11:19:40-04:00`
-- head subject: Merge pull request #2708 from lost-rob0t/fix/backlog-canonical-target-bulk
+- head: [`0114f25f8fbab59fa31d70877bf988a28f4a40c5`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0114f25f8fbab59fa31d70877bf988a28f4a40c5)
+- head date: `2026-09-16T22:23:42-04:00`
+- head subject: Merge StarIntel 0.9.2 network-capture profile
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 0114f25f8fbab59fa31d70877bf988a28f4a40c5 Merge StarIntel 0.9.2 network-capture profile
+2026-09-16 242389398a2a1d94245d5f023cfd35770a2e3617 test(spec): lock 0.9.2 network capture release manifest
+2026-09-16 c8d44f4bb1121093ea437175bf35cc7d5be3799d feat(spec): publish 0.9.2 network capture release manifest
+2026-09-16 5c85f1c9a10f79200ffe122149ccc6d501d757d7 test(spec): require captcha.solve opaque source context
+2026-09-16 69fef49328be7bad7a80bc6356ddb038c81da0db fix(spec): default challenged captures to captcha.solve capability
+2026-09-16 fb74695631389f5b24a2b698d3b95d6c52712a18 fix(spec): model captcha.solve session and network binding
+2026-09-16 9307844fb15be52b9fb8164af67e3c4ed4aea678 test(spec): cover HTTP challenge actor handoff metadata
+2026-09-16 6a10a9b71d4beaacf92275564c2f92d23b516299 fix(spec): align HTTP challenge actor handoff field
+2026-09-16 f0c4644d0af522ab57a479561eb2024dbd3ceb22 test: match strict undeclared-field error
+2026-09-16 f5d2640ea83a18a4e7dc43dc331c79c3ecabc1cd test(spec): cover network capture 0.9.2 profile
+2026-09-16 fa60f8d7b4cbc9d054b5b401692fc100b21d8bfa feat(spec): validate and project network capture documents
+2026-09-16 abadb7f86c4c482c32887b0869cafb8aae4d2e02 feat(spec): add 0.9.2 network capture profile
 2026-09-16 2999b9794373c5c922babe9fac422a701dd55115 Merge pull request #2708 from lost-rob0t/fix/backlog-canonical-target-bulk
 2026-09-16 5f355969b0124f1b62f4b549552641d06422d3e5 Import canonical targets through authorized bulk route
 2026-09-16 d62036b67c0449d9d7c823436a6c4181ed32f086 Merge pull request #2707 from lost-rob0t/fix/backlog-legacy-source-normalization
@@ -22151,6 +22163,7 @@ requirements/backend.txt
 schemas/starintel-doc-v0.9.0.expansion.json
 schemas/starintel-doc-v0.9.0.manifest.json
 schemas/starintel-doc-v0.9.0.schema.json
+schemas/starintel-network-capture-v0.9.2.manifest.json
 scripts/apply_prolog_rlm_hotfix.py
 scripts/apply_prolog_rlm_hotfix_base.py
 scripts/check-auto-dig-control.py
@@ -22167,8 +22180,10 @@ scripts/scrape_dark_academia_memberships.py
 scripts/starintel_ingest_core.nim
 scripts/sync_membership_list_issues.py
 starintel_auto_dig.nimble
+starintel_doc/network_capture.py
 starintel_doc/operation_spec.py
 starintel_doc/schema_org.py
+starintel_doc/spec_092.py
 starintel_doc/validation.py
 tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
@@ -22178,6 +22193,8 @@ tests/test_export_starintel_documents.py
 tests/test_import_starintel.py
 tests/test_import_starintel_backlog.py
 tests/test_import_starintel_corpus.py
+tests/test_network_capture_092.py
+tests/test_network_capture_release_manifest.py
 tests/test_operation_document.py
 tests/test_operation_registry.py
 tests/test_quasar_autodig_heartbeat.py
@@ -22235,6 +22252,8 @@ tests/test_export_starintel_documents.py
 tests/test_import_starintel.py
 tests/test_import_starintel_backlog.py
 tests/test_import_starintel_corpus.py
+tests/test_network_capture_092.py
+tests/test_network_capture_release_manifest.py
 tests/test_operation_document.py
 tests/test_operation_registry.py
 tests/test_quasar_autodig_heartbeat.py

@@ -12,7 +12,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/star-config](./star-config.md) `18fe264cea86`
 - [lost-rob0t/star-db-bot](./star-db-bot.md) `f376c60eec13`
 - [lost-rob0t/star-formatter](./star-formatter.md) `2cc01b708208`
-- [lost-rob0t/star-lang](./star-lang.md) `d320172e42dd`
+- [lost-rob0t/star-lang](./star-lang.md) `c9d56a38e04e`
 - [lost-rob0t/star-router-cli](./star-router-cli.md) `5c9be69ae8fe`
 - [lost-rob0t/star-synthdata](./star-synthdata.md) `687d9f17be92`
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
@@ -20,10 +20,10 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `25f083a25c11`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `b55316bae294`
-- [lost-rob0t/starintel-doc](./starintel-doc.md) `5857914a1e34`
-- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `2999b9794373`
-- [lost-rob0t/starintel-server](./starintel-server.md) `1ac298b797bd`
+- [lost-rob0t/starintel-doc](./starintel-doc.md) `2e52d38c807c`
+- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `0114f25f8fba`
+- [lost-rob0t/starintel-server](./starintel-server.md) `e49c67d88d60`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `5023309dfced`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
-- [lost-rob0t/tek9](./tek9.md) `1cb978084da8`
-- [lost-rob0t/zara](./zara.md) `b03cbf5c7ed3`
+- [lost-rob0t/tek9](./tek9.md) `8178cf0af2fc`
+- [lost-rob0t/zara](./zara.md) `6cbc73c6f894`
