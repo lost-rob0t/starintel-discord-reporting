@@ -2744,11 +2744,11 @@
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
-      "starintel-updates-changelog": 11
+      "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 197,
-    "verified_deliveries": 188
+    "total_reports": 229,
+    "verified_deliveries": 220
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
