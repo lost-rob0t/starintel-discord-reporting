@@ -1,0 +1,11 @@
+{
+  "edition": "2026-09-17-expanded-and-android",
+  "authorization": "User requested in-depth posts for all active projects and one separate Android post per project in StarIntel Shipyard.",
+  "destination": "1539717118218469416",
+  "expected_new_reports": 32,
+  "editorial_policy": "A main article and its separately requested Android companion are one reviewed editorial batch with shared source evidence. Every article must independently pass the existing dedupe and content checks against deliveries preceding this batch. No dedupe implementation changes or fabricated new-feature claims are permitted. Exact duplicate bodies are rejected within the batch. Previously delivered articles are never edited or replayed.",
+  "existing_main_articles": [
+    "reports/starintel-updates-changelog/2026-09-17T05-57-14Z-report.md",
+    "reports/starintel-updates-changelog/2026-09-17T05-57-15Z-report.md"
+  ]
+}
