@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-16T21:22:10Z`
+- generated: `2026-09-17T00:35:03Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`825689da3ad669a29a9a7af585e7cdc8db2693b1`](https://github.com/lost-rob0t/starintel-auto-research/commit/825689da3ad669a29a9a7af585e7cdc8db2693b1)
-- head date: `2026-09-14T22:44:53-04:00`
-- head subject: research: correct actor registry vs StarLang routing ownership
+- head: [`25f083a25c1168ff085d891995d85bda7504ec2e`](https://github.com/lost-rob0t/starintel-auto-research/commit/25f083a25c1168ff085d891995d85bda7504ec2e)
+- head date: `2026-09-16T17:43:50-04:00`
+- head subject: research: design pro actors captcha and webdriver plugin
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 25f083a25c1168ff085d891995d85bda7504ec2e research: design pro actors captcha and webdriver plugin
 2026-09-14 825689da3ad669a29a9a7af585e7cdc8db2693b1 research: correct actor registry vs StarLang routing ownership
 2026-09-14 3126d671fdc58aaef1da05ea8e0698818c45d056 research: make StarLang sole actor/service registry authority
 2026-09-14 b8c08859cee98c7ae568db6f41d3c9f71d2a49dd research: reconcile target lease execution authority with current server
@@ -58,10 +59,15 @@
 roam/design/star-kb/STAR-KB-001-canonical-knowledge-authoring-and-query-plane.org
 roam/design/star-kb/STAR-KB-001-v0.1-shared-prolog-knowledge-library.org
 roam/design/star-kb/STAR-KB-002-portable-logic-packages-and-sandboxed-actors.org
+roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
 roam/design/star-server/STAR-SERVER-061-sento-total-concurrency-accounting.org
+roam/design/starintel-pro-actors/STAR-PRO-CAPTCHA-004-self-sourced-local-solver-actors.org
+roam/design/starintel-pro-actors/STAR-PRO-PLUGIN-001-lisp-addon-polyglot-contract.org
+roam/design/starintel-pro-actors/STAR-PRO-WEBDRIVER-001-headless-actor-system.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/star-kb/STAR-KB-INDEX-000-prolog-knowledge-system.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
+roam/indexes/starintel-pro-actors/STAR-PRO-INDEX-001-captcha-service-actors.org
 roam/research/ardr-issues/ARDR-ISSUE-191-deployment-config-secrets-contract.org
 roam/research/ardr-issues/ARDR-ISSUE-206-identifier-normalization.org
 roam/research/star-kb/STAR-KB-RESEARCH-001-shared-prolog-knowledge-plane-and-dialect-enrichment.org
@@ -82,6 +88,8 @@ roam/research/star-server/STAR-RESEARCH-062-prolog-star-client-actor-runtime.org
 roam/research/star-server/STAR-RESEARCH-063-awesome-osint-research-backlog.org
 roam/research/starintel-android/STARINTEL-ANDROID-RESEARCH-001-abcl-starlang-field-runtime.org
 roam/research/starintel-java/STARINTEL-JAVA-RESEARCH-001-abcl-backed-jvm-binding.org
+roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-009-hugging-face-captcha-model-routing.org
+roam/research/starintel-pro-actors/STAR-PRO-RESEARCH-010-lisp-webdriver-async-sync-semantics.org
 roam/research/starintel-server/STAR-RESEARCH-061-identifier-normalization.org
 scripts/__pycache__/save-research.cpython-313.pyc
 scripts/verify_research_approval_history.py

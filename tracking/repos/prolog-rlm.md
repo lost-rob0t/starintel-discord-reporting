@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-16T21:22:17Z`
+- generated: `2026-09-17T00:35:10Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -50,24 +50,6 @@
 2026-09-02 653fed13ad35b4f8880221c0cff0e60a02cd3dc3 feat(plan-graph): D6-11 plan-native deterministic mutations (#355)
 2026-09-03 466bde0d4c3fc17f62d3bba1b40465e4c2ba6832 Merge pull request 'cd: reference nix-installer-action by full upstream URL' (#298) from cd/nix-installer-action-url into main
 2026-09-02 c6e921363c32e05923a98577e3c89be6b7782e52 cd: reference nix-installer-action by full upstream URL
-2026-09-02 3aa16838f58915a3ec392d4832571828604c7c76 Merge pull request 'docs: record #97 research Q&A notes' (#297) from rage/97-query-capture-apis into main
-2026-09-02 be9e8b20c6bd563b822d7b191516c938371a6ab9 docs: record #97 research Q&A notes
-2026-09-02 ae14ae11ae5a99d8e8dc607fc714bb61d7326126 Merge pull request 'docs(research): approve RLM-RESEARCH-353' (#296) from research/expert-direct-tool-projection into main
-2026-09-02 d0d6c0b7792f526bb6923b46f4e18741c94389b2 docs(research): approve RLM-RESEARCH-353 (operator)
-2026-09-02 037ea1f149a8b2bb75fad0a0b14fe44f4e587d49 Merge pull request 'feat: implement #97 tree-sitter query pack and capture APIs' (#294) from rage/97-query-capture-apis into main
-2026-09-02 6153b00a4cfdd3f51c3463b78b4f53484ad73a21 chore: re-observe #97 evidence at head 13efeac
-2026-09-02 053dd796e742e42a3f1da1d9b801a3065b53f78a Merge pull request '[RESEARCH] Experts as native direct-mode tools (RLM-RESEARCH-353)' (#295) from research/expert-direct-tool-projection into main
-2026-09-02 13efeac4b693cbf97368acd39dc0298de8315e76 chore: ignore prolog-verify lock file
-2026-09-02 e6e49170805400596f1ac4d3e31adc3a3194334e chore: track #97 prolog-verify evidence and gate state
-2026-09-02 bf8b08ca9ed0bb95133dfa6df9aff5d063a94cab research: operator resolves OQ3 - keycard rule for model grants
-2026-09-02 89b5eb387dd8305d15ee3968cc6c9303eece71e5 research: OQ3 - model grants are structural, advertisement distinction dissolves
-2026-09-02 48f32941cbbfeddb5f138a93767c8a6f2f85f9fb research: operator resolves OQ2 - adopt turn-cost-aware admission direction
-2026-09-02 3334eaaee74e718273044022e91c4e4e4812878e research: OQ2 operator steering - constant time budgeting is the fundamental problem
-2026-09-02 c24e87cc18c2dbcee91017eb3a6e234f7580adcd feat: implement #97 tree-sitter query pack and capture APIs
-2026-09-02 b20d96a5a2220760b6d3b502be637dfee4674e6a research: operator resolves OQ6 - expert availability is a first-class event
-2026-09-02 91f5b2993881dea088cef428c72403c441ae6f86 research: operator rejects relaxing single-effect-call rule (closes OQ5)
-2026-09-02 ca29ec1c26a3995c6993b3ee44712a933afa4561 research: answer operator note on effect batching (open question 5)
-2026-09-02 5a6e89c4c08d1ad18917df5796c6b91a5584e77c research: convert record to canonical org template (RLM-RESEARCH-353)
 ```
 
 ## Repository paths changed, last 14 days
@@ -76,7 +58,6 @@
 .github/workflows/ci.yml
 .github/workflows/nix.yml
 .github/workflows/tree-sitter.yml
-.prolog/.gitignore
 .prolog/facts.kb
 .prolog/kb/debugging-recipes.pl
 .prolog/kb/index.pl
@@ -84,22 +65,14 @@
 .prolog/kb/tree-sitter-ffi.pl
 .prolog/verify.pl
 AGENTS.md
-Makefile
 README.md
 TODO.md
-c/rlm_tree_sitter.c
-c/rlm_tree_sitter_internal.h
-c/rlm_tree_sitter_lifetime.c
-c/rlm_tree_sitter_node.c
 c/rlm_tree_sitter_query.c
-c/rlm_tree_sitter_support.c
 docs/completion-runtime.md
 docs/plan-graph-runtime.md
 docs/project-query.md
 docs/project-semantic.md
-docs/project-syntax.md
 docs/prolog-agent-roadmap.md
-docs/research/expert-direct-tool-projection.md
 docs/research/expert-direct-tool-projection.org
 docs/research/plan-graph-executor-design.md
 docs/research/spec-plan-authority.md
@@ -108,20 +81,15 @@ prolog/prolog_agent_ui_facade.pl
 prolog/rlm_completion.pl
 prolog/rlm_plan_graph.pl
 prolog/rlm_project_query.pl
-prolog/rlm_project_query_persist.pl
 prolog/rlm_project_semantic.pl
 prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
-prolog/rlm_tree_sitter.pl
 rage/288-spec-plan-graph-executor.org
 rage/336-text-streaming-design.org
-rage/97-query-capture-apis.org
-rage/97-query-capture-notes.org
 research/README.md
 research/RLM-RESEARCH-336-text-streaming.org
 research/spec-plan-refinement-kb-state.pl
-scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
@@ -130,9 +98,6 @@ test/load_all.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
-test/rlm_project_query_restart_phase1.pl
-test/rlm_project_query_restart_phase2.pl
-test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
@@ -150,7 +115,6 @@ test/support/plan_graph_test_tools.pl
 .github/workflows/nix.yml
 .github/workflows/tree-sitter.yml
 flake.nix
-scripts/build-tree-sitter-test-grammars.sh
 scripts/design_gate.pl
 scripts/plan_graph_contract_check.pl
 test/deterministic_corpus.pl
@@ -159,9 +123,6 @@ test/load_all.pl
 test/rlm_completion_stream_test.pl
 test/rlm_plan_graph_test.pl
 test/rlm_plan_native_ops_test.pl
-test/rlm_project_query_restart_phase1.pl
-test/rlm_project_query_restart_phase2.pl
-test/rlm_project_query_restart_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl

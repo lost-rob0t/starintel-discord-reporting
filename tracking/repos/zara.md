@@ -1,15 +1,17 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-16T21:22:20Z`
+- generated: `2026-09-17T00:35:11Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`43d8fa8c98771e02aff5ee1850ad5f2be7c35377`](https://github.com/lost-rob0t/zara/commit/43d8fa8c98771e02aff5ee1850ad5f2be7c35377)
-- head date: `2026-09-16T15:36:56-04:00`
-- head subject: Merge pull request #890 from lost-rob0t/fix/android-connection-fix
+- head: [`b03cbf5c7ed3653c023588db079c87a8a1ed940a`](https://github.com/lost-rob0t/zara/commit/b03cbf5c7ed3653c023588db079c87a8a1ed940a)
+- head date: `2026-09-16T20:25:42-04:00`
+- head subject: Merge pull request #891 from lost-rob0t/feature/android-local-prolog-studio
 
 ## Git log, last 14 days
 
 ```text
+2026-09-16 b03cbf5c7ed3653c023588db079c87a8a1ed940a Merge pull request #891 from lost-rob0t/feature/android-local-prolog-studio
+2026-09-16 130dd414b38350607f8a14644e059468934d0a42 feat(android): add local Prolog studio and verified updates
 2026-09-16 43d8fa8c98771e02aff5ee1850ad5f2be7c35377 Merge pull request #890 from lost-rob0t/fix/android-connection-fix
 2026-09-16 3e6c61c2f00963296a7d90b8266372e48bdfd2cf release(android): prepare v0.1.2-alpha in GitHub Actions
 2026-09-16 66b976e65da06e68f2277bebc1762cde40836c85 feat(android): add Zara adaptive launcher icon
@@ -931,21 +933,6 @@
 2026-09-02 70413aabc66c077d4757c1bc9663253d3478230a RAGE #260: wire service-plugin advice through RuntimeHost
 2026-09-02 08c2bef5e317065820da49f927ebcee0e16c9fd0 Merge pull request #299 from lost-rob0t/rage/android-172-cross-runtime-parity
 2026-09-02 27aa25c12258f76c7018aeb8f765150ad34dd25c chore(android): reconcile #172 parity with current master
-2026-09-02 c07914416b5995f5b708e51790544151714e82bd Merge pull request #303 from lost-rob0t/rage/zara-004-config-durability
-2026-09-02 b8ec2eae62ffef834be03cd6e8c84f88b519306a fix(android): make ambiguity matching Trealla-portable
-2026-09-02 096c6606dc6f790f40c99f86ea85d19a0c2ece9a RAGE #5: record config layering implementation
-2026-09-02 96ca65eb033d4d90f06310cd13696f31c378655f RAGE #5: layer mutable Prolog config over provisioned base
-2026-09-02 7b891ffee6b91ba4fa31b9d33b1ffc44d36f757e RAGE #5: enforce explicit PLUnit result accounting
-2026-09-02 c5444b6354767965ecf70c74046122a42c7f8105 RAGE #5: make Prolog test failure set process status
-2026-09-02 2ece25e99c98bbbc8a753d95f792f2beeb9b52af RAGE #5: make PLUnit config gate target the loaded unit
-2026-09-02 e80a24d4c99737420cae9f14aa2ad18b816976a9 fix(android): treat whitespace-only utterances as empty
-2026-09-02 f6dd1da9df1b2a9cd5a932104ef76a2af13f3841 RAGE #5: record false-green harness finding
-2026-09-02 b33dd78fe728d4badd40753e880eac254a305ee7 RAGE #5: make Prolog config test launcher fail closed
-2026-09-02 9df18df47c5afb0657c8b6662a30c440a3a8d3e6 RAGE #5 RED: require durable local Prolog config overlay
-2026-09-02 0902076daea66474b7ba4ea322f6d939ed8fb32e RAGE #5: record config durability transaction and design
-2026-09-02 7e72d98e0cfc262294f01ed177416a3b2c3bf275 Merge pull request #298 from lost-rob0t/rage/260-prolog-command-advice
-2026-09-02 d74f89ca0173db2cac2ccecbca4aef318de97b56 fix(android): compare portable parity attestations
-2026-09-02 94416a0bcee155440d78966549c8c6b7ddb00d62 fix(android): handle empty utterances portably
 ```
 
 ## Repository paths changed, last 14 days
@@ -969,7 +956,7 @@ android/AGENTS.md
 android/DESIGN.md
 android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
-android/app/src/main/assets/prolog/portable/semantic_core.pl
+android/app/src/main/cpp/zara_trealla_jni.c
 android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/ZaraApplication.kt
@@ -994,13 +981,18 @@ android/app/src/main/java/ai/zara/app/device/OpenAppAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriPolicy.kt
 android/app/src/main/java/ai/zara/app/device/RegistryDeviceActionHandler.kt
+android/app/src/main/java/ai/zara/app/prolog/NativeTreallaBridge.kt
+android/app/src/main/java/ai/zara/app/prolog/PrologStudio.kt
+android/app/src/main/java/ai/zara/app/prolog/TreallaSemanticRuntime.kt
 android/app/src/main/java/ai/zara/app/runtime/AndroidTextSessionController.kt
 android/app/src/main/java/ai/zara/app/runtime/ClientStateStore.kt
 android/app/src/main/java/ai/zara/app/runtime/ConnectionFailureReason.kt
 android/app/src/main/java/ai/zara/app/runtime/DeviceActionHandler.kt
 android/app/src/main/java/ai/zara/app/runtime/EnrollmentProjection.kt
 android/app/src/main/java/ai/zara/app/runtime/JeroMqTextDealer.kt
+android/app/src/main/java/ai/zara/app/runtime/LocalZaraServer.kt
 android/app/src/main/java/ai/zara/app/runtime/RequestCorrelations.kt
+android/app/src/main/java/ai/zara/app/runtime/RuntimeMode.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
 android/app/src/main/java/ai/zara/app/runtime/ServerProfile.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraCapabilityCodec.kt
@@ -1009,9 +1001,14 @@ android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
 android/app/src/main/java/ai/zara/app/ui/AssistantSetupGuidance.kt
+android/app/src/main/java/ai/zara/app/ui/PrologStudioSurface.kt
+android/app/src/main/java/ai/zara/app/ui/RuntimeModePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/ThemePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/UiOperationFailure.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
+android/app/src/main/java/ai/zara/app/update/AndroidUpdateManager.kt
+android/app/src/main/java/ai/zara/app/update/UpdateInstallReceiver.kt
+android/app/src/main/java/ai/zara/app/update/UpdateSecurity.kt
 android/app/src/main/java/ai/zara/app/voice/AndroidAudioFocusPlatform.kt
 android/app/src/main/java/ai/zara/app/voice/AndroidAudioRoutePlatform.kt
 android/app/src/main/java/ai/zara/app/voice/AndroidPcmOutput.kt
@@ -1056,6 +1053,8 @@ android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
+android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
+android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1063,6 +1062,7 @@ android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionRestartTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ConnectionFailureReasonTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
+android/app/src/test/java/ai/zara/app/runtime/LocalZaraServerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
@@ -1083,10 +1083,12 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/AndroidPrologStudioContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/update/UpdateSecurityTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioRouteControllerTest.kt
@@ -1143,7 +1145,6 @@ kb/config.pl
 modules/command_loop.pl
 modules/commands.pl
 modules/config_loader.pl
-modules/intent_frames.pl
 rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
@@ -1222,7 +1223,6 @@ rage/371-plugin-approval-contract.org
 rage/388-plugin-cancellation-r16.org
 rage/388-plugin-cancellation-r17.org
 rage/492-device-action-replay-r3.org
-rage/5-config-durability.org
 rage/575-gateway-send-diagnostics.org
 rage/575-stock-interop-diagnostics.org
 rage/575-transient-send-backpressure-r3.org
@@ -1245,7 +1245,6 @@ scripts/stt-phrase-benchmark.py
 scripts/test-all.sh
 scripts/test-android-device.sh
 scripts/test-android-release.sh
-scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
@@ -1341,6 +1340,7 @@ t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
+wiki/android-prolog-studio.org
 wiki/android.org
 wiki/api-service.org
 wiki/customization.org
@@ -1427,6 +1427,8 @@ android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
+android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
+android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1434,6 +1436,7 @@ android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionRestartTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ClientStateStoreTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ConnectionFailureReasonTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
+android/app/src/test/java/ai/zara/app/runtime/LocalZaraServerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
@@ -1454,10 +1457,12 @@ android/app/src/test/java/ai/zara/app/runtime/ZaraTextTurnOrderingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceHelloCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraVoiceNegotiationTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/AndroidPrologStudioContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/update/UpdateSecurityTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioRouteControllerTest.kt
@@ -1501,7 +1506,6 @@ scripts/stt-phrase-benchmark.py
 scripts/test-all.sh
 scripts/test-android-device.sh
 scripts/test-android-release.sh
-scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
