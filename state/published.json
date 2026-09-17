@@ -2562,6 +2562,18 @@
       "report_digest": "f0ad9a31224188cb73c85ae05a5b2d4a3cef0f6af15c01748f774a7cc821711c",
       "status": "verified-delivered"
     },
+    "reports/starintel-updates-changelog/2026-09-17-zara-samsung-health-report.md": {
+      "accepted_at": "2026-09-17T14:25:54.326512+00:00",
+      "attempted_at": "2026-09-17T14:25:54.326512+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T14:25:54.326512+00:00",
+      "message_ids": [
+        "1550150812288942195"
+      ],
+      "report_digest": "38eb321e44eb994c4e6210b5a274e0092ed21e0831a9f11b4d28dc06d056dbfc",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/2026-09-17T05-57-14Z-report.md": {
       "accepted_at": "2026-09-17T06:08:52.734797+00:00",
       "attempted_at": "2026-09-17T06:08:52.734797+00:00",
