@@ -30,17 +30,21 @@ def _now() -> str:
 
 
 def _split_plain_text(text: str, limit: int) -> list[str]:
+    if limit <= 0:
+        raise ValueError("limit must be positive")
     parts = []
     rest = text
     while len(rest) > limit:
-        window = rest[: limit + 1]
-        cut = max(window.rfind("\n\n", 0, limit + 1), window.rfind("\n", 0, limit + 1), window.rfind(" ", 0, limit + 1))
+        # Delimiters must fit inside the budget, not one character beyond it.
+        window = rest[:limit]
+        cut = max(window.rfind("\n\n"), window.rfind("\n"), window.rfind(" "))
         if cut <= 0:
             cut = limit
         elif window[cut:cut + 2] == "\n\n":
             cut += 2
         else:
             cut += 1
+        assert 0 < cut <= limit
         parts.append(rest[:cut])
         rest = rest[cut:]
     if rest:
@@ -61,7 +65,8 @@ def _split_code_block(block: str, limit: int) -> list[str]:
         body = "".join(lines[1:])
     if not closing.endswith("\n"):
         closing += "\n"
-    body_limit = limit - len(opening) - len(closing)
+    # A split inside a long source line needs a newline before the closing fence.
+    body_limit = limit - len(opening) - len(closing) - 1
     if body_limit <= 0:
         raise ValueError("message limit too small for fenced block")
     out = []
