@@ -1,15 +1,17 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-17T07:44:25Z`
+- generated: `2026-09-17T13:31:57Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`6cbc73c6f894231e1216df9a5f63e51bfa75cd80`](https://github.com/lost-rob0t/zara/commit/6cbc73c6f894231e1216df9a5f63e51bfa75cd80)
-- head date: `2026-09-17T06:32:09Z`
-- head subject: feat(android): add Prolog-driven Samsung Health plugin (#971)
+- head: [`01a9a56307d0edbd1f6afdede364af188c2dbe86`](https://github.com/lost-rob0t/zara/commit/01a9a56307d0edbd1f6afdede364af188c2dbe86)
+- head date: `2026-09-17T05:01:57-04:00`
+- head subject: fix(ci): replay Android/Wear artifact gates on current master (#947)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-17 01a9a56307d0edbd1f6afdede364af188c2dbe86 fix(ci): replay Android/Wear artifact gates on current master (#947)
+2026-09-17 df01a886cf3e4f800458c2269a04af84a86c496c fix(android): restore AutomationActivity Compose build
 2026-09-17 6cbc73c6f894231e1216df9a5f63e51bfa75cd80 feat(android): add Prolog-driven Samsung Health plugin (#971)
 2026-09-17 8a11e9c583a5539c187633bcf87901111e2cc827 fix(android): restore local-first runtime and automation on-device (#941)
 2026-09-17 ec9756e56537ee85f165291499ceb6312ee84451 feat(android): host embedded local AI and offline TTS service (#907)
@@ -883,24 +885,6 @@
 2026-09-03 8f61822ce5f244aed20bf108d4f19b92fa238b1c fix(config): reject removed RLM knobs and document local overlay
 2026-09-03 0412cae73595f75a85e54b9ef058daca8dc34022 docs(rage): record first genuine RED for #309
 2026-09-03 b6220dea467660ed6cdf9aded0eaeeb1222abf09 fix(config): make Brave the supported built-in search default
-2026-09-03 329e3db39ff13516b8aceb86e869de363be79229 test: make phase failures unswallowable
-2026-09-03 da62139a68ef9dcd2e3f08b9488ab97852995fcf docs(rage): record third false-green and hard RED gate
-2026-09-03 8c60d925d9e29f177c1d4d09ecd0bdec08d00b49 test: make Prolog recovery RED fail closed
-2026-09-03 504b38246f19fcc7eedd506786a1f92e6865d68c rage: record second false-green and fail-closed RED harness
-2026-09-03 d05d7dc401b9463e284104ab079d5f6b9058bbbb test: make Prolog config RED gate fail closed
-2026-09-03 b1e49d9cdf4a79059f3f216324683c2a2edda1bd rage: record false-green harness and corrected RED candidate
-2026-09-03 e0974ff2b23fc757c2a7b44bdfa02af4a710dee6 test: run recovery PlUnit separately so RED cannot false-green
-2026-09-03 28f4c7d7658cd8780a447f20612d7382fe4920ed rage: record issue 309 research design and RED candidate
-2026-09-03 291975c0dc2c3fe611a11c52f7f1957918ca1dee test: include issue 309 recovery unit in Prolog config gate
-2026-09-03 17dec76d5d4229cee4e13d351202e0e486258ba9 test: define RED config recovery contract for issue 309
-2026-09-03 696a3883a460a3b05e2ebbef16186378df01767a rage: design issue 309 config recovery contract
-2026-09-03 1d89c457b12881129cb6a8926997a1057a440e65 rage: research issue 309 config authority regression
-2026-09-03 6da4aa595d16cb3f1b7dd0ed81a86595407a850c rage: consume issue 309 from exact master
-2026-09-03 e6d9409e49246a187d5ea015da681bfc4e4fdc63 Merge pull request #308 from lost-rob0t/docs/260-customization-wiki
-2026-09-03 5a2999390ffe29ad10d8c4208c59d2a0e7bd6399 docs: document hooks advice and agent backends
-2026-09-03 ea787f5807d54ef1801e083e9f250d1bf386e762 docs(rage): record #260 customization wiki slice
-2026-09-03 e15fe203c69ef8196430aa5479158ccfde2e2322 Merge pull request #306 from lost-rob0t/rage/260-customization-diagnostics
-2026-09-03 ad1fe996c6c221c30004e7012fbc9dbfc2b88a74 test: complete diagnostics manager fixture
 ```
 
 ## Repository paths changed, last 14 days
@@ -1225,11 +1209,8 @@ rage/203-android-voice-session-invalidation-r4.org
 rage/216-transcript-normalization-contract-r2.org
 rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
-rage/260-customization-wiki.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
-rage/309-prolog-config-recovery-design.org
-rage/309-prolog-config-recovery-research.org
 rage/309-prolog-config-recovery.org
 rage/315-route-backpressure-test-contract.org
 rage/324-expanded-history-sidebar-r2.org
@@ -1271,7 +1252,6 @@ scripts/test-android.sh
 scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
-scripts/test-prolog-config.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
@@ -1297,7 +1277,6 @@ t/test_client_connection_resolution.py
 t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
-t/test_customization_diagnostics.py
 t/test_daemon_client_config.py
 t/test_daemon_connection_guards.py
 t/test_desktop_control.py
@@ -1370,7 +1349,6 @@ wiki/android-samsung-health.org
 wiki/android-watch-install.org
 wiki/android.org
 wiki/api-service.org
-wiki/customization.org
 wiki/install.org
 wiki/plugins.org
 zara/__main__.py
@@ -1546,7 +1524,6 @@ scripts/test-android.sh
 scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
-scripts/test-prolog-config.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
@@ -1570,7 +1547,6 @@ t/test_client_connection_resolution.py
 t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
-t/test_customization_diagnostics.py
 t/test_daemon_client_config.py
 t/test_daemon_connection_guards.py
 t/test_desktop_control.py
