@@ -2156,6 +2156,412 @@
       "report_digest": "196738f0a6495a1e73aaeb61475408adc3385be165cf4bbaf9593876377688ac",
       "status": "verified-delivered"
     },
+    "reports/starintel-updates-changelog/2026-09-17-10-starintel-server-report.md": {
+      "accepted_at": "2026-09-17T06:27:56.920182+00:00",
+      "attempted_at": "2026-09-17T06:27:56.920182+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:27:56.920182+00:00",
+      "message_ids": [
+        "1550030522799886398",
+        "1550030525568385096",
+        "1550030530643230781"
+      ],
+      "report_digest": "f26f23d78a90bf4b14ab5bc2e9f89357ca20f80361b2dbf37b3aec7cddee40ad",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-11-star-lang-report.md": {
+      "accepted_at": "2026-09-17T06:27:58.564934+00:00",
+      "attempted_at": "2026-09-17T06:27:58.564934+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:27:58.564934+00:00",
+      "message_ids": [
+        "1550030532589523005",
+        "1550030535450173524",
+        "1550030538184597535"
+      ],
+      "report_digest": "5bfd8ebb348d9c6044bef3596cc49594e07c963dcb068873c671b507363ef7b7",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-12-tek9-star-git-report.md": {
+      "accepted_at": "2026-09-17T06:28:00.315424+00:00",
+      "attempted_at": "2026-09-17T06:28:00.315424+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:00.315424+00:00",
+      "message_ids": [
+        "1550030539510128724",
+        "1550030542534213683",
+        "1550030545508106292"
+      ],
+      "report_digest": "554651e756d6148c986faa70b9f0df9c62510485a20b478cd7be23b4b415ebc9",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-13-prolog-rlm-report.md": {
+      "accepted_at": "2026-09-17T06:28:02.103056+00:00",
+      "attempted_at": "2026-09-17T06:28:02.103056+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:02.103056+00:00",
+      "message_ids": [
+        "1550030546867064835",
+        "1550030549991817257",
+        "1550030552805937173"
+      ],
+      "report_digest": "d59c81fb4720d6f234561f86cff0614fc025b682791f63b76731fa52af3b71a9",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-14-quasar-runtime-report.md": {
+      "accepted_at": "2026-09-17T06:28:03.254915+00:00",
+      "attempted_at": "2026-09-17T06:28:03.254915+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:03.254915+00:00",
+      "message_ids": [
+        "1550030554525601803",
+        "1550030557206028295"
+      ],
+      "report_digest": "cfbe75fad94323ebe8bd69750323d049455d89ca84e17f26c9aa409ca6e1db41",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-15-zara-plugins-report.md": {
+      "accepted_at": "2026-09-17T06:28:04.478413+00:00",
+      "attempted_at": "2026-09-17T06:28:04.478413+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:04.478413+00:00",
+      "message_ids": [
+        "1550030560141901866",
+        "1550030562746703873"
+      ],
+      "report_digest": "6571c4956dafb5f2390a7bc414f9603fb7a685e3509aac519ee390be292b4ccc",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-16-a0-symbolics-report.md": {
+      "accepted_at": "2026-09-17T06:28:05.463960+00:00",
+      "attempted_at": "2026-09-17T06:28:05.463960+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:05.463960+00:00",
+      "message_ids": [
+        "1550030564386410497",
+        "1550030566945067019"
+      ],
+      "report_digest": "d803ec3d463e7aea4b1e2836cca726db2170320b7b51fa165a91e88c5d9b27cb",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-17-hackmode-report.md": {
+      "accepted_at": "2026-09-17T06:28:06.403631+00:00",
+      "attempted_at": "2026-09-17T06:28:06.403631+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:06.403631+00:00",
+      "message_ids": [
+        "1550030568488574977",
+        "1550030571013537905"
+      ],
+      "report_digest": "cb49bcf9f847876038033519be108d60feea4b53e190b47854f685dad0f7076a",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-18-llm-log-report.md": {
+      "accepted_at": "2026-09-17T06:28:08.125660+00:00",
+      "attempted_at": "2026-09-17T06:28:08.125660+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:08.125660+00:00",
+      "message_ids": [
+        "1550030572469100616",
+        "1550030574935351311",
+        "1550030578022355035"
+      ],
+      "report_digest": "3a331c79200bb828e063efff39d33a5aae6bd45746e82853f215875979d4ceda",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-19-starintel-document-profile-report.md": {
+      "accepted_at": "2026-09-17T06:28:09.298905+00:00",
+      "attempted_at": "2026-09-17T06:28:09.298905+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:09.298905+00:00",
+      "message_ids": [
+        "1550030579754602590",
+        "1550030582795337791"
+      ],
+      "report_digest": "9e3a5f904d4255aa98bb948d0b5d621cb9444be0acdb2b483dbf483ac7a3c3b0",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-20-skills-report.md": {
+      "accepted_at": "2026-09-17T06:28:10.407140+00:00",
+      "attempted_at": "2026-09-17T06:28:10.407140+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:10.407140+00:00",
+      "message_ids": [
+        "1550030584640831549",
+        "1550030587430178868"
+      ],
+      "report_digest": "b214a6ebbb6ba06ec1573cd1ff9c7f5f8c50d224a75c46bea7feb69591bc8388",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-21-auto-research-report.md": {
+      "accepted_at": "2026-09-17T06:28:11.298845+00:00",
+      "attempted_at": "2026-09-17T06:28:11.298845+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:11.298845+00:00",
+      "message_ids": [
+        "1550030589233733743",
+        "1550030591653707827"
+      ],
+      "report_digest": "6234d200fd231e9801e7ec0720b63cbf6b065276c7eb7c4c452956d075d919aa",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-22-website-report.md": {
+      "accepted_at": "2026-09-17T06:28:12.344917+00:00",
+      "attempted_at": "2026-09-17T06:28:12.344917+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:12.344917+00:00",
+      "message_ids": [
+        "1550030593021059103",
+        "1550030595550220339"
+      ],
+      "report_digest": "7c0a45989557d47407c4bf0d588273b8df5eb484be0fe7704157b068279954de",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-23-infrastructure-report.md": {
+      "accepted_at": "2026-09-17T06:28:13.439691+00:00",
+      "attempted_at": "2026-09-17T06:28:13.439691+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:13.439691+00:00",
+      "message_ids": [
+        "1550030597139861510",
+        "1550030600486912031"
+      ],
+      "report_digest": "41d5c024787722c24d53409ecc6e25830d694ca32707c09141097eae0cb2de69",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-24-task-steward-report.md": {
+      "accepted_at": "2026-09-17T06:28:13.836614+00:00",
+      "attempted_at": "2026-09-17T06:28:13.836614+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:13.836614+00:00",
+      "message_ids": [
+        "1550030602118369331"
+      ],
+      "report_digest": "920fcdbb0aa79b8e83a76ee24e41997a0c07bea4fb89b560f72e012e92111e23",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-30-zara-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:14.795597+00:00",
+      "attempted_at": "2026-09-17T06:28:14.795597+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:14.795597+00:00",
+      "message_ids": [
+        "1550030603620196364",
+        "1550030606212268043"
+      ],
+      "report_digest": "8e2fa4c39fe1594117e805c16832b826dab6fb44e2b1cda3516e1bc4814f509d",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-31-starintel-wear-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:15.794219+00:00",
+      "attempted_at": "2026-09-17T06:28:15.794219+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:15.794219+00:00",
+      "message_ids": [
+        "1550030607600451625",
+        "1550030610230419517"
+      ],
+      "report_digest": "72b6cbaffceac030e06ae8d68c9fd5005ac5f661a58eacdf10d0279074d95ea2",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-32-quasar-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:17.003372+00:00",
+      "attempted_at": "2026-09-17T06:28:17.003372+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:17.003372+00:00",
+      "message_ids": [
+        "1550030612239482931",
+        "1550030615418503238"
+      ],
+      "report_digest": "f5169aaae2cbce5123cbc77a12ef1856afd8de14107d309e4810f3290e30ef74",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-33-starintel-server-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:17.342767+00:00",
+      "attempted_at": "2026-09-17T06:28:17.342767+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:17.342767+00:00",
+      "message_ids": [
+        "1550030616840503377"
+      ],
+      "report_digest": "f5f0fb8b0c131ac8f8f61867ba02f478c92030241d8580b5506279005f128a18",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-34-star-lang-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:19.274952+00:00",
+      "attempted_at": "2026-09-17T06:28:19.274952+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:19.274952+00:00",
+      "message_ids": [
+        "1550030624574935091"
+      ],
+      "report_digest": "f4182e773f946eed5521e3fcd2a89df835587a035a4731c039c98d303effe2dd",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-35-tek9-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:21.138614+00:00",
+      "attempted_at": "2026-09-17T06:28:21.138614+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:21.138614+00:00",
+      "message_ids": [
+        "1550030632728526889"
+      ],
+      "report_digest": "fec6dcfec7fb9e428feb39e64679444312f560b4c4e7e41af41ba689c0db219e",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-36-prolog-rlm-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:23.100784+00:00",
+      "attempted_at": "2026-09-17T06:28:23.100784+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:23.100784+00:00",
+      "message_ids": [
+        "1550030641108615179"
+      ],
+      "report_digest": "ef08028fcd1e0814f3a23e043e6d8a33adc5d545e9c696acafa23f39cfc4f074",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-37-zara-plugins-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:25.198187+00:00",
+      "attempted_at": "2026-09-17T06:28:25.198187+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:25.198187+00:00",
+      "message_ids": [
+        "1550030649338110015"
+      ],
+      "report_digest": "11590ad302354068b74fe556d1d5542852c237326eb04a1ac968fd7d375b7db6",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-38-a0-symbolics-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:27.129816+00:00",
+      "attempted_at": "2026-09-17T06:28:27.129816+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:27.129816+00:00",
+      "message_ids": [
+        "1550030657843896371"
+      ],
+      "report_digest": "3b953f27e381b0e72a3e1495ca15ecfae59d9feeed4f8dd4f0b7b47554f5dcbe",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-39-hackmode-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:29.225626+00:00",
+      "attempted_at": "2026-09-17T06:28:29.225626+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:29.225626+00:00",
+      "message_ids": [
+        "1550030666224373822"
+      ],
+      "report_digest": "6230fc0477f0ed05361c39cf1a56676c4d113b0bdaca64d0cfa837cde9f5c2b1",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-40-llm-log-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:31.134817+00:00",
+      "attempted_at": "2026-09-17T06:28:31.134817+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:31.134817+00:00",
+      "message_ids": [
+        "1550030674663047239"
+      ],
+      "report_digest": "b6482c7fd29339d81323caeccf397657252971fbfa24047bfa474e94d01e2f97",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-41-document-profile-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:33.101406+00:00",
+      "attempted_at": "2026-09-17T06:28:33.101406+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:33.101406+00:00",
+      "message_ids": [
+        "1550030682913505341"
+      ],
+      "report_digest": "7115db973455920c68a404bde1e6ff0aa0b8f9317f2c3932476fce457b08b87f",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-42-skills-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:35.272208+00:00",
+      "attempted_at": "2026-09-17T06:28:35.272208+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:35.272208+00:00",
+      "message_ids": [
+        "1550030691415363675"
+      ],
+      "report_digest": "498a1cd45512e5985978fd169f5d4255b75309bf106a6416068c73e588303ad2",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-43-auto-research-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:37.071410+00:00",
+      "attempted_at": "2026-09-17T06:28:37.071410+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:37.071410+00:00",
+      "message_ids": [
+        "1550030699631747083"
+      ],
+      "report_digest": "ab8acb1408c3ba5c461d590234c1f3805eb4d0786f941518066eaf952079628e",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-44-website-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:39.246410+00:00",
+      "attempted_at": "2026-09-17T06:28:39.246410+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:39.246410+00:00",
+      "message_ids": [
+        "1550030708553023590"
+      ],
+      "report_digest": "9a69b3d73f1a85a5ade291399f4def338003fd967e5be441fa5ae2128878d1be",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-45-infrastructure-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:41.207187+00:00",
+      "attempted_at": "2026-09-17T06:28:41.207187+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:41.207187+00:00",
+      "message_ids": [
+        "1550030716388114455"
+      ],
+      "report_digest": "8ccb57e3bd5705ddce5ff52e078a82024cf3b6f3fcd053f7778cfc41cad144ca",
+      "status": "verified-delivered"
+    },
+    "reports/starintel-updates-changelog/2026-09-17-46-task-steward-android-special-report.md": {
+      "accepted_at": "2026-09-17T06:28:43.222533+00:00",
+      "attempted_at": "2026-09-17T06:28:43.222533+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-09-17T06:28:43.222533+00:00",
+      "message_ids": [
+        "1550030724822732805"
+      ],
+      "report_digest": "f0ad9a31224188cb73c85ae05a5b2d4a3cef0f6af15c01748f774a7cc821711c",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/2026-09-17T05-57-14Z-report.md": {
       "accepted_at": "2026-09-17T06:08:52.734797+00:00",
       "attempted_at": "2026-09-17T06:08:52.734797+00:00",
