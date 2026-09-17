@@ -26,4 +26,4 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `5023309dfced`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
 - [lost-rob0t/tek9](./tek9.md) `8178cf0af2fc`
-- [lost-rob0t/zara](./zara.md) `01a9a56307d0`
+- [lost-rob0t/zara](./zara.md) `b98470a28fc5`

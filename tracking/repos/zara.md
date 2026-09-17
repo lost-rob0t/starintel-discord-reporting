@@ -1,15 +1,20 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-17T13:31:57Z`
+- generated: `2026-09-17T18:17:31Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`01a9a56307d0edbd1f6afdede364af188c2dbe86`](https://github.com/lost-rob0t/zara/commit/01a9a56307d0edbd1f6afdede364af188c2dbe86)
-- head date: `2026-09-17T05:01:57-04:00`
-- head subject: fix(ci): replay Android/Wear artifact gates on current master (#947)
+- head: [`b98470a28fc564cead85d6f6b28df78aef73b0fa`](https://github.com/lost-rob0t/zara/commit/b98470a28fc564cead85d6f6b28df78aef73b0fa)
+- head date: `2026-09-17T15:18:19Z`
+- head subject: feat(config): make project identity Prolog-driven (#914)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-17 b98470a28fc564cead85d6f6b28df78aef73b0fa feat(config): make project identity Prolog-driven (#914)
+2026-09-17 52e4cbc853c711d947687f160174081d25465422 fix(android): harden verified self-update lifecycle (#899)
+2026-09-17 6769f3a2e6e42d99e1d5fa359e85a20a621683bc Merge pull request #876 from lost-rob0t/feature/android-wireless-pairing
+2026-09-17 d61dc253d47bdf8d5376f8297dcc305efc032561 fix(android): replay scanner-friendly QR pairing on current master
+2026-09-17 02cdf6ebba8a15bcf1d2f583c1bb7ecb928146c0 ci: retain stock ZaraServer log for #575 recurrence (#1032)
 2026-09-17 01a9a56307d0edbd1f6afdede364af188c2dbe86 fix(ci): replay Android/Wear artifact gates on current master (#947)
 2026-09-17 df01a886cf3e4f800458c2269a04af84a86c496c fix(android): restore AutomationActivity Compose build
 2026-09-17 6cbc73c6f894231e1216df9a5f63e51bfa75cd80 feat(android): add Prolog-driven Samsung Health plugin (#971)
@@ -865,26 +870,6 @@
 2026-09-03 3c91e35849e38927285a495b3147a2804b6054a6 rage #309: record Nix contract cleanup
 2026-09-03 fdffbe5184d11ddd232e7ca83dd409dcbf02fe17 fix #309: drop Prolog-RLM lock input
 2026-09-03 704b937f04f01e5f8149e5fc61fb067afe3b04e8 fix #309: remove Prolog-RLM Nix wiring
-2026-09-03 6be2a50bd646591f6ac6e99b58bfaa9f37669add test: compare recovery base config by bytes
-2026-09-03 de529830ad7f70c4b695189562d054da6909989c rage: record CI 906 config assertion diagnosis
-2026-09-03 b736091731658aa4b7d441883100c062d7c9f69b test: compare provisioned config content by character codes
-2026-09-03 411c83ad3504d252937cec976518579262df0049 docs(rage): record 904 stale RLM gate
-2026-09-03 f658a0d5fad90ce35b605a5739d730218218e0ba test: retire stale Prolog-RLM gate
-2026-09-03 6c5135dd7e5bb9c3f67ea3441ff3f5929140fda3 test: point routing gate at daemon router
-2026-09-03 440399b60b95d1d7cbea327fc1090297c1646c28 docs(rage): record CI 902 routing gate failure
-2026-09-03 1c5d4f589f2dfea0d99c45fbc8e56f9760100a94 docs(rage): record api-service test restoration
-2026-09-03 fd51cee576a31dbedeb0727d5104fdc57cefbcc6 test(search): restore full api-service suite with Brave expectation
-2026-09-03 1c87f3949b0018d1bde9240e017c574fc4eb5907 docs(rage): record phase-6 Brave contract reconciliation
-2026-09-03 3748d88f2bb1f059c90088b4ee62d3e80bbd3b45 test(search): expect Brave from server search provider
-2026-09-03 b3a065356fa70a389f9d99511f65b1acd786683c test(command-loop): remove coverage for retired RLM routing knob
-2026-09-03 5e47384947ea8ab0b85718d16944ffea95ac36cc docs(rage): record config recovery GREEN implementation
-2026-09-03 8d49d942e6fc54fa94a333ebd2591496ed541697 docs(config): document durable Prolog overlay and remove RLM setup
-2026-09-03 713d8cc99e7d343d5762aaefb2ad30610b10e8c6 docs(config): align API service config ownership with recovery
-2026-09-03 628edb8d07787bd994b62a88d566013b93d8b120 fix(command-loop): remove dead Prolog-RLM fallback branch
-2026-09-03 a3ad2cb75b57e0e6f879390ec7f9ce33f2b5eb1d test(config): retire obsolete RLM configuration contract
-2026-09-03 8f61822ce5f244aed20bf108d4f19b92fa238b1c fix(config): reject removed RLM knobs and document local overlay
-2026-09-03 0412cae73595f75a85e54b9ef058daca8dc34022 docs(rage): record first genuine RED for #309
-2026-09-03 b6220dea467660ed6cdf9aded0eaeeb1222abf09 fix(config): make Brave the supported built-in search default
 ```
 
 ## Repository paths changed, last 14 days
@@ -1096,6 +1081,7 @@ android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/update/UpdateManagerContractTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateSecurityTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
@@ -1153,7 +1139,6 @@ docs/server.org
 flake.lock
 flake.nix
 kb/config.pl
-modules/command_loop.pl
 modules/commands.pl
 modules/config_loader.pl
 planning/backlog.pl
@@ -1249,7 +1234,6 @@ scripts/test-all.sh
 scripts/test-android-device.sh
 scripts/test-android-release.sh
 scripts/test-android.sh
-scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
@@ -1261,14 +1245,12 @@ skills/zara-android-release/SKILL.md
 skills/zara-android-release/agents/openai.yaml
 t/process_safety.pl
 t/prolog_config.pl
-t/prolog_config_recovery.pl
-t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
 t/test_android_gate_diagnostics.py
+t/test_android_gate_diagnostics_contract.py
 t/test_android_release_contract.py
-t/test_api_service.py
 t/test_audio_shared_input.py
 t/test_backlog_import.py
 t/test_cli_client_migration.py
@@ -1336,6 +1318,7 @@ t/test_wake_import.py
 t/test_wake_lifecycle.py
 t/test_wake_principal_isolation.py
 t/test_wake_speaker.py
+t/test_wake_words.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
 t/test_zmq_send_diagnostics.py
@@ -1348,7 +1331,6 @@ wiki/android-prolog-studio.org
 wiki/android-samsung-health.org
 wiki/android-watch-install.org
 wiki/android.org
-wiki/api-service.org
 wiki/install.org
 wiki/plugins.org
 zara/__main__.py
@@ -1394,6 +1376,7 @@ zara/user_commands.py
 zara/voice_runtime.py
 zara/wake.py
 zara/wake_daemon.py
+zara/wake_words.py
 zara/zmq_transport.py
 ```
 
@@ -1474,6 +1457,7 @@ android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/update/UpdateManagerContractTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateSecurityTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
@@ -1521,7 +1505,6 @@ scripts/test-all.sh
 scripts/test-android-device.sh
 scripts/test-android-release.sh
 scripts/test-android.sh
-scripts/test-command-routing.sh
 scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
@@ -1531,14 +1514,12 @@ scripts/test-user-command-compiler.sh
 scripts/test-user-command-persistence.sh
 t/process_safety.pl
 t/prolog_config.pl
-t/prolog_config_recovery.pl
-t/rlm_rewrite.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
 t/test_android_gate_diagnostics.py
+t/test_android_gate_diagnostics_contract.py
 t/test_android_release_contract.py
-t/test_api_service.py
 t/test_audio_shared_input.py
 t/test_backlog_import.py
 t/test_cli_client_migration.py
@@ -1606,6 +1587,7 @@ t/test_wake_import.py
 t/test_wake_lifecycle.py
 t/test_wake_principal_isolation.py
 t/test_wake_speaker.py
+t/test_wake_words.py
 t/test_zara1_device_actions.py
 t/test_zara1_device_actions_adversarial.py
 t/test_zmq_send_diagnostics.py
