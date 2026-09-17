@@ -1,5 +1,9 @@
 # Zara Plugins: remote failures stop reflecting secrets, and Local Recall updates roll back coherently
 
+## FOLLOW-UP
+
+The new coverage includes Local Recall's transactional library/wrapper rollback, in addition to the already summarized Agent Zero error sanitization.
+
 September 17, 2026. Two landed plugin repairs strengthen failure handling without changing the Plugin API or widening capabilities. Both are about what happens when the happy path breaks.
 
 ## Changes

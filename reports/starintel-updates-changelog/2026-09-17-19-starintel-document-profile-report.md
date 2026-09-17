@@ -1,5 +1,9 @@
 # StarIntel document tooling: the 0.9.2 network-capture profile is additive, not an envelope rewrite
 
+## FOLLOW-UP
+
+This adds the release manifest's exact envelope/profile distinction, artifact-reference policy and sensitive-header classes to the earlier profile summary.
+
 September 17, 2026. The document/spec work hosted in the Auto-Dig repository has landed a network-capture profile and release manifest. This is a schema/tooling announcement, not an investigation report or an instruction to restart collection workers.
 
 ## Changes

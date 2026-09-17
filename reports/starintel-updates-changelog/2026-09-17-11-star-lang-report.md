@@ -1,5 +1,9 @@
 # StarLang: real mailbox-to-Nim execution and deterministic binary64 JSON
 
+## FOLLOW-UP
+
+This expands the transport summary with runtime authority, failure-path verification and actor-option rejection. Unsupported actor options must be rejected rather than silently accepted as an executable contract.
+
 September 17, 2026. StarLang has landed a concrete external-actor transport path and a carefully bounded canonical-number foundation. The former demonstrates an actual runtime round trip; the latter improves byte-level interoperability without announcing unfinished language features.
 
 ## Changes

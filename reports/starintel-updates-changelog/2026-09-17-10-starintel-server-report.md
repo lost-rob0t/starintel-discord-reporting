@@ -1,5 +1,9 @@
 # StarIntel Server: bounded bulk-job retention, safer quarantine settlement and opt-in telemetry
 
+## FOLLOW-UP
+
+The additional coverage includes the quarantine concurrency failure and its settlement regression, alongside the previously announced retention and telemetry work.
+
 September 17, 2026. Recent master changes address three different failure boundaries: retaining completed requests, settling failed ingest work and exporting operational telemetry. They should not be flattened into a generic stability update.
 
 ## Changes

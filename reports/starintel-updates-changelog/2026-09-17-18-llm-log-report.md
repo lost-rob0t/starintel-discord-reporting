@@ -1,5 +1,9 @@
 # LLM-Log: historical expert backfill, auditable exports and honest quota coverage
 
+## FOLLOW-UP
+
+This edition covers historical backfill, dataset provenance and the separate quota/coverage contracts in depth.
+
 September 17, 2026. LLM-Log can now project historical captures into its expert corpus and export evidence-backed outcome datasets. The work keeps transport success, task outcomes, usage and pricing context separate instead of manufacturing missing labels.
 
 ## Changes

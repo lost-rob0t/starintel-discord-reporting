@@ -1,5 +1,9 @@
 # A0 Symbolics: upstream upgrades become a replayable distribution workflow
 
+## FOLLOW-UP
+
+This adds the detailed replay proof, resume handling and fork-surface maintenance evidence behind the distribution-update summary.
+
 September 17, 2026. A0 Symbolics has landed an explicit maintenance model for staying compatible with upstream without accidentally replacing the Symbolics distribution with plain upstream software.
 
 ## Changes

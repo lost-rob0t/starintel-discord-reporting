@@ -1,5 +1,9 @@
 # Tek9 / star-git: immutable snapshots, compressed packs and custody-gated eviction
 
+## FOLLOW-UP
+
+This adds the archive runtime-packaging and round-trip evidence, with a closer account of custody validation and restore boundaries.
+
 September 17, 2026. The new star-git work turns archival into a set of explicit storage contracts: what was snapshotted, how it was packed, which original revision it represents and what evidence is required before discarding a hot copy.
 
 ## Changes

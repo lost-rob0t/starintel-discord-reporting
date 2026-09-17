@@ -1,5 +1,9 @@
 # Hackmode: replay checkpoints now identify the bytes they consumed
 
+## FOLLOW-UP
+
+This adds the implementation-level checkpoint format and replacement/truncation regression evidence behind the earlier replay-integrity summary.
+
 September 17, 2026. The meaningful new Hackmode change is an integrity repair in IPX replay. It closes a gap between remembering a byte offset and proving that the file at that offset is still the same evidence stream.
 
 ## Changes

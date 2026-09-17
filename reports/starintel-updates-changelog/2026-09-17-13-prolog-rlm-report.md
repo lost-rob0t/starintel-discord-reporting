@@ -1,5 +1,9 @@
 # Prolog-RLM: semantic project knowledge survives restarts without pretending stale facts are current
 
+## FOLLOW-UP
+
+This expands the summary with the review-repair evidence for publication atomicity, multi-project isolation, incomplete indexes and the native grouped-capture regression.
+
 September 17, 2026. The new semantic-project-knowledge slice adds a usable layer between parsed syntax and symbolic reasoning about a project. The follow-up review repairs persistence, index completeness and isolation instead of stopping at an attractive symbol graph.
 
 ## Changes

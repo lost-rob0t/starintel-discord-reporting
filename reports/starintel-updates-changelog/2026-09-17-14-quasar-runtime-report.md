@@ -1,5 +1,9 @@
 # Quasar: separate deployable web and Common Lisp runtime artifacts
 
+## FOLLOW-UP
+
+This adds the concrete runtime-build and startup-validation implementation behind the earlier packaging summary.
+
 September 17, 2026. Quasar's new packaging work makes the difference between serving the interface and running its control plane explicit. The native Android client is a separate application and receives its own platform post.
 
 ## Changes
