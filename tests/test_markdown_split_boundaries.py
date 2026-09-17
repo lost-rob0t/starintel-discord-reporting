@@ -27,10 +27,10 @@ class MarkdownSplitBoundaryTests(unittest.TestCase):
                     self.assertTrue(all(len(chunk) <= limit for chunk in chunks))
                     self.assertTrue(all(chunk.count("```") % 2 == 0 for chunk in chunks))
 
-    def test_plain_split_rejects_nonpositive_limit(self):
+    def test_public_split_rejects_nonpositive_limit(self):
         for limit in (0, -1):
             with self.subTest(limit=limit), self.assertRaises(ValueError):
-                post._split_plain_text("hello", limit)
+                post.split_markdown("hello", limit)
 
     def test_actual_long_form_changelogs_fit_discord(self):
         for name in ("2026-09-17T05-57-14Z-report.md", "2026-09-17T05-57-15Z-report.md"):
