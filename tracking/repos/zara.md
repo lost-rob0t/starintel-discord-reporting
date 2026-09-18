@@ -1,22 +1,39 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-18T16:28:04Z`
+- generated: `2026-09-18T20:56:57Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`80342717114e372e30550fe74fca1f022a29f681`](https://github.com/lost-rob0t/zara/commit/80342717114e372e30550fe74fca1f022a29f681)
-- head date: `2026-09-18T16:13:27Z`
-- head subject: ci(release): reliably publish promoted v0.2.2-alpha (#965)
+- head: [`935a7734a0899c79ac41e32017c43c7b2dde556f`](https://github.com/lost-rob0t/zara/commit/935a7734a0899c79ac41e32017c43c7b2dde556f)
+- head date: `2026-09-18T16:41:49-04:00`
+- head subject: feat(wear): add strict-local Zara Voice launcher
 
 ## Git log, last 14 days
 
 ```text
+2026-09-18 935a7734a0899c79ac41e32017c43c7b2dde556f feat(wear): add strict-local Zara Voice launcher
+2026-09-18 75b4954a895c01a6a4e2a8e7676dbac71e2e49e1 Merge pull request #1048 from lost-rob0t/rage/1046-runtime-contract-s1
+2026-09-18 aa8dcd845e0e4fda4dbf1c8f7f644c4e821175f7 rebase(runtime): replay ZARA-RUNTIME/1 S1 on current master
+2026-09-18 b72c3cd928a4a874bc394b150ca7675b9616bb90 Merge pull request #659 from lost-rob0t/fix/400-plugin-capability-composition
+2026-09-18 e3d14b90133286a96988c50117fbb3f2a256b116 Merge master into #659 after rolling Android latest update
+2026-09-18 9b0d54036a86d64aebacfd7678e7525bf49b0f0f ci(android): publish a fresh APK from every master push (#1057)
+2026-09-18 b74a3325727ab511cb776872d7b9f5d73dfae191 fix(android): relaunch saved task during acceptance recreation
+2026-09-18 a695ade721661ab23544bb16a72335a740be9fb4 test(android): require saved-task relaunch on recreation
+2026-09-18 db6f337af8725ae39e2ffab41b0ab43a04d01432 merge master into #659 after release publication fix
+2026-09-18 1467ab0df9216d40e6151a15c03317621f97c66c test(android): harden stock interop transport readiness
 2026-09-18 80342717114e372e30550fe74fca1f022a29f681 ci(release): reliably publish promoted v0.2.2-alpha (#965)
+2026-09-18 c9d87cf8799daf82c203f1400092b7bb00df642a fix(android): dismiss versioned release notes in acceptance
+2026-09-18 c8006d9fac9c6e1fbed92fa520473c8814a9374c test(android): reproduce release-notes screenshot blocker
+2026-09-18 e72783147456f777ea7e72e29ce64bb057b2b39c chore(plugins): reconcile capability composition with 0.2.2-alpha master
+2026-09-18 04b5244dc6b09693d34ddceea19dde0cae5f7714 docs(changelog): record live plugin approval enforcement
 2026-09-18 3fed727a444ae86e723bab53f5ae84879599237c release: promote source to 0.2.2-alpha (#1039)
 2026-09-18 e4903e06e6ec60977338126520726c9e2db7ec4c feat(changelog): canonical release notes on desktop and Android (#1044)
 2026-09-18 15d21eb5dbcb7342c556ccfeb01a983e07f0c4ce rebase(android): replay audio focus release retry on current master (#615)
 2026-09-18 5b0e2eb0b4eb8e5147d6cbff948ded5eb5fd15e5 Merge pull request #1037 from lost-rob0t/feat/android-project-contexts
+2026-09-18 bd16eb6054ac424bc8ea9ab767942a9592bdd1bb chore(plugins): sync composition branch with current master
 2026-09-18 fbba35488f49ba01b47397b65b9894dfc3173c4e Merge current master into Android Projects
 2026-09-18 efd2425f48cdcf9c7d05bd5bd96c67efa57cefa3 feat(android): simplify Zara to three left menus and tabbed settings (#939)
+2026-09-18 05f2fdd691c97c9e53395d7a957364bf3046b6d8 fix(plugins): recheck live approval metadata before composition
+2026-09-18 aac43f550242882087089c2cabc94dae5167c23a test(plugins): prove live approval metadata is rechecked
 2026-09-18 de867d43bcd162b5666184dea1f36865a9ecf1f4 fix(android): compile Projects error banners on current Compose
 2026-09-18 a56f8cc27a4dabecdb757d07b7872061daba0472 Merge current three-menu shell into Android Projects
 2026-09-18 eebd109c755405cc79f361d6f2021bfba6771683 Merge master into feat/android-three-menu-navigation
@@ -33,6 +50,7 @@
 2026-09-17 c3fd8c0795ba871133074eab86467ab049609a28 Merge current master into Android three-menu navigation
 2026-09-17 43869ca0813379ca308f669e8f50982a5a89c9a3 fix(ci): install emulator libpulse host runtime
 2026-09-17 74b011bc32644d87ef071207191f52fc7f006f01 test(ci): require emulator host libpulse preflight
+2026-09-17 786dde0c00e1ae5ebfb6cac38c6f9c16d9582564 Merge master into fix/400-plugin-capability-composition
 2026-09-17 836351067b95a094ee0749355e728579886cf44b Merge current master into release evidence gate branch
 2026-09-17 c4c896d14535eca7233f601ee9e06bb54632c81e fix(ci): purge sdkmanager download intermediates
 2026-09-17 ceabc94f4abccdae81fc813d0b34e5b9f46dd18b test(ci): require sdk download-intermediate cleanup
@@ -47,6 +65,7 @@
 2026-09-17 4dc9963dbe8de849ccccb80316401e2aeab2aa91 test(android): harden project metadata failure cases
 2026-09-17 a2a8dcddac143926fe237cfe28424f5e140eb87d test(android): require visible Projects operation failures
 2026-09-17 033443942d3c3990bc241283a1ba824a06cf14ec fix(android): show Projects operation errors in context
+2026-09-17 eee8aa1a5b6f8bd8b402229fdabeecd52f9bc864 merge current master into #659 drain candidate
 2026-09-17 7ad74adb8b3c41f9396ad6b332c52dac0f652233 fix(android): keep Projects error parameter source-compatible
 2026-09-17 1bd2889797e90e2cd7cd0704a5c78eae84b47e9e fix(android): surface project operation failures
 2026-09-17 b98470a28fc564cead85d6f6b28df78aef73b0fa feat(config): make project identity Prolog-driven (#914)
@@ -87,12 +106,14 @@
 2026-09-17 eec1e1c30be8b32ea3e4a9826367e6bcf4260e2c ci: fix emulator acceptance command quoting
 2026-09-17 78d8f2b07c8b12c6d8a5c8f0ac5ce41af9873d41 fix(ci): target screenshot emulator deterministically
 2026-09-17 1679d5bf1ed6590cbe296096af195331759d15d6 test(ci): require explicit emulator targeting
+2026-09-17 819b329cb93ce3b932f1a18ee4eb004a755afad8 merge master into #659 current-base validation
 2026-09-17 d61dc253d47bdf8d5376f8297dcc305efc032561 fix(android): replay scanner-friendly QR pairing on current master
 2026-09-17 8dceebb91fc3e58f5acb430388611d0ef9c6a273 Merge master into dual-screenshot gate after #1032
 2026-09-17 02cdf6ebba8a15bcf1d2f583c1bb7ecb928146c0 ci: retain stock ZaraServer log for #575 recurrence (#1032)
 2026-09-17 057510a2521daf49c727ca7d5d3052c6487e5635 test(ci): keep provenance fixture hermetic
 2026-09-17 fc33a4cbbde7d3e05be98658a03458167f7801ff fix(ci): run emulator acceptance under bash
 2026-09-17 614c277dc5723a2bef92de09eff2d476dc3cd1ad Merge current master into Android three-menu navigation
+2026-09-17 98140b73cda10e7d9a8d3492c4481fa31a81bda1 feat(plugins): replay generation-fenced capability composition on current master
 2026-09-17 a48f80c766d2c831dddbc38aed567ce62cb63ffa chore(ci): anchor dual-surface evidence gate to merged #947 master
 2026-09-17 01a9a56307d0edbd1f6afdede364af188c2dbe86 fix(ci): replay Android/Wear artifact gates on current master (#947)
 2026-09-17 7c67e67e94d74059df82c27d05b317aa9721c671 chore(ci): integrate dual-surface evidence gate with #947 candidate
@@ -923,12 +944,6 @@
 2026-09-04 f7e4698f3afddcec7d5a46a4f96e660a24037cc9 test: require unknown app names to fail closed
 2026-09-04 08c134f150f1936508731fa1d5032ae35a7b2ac4 test: expose unknown executable fallback regression
 2026-09-04 8f4baf46344fcf730e08e71d800438329cc31204 rage: consume reopened #13 app allowlist regression
-2026-09-04 7340ca414fff8b543a3a279acd93c2bb613b1eab Merge pull request #314 from lost-rob0t/rage/165-user-command-runtime
-2026-09-04 446bffa9b3a8db130f037ebd6cea95b699e618f4 docs(rage): record strict #165 gate recovery
-2026-09-04 69ff37f8b5d43d07bbf5e691abb57f146cdc6d7c Merge 23fcd224a2742b76eb5b4c6d21d4776fc8c414e5 into a1b38d9b80a2f4dabe06d53d1185ff23acbbb84d
-2026-09-04 23fcd224a2742b76eb5b4c6d21d4776fc8c414e5 rage: record #315 recovery before #165 re-gate
-2026-09-04 996440122611c978a0b2d56558fafcbc67bb425e test: sync route-backpressure contract from #315
-2026-09-04 a1b38d9b80a2f4dabe06d53d1185ff23acbbb84d Merge pull request #316 from lost-rob0t/rage/315-route-backpressure-test-contract
 ```
 
 ## Repository paths changed, last 14 days
@@ -1020,6 +1035,7 @@ android/app/src/main/java/ai/zara/app/runtime/JeroMqTextDealer.kt
 android/app/src/main/java/ai/zara/app/runtime/LocalZaraServer.kt
 android/app/src/main/java/ai/zara/app/runtime/RequestCorrelations.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeMode.kt
+android/app/src/main/java/ai/zara/app/runtime/RuntimeRegistry.kt
 android/app/src/main/java/ai/zara/app/runtime/RuntimeState.kt
 android/app/src/main/java/ai/zara/app/runtime/ServerProfile.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraCapabilityCodec.kt
@@ -1128,6 +1144,7 @@ android/app/src/test/java/ai/zara/app/runtime/ConnectionFailureReasonTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/LocalZaraServerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
+android/app/src/test/java/ai/zara/app/runtime/RuntimeRegistryV1Test.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
@@ -1158,6 +1175,7 @@ android/app/src/test/java/ai/zara/app/ui/RuntimeModePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/WearVoiceAppContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/update/ChangelogTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateManagerContractTest.kt
@@ -1210,6 +1228,12 @@ android/wear-app/build.gradle.kts
 android/wear-app/src/main/AndroidManifest.xml
 android/wear-app/src/main/java/ai/zara/wear/WearMainActivity.kt
 android/wear-app/src/main/res/values/wear.xml
+android/wear-voice/build.gradle.kts
+android/wear-voice/src/main/AndroidManifest.xml
+android/wear-voice/src/main/java/ai/zara/wear/voice/WearVoiceActivity.kt
+contracts/zara-runtime-v1/README.md
+contracts/zara-runtime-v1/descriptors.tsv
+contracts/zara-runtime-v1/runtime-descriptor.schema.json
 docs/README.org
 docs/STT.md
 docs/architecture.org
@@ -1225,7 +1249,6 @@ rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
 rage/159-zara1-device-actions.org
 rage/160-semantic-first-runtime.org
-rage/165-user-command-runtime.org
 rage/173-android-auth.org
 rage/173-android-client-continuity.org
 rage/174-android-device-capabilities.org
@@ -1290,6 +1313,7 @@ rage/587-dictation-vulkan.org
 rage/668-config-loader-diagnostic.org
 rage/669-turn-event-loss.org
 rage/866-wear-foundation.org
+rage/867-wear-voice.org
 rage/880-882-voice-pipeline-design.org
 rage/880-882-voice-pipeline-merge-closeout.org
 rage/880-882-voice-pipeline-research.org
@@ -1348,13 +1372,19 @@ t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
 t/test_dictation_vulkan_backend.py
 t/test_json_limits.py
+t/test_plugin_backend_composition.py
+t/test_plugin_capability_authorization_cancellation.py
+t/test_plugin_capability_composition.py
+t/test_plugin_host_cancellation.py
 t/test_plugin_tool_approval.py
+t/test_plugin_tool_approval_live_policy.py
 t/test_production_secure_listener.py
 t/test_pulse_output_stream.py
 t/test_quick_copilot.py
 t/test_qwen_openai_client.py
 t/test_registered_target_recovery.py
 t/test_runtime_intent_routing.py
+t/test_runtime_registry_v1.py
 t/test_s1_mini_normalizer.py
 t/test_s1_mini_numeric_bounds.py
 t/test_security_admin_permissions_placeholder.py
@@ -1398,7 +1428,6 @@ t/test_zara1_device_actions_adversarial.py
 t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
-t/test_zmq_transport_route_backpressure.py
 version.properties
 wiki/android-automation.org
 wiki/android-local-ai.org
@@ -1429,10 +1458,16 @@ zara/desktop/windows/quick.py
 zara/device_action_replay.py
 zara/dictate.py
 zara/json_limits.py
+zara/plugins/api.py
+zara/plugins/manager.py
 zara/protocol.py
+zara/runtime/__init__.py
 zara/runtime/backend.py
+zara/runtime/host.py
 zara/runtime/intent_router.py
+zara/runtime/registry.py
 zara/runtime/tts_output.py
+zara/runtime/turn_context.py
 zara/s1_mini_normalizer.py
 zara/security.py
 zara/security_admin.py
@@ -1509,6 +1544,7 @@ android/app/src/test/java/ai/zara/app/runtime/ConnectionFailureReasonTest.kt
 android/app/src/test/java/ai/zara/app/runtime/EnrollmentProjectionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/LocalZaraServerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RequestCorrelationTest.kt
+android/app/src/test/java/ai/zara/app/runtime/RuntimeRegistryV1Test.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
@@ -1539,6 +1575,7 @@ android/app/src/test/java/ai/zara/app/ui/RuntimeModePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/WearVoiceAppContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/update/ChangelogTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateManagerContractTest.kt
@@ -1626,13 +1663,19 @@ t/test_device_action_replay_contract.py
 t/test_device_action_sequence_wiring.py
 t/test_dictation_vulkan_backend.py
 t/test_json_limits.py
+t/test_plugin_backend_composition.py
+t/test_plugin_capability_authorization_cancellation.py
+t/test_plugin_capability_composition.py
+t/test_plugin_host_cancellation.py
 t/test_plugin_tool_approval.py
+t/test_plugin_tool_approval_live_policy.py
 t/test_production_secure_listener.py
 t/test_pulse_output_stream.py
 t/test_quick_copilot.py
 t/test_qwen_openai_client.py
 t/test_registered_target_recovery.py
 t/test_runtime_intent_routing.py
+t/test_runtime_registry_v1.py
 t/test_s1_mini_normalizer.py
 t/test_s1_mini_numeric_bounds.py
 t/test_security_admin_permissions_placeholder.py
@@ -1676,5 +1719,4 @@ t/test_zara1_device_actions_adversarial.py
 t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
-t/test_zmq_transport_route_backpressure.py
 ```
