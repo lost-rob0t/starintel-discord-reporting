@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-18T11:21:17Z`
+- generated: `2026-09-18T16:28:02Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`51d2530f0e18c84cff860b7c0bf3afcc3c488057`](https://github.com/lost-rob0t/prolog-rlm/commit/51d2530f0e18c84cff860b7c0bf3afcc3c488057)
@@ -31,18 +31,6 @@
 2026-09-04 4e712eab5b8e867e45e076761be24d40a0e1fa78 ci: run tree-sitter FFI gate on a container-safe nix runner
 2026-09-04 9006c22508e8ce19f4ea8e2f55e8fc9883a3ac4f verify: record issue-336 realization observations at final HEAD
 2026-09-04 bef1b6ed659fb6a915a04f693630a4af4af15428 realize: RLM-336 text streaming through the completion boundary
-2026-09-04 a1332975c2fdefa8bc2726c92592b0201f8beb74 Merge pull request 'docs: add editor-handoff policy to AGENTS.md' (#352) from docs/agent-editor-handoff into main
-2026-09-04 e7686e71ca85bb9e37d4e503ac3d624109050a2b docs: add editor-handoff policy to AGENTS.md
-2026-09-04 15261a3e5a76654a13281eed0200fd4548368bf8 design: record operator design approval for RLM-336
-2026-09-04 b34f3d9f64d888631c6456a5035fd6b8a8f64272 design: RLM-336 text streaming through the completion boundary
-2026-09-04 4531b1e6dab45772450cff11455539842d9bf9ad research: operator approves RLM-RESEARCH-336 for realization
-2026-09-04 c37acbdd89f61de6db60e79a9e13215c18e4c42d Merge pull request 'research: RLM-RESEARCH-336 text streaming through the completion boundary' (#349) from research/text-streaming into main
-2026-09-04 d96d5cb86489657a7bba3d8f959acb823308bc3b aprovved research
-2026-09-04 bd457a546feac5e50cae43137730d7ba12c07e7e verify: record issue-336 research-slice observations at final HEAD
-2026-09-04 17ed526318a20e3718ef36828a340193d84fa818 verify: match recorded command shape (command/1) in requirement observations
-2026-09-04 fd8a7af7e10f5c6b643b248252363787957ff1e5 research: RLM-RESEARCH-336 text streaming through the completion boundary
-2026-09-04 d2cc7a99879b845260bdbb8f82cb2925625cab70 chore(verify): record CI whitespace fix evidence
-2026-09-04 43405ed73d66da49564eb3ac255f0efaaf3d31a7 style(plan-graph): remove EOF whitespace blocking CI
 ```
 
 ## Repository paths changed, last 14 days
@@ -57,7 +45,6 @@
 .prolog/kb/project-knowledge-pipeline.pl
 .prolog/kb/tree-sitter-ffi.pl
 .prolog/verify.pl
-AGENTS.md
 README.md
 TODO.md
 c/rlm_tree_sitter_query.c
@@ -74,14 +61,10 @@ prolog/rlm_project_semantic.pl
 prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
-rage/336-text-streaming-design.org
-research/README.md
-research/RLM-RESEARCH-336-text-streaming.org
 test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_completion_stream_test.pl
-test/rlm_plan_graph_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
@@ -102,7 +85,6 @@ test/deterministic_corpus.pl
 test/live_completion_stream_openrouter_test.pl
 test/load_all.pl
 test/rlm_completion_stream_test.pl
-test/rlm_plan_graph_test.pl
 test/rlm_project_query_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl

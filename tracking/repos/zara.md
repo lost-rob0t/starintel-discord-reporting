@@ -1,26 +1,134 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-18T11:21:20Z`
+- generated: `2026-09-18T16:28:04Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`2403f81435b3b85e74e5793361c7d605d37dc40e`](https://github.com/lost-rob0t/zara/commit/2403f81435b3b85e74e5793361c7d605d37dc40e)
-- head date: `2026-09-17T19:51:53Z`
-- head subject: fix(android): replay Assistant qualification on current master (#898)
+- head: [`80342717114e372e30550fe74fca1f022a29f681`](https://github.com/lost-rob0t/zara/commit/80342717114e372e30550fe74fca1f022a29f681)
+- head date: `2026-09-18T16:13:27Z`
+- head subject: ci(release): reliably publish promoted v0.2.2-alpha (#965)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-18 80342717114e372e30550fe74fca1f022a29f681 ci(release): reliably publish promoted v0.2.2-alpha (#965)
+2026-09-18 3fed727a444ae86e723bab53f5ae84879599237c release: promote source to 0.2.2-alpha (#1039)
+2026-09-18 e4903e06e6ec60977338126520726c9e2db7ec4c feat(changelog): canonical release notes on desktop and Android (#1044)
+2026-09-18 15d21eb5dbcb7342c556ccfeb01a983e07f0c4ce rebase(android): replay audio focus release retry on current master (#615)
+2026-09-18 5b0e2eb0b4eb8e5147d6cbff948ded5eb5fd15e5 Merge pull request #1037 from lost-rob0t/feat/android-project-contexts
+2026-09-18 fbba35488f49ba01b47397b65b9894dfc3173c4e Merge current master into Android Projects
+2026-09-18 efd2425f48cdcf9c7d05bd5bd96c67efa57cefa3 feat(android): simplify Zara to three left menus and tabbed settings (#939)
+2026-09-18 de867d43bcd162b5666184dea1f36865a9ecf1f4 fix(android): compile Projects error banners on current Compose
+2026-09-18 a56f8cc27a4dabecdb757d07b7872061daba0472 Merge current three-menu shell into Android Projects
+2026-09-18 eebd109c755405cc79f361d6f2021bfba6771683 Merge master into feat/android-three-menu-navigation
+2026-09-18 38f5a6d45f80b0203698fae07e1ba305553efeff ci(android): reconcile navigation acceptance with source provenance
+2026-09-18 46392769c206e43a33680741ab3584e6e2da70e2 Merge pull request #997 from lost-rob0t/quality/dual-screenshot-deep-gate-2026-09-17
+2026-09-18 811890371cea35eb282103da217119c434abfd66 fix(android): validate canonical SemVer correctly
+2026-09-18 229d4b9a8e88a75322385a6a8f432de0b219afe2 test(android): reject over-escaped version regex
+2026-09-18 886ad299c871b7df2aba6af12893e4b73ff01d37 fix(android): keep plugins block before version loader
+2026-09-18 dc8e3e0cfa6d8687b353cc1f66ba43a184455ba3 test(release): require Gradle plugin ordering
+2026-09-18 6a8aa5c6dc75e079c28be0d8361910b840a141fa test(release): keep version target single-source
+2026-09-18 dca8e71964553c3b88eed74cc990f1f049db143b fix(release): fail closed on version promotion
+2026-09-18 df4c92aa2200d085f500803e63cea11f4f551f47 fix(release): enforce canonical Zara version context
+2026-09-18 4e2f7a8b4b5bd9664cacbe31bc1800e93db031d2 test(release): require canonical version context
+2026-09-17 c3fd8c0795ba871133074eab86467ab049609a28 Merge current master into Android three-menu navigation
+2026-09-17 43869ca0813379ca308f669e8f50982a5a89c9a3 fix(ci): install emulator libpulse host runtime
+2026-09-17 74b011bc32644d87ef071207191f52fc7f006f01 test(ci): require emulator host libpulse preflight
+2026-09-17 836351067b95a094ee0749355e728579886cf44b Merge current master into release evidence gate branch
+2026-09-17 c4c896d14535eca7233f601ee9e06bb54632c81e fix(ci): purge sdkmanager download intermediates
+2026-09-17 ceabc94f4abccdae81fc813d0b34e5b9f46dd18b test(ci): require sdk download-intermediate cleanup
 2026-09-17 2403f81435b3b85e74e5793361c7d605d37dc40e fix(android): replay Assistant qualification on current master (#898)
+2026-09-17 5e027d79464a1c48da07753c1da0e82b5efc022c test(ci): align emulator retry contract with refreshed sdkmanager
+2026-09-17 2ef8db50ad662d0367c195ea5f85322afddd2f39 fix(ci): refresh Android SDK manager before emulator provisioning
+2026-09-17 85d285c2716f42edb64a3acc2ed4a56e785d3722 test(ci): pin current Android command-line tools contract
+2026-09-17 b28257d1c3665efbee42801cf7aad9f34c1dca64 Merge master into quality/dual-screenshot-deep-gate-2026-09-17
+2026-09-17 4e714c8894a2f4b9948decdfcd152ffd6d7a98aa merge: reconcile three-menu navigation with current master
+2026-09-17 65efb1f4795ad12763fa25d567eff5ae0b30e633 fix(ci): purge corrupt Android emulator download cache
+2026-09-17 c76e458b174372da12c8c28dbb132e03cc63e512 test(ci): require Android SDK download cache purge
+2026-09-17 4dc9963dbe8de849ccccb80316401e2aeab2aa91 test(android): harden project metadata failure cases
+2026-09-17 a2a8dcddac143926fe237cfe28424f5e140eb87d test(android): require visible Projects operation failures
+2026-09-17 033443942d3c3990bc241283a1ba824a06cf14ec fix(android): show Projects operation errors in context
+2026-09-17 7ad74adb8b3c41f9396ad6b332c52dac0f652233 fix(android): keep Projects error parameter source-compatible
+2026-09-17 1bd2889797e90e2cd7cd0704a5c78eae84b47e9e fix(android): surface project operation failures
 2026-09-17 b98470a28fc564cead85d6f6b28df78aef73b0fa feat(config): make project identity Prolog-driven (#914)
+2026-09-17 a0e0fc672f6cf1c4ff14bea0185732962219676d docs(android): document project scope and isolation invariants
+2026-09-17 53255ab99a4f5185a9c2b6445ea280a815c98a58 test(android): pin Projects UI and host wiring contracts
+2026-09-17 be2983213494f4ff05aa3b6924a0deff90033527 fix(android): keep scoped project turns out of default conversation
+2026-09-17 faca81cecd55731a38625fe80fc5dc2e6b9968c7 test(android): prevent project chat contaminating default conversation
+2026-09-17 47380f792462bb4a7c6cbfbf6e9cc5d76186f9e4 test(ci): assert emulator retry behavior independent of YAML wrapping
+2026-09-17 10dd893f774d41b50b60ea07945b1b8af696c84c feat(android): persist active project and isolate project chat turns
+2026-09-17 4f8108446215d51769b37c6bd3c9856015b7f390 feat(android): wire Projects workspace and chat scope
+2026-09-17 b857dc3f2e937d50ef091fad588135cd28c9eb26 feat(android): add active project chat breadcrumb
+2026-09-17 00317f7869c513cf8559826e08cf9ebddd9e6d4f feat(android): add real Projects workspace surface
+2026-09-17 3908ee9908d3ae800c4456190d85eeca47a7cb4b feat(android): route text turns through project conversation scope
+2026-09-17 cf6b8862380d7629a66e67e2cc9916cfef79a699 test(android): cover project conversation routing
+2026-09-17 221cd82df6a5de9faa3059601bd4269660224ca9 feat(android): allow explicit project conversation routing
+2026-09-17 36f27625e519d12a0f2556839252335ad3c0e5e6 feat(android): persist bounded project contexts
+2026-09-17 0f4424cb209b038a382e6354def4816d669e7813 test(android): pin persistent project context contract
+2026-09-17 56bcd2615babb06ed3221f88c99b243ee3edb2cc test(ci): pin desktop screenshot hashes
+2026-09-17 9f864bfbbcfa2fbad33adc7ad648a68332f17528 fix(ci): hash desktop screenshot fixtures
+2026-09-17 fe8403846cd242507853248fd8c9ebf2de76b988 fix(ci): verify desktop screenshot content hashes
+2026-09-17 aa90caf9ced365d98e12c054931ab3916294ce61 test(ci): reject tampered desktop screenshot evidence
+2026-09-17 22f836f99d89220bc191a9d2e586244a4aa94e02 merge: reconcile screenshot gate with updater hardening
+2026-09-17 22f8fea1fbb65eda6decf779b00db15ef79534ff merge: reconcile three-menu navigation with updater hardening
+2026-09-17 786077f7919ed9f89788eb1991503b0bf96b338e fix(ci): verify idempotent host emulator bootstrap
+2026-09-17 efead73cb55617de0b2896664b6047c4e0a0dc70 test(ci): require verified idempotent emulator bootstrap
+2026-09-17 6f704cf2f87c5a676ca1281965f5162142b7a588 fix(ci): resolve emulator sdkmanager from host SDK root
+2026-09-17 ff2ebf0844415a288c7a03eb8c30cc05c6b94f4a test(ci): pin host sdkmanager resolution for emulator gate
 2026-09-17 52e4cbc853c711d947687f160174081d25465422 fix(android): harden verified self-update lifecycle (#899)
+2026-09-17 90e4a11e739c3dc4ad6a67b101e2cdac3471dd1f merge: reconcile three-menu navigation with current master
+2026-09-17 35b2439eb29c10e5769e0c7e6484cd10af1e0a4b Merge master into quality/dual-screenshot-deep-gate-2026-09-17
 2026-09-17 6769f3a2e6e42d99e1d5fa359e85a20a621683bc Merge pull request #876 from lost-rob0t/feature/android-wireless-pairing
+2026-09-17 0c54c83ecaa02ebac63e1902f1cfe8a20cbcdd82 test: lock emulator SDK retry into release gate
+2026-09-17 5c9ec16b9e4143dcab5cf7be9701a2ecbf2b78ed ci: retry transient Android emulator package downloads
+2026-09-17 d27d2e9764fcb3c999653c2f94c73348998dff1e test: sync Android gate diagnostics contract from master
+2026-09-17 36728e3e74b3c5d3d4de180afd783b257f7474f3 chore: sync Android gate diagnostics from master
+2026-09-17 0ecf924d941ba192b315dd6264c2668ef810909d chore: sync stock interop diagnostics from master
+2026-09-17 49aa0a9334efb05a9cdff3432882b181c4139a99 test(ci): assert emulator acceptance behavior, not heredoc syntax
+2026-09-17 eec1e1c30be8b32ea3e4a9826367e6bcf4260e2c ci: fix emulator acceptance command quoting
+2026-09-17 78d8f2b07c8b12c6d8a5c8f0ac5ce41af9873d41 fix(ci): target screenshot emulator deterministically
+2026-09-17 1679d5bf1ed6590cbe296096af195331759d15d6 test(ci): require explicit emulator targeting
 2026-09-17 d61dc253d47bdf8d5376f8297dcc305efc032561 fix(android): replay scanner-friendly QR pairing on current master
+2026-09-17 8dceebb91fc3e58f5acb430388611d0ef9c6a273 Merge master into dual-screenshot gate after #1032
 2026-09-17 02cdf6ebba8a15bcf1d2f583c1bb7ecb928146c0 ci: retain stock ZaraServer log for #575 recurrence (#1032)
+2026-09-17 057510a2521daf49c727ca7d5d3052c6487e5635 test(ci): keep provenance fixture hermetic
+2026-09-17 fc33a4cbbde7d3e05be98658a03458167f7801ff fix(ci): run emulator acceptance under bash
+2026-09-17 614c277dc5723a2bef92de09eff2d476dc3cd1ad Merge current master into Android three-menu navigation
+2026-09-17 a48f80c766d2c831dddbc38aed567ce62cb63ffa chore(ci): anchor dual-surface evidence gate to merged #947 master
 2026-09-17 01a9a56307d0edbd1f6afdede364af188c2dbe86 fix(ci): replay Android/Wear artifact gates on current master (#947)
+2026-09-17 7c67e67e94d74059df82c27d05b317aa9721c671 chore(ci): integrate dual-surface evidence gate with #947 candidate
+2026-09-17 735310cc8eb68e94067c5de0fd5b310055aa6487 chore(ci): refresh release artifact gate onto repaired master
 2026-09-17 df01a886cf3e4f800458c2269a04af84a86c496c fix(android): restore AutomationActivity Compose build
+2026-09-17 ef847b25481c82c1dbba5847d84f007dea1cc9b2 test(android): cover rail accessibility and saved drafts
+2026-09-17 803c26df21fe7077b16bd0fd974b2229ec37c2f0 test(android): deepen navigation lifecycle evidence
+2026-09-17 9d7bb9e94fa4df45c583794c5ff965329fe204a7 test(android): validate screenshot harness semantics
+2026-09-17 85a1735e5fa6b3b4c4f3d8c059c0ac76c12d41f8 test(android): exercise three-menu screenshot lifecycle matrix
+2026-09-17 80a7a4d2757908b11c04ea72191f83e710ab3efe test(android): pin three-menu screenshot acceptance contract
+2026-09-17 dd5c512e9aa3f1823c38b6a59283a3487983b15b fix(ci): bind evidence to exact reviewed head
+2026-09-17 d5638902fbfeebfd2e54e63780032dc521cccd30 test(ci): reject mismatched screenshot source claims
+2026-09-17 76e32ffea4d833eeebfbf61d259f48da314564d8 fix(ci): verify Android evidence source provenance
+2026-09-17 97f30012cb2c40cdc144f7f93220613ff632e8e6 test(ci): cover tampered and escaping evidence
+2026-09-17 d8d8ffd925828765fd15cd4fb4f6e3b585e655d3 docs: define dual-surface quality gate
+2026-09-17 a7c4422ac08734a0f2583b6ccad8484737b0f68f docs(android): make screenshot gate repo-wide
+2026-09-17 0dfd030b4f9033b56abe4ae76dfcc8a8b10660a0 docs(ci): require cross-platform evidence in PRs
+2026-09-17 9d9722659173c73d2c4acd8fb7efcca0f8db9806 ci: require dual-surface screenshots and deeper regression
+2026-09-17 86df0b494dba6386b66720f2c7ed342c81948204 fix(android): stamp reviewed SHA in screenshot evidence
+2026-09-17 ab812a2196b7bfc8ffb23d044cfc2c894147dc12 feat(ci): validate cross-platform screenshot evidence
+2026-09-17 8b4dcbc86f524ea51f8281a884d5dfb80e2b289c test(ci): define dual-surface evidence gate
+2026-09-17 b8b64d09f3c29afa3feb018cac1a19804261ac52 fix(ci): replay Android/Wear artifact gates on current master
 2026-09-17 6cbc73c6f894231e1216df9a5f63e51bfa75cd80 feat(android): add Prolog-driven Samsung Health plugin (#971)
+2026-09-17 b47c6aa8d83fabadff76c078c006e36fa369425d Merge master 8a11e9c583a5539c187633bcf87901111e2cc827 into feat/android-three-menu-navigation
 2026-09-17 8a11e9c583a5539c187633bcf87901111e2cc827 fix(android): restore local-first runtime and automation on-device (#941)
+2026-09-17 18492c07d8500f0bb5d5ae0f313df87ffd89dd33 Merge cadbe265fdb93baf8b6d1043e7cfe932d9248c5f into ec9756e56537ee85f165291499ceb6312ee84451
+2026-09-17 cadbe265fdb93baf8b6d1043e7cfe932d9248c5f docs(android): record navigation red-green evidence and remaining release gates
+2026-09-17 b4aa27c8c4911bf4094466fb2781134b87fadd6c docs(android): document navigation, grouped settings and visual acceptance matrix
+2026-09-17 9b033f3dadc00e6d7a497b7f653bb43bca00506a docs(android): revise canonical navigation to three menus and settings tabs
+2026-09-17 5a32f9e2253146a2882dbe988d89d8f55a951ae1 feat(android): replace eleven-item drawer with three menus and tabbed settings
 2026-09-17 ec9756e56537ee85f165291499ceb6312ee84451 feat(android): host embedded local AI and offline TTS service (#907)
+2026-09-17 2c72350e906ab0f27b776a6b6c3a7a6dffc11d72 feat(android): add semantic navigation rail and scrollable menu tabs
+2026-09-17 1b2f3fa8c687f8f66c72ea952be535b17fb1dd3c feat(android): model three menus with validated per-menu navigation state
+2026-09-17 0f2174b552853df8a55db5559b4c12c91ce0507d test(android): run navigation contracts through the existing JUnit gate
+2026-09-17 7b1412137e86de0d1de7da12d4e6d1dfc3838c48 test(android): require tabbed settings, state preservation and adaptive shell (RED)
+2026-09-17 cb09c157028336eeb1297a8a7bf25221efd5b9da test(android): define three-menu navigation and restoration contracts (RED)
 2026-09-17 e8e8382ddea3a48b1b67de9146e5e8ae6d17645f Android: Prolog automation, special access, and Git config templates (#915)
 2026-09-16 5910759379ff623dad83bbd5703629445e3a063a feat(android): install Zara Wear from the phone (#903)
 2026-09-16 ab1ff39f14437db63ac5f47b1ab82bf48248798f ci(android): publish reproducible releases and direct latest APKs (#902)
@@ -821,27 +929,12 @@
 2026-09-04 23fcd224a2742b76eb5b4c6d21d4776fc8c414e5 rage: record #315 recovery before #165 re-gate
 2026-09-04 996440122611c978a0b2d56558fafcbc67bb425e test: sync route-backpressure contract from #315
 2026-09-04 a1b38d9b80a2f4dabe06d53d1185ff23acbbb84d Merge pull request #316 from lost-rob0t/rage/315-route-backpressure-test-contract
-2026-09-04 fbc22c09e4e4e40d5c8523b960f2c4efdeb81851 test: assert route-local ordering under backpressure
-2026-09-04 e3ee03164a09bd8b067fe7cc4cc5b661dba9db45 rage: consume #315 route backpressure test regression
-2026-09-04 8268443861524a27191d5529281585c827166e12 rage: record #165 schema placeholder RED
-2026-09-04 57734bfa6ca70fb96c3715584d80c318722505e8 fix: resolve schema-legal command placeholders
-2026-09-04 9fd706b6dd123663bf6292d9da5fea37a5291f1a fix: align command placeholders with slot schema
-2026-09-04 96dde9843aa57e5e968bf4d470d4dfcc5505eee3 test: cover schema-legal hyphenated slot placeholders
-2026-09-04 f5146cb2ad3a5a5011b2ab95d8e3811a4ad78f71 feat: validate user command trigger placeholders
-2026-09-04 68a323fa9b58b2db50d38b45a7ec24a2c50e1985 feat: resolve compiled user commands at runtime
-2026-09-04 e395daf082b870c9f8808238014fb85419839ac1 test: use overlapping distinct command templates
-2026-09-04 1fd1ce78d3d111b172afd295ec42b196f3b6134a rage: record #165 deterministic red
-2026-09-04 d992fd9c9b9f21309be8290bc705a8dc244b675f test: define parameterized user command runtime contract
-2026-09-04 15e942bb16e85346733fa6c2c7963015579a0ed7 rage: consume #165 user command runtime
-2026-09-04 dd03e3309f5c09ddbc76c22ba936ce366508ac2a Merge pull request #313 from lost-rob0t/rage/164-user-command-authoring
-2026-09-04 8ba768b17da7a40773d3141fa2289b4abebf7ebe rage: record authoring cancellation acceptance fix
-2026-09-04 986d4252cc6818921f9dedaa755d4e7bfafef5de fix: route authoring cancellation through clarification control
-2026-09-04 3f6c38eea08bae8036e7040659ba81876e23b70a test: prove remaining command authoring acceptance invariants
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
+.github/pull_request_template.md
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
 .github/workflows/rage-575-apply-green.yml
@@ -854,7 +947,9 @@
 .prolog/kb/voice_ingress_stt.pl
 .prolog/kb/wake_connection.pl
 AGENTS.md
+CHANGELOG.md
 DESIGN.md
+MANIFEST.in
 PRODUCT.md
 README.org
 android/.gitignore
@@ -897,6 +992,7 @@ android/app/src/main/java/ai/zara/app/device/OpenAppAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriPolicy.kt
 android/app/src/main/java/ai/zara/app/device/RegistryDeviceActionHandler.kt
+android/app/src/main/java/ai/zara/app/diagnostics/LocalRuntimeDiagnostics.kt
 android/app/src/main/java/ai/zara/app/localai/AndroidOfflineTtsBackend.kt
 android/app/src/main/java/ai/zara/app/localai/LiteRtLocalLlmBackend.kt
 android/app/src/main/java/ai/zara/app/localai/LocalAiAbi.kt
@@ -907,6 +1003,7 @@ android/app/src/main/java/ai/zara/app/localai/LocalAiService.kt
 android/app/src/main/java/ai/zara/app/localai/LocalAiServiceClient.kt
 android/app/src/main/java/ai/zara/app/localai/LocalModelStore.kt
 android/app/src/main/java/ai/zara/app/localai/LocalTtsContracts.kt
+android/app/src/main/java/ai/zara/app/projects/ProjectContextStore.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
 android/app/src/main/java/ai/zara/app/prolog/GitConfigTemplateImporter.kt
@@ -932,15 +1029,19 @@ android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthAndroidPlugin.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthPlugin.kt
+android/app/src/main/java/ai/zara/app/ui/AppNavigation.kt
 android/app/src/main/java/ai/zara/app/ui/AssistantSetupGuidance.kt
 android/app/src/main/java/ai/zara/app/ui/LocalEmbeddingPreferenceStore.kt
+android/app/src/main/java/ai/zara/app/ui/ProjectsSurface.kt
 android/app/src/main/java/ai/zara/app/ui/PrologStudioSurface.kt
 android/app/src/main/java/ai/zara/app/ui/RuntimeModePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/ThemePreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/UiOperationFailure.kt
 android/app/src/main/java/ai/zara/app/ui/WatchSetupSurface.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
+android/app/src/main/java/ai/zara/app/ui/ZaraNavigationBars.kt
 android/app/src/main/java/ai/zara/app/update/AndroidUpdateManager.kt
+android/app/src/main/java/ai/zara/app/update/Changelog.kt
 android/app/src/main/java/ai/zara/app/update/UpdateInstallReceiver.kt
 android/app/src/main/java/ai/zara/app/update/UpdateSecurity.kt
 android/app/src/main/java/ai/zara/app/voice/AndroidAudioFocusPlatform.kt
@@ -982,6 +1083,7 @@ android/app/src/main/res/xml/voice_interaction_service.xml
 android/app/src/main/res/xml/zara_accessibility_service.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
+android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AppScopedAssistantRuntimeContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantLifecycleFenceTest.kt
@@ -1003,17 +1105,20 @@ android/app/src/test/java/ai/zara/app/device/OpenAppAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
+android/app/src/test/java/ai/zara/app/diagnostics/LocalRuntimeDiagnosticsTest.kt
 android/app/src/test/java/ai/zara/app/localai/EmbeddedLocalAiContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiProviderContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalHybridRoutingContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalModelStoreTest.kt
+android/app/src/test/java/ai/zara/app/projects/ProjectContextStoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/GitConfigTemplateImporterContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidProjectConversationRoutingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1045,14 +1150,20 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/AndroidPrologStudioContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
+android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
+android/app/src/test/java/ai/zara/app/ui/AppNavigationWiringContract.kt
+android/app/src/test/java/ai/zara/app/ui/ProjectsWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/RuntimeModePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/update/ChangelogTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateManagerContractTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateSecurityTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
+android/app/src/test/java/ai/zara/app/voice/AudioFocusReleaseFailureTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioRouteControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AuthenticatedVoiceIngressTest.kt
@@ -1114,7 +1225,6 @@ rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
 rage/159-zara1-device-actions.org
 rage/160-semantic-first-runtime.org
-rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
 rage/173-android-auth.org
 rage/173-android-client-continuity.org
@@ -1161,7 +1271,6 @@ rage/217-s1-mini-normalizer-r4.org
 rage/218-normalizer-config-r4.org
 rage/29-streaming-tts-provider-recovery-r10.org
 rage/29-streaming-tts-recovery-r7.org
-rage/315-route-backpressure-test-contract.org
 rage/324-expanded-history-sidebar-r2.org
 rage/324-unified-copilot-r2.org
 rage/324-unified-copilot-research-r2.org
@@ -1186,6 +1295,7 @@ rage/880-882-voice-pipeline-merge-closeout.org
 rage/880-882-voice-pipeline-research.org
 rage/880-882-voice-pipeline.org
 rage/895-android-prolog-ide.org
+rage/android-three-menu-navigation.org
 rage/client-connection-guards.org
 scripts/check-android-apk-signer.sh
 scripts/import-backlog.py
@@ -1202,6 +1312,9 @@ scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
+scripts/validate-ui-evidence.py
+scripts/version-context.py
+setup.py
 skills/zara-android-release/SKILL.md
 skills/zara-android-release/agents/openai.yaml
 t/process_safety.pl
@@ -1209,17 +1322,21 @@ t/prolog_config.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
+t/test_android_emulator_sdk_retry_contract.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
 t/test_android_release_contract.py
+t/test_android_three_menu_device_acceptance.py
 t/test_audio_shared_input.py
 t/test_backlog_import.py
+t/test_changelog.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
 t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
+t/test_cross_platform_evidence_gate.py
 t/test_daemon_client_config.py
 t/test_daemon_connection_guards.py
 t/test_desktop_control.py
@@ -1266,8 +1383,7 @@ t/test_transcript_normalization_selection.py
 t/test_tts.py
 t/test_tts_output_lifecycle.py
 t/test_tts_provider_recovery.py
-t/test_user_command_authoring_acceptance.py
-t/test_user_command_runtime.py
+t/test_version_context.py
 t/test_voice_runtime_ingress.py
 t/test_wake_capture_stall.py
 t/test_wake_daemon_client.py
@@ -1283,8 +1399,11 @@ t/test_zmq_send_diagnostics.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_transport_route_backpressure.py
+version.properties
 wiki/android-automation.org
 wiki/android-local-ai.org
+wiki/android-navigation.org
+wiki/android-projects.org
 wiki/android-prolog-studio.org
 wiki/android-samsung-health.org
 wiki/android-watch-install.org
@@ -1294,6 +1413,7 @@ wiki/plugins.org
 zara/__main__.py
 zara/agent/tools/registry.py
 zara/audio.py
+zara/changelog.py
 zara/command_gate.py
 zara/config.py
 zara/daemon_client.py
@@ -1327,9 +1447,7 @@ zara/transcript_normalization_config.py
 zara/transcript_normalization_selection.py
 zara/tts/engine.py
 zara/tts/qwen.py
-zara/user_command_authoring.py
-zara/user_command_compiler.py
-zara/user_command_runtime.py
+zara/version_context.py
 zara/voice_runtime.py
 zara/wake.py
 zara/wake_daemon.py
@@ -1346,6 +1464,7 @@ zara/zmq_transport.py
 .github/workflows/release-v0.1.0-alpha.yml
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/BuildMetadataTest.kt
+android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AppScopedAssistantRuntimeContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantInvocationGateTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantLifecycleFenceTest.kt
@@ -1367,17 +1486,20 @@ android/app/src/test/java/ai/zara/app/device/OpenAppAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
+android/app/src/test/java/ai/zara/app/diagnostics/LocalRuntimeDiagnosticsTest.kt
 android/app/src/test/java/ai/zara/app/localai/EmbeddedLocalAiContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiProviderContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalHybridRoutingContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalModelStoreTest.kt
+android/app/src/test/java/ai/zara/app/projects/ProjectContextStoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/GitConfigTemplateImporterContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
+android/app/src/test/java/ai/zara/app/runtime/AndroidProjectConversationRoutingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidReconnectSchedulerFailureTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionObserverTest.kt
@@ -1409,14 +1531,20 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/security/AndroidProductionLoggingContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/AndroidPrologStudioContractTest.kt
+android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
+android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
+android/app/src/test/java/ai/zara/app/ui/AppNavigationWiringContract.kt
+android/app/src/test/java/ai/zara/app/ui/ProjectsWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/RuntimeModePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/ThemePreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/UiOperationFailureTest.kt
 android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
+android/app/src/test/java/ai/zara/app/update/ChangelogTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateManagerContractTest.kt
 android/app/src/test/java/ai/zara/app/update/UpdateSecurityTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusControllerTest.kt
+android/app/src/test/java/ai/zara/app/voice/AudioFocusReleaseFailureTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioFocusSynchronousLossTest.kt
 android/app/src/test/java/ai/zara/app/voice/AudioRouteControllerTest.kt
 android/app/src/test/java/ai/zara/app/voice/AuthenticatedVoiceIngressTest.kt
@@ -1465,22 +1593,28 @@ scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
+scripts/validate-ui-evidence.py
+scripts/version-context.py
 t/process_safety.pl
 t/prolog_config.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
+t/test_android_emulator_sdk_retry_contract.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
 t/test_android_release_contract.py
+t/test_android_three_menu_device_acceptance.py
 t/test_audio_shared_input.py
 t/test_backlog_import.py
+t/test_changelog.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
 t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
+t/test_cross_platform_evidence_gate.py
 t/test_daemon_client_config.py
 t/test_daemon_connection_guards.py
 t/test_desktop_control.py
@@ -1527,8 +1661,7 @@ t/test_transcript_normalization_selection.py
 t/test_tts.py
 t/test_tts_output_lifecycle.py
 t/test_tts_provider_recovery.py
-t/test_user_command_authoring_acceptance.py
-t/test_user_command_runtime.py
+t/test_version_context.py
 t/test_voice_runtime_ingress.py
 t/test_wake_capture_stall.py
 t/test_wake_daemon_client.py
