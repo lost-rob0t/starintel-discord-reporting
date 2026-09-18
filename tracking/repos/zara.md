@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-18T04:49:03Z`
+- generated: `2026-09-18T11:21:20Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`2403f81435b3b85e74e5793361c7d605d37dc40e`](https://github.com/lost-rob0t/zara/commit/2403f81435b3b85e74e5793361c7d605d37dc40e)
@@ -837,20 +837,6 @@
 2026-09-04 8ba768b17da7a40773d3141fa2289b4abebf7ebe rage: record authoring cancellation acceptance fix
 2026-09-04 986d4252cc6818921f9dedaa755d4e7bfafef5de fix: route authoring cancellation through clarification control
 2026-09-04 3f6c38eea08bae8036e7040659ba81876e23b70a test: prove remaining command authoring acceptance invariants
-2026-09-04 a12ddb0f63660743fd714aa903f19382c85db050 rage: record command management RED and implementation
-2026-09-04 cccad6ca72ed29312ab2195470dc9034f29bbce9 feat: complete user command authoring dialogue
-2026-09-04 9d93b4ab9580a43fdfad3648207caa9c10378985 test: cover full user command authoring dialogue
-2026-09-04 106d4414019fb6d1273b3d4d99abdfdee5ef616e test: preserve canonical clarification tombstone lifecycle
-2026-09-04 97c76e5c9c3de78eb01f3fbeea56cc8b0bfc54ca RAGE #164: record dialogue RED and contract correction
-2026-09-04 70bd5040e027aac8aa947c8aa986e3b8c8fb0fba feat: add typed create-command dialogue
-2026-09-04 408466e45f4d50976cbc40a1774bd7b3ef46f6fe test: define conversational authoring red contract
-2026-09-04 de47813751ff32bc142a22a55e0c72232233a99b test: align authoring preview with compiled action contract
-2026-09-04 a413f27031e26adb2cc5584af84b2934a8f989b6 RAGE #164: record RED and implementation evidence
-2026-09-04 c1ee7bf865971a1781ddb9bdb1c3239fce451900 RAGE #164: implement semantic user command authoring service
-2026-09-04 53ebf3a08071cef4f821271428cbc5a248f9fb27 test: add user command authoring gate
-2026-09-04 af7323778df878ed9480d99007c5ab93629a129c test: define red contract for user command authoring
-2026-09-04 4ff167db5a519624dc787c6a1af675a0ad1dd5b4 rage: research and design user command authoring
-2026-09-04 014e8f7e472011b6319f03026cd37f29d4748a18 rage: consume issue 164
 ```
 
 ## Repository paths changed, last 14 days
@@ -1216,7 +1202,6 @@ scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
-scripts/test-user-command-authoring.sh
 skills/zara-android-release/SKILL.md
 skills/zara-android-release/agents/openai.yaml
 t/process_safety.pl
@@ -1281,7 +1266,6 @@ t/test_transcript_normalization_selection.py
 t/test_tts.py
 t/test_tts_output_lifecycle.py
 t/test_tts_provider_recovery.py
-t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
 t/test_user_command_runtime.py
 t/test_voice_runtime_ingress.py
@@ -1481,7 +1465,6 @@ scripts/test-pair-android-qr.sh
 scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
-scripts/test-user-command-authoring.sh
 t/process_safety.pl
 t/prolog_config.pl
 t/security_threat_catalog.py
@@ -1544,7 +1527,6 @@ t/test_transcript_normalization_selection.py
 t/test_tts.py
 t/test_tts_output_lifecycle.py
 t/test_tts_provider_recovery.py
-t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
 t/test_user_command_runtime.py
 t/test_voice_runtime_ingress.py
