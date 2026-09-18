@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-17T22:52:30Z`
+- generated: `2026-09-18T04:49:03Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`2403f81435b3b85e74e5793361c7d605d37dc40e`](https://github.com/lost-rob0t/zara/commit/2403f81435b3b85e74e5793361c7d605d37dc40e)
@@ -851,16 +851,6 @@
 2026-09-04 af7323778df878ed9480d99007c5ab93629a129c test: define red contract for user command authoring
 2026-09-04 4ff167db5a519624dc787c6a1af675a0ad1dd5b4 rage: research and design user command authoring
 2026-09-04 014e8f7e472011b6319f03026cd37f29d4748a18 rage: consume issue 164
-2026-09-04 c4945cf3e848eb4e55355ed767ce780348beb414 Merge pull request #312 from lost-rob0t/rage/163-user-command-compiler
-2026-09-03 7f908015761c0367d1a739fb535140422d588a7d docs: record #163 RED and compiler implementation
-2026-09-03 65ab9123088999473e7e9edf4df7e65085672492 feat: compile persisted user commands into semantic frames
-2026-09-03 cf03f6376d9be0799812d2c740e3ded559f45c21 test: add user command compiler gate
-2026-09-03 6b27dad03ac4e25171ef35908576622d348660d3 test: define user command compiler contract
-2026-09-03 bc1c2d8a977e38311c7d8d1b7ff8ddcd057eacc2 rage: consume issue 163
-2026-09-03 7ae6739f44f11aaef2786fa9410e26f5b7aecab3 Merge pull request #311 from lost-rob0t/rage/162-user-command-persistence
-2026-09-03 ae0d49d89dd5b910b43134fc3ffc2cbf56af5bdc RAGE #162: complete typed command definition persistence
-2026-09-03 9693cf1082491a0247dece1695224bbc3729379d docs: record #162 acceptance-gap iteration
-2026-09-03 c189c26dcda56eb363fcfee3586c97a5361da2a3 test: cover full user command persistence contract
 ```
 
 ## Repository paths changed, last 14 days
@@ -1138,8 +1128,6 @@ rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
 rage/159-zara1-device-actions.org
 rage/160-semantic-first-runtime.org
-rage/162-user-command-persistence.org
-rage/163-user-command-compiler.org
 rage/164-user-command-authoring.org
 rage/165-user-command-runtime.org
 rage/173-android-auth.org
@@ -1229,7 +1217,6 @@ scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
-scripts/test-user-command-compiler.sh
 skills/zara-android-release/SKILL.md
 skills/zara-android-release/agents/openai.yaml
 t/process_safety.pl
@@ -1296,8 +1283,6 @@ t/test_tts_output_lifecycle.py
 t/test_tts_provider_recovery.py
 t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
-t/test_user_command_compiler.py
-t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_voice_runtime_ingress.py
 t/test_wake_capture_stall.py
@@ -1361,7 +1346,6 @@ zara/tts/qwen.py
 zara/user_command_authoring.py
 zara/user_command_compiler.py
 zara/user_command_runtime.py
-zara/user_commands.py
 zara/voice_runtime.py
 zara/wake.py
 zara/wake_daemon.py
@@ -1498,7 +1482,6 @@ scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/test-user-command-authoring.sh
-scripts/test-user-command-compiler.sh
 t/process_safety.pl
 t/prolog_config.pl
 t/security_threat_catalog.py
@@ -1563,8 +1546,6 @@ t/test_tts_output_lifecycle.py
 t/test_tts_provider_recovery.py
 t/test_user_command_authoring.py
 t/test_user_command_authoring_acceptance.py
-t/test_user_command_compiler.py
-t/test_user_command_persistence.py
 t/test_user_command_runtime.py
 t/test_voice_runtime_ingress.py
 t/test_wake_capture_stall.py
