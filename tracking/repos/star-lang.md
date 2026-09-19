@@ -1,15 +1,20 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-09-19T00:24:16Z`
+- generated: `2026-09-19T07:22:27Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`c9d56a38e04ef5cc1cfe90924da1551c7125bf3e`](https://github.com/lost-rob0t/star-lang/commit/c9d56a38e04ef5cc1cfe90924da1551c7125bf3e)
-- head date: `2026-09-16T23:29:22-04:00`
-- head subject: canonical-json: add RFC 8785 binary64 foundation
+- head: [`09f3b6dab15a9bcb9b5dd7866735d65301571211`](https://github.com/lost-rob0t/star-lang/commit/09f3b6dab15a9bcb9b5dd7866735d65301571211)
+- head date: `2026-09-19T00:59:07-04:00`
+- head subject: Merge pull request #146 from lost-rob0t/rage/137-scraper-contracts
 
 ## Git log, last 14 days
 
 ```text
+2026-09-19 09f3b6dab15a9bcb9b5dd7866735d65301571211 Merge pull request #146 from lost-rob0t/rage/137-scraper-contracts
+2026-09-19 45d86db10566b027450b920ca81b8aa04a1efce8 Merge pull request #145 from lost-rob0t/rage/142-lifecycle-dsl
+2026-09-19 6fd76015b2ef510ae133bb33610ea6bf8a406a7b prolog-kb: record scraper schema and round-trip verification facts
+2026-09-19 d53c61bc5e3a976d0d7e6aca34e45f00085ceb41 star-scrape: add StarLang scraper schema contracts
+2026-09-19 06033741a4177d3258545f5ff2b8cd9c2f06ded6 compiler: add document lifecycle DSL with deterministic manifest
 2026-09-16 c9d56a38e04ef5cc1cfe90924da1551c7125bf3e canonical-json: add RFC 8785 binary64 foundation
 2026-09-16 3c7d2bbb7f4677f42215843e4a00f1b93c1c6216 merge: reconcile current main into binary64 foundation
 2026-09-16 878cd2a99cc99b31f502242ba6adca19cf4815e3 ZMQ transport, managed Nim actors, and StarLang runtime E2E (#112)
@@ -167,15 +172,18 @@
 .github/workflows/nix.yml
 .github/workflows/production-readiness.yml
 .github/workflows/zmq-local.yml
+.prolog/kb/canonical-json-roundtrip.pl
 .prolog/kb/cli-surface.pl
 .prolog/kb/compiler-ownership.pl
 .prolog/kb/load.pl
+.prolog/kb/scraper-schema.pl
 .prolog/kb/testing.pl
 .prolog/kb/toolchain.pl
 .prolog/kb/verification-workflow.pl
 AGENTS.md
 CHANGELOG.md
 README.md
+RESEARCH-CONFORMANCE-000-009.md
 ci/check-prototype-migration.sh
 ci/check-repository-contracts.sh
 ci/check-swi-adapter-contracts.sh
@@ -187,7 +195,13 @@ docs/PRODUCTION-READINESS.md
 docs/implementation-slices/ACTOR-RUNTIME-MIGRATION-MATRIX.md
 docs/implementation-slices/FINAL-RUNTIME-OWNERSHIP-ACTORS-INGEST.md
 docs/implementation-slices/REAL-ACTOR-SYSTEM-TEST-INVARIANT.md
+docs/scraper-schema-contract.md
 fixtures/actor-compiler/enrichment-worker.star
+fixtures/lifecycle/README.md
+fixtures/lifecycle/document-lifecycle.manifest.json
+fixtures/lifecycle/document-lifecycle.star
+fixtures/lifecycle/generate-manifest.lisp
+fixtures/star-scrape-core.star
 flake.lock
 flake.nix
 nix/sento-remoting.nix
@@ -262,6 +276,11 @@ star-process-port/star-process-port.asd
 star-process-port/tests/fixtures/process-fixture.sh
 star-process-port/tests/star-process-port-tests.asd
 star-process-port/tests/star-process-port-tests.lisp
+star-scrape/src/packages.lisp
+star-scrape/src/schema.lisp
+star-scrape/star-scrape.asd
+star-scrape/tests/star-scrape-tests.asd
+star-scrape/tests/star-scrape-tests.lisp
 star-sento-compat/src/packages.lisp
 star-sento-compat/src/runtime-port.lisp
 star-sento-compat/src/sento-adapter.lisp
@@ -305,6 +324,7 @@ starlang-compiler/src/actor-manifest.lisp
 starlang-compiler/src/actor-source.lisp
 starlang-compiler/src/core-surface.lisp
 starlang-compiler/src/lifecycle-bindings.lisp
+starlang-compiler/src/lifecycle.lisp
 starlang-compiler/src/macro-expander.lisp
 starlang-compiler/src/packages.lisp
 starlang-compiler/src/public-surface.lisp
@@ -315,6 +335,7 @@ starlang-compiler/tests/actor-compiler-proof.lisp
 starlang-compiler/tests/actor-compiler-tests.lisp
 starlang-compiler/tests/actor-option-key-tests.lisp
 starlang-compiler/tests/field-marker-tests.lisp
+starlang-compiler/tests/lifecycle-tests.lisp
 starlang-compiler/tests/macro-expander-tests.lisp
 starlang-compiler/tests/starlang-compiler-tests.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
@@ -377,6 +398,9 @@ star-process-port/star-process-port.asd
 star-process-port/tests/fixtures/process-fixture.sh
 star-process-port/tests/star-process-port-tests.asd
 star-process-port/tests/star-process-port-tests.lisp
+star-scrape/star-scrape.asd
+star-scrape/tests/star-scrape-tests.asd
+star-scrape/tests/star-scrape-tests.lisp
 star-sento-compat/tests/integration/harness.lisp
 star-sento-compat/tests/integration/packages.lisp
 star-sento-compat/tests/integration/real-actor-system-tests.lisp
@@ -403,6 +427,7 @@ starlang-compiler/tests/actor-compiler-proof.lisp
 starlang-compiler/tests/actor-compiler-tests.lisp
 starlang-compiler/tests/actor-option-key-tests.lisp
 starlang-compiler/tests/field-marker-tests.lisp
+starlang-compiler/tests/lifecycle-tests.lisp
 starlang-compiler/tests/macro-expander-tests.lisp
 starlang-compiler/tests/starlang-compiler-tests.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp

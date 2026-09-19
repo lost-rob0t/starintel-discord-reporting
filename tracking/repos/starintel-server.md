@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-19T00:24:03Z`
+- generated: `2026-09-19T07:22:12Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`e49c67d88d60dbcc0fcba1b4ba76c1a0a6d6655c`](https://github.com/lost-rob0t/starintel-server/commit/e49c67d88d60dbcc0fcba1b4ba76c1a0a6d6655c)
-- head date: `2026-09-16T22:16:45-04:00`
-- head subject: observability: audit search queries and wire hosted telemetry
+- head: [`f899612d6e5924ffcc81432d78541b6616311892`](https://github.com/lost-rob0t/starintel-server/commit/f899612d6e5924ffcc81432d78541b6616311892)
+- head date: `2026-09-19T02:14:21-04:00`
+- head subject: docs: define source actor and target protocols
 
 ## Git log, last 14 days
 
 ```text
+2026-09-19 f899612d6e5924ffcc81432d78541b6616311892 docs: define source actor and target protocols
 2026-09-16 e49c67d88d60dbcc0fcba1b4ba76c1a0a6d6655c observability: audit search queries and wire hosted telemetry
 2026-09-16 61499b8509e6f7c7bb6c0ac54248d1f99863fc99 fix: keep observability transport installation idempotent
 2026-09-16 cd4546871543f6a314fb2eafe901417935042166 observability: pass explicit gate and sidecar endpoint into server

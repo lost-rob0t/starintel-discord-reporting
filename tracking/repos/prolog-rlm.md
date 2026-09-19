@@ -1,15 +1,20 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-19T00:24:19Z`
+- generated: `2026-09-19T07:22:29Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`9c475fe44c24ca58795c6b5cb5e002f2e2decc5e`](https://github.com/lost-rob0t/prolog-rlm/commit/9c475fe44c24ca58795c6b5cb5e002f2e2decc5e)
-- head date: `2026-09-18T16:15:18-04:00`
-- head subject: Merge pull request #452 from lost-rob0t/fix/zara-runtime-v1-provenance
+- head: [`eba3f90a1d4c0b9342e9e37049f92b178c115c1c`](https://github.com/lost-rob0t/prolog-rlm/commit/eba3f90a1d4c0b9342e9e37049f92b178c115c1c)
+- head date: `2026-09-18T21:40:01-04:00`
+- head subject: feat: add Common Lisp adapter and symbolic tool harness
 
 ## Git log, last 14 days
 
 ```text
+2026-09-18 eba3f90a1d4c0b9342e9e37049f92b178c115c1c feat: add Common Lisp adapter and symbolic tool harness
+2026-09-18 235528ab1420c4803ceb2b011b41f7f4d18887ec Merge pull request #478 from lost-rob0t/fix/zara-runtime-redact-raw-outcomes-1046
+2026-09-18 5b7b32946828fdf31c4a4b85baa7a193f5ae6f94 test(runtime): cover malformed outcome redaction
+2026-09-18 093659508f29db012043fd99d9d02a04f4990a2d fix(runtime): keep raw outcomes behind Prolog-RLM boundary
+2026-09-18 ca7ac96df1e32f1658aa32bae2ba3032fec947c0 test(runtime): reject raw Prolog-RLM outcome leakage
 2026-09-18 9c475fe44c24ca58795c6b5cb5e002f2e2decc5e Merge pull request #452 from lost-rob0t/fix/zara-runtime-v1-provenance
 2026-09-18 25e656f1c00c368c6b8359144081beff58d8aab0 fix(runtime): project bounded ZARA-RUNTIME provenance
 2026-09-18 be996e3f6ea4f0d02ed22483085ed0ab9eeb0c7d test(runtime): lock ZARA-RUNTIME provenance shape
@@ -36,13 +41,12 @@
 2026-09-11 fa41aa355e9fb3b9e248d07d7134792abbc14dd0 fix: #98 review — atomic semantic journal, complete index coherence, incomplete resolution, hydration, host adapters, true project isolation
 2026-09-10 d868c110877ff4462ba231f63eef51416623f9ca ci: re-trigger PR gates after paid-lane variable provisioning
 2026-09-10 42a7cf64edb60b9976957a73dd4f41a38579eb7e feat: implement #98 semantic project knowledge normalization
-2026-09-05 e1ed6c2b5f717d9bb380fcf22d144737299197f8 Merge pull request 'fix: preserve Agent Zero skills through canonical skill graph' (#364) from fix/339-agent-zero-skill-graph into main
-2026-09-05 4b34741f1d0bac3049d821314263471790fcbb39 Merge branch 'main' into fix/339-agent-zero-skill-graph
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
+.github/workflows/ci.yml
 .github/workflows/nix.yml
 .github/workflows/tree-sitter.yml
 .prolog/facts.kb
@@ -55,23 +59,35 @@ README.md
 TODO.md
 bin/prolog-rlm-zara.pl
 c/rlm_tree_sitter_query.c
+docs/common-lisp-adapter.md
 docs/project-query.md
 docs/project-semantic.md
 docs/prolog-agent-roadmap.md
 docs/zara-runtime.md
 flake.nix
+lisp/bridge.lisp
+lisp/package.lisp
+lisp/prolog-rlm-cl.asd
+lisp/symbolic-tools.lisp
+prolog/adaptors/rlm_common_lisp_bridge.pl
+prolog/rlm.pl
+prolog/rlm_completion.pl
 prolog/rlm_plan_graph.pl
 prolog/rlm_project_query.pl
 prolog/rlm_project_semantic.pl
 prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
+prolog/rlm_symbolic_tool.pl
 prolog/rlm_zara_runtime.pl
+test/common_lisp_adapter_smoke.lisp
 test/deterministic_corpus.pl
 test/load_all.pl
+test/rlm_completion_stream_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
 test/rlm_project_semantic_test.pl
+test/rlm_symbolic_tool_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/rlm_zara_runtime_test.pl
 test/run_tree_sitter_tests.pl
@@ -80,14 +96,19 @@ test/run_tree_sitter_tests.pl
 ## Test and CI paths touched, last 14 days
 
 ```text
+.github/workflows/ci.yml
 .github/workflows/nix.yml
 .github/workflows/tree-sitter.yml
 flake.nix
+lisp/prolog-rlm-cl.asd
+test/common_lisp_adapter_smoke.lisp
 test/deterministic_corpus.pl
 test/load_all.pl
+test/rlm_completion_stream_test.pl
 test/rlm_project_semantic_restart_phase1.pl
 test/rlm_project_semantic_restart_phase2.pl
 test/rlm_project_semantic_test.pl
+test/rlm_symbolic_tool_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/rlm_zara_runtime_test.pl
 test/run_tree_sitter_tests.pl
