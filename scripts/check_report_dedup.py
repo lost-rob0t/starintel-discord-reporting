@@ -22,6 +22,7 @@ CHANNEL_DISPLAY_NAMES = {
     "auto-dig-findings": "The Receipt Desk",
     "findings-shitposts": "Data After Dark",
     "starintel-updates-changelog": "StarIntel Shipyard",
+    "lost-robot-changelog": "Lost Rob0t Changelog",
 }
 
 
