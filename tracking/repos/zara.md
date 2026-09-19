@@ -1,15 +1,18 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-18T20:56:57Z`
+- generated: `2026-09-19T00:24:23Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`935a7734a0899c79ac41e32017c43c7b2dde556f`](https://github.com/lost-rob0t/zara/commit/935a7734a0899c79ac41e32017c43c7b2dde556f)
-- head date: `2026-09-18T16:41:49-04:00`
-- head subject: feat(wear): add strict-local Zara Voice launcher
+- head: [`6a9c7e469287974035f07c990af612170c48203f`](https://github.com/lost-rob0t/zara/commit/6a9c7e469287974035f07c990af612170c48203f)
+- head date: `2026-09-18T19:50:04-04:00`
+- head subject: Android local-first RuntimeHost + Assistant strict-local integration (#916)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-18 6a9c7e469287974035f07c990af612170c48203f Android local-first RuntimeHost + Assistant strict-local integration (#916)
+2026-09-18 77bfc9414c5a5cb6524984f47849aff3888e1071 feat(android): add portable local conversation persistence core (#966)
+2026-09-18 ffaa482cf621489bb67e1121dedb570095a472b0 chore(todo): add canonical ideas.org inbox (#1125)
 2026-09-18 935a7734a0899c79ac41e32017c43c7b2dde556f feat(wear): add strict-local Zara Voice launcher
 2026-09-18 75b4954a895c01a6a4e2a8e7676dbac71e2e49e1 Merge pull request #1048 from lost-rob0t/rage/1046-runtime-contract-s1
 2026-09-18 aa8dcd845e0e4fda4dbf1c8f7f644c4e821175f7 rebase(runtime): replay ZARA-RUNTIME/1 S1 on current master
@@ -938,12 +941,6 @@
 2026-09-04 2f5effd17e388637974ce2d6c7917bbece1db614 RAGE #133: default one-shot commands to daemon client
 2026-09-04 1de5c5ad041a54868aaeaf6c4163bd9fbeab1b8b test: prove default timer command uses daemon client
 2026-09-04 d34f1365bad6653d61e4d38dfd3b4e0e0a22e5e5 rage: start #133 daemon-default regression recovery
-2026-09-04 59e9654176fa02eb4aab4cbed4e1532d02f71d2f Merge pull request #317 from lost-rob0t/rage/13-open-app-allowlist-regression
-2026-09-04 1c9f7fe5c7af64f83b3be29f3a7958fbe5a34fdc fix: fail closed on unconfigured app launches
-2026-09-04 118bf44a3891a3d257d88c0b54babe6c9847ecba RAGE #13: record exact-head RED evidence
-2026-09-04 f7e4698f3afddcec7d5a46a4f96e660a24037cc9 test: require unknown app names to fail closed
-2026-09-04 08c134f150f1936508731fa1d5032ae35a7b2ac4 test: expose unknown executable fallback regression
-2026-09-04 8f4baf46344fcf730e08e71d800438329cc31204 rage: consume reopened #13 app allowlist regression
 ```
 
 ## Repository paths changed, last 14 days
@@ -1008,6 +1005,7 @@ android/app/src/main/java/ai/zara/app/device/OpenUriAdapter.kt
 android/app/src/main/java/ai/zara/app/device/OpenUriPolicy.kt
 android/app/src/main/java/ai/zara/app/device/RegistryDeviceActionHandler.kt
 android/app/src/main/java/ai/zara/app/diagnostics/LocalRuntimeDiagnostics.kt
+android/app/src/main/java/ai/zara/app/history/PortableConversationStore.kt
 android/app/src/main/java/ai/zara/app/localai/AndroidOfflineTtsBackend.kt
 android/app/src/main/java/ai/zara/app/localai/LiteRtLocalLlmBackend.kt
 android/app/src/main/java/ai/zara/app/localai/LocalAiAbi.kt
@@ -1122,6 +1120,7 @@ android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
 android/app/src/test/java/ai/zara/app/diagnostics/LocalRuntimeDiagnosticsTest.kt
+android/app/src/test/java/ai/zara/app/history/PortableConversationHistoryTest.kt
 android/app/src/test/java/ai/zara/app/localai/EmbeddedLocalAiContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiProviderContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
@@ -1132,6 +1131,7 @@ android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/GitConfigTemplateImporterContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidProjectConversationRoutingTest.kt
@@ -1148,6 +1148,7 @@ android/app/src/test/java/ai/zara/app/runtime/RuntimeRegistryV1Test.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
+android/app/src/test/java/ai/zara/app/runtime/StrictLocalRemoteSuspensionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraCapabilityCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraDeviceActionCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraDeviceActionCodecTest.kt
@@ -1240,11 +1241,10 @@ docs/architecture.org
 docs/development.org
 docs/research/002-unified-copilot-voice-visual-ci.md
 docs/server.org
+ideas.org
 kb/config.pl
-modules/commands.pl
 modules/config_loader.pl
 planning/backlog.pl
-rage/13-open-app-allowlist-regression.org
 rage/133-daemon-default-regression.org
 rage/133-desktop-daemon-default-regression.org
 rage/159-zara1-device-actions.org
@@ -1333,7 +1333,6 @@ scripts/test-android-device.sh
 scripts/test-android-release.sh
 scripts/test-android.sh
 scripts/test-pair-android-qr.sh
-scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/validate-ui-evidence.py
@@ -1341,14 +1340,15 @@ scripts/version-context.py
 setup.py
 skills/zara-android-release/SKILL.md
 skills/zara-android-release/agents/openai.yaml
-t/process_safety.pl
 t/prolog_config.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
+t/test_android_device_acceptance_uiautomator.py
 t/test_android_emulator_sdk_retry_contract.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
+t/test_android_local_history_recovery.py
 t/test_android_release_contract.py
 t/test_android_three_menu_device_acceptance.py
 t/test_audio_shared_input.py
@@ -1357,6 +1357,9 @@ t/test_changelog.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
+t/test_conversation_portability_hardening.py
+t/test_conversation_schema_portable.py
+t/test_conversation_store.py
 t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
@@ -1445,11 +1448,14 @@ zara/audio.py
 zara/changelog.py
 zara/command_gate.py
 zara/config.py
+zara/conversation_schema.py
+zara/conversation_schema.sql
 zara/daemon_client.py
 zara/desktop/app.py
 zara/desktop/chat_widgets.py
 zara/desktop/control.py
 zara/desktop/controller.py
+zara/desktop/conversation/store.py
 zara/desktop/theme.py
 zara/desktop/ui_fixtures.py
 zara/desktop/windows/__init__.py
@@ -1522,6 +1528,7 @@ android/app/src/test/java/ai/zara/app/device/OpenAppWiringContractTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriAdapterTest.kt
 android/app/src/test/java/ai/zara/app/device/OpenUriPolicyTest.kt
 android/app/src/test/java/ai/zara/app/diagnostics/LocalRuntimeDiagnosticsTest.kt
+android/app/src/test/java/ai/zara/app/history/PortableConversationHistoryTest.kt
 android/app/src/test/java/ai/zara/app/localai/EmbeddedLocalAiContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiProviderContractTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
@@ -1532,6 +1539,7 @@ android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/GitConfigTemplateImporterContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/NativeTreallaBridgeTest.kt
+android/app/src/test/java/ai/zara/app/prolog/NativeTreallaSourceContractTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologStudioTest.kt
 android/app/src/test/java/ai/zara/app/prolog/TreallaSemanticRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidProjectConversationRoutingTest.kt
@@ -1548,6 +1556,7 @@ android/app/src/test/java/ai/zara/app/runtime/RuntimeRegistryV1Test.kt
 android/app/src/test/java/ai/zara/app/runtime/RuntimeStateTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ServerProfileTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
+android/app/src/test/java/ai/zara/app/runtime/StrictLocalRemoteSuspensionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraCapabilityCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraDeviceActionCodecDepthTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraDeviceActionCodecTest.kt
@@ -1627,19 +1636,19 @@ scripts/test-android-device.sh
 scripts/test-android-release.sh
 scripts/test-android.sh
 scripts/test-pair-android-qr.sh
-scripts/test-process-safety.sh
 scripts/test-s1-mini-normalizer.sh
 scripts/test-streaming-tts.sh
 scripts/validate-ui-evidence.py
 scripts/version-context.py
-t/process_safety.pl
 t/prolog_config.pl
 t/security_threat_catalog.py
 t/security_threat_extensions.py
 t/test_adaptive_copilot.py
+t/test_android_device_acceptance_uiautomator.py
 t/test_android_emulator_sdk_retry_contract.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
+t/test_android_local_history_recovery.py
 t/test_android_release_contract.py
 t/test_android_three_menu_device_acceptance.py
 t/test_audio_shared_input.py
@@ -1648,6 +1657,9 @@ t/test_changelog.py
 t/test_cli_client_migration.py
 t/test_cli_semantic_modes.py
 t/test_client_connection_resolution.py
+t/test_conversation_portability_hardening.py
+t/test_conversation_schema_portable.py
+t/test_conversation_store.py
 t/test_copilot_controller_collapse.py
 t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
