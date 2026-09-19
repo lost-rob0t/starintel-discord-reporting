@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-19T07:22:19Z`
+- generated: `2026-09-19T12:31:30Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`25f083a25c1168ff085d891995d85bda7504ec2e`](https://github.com/lost-rob0t/starintel-auto-research/commit/25f083a25c1168ff085d891995d85bda7504ec2e)
@@ -49,8 +49,6 @@
 2026-09-08 e8fcf7091f25b7cfca2e93eab6e1e662a8648674 research: slim ARDR-ISSUE-206 transaction to issue authority + pass ledger
 2026-09-08 def44350cd87136ddf3bbbe14a028d6f1ac8f9ca research: STAR-RESEARCH-061 canonical identifier normalization (operator placement)
 2026-09-08 3992b46b4b14314c87ad10a425a9c3e88eea8f65 research: ARDR-ISSUE-206 pass 1 platform identifier semantics for normalization contract
-2026-09-05 eda24d2540c3c847199a361cbf011bd597360e95 research: seed Confoederatio in OSINT source backlog
-2026-09-05 5cd6092f4504b7fe47fecd1bd1d26cd32f492c17 research: add Confoederatio world-model source reconnaissance
 ```
 
 ## Repository paths changed, last 14 days
@@ -76,7 +74,6 @@ roam/research/star-kb/STAR-KB-RESEARCH-003-dialect-enrichment-corpus-and-inferen
 roam/research/star-kb/STAR-KB-RESEARCH-004-portable-rule-reuse-across-logic-actors.org
 roam/research/star-server/QUASAR-RESEARCH-006-lisp-actor-discovery-and-actor-studio.org
 roam/research/star-server/STAR-RESEARCH-002-C23C24-confoederatio-world-model.org
-roam/research/star-server/STAR-RESEARCH-002-awesome-osint-research-backlog.org
 roam/research/star-server/STAR-RESEARCH-009-thunder-audio-weather-geolocation.org
 roam/research/star-server/STAR-RESEARCH-032-authenticated-target-lease-http-execution.org
 roam/research/star-server/STAR-RESEARCH-050-manifest-runtime-plan-composition.org
