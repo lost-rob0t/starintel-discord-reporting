@@ -580,6 +580,20 @@
       "report_digest": "cb9fa1c10985b65391413e4e2f0b45bd9c673e8ab98599d2a7b1ba7d5ef04d2e",
       "status": "verified-delivered"
     },
+    "reports/lost-robot-changelog/2026-09-19T04-25-00Z-report.md": {
+      "accepted_at": "2026-09-19T04:34:22.006163+00:00",
+      "attempted_at": "2026-09-19T04:34:22.006163+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "Lost Rob0t Changelog",
+      "delivered_at": "2026-09-19T04:34:22.006163+00:00",
+      "message_ids": [
+        "1550726717713293313",
+        "1550726720368283649",
+        "1550726722993786991"
+      ],
+      "report_digest": "9c45100a28e290cb0455b414f87cffe604a739f5843d29fdc4878edda0de5e00",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/2026-08-19T20-14-00Z-report.md": {
       "accepted_at": "2026-08-20T17:57:19.971937+00:00",
       "attempted_at": "2026-08-20T17:57:19.971937+00:00",
@@ -2780,11 +2794,12 @@
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
+      "lost-robot-changelog": 1,
       "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 230,
-    "verified_deliveries": 221
+    "total_reports": 233,
+    "verified_deliveries": 224
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
