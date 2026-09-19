@@ -108,6 +108,22 @@ Keep these short. Summarize the useful change instead of dumping commit history.
 - never invent a line-coverage percentage. If none is published, say that plainly;
 - no release-note sludge, fake excitement, or generic phrases like `significant improvements`.
 
+
+### Lost-Rob0t owner roundup
+
+`lost-robot-changelog` is the complete owner-wide digest, not another one-project Shipyard item.
+
+- Title it as a Lost Rob0t changelog and state a fixed UTC window.
+- Cover every public `lost-rob0t` repository with qualifying canonical-branch commits in that window.
+- Organize by repository or tightly related stack area so readers can see what actually moved.
+- Prefer capability and operational outcomes over commit-message transcription.
+- Include observed commit counts only when the repository history was actually enumerated.
+- Use a few representative landed commit links for each substantial area. Do not dump all commits.
+- A repository with only initialization or a tiny change still gets a short entry when it is part of the full window.
+- The report may exceed one Discord message. Do not manually insert transport part markers; the publisher splits Markdown safely.
+- Private repository activity may be mentioned only as an aggregate count of repositories with push activity. Never expose private names, branches, SHAs, links, commit messages, issue/PR metadata, or implementation details.
+- Do not imply that private push activity was canonical-branch activity unless that was independently verified.
+
 ### Research and Auto-Research posts
 
 Research posts are about **what was investigated and what was learned**. They are not product changelogs wearing a research badge.
