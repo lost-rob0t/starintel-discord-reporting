@@ -122,6 +122,31 @@ reports/starintel-updates-changelog/<UTC-datestring>-report.md
 
 Keep it compact, usually 2 to 5 bullets or short paragraphs. Lead with what became possible or more reliable. Include direct landed commit links for public source repositories. For private configured sources, never include private repository or commit links and follow the `Private-source changelogs` sanitization contract in `STYLE.md`. Only state test results or counts actually observed. Never invent coverage.
 
+
+### Full Lost-Rob0t owner changelog
+
+The one-project rule above remains the default for `starintel-updates-changelog`. The full Lost-Rob0t roundup is a separate product and is the explicit cross-project exception.
+
+When the user asks for a full Lost-Rob0t changelog:
+
+1. enumerate repositories owned by `lost-rob0t` that had push activity during the requested window;
+2. for every public candidate, inspect commits on its actual default/canonical branch and keep only commits landed inside the fixed report window;
+3. include every public repository with at least one qualifying canonical-branch commit, even when it is not in the StarIntel allow-list;
+4. group noisy commit sequences into the capability, reliability, security, release, or workflow change they produced;
+5. use representative direct landed commit links instead of dumping every commit;
+6. state the exact report window and observed per-repository counts when counts were actually enumerated;
+7. keep this product's dedupe independent from StarIntel Shipyard so the owner roundup may summarize commits that previously appeared in a project post, while repeated owner roundups still dedupe against prior owner roundups.
+
+Private repositories are never expanded in the public owner roundup. Push activity may be acknowledged only in aggregate. Do not publish private repository names, links, commit IDs, branch names, commit messages, issue/PR metadata, or implementation details. The private-source rules in `STYLE.md` remain mandatory.
+
+Create the report at:
+
+```text
+reports/lost-robot-changelog/<UTC-datestring>-report.md
+```
+
+A full roundup means full changed-repository coverage for the fixed window, not a raw commit dump. Long reports may span multiple Discord messages; the publisher's Markdown-aware splitter owns transport chunking.
+
 ## 6. Publication contract
 
 Before every write, verify the target repository is exactly `lost-rob0t/starintel-discord-reporting`. All source/research repositories are READ-ONLY.

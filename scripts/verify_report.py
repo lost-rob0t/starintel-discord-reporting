@@ -123,6 +123,18 @@ def verify(text: str, kind: str, network: bool) -> list[str]:
         ):
             errors.append("changelog needs a direct landed commit link")
 
+    elif kind == "owner-changelog":
+        if not re.search(r"(?im)^#\s+Lost Rob0t changelog\b", text):
+            errors.append("owner changelog needs a Lost Rob0t changelog heading")
+        if "## Changes" not in text:
+            errors.append("missing changes heading")
+        if PRIVATE_SOURCE_ATTESTATION_HEADING in text:
+            errors.append("owner changelog must not use private-source attestation; private activity may only be summarized without private identifiers")
+        if not re.search(
+            r"https://github\.com/lost-rob0t/[^\s]+/commit/[0-9a-f]{7,40}", text
+        ):
+            errors.append("owner changelog needs a direct landed lost-rob0t commit link")
+
     elif kind == "shitpost":
         if not source_text:
             errors.append("shitpost needs source links")
@@ -154,7 +166,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("report", type=Path)
     parser.add_argument(
         "--kind",
-        choices=["findings", "changelog", "shitpost"],
+        choices=["findings", "changelog", "owner-changelog", "shitpost"],
         required=True,
     )
     parser.add_argument("--no-network", action="store_true")

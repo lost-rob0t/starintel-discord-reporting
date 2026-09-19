@@ -7,6 +7,7 @@ reports/
   auto-dig-findings/<datestring>-report.md
   findings-shitposts/<datestring>-report.md
   starintel-updates-changelog/<datestring>-report.md
+  lost-robot-changelog/<datestring>-report.md
 ```
 
 The hourly research/reporting loop runs from GPT, not GitHub Actions. `GPT-WORKFLOW.md` is the contract. Most hourly runs should do nothing.
@@ -25,7 +26,13 @@ Only uses Auto-Dig findings already verified in the same run. It may be text, `/
 
 Short summaries of useful work that actually landed on a configured canonical branch. Group related commits. Do not dump commit history or make up test coverage.
 
-`config/starintel-repos.txt` is the automatic changelog allow-list. `config/starintel-repo-tracking.tsv` is the wider StarIntel repository inventory.
+### `lost-robot-changelog`
+
+Owner-wide Lost-Rob0t roundup. It is deliberately separate from the one-project-per-post Shipyard feed. A full roundup covers every public Lost-Rob0t repository with canonical-branch changes in the stated window, groups commits into useful outcomes, and links representative landed commits. Private repository names, branches, SHAs, links, and implementation details stay out of the public Discord post.
+
+The owner-wide roundup reuses the `STARINTEL_UPDATES_CHANGELOG` webhook, but publishes with the `Lost Rob0t Changelog` webhook username and its own delivery/dedupe namespace.
+
+`config/starintel-repos.txt` is the automatic Shipyard changelog allow-list. `config/starintel-repo-tracking.tsv` is the wider StarIntel repository inventory.
 
 ## Webhook secrets
 

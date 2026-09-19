@@ -18,11 +18,13 @@ REPORT_GLOBS = (
     "reports/auto-dig-findings/*-report.md",
     "reports/findings-shitposts/*-report.md",
     "reports/starintel-updates-changelog/*-report.md",
+    "reports/lost-robot-changelog/*-report.md",
 )
 CHANNELS = {
     "auto-dig-findings": ("findings", "AUTO_DIG_FINDINGS", "The Receipt Desk"),
     "findings-shitposts": ("shitpost", "FINDINGS_SHITPOSTS", "Data After Dark"),
     "starintel-updates-changelog": ("changelog", "STARINTEL_UPDATES_CHANGELOG", "StarIntel Shipyard"),
+    "lost-robot-changelog": ("owner-changelog", "STARINTEL_UPDATES_CHANGELOG", "Lost Rob0t Changelog"),
 }
 MEDIA_EXTENSIONS = ("png", "jpg", "jpeg", "gif", "webp")
 
