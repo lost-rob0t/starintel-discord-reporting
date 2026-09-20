@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-20T04:57:39Z`
+- generated: `2026-09-20T11:29:28Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`f899612d6e5924ffcc81432d78541b6616311892`](https://github.com/lost-rob0t/starintel-server/commit/f899612d6e5924ffcc81432d78541b6616311892)
@@ -136,11 +136,6 @@
 2026-09-06 2065321629ec28ca711ab5549e47a490a878c2c2 docs: document all 835 exported symbols; doc-coverage CI gate
 2026-09-06 d156cab56fb2ca21b922ffe16d9ec2d1fae46c00 docs: regenerate API docs with lisp org babel language
 2026-09-06 b1b6d16e9f31cc0cf0bd478b3a6f273341b22966 docs: org docstrings in source + org-doc API rendering pipeline
-2026-09-06 04ebf29642eb97cae32511135760c2169ea5379e fix: preserve master test manifest during merge
-2026-09-06 66535b1e3873f2da1f9970bd8b6d1a2ad70d0dc3 Merge master into fix/v09-false-value-pipeline
-2026-09-06 d0be4b5fb5c7c61ea11c2a140c5854ee3a2c0b51 test: load JSON literal preservation regression
-2026-09-06 7437b65edbd1b7f83383f12482ba1f421982e048 test: cover JSON false/null preservation
-2026-09-06 89a8fa0939823f3ad3b68b54b176c44196146220 fix: restore canonical star-cl flake hash
 ```
 
 ## Repository paths changed, last 14 days
@@ -314,7 +309,6 @@ t/http-contract-documents-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/http-tenant-injection-test.lisp
-t/json-literal-preservation-test.lisp
 t/lease-store-runtime-test.lisp
 t/observability-test.lisp
 t/run-tests.lisp
@@ -354,7 +348,6 @@ t/http-contract-documents-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/http-tenant-injection-test.lisp
-t/json-literal-preservation-test.lisp
 t/lease-store-runtime-test.lisp
 t/observability-test.lisp
 t/run-tests.lisp

@@ -1,15 +1,30 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-20T04:57:42Z`
+- generated: `2026-09-20T11:29:30Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`0114f25f8fbab59fa31d70877bf988a28f4a40c5`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/0114f25f8fbab59fa31d70877bf988a28f4a40c5)
-- head date: `2026-09-16T22:23:42-04:00`
-- head subject: Merge StarIntel 0.9.2 network-capture profile
+- head: [`64c101af3ca8207aed976583060e33152371c3d4`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/64c101af3ca8207aed976583060e33152371c3d4)
+- head date: `2026-09-20T00:59:20-04:00`
+- head subject: Merge pull request #2735 from lost-rob0t/dig/queue-2026-09-19
 
 ## Git log, last 14 days
 
 ```text
+2026-09-20 64c101af3ca8207aed976583060e33152371c3d4 Merge pull request #2735 from lost-rob0t/dig/queue-2026-09-19
+2026-09-20 b06c4b3c7018e7e0db07456ee558eacb9f14a79c Merge branch 'dig/queue-2026-09-19-w4' into dig/queue-2026-09-19
+2026-09-20 41ed4bb1f5cdfaca6d7b7ab55a80101a4bbd80fb Merge branch 'dig/queue-2026-09-19-w3' into dig/queue-2026-09-19
+2026-09-20 17596561d244f8dfd381d6d5e56869ea0f3ba668 Merge branch 'dig/queue-2026-09-19-w2' into dig/queue-2026-09-19
+2026-09-20 22873262c3627ed9fc07f157bb320f9f7c83d676 Merge branch 'dig/queue-2026-09-19-w1' into dig/queue-2026-09-19
+2026-09-19 47ec1a5369e764c69c67f557b974d3260e4583f6 feat(queue): persist random-targets.py queue builder for dig-queue workflow
+2026-09-19 646a851d3d2b17c68167b496c7a52058007b92a0 dig(queue-2026-09-19): w1 cross-ties passes for Ditcham, Audrey Lee, Joshua Wilks
+2026-09-19 54cf391a056f92feb27800c0b9e12c416d1a1865 dig(queue-2026-09-19): w2 resolve three dark-academia cross-ties targets (Tan, Novossiolova, C. Smith)
+2026-09-19 8420bac6fad1bd0bea5c91ca134c8a3e83936966 dig(queue-2026-09-19): w4 resolve McCaffery and Courades Allebeck cross-ties
+2026-09-19 32c46738a51daa9b9fac5af1d70c624a49e6a88d dig(queue-2026-09-19): w3 cross-ties passes for IngMarie Bohmelin (SIPRI) and Gareth Heywood (RUSI)
+2026-09-19 3457a7dc713d4b09c373e2f5d80ff907bfa55dc7 docs(kb): record spec release authority and 0.10.1 mint workflow
+2026-09-19 40622e3f4d04f13f4268498a77cc796cbe35abc6 docs(spec): track 0.10.1 authority in AGENTS.md and release docs
+2026-09-19 2d0ba9f526c2062921fc11a2607084b49cce1c8a chore(release): mint StarIntel 0.10.1 unified base line
+2026-09-19 b33783d1b644f3eb3fd696c3d6e6f544d6fa0872 feat(spec): unify 0.10.1 wire vocabulary, breach DATA-LEAK, network/wireless/pcap dtypes
+2026-09-19 104ee2eda9b8e7a0ec4b27f06ec6e68954200a34 docs(spec): record 0.10.1 unify, declutter, breach data-leak design
 2026-09-16 0114f25f8fbab59fa31d70877bf988a28f4a40c5 Merge StarIntel 0.9.2 network-capture profile
 2026-09-16 242389398a2a1d94245d5f023cfd35770a2e3617 test(spec): lock 0.9.2 network capture release manifest
 2026-09-16 c8d44f4bb1121093ea437175bf35cc7d5be3799d feat(spec): publish 0.9.2 network capture release manifest
@@ -513,12 +528,14 @@
 .github/full-import-trigger
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/autodig-lifecycle.yml
+.github/workflows/conformance.yml
 .github/workflows/dark-academia-institutions-foundations-wave-3.yml
 .github/workflows/import-starintel-documents.yml
 .github/workflows/operation-canonical-091-sync.yml
 .github/workflows/operation-release-sync.yml
 .github/workflows/operation-schema-sync.yml
 .github/workflows/schema-release.yml
+.github/workflows/sync-schema.yml
 .github/workflows/temp-backlog-import.yml
 .github/workflows/temp-fix-backlog-target-routing-v2.yml
 .github/workflows/temp-fix-backlog-target-routing.yml
@@ -527,7 +544,11 @@
 .github/workflows/validate-db.yml
 .gitignore
 .prolog/kb/backlog-import.pl
+.prolog/kb/cross-tie-pass.pl
+.prolog/kb/dig-queue-cross-ties.pl
 .prolog/kb/index.pl
+.prolog/kb/merge-gate-version-pin.pl
+.prolog/kb/spec-release.pl
 .prolog/kb/workflow-guard.pl
 AGENTS.md
 agents/README.md
@@ -932,12 +953,15 @@ db/event/starintel:event:tacos-el-tapatio-robbery-2024-07-01.ndjson
 db/event/starintel:event:tdp-paxton-mobile-billboard-dallas-2026.ndjson
 db/event/starintel:event:we-the-people-rally-for-democracy-2026-09-10.ndjson
 db/evidence-record/starintel:evidence-record:rincon-gcpd-attributed-robbery-identification-2024.ndjson
+db/investigation-target/starintel:investigation-target:alvin-tan-trade-association-roles.ndjson
 db/investigation-target/starintel:investigation-target:bed-stuy-strong-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:camillus-flock-network-control.ndjson
+db/investigation-target/starintel:investigation-target:chris-smith-current-affiliations.ndjson
 db/investigation-target/starintel:investigation-target:downstate-illinois-trans-organization-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:fort-worth-community-collaborative-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:grassroots-westmoreland-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:la-colectiva-ntx-area-code-expansion.ndjson
+db/investigation-target/starintel:investigation-target:novossiolova-london-biosecurity-centre.ndjson
 db/investigation-target/starintel:investigation-target:power-up-eau-claire-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:progressive-peoples-action-pinellas-area-code-expansion.ndjson
 db/investigation-target/starintel:investigation-target:rincon-finney-county-native-case-disposition.ndjson
@@ -949,6 +973,8 @@ db/investigation-target/starintel:investigation-target:starintel-entity-tiktok-a
 db/investigation-target/starintel:investigation-target:starintel-event-dallas-march-on-rnc-midterm-convention-2026-09-1-e616d82e8a585f72fe2e.ndjson
 db/investigation-target/starintel:investigation-target:starintel-event-gop-midterm-convention-dallas-2026-5531d918620bf056d838.ndjson
 db/investigation-target/starintel:investigation-target:starintel-event-tdp-paxton-mobile-billboard-dallas-2026-16b08065e7930638a5a9.ndjson
+db/investigation-target/starintel:investigation-target:starintel-org-centre-for-science-and-policy-70f5359a66c9e2bd6cc1.ndjson
+db/investigation-target/starintel:investigation-target:starintel-org-strategic-hub-for-organised-crime-research-02a58fef7d6c19d50f43.ndjson
 db/investigation-target/starintel:investigation-target:starintel-org-texas-democratic-party-53d22d30d6715ec68dca.ndjson
 db/investigation-target/starintel:investigation-target:starintel-person-james-talarico-2df0a4af1dd3c0faed59.ndjson
 db/investigation-target/starintel:investigation-target:starintel-person-ken-paxton-e73d96807677ca15eb3d.ndjson
@@ -980,22 +1006,35 @@ db/legal-case/starintel:legal-case:vogel-v-vogel-2119-september-term-2023.ndjson
 db/location/starintel:location:garden-city-finney-kansas.ndjson
 db/media/starintel:media:youtube-short-Fwjf-TMow-Q.ndjson
 db/media/starintel:media:youtube-video-3m-9mf7NVRg.ndjson
+db/org/starintel:org:accel-partners.ndjson
+db/org/starintel:org:advisory-singapore.ndjson
+db/org/starintel:org:arclight-clean-transition-corp.ndjson
 db/org/starintel:org:asia-society.ndjson
 db/org/starintel:org:athens-mutual-aid-network.ndjson
+db/org/starintel:org:bart-environmental-justice-commission.ndjson
 db/org/starintel:org:bed-stuy-strong.ndjson
 db/org/starintel:org:belfer-center.ndjson
+db/org/starintel:org:c3-ai.ndjson
+db/org/starintel:org:california-public-utilities-commission.ndjson
 db/org/starintel:org:camillus-town-village-ny-police-department.ndjson
 db/org/starintel:org:carnegie-corporation-of-new-york.ndjson
 db/org/starintel:org:cato-institute.ndjson
 db/org/starintel:org:center-for-american-progress.ndjson
 db/org/starintel:org:center-for-global-development.ndjson
+db/org/starintel:org:center-for-the-study-of-democracy.ndjson
+db/org/starintel:org:centre-for-defence-studies-kings-college-london.ndjson
+db/org/starintel:org:centre-for-science-and-policy.ndjson
+db/org/starintel:org:clean-energy-for-biden.ndjson
 db/org/starintel:org:council-of-the-americas.ndjson
+db/org/starintel:org:crosslink-capital.ndjson
 db/org/starintel:org:dallas-against-the-trump-agenda-coalition.ndjson
 db/org/starintel:org:danbury-city-council.ndjson
 db/org/starintel:org:danbury-police-department.ndjson
+db/org/starintel:org:datenna.ndjson
 db/org/starintel:org:dfw-anti-war-committee.ndjson
 db/org/starintel:org:downstate-illinois-trans-organization.ndjson
 db/org/starintel:org:el-movimiento.ndjson
+db/org/starintel:org:escp-business-school.ndjson
 db/org/starintel:org:eurasia-group.ndjson
 db/org/starintel:org:ford-foundation.ndjson
 db/org/starintel:org:fort-worth-community-collaborative.ndjson
@@ -1007,20 +1046,42 @@ db/org/starintel:org:hudson-institute.ndjson
 db/org/starintel:org:indivisible-dallas.ndjson
 db/org/starintel:org:international-chamber-of-commerce.ndjson
 db/org/starintel:org:international-crisis-group.ndjson
+db/org/starintel:org:international-federation-of-biosafety-associations.ndjson
 db/org/starintel:org:la-colectiva-ntx.ndjson
+db/org/starintel:org:landau-network-fondazione-volta.ndjson
+db/org/starintel:org:leiden-asia-centre.ndjson
+db/org/starintel:org:linkedin-corporation.ndjson
+db/org/starintel:org:makena-capital-management.ndjson
+db/org/starintel:org:ministry-of-foreign-affairs-singapore.ndjson
+db/org/starintel:org:ministry-of-national-development-singapore.ndjson
+db/org/starintel:org:monetary-authority-of-singapore.ndjson
 db/org/starintel:org:naarpr-dfw.ndjson
+db/org/starintel:org:national-board-of-trade-sweden.ndjson
 db/org/starintel:org:new-america.ndjson
 db/org/starintel:org:northern-virginia-mutual-aid.ndjson
+db/org/starintel:org:nvidia.ndjson
 db/org/starintel:org:odi-global.ndjson
+db/org/starintel:org:parliament-of-singapore.ndjson
 db/org/starintel:org:power-up-eau-claire.ndjson
 db/org/starintel:org:progressive-peoples-action-pinellas.ndjson
 db/org/starintel:org:quincy-institute.ndjson
 db/org/starintel:org:rabbinical-court-cong-agudath-israel-los-angeles.ndjson
+db/org/starintel:org:rhodes-scholarship-trust.ndjson
+db/org/starintel:org:robertson-stephens.ndjson
 db/org/starintel:org:rockefeller-brothers-fund.ndjson
 db/org/starintel:org:royal-united-services-institute.ndjson
+db/org/starintel:org:sageview-capital.ndjson
+db/org/starintel:org:silver-lake-partners.ndjson
+db/org/starintel:org:spo-partners.ndjson
+db/org/starintel:org:stadium-capital-management.ndjson
+db/org/starintel:org:stanford-management-company.ndjson
 db/org/starintel:org:stockholm-international-peace-research-institute.ndjson
+db/org/starintel:org:strategic-hub-for-organised-crime-research.ndjson
+db/org/starintel:org:sunrun-inc.ndjson
 db/org/starintel:org:support-siouxland-soldiers.ndjson
 db/org/starintel:org:texas-democratic-party.ndjson
+db/org/starintel:org:united-nations-office-of-counter-terrorism.ndjson
+db/org/starintel:org:university-of-edinburgh.ndjson
 db/org/starintel:org:we-the-people-dallas.ndjson
 db/org/starintel:org:world-business-council-for-sustainable-development.ndjson
 db/org/starintel:org:world-governments-summit.ndjson
@@ -7661,7 +7722,15 @@ db/relation/starintel:relation:belfer-center:alou-adesse-dama-affiliated_with-be
 db/relation/starintel:relation:belfer-center:alper-tunca-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:alvaro-renedo-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:alvin-powell-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-advisory-singapore.ndjson
 db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-goldman-sachs.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-linkedin-corporation.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-meta-platforms.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-ministry-of-foreign-affairs-singapore.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-ministry-of-national-development-singapore.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-monetary-authority-of-singapore.ndjson
+db/relation/starintel:relation:belfer-center:alvin-sheng-hui-tan-affiliated_with-parliament-of-singapore.ndjson
 db/relation/starintel:relation:belfer-center:alvin-streeter-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:alvin-tian-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:alwin-kopse-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
@@ -8003,7 +8072,12 @@ db/relation/starintel:relation:belfer-center:athanasios-dokos-affiliated_with-be
 db/relation/starintel:relation:belfer-center:atiyeh-vahidmanesh-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:audette-bruce-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:audrey-kurth-cronin-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
+db/relation/starintel:relation:belfer-center:audrey-lee-advisor_to-california-public-utilities-commission.ndjson
 db/relation/starintel:relation:belfer-center:audrey-lee-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
+db/relation/starintel:relation:belfer-center:audrey-lee-board_member_of-arclight-clean-transition-corp.ndjson
+db/relation/starintel:relation:belfer-center:audrey-lee-co_chair_of-clean-energy-for-biden.ndjson
+db/relation/starintel:relation:belfer-center:audrey-lee-employed_by-sunrun-inc.ndjson
+db/relation/starintel:relation:belfer-center:audrey-lee-member_of-bart-environmental-justice-commission.ndjson
 db/relation/starintel:relation:belfer-center:audrye-wong-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:augusta-dellomo-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
 db/relation/starintel:relation:belfer-center:austen-boroff-affiliated_with-belfer-center-for-science-and-international-affairs.ndjson
@@ -9710,7 +9784,19 @@ db/relation/starintel:relation:hoover-institution:mary-g-meeker-fellow_of-hoover
 db/relation/starintel:relation:hoover-institution:matthew-murphy-fellow_of-hoover-institution.ndjson
 db/relation/starintel:relation:hoover-institution:michael-e-tennenbaum-fellow_of-hoover-institution.ndjson
 db/relation/starintel:relation:hoover-institution:michael-farello-fellow_of-hoover-institution.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-advisory_board_member_of-accel-partners.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-advisory_board_member_of-crosslink-capital.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-advisory_board_member_of-sageview-capital.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-advisory_board_member_of-silver-lake-partners.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-advisory_board_member_of-spo-partners.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-advisory_board_member_of-stadium-capital-management.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-board_member_of-c3-ai.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-board_member_of-nvidia.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-ceo_of-stanford-management-company.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-chairman_and_ceo_of-robertson-stephens.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-chairman_of-makena-capital-management.ndjson
 db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-fellow_of-hoover-institution.ndjson
+db/relation/starintel:relation:hoover-institution:michael-g-mccaffery-trustee_of-rhodes-scholarship-trust.ndjson
 db/relation/starintel:relation:hoover-institution:michael-r-stone-fellow_of-hoover-institution.ndjson
 db/relation/starintel:relation:hoover-institution:michael-w-gleba-fellow_of-hoover-institution.ndjson
 db/relation/starintel:relation:hoover-institution:mitchell-j-milias-fellow_of-hoover-institution.ndjson
@@ -12567,6 +12653,8 @@ db/relation/starintel:relation:rusi:dr-karsten-friis-affiliated_with-royal-unite
 db/relation/starintel:relation:rusi:dr-katie-benson-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:dr-keith-dear-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:dr-keith-ditcham-affiliated_with-royal-united-services-institute.ndjson
+db/relation/starintel:relation:rusi:dr-keith-ditcham-deputy_chair_of-strategic-hub-for-organised-crime-research.ndjson
+db/relation/starintel:relation:rusi:dr-keith-ditcham-listed_in_network_of-centre-for-science-and-policy.ndjson
 db/relation/starintel:relation:rusi:dr-keizo-kitagawa-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:dr-laura-pajon-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:dr-leo-lin-affiliated_with-royal-united-services-institute.ndjson
@@ -12751,7 +12839,9 @@ db/relation/starintel:relation:rusi:gabrielius-landsbergis-affiliated_with-royal
 db/relation/starintel:relation:rusi:galen-lamphere-englund-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:galgallo-abagaro-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:galgallo-abagaro-has-public-email-20b12d02fb0b.ndjson
+db/relation/starintel:relation:rusi:gareth-heywood-affiliated_with-leiden-asia-centre.ndjson
 db/relation/starintel:relation:rusi:gareth-heywood-affiliated_with-royal-united-services-institute.ndjson
+db/relation/starintel:relation:rusi:gareth-heywood-employed_by-datenna.ndjson
 db/relation/starintel:relation:rusi:gary-kalman-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:gavin-bridge-affiliated_with-royal-united-services-institute.ndjson
 db/relation/starintel:relation:rusi:gem-conn-affiliated_with-royal-united-services-institute.ndjson
@@ -13571,6 +13661,7 @@ db/relation/starintel:relation:sipri:abeer-s-ahmad-affiliated_with-stockholm-int
 db/relation/starintel:relation:sipri:abel-gbala-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:adam-kamradt-scott-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:agnes-courades-allebeck-affiliated_with-stockholm-international-peace-research-institute.ndjson
+db/relation/starintel:relation:sipri:agnes-courades-allebeck-head_of_department_of-national-board-of-trade-sweden.ndjson
 db/relation/starintel:relation:sipri:agnese-boffano-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:aida-bolotbekova-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:aimee-rogers-affiliated_with-stockholm-international-peace-research-institute.ndjson
@@ -13716,6 +13807,7 @@ db/relation/starintel:relation:sipri:charles-ovink-affiliated_with-stockholm-int
 db/relation/starintel:relation:sipri:charlotta-sparre-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:chin-hao-huang-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:chris-king-affiliated_with-stockholm-international-peace-research-institute.ndjson
+db/relation/starintel:relation:sipri:chris-smith-affiliated_with-centre-for-defence-studies-kings-college-london.ndjson
 db/relation/starintel:relation:sipri:chris-smith-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:christer-ahlstrom-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:christian-schmidt-affiliated_with-stockholm-international-peace-research-institute.ndjson
@@ -13896,6 +13988,9 @@ db/relation/starintel:relation:sipri:dr-sun-xia-affiliated_with-stockholm-intern
 db/relation/starintel:relation:sipri:dr-susan-t-jackson-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:dr-suyoun-jang-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:dr-tarja-cronberg-affiliated_with-stockholm-international-peace-research-institute.ndjson
+db/relation/starintel:relation:sipri:dr-tatyana-novossiolova-affiliated_with-center-for-the-study-of-democracy.ndjson
+db/relation/starintel:relation:sipri:dr-tatyana-novossiolova-affiliated_with-international-federation-of-biosafety-associations.ndjson
+db/relation/starintel:relation:sipri:dr-tatyana-novossiolova-affiliated_with-landau-network-fondazione-volta.ndjson
 db/relation/starintel:relation:sipri:dr-tatyana-novossiolova-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:dr-thomas-ouedraogo-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:dr-thomas-reinhold-affiliated_with-stockholm-international-peace-research-institute.ndjson
@@ -14119,6 +14214,9 @@ db/relation/starintel:relation:sipri:josefina-lofgren-affiliated_with-stockholm-
 db/relation/starintel:relation:sipri:joseph-rotblat-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:joshua-busby-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:joshua-wilks-affiliated_with-stockholm-international-peace-research-institute.ndjson
+db/relation/starintel:relation:sipri:joshua-wilks-educated_at-escp-business-school.ndjson
+db/relation/starintel:relation:sipri:joshua-wilks-educated_at-university-of-edinburgh.ndjson
+db/relation/starintel:relation:sipri:joshua-wilks-intern_at-united-nations-office-of-counter-terrorism.ndjson
 db/relation/starintel:relation:sipri:jozef-goldblat-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:juan-fernando-vargas-affiliated_with-stockholm-international-peace-research-institute.ndjson
 db/relation/starintel:relation:sipri:jules-duhamel-affiliated_with-stockholm-international-peace-research-institute.ndjson
@@ -14566,8 +14664,15 @@ db/research-pass/starintel:research-pass:2026-09-11-paxton-billboard-comms.ndjso
 db/research-pass/starintel:research-pass:area-code-hunt-b-682-703-706-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:area-code-hunt-b-712-715-718-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:area-code-hunt-b-724-727-730-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:belfer-center-alvin-tan-cross-ties-2026-09-19.ndjson
+db/research-pass/starintel:research-pass:cross-ties-rusi-gareth-heywood-2026-09-19.ndjson
+db/research-pass/starintel:research-pass:cross-ties-sipri-ingmarie-bohmelin-2026-09-19.ndjson
 db/research-pass/starintel:research-pass:danbury-pd-enum-2026-09-11.ndjson
+db/research-pass/starintel:research-pass:dark-academia-cross-ties-audrey-lee-2026-09-19.ndjson
+db/research-pass/starintel:research-pass:dark-academia-cross-ties-joshua-wilks-2026-09-19.ndjson
+db/research-pass/starintel:research-pass:dark-academia-cross-ties-keith-ditcham-2026-09-19.ndjson
 db/research-pass/starintel:research-pass:dark-academia-membership-recursion-wave-3-2026-07-31.ndjson
+db/research-pass/starintel:research-pass:hoover-mccaffery-cross-ties-2026-09-20.ndjson
 db/research-pass/starintel:research-pass:issue-2109-garden-city-native-public-context-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:issue-2109-rincon-garden-city-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:potateking-crossplatform-2026-09-11.ndjson
@@ -14601,6 +14706,9 @@ db/research-pass/starintel:research-pass:request-2575-dallas-permit-coordination
 db/research-pass/starintel:research-pass:request-2576-dallas-booking-charge-followup-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-2576-dallas-event-outcome-2026-09-15.ndjson
 db/research-pass/starintel:research-pass:request-2646-maryland-civil-review-pass3-2026-09-15.ndjson
+db/research-pass/starintel:research-pass:sipri-chris-smith-cross-ties-2026-09-19.ndjson
+db/research-pass/starintel:research-pass:sipri-courades-allebeck-cross-ties-2026-09-20.ndjson
+db/research-pass/starintel:research-pass:sipri-novossiolova-cross-ties-2026-09-19.ndjson
 db/social-media-post/starintel:entity:reddit-account-alternative-park5963:post:1qjpk7p.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8yvhji.ndjson
 db/social-media-post/starintel:reddit-comment:t1_p8ywh3h.ndjson
@@ -22146,6 +22254,8 @@ digs/xzspace-starintel/2026-09-08-attribution/starintel-documents.jsonl
 docs/auto-dig-pause-control.md
 docs/operation-object.md
 docs/quasar-integration.md
+docs/repository-contract.md
+docs/schema-0.10.1-design.md
 docs/schema-release-versioning.md
 noop
 pyproject.toml
@@ -22160,6 +22270,8 @@ reports/membership-list-cleanup-wave-3.json
 reports/membership-list-issues-wave-3.json
 reports/membership-url-observations-wave-3.jsonl
 requirements/backend.txt
+schemas/starintel-doc-v0.10.1.manifest.json
+schemas/starintel-doc-v0.10.1.schema.json
 schemas/starintel-doc-v0.9.0.expansion.json
 schemas/starintel-doc-v0.9.0.manifest.json
 schemas/starintel-doc-v0.9.0.schema.json
@@ -22175,14 +22287,19 @@ scripts/import_starintel.py
 scripts/quasar_autodig_runtime.py
 scripts/quasar_autodig_worker.py
 scripts/quasar_issue_queue.py
+scripts/random-targets.py
 scripts/schema-release.py
 scripts/scrape_dark_academia_memberships.py
 scripts/starintel_ingest_core.nim
+scripts/starintel_validate.nim
 scripts/sync_membership_list_issues.py
+scripts/validate-for-merge.py
 starintel_auto_dig.nimble
+starintel_doc/__init__.py
 starintel_doc/network_capture.py
 starintel_doc/operation_spec.py
 starintel_doc/schema_org.py
+starintel_doc/spec.py
 starintel_doc/spec_092.py
 starintel_doc/validation.py
 tests/test_auto_dig_pause_contract.py
@@ -22205,7 +22322,9 @@ tests/test_quasar_autodig_runtime.py
 tests/test_quasar_autodig_worker.py
 tests/test_quasar_issue_queue_bridge.py
 tests/test_schema_release.py
+tests/test_spec_0101.py
 tests/test_starintel_corpus_mcp_server.py
+tests/test_starintel_doc.py
 tests/test_starintel_ingest_core.py
 tmp/pack/build.py
 tmp/pack/pack.jsonl
@@ -22216,12 +22335,14 @@ tmp/pack/pack.jsonl
 ```text
 .github/workflows/auto-dig-prolog-actor-check.yml
 .github/workflows/autodig-lifecycle.yml
+.github/workflows/conformance.yml
 .github/workflows/dark-academia-institutions-foundations-wave-3.yml
 .github/workflows/import-starintel-documents.yml
 .github/workflows/operation-canonical-091-sync.yml
 .github/workflows/operation-release-sync.yml
 .github/workflows/operation-schema-sync.yml
 .github/workflows/schema-release.yml
+.github/workflows/sync-schema.yml
 .github/workflows/temp-backlog-import.yml
 .github/workflows/temp-fix-backlog-target-routing-v2.yml
 .github/workflows/temp-fix-backlog-target-routing.yml
@@ -22240,10 +22361,13 @@ scripts/import_starintel.py
 scripts/quasar_autodig_runtime.py
 scripts/quasar_autodig_worker.py
 scripts/quasar_issue_queue.py
+scripts/random-targets.py
 scripts/schema-release.py
 scripts/scrape_dark_academia_memberships.py
 scripts/starintel_ingest_core.nim
+scripts/starintel_validate.nim
 scripts/sync_membership_list_issues.py
+scripts/validate-for-merge.py
 tests/test_auto_dig_pause_contract.py
 tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
@@ -22264,6 +22388,8 @@ tests/test_quasar_autodig_runtime.py
 tests/test_quasar_autodig_worker.py
 tests/test_quasar_issue_queue_bridge.py
 tests/test_schema_release.py
+tests/test_spec_0101.py
 tests/test_starintel_corpus_mcp_server.py
+tests/test_starintel_doc.py
 tests/test_starintel_ingest_core.py
 ```
