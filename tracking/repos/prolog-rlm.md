@@ -1,15 +1,16 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-20T18:50:45Z`
+- generated: `2026-09-20T22:29:14Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`eba3f90a1d4c0b9342e9e37049f92b178c115c1c`](https://github.com/lost-rob0t/prolog-rlm/commit/eba3f90a1d4c0b9342e9e37049f92b178c115c1c)
-- head date: `2026-09-18T21:40:01-04:00`
-- head subject: feat: add Common Lisp adapter and symbolic tool harness
+- head: [`4715b5ee53d0e7a26c55705ea85c0d16c3916504`](https://github.com/lost-rob0t/prolog-rlm/commit/4715b5ee53d0e7a26c55705ea85c0d16c3916504)
+- head date: `2026-09-20T17:55:33-04:00`
+- head subject: feat(style): add generic zero-model overlay resolver runtime
 
 ## Git log, last 14 days
 
 ```text
+2026-09-20 4715b5ee53d0e7a26c55705ea85c0d16c3916504 feat(style): add generic zero-model overlay resolver runtime
 2026-09-18 eba3f90a1d4c0b9342e9e37049f92b178c115c1c feat: add Common Lisp adapter and symbolic tool harness
 2026-09-18 235528ab1420c4803ceb2b011b41f7f4d18887ec Merge pull request #478 from lost-rob0t/fix/zara-runtime-redact-raw-outcomes-1046
 2026-09-18 5b7b32946828fdf31c4a4b85baa7a193f5ae6f94 test(runtime): cover malformed outcome redaction
@@ -48,6 +49,7 @@
 ```text
 .github/workflows/ci.yml
 .github/workflows/nix.yml
+.github/workflows/style-overlay-contract.yml
 .github/workflows/tree-sitter.yml
 .prolog/facts.kb
 .prolog/kb/debugging-recipes.pl
@@ -78,6 +80,7 @@ prolog/rlm_project_semantic.pl
 prolog/rlm_project_semantic_pack.pl
 prolog/rlm_project_semantic_persist.pl
 prolog/rlm_project_source.pl
+prolog/rlm_style_overlay.pl
 prolog/rlm_symbolic_tool.pl
 prolog/rlm_zara_runtime.pl
 test/common_lisp_adapter_smoke.lisp
@@ -90,6 +93,7 @@ test/rlm_project_semantic_test.pl
 test/rlm_symbolic_tool_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/rlm_zara_runtime_test.pl
+test/run_style_overlay_contract.pl
 test/run_tree_sitter_tests.pl
 ```
 
@@ -98,6 +102,7 @@ test/run_tree_sitter_tests.pl
 ```text
 .github/workflows/ci.yml
 .github/workflows/nix.yml
+.github/workflows/style-overlay-contract.yml
 .github/workflows/tree-sitter.yml
 flake.nix
 lisp/prolog-rlm-cl.asd
@@ -111,5 +116,6 @@ test/rlm_project_semantic_test.pl
 test/rlm_symbolic_tool_test.pl
 test/rlm_tree_sitter_query_test.pl
 test/rlm_zara_runtime_test.pl
+test/run_style_overlay_contract.pl
 test/run_tree_sitter_tests.pl
 ```

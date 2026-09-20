@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-20T18:50:38Z`
+- generated: `2026-09-20T22:29:06Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`d95157a2c9857da9dde63060b03ddf7615d2d913`](https://github.com/lost-rob0t/quasar/commit/d95157a2c9857da9dde63060b03ddf7615d2d913)
@@ -84,8 +84,6 @@
 2026-09-12 e4333400bbf3514f3394a4f7915d2feaa7ae62a1 feat(editor): add syntax highlighting and validation engine
 2026-09-08 2a8e86b84d068dfb42c220b1a2b5f7381f88ac0f ci: expose formatter rewrite for actor files
 2026-09-08 96bacf9dc46c1dcb986ea88e092b6eb0ff9d4ad7 feat(actors): discover StarIntel runtime actors
-2026-09-06 44f977cdecb91d78cd77e35cb287503c135dee50 Merge hosted Common Lisp runtime
-2026-09-06 cb55fdf24505c1edfd226db6c3cbcfbb0af1d22b build: package the hosted Common Lisp runtime
 ```
 
 ## Repository paths changed, last 14 days
@@ -95,12 +93,9 @@
 .github/workflows/format-diagnostic.yml
 .github/workflows/pro-actors-pr.yml
 .github/workflows/ui-overhaul-format.yml
-control-plane/src/configured-main.lisp
 control-plane/src/main.lisp
 control-plane/src/pro-actors.lisp
 control-plane/tests/pro-actor-tests.lisp
-flake.lock
-flake.nix
 frontend/e2e/code-studio.spec.ts
 frontend/e2e/live-actor-discovery.spec.ts
 frontend/e2e/mobile-navigation.spec.ts
@@ -135,7 +130,6 @@ systems/quasar-tests.asd
 .github/workflows/pro-actors-pr.yml
 .github/workflows/ui-overhaul-format.yml
 control-plane/tests/pro-actor-tests.lisp
-flake.nix
 systems/quasar-control.asd
 systems/quasar-tests.asd
 ```

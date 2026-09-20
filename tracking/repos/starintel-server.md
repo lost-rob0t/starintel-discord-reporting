@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-20T18:50:29Z`
+- generated: `2026-09-20T22:29:01Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`f899612d6e5924ffcc81432d78541b6616311892`](https://github.com/lost-rob0t/starintel-server/commit/f899612d6e5924ffcc81432d78541b6616311892)
@@ -127,11 +127,6 @@
 2026-09-08 972da6a8d325464bc4df4e18f5b1a9b139307b66 feat: contract versioned document operations + fix /dataset-size shadowing
 2026-09-06 4721efaf8141fd7199b6e1ceb1011b9ad970796e Merge pull request #145 from lost-rob0t/fix/target-dispatch-data-shape
 2026-09-06 9d80cc1710cfe2a5c62c54fc8a2a23b9b7c564f3 fix: emit v0.9-valid data.*-shaped target documents from both routes
-2026-09-06 c06b8fc466ea765ef2a857b137d43d6b2535c90f Merge pull request #134 from lost-rob0t/fix/v09-false-value-pipeline
-2026-09-06 0b1ab8d6bbbaac9b5b73df5d7f66af29057522a1 test: follow consolidated documentation paths
-2026-09-06 cc86eca9e623ba3b990a2029b4b51f0f46fada77 Merge commit 'e1af325ea1e1d9ff83c1b41c999d5519af76f8d6' into debug/json-pr-refresh
-2026-09-06 e1af325ea1e1d9ff83c1b41c999d5519af76f8d6 Merge branch 'docs/consolidate': merge doc and docs into doc/
-2026-09-06 b923e0e99a760937f85c8af91094ca1b888b9184 docs: consolidate manual docs and generated API into doc/
 ```
 
 ## Repository paths changed, last 14 days
@@ -178,8 +173,6 @@ cli/http-contract-final.lisp
 cli/http-contract-package.lisp
 cli/http-contract.lisp
 cli/starintel-gserver-client.asd
-doc/actors.org
-doc/addons.org
 doc/api/index.org
 doc/api/star-actors.org
 doc/api/star-consumers.org
@@ -189,28 +182,11 @@ doc/api/star-leases.org
 doc/api/star-rabbit.org
 doc/api/starintel-gserver-http-api.org
 doc/api/starintel-gserver.org
-doc/architecture.org
 doc/configuration.org
-doc/development.org
-doc/document-spec.org
 doc/http-api-docs.org
-doc/http-auth-kv-lease-boundary.org
-doc/http-auth-threat-model.org
-doc/http-authentication-runtime.org
-doc/http-authorization-runtime.org
-doc/http-principal-capability-contract.org
-doc/http-users.org
-doc/index.org
 doc/lease-store-usage.org
-doc/messaging.org
-doc/next-implementation-loop-prompt.org
-doc/oauth-provider.org
 doc/observability.org
 doc/operation-object.org
-doc/relation-deduplication.org
-doc/server-admin.org
-doc/target-lease-semantics.org
-doc/testing.md
 doc/v09-runtime.org
 docker-compose.yml
 docker/otelcol-sidecar.yaml
@@ -283,7 +259,6 @@ t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
 t/valkey-lease-review-regression-test.lisp
-tests/test_operational_salvage_contract.py
 tests/test_prolog_shard_deployment.py
 tests/test_v09_runtime_contract.py
 ```
@@ -318,7 +293,6 @@ t/run-tests.lisp
 t/v09-runtime-test.lisp
 t/valkey-lease-integration-test.lisp
 t/valkey-lease-review-regression-test.lisp
-tests/test_operational_salvage_contract.py
 tests/test_prolog_shard_deployment.py
 tests/test_v09_runtime_contract.py
 ```

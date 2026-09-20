@@ -1,15 +1,36 @@
 # lost-rob0t/zara
 
-- generated: `2026-09-20T18:50:48Z`
+- generated: `2026-09-20T22:29:18Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`3c2f6ffe892fb5e39e395fa94fe5329f195d5923`](https://github.com/lost-rob0t/zara/commit/3c2f6ffe892fb5e39e395fa94fe5329f195d5923)
-- head date: `2026-09-20T18:41:01Z`
-- head subject: fix(runtime): bound canonical conversation context references (#1293)
+- head: [`f7810b0cba602b1e00597d04dd419d30ac0ef949`](https://github.com/lost-rob0t/zara/commit/f7810b0cba602b1e00597d04dd419d30ac0ef949)
+- head date: `2026-09-20T18:04:21-04:00`
+- head subject: Merge pull request #1304 from lost-rob0t/fleet20/1253-expert-why-did-you-do-that-20260920
 
 ## Git log, last 14 days
 
 ```text
+2026-09-20 f7810b0cba602b1e00597d04dd419d30ac0ef949 Merge pull request #1304 from lost-rob0t/fleet20/1253-expert-why-did-you-do-that-20260920
+2026-09-20 234a31de787c17a14714ff12082c2aafc6f17a8d merge(master): reconcile expert follow-up with conversation replay
+2026-09-20 3909dd259e7ce689fcd3e4f132cd5e0045387b78 Merge pull request #1305 from lost-rob0t/fleet28/1254-emacs-replay-20260920
+2026-09-20 71f68c614a9531a335b3ef9e784cdf3d785c9991 test(symbolic): pin standalone-u normalization boundary
+2026-09-20 360df2919bc59a317332ebc8c4f517570053dc76 fix(normalizer): expand standalone u only after tokenization
+2026-09-20 6d5d4968424d40168400bfc74be44d2850c0e98d merge(master): reconcile symbolic why follow-up with edge policy fixes
+2026-09-20 57c77cf1ad881c6d81519960448cf8167252c6cc test(emacs): match rendered replay newlines literally
+2026-09-20 4effc0351f561be647acd6e78a342c4af82578f8 merge master into fleet28 replay slice
+2026-09-20 a005c745f3bfcde73a5d6b7dbb79ba66d9daf0c6 ci(emacs): run durable replay contract
+2026-09-20 f73dd37d5c7d4423137a2c246bd759283b9e5043 feat(emacs): replay canonical durable conversation history
+2026-09-20 b9162dad35dfc17f8450e25503004222a813f9aa Merge pull request #1296 from lost-rob0t/fix/1251-edge-policy-defaults-20260920
+2026-09-20 b653a3b46270f72b36fd297d59c26716461a8944 test(emacs): pin canonical durable replay
+2026-09-20 ecb49413268308c4df5ee2483821c011606aad3d feat(cli): replay canonical durable conversation history
+2026-09-20 42d472bb11e5bcf8a328a07310208799b14f60b3 test(cli): pin canonical conversation replay
+2026-09-20 cd30799bf23eb51965aeb262622c499b64cdfffd test(symbolic): pin natural expert why phrase
+2026-09-20 fceb07f98b7f8ac490f5e6d988f56d34df835a51 fix(symbolic): preserve deterministic choice rendering
+2026-09-20 5a76f119349af0374d5fa63dc3553c3267320c71 fix(symbolic): resolve natural expert why follow-up
+2026-09-20 d0ae566caa653f951bda37bb6ff678ac401a9119 merge(master): reconcile pure-symbolic edge policy fence
+2026-09-20 36e6d48fa750f30b5493f0c2acc789f3e9300e97 feat(cli,emacs): forward canonical conversation context references (#1295)
+2026-09-20 a85ef0affa23813107958ea581254a58f1e19c65 test(wear): pin fail-closed omitted edge policy
+2026-09-20 ac16779b7fc0a78b19eb9c7ceaa7e629251d29d7 fix(wear): fail closed when edge policy is omitted
 2026-09-20 3c2f6ffe892fb5e39e395fa94fe5329f195d5923 fix(runtime): bound canonical conversation context references (#1293)
 2026-09-20 89a9ab12461b7c6fa1630b2137ed5a500724e6c7 Merge pull request #1292 from lost-rob0t/fix/android-real-connectivity-20260920
 2026-09-20 07f4a46088793287153927ed89ec79b0ff9b55ab Merge remote-tracking branch 'origin/master' into fix/android-real-connectivity-20260920
@@ -822,27 +843,6 @@
 2026-09-06 38ea9c7bab6945b16b725686d565e974aa6cae3f chore: apply #575 green on exact-current recovery
 2026-09-06 a9816e1dbceadd895f12c257f891f94e75e4a45c docs: recover #575 RAGE evidence on current master
 2026-09-06 c32adb10455f3a4f58ef64eef138b913d6136f8d test: recover bounded gateway send RED on current master
-2026-09-06 e6c90b274d285444520bd8372efe396c5f4cf24f Merge PR #578: preserve stock interop diagnostics
-2026-09-06 8beddd4ba8c4fdeb9e8e82f22647ed37e908b48a RAGE #388: pin r17 forwarding characterization
-2026-09-06 028b3451dc437e828c54f15111e0df43d5a89916 test(#388): characterize whole ToolCall forwarding wrapper
-2026-09-06 a9f0e7a056f90655a062ebe976f553dd91a3e2f5 RAGE #575: recover green diagnostics evidence on current master
-2026-09-06 c3290b6f96fb0c17b815c4441e35fd0a4ed888cf test(#575): require stock-server diagnostics on Gradle failure
-2026-09-06 9c4e9d488b90ce36cbab08a81cb9e7ddf3dfb384 fix(#575): preserve stock interop diagnostics on gate failure
-2026-09-06 bea53760a6c1e91bb0671a509985498d760a49d5 Merge PR #569: characterize ToolNode dispatch boundary
-2026-09-06 ea00e250489493ff4e717ca97af905d89a461a5d test(#388): exercise ToolNode through compiled graph runtime
-2026-09-06 dd439a30946c9776e80e671f71bce251c544da31 RAGE #388 r16: characterize ToolNode public dispatch boundary
-2026-09-06 d0d6fa8562fa1b4df9d677e392420605ca1d903c RAGE #388 r16: record exact dispatch isolation start
-2026-09-06 2da13cb08d15f268e355171ba56f0decde238126 Merge pull request #564 from lost-rob0t/rage/324-independent-geometry-r2
-2026-09-06 84003e34772b0df01fd57c54c2338cb3f3423296 test(copilot): prove independent compact and expanded geometry
-2026-09-06 838bf374b1bd0328834a1997f7e3c20c5d8eb567 fix(copilot): restore independent presentation geometry
-2026-09-06 47381e446e42e1332c96833ab0b958430ea42962 Merge pull request #558 from lost-rob0t/rage/324-screenshot-provenance-r1
-2026-09-06 0152aa9a2ab2c8b41f66cfc1fba56ec41c1fb948 RAGE #324: recover screenshot provenance onto current master
-2026-09-06 dcfff6cc75ef5b672e2ce4abc93bc7b57ae7633a Merge pull request #552 from lost-rob0t/rage/324-history-parity-r1
-2026-09-06 68c8967ab21d17dad4d8ea3f9f72936c0a76a568 RAGE #324: stamp screenshots with reviewed source head
-2026-09-06 624fd0fd95bcb625bf329ba9d4f80277f01b1645 RAGE #324: require exact PR-head screenshot provenance
-2026-09-06 e770c8c9c4bc99e7e560cea6d10e88f0da5078dc RAGE #324: record screenshot provenance correction
-2026-09-06 be36e90b466fb20d9c79a8b291f0dcb61cf85d2d RAGE #324: add expanded conversation history projection
-2026-09-06 99794ef7198028b8d95ecbd517c0b7fee37ee3a1 Merge pull request #551 from lost-rob0t/rage/324-screenshot-ci-r1
 ```
 
 ## Repository paths changed, last 14 days
@@ -1112,7 +1112,9 @@ contracts/zara-runtime-v1/README.md
 contracts/zara-runtime-v1/descriptors.tsv
 contracts/zara-runtime-v1/runtime-descriptor.schema.json
 docs/development.org
+emacs/zara-conversation-context-test.el
 emacs/zara-conversation-recovery-test.el
+emacs/zara-conversation-replay-test.el
 emacs/zara-conversation-strict-test.el
 emacs/zara-conversation-test.el
 emacs/zara-conversation.el
@@ -1126,6 +1128,7 @@ kb/intents.pl
 main.pl
 modules/config_loader.pl
 modules/expert_contract.pl
+modules/normalizer.pl
 modules/rlm_rewrite.pl
 modules/symbolic_dialogue.pl
 modules/symbolic_dialogue_turn.pl
@@ -1135,12 +1138,8 @@ rage/1233-zara-expert-contract.org
 rage/1254-desktop-pure-symbolic-runtime.org
 rage/172-android-native-adapter.org
 rage/324-expanded-history-sidebar-r2.org
-rage/324-unified-copilot-r2.org
-rage/388-plugin-cancellation-r16.org
-rage/388-plugin-cancellation-r17.org
 rage/388-plugin-cancellation-r18.org
 rage/575-gateway-send-diagnostics.org
-rage/575-stock-interop-diagnostics.org
 rage/575-transient-send-backpressure-r3.org
 rage/587-dictation-vulkan.org
 rage/668-config-loader-diagnostic.org
@@ -1204,12 +1203,13 @@ t/test_audio_shared_input.py
 t/test_backlog_import.py
 t/test_browser_bridge_plugin.py
 t/test_changelog.py
+t/test_cli_context_ids_red.py
 t/test_cli_conversation_control.py
+t/test_cli_conversation_replay.py
 t/test_client_connection_resolution.py
 t/test_conversation_portability_hardening.py
 t/test_conversation_schema_portable.py
 t/test_conversation_store.py
-t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_cross_platform_evidence_gate.py
 t/test_daemon_client_config.py
@@ -1269,9 +1269,9 @@ t/test_stt_beam_plumbing.py
 t/test_symbolic_contract_packaging.py
 t/test_symbolic_dialogue.py
 t/test_symbolic_dialogue_wire_v1.py
+t/test_symbolic_expert_why_phrase.py
 t/test_symbolic_social_vocabulary.py
 t/test_sync_protocol.py
-t/test_toolnode_dispatch_contract.py
 t/test_tts.py
 t/test_tts_output_lifecycle.py
 t/test_version_context.py
@@ -1509,12 +1509,13 @@ t/test_audio_shared_input.py
 t/test_backlog_import.py
 t/test_browser_bridge_plugin.py
 t/test_changelog.py
+t/test_cli_context_ids_red.py
 t/test_cli_conversation_control.py
+t/test_cli_conversation_replay.py
 t/test_client_connection_resolution.py
 t/test_conversation_portability_hardening.py
 t/test_conversation_schema_portable.py
 t/test_conversation_store.py
-t/test_copilot_screenshot_ci.py
 t/test_copilot_screenshot_fixtures.py
 t/test_cross_platform_evidence_gate.py
 t/test_daemon_client_config.py
@@ -1574,9 +1575,9 @@ t/test_stt_beam_plumbing.py
 t/test_symbolic_contract_packaging.py
 t/test_symbolic_dialogue.py
 t/test_symbolic_dialogue_wire_v1.py
+t/test_symbolic_expert_why_phrase.py
 t/test_symbolic_social_vocabulary.py
 t/test_sync_protocol.py
-t/test_toolnode_dispatch_contract.py
 t/test_tts.py
 t/test_tts_output_lifecycle.py
 t/test_version_context.py

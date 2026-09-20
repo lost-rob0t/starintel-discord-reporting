@@ -4,7 +4,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 
 - [lost-rob0t/auto-dig-quasar](./auto-dig-quasar.md) `76f3971f8bde`
 - [lost-rob0t/hackmode](./hackmode.md) `6120b81b89e5`
-- [lost-rob0t/prolog-rlm](./prolog-rlm.md) `eba3f90a1d4c`
+- [lost-rob0t/prolog-rlm](./prolog-rlm.md) `4715b5ee53d0`
 - [lost-rob0t/quasar-ui](./quasar-ui.md) `4de5090c9dce`
 - [lost-rob0t/quasar](./quasar.md) `d95157a2c985`
 - [lost-rob0t/star-app](./star-app.md) `5f727b477a06`
@@ -26,4 +26,4 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `5023309dfced`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
 - [lost-rob0t/tek9](./tek9.md) `e6d1cb86a2e2`
-- [lost-rob0t/zara](./zara.md) `3c2f6ffe892f`
+- [lost-rob0t/zara](./zara.md) `f7810b0cba60`
