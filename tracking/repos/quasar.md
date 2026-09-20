@@ -1,15 +1,18 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-19T20:44:38Z`
+- generated: `2026-09-20T00:09:46Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`0b3a3732886f5b53ec2bff4f5c7277bd673edef1`](https://github.com/lost-rob0t/quasar/commit/0b3a3732886f5b53ec2bff4f5c7277bd673edef1)
-- head date: `2026-09-19T16:37:45-04:00`
-- head subject: Merge PR #73: Show StarIntel local and remote actors in Actor Studio
+- head: [`d95157a2c9857da9dde63060b03ddf7615d2d913`](https://github.com/lost-rob0t/quasar/commit/d95157a2c9857da9dde63060b03ddf7615d2d913)
+- head date: `2026-09-19T16:49:26-04:00`
+- head subject: Merge PR #80: Wire canonical paid pro actors into Quasar
 
 ## Git log, last 14 days
 
 ```text
+2026-09-19 d95157a2c9857da9dde63060b03ddf7615d2d913 Merge PR #80: Wire canonical paid pro actors into Quasar
+2026-09-19 9cf9ae96d5bf8aafe136cc13660f2bd24d47a1d8 Apply committed Pro actor frontend formatting
+2026-09-19 ac5e0221e2989d81a47a4f51e917097ae0fc8d57 Merge main into pro actor manifest UI
 2026-09-19 0b3a3732886f5b53ec2bff4f5c7277bd673edef1 Merge PR #73: Show StarIntel local and remote actors in Actor Studio
 2026-09-19 1ea57a3119a527269cc769d6f23eea1391435472 fix(actor-studio): catch invalid manifest JSON before state update
 2026-09-19 5a0d3ec3c06f7da5555c933cc5d4f43c1640cd6d ci: remove temporary Actor Studio format diagnostic
@@ -26,6 +29,23 @@
 2026-09-19 03eb0b836e80fc1b7be6c17042da5c903c4d307b feat: restore StarIntel actor discovery client on current main
 2026-09-19 d0addac11910cafdc92a268a9b7cf41d3a1f8d75 Merge main into actor runtime discovery
 2026-09-19 2cd5c735e56b15cef08822d4a00aef1ddc4a8b12 Merge PR #76: Add Lisp and JavaScript code studio with live validation
+2026-09-16 8a99e8753e935798e79350ae45d58203a9419f28 Apply canonical pro actor formatting
+2026-09-16 8c4e61fafc16f2b50fa1e122622c3006fac7f016 Apply canonical frontend formatting
+2026-09-16 ae28d5152a2030213b97ecdf2fc1ac69cc747654 Fix focused Vitest working directory
+2026-09-16 4c73136436dba169dc4f9e943043ff66b4e399a2 Fix frontend formatter working directory
+2026-09-16 825c1d98362efee4af29f6a76c2b9e9053e289ec Expose deterministic formatter output in PR gate
+2026-09-16 b0e77156056b321ee4a2c174cf83c7b531abcd88 Add focused pro actor PR gate
+2026-09-16 1e9d9f5ba85f2b09344d38448b1b489efe166c43 Run pro actor control-plane tests
+2026-09-16 c6cafe6f7430e5880de06a24726a9ab03b9e061d Test canonical pro actor control-plane gate
+2026-09-16 940c52e597b91b5b4ea65596c2c8dc54b6aa2fb3 Test manifest-driven pro actor helpers
+2026-09-16 184001168f2824960ebff4c9b8cbf002225dc6db Route actor workspace through manifest-driven hub
+2026-09-16 50ae14305bb875e51763237caafb6b0c6f09e5b1 Combine pro actor fleet with local actor studio
+2026-09-16 9d58c6b182c2209c34f8e3c4256ef43328397677 Add manifest-driven paid pro actor UI
+2026-09-16 0135f1f2544ad3f2da58a934e5fecd0e72df0030 Expose pro actor control-plane commands
+2026-09-16 a67f7b92bca3459d757460bf3095b1a5ce7a7527 Make remote pro actors the default Melissa path
+2026-09-16 2a706e6492d081b0e8a9c7cd2375f015f56ab03e Load pro actor control-plane commands
+2026-09-16 9f112ee87b9ecce6c1aeb871af47cdcb5f5b7548 Add server-side pro actor entitlement gate
+2026-09-16 c8ef02264505a20caf51987c930053ef03cbe073 Add manifest-driven pro actor target helpers
 2026-09-12 3e04596c744650b50d01114352e331c1bec31170 Update mobile navigation coverage for Code Studio
 2026-09-12 b1bb1e6bbc8b208031203b9b4de54e25d1008b8b Fix Code Studio Playwright assertions
 2026-09-12 da5a4aa07a3d393edb8a69e6357868ab882804bf Fix actor JSON formatting error handling
@@ -74,8 +94,12 @@
 ```text
 .github/workflows/ci.yml
 .github/workflows/format-diagnostic.yml
+.github/workflows/pro-actors-pr.yml
 .github/workflows/ui-overhaul-format.yml
 control-plane/src/configured-main.lisp
+control-plane/src/main.lisp
+control-plane/src/pro-actors.lisp
+control-plane/tests/pro-actor-tests.lisp
 flake.lock
 flake.nix
 frontend/e2e/code-studio.spec.ts
@@ -87,16 +111,23 @@ frontend/playwright.config.ts
 frontend/src/App.jsx
 frontend/src/code-editor.css
 frontend/src/code-workbench.css
+frontend/src/components/ActorHub.jsx
 frontend/src/components/ActorManager.jsx
 frontend/src/components/CodeEditor.jsx
 frontend/src/components/CodeWorkbench.jsx
 frontend/src/components/CodeWorkbench.test.jsx
+frontend/src/components/ProActorManager.jsx
+frontend/src/control-plane/mutations.ts
 frontend/src/lib/code-validation.js
 frontend/src/lib/code-validation.test.js
+frontend/src/lib/pro-actors.js
+frontend/src/lib/pro-actors.test.js
 frontend/src/lib/starintel-server.js
 frontend/src/lib/starintel-server.test.js
 frontend/src/ui-core/navigation.jsx
 package-lock.json
+systems/quasar-control.asd
+systems/quasar-tests.asd
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -104,6 +135,10 @@ package-lock.json
 ```text
 .github/workflows/ci.yml
 .github/workflows/format-diagnostic.yml
+.github/workflows/pro-actors-pr.yml
 .github/workflows/ui-overhaul-format.yml
+control-plane/tests/pro-actor-tests.lisp
 flake.nix
+systems/quasar-control.asd
+systems/quasar-tests.asd
 ```

@@ -1,16 +1,16 @@
 # lost-rob0t/starintel-doc.nim
 
-- generated: `2026-09-19T20:45:03Z`
+- generated: `2026-09-20T00:10:05Z`
 - canonical branch: `dev`
 - changelog eligible: `no`
-- head: [`b55316bae294a146523cd2f977b81096e538c86a`](https://github.com/lost-rob0t/starintel-doc.nim/commit/b55316bae294a146523cd2f977b81096e538c86a)
-- head date: `2026-08-04T17:32:14-04:00`
-- head subject: Merge pull request #7 from lost-rob0t/agent/package-spec-flake
+- head: [`6d62200ce5e024906504a172f6b1f9eb7d6a5375`](https://github.com/lost-rob0t/starintel-doc.nim/commit/6d62200ce5e024906504a172f6b1f9eb7d6a5375)
+- head date: `2026-09-19T16:55:17-04:00`
+- head subject: Merge pull request #9 from lost-rob0t/agent/manifest-documents-nim
 
 ## Git log, last 14 days
 
 ```text
-
+2026-09-19 6d62200ce5e024906504a172f6b1f9eb7d6a5375 Merge pull request #9 from lost-rob0t/agent/manifest-documents-nim
 ```
 
 ## Repository paths changed, last 14 days
