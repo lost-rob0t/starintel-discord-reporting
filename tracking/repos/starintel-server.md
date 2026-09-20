@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-20T11:29:28Z`
+- generated: `2026-09-20T16:10:57Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`f899612d6e5924ffcc81432d78541b6616311892`](https://github.com/lost-rob0t/starintel-server/commit/f899612d6e5924ffcc81432d78541b6616311892)
@@ -134,8 +134,6 @@
 2026-09-06 b923e0e99a760937f85c8af91094ca1b888b9184 docs: consolidate manual docs and generated API into doc/
 2026-09-06 21461ee1046036c08d17a930dce220c445e5758f Merge branch 'docs/api-rendering': org docstrings in source + org-doc API pipeline
 2026-09-06 2065321629ec28ca711ab5549e47a490a878c2c2 docs: document all 835 exported symbols; doc-coverage CI gate
-2026-09-06 d156cab56fb2ca21b922ffe16d9ec2d1fae46c00 docs: regenerate API docs with lisp org babel language
-2026-09-06 b1b6d16e9f31cc0cf0bd478b3a6f273341b22966 docs: org docstrings in source + org-doc API rendering pipeline
 ```
 
 ## Repository paths changed, last 14 days
@@ -275,12 +273,10 @@ source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1.lisp
 source/gserver-settings.lisp
 source/ids.lisp
-source/init-loader.lisp
 source/lease-store-runtime.lisp
 source/leases/memory-store.lisp
 source/leases/protocol.lisp
 source/leases/valkey-store.lisp
-source/main.lisp
 source/observability-consumers.lisp
 source/observability-gserver.lisp
 source/observability/api.lisp
