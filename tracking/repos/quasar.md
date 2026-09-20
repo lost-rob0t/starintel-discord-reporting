@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-09-20T16:11:03Z`
+- generated: `2026-09-20T18:50:38Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`d95157a2c9857da9dde63060b03ddf7615d2d913`](https://github.com/lost-rob0t/quasar/commit/d95157a2c9857da9dde63060b03ddf7615d2d913)
@@ -86,7 +86,6 @@
 2026-09-08 96bacf9dc46c1dcb986ea88e092b6eb0ff9d4ad7 feat(actors): discover StarIntel runtime actors
 2026-09-06 44f977cdecb91d78cd77e35cb287503c135dee50 Merge hosted Common Lisp runtime
 2026-09-06 cb55fdf24505c1edfd226db6c3cbcfbb0af1d22b build: package the hosted Common Lisp runtime
-2026-09-06 b2839355a40a006b33f0b203032fe0bfc4d461d5 build: publish web-dist package for the standalone web edition (#70)
 ```
 
 ## Repository paths changed, last 14 days
@@ -106,7 +105,6 @@ frontend/e2e/code-studio.spec.ts
 frontend/e2e/live-actor-discovery.spec.ts
 frontend/e2e/mobile-navigation.spec.ts
 frontend/e2e/route-density.spec.ts
-frontend/package.json
 frontend/playwright.config.ts
 frontend/src/App.jsx
 frontend/src/code-editor.css
@@ -125,7 +123,6 @@ frontend/src/lib/pro-actors.test.js
 frontend/src/lib/starintel-server.js
 frontend/src/lib/starintel-server.test.js
 frontend/src/ui-core/navigation.jsx
-package-lock.json
 systems/quasar-control.asd
 systems/quasar-tests.asd
 ```

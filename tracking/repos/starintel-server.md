@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-20T16:10:57Z`
+- generated: `2026-09-20T18:50:29Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`f899612d6e5924ffcc81432d78541b6616311892`](https://github.com/lost-rob0t/starintel-server/commit/f899612d6e5924ffcc81432d78541b6616311892)
@@ -132,15 +132,11 @@
 2026-09-06 cc86eca9e623ba3b990a2029b4b51f0f46fada77 Merge commit 'e1af325ea1e1d9ff83c1b41c999d5519af76f8d6' into debug/json-pr-refresh
 2026-09-06 e1af325ea1e1d9ff83c1b41c999d5519af76f8d6 Merge branch 'docs/consolidate': merge doc and docs into doc/
 2026-09-06 b923e0e99a760937f85c8af91094ca1b888b9184 docs: consolidate manual docs and generated API into doc/
-2026-09-06 21461ee1046036c08d17a930dce220c445e5758f Merge branch 'docs/api-rendering': org docstrings in source + org-doc API pipeline
-2026-09-06 2065321629ec28ca711ab5549e47a490a878c2c2 docs: document all 835 exported symbols; doc-coverage CI gate
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.forgejo/workflows/doc-coverage.yml
-.github/workflows/doc-coverage.yml
 .github/workflows/operation-091-star-cl-sync.yml
 .github/workflows/operational-salvage.yml
 .github/workflows/starintel-schema-lock.yml
@@ -177,7 +173,6 @@
 AGENTS.md
 Makefile
 README.org
-cli/client-convenience.lisp
 cli/http-contract-documents.lisp
 cli/http-contract-final.lisp
 cli/http-contract-package.lisp
@@ -186,17 +181,11 @@ cli/starintel-gserver-client.asd
 doc/actors.org
 doc/addons.org
 doc/api/index.org
-doc/api/star-actors-matcher.org
 doc/api/star-actors.org
-doc/api/star-auth.org
-doc/api/star-authorization.org
 doc/api/star-consumers.org
-doc/api/star-databases-couchdb.org
-doc/api/star-documents.org
 doc/api/star-http-contract.org
 doc/api/star-ids.org
 doc/api/star-leases.org
-doc/api/star-producers.org
 doc/api/star-rabbit.org
 doc/api/starintel-gserver-http-api.org
 doc/api/starintel-gserver.org
@@ -234,18 +223,11 @@ qlfile.lock
 rage/5-http-contract-documents.org
 schema/starintel-schema.lock.json
 scripts/check-starintel-schema-lock.py
-scripts/doc-authoring.py
-scripts/insert-docstrings.py
 scripts/stack-test.sh
 source/actor-systems/event-actor.lisp
-source/actor-systems/matcher-actor.lisp
 source/actors.lisp
-source/actors/couchdb-service.lisp
-source/addons.lisp
 source/auth/core.lisp
 source/auth/oauth.lisp
-source/auth/store.lisp
-source/auth/users.lisp
 source/authorization/policy.lisp
 source/authorization/services-final.lisp
 source/authorization/services.lisp
@@ -253,13 +235,6 @@ source/consumers/consumers.lisp
 source/consumers/owner-fixes.lisp
 source/consumers/retry-policy.lisp
 source/consumers/startup-retry.lisp
-source/databases/couchdb.lisp
-source/databases/document-update.lisp
-source/databases/outbox.lisp
-source/databases/quarantine.lisp
-source/databases/target-acceptance.lisp
-source/databases/view-registry.lisp
-source/databases/view-request.lisp
 source/document-access.lisp
 source/frontends/http-api.lisp
 source/frontends/http-auth.lisp
@@ -275,7 +250,6 @@ source/gserver-settings.lisp
 source/ids.lisp
 source/lease-store-runtime.lisp
 source/leases/memory-store.lisp
-source/leases/protocol.lisp
 source/leases/valkey-store.lisp
 source/observability-consumers.lisp
 source/observability-gserver.lisp
@@ -287,12 +261,10 @@ source/observability/package.lisp
 source/observability/redaction.lisp
 source/observability/trace.lisp
 source/package.lisp
-source/producers/producers.lisp
 source/rabbit.lisp
 source/runtime-lifecycle.lisp
 source/starintel-gserver.asd
 source/target-dispatch.lisp
-source/target-recovery.lisp
 source/views/targets.json
 starintel-gserver-tests.asd
 starintel-observability.asd
@@ -314,13 +286,11 @@ t/valkey-lease-review-regression-test.lisp
 tests/test_operational_salvage_contract.py
 tests/test_prolog_shard_deployment.py
 tests/test_v09_runtime_contract.py
-ui/ui-server.lisp
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/doc-coverage.yml
 .github/workflows/operation-091-star-cl-sync.yml
 .github/workflows/operational-salvage.yml
 .github/workflows/starintel-schema-lock.yml
@@ -329,8 +299,6 @@ ui/ui-server.lisp
 cli/starintel-gserver-client.asd
 flake.nix
 scripts/check-starintel-schema-lock.py
-scripts/doc-authoring.py
-scripts/insert-docstrings.py
 scripts/stack-test.sh
 source/starintel-gserver.asd
 starintel-gserver-tests.asd
