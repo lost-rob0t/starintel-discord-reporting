@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-09-20T22:29:01Z`
+- generated: `2026-09-21T05:02:40Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`f899612d6e5924ffcc81432d78541b6616311892`](https://github.com/lost-rob0t/starintel-server/commit/f899612d6e5924ffcc81432d78541b6616311892)
@@ -125,8 +125,6 @@
 2026-09-09 f2ee0ca8cb8a120c7d96a4e1cb639b508f692622 docs: per-run integration provisioning decision (operator convention)
 2026-09-08 273e70309fa633fc40fe6b0e69e0c4002e368279 docs: record exact-head gate evidence in RAGE run log
 2026-09-08 972da6a8d325464bc4df4e18f5b1a9b139307b66 feat: contract versioned document operations + fix /dataset-size shadowing
-2026-09-06 4721efaf8141fd7199b6e1ceb1011b9ad970796e Merge pull request #145 from lost-rob0t/fix/target-dispatch-data-shape
-2026-09-06 9d80cc1710cfe2a5c62c54fc8a2a23b9b7c564f3 fix: emit v0.9-valid data.*-shaped target documents from both routes
 ```
 
 ## Repository paths changed, last 14 days
@@ -221,7 +219,6 @@ source/frontends/http-boundary-routes.lisp
 source/frontends/http-bulk-jobs.lisp
 source/frontends/http-capabilities.lisp
 source/frontends/http-contract-routes.lisp
-source/frontends/http-target-v1.lisp
 source/gserver-settings.lisp
 source/ids.lisp
 source/lease-store-runtime.lisp
@@ -251,7 +248,6 @@ t/consumers-test.lisp
 t/http-boundary-test.lisp
 t/http-contract-documents-test.lisp
 t/http-target-tenant-test.lisp
-t/http-target-v1-test.lisp
 t/http-tenant-injection-test.lisp
 t/lease-store-runtime-test.lisp
 t/observability-test.lisp
@@ -285,7 +281,6 @@ t/consumers-test.lisp
 t/http-boundary-test.lisp
 t/http-contract-documents-test.lisp
 t/http-target-tenant-test.lisp
-t/http-target-v1-test.lisp
 t/http-tenant-injection-test.lisp
 t/lease-store-runtime-test.lisp
 t/observability-test.lisp

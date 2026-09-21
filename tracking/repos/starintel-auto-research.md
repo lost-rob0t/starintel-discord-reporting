@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-09-20T22:29:05Z`
+- generated: `2026-09-21T05:02:44Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`25f083a25c1168ff085d891995d85bda7504ec2e`](https://github.com/lost-rob0t/starintel-auto-research/commit/25f083a25c1168ff085d891995d85bda7504ec2e)
-- head date: `2026-09-16T17:43:50-04:00`
-- head subject: research: design pro actors captcha and webdriver plugin
+- head: [`0a1c84a089ee69f94d4239cb4cb4a5b347fef788`](https://github.com/lost-rob0t/starintel-auto-research/commit/0a1c84a089ee69f94d4239cb4cb4a5b347fef788)
+- head date: `2026-09-20T22:43:07-04:00`
+- head subject: design: move StarLang runtime ownership to Kotlin/JVM
 
 ## Git log, last 14 days
 
 ```text
+2026-09-20 0a1c84a089ee69f94d4239cb4cb4a5b347fef788 design: move StarLang runtime ownership to Kotlin/JVM
 2026-09-16 25f083a25c1168ff085d891995d85bda7504ec2e research: design pro actors captcha and webdriver plugin
 2026-09-14 825689da3ad669a29a9a7af585e7cdc8db2693b1 research: correct actor registry vs StarLang routing ownership
 2026-09-14 3126d671fdc58aaef1da05ea8e0698818c45d056 research: make StarLang sole actor/service registry authority
@@ -57,6 +58,8 @@
 roam/design/star-kb/STAR-KB-001-canonical-knowledge-authoring-and-query-plane.org
 roam/design/star-kb/STAR-KB-001-v0.1-shared-prolog-knowledge-library.org
 roam/design/star-kb/STAR-KB-002-portable-logic-packages-and-sandboxed-actors.org
+roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
+roam/design/star-lang/STAR-LANG-014-kotlin-runtime-transpilation.org
 roam/design/star-server/STAR-CAPTCHA-002-domain-server-repository-boundary.org
 roam/design/star-server/STAR-SERVER-061-sento-total-concurrency-accounting.org
 roam/design/starintel-pro-actors/STAR-PRO-CAPTCHA-004-self-sourced-local-solver-actors.org
@@ -64,6 +67,7 @@ roam/design/starintel-pro-actors/STAR-PRO-PLUGIN-001-lisp-addon-polyglot-contrac
 roam/design/starintel-pro-actors/STAR-PRO-WEBDRIVER-001-headless-actor-system.org
 roam/indexes/ardr-issues/ARDR-ISSUE-INDEX-000-research-transactions.org
 roam/indexes/star-kb/STAR-KB-INDEX-000-prolog-knowledge-system.org
+roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
 roam/indexes/star-server/STAR-INDEX-000-fourth-generation.org
 roam/indexes/starintel-pro-actors/STAR-PRO-INDEX-001-captcha-service-actors.org
 roam/research/ardr-issues/ARDR-ISSUE-191-deployment-config-secrets-contract.org

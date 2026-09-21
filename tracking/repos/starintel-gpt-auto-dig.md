@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-gpt-auto-dig
 
-- generated: `2026-09-20T22:29:03Z`
+- generated: `2026-09-21T05:02:43Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`64c101af3ca8207aed976583060e33152371c3d4`](https://github.com/lost-rob0t/starintel-gpt-auto-dig/commit/64c101af3ca8207aed976583060e33152371c3d4)
@@ -516,8 +516,6 @@
 2026-09-08 8d34ad64cd2bb73e56cb72963f4ada5bc9b82eba noop
 2026-09-08 9de89e21e796b389cd51bab51276ace49df5839b research: add anarchist-violence area-code shard A seeds (#2340)
 2026-09-07 c4adb17af7aa5d83aca87c9ebbaca8cc94d3fd22 Merge pull request 'feat(auto-dig): read-only StarIntel corpus MCP tools + standalone service runner landing' (#2149) from feat/prolog-actor-starintel-tools into main
-2026-09-06 5ba3db06b4ee9e0942b0b11ea0807998ca2752d4 feat(auto-dig): read-only StarIntel corpus tools over the MCP policy
-2026-09-06 244ba82edff9d38943de6f99669617b626660653 feat(auto-dig): standalone service runner with gateway provider support
 ```
 
 ## Repository paths changed, last 14 days
@@ -542,7 +540,6 @@
 .github/workflows/temp-strip-tenant-id.yml
 .github/workflows/tmp-fix-xzspace-dates.yml
 .github/workflows/validate-db.yml
-.gitignore
 .prolog/kb/backlog-import.pl
 .prolog/kb/cross-tie-pass.pl
 .prolog/kb/dig-queue-cross-ties.pl
@@ -551,20 +548,13 @@
 .prolog/kb/spec-release.pl
 .prolog/kb/workflow-guard.pl
 AGENTS.md
-agents/README.md
 agents/auto_dig_live_test_trigger.pl
-agents/auto_dig_mcp_tools.pl
 agents/auto_dig_prolog_actor.pl
 agents/auto_dig_prolog_state.schema.json
-agents/auto_dig_rlm_runner.pl
-agents/auto_dig_service.py
 agents/coverage_backlog.pl
-agents/starintel_corpus_mcp_server.py
-agents/test_auto_dig_mcp_tools.pl
 agents/test_auto_dig_prolog_actor.pl
 agents/test_auto_dig_provider_retry_hotfix.pl
 agents/test_auto_dig_provider_retry_hotfix_base.pl
-agents/test_auto_dig_rlm_runner.pl
 agents/test_coverage_backlog.pl
 backend/__init__.py
 backend/app.py
@@ -22303,7 +22293,6 @@ starintel_doc/spec.py
 starintel_doc/spec_092.py
 starintel_doc/validation.py
 tests/test_auto_dig_pause_contract.py
-tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
 tests/test_dark_academia_bilderberg.py
 tests/test_export_starintel_documents.py
@@ -22323,7 +22312,6 @@ tests/test_quasar_autodig_worker.py
 tests/test_quasar_issue_queue_bridge.py
 tests/test_schema_release.py
 tests/test_spec_0101.py
-tests/test_starintel_corpus_mcp_server.py
 tests/test_starintel_doc.py
 tests/test_starintel_ingest_core.py
 tmp/pack/build.py
@@ -22369,7 +22357,6 @@ scripts/starintel_validate.nim
 scripts/sync_membership_list_issues.py
 scripts/validate-for-merge.py
 tests/test_auto_dig_pause_contract.py
-tests/test_auto_dig_service.py
 tests/test_check_auto_dig_control.py
 tests/test_dark_academia_bilderberg.py
 tests/test_export_starintel_documents.py
@@ -22389,7 +22376,6 @@ tests/test_quasar_autodig_worker.py
 tests/test_quasar_issue_queue_bridge.py
 tests/test_schema_release.py
 tests/test_spec_0101.py
-tests/test_starintel_corpus_mcp_server.py
 tests/test_starintel_doc.py
 tests/test_starintel_ingest_core.py
 ```
