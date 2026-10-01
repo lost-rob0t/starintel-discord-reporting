@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-01T06:01:25Z`
+- generated: `2026-10-01T13:23:43Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -1388,81 +1388,12 @@
 2026-09-17 d61dc253d47bdf8d5376f8297dcc305efc032561 fix(android): replay scanner-friendly QR pairing on current master
 2026-09-17 8dceebb91fc3e58f5acb430388611d0ef9c6a273 Merge master into dual-screenshot gate after #1032
 2026-09-17 02cdf6ebba8a15bcf1d2f583c1bb7ecb928146c0 ci: retain stock ZaraServer log for #575 recurrence (#1032)
-2026-09-17 057510a2521daf49c727ca7d5d3052c6487e5635 test(ci): keep provenance fixture hermetic
-2026-09-17 fc33a4cbbde7d3e05be98658a03458167f7801ff fix(ci): run emulator acceptance under bash
-2026-09-17 614c277dc5723a2bef92de09eff2d476dc3cd1ad Merge current master into Android three-menu navigation
-2026-09-17 98140b73cda10e7d9a8d3492c4481fa31a81bda1 feat(plugins): replay generation-fenced capability composition on current master
-2026-09-17 a48f80c766d2c831dddbc38aed567ce62cb63ffa chore(ci): anchor dual-surface evidence gate to merged #947 master
-2026-09-17 01a9a56307d0edbd1f6afdede364af188c2dbe86 fix(ci): replay Android/Wear artifact gates on current master (#947)
-2026-09-17 7c67e67e94d74059df82c27d05b317aa9721c671 chore(ci): integrate dual-surface evidence gate with #947 candidate
-2026-09-17 735310cc8eb68e94067c5de0fd5b310055aa6487 chore(ci): refresh release artifact gate onto repaired master
-2026-09-17 df01a886cf3e4f800458c2269a04af84a86c496c fix(android): restore AutomationActivity Compose build
-2026-09-17 ef847b25481c82c1dbba5847d84f007dea1cc9b2 test(android): cover rail accessibility and saved drafts
-2026-09-17 803c26df21fe7077b16bd0fd974b2229ec37c2f0 test(android): deepen navigation lifecycle evidence
-2026-09-17 9d7bb9e94fa4df45c583794c5ff965329fe204a7 test(android): validate screenshot harness semantics
-2026-09-17 85a1735e5fa6b3b4c4f3d8c059c0ac76c12d41f8 test(android): exercise three-menu screenshot lifecycle matrix
-2026-09-17 80a7a4d2757908b11c04ea72191f83e710ab3efe test(android): pin three-menu screenshot acceptance contract
-2026-09-17 4e4c7316973ce03b9e2baae65d0820e62e7d8e42 feat(org): present flagship app as Org and enable DeX resizing
-2026-09-17 c3a901958a5a3e14a2d65aa790e92aecdb82d630 fix(org): use junit-compatible calendar failure assertion
-2026-09-17 83ce219d66d924404270260ce386d7f5bcb5e07a test(org): cover calendar projection semantics
-2026-09-17 2acac1859fd514c149cf0bdfa5d766aaeb3a915e feat(org): add canonical calendar projection
-2026-09-17 dd5c512e9aa3f1823c38b6a59283a3487983b15b fix(ci): bind evidence to exact reviewed head
-2026-09-17 d5638902fbfeebfd2e54e63780032dc521cccd30 test(ci): reject mismatched screenshot source claims
-2026-09-17 76e32ffea4d833eeebfbf61d259f48da314564d8 fix(ci): verify Android evidence source provenance
-2026-09-17 97f30012cb2c40cdc144f7f93220613ff632e8e6 test(ci): cover tampered and escaping evidence
-2026-09-17 d8d8ffd925828765fd15cd4fb4f6e3b585e655d3 docs: define dual-surface quality gate
-2026-09-17 a7c4422ac08734a0f2583b6ccad8484737b0f68f docs(android): make screenshot gate repo-wide
-2026-09-17 0dfd030b4f9033b56abe4ae76dfcc8a8b10660a0 docs(ci): require cross-platform evidence in PRs
-2026-09-17 9d9722659173c73d2c4acd8fb7efcca0f8db9806 ci: require dual-surface screenshots and deeper regression
-2026-09-17 86df0b494dba6386b66720f2c7ed342c81948204 fix(android): stamp reviewed SHA in screenshot evidence
-2026-09-17 ab812a2196b7bfc8ffb23d044cfc2c894147dc12 feat(ci): validate cross-platform screenshot evidence
-2026-09-17 8b4dcbc86f524ea51f8281a884d5dfb80e2b289c test(ci): define dual-surface evidence gate
-2026-09-17 b8b64d09f3c29afa3feb018cac1a19804261ac52 fix(ci): replay Android/Wear artifact gates on current master
-2026-09-17 6cbc73c6f894231e1216df9a5f63e51bfa75cd80 feat(android): add Prolog-driven Samsung Health plugin (#971)
-2026-09-17 a73646decffd13e1321ab68c7511bb957832bb5d ci(android): include Zara Org in rolling latest release
-2026-09-17 ce86effc970886a9d16e67e8d8d15e11dc8217e8 ci(android): publish standalone Org workbench APK artifact
-2026-09-17 30f0d8a09da98168204e33cbf458830105f75aff docs(org): document Doom parity and standalone workbench
-2026-09-17 99393e5954733e74cccb5156597eaf9ce5c96ce5 test(org): lock cross-platform literate config behavior
-2026-09-17 32082453877fe18cc4afae938872ab2feb611ebe feat(org): add cross-platform Python Prolog literate config tangler
-2026-09-17 26d159cd2821236a6eb3958475fad06db5355a67 ci(android): gate standalone Org app and shared parser
-2026-09-17 7cc0e4c08c1d5510777ce20c804b9a50d3c37d3a test(android): cover literate Org config bridge
-2026-09-17 a4eed8e04760478f1b7aa5643fd21351ba3c67a1 feat(android): add Zara literate Org config bridge
-2026-09-17 2514cfa3919319ab1661efe4139d9b40c2bffa95 feat(org): expose shared Org semantics with renderer
-2026-09-17 ecfb717a489dd34a5cb7a6d627322e7a6fb5569a fix(org): use Material3 ColorScheme in workbench
-2026-09-17 5f85030b00a63cc307bda2b4b96fe15e43767c2c feat(org): implement Outrun Org editor agenda and capture UI
-2026-09-17 c18022a55196eafa6030d3e8248a8a544f7f813e feat(org): persist TODO state changes into canonical Org text
-2026-09-17 9059cf6c81137f0270ce4341b626b7bbfc63a166 feat(android): render repo Org help from About
-2026-09-17 ad9991740439f4d81297bcca181a8396b7c921b5 feat(org): add SAF-backed canonical Org workspace storage
-2026-09-17 447b0e0343dc427cb6a4d5c3431063edcb449aa0 feat(org): register standalone Org editor app
-2026-09-17 c676d0eafc5d37d70cad04acfa0086e2116d394a feat(org): add standalone Org workbench Android app
-2026-09-17 28845469d3fc37b939503d6718915720718882ad build(android): add DocumentFile for Org workspace SAF
-2026-09-17 04c9daa816a181a3284bab0b1f519450ab5647c7 fix(org): keep parser control flow portable Kotlin
-2026-09-17 27fab5fb7495224cafe054a0f7540a20701692b9 test(org): cover agenda parsing capture and literate tangling
-2026-09-17 e6de12bcc745721ff3a94c11bb2b746b06a53f4a refactor(prolog): keep Org browser config diff focused
-2026-09-17 c16ba23e4c62877696c455363a75c8799f0a1fdc feat(org): implement Doom agenda parser and Python Prolog tangler
-2026-09-17 ea88762d4d4f187050884f107af6910ed3a02e2a feat(org): add portable Org core module
-2026-09-17 8e0bd8ed5adb81bed70fc8402aebbac67f559f0e feat(org): add shared core and standalone workbench modules
-2026-09-17 6b4f9c47045c5da42c1d7dc43a534a1c1a54d9b0 fix(prolog): preserve explicit empty-list Org browser overrides
-2026-09-17 fea5c2adf75baef821a20fc97e885e27b0b426e5 feat(org): resolve owner-local Prolog snapshot before Python customization
-2026-09-17 93cd4e4193f76983b983a1aca75e6775b0bfcc88 test(org): require Prolog snapshot projection for native browser
-2026-09-17 749913682083243c5120c19998def3c3cd0507f0 feat(prolog): publish Org browser override snapshot for native clients
-2026-09-17 b47c6aa8d83fabadff76c078c006e36fa369425d Merge master 8a11e9c583a5539c187633bcf87901111e2cc827 into feat/android-three-menu-navigation
-2026-09-17 a5af25ee9baaf4412f87f55b7d45993f112ef27e fix(test): use canonical kb_config Org browser namespace
-2026-09-17 ff9b5dc4fa9f37300f7e30b164498269e8d5d324 test(android): cover configurable Org render snapshot
-2026-09-17 a0ebcb689b331b65f047f3419109e5e76dadefc1 feat(android): make Org renderer consume typed config snapshot
-2026-09-17 50a35cfd49f0acbbe93d11a57364e31c5f05b6bb docs(org): document full Prolog and Python browser customization
-2026-09-17 c59f32dfc2c74e4d3ec2930c60eb4e2c4acb6663 fix(test): bind Org browser hooks to plunit module
-2026-09-17 2315a5bd76d42a0de047d44f7fb43c9ff25a4c80 test(org): run Prolog browser contracts in pytest gate
-2026-09-17 18d0e72b64aa132a1b983e1273418592a7f7751c test(org): add focused Prolog browser gate
-2026-09-17 a90b85bb026bf42529a01ecd7b4acaa6f223dc8e feat(memory): consume resolved Org browser policy in agent context
-2026-09-17 b5f296a0b477756e71fc0db14af8677bd78a9298 feat(desktop): share resolved Org browser config across workspace and Help
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .envrc
-.github/pull_request_template.md
 .github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
@@ -1477,11 +1408,8 @@ Audit.org
 CHANGELOG.md
 MANIFEST.in
 android/.envrc
-android/.gitignore
-android/AGENTS.md
 android/DESIGN.md
 android/app/build.gradle.kts
-android/app/libs/README.md
 android/app/src/androidTest/AndroidManifest.xml
 android/app/src/androidTest/java/ai/zara/app/history/PortableConversationLegacyPrincipalInstrumentedTest.kt
 android/app/src/androidTest/java/ai/zara/app/history/PortableConversationMigrationInstrumentedTest.kt
@@ -1517,7 +1445,6 @@ android/app/src/main/java/ai/zara/app/history/SymbolicConversationEdgeProjection
 android/app/src/main/java/ai/zara/app/history/SymbolicConversationProjection.kt
 android/app/src/main/java/ai/zara/app/launcher/LauncherCatalog.kt
 android/app/src/main/java/ai/zara/app/localai/LocalAiRuntime.kt
-android/app/src/main/java/ai/zara/app/org/LiterateOrgConfig.kt
 android/app/src/main/java/ai/zara/app/peer/PeerNodeAdvertisement.kt
 android/app/src/main/java/ai/zara/app/peer/PeerNodeListenerLifecycle.kt
 android/app/src/main/java/ai/zara/app/projects/ProjectContextStore.kt
@@ -1538,8 +1465,6 @@ android/app/src/main/java/ai/zara/app/runtime/RuntimeRegistry.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthAndroidPlugin.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthPlugin.kt
 android/app/src/main/java/ai/zara/app/telemetry/ClientEventJournal.kt
 android/app/src/main/java/ai/zara/app/telemetry/ClientEventLog.kt
 android/app/src/main/java/ai/zara/app/telemetry/FailureIncidentTracker.kt
@@ -1568,7 +1493,6 @@ android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/values/wear.xml
 android/app/src/main/res/xml/recognition_service.xml
 android/app/src/main/res/xml/voice_interaction_service.xml
-android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantServiceManifestContractTest.kt
@@ -1597,7 +1521,6 @@ android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeLegacyCutov
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2CutoverTest.kt
 android/app/src/test/java/ai/zara/app/launcher/LauncherCatalogTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
-android/app/src/test/java/ai/zara/app/org/LiterateOrgConfigTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeAdvertisementTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeListenerLifecycleTest.kt
 android/app/src/test/java/ai/zara/app/projects/ProjectContextStoreTest.kt
@@ -1623,8 +1546,6 @@ android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StrictLocalRemoteSuspensionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorFailureReportTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiringContractTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/telemetry/ClientEventJournalTest.kt
 android/app/src/test/java/ai/zara/app/telemetry/ClientEventLogTest.kt
 android/app/src/test/java/ai/zara/app/telemetry/FailureIncidentTrackerTest.kt
@@ -1683,8 +1604,6 @@ android/org-app/src/main/java/ai/zara/org/app/MainActivity.kt
 android/org-app/src/main/java/ai/zara/org/app/OrgTreeRepository.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceProjectionTest.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
-android/org-core/build.gradle.kts
-android/org-core/src/main/java/ai/zara/org/core/OrgCalendar.kt
 android/org-core/src/main/java/ai/zara/org/core/OrgCore.kt
 android/org-core/src/main/java/ai/zara/org/core/OrgMutations.kt
 android/org-core/src/main/java/ai/zara/org/core/OrgReminder.kt
@@ -1692,7 +1611,6 @@ android/org-core/src/main/java/ai/zara/org/core/OrgRoam.kt
 android/org-core/src/main/java/ai/zara/org/core/OrgTimer.kt
 android/org-core/src/main/java/ai/zara/org/core/OrgTodoWorkflow.kt
 android/org-core/src/main/java/ai/zara/org/core/OrgWorkspaceProjection.kt
-android/org-core/src/test/java/ai/zara/org/core/OrgCalendarTest.kt
 android/org-core/src/test/java/ai/zara/org/core/OrgCoreTest.kt
 android/org-core/src/test/java/ai/zara/org/core/OrgReminderTest.kt
 android/org-core/src/test/java/ai/zara/org/core/OrgRoamTest.kt
@@ -1768,14 +1686,11 @@ android/org-todo/src/main/java/ai/zara/org/todo/MainActivity.kt
 android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
 android/org-todo/src/test/java/ai/zara/org/todo/SharedOrgContractTest.kt
 android/settings.gradle.kts
-android/shared-ui/build.gradle.kts
 android/shared-ui/src/main/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshot.kt
 android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
-android/shared-ui/src/main/java/ai/zara/ui/org/OrgTextRenderer.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicSocialEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/org/OrgTextRendererTest.kt
 android/termux-bridge/build.gradle.kts
 android/termux-bridge/src/main/AndroidManifest.xml
 android/termux-bridge/src/main/java/ai/zara/termux/bridge/MainActivity.kt
@@ -1811,7 +1726,6 @@ contracts/zara-expert-v1/expert-descriptor.schema.json
 contracts/zara-runtime-v1/README.md
 contracts/zara-runtime-v1/descriptors.tsv
 contracts/zara-runtime-v1/runtime-descriptor.schema.json
-docs/development.org
 docs/pairing.org
 emacs/zara-conversation-context-test.el
 emacs/zara-conversation-recovery-test.el
@@ -1862,7 +1776,6 @@ scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-expert-contract.sh
 scripts/test-linux-shared-audio.sh
-scripts/test-org-browser.sh
 scripts/test-pair-android-qr.sh
 scripts/test-zara1-protocol.sh
 scripts/validate-org-ui-evidence.py
@@ -1875,7 +1788,6 @@ t/expert_contract.pl
 t/fixtures/experts.expected
 t/fixtures/intents.expected
 t/intents.pl
-t/org_browser_config.pl
 t/prolog_config.pl
 t/rlm_rewrite.pl
 t/symbolic_dialogue.pl
@@ -1930,7 +1842,6 @@ t/test_expert_registry_reserved_host_fields.py
 t/test_expert_registry_stale_usage_budget.py
 t/test_expert_registry_symbolic_fences.py
 t/test_expert_registry_v1.py
-t/test_literate_org_config.py
 t/test_org_apk_release_plumbing.py
 t/test_org_app_fleet.py
 t/test_org_automation_contract.py
@@ -1938,8 +1849,6 @@ t/test_org_automation_receipt_authority.py
 t/test_org_automation_receipt_contract.py
 t/test_org_automation_receipt_terminal_order.py
 t/test_org_automation_run_contract.py
-t/test_org_browser_config.py
-t/test_org_browser_prolog.py
 t/test_org_desktop_evidence.py
 t/test_org_desktop_screenshot_fixtures.py
 t/test_org_desktop_surfaces.py
@@ -2025,18 +1934,14 @@ version.properties
 wiki/android-automation.org
 wiki/android-navigation.org
 wiki/android-projects.org
-wiki/android-samsung-health.org
 wiki/android-watch-install.org
 wiki/android.org
 wiki/browser-bridge.org
 wiki/emacs.org
 wiki/expert-protocol.org
-wiki/literate-org-workbench.org
 wiki/org-todos.org
-wiki/org-workspace.org
 zara/__main__.py
 zara/_experts_v1.py
-zara/agent/__init__.py
 zara/agent/tool_cancellation.py
 zara/agent/tools/registry.py
 zara/agent/tools/todo_tools.py
@@ -2055,16 +1960,13 @@ zara/desktop/org_app.py
 zara/desktop/org_evidence.py
 zara/desktop/org_fixtures.py
 zara/desktop/ui_fixtures.py
-zara/desktop/windows/copilot.py
 zara/desktop/windows/settings.py
 zara/expert_port.py
 zara/experts.py
-zara/literate_org.py
 zara/node.py
 zara/org_automation.py
 zara/org_automation_receipt.py
 zara/org_automation_run.py
-zara/org_browser.py
 zara/org_todos.py
 zara/pairing.py
 zara/pairing_code.py
@@ -2135,7 +2037,6 @@ android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeLegacyCutov
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2CutoverTest.kt
 android/app/src/test/java/ai/zara/app/launcher/LauncherCatalogTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
-android/app/src/test/java/ai/zara/app/org/LiterateOrgConfigTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeAdvertisementTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeListenerLifecycleTest.kt
 android/app/src/test/java/ai/zara/app/projects/ProjectContextStoreTest.kt
@@ -2161,8 +2062,6 @@ android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StrictLocalRemoteSuspensionTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorFailureReportTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiringContractTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/telemetry/ClientEventJournalTest.kt
 android/app/src/test/java/ai/zara/app/telemetry/ClientEventLogTest.kt
 android/app/src/test/java/ai/zara/app/telemetry/FailureIncidentTrackerTest.kt
@@ -2199,7 +2098,6 @@ android/editor-core/src/test/java/ai/zara/editor/core/EditorCoreTest.kt
 android/editor-core/src/test/java/ai/zara/editor/core/SpokenCodeTest.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceProjectionTest.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
-android/org-core/src/test/java/ai/zara/org/core/OrgCalendarTest.kt
 android/org-core/src/test/java/ai/zara/org/core/OrgCoreTest.kt
 android/org-core/src/test/java/ai/zara/org/core/OrgReminderTest.kt
 android/org-core/src/test/java/ai/zara/org/core/OrgRoamTest.kt
@@ -2227,7 +2125,6 @@ android/org-todo/src/test/java/ai/zara/org/todo/SharedOrgContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicSocialEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/org/OrgTextRendererTest.kt
 android/termux-bridge/src/test/java/ai/zara/termux/bridge/TermuxBridgeStateTest.kt
 android/wear-app/src/test/java/ai/zara/wear/SymbolicConversationContinuityGateTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearClientPresentationTest.kt
@@ -2242,7 +2139,6 @@ scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-expert-contract.sh
 scripts/test-linux-shared-audio.sh
-scripts/test-org-browser.sh
 scripts/test-pair-android-qr.sh
 scripts/test-zara1-protocol.sh
 scripts/validate-org-ui-evidence.py
@@ -2253,7 +2149,6 @@ t/expert_contract.pl
 t/fixtures/experts.expected
 t/fixtures/intents.expected
 t/intents.pl
-t/org_browser_config.pl
 t/prolog_config.pl
 t/rlm_rewrite.pl
 t/symbolic_dialogue.pl
@@ -2308,7 +2203,6 @@ t/test_expert_registry_reserved_host_fields.py
 t/test_expert_registry_stale_usage_budget.py
 t/test_expert_registry_symbolic_fences.py
 t/test_expert_registry_v1.py
-t/test_literate_org_config.py
 t/test_org_apk_release_plumbing.py
 t/test_org_app_fleet.py
 t/test_org_automation_contract.py
@@ -2316,8 +2210,6 @@ t/test_org_automation_receipt_authority.py
 t/test_org_automation_receipt_contract.py
 t/test_org_automation_receipt_terminal_order.py
 t/test_org_automation_run_contract.py
-t/test_org_browser_config.py
-t/test_org_browser_prolog.py
 t/test_org_desktop_evidence.py
 t/test_org_desktop_screenshot_fixtures.py
 t/test_org_desktop_surfaces.py
