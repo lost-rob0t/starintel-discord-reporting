@@ -1,6 +1,6 @@
 # lost-rob0t/tek9
 
-- generated: `2026-09-21T05:02:50Z`
+- generated: `2026-10-01T06:01:19Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`e6d1cb86a2e268a894eae3acae9617238b2adcff`](https://github.com/lost-rob0t/tek9/commit/e6d1cb86a2e268a894eae3acae9617238b2adcff)
@@ -24,12 +24,6 @@
 2026-09-18 5715e2d7580ead31db78b93ba560fe5450fbc2ae build: load ingest transaction layer
 2026-09-18 1a00e566e656ea2fbf39c882365f5052532d55eb feat: add atomic checkpointed ingest batches
 2026-09-18 5067d6ae75b96fb159064b26bcb07ef27fe77e7c test: specify atomic checkpointed ingest batches
-2026-09-17 8178cf0af2fcad48b509b439423c030008d62620 star-git: add verified custody and safe hot eviction
-2026-09-17 b19f4dc7178a2ca07141cdb3ad700aef699f3178 star-git: expose Nix package with liblzma closure
-2026-09-17 79bf85fefa249a554f70c258cf5ea4e4cf0510bb star-git: add commit-v2 provenance and Couch revision index
-2026-09-17 429ad72cef9e52c510391fdaf0311715eb5dd496 star-git: add immutable tree snapshots and explicit ref restore
-2026-09-17 c9364c229464e2334f93006267638ffa70e316ba star-git: add deterministic LZMA archive packs
-2026-09-17 3a1adc6488b16073eb05ad9aedb10d06758b0136 star-git: add immutable revision core
 ```
 
 ## Repository paths changed, last 14 days
@@ -40,39 +34,18 @@ flake.nix
 src/ingest-worker.lisp
 src/ingest.lisp
 src/package.lisp
-src/star-git.asd
-src/star-git/commit-v2.lisp
-src/star-git/compression.lisp
-src/star-git/custody.lisp
-src/star-git/package.lisp
-src/star-git/packs.lisp
-src/star-git/repository.lisp
-src/star-git/snapshots.lisp
 src/tek9.asd
-tests/nix-package-smoke.sh
-tests/package.lisp
 tests/tek9-tests.asd
 tests/test-ingest-worker.lisp
 tests/test-ingest.lisp
-tests/test-star-git-custody.lisp
-tests/test-star-git-snapshots.lisp
-tests/test-star-git-v2.lisp
-tests/test-star-git.lisp
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
 flake.nix
-src/star-git.asd
 src/tek9.asd
-tests/nix-package-smoke.sh
-tests/package.lisp
 tests/tek9-tests.asd
 tests/test-ingest-worker.lisp
 tests/test-ingest.lisp
-tests/test-star-git-custody.lisp
-tests/test-star-git-snapshots.lisp
-tests/test-star-git-v2.lisp
-tests/test-star-git.lisp
 ```

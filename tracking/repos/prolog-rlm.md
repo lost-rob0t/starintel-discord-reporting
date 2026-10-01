@@ -1,15 +1,16 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-09-21T05:02:55Z`
+- generated: `2026-10-01T06:01:22Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`4715b5ee53d0e7a26c55705ea85c0d16c3916504`](https://github.com/lost-rob0t/prolog-rlm/commit/4715b5ee53d0e7a26c55705ea85c0d16c3916504)
-- head date: `2026-09-20T17:55:33-04:00`
-- head subject: feat(style): add generic zero-model overlay resolver runtime
+- head: [`2596e3f7155a543026adde461a11326c60e1a756`](https://github.com/lost-rob0t/prolog-rlm/commit/2596e3f7155a543026adde461a11326c60e1a756)
+- head date: `2026-09-22T23:09:50-04:00`
+- head subject: feat(experts): strange-loop KB + canonical expert flow runtime (#507)
 
 ## Git log, last 14 days
 
 ```text
+2026-09-22 2596e3f7155a543026adde461a11326c60e1a756 feat(experts): strange-loop KB + canonical expert flow runtime (#507)
 2026-09-20 4715b5ee53d0e7a26c55705ea85c0d16c3916504 feat(style): add generic zero-model overlay resolver runtime
 2026-09-18 eba3f90a1d4c0b9342e9e37049f92b178c115c1c feat: add Common Lisp adapter and symbolic tool harness
 2026-09-18 235528ab1420c4803ceb2b011b41f7f4d18887ec Merge pull request #478 from lost-rob0t/fix/zara-runtime-redact-raw-outcomes-1046
@@ -36,12 +37,6 @@
 2026-09-18 010b5e9e5922389378ff2001af46773eaad867c1 test(runtime): lock Zara bridge authority and failure contracts
 2026-09-18 0e0a8cbfb3ac4b66758d3fef04097d10aba66bea feat(runtime): add loopback Zara sidecar entrypoint
 2026-09-18 88a8bebcb351d6da93d58eedf50a81b1d7e54ae6 feat(runtime): add ZARA-RUNTIME/1 Prolog bridge
-2026-09-11 51d2530f0e18c84cff860b7c0bf3afcc3c488057 Merge pull request 'fix: #98 review — semantic knowledge review fixes' (#458) from rage/98-semantic-project-knowledge into main
-2026-09-11 dfc96cb120c6b33399450acf4d20124905ce0151 ci: install nix via determinate script in the flake workflow
-2026-09-11 fbdb276a4da5e8b322b33cc67909e997524e7b12 ci: re-run PR gates after environmental nix-flake runner failure (flake check/build/pack-load/develop-load all pass locally)
-2026-09-11 fa41aa355e9fb3b9e248d07d7134792abbc14dd0 fix: #98 review — atomic semantic journal, complete index coherence, incomplete resolution, hydration, host adapters, true project isolation
-2026-09-10 d868c110877ff4462ba231f63eef51416623f9ca ci: re-trigger PR gates after paid-lane variable provisioning
-2026-09-10 42a7cf64edb60b9976957a73dd4f41a38579eb7e feat: implement #98 semantic project knowledge normalization
 ```
 
 ## Repository paths changed, last 14 days
@@ -51,20 +46,8 @@
 .github/workflows/nix.yml
 .github/workflows/style-overlay-contract.yml
 .github/workflows/tree-sitter.yml
-.prolog/facts.kb
-.prolog/kb/debugging-recipes.pl
-.prolog/kb/index.pl
-.prolog/kb/project-knowledge-pipeline.pl
-.prolog/kb/tree-sitter-ffi.pl
-.prolog/verify.pl
-README.md
-TODO.md
 bin/prolog-rlm-zara.pl
-c/rlm_tree_sitter_query.c
 docs/common-lisp-adapter.md
-docs/project-query.md
-docs/project-semantic.md
-docs/prolog-agent-roadmap.md
 docs/zara-runtime.md
 flake.nix
 lisp/bridge.lisp
@@ -74,12 +57,9 @@ lisp/symbolic-tools.lisp
 prolog/adaptors/rlm_common_lisp_bridge.pl
 prolog/rlm.pl
 prolog/rlm_completion.pl
-prolog/rlm_plan_graph.pl
-prolog/rlm_project_query.pl
-prolog/rlm_project_semantic.pl
-prolog/rlm_project_semantic_pack.pl
-prolog/rlm_project_semantic_persist.pl
-prolog/rlm_project_source.pl
+prolog/rlm_expert.pl
+prolog/rlm_expert_graph.pl
+prolog/rlm_strange_loop.pl
 prolog/rlm_style_overlay.pl
 prolog/rlm_symbolic_tool.pl
 prolog/rlm_zara_runtime.pl
@@ -87,14 +67,12 @@ test/common_lisp_adapter_smoke.lisp
 test/deterministic_corpus.pl
 test/load_all.pl
 test/rlm_completion_stream_test.pl
-test/rlm_project_semantic_restart_phase1.pl
-test/rlm_project_semantic_restart_phase2.pl
-test/rlm_project_semantic_test.pl
+test/rlm_expert_graph_test.pl
+test/rlm_expert_test.pl
+test/rlm_strange_loop_test.pl
 test/rlm_symbolic_tool_test.pl
-test/rlm_tree_sitter_query_test.pl
 test/rlm_zara_runtime_test.pl
 test/run_style_overlay_contract.pl
-test/run_tree_sitter_tests.pl
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -110,12 +88,10 @@ test/common_lisp_adapter_smoke.lisp
 test/deterministic_corpus.pl
 test/load_all.pl
 test/rlm_completion_stream_test.pl
-test/rlm_project_semantic_restart_phase1.pl
-test/rlm_project_semantic_restart_phase2.pl
-test/rlm_project_semantic_test.pl
+test/rlm_expert_graph_test.pl
+test/rlm_expert_test.pl
+test/rlm_strange_loop_test.pl
 test/rlm_symbolic_tool_test.pl
-test/rlm_tree_sitter_query_test.pl
 test/rlm_zara_runtime_test.pl
 test/run_style_overlay_contract.pl
-test/run_tree_sitter_tests.pl
 ```
