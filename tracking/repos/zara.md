@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-01T13:23:43Z`
+- generated: `2026-10-01T19:34:32Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -1333,61 +1333,6 @@
 2026-09-17 c4c896d14535eca7233f601ee9e06bb54632c81e fix(ci): purge sdkmanager download intermediates
 2026-09-17 ceabc94f4abccdae81fc813d0b34e5b9f46dd18b test(ci): require sdk download-intermediate cleanup
 2026-09-17 2403f81435b3b85e74e5793361c7d605d37dc40e fix(android): replay Assistant qualification on current master (#898)
-2026-09-17 5e027d79464a1c48da07753c1da0e82b5efc022c test(ci): align emulator retry contract with refreshed sdkmanager
-2026-09-17 2ef8db50ad662d0367c195ea5f85322afddd2f39 fix(ci): refresh Android SDK manager before emulator provisioning
-2026-09-17 85d285c2716f42edb64a3acc2ed4a56e785d3722 test(ci): pin current Android command-line tools contract
-2026-09-17 b28257d1c3665efbee42801cf7aad9f34c1dca64 Merge master into quality/dual-screenshot-deep-gate-2026-09-17
-2026-09-17 4e714c8894a2f4b9948decdfcd152ffd6d7a98aa merge: reconcile three-menu navigation with current master
-2026-09-17 65efb1f4795ad12763fa25d567eff5ae0b30e633 fix(ci): purge corrupt Android emulator download cache
-2026-09-17 c76e458b174372da12c8c28dbb132e03cc63e512 test(ci): require Android SDK download cache purge
-2026-09-17 4dc9963dbe8de849ccccb80316401e2aeab2aa91 test(android): harden project metadata failure cases
-2026-09-17 a2a8dcddac143926fe237cfe28424f5e140eb87d test(android): require visible Projects operation failures
-2026-09-17 033443942d3c3990bc241283a1ba824a06cf14ec fix(android): show Projects operation errors in context
-2026-09-17 eee8aa1a5b6f8bd8b402229fdabeecd52f9bc864 merge current master into #659 drain candidate
-2026-09-17 7ad74adb8b3c41f9396ad6b332c52dac0f652233 fix(android): keep Projects error parameter source-compatible
-2026-09-17 1bd2889797e90e2cd7cd0704a5c78eae84b47e9e fix(android): surface project operation failures
-2026-09-17 b98470a28fc564cead85d6f6b28df78aef73b0fa feat(config): make project identity Prolog-driven (#914)
-2026-09-17 a0e0fc672f6cf1c4ff14bea0185732962219676d docs(android): document project scope and isolation invariants
-2026-09-17 53255ab99a4f5185a9c2b6445ea280a815c98a58 test(android): pin Projects UI and host wiring contracts
-2026-09-17 be2983213494f4ff05aa3b6924a0deff90033527 fix(android): keep scoped project turns out of default conversation
-2026-09-17 faca81cecd55731a38625fe80fc5dc2e6b9968c7 test(android): prevent project chat contaminating default conversation
-2026-09-17 47380f792462bb4a7c6cbfbf6e9cc5d76186f9e4 test(ci): assert emulator retry behavior independent of YAML wrapping
-2026-09-17 10dd893f774d41b50b60ea07945b1b8af696c84c feat(android): persist active project and isolate project chat turns
-2026-09-17 4f8108446215d51769b37c6bd3c9856015b7f390 feat(android): wire Projects workspace and chat scope
-2026-09-17 b857dc3f2e937d50ef091fad588135cd28c9eb26 feat(android): add active project chat breadcrumb
-2026-09-17 00317f7869c513cf8559826e08cf9ebddd9e6d4f feat(android): add real Projects workspace surface
-2026-09-17 3908ee9908d3ae800c4456190d85eeca47a7cb4b feat(android): route text turns through project conversation scope
-2026-09-17 cf6b8862380d7629a66e67e2cc9916cfef79a699 test(android): cover project conversation routing
-2026-09-17 221cd82df6a5de9faa3059601bd4269660224ca9 feat(android): allow explicit project conversation routing
-2026-09-17 36f27625e519d12a0f2556839252335ad3c0e5e6 feat(android): persist bounded project contexts
-2026-09-17 0f4424cb209b038a382e6354def4816d669e7813 test(android): pin persistent project context contract
-2026-09-17 56bcd2615babb06ed3221f88c99b243ee3edb2cc test(ci): pin desktop screenshot hashes
-2026-09-17 9f864bfbbcfa2fbad33adc7ad648a68332f17528 fix(ci): hash desktop screenshot fixtures
-2026-09-17 fe8403846cd242507853248fd8c9ebf2de76b988 fix(ci): verify desktop screenshot content hashes
-2026-09-17 aa90caf9ced365d98e12c054931ab3916294ce61 test(ci): reject tampered desktop screenshot evidence
-2026-09-17 22f836f99d89220bc191a9d2e586244a4aa94e02 merge: reconcile screenshot gate with updater hardening
-2026-09-17 22f8fea1fbb65eda6decf779b00db15ef79534ff merge: reconcile three-menu navigation with updater hardening
-2026-09-17 786077f7919ed9f89788eb1991503b0bf96b338e fix(ci): verify idempotent host emulator bootstrap
-2026-09-17 efead73cb55617de0b2896664b6047c4e0a0dc70 test(ci): require verified idempotent emulator bootstrap
-2026-09-17 6f704cf2f87c5a676ca1281965f5162142b7a588 fix(ci): resolve emulator sdkmanager from host SDK root
-2026-09-17 ff2ebf0844415a288c7a03eb8c30cc05c6b94f4a test(ci): pin host sdkmanager resolution for emulator gate
-2026-09-17 52e4cbc853c711d947687f160174081d25465422 fix(android): harden verified self-update lifecycle (#899)
-2026-09-17 90e4a11e739c3dc4ad6a67b101e2cdac3471dd1f merge: reconcile three-menu navigation with current master
-2026-09-17 35b2439eb29c10e5769e0c7e6484cd10af1e0a4b Merge master into quality/dual-screenshot-deep-gate-2026-09-17
-2026-09-17 6769f3a2e6e42d99e1d5fa359e85a20a621683bc Merge pull request #876 from lost-rob0t/feature/android-wireless-pairing
-2026-09-17 0c54c83ecaa02ebac63e1902f1cfe8a20cbcdd82 test: lock emulator SDK retry into release gate
-2026-09-17 5c9ec16b9e4143dcab5cf7be9701a2ecbf2b78ed ci: retry transient Android emulator package downloads
-2026-09-17 d27d2e9764fcb3c999653c2f94c73348998dff1e test: sync Android gate diagnostics contract from master
-2026-09-17 36728e3e74b3c5d3d4de180afd783b257f7474f3 chore: sync Android gate diagnostics from master
-2026-09-17 0ecf924d941ba192b315dd6264c2668ef810909d chore: sync stock interop diagnostics from master
-2026-09-17 49aa0a9334efb05a9cdff3432882b181c4139a99 test(ci): assert emulator acceptance behavior, not heredoc syntax
-2026-09-17 eec1e1c30be8b32ea3e4a9826367e6bcf4260e2c ci: fix emulator acceptance command quoting
-2026-09-17 78d8f2b07c8b12c6d8a5c8f0ac5ce41af9873d41 fix(ci): target screenshot emulator deterministically
-2026-09-17 1679d5bf1ed6590cbe296096af195331759d15d6 test(ci): require explicit emulator targeting
-2026-09-17 819b329cb93ce3b932f1a18ee4eb004a755afad8 merge master into #659 current-base validation
-2026-09-17 d61dc253d47bdf8d5376f8297dcc305efc032561 fix(android): replay scanner-friendly QR pairing on current master
-2026-09-17 8dceebb91fc3e58f5acb430388611d0ef9c6a273 Merge master into dual-screenshot gate after #1032
-2026-09-17 02cdf6ebba8a15bcf1d2f583c1bb7ecb928146c0 ci: retain stock ZaraServer log for #575 recurrence (#1032)
 ```
 
 ## Repository paths changed, last 14 days
@@ -1447,7 +1392,6 @@ android/app/src/main/java/ai/zara/app/launcher/LauncherCatalog.kt
 android/app/src/main/java/ai/zara/app/localai/LocalAiRuntime.kt
 android/app/src/main/java/ai/zara/app/peer/PeerNodeAdvertisement.kt
 android/app/src/main/java/ai/zara/app/peer/PeerNodeListenerLifecycle.kt
-android/app/src/main/java/ai/zara/app/projects/ProjectContextStore.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidKnowledgeBase.kt
@@ -1481,7 +1425,6 @@ android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraNavigationBars.kt
 android/app/src/main/java/ai/zara/app/update/AndroidUpdateManager.kt
 android/app/src/main/java/ai/zara/app/update/Changelog.kt
-android/app/src/main/java/ai/zara/app/update/UpdateInstallReceiver.kt
 android/app/src/main/java/ai/zara/app/update/UpdateSecurity.kt
 android/app/src/main/java/ai/zara/app/voice/AudioFocusController.kt
 android/app/src/main/java/ai/zara/app/voice/VoicePlaybackController.kt
@@ -1523,7 +1466,6 @@ android/app/src/test/java/ai/zara/app/launcher/LauncherCatalogTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeAdvertisementTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeListenerLifecycleTest.kt
-android/app/src/test/java/ai/zara/app/projects/ProjectContextStoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidKnowledgeBaseTest.kt
@@ -1536,7 +1478,6 @@ android/app/src/test/java/ai/zara/app/prolog/PureSymbolicConversationControllerT
 android/app/src/test/java/ai/zara/app/prolog/SymbolicResponseActExactZeroTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SymbolicResponseActTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SymbolicSocialResponseActTest.kt
-android/app/src/test/java/ai/zara/app/runtime/AndroidProjectConversationRoutingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ChatExecutionTargetTest.kt
 android/app/src/test/java/ai/zara/app/runtime/LocalZaraServerTest.kt
@@ -1743,7 +1684,6 @@ flake.lock
 flake.nix
 ideas.org
 kb/android_control.pl
-kb/config.pl
 kb/intents.pl
 main.pl
 modules/config_loader.pl
@@ -1769,14 +1709,12 @@ rage/android-three-menu-navigation.org
 rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
 scripts/check-android-apk-installable.sh
-scripts/pair-android-qr.sh
 scripts/test-all.sh
 scripts/test-android-emulator-install.sh
 scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-expert-contract.sh
 scripts/test-linux-shared-audio.sh
-scripts/test-pair-android-qr.sh
 scripts/test-zara1-protocol.sh
 scripts/validate-org-ui-evidence.py
 scripts/validate-ui-evidence.py
@@ -1933,7 +1871,6 @@ verification/agentic_fleet_verify.pl
 version.properties
 wiki/android-automation.org
 wiki/android-navigation.org
-wiki/android-projects.org
 wiki/android-watch-install.org
 wiki/android.org
 wiki/browser-bridge.org
@@ -1996,7 +1933,6 @@ zara/server.py
 zara/sync_protocol.py
 zara/todo_skills.py
 zara/version_context.py
-zara/wake_words.py
 zara/zmq_transport.py
 ```
 
@@ -2039,7 +1975,6 @@ android/app/src/test/java/ai/zara/app/launcher/LauncherCatalogTest.kt
 android/app/src/test/java/ai/zara/app/localai/LocalAiRuntimeTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeAdvertisementTest.kt
 android/app/src/test/java/ai/zara/app/peer/PeerNodeListenerLifecycleTest.kt
-android/app/src/test/java/ai/zara/app/projects/ProjectContextStoreTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidKnowledgeBaseTest.kt
@@ -2052,7 +1987,6 @@ android/app/src/test/java/ai/zara/app/prolog/PureSymbolicConversationControllerT
 android/app/src/test/java/ai/zara/app/prolog/SymbolicResponseActExactZeroTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SymbolicResponseActTest.kt
 android/app/src/test/java/ai/zara/app/prolog/SymbolicSocialResponseActTest.kt
-android/app/src/test/java/ai/zara/app/runtime/AndroidProjectConversationRoutingTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ChatExecutionTargetTest.kt
 android/app/src/test/java/ai/zara/app/runtime/LocalZaraServerTest.kt
@@ -2132,14 +2066,12 @@ android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 flake.nix
 scripts/check-android-apk-installable.sh
-scripts/pair-android-qr.sh
 scripts/test-all.sh
 scripts/test-android-emulator-install.sh
 scripts/test-android-semantic-parity.sh
 scripts/test-android.sh
 scripts/test-expert-contract.sh
 scripts/test-linux-shared-audio.sh
-scripts/test-pair-android-qr.sh
 scripts/test-zara1-protocol.sh
 scripts/validate-org-ui-evidence.py
 scripts/validate-ui-evidence.py
