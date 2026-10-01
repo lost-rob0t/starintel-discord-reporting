@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-01T19:34:32Z`
+- generated: `2026-10-01T23:55:10Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -1325,14 +1325,6 @@
 2026-09-18 dca8e71964553c3b88eed74cc990f1f049db143b fix(release): fail closed on version promotion
 2026-09-18 df4c92aa2200d085f500803e63cea11f4f551f47 fix(release): enforce canonical Zara version context
 2026-09-18 4e2f7a8b4b5bd9664cacbe31bc1800e93db031d2 test(release): require canonical version context
-2026-09-17 c3fd8c0795ba871133074eab86467ab049609a28 Merge current master into Android three-menu navigation
-2026-09-17 43869ca0813379ca308f669e8f50982a5a89c9a3 fix(ci): install emulator libpulse host runtime
-2026-09-17 74b011bc32644d87ef071207191f52fc7f006f01 test(ci): require emulator host libpulse preflight
-2026-09-17 786dde0c00e1ae5ebfb6cac38c6f9c16d9582564 Merge master into fix/400-plugin-capability-composition
-2026-09-17 836351067b95a094ee0749355e728579886cf44b Merge current master into release evidence gate branch
-2026-09-17 c4c896d14535eca7233f601ee9e06bb54632c81e fix(ci): purge sdkmanager download intermediates
-2026-09-17 ceabc94f4abccdae81fc813d0b34e5b9f46dd18b test(ci): require sdk download-intermediate cleanup
-2026-09-17 2403f81435b3b85e74e5793361c7d605d37dc40e fix(android): replay Assistant qualification on current master (#898)
 ```
 
 ## Repository paths changed, last 14 days
@@ -1369,11 +1361,9 @@ android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/AndroidPairingCoordinator.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/ZaraApplication.kt
-android/app/src/main/java/ai/zara/app/assistant/AndroidAssistantRolePlatform.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantCapturePlan.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantLifecycleFence.kt
 android/app/src/main/java/ai/zara/app/assistant/LocalAssistantVoiceController.kt
-android/app/src/main/java/ai/zara/app/assistant/ZaraRecognitionService.kt
 android/app/src/main/java/ai/zara/app/assistant/ZaraVoiceInteractionSession.kt
 android/app/src/main/java/ai/zara/app/auth/EnrollmentRepository.kt
 android/app/src/main/java/ai/zara/app/auth/JeroMqAuth.kt
@@ -1434,11 +1424,8 @@ android/app/src/main/java/ai/zara/app/watch/WatchAdbTransfer.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionLinkService.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/values/wear.xml
-android/app/src/main/res/xml/recognition_service.xml
-android/app/src/main/res/xml/voice_interaction_service.xml
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
-android/app/src/test/java/ai/zara/app/assistant/AssistantServiceManifestContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/LocalAssistantVoiceContractTest.kt
 android/app/src/test/java/ai/zara/app/auth/JeroMqCurveSocketAliasingTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingCodeTest.kt
@@ -1736,7 +1723,6 @@ t/test_android_device_acceptance_uiautomator.py
 t/test_android_embedding_preference_device_gate.py
 t/test_android_emulator_instrumentation_evidence.py
 t/test_android_emulator_pixel_launcher_recovery.py
-t/test_android_emulator_sdk_retry_contract.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
 t/test_android_local_history_recovery.py
@@ -1947,7 +1933,6 @@ zara/zmq_transport.py
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
-android/app/src/test/java/ai/zara/app/assistant/AssistantServiceManifestContractTest.kt
 android/app/src/test/java/ai/zara/app/assistant/LocalAssistantVoiceContractTest.kt
 android/app/src/test/java/ai/zara/app/auth/JeroMqCurveSocketAliasingTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingCodeTest.kt
@@ -2091,7 +2076,6 @@ t/test_android_device_acceptance_uiautomator.py
 t/test_android_embedding_preference_device_gate.py
 t/test_android_emulator_instrumentation_evidence.py
 t/test_android_emulator_pixel_launcher_recovery.py
-t/test_android_emulator_sdk_retry_contract.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
 t/test_android_local_history_recovery.py
