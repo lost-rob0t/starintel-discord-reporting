@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-02T19:22:01Z`
+- generated: `2026-10-02T23:49:41Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -1166,37 +1166,6 @@
 2026-09-18 38b3b6e40c76a0d128101b65842e29f6424d6035 feat(browser): route interactive element discovery
 2026-09-18 af8a67cc1d1a53b4e16ea1a7cb71fc8c2f72022a feat(browser): add interactive element discovery tool
 2026-09-18 6a9c7e469287974035f07c990af612170c48203f Android local-first RuntimeHost + Assistant strict-local integration (#916)
-2026-09-18 2649d4b274336b64d85bd4d62aeab8c9ca8e69b8 fix(browser): preserve page errors after lazy content injection
-2026-09-18 dfc54f9d695028c2bc001153d163b339edebb1d1 test(packaging): require bundled browser add-on
-2026-09-18 436eb2d69d16a47a05dec257749f615e604bbff4 packaging: ship browser add-on in Nix packages
-2026-09-18 06ba0f714de18e9c1e1930a16863129c2dcab1d5 packaging: ship browser add-on in wheel data
-2026-09-18 331ef713c48691389998bd06e079910728d3d562 docs(browser): describe Prolog-RLM and vision integration
-2026-09-18 277247f5a201ce5b74fb753a8d9c594969e78c3b docs(browser): document add-on install and security contract
-2026-09-18 681ff842e48f1de23e2374ac346f7f79b04fdb0a test(browser): cover approval, auth, and extension round trip
-2026-09-18 08a1d4c750593bd91f43f072a9c8f1c74f689a0a feat(browser): add Firefox WebExtension manifest
-2026-09-18 c9298e47bacd9b9da0ae1927ad48cd113e9d251d fix(browser): surface page-script failures through RPC
-2026-09-18 71466032b54d1a76a4f703ad7794edec77959f0a feat(browser): persist extension bridge settings
-2026-09-18 738de73063fb5004e515df7d4807cf92a12ab6d2 feat(browser): add bridge extension options page
-2026-09-18 da3f4a2dfa81b3ed76c4dc324b0827d5041968a7 feat(browser): implement DOM read and interaction content script
-2026-09-18 6ec8df4ebd8ce9a33618a4872146feba5bb94eee feat(browser): implement extension bridge RPC worker
-2026-09-18 5ee294c132963df4ed89b020a9dac40a1529bd47 feat(browser): add Chromium WebExtension manifest
-2026-09-18 f36cf5ecc272ebd9d50597227e4a7315fbaa1a6c feat(browser): add authenticated browser bridge service
-2026-09-18 d417d18cce9846c63109f39ac4bc359d468f156b merge: reconcile plugin cancellation with current master
-2026-09-18 3e28d476049295ea83349836b6c421f5e9ab3ef0 merge(android): reconcile Assistant strict-local systems with current master
-2026-09-18 77bfc9414c5a5cb6524984f47849aff3888e1071 feat(android): add portable local conversation persistence core (#966)
-2026-09-18 0ad26a3405c39aa265af07f1834684e0ed621227 Merge master into rage/core/388-tool-cancellation-r18
-2026-09-18 3a76c3a7a1ce1fb02a495558bb2a8701e432ead9 Merge master into Android Assistant systems slice
-2026-09-18 ffaa482cf621489bb67e1121dedb570095a472b0 chore(todo): add canonical ideas.org inbox (#1125)
-2026-09-18 0579cec4027df3fc6678737494870c22303b17c4 merge master into Android Assistant systems slice
-2026-09-18 155c58b518827662ddf473b8b9946f7b7a2a90dc test(android): pin strict-local callback authority fence
-2026-09-18 a389595fc5cf897e506194b402d1b7b1ee9f3dde test(android): fence superseded local assistant callbacks
-2026-09-18 c45538ee565e34045e794eaf216a58c788e05ff8 fix(android): reject superseded local assistant turn callbacks
-2026-09-18 a75d0ca4f51dbc4102012b1ddaecd9d485fce1dc docs: record strict-local assistant cancellation fix
-2026-09-18 935a7734a0899c79ac41e32017c43c7b2dde556f feat(wear): add strict-local Zara Voice launcher
-2026-09-18 f56f35daa6ea25630b32e858baf74e808a5136f2 test(android): cover pending local assistant turn cancellation
-2026-09-18 c1b4b8c196099a4e01889d68d52c37acd9a82f92 fix(android): cancel pending strict-local assistant turns
-2026-09-18 2f81184ef4959d78aac67293cb4aea6396c83a15 test(android): make lifecycle wiring contract formatting-stable
-2026-09-18 27132ff59e366692c2ff64bb01c340823744a9f0 fix(plugins): notify capability registration waiters
 ```
 
 ## Repository paths changed, last 14 days
@@ -1231,7 +1200,6 @@ android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/AndroidPairingCoordinator.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/assistant/AssistantCapturePlan.kt
-android/app/src/main/java/ai/zara/app/assistant/LocalAssistantVoiceController.kt
 android/app/src/main/java/ai/zara/app/auth/JeroMqAuth.kt
 android/app/src/main/java/ai/zara/app/auth/Pairing.kt
 android/app/src/main/java/ai/zara/app/auth/PairingCode.kt
@@ -1284,7 +1252,6 @@ android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/values/wear.xml
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
-android/app/src/test/java/ai/zara/app/assistant/LocalAssistantVoiceContractTest.kt
 android/app/src/test/java/ai/zara/app/auth/JeroMqCurveSocketAliasingTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingCodeTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingGenerationFenceTest.kt
@@ -1478,10 +1445,6 @@ android/wear-voice/src/main/java/ai/zara/wear/voice/WearVoiceActivity.kt
 browser-addon/README.org
 browser-addon/background.js
 browser-addon/content.js
-browser-addon/manifest.firefox.json
-browser-addon/manifest.json
-browser-addon/options.html
-browser-addon/options.js
 contracts/symbolic-dialogue-v1/response-act.schema.json
 contracts/zara-expert-v1/README.md
 contracts/zara-expert-v1/compatibility-inventory.md
@@ -1756,7 +1719,6 @@ zara/zmq_transport.py
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
 android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
-android/app/src/test/java/ai/zara/app/assistant/LocalAssistantVoiceContractTest.kt
 android/app/src/test/java/ai/zara/app/auth/JeroMqCurveSocketAliasingTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingCodeTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingGenerationFenceTest.kt

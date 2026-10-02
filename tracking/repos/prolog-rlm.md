@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-10-02T19:21:57Z`
+- generated: `2026-10-02T23:49:37Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`2596e3f7155a543026adde461a11326c60e1a756`](https://github.com/lost-rob0t/prolog-rlm/commit/2596e3f7155a543026adde461a11326c60e1a756)
@@ -17,7 +17,6 @@
 2026-09-18 5b7b32946828fdf31c4a4b85baa7a193f5ae6f94 test(runtime): cover malformed outcome redaction
 2026-09-18 093659508f29db012043fd99d9d02a04f4990a2d fix(runtime): keep raw outcomes behind Prolog-RLM boundary
 2026-09-18 ca7ac96df1e32f1658aa32bae2ba3032fec947c0 test(runtime): reject raw Prolog-RLM outcome leakage
-2026-09-18 9c475fe44c24ca58795c6b5cb5e002f2e2decc5e Merge pull request #452 from lost-rob0t/fix/zara-runtime-v1-provenance
 ```
 
 ## Repository paths changed, last 14 days
