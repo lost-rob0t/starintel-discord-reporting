@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-02T05:44:20Z`
+- generated: `2026-10-02T12:42:02Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -1309,22 +1309,6 @@
 2026-09-18 a56f8cc27a4dabecdb757d07b7872061daba0472 Merge current three-menu shell into Android Projects
 2026-09-18 eebd109c755405cc79f361d6f2021bfba6771683 Merge master into feat/android-three-menu-navigation
 2026-09-18 38f5a6d45f80b0203698fae07e1ba305553efeff ci(android): reconcile navigation acceptance with source provenance
-2026-09-18 46392769c206e43a33680741ab3584e6e2da70e2 Merge pull request #997 from lost-rob0t/quality/dual-screenshot-deep-gate-2026-09-17
-2026-09-18 9e134aaaf0cc0d461a298c92c7f6de327376af85 compose(runtime): replay #621 composed cancellation bridge
-2026-09-18 edbdf8fe07ae43a4722e335c048838b934f2c4e6 compose(runtime): replay #621 t/test_plugin_capability_authorization_cancellation.py
-2026-09-18 607d4be1c9267d468db8870a66661a0f1483fbaa compose(runtime): replay #621 zara/agent/tools/registry.py
-2026-09-18 2c2b566586a23c665e48104dda9d7e2db8407ecd compose(runtime): replay #621 zara/plugins/__init__.py
-2026-09-18 2c150387bec94d5ddb1e3c1b2ac775dfc3e16cd7 compose(runtime): replay #621 zara/agent/tool_cancellation.py
-2026-09-18 5ce7267413136ed19af2b3cf3fe06a0925ef8143 compose(runtime): replay #621 t/test_plugin_tool_cancellation_r18.py
-2026-09-18 279e8c03f755e81c165a0159f67df664d06572b3 compose(runtime): replay #621 rage/388-plugin-cancellation-r18.org
-2026-09-18 811890371cea35eb282103da217119c434abfd66 fix(android): validate canonical SemVer correctly
-2026-09-18 229d4b9a8e88a75322385a6a8f432de0b219afe2 test(android): reject over-escaped version regex
-2026-09-18 886ad299c871b7df2aba6af12893e4b73ff01d37 fix(android): keep plugins block before version loader
-2026-09-18 dc8e3e0cfa6d8687b353cc1f66ba43a184455ba3 test(release): require Gradle plugin ordering
-2026-09-18 6a8aa5c6dc75e079c28be0d8361910b840a141fa test(release): keep version target single-source
-2026-09-18 dca8e71964553c3b88eed74cc990f1f049db143b fix(release): fail closed on version promotion
-2026-09-18 df4c92aa2200d085f500803e63cea11f4f551f47 fix(release): enforce canonical Zara version context
-2026-09-18 4e2f7a8b4b5bd9664cacbe31bc1800e93db031d2 test(release): require canonical version context
 ```
 
 ## Repository paths changed, last 14 days
@@ -1705,7 +1689,6 @@ scripts/test-linux-shared-audio.sh
 scripts/test-zara1-protocol.sh
 scripts/validate-org-ui-evidence.py
 scripts/validate-ui-evidence.py
-scripts/version-context.py
 setup.py
 skills/zara-android-release/SKILL.md
 t/agentic_fleet_verify.pl
@@ -1918,7 +1901,6 @@ zara/security_transport.py
 zara/server.py
 zara/sync_protocol.py
 zara/todo_skills.py
-zara/version_context.py
 zara/zmq_transport.py
 ```
 
@@ -2060,7 +2042,6 @@ scripts/test-linux-shared-audio.sh
 scripts/test-zara1-protocol.sh
 scripts/validate-org-ui-evidence.py
 scripts/validate-ui-evidence.py
-scripts/version-context.py
 t/agentic_fleet_verify.pl
 t/expert_contract.pl
 t/fixtures/experts.expected
