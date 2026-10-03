@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-03T11:44:00Z`
+- generated: `2026-10-03T16:25:57Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -825,49 +825,6 @@
 2026-09-19 fb8ff945ef1ca99d9c28c6b9a4b42ec15715ecd1 feat(org): add deterministic automation run receipt reducer (#1208)
 2026-09-19 45872d869bf4d07d39d5739944a0b158167604f2 fix(android): prove Zara Code APK installability before publish (#1216)
 2026-09-19 fe78d21fe2d2fba4f9a8245c0baccca2957d90b8 Merge pull request #1180 from lost-rob0t/agentic15/formal-verify-live-gates
-2026-09-19 f1ba65ffb2dea7a3a4dddd3c4c68d785f2277fd4 merge master into AGENTIC-15 live gate
-2026-09-19 57071a274370f18e3e68df7bac176147c31664fb Merge pull request #1214 from lost-rob0t/fix/1046-runtime-descriptor-python-types
-2026-09-19 cb6ee3e8e92db426acd0ec63ab6ee4171511fd54 merge master into AGENTIC-15 live gate
-2026-09-19 c1ca07f3ccc1ff15f0410e25934d713a89b150f6 test(runtime): distinguish wire enum strings from host enum types
-2026-09-19 ace0e51be60da5de45af18be3bcbb8f24e0f3997 fix(android): preserve release-notes prefix compatibility
-2026-09-19 dbc7dda42f858af3b5ca439c563fccfa16fa3e5b docs(changelog): note runtime descriptor type hardening
-2026-09-19 48e6010526f15e84bb14a37f4c89b0e31f9035a7 fix(runtime): validate Python descriptor scalar wire types
-2026-09-19 1cd84d3ffae4107f8897548ce2715aecc0bf3933 test(runtime): reject schema-invalid Python descriptor scalar types
-2026-09-19 55084cb8b1157dd069571c3dd80e1c603ff4c4a8 Merge pull request #1212 from lost-rob0t/fix/1046-runtime-protocol-schema-bound
-2026-09-19 992e6b9006569ec2a360d1d545b87a23a6a38170 fix(ci): restore Code Editor exact-head artifact gate
-2026-09-19 f79577ac38102908d16b088d1d739bf548f92449 fix(ci): preserve bounded release-notes evidence wait
-2026-09-19 af475b0ee72dd624d17c570de9edd6d699c9eff9 Merge master into runtime protocol schema hardening
-2026-09-19 e1abee46043c19d349df82238c062c6e426595ae Merge pull request #1033 from lost-rob0t/integrate/android-assistant-systems-on-939
-2026-09-19 5965db15ff0e366e1a9c9fb0487953f24992b2ce docs(changelog): record runtime protocol bound
-2026-09-19 b3ac019204a8d13bba3c625de30cf200c6458a4f fix(android): handle wrapped release-notes title semantics
-2026-09-19 44e2ca1bee70fbb40c9f4f8e18ef87ce25c445ce Merge master into feat/browser-addon-bridge
-2026-09-19 c21d38e1a22d35173ab7edca1d3944a1075715bb test(android): cover wrapped release-notes title semantics
-2026-09-19 3b29294883cf2b6783e4886e0df9290ac01c0fea fix(runtime): bound protocol text in shared schema
-2026-09-19 20d3ceeb3afe9d053521dca3d79d06c69c2b0db7 test(runtime): expose protocol schema length drift
-2026-09-19 656a02117fd128953a8cf0fb50cc6c940803a1b4 docs: record assistant remote fencing fix
-2026-09-19 88709dbf6960b140d42cd34f7597a40398bfc63b fix(android): fence assistant remote readiness
-2026-09-19 14ec399cab8393a273dd17ae32add40edaaa3cb6 test(android): reject stale assistant remote readiness
-2026-09-19 85a20dffbef6b64e68e74c02eb9675c629ee7648 docs(changelog): clarify Assistant enrollment gate
-2026-09-19 79f8a1d6f0f59dbddf04e9220693632cb4423eab fix(android): require enrollment before remote Assistant capture
-2026-09-19 94cf8dff5c3046f0f8b9e91d555c6fd9fa04562d test(android): require enrollment for remote Assistant capture
-2026-09-19 c2ec2263e5a9db631fd7ac4af00c62cbf34cc515 merge: reconcile AGENTIC-15 gate with current master
-2026-09-19 0e810885c602dc1e03fdb1cc52e644d46e47eeaf Merge master into Android Assistant systems slice
-2026-09-19 c371d5631046e8acd52afdec3e1932d22728163a Merge pull request #1210 from lost-rob0t/fix/1046-runtime-schema-text-parity
-2026-09-19 166f3dc0f1cb7c3967e7417485d165235c06627d test(android): cover launcher ANR dismissal before release notes
-2026-09-19 8cd5a425c0ebdff253e6451376c4514e9ee0b2be test(plugins): respect disabled builtins in unavailable lifecycle tests
-2026-09-19 278a2d2f884f3151a30c24a861636c2259131955 fix(runtime): count Unicode scalars in text bounds
-2026-09-19 8372f18ad8cca164d1f4d37c1c8dcd48c94930eb test(runtime): pin Unicode scalar text bounds
-2026-09-19 e3e174090604041ed13311a360d73272779d04ed merge(master): reconcile #1210 onto current S1 baseline
-2026-09-19 02308958a4265d8aa670f1870c3c04dfb0fb7411 Merge pull request #1209 from lost-rob0t/fix/1046-runtime-refresh-noop-generation
-2026-09-19 e49e94a86843f094188646d8a339c521fac534d9 Merge master into Android Assistant systems slice
-2026-09-19 cf50e40cae6d575bbbeda2c8a1fd5891134ca16f docs(changelog): record honest assistant backend gating
-2026-09-19 d7375c55f6ee99db043843fefe4a485be9de4966 fix(android): reject assistant capture without ready backend
-2026-09-19 e89784fca812006acf34b57328dedbad1c08cfdc test(android): reject assistant capture without ready backend
-2026-09-19 4d926a44d01294086bfb06fac388df97aa640dac fix(android): bound transient UIAutomator dump retries
-2026-09-19 a69b47bb13c53c5c79dba11665d79ece4c65660d test(android): pin transient UIAutomator dump loss
-2026-09-19 c0fc5af9e6ebfecf67e9392247ce01b99bdc58ab fix(ci): tolerate delayed release-notes button semantics
-2026-09-19 9188f407a1978620688e3943394e30545b12b406 chore(runtime): drop unrelated Android acceptance drift
-2026-09-19 0cc85e6a13be3f62047518ff4a33bb13e6c253c1 Merge master into fix/1046-runtime-refresh-noop-generation
 ```
 
 ## Repository paths changed, last 14 days
@@ -900,7 +857,6 @@ android/app/src/main/AndroidManifest.xml
 android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/AndroidPairingCoordinator.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
-android/app/src/main/java/ai/zara/app/assistant/AssistantCapturePlan.kt
 android/app/src/main/java/ai/zara/app/auth/JeroMqAuth.kt
 android/app/src/main/java/ai/zara/app/auth/Pairing.kt
 android/app/src/main/java/ai/zara/app/auth/PairingCode.kt
@@ -923,7 +879,6 @@ android/app/src/main/java/ai/zara/app/prolog/SymbolicResponseAct.kt
 android/app/src/main/java/ai/zara/app/runtime/AndroidTextSessionController.kt
 android/app/src/main/java/ai/zara/app/runtime/ChatExecutionTarget.kt
 android/app/src/main/java/ai/zara/app/runtime/JeroMqTextDealer.kt
-android/app/src/main/java/ai/zara/app/runtime/RuntimeRegistry.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextCodec.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraVoiceHelloCodec.kt
@@ -946,7 +901,6 @@ android/app/src/main/java/ai/zara/app/watch/WearCompanionLinkService.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/values/wear.xml
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
-android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
 android/app/src/test/java/ai/zara/app/auth/JeroMqCurveSocketAliasingTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingCodeTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingGenerationFenceTest.kt
@@ -978,7 +932,6 @@ android/app/src/test/java/ai/zara/app/prolog/SymbolicSocialResponseActTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ChatExecutionTargetTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
-android/app/src/test/java/ai/zara/app/runtime/RuntimeRegistryV1Test.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorFailureReportTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
@@ -1087,7 +1040,6 @@ contracts/zara-expert-v1/README.md
 contracts/zara-expert-v1/compatibility-inventory.md
 contracts/zara-expert-v1/descriptors.tsv
 contracts/zara-expert-v1/expert-descriptor.schema.json
-contracts/zara-runtime-v1/runtime-descriptor.schema.json
 emacs/zara-conversation-context-test.el
 emacs/zara-conversation-recovery-test.el
 emacs/zara-conversation-replay-test.el
@@ -1135,7 +1087,6 @@ t/prolog_config.pl
 t/rlm_rewrite.pl
 t/symbolic_dialogue.pl
 t/symbolic_social_vocabulary.pl
-t/test_android_acceptance_overlay_order.py
 t/test_android_adb_plugin.py
 t/test_android_device_acceptance_uiautomator.py
 t/test_android_embedding_preference_device_gate.py
@@ -1147,7 +1098,6 @@ t/test_android_pixel_launcher_anr.py
 t/test_android_release_contract.py
 t/test_android_release_notes_ci_regression.py
 t/test_android_release_notes_overlay.py
-t/test_android_release_notes_race.py
 t/test_android_remote_acceptance_packaging.py
 t/test_android_symbolic_migration_device_gate.py
 t/test_android_symbolic_response_act_contract.py
@@ -1184,7 +1134,6 @@ t/test_pairing_code.py
 t/test_peer_node_descriptor.py
 t/test_peer_node_hello_publication.py
 t/test_peer_node_secure_hello.py
-t/test_plugin_unavailable_start.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
 t/test_pure_symbolic_package_acceptance.py
@@ -1199,7 +1148,6 @@ t/test_remote_listener_bootstrap.py
 t/test_remote_listener_e2e.py
 t/test_remote_recovery_fixture.py
 t/test_runtime_command_context_ids.py
-t/test_runtime_descriptor_schema_v1.py
 t/test_runtime_host.py
 t/test_symbolic_contract_packaging.py
 t/test_symbolic_conversation_projection.py
@@ -1266,7 +1214,6 @@ zara/runtime/backend.py
 zara/runtime/commands.py
 zara/runtime/host.py
 zara/runtime/pure_symbolic_backend.py
-zara/runtime/registry.py
 zara/security_admin.py
 zara/security_gateway.py
 zara/security_transport.py
@@ -1285,7 +1232,6 @@ zara/zmq_transport.py
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/LocalNaturalLanguageFallbackTest.kt
-android/app/src/test/java/ai/zara/app/assistant/AssistantCapturePlanTest.kt
 android/app/src/test/java/ai/zara/app/auth/JeroMqCurveSocketAliasingTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingCodeTest.kt
 android/app/src/test/java/ai/zara/app/auth/PairingGenerationFenceTest.kt
@@ -1317,7 +1263,6 @@ android/app/src/test/java/ai/zara/app/prolog/SymbolicSocialResponseActTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ChatExecutionTargetTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
-android/app/src/test/java/ai/zara/app/runtime/RuntimeRegistryV1Test.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorFailureReportTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
@@ -1375,7 +1320,6 @@ t/prolog_config.pl
 t/rlm_rewrite.pl
 t/symbolic_dialogue.pl
 t/symbolic_social_vocabulary.pl
-t/test_android_acceptance_overlay_order.py
 t/test_android_adb_plugin.py
 t/test_android_device_acceptance_uiautomator.py
 t/test_android_embedding_preference_device_gate.py
@@ -1387,7 +1331,6 @@ t/test_android_pixel_launcher_anr.py
 t/test_android_release_contract.py
 t/test_android_release_notes_ci_regression.py
 t/test_android_release_notes_overlay.py
-t/test_android_release_notes_race.py
 t/test_android_remote_acceptance_packaging.py
 t/test_android_symbolic_migration_device_gate.py
 t/test_android_symbolic_response_act_contract.py
@@ -1424,7 +1367,6 @@ t/test_pairing_code.py
 t/test_peer_node_descriptor.py
 t/test_peer_node_hello_publication.py
 t/test_peer_node_secure_hello.py
-t/test_plugin_unavailable_start.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
 t/test_pure_symbolic_package_acceptance.py
@@ -1439,7 +1381,6 @@ t/test_remote_listener_bootstrap.py
 t/test_remote_listener_e2e.py
 t/test_remote_recovery_fixture.py
 t/test_runtime_command_context_ids.py
-t/test_runtime_descriptor_schema_v1.py
 t/test_runtime_host.py
 t/test_symbolic_contract_packaging.py
 t/test_symbolic_conversation_projection.py
