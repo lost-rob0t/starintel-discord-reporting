@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-03T16:25:57Z`
+- generated: `2026-10-03T21:21:36Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`74728fa899e937fb43a9f618c8223137832b09b5`](https://github.com/lost-rob0t/zara/commit/74728fa899e937fb43a9f618c8223137832b09b5)
@@ -792,39 +792,6 @@
 2026-09-19 4f4707a213007dcc2da65b42de45e1d9a6dc799a test(android): pin one-command adb text injection
 2026-09-19 6f9198c7ce1dcb554e8424879ef89d092ed2f005 Merge master into fix/zap-deny-logging
 2026-09-19 5f0b3768e991f974197e01e99777d106ceff4148 Merge pull request #1133 from lost-rob0t/feat/browser-addon-bridge
-2026-09-19 322e81ef0c850525a8f1493adec07ec750c42d90 test(android): align diagnostics with Termux gate
-2026-09-19 3c622c34bdcc2f99464940fe81f9f68e6e979506 fix(android): dismiss launcher ANR over release notes
-2026-09-19 ab9497ff29d3408201975234f7698a21c922fd93 test(android): pin launcher ANR over release notes
-2026-09-19 123f978b1666248123d27fd0b9bb78734351fdf0 fix(android): align Termux bridge version and signing contract
-2026-09-19 b31bcbcd43059cd230472f71cdb7680efbe22485 test(android): gate Termux bridge on current APK suite
-2026-09-19 079f1a094dfa3f79167f7a9bcca77f53ababd07e docs: restore Termux bridge changelog on current master
-2026-09-19 24afae7aa5415cb519d076c3bc5add553a8c42fb android: register Termux bridge on current module graph
-2026-09-19 460ba43ad1b8c9a852af807bd520872aa0549281 Merge master into Termux bridge foundation
-2026-09-19 4cb6d94928f039b996594b0c0fa4db41768d2e81 Merge master into feat/browser-addon-bridge
-2026-09-19 659e18f8b396fa77f96576c3c94235f61325b587 fix(security): log denied ZAP authentications with the presented public key
-2026-09-19 287451083ed6eb3c532052b131f00e2fd89fb077 test(android): pin stock-server barrier handshake in acceptance contract
-2026-09-19 4469a274391427d3db46c9ce9963b1b8a02b0a13 test(android): release stock-server response after device turn acceptance
-2026-09-19 debd678614c2159f4522b4cf3668738a7ae53885 docs: record Android connectivity fixes and live acceptance
-2026-09-19 9be7d6466b365f58e22e4145c4569ee287685e6a test(android): enforce installed local chat acceptance
-2026-09-19 de3bfc94780effc606cbea1987d808938b8d2b1e test(android): prove installed APK local turn before remote connect
-2026-09-19 4170f793aa2936c475a00cd14aea1ff90452264c fix(android): route project Auto turns through remote-first helper
-2026-09-19 00de06cc7c2be2006b34a3f9b1b81745047eb970 test(android): require dedicated live remote acceptance
-2026-09-19 152ed2ec73f7ea54918465c332ba36c76eb05312 ci(android): require installed APK to reach stock Zara server
-2026-09-19 37a04da8bda00f000032f580aa6474a5f23b994a test(android): add installed-APK remote server acceptance
-2026-09-19 fb72895cf6686c75e7d1f9cc4c6539d05fd8ea73 test(android): accept live enrollment fixture metadata
-2026-09-19 5fc7cdabc432d5c1ef96c2d27b754afc7af6a932 test(android): expose live stock-server enrollment control
-2026-09-19 eccf2a3f8a7c62d7222579fd0c562573ea378df8 fix(android): bound production JeroMQ remote transport
-2026-09-19 bb779aa30e5fefb4e08118ff28758fafdf65c60a test(android): enforce remote-first Auto routing
-2026-09-19 9b8570fc4e40181b365e2ce02e2c76845cf8342f test(android): enforce remote-first Auto routing
-2026-09-19 49011a8448d74e679feabe6ef415831ca9c16e31 fix(android): prefer authenticated remote in Auto mode
-2026-09-19 5c6f2954f061433c2bc1c49b70691ea8314b766d Merge pull request #1206 from lost-rob0t/ideas/starintel-geo
-2026-09-19 44f2784931f7a8dfdbf5257b162e4f0d9d2b6c4f Merge master into feat/browser-addon-bridge
-2026-09-19 38fae579bff87e855fb15026f15f282305c27a59 test(browser): pin fail-closed bridge transport
-2026-09-19 97011007fe07ac87398a95749fd643364c79fec2 fix(browser): fail closed on bridge transport origin
-2026-09-19 f2ea8d9643e0073965d203893ab8dc36e684cec2 merge: reconcile Geo ideas with current master
-2026-09-19 fb8ff945ef1ca99d9c28c6b9a4b42ec15715ecd1 feat(org): add deterministic automation run receipt reducer (#1208)
-2026-09-19 45872d869bf4d07d39d5739944a0b158167604f2 fix(android): prove Zara Code APK installability before publish (#1216)
-2026-09-19 fe78d21fe2d2fba4f9a8245c0baccca2957d90b8 Merge pull request #1180 from lost-rob0t/agentic15/formal-verify-live-gates
 ```
 
 ## Repository paths changed, last 14 days
@@ -833,7 +800,6 @@
 .envrc
 .github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
-.github/workflows/ci.yml
 .github/workflows/emacs-conversation.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
@@ -1021,7 +987,6 @@ android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicSocialEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
-android/termux-bridge/build.gradle.kts
 android/wear-app/build.gradle.kts
 android/wear-app/src/main/AndroidManifest.xml
 android/wear-app/src/main/java/ai/zara/wear/SymbolicConversationContinuityGate.kt
@@ -1073,7 +1038,6 @@ rage/863-reconcile-current-master.org
 rage/866-wear-full-client-auto-pairing-20260923.org
 rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
-scripts/check-android-apk-installable.sh
 scripts/test-all.sh
 scripts/test-android-emulator-install.sh
 scripts/test-android.sh
@@ -1095,23 +1059,19 @@ t/test_android_emulator_pixel_launcher_recovery.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
 t/test_android_pixel_launcher_anr.py
-t/test_android_release_contract.py
 t/test_android_release_notes_ci_regression.py
 t/test_android_release_notes_overlay.py
 t/test_android_remote_acceptance_packaging.py
 t/test_android_symbolic_migration_device_gate.py
 t/test_android_symbolic_response_act_contract.py
 t/test_android_three_menu_device_acceptance.py
-t/test_browser_bridge_plugin.py
 t/test_cli_context_ids_red.py
 t/test_cli_conversation_control.py
 t/test_cli_conversation_replay.py
 t/test_cli_conversation_replay_symbolic_projection.py
 t/test_cli_conversation_replay_unified_projection.py
 t/test_conversation_schema_portable.py
-t/test_cross_platform_evidence_gate.py
 t/test_daemon_security_gateway.py
-t/test_daemon_security_transport.py
 t/test_desktop_pure_symbolic_client.py
 t/test_desktop_pure_symbolic_e2e.py
 t/test_expert_descriptor_schema_v1.py
@@ -1127,9 +1087,6 @@ t/test_expert_registry_stale_usage_budget.py
 t/test_expert_registry_symbolic_fences.py
 t/test_expert_registry_v1.py
 t/test_org_app_fleet.py
-t/test_org_automation_receipt_authority.py
-t/test_org_automation_receipt_contract.py
-t/test_org_automation_receipt_terminal_order.py
 t/test_pairing_code.py
 t/test_peer_node_descriptor.py
 t/test_peer_node_hello_publication.py
@@ -1202,10 +1159,8 @@ zara/desktop/conversation/symbolic_runtime.py
 zara/expert_port.py
 zara/experts.py
 zara/node.py
-zara/org_automation_receipt.py
 zara/pairing_code.py
 zara/plugins/builtin/android_adb.py
-zara/plugins/builtin/browser_bridge.py
 zara/plugins/predicate_authority.py
 zara/plugins/predicate_authority_owner.py
 zara/plugins/scoped_predicate_authority.py
@@ -1216,7 +1171,6 @@ zara/runtime/host.py
 zara/runtime/pure_symbolic_backend.py
 zara/security_admin.py
 zara/security_gateway.py
-zara/security_transport.py
 zara/server.py
 zara/sync_protocol.py
 zara/zmq_transport.py
@@ -1227,7 +1181,6 @@ zara/zmq_transport.py
 ```text
 .github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
-.github/workflows/ci.yml
 .github/workflows/emacs-conversation.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
@@ -1307,7 +1260,6 @@ android/wear-app/src/test/java/ai/zara/wear/WearClientPresentationTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 flake.nix
-scripts/check-android-apk-installable.sh
 scripts/test-all.sh
 scripts/test-android-emulator-install.sh
 scripts/test-android.sh
@@ -1328,23 +1280,19 @@ t/test_android_emulator_pixel_launcher_recovery.py
 t/test_android_gate_diagnostics.py
 t/test_android_gate_diagnostics_contract.py
 t/test_android_pixel_launcher_anr.py
-t/test_android_release_contract.py
 t/test_android_release_notes_ci_regression.py
 t/test_android_release_notes_overlay.py
 t/test_android_remote_acceptance_packaging.py
 t/test_android_symbolic_migration_device_gate.py
 t/test_android_symbolic_response_act_contract.py
 t/test_android_three_menu_device_acceptance.py
-t/test_browser_bridge_plugin.py
 t/test_cli_context_ids_red.py
 t/test_cli_conversation_control.py
 t/test_cli_conversation_replay.py
 t/test_cli_conversation_replay_symbolic_projection.py
 t/test_cli_conversation_replay_unified_projection.py
 t/test_conversation_schema_portable.py
-t/test_cross_platform_evidence_gate.py
 t/test_daemon_security_gateway.py
-t/test_daemon_security_transport.py
 t/test_desktop_pure_symbolic_client.py
 t/test_desktop_pure_symbolic_e2e.py
 t/test_expert_descriptor_schema_v1.py
@@ -1360,9 +1308,6 @@ t/test_expert_registry_stale_usage_budget.py
 t/test_expert_registry_symbolic_fences.py
 t/test_expert_registry_v1.py
 t/test_org_app_fleet.py
-t/test_org_automation_receipt_authority.py
-t/test_org_automation_receipt_contract.py
-t/test_org_automation_receipt_terminal_order.py
 t/test_pairing_code.py
 t/test_peer_node_descriptor.py
 t/test_peer_node_hello_publication.py
