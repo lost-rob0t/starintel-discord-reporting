@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-04T15:23:57Z`
+- generated: `2026-10-04T19:40:53Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -364,53 +364,6 @@
 2026-09-20 d0ae566caa653f951bda37bb6ff678ac401a9119 merge(master): reconcile pure-symbolic edge policy fence
 2026-09-20 36e6d48fa750f30b5493f0c2acc789f3e9300e97 feat(cli,emacs): forward canonical conversation context references (#1295)
 2026-09-20 69f4118ddc6bfd420045351d5d7f30551828b242 merge(#1264): reconcile canonical persistence onto current master
-2026-09-20 f0a0d5de1c5762e7c2274feb6585668d41e478d7 test(android): pin combined symbolic and stock-server acceptance
-2026-09-20 72ecb63e0c885c8784de9ba19f71c72b8baeba3b test(android): preserve stock-server admin fixture during symbolic gate reconciliation
-2026-09-20 0662427a21a78ef574e342c33004d587db319422 test(android): reconcile emulator symbolic and remote acceptance
-2026-09-20 e26f1bee01e05113124e96042e9a54a8e0685f5b test(android): pin restart fence in emulator gate
-2026-09-20 eca1e0af53c198b1746f1117c9cb9e36f986ca73 fix(android): retain emulator instrumentation failure evidence
-2026-09-20 a4036d33f37470827d7bde48ed034af1fb17a3bd test(android): require emulator instrumentation failure evidence
-2026-09-20 a85ef0affa23813107958ea581254a58f1e19c65 test(wear): pin fail-closed omitted edge policy
-2026-09-20 ac16779b7fc0a78b19eb9c7ceaa7e629251d29d7 fix(wear): fail closed when edge policy is omitted
-2026-09-20 3c2f6ffe892fb5e39e395fa94fe5329f195d5923 fix(runtime): bound canonical conversation context references (#1293)
-2026-09-20 89a9ab12461b7c6fa1630b2137ed5a500724e6c7 Merge pull request #1292 from lost-rob0t/fix/android-real-connectivity-20260920
-2026-09-20 457964f1d29320720eb29944f46523d25dc20d97 fix(android): require evidence for verified outcomes
-2026-09-20 3c22d2bfdedd796a7bed12d35c9fa621b8b7e47f fix(symbolic): require evidence for verified outcomes
-2026-09-20 05feb5c8910e8efe8d4169a1e15cb53647e45b5a test(android): reject verified success without effect evidence
-2026-09-20 1e3682600bc9f6d76497ace3ce42648daa023c8e test(symbolic): reject verified success without effect evidence
-2026-09-20 72d219b275d2f924a33924b717204ee7560334d0 fix(android): require renderer evidence before success
-2026-09-20 73275bea8abe7228dca042764e126573e5dd85e4 fix(symbolic): require renderer evidence before success
-2026-09-20 6f570afbcb607eaf4adf13cf2e4190ffa7228a42 test(android): reject successful projection without renderer evidence
-2026-09-20 eef436fe8d1f3a267b6f7a1442f8de25a79585fc test(symbolic): reject successful projection without renderer evidence
-2026-09-20 07f4a46088793287153927ed89ec79b0ff9b55ab Merge remote-tracking branch 'origin/master' into fix/android-real-connectivity-20260920
-2026-09-20 0e49813470db29c0955ea46e07e0ad29354f83ac merge: reconcile symbolic projection with shared expert budgets
-2026-09-20 c99dd6c68fecfd8f346429532a750c9c2e6bf65d Merge pull request #1288 from lost-rob0t/fleet48/1254-expert-delegation-budget
-2026-09-20 ed7a11b164649520e1eface7944b39206a42344c Merge remote-tracking branch 'origin/master' into fix/android-real-connectivity-20260920
-2026-09-20 4674438f5dcb40fbcf9b2fcf50e7f49ba6a24a84 fix(android): atomically fence recovered symbolic turns
-2026-09-20 04b21b4e985828440634ed3bc08a0044a90ec7ad test(android): collect full logcat buffer when acceptance app pid is reclaimed
-2026-09-20 30df4bb5c355b08152a3afb1e59195a93a205ce4 merge master: retain symbolic edge evidence fences
-2026-09-20 e88b1ea2d4b6c12815147f7e59ff95486cc6fc24 fix(experts): charge over-budget child usage before rejection
-2026-09-20 a6626d6a37506bc6bdacd4788bd115baa0e6fce7 test(experts): pin over-budget child usage accounting
-2026-09-20 285a87892653e5c92b599555cb8312a2bf18d11f fix(symbolic): terminalize restart projection with interrupted turn
-2026-09-20 9eee1079712341826a0ba11ab799e182399ee34c merge(master): reconcile zero-model delegation gate with current master
-2026-09-20 7ebea2d58a6c0fe70f9d731396f9ab4fda7cb8a3 fix(experts): preserve canonical unknown mapping under usage fence
-2026-09-20 ccd38a7eef6e60b127f0a5f3cc55af0de095a766 test(symbolic): red restart projection recovery fence
-2026-09-20 8844ef526d515546a29fa0a9de17975be225ccc9 test(android): run restart fence instrumentation
-2026-09-20 eb58b1ad7d177bca9c1d66c1d20a0e2fb2202a90 test(android): red restart symbolic projection fence
-2026-09-20 967d12b3d7e26ee926f6b3516b47ecc13b948a38 Merge pull request #1291 from lost-rob0t/fix/1251-edge-evidence-fence-20260920
-2026-09-20 a466bf884aa49850c53c7318fc6533f87b38288f test(android): tolerate CI runner jitter in stock-server interop harness
-2026-09-20 ec2822be77a7fc560892df2a174ac7b38ef02594 fix(experts): charge stale completion usage before fencing
-2026-09-20 623b627f62394fa6f2a12fd55922e3c2fde3fa6d test(experts): pin stale completion usage charging
-2026-09-20 b77398e14571f0924b3dfe035f4ddebcdb6909eb fix(experts): fail closed on missing terminal model usage
-2026-09-20 d0ababc0b733b6b8500159fe21c811cf6892cb0e test(experts): reject nested terminal result without model usage
-2026-09-20 5aed7735b248d2041ade728079220a51bb9ff629 chore(symbolic): preserve current master edge formatting
-2026-09-20 c976ef43266bf46403831547a18306c2c7e354f6 Merge master into fix/1251-edge-evidence-fence-20260920
-2026-09-20 2f5298841a517f7844f2761494ecae88e0ecdff4 Merge a7b548e31c28061cd0f6e229c5087192c841a505 into fded1099e82f315b069676d1aadd66fe96aebccc
-2026-09-20 a7b548e31c28061cd0f6e229c5087192c841a505 test(android): pin v2+v3 migration classes in device gate
-2026-09-20 f8f03162628dbad9577a5ee47b8af18413af90f4 test(android): exercise v3 policy corruption fixtures on emulator
-2026-09-20 9e63dc42b92418a3be99a5eadc9c8c549c96d07b test(symbolic): cover TEXT counter corruption on reopen
-2026-09-20 5b2dbb8a06a6c690485c45e6aacebe4f47924958 test(android): reject TEXT zero-counter corruption after reopen
-2026-09-20 5b61c18d177a86a756ae7f2b530223f12dc9e2cd Merge remote-tracking branch 'origin/master' into fix/android-real-connectivity-20260920
 ```
 
 ## Repository paths changed, last 14 days
@@ -485,7 +438,6 @@ android/app/src/test/java/ai/zara/app/diagnostics/DiagnosticsV2Test.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicConversationProjectionTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPureAssertionValidationTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPurePolicyTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicTerminalRendererProvenanceTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeBoundedWindowTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeFreshnessRedTest.kt
@@ -497,7 +449,6 @@ android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
-android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorFailureReportTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
@@ -527,7 +478,6 @@ android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
 android/gradle.properties
 android/gradle/libs.versions.toml
-android/integration/device_remote_acceptance.py
 android/integration/device_remote_recovery_acceptance.py
 android/integration/remote_recovery_fixture.py
 android/integration/stock_zara_server_fixture.py
@@ -664,8 +614,6 @@ t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
-t/test_expert_registry_delegation_missing_usage.py
-t/test_expert_registry_delegation_terminal_usage.py
 t/test_expert_registry_recursive_cancellation.py
 t/test_expert_registry_stale_usage_budget.py
 t/test_health_cli.py
@@ -682,14 +630,12 @@ t/test_registered_predicate_authority_contract.py
 t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_remote_recovery_fixture.py
-t/test_runtime_command_context_ids.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_symbolic_conversation_projection.py
 t/test_symbolic_expert_why_phrase.py
 t/test_symbolic_projection_exact_integers.py
 t/test_symbolic_projection_legacy_principal_migration.py
-t/test_symbolic_projection_persisted_storage_classes.py
 t/test_symbolic_projection_pure_assertion_validation.py
 t/test_symbolic_projection_restart_recovery.py
 t/test_symbolic_terminal_renderer_provenance.py
@@ -760,7 +706,6 @@ android/app/src/test/java/ai/zara/app/diagnostics/DiagnosticsV2Test.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicConversationProjectionTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPureAssertionValidationTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPurePolicyTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicTerminalRendererProvenanceTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeBoundedWindowTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeFreshnessRedTest.kt
@@ -772,7 +717,6 @@ android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
-android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextClientActorFailureReportTest.kt
 android/app/src/test/java/ai/zara/app/runtime/ZaraTextCodecTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
@@ -848,8 +792,6 @@ t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
-t/test_expert_registry_delegation_missing_usage.py
-t/test_expert_registry_delegation_terminal_usage.py
 t/test_expert_registry_recursive_cancellation.py
 t/test_expert_registry_stale_usage_budget.py
 t/test_health_cli.py
@@ -866,14 +808,12 @@ t/test_registered_predicate_authority_contract.py
 t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_remote_recovery_fixture.py
-t/test_runtime_command_context_ids.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_symbolic_conversation_projection.py
 t/test_symbolic_expert_why_phrase.py
 t/test_symbolic_projection_exact_integers.py
 t/test_symbolic_projection_legacy_principal_migration.py
-t/test_symbolic_projection_persisted_storage_classes.py
 t/test_symbolic_projection_pure_assertion_validation.py
 t/test_symbolic_projection_restart_recovery.py
 t/test_symbolic_terminal_renderer_provenance.py
