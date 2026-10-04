@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-auto-research
 
-- generated: `2026-10-04T00:41:22Z`
+- generated: `2026-10-04T08:29:25Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`61c3668cc5d88c7882c09f18c57ac5f79da32cf3`](https://github.com/lost-rob0t/starintel-auto-research/commit/61c3668cc5d88c7882c09f18c57ac5f79da32cf3)
-- head date: `2026-09-21T02:06:59-04:00`
-- head subject: STAR-LANG-014: restore Common Lisp and polyglot runtime authority
+- head: [`449a52a1784d9b1bf841e9593de1f56b3bc6615d`](https://github.com/lost-rob0t/starintel-auto-research/commit/449a52a1784d9b1bf841e9593de1f56b3bc6615d)
+- head date: `2026-10-03T20:43:09-04:00`
+- head subject: index: distributed access ARADR
 
 ## Git log, last 14 days
 
 ```text
+2026-10-03 449a52a1784d9b1bf841e9593de1f56b3bc6615d index: distributed access ARADR
+2026-10-03 969cf67decbd1aacb081dc9defc0f240895f4dc8 design: distributed document target access protocol
+2026-10-03 817e53cc75ce7d2c01d7fb98b29bf6de7e1fdf5f research: distributed document target access A2A
 2026-09-21 61c3668cc5d88c7882c09f18c57ac5f79da32cf3 STAR-LANG-014: restore Common Lisp and polyglot runtime authority
 2026-09-20 0a1c84a089ee69f94d4239cb4cb4a5b347fef788 design: move StarLang runtime ownership to Kotlin/JVM
 ```
@@ -19,7 +22,10 @@
 ```text
 roam/design/star-lang/STAR-LANG-001-common-lisp-host-portable-manifest.org
 roam/design/star-lang/STAR-LANG-014-kotlin-runtime-transpilation.org
+roam/design/star-server/STAR-SERVER-064-distributed-document-target-access-a2a-protocol.org
 roam/indexes/star-lang/STAR-LANG-INDEX-001-implementation.org
+roam/indexes/star-server/STAR-PROTOCOL-INDEX-000-authority-routing.org
+roam/research/star-server/STAR-RESEARCH-064-distributed-document-target-access-a2a.org
 ```
 
 ## Test and CI paths touched, last 14 days
