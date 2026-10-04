@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-04T08:29:35Z`
+- generated: `2026-10-04T15:23:57Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -411,90 +411,6 @@
 2026-09-20 9e63dc42b92418a3be99a5eadc9c8c549c96d07b test(symbolic): cover TEXT counter corruption on reopen
 2026-09-20 5b2dbb8a06a6c690485c45e6aacebe4f47924958 test(android): reject TEXT zero-counter corruption after reopen
 2026-09-20 5b61c18d177a86a756ae7f2b530223f12dc9e2cd Merge remote-tracking branch 'origin/master' into fix/android-real-connectivity-20260920
-2026-09-20 40cc46f15a0a45cda76d4d9532d782a83c43e6e2 Merge branch 'master' into fix/android-real-connectivity-20260920
-2026-09-20 641539676ed4af52fc7c6512c068397caa51726d Merge 2e8188742c3c5226ff1d70a3e9ae15442a7c6906 into fded1099e82f315b069676d1aadd66fe96aebccc
-2026-09-20 2e8188742c3c5226ff1d70a3e9ae15442a7c6906 fix(experts): charge terminal child model usage
-2026-09-20 9e67a408242a54d4aa41efe4259a6bbae0efcce3 test(experts): charge failed child usage to shared budget
-2026-09-20 fded1099e82f315b069676d1aadd66fe96aebccc Merge pull request #1286 from lost-rob0t/feat/1252-symbolic-completed-correction-20260920
-2026-09-20 d6d207a1d95cab5c58976ccf52342d25e8e7325b merge(master): reconcile shared expert delegation budget slice
-2026-09-20 ad2011d546172f2fd1feb700561ee6e0db8c2e15 test(android): make terminal fixture explicitly zero-model
-2026-09-20 2668692f4bb8a291bb679617afe384bd3257d4bd test(android): pin explicit zero-model policy in symbolic fixtures
-2026-09-20 b391375295df11e9a0a0c244cf25a2bef3cd6ce5 fix(symbolic): require edge evidence for success acts
-2026-09-20 86812d3ccff8a6b1d8c12f44578145aeab55e418 Merge master into feat/1251-symbolic-conversation-projection
-2026-09-20 1651db62ac6611dead2902d5bf6e0c24ba47ac90 fix(symbolic): eagerly migrate durable policy columns
-2026-09-20 4d6012e94a30d9bde7aa0fab7f72da7240e106bc test(symbolic): make terminal fixture explicitly provider-free
-2026-09-20 b33a36e517d2e4e528650d27a351c8df22ead099 test(symbolic): pin explicit zero-model policy in integer fixtures
-2026-09-20 f34c0639ac3d715ce4108005d20fbfc17a19f277 test(symbolic): make pure policy explicit in projection fixture
-2026-09-20 7961e22d47f3adb88b44efe34673b2dc6df080aa Merge master into feat/1252-symbolic-completed-correction-20260920
-2026-09-20 586d1bbe806d92dcb2dc3038ee84905956efe8f6 fix(emacs): make canonical conversation control the default chat path (#1290)
-2026-09-20 23ab67eb9a889b45fc561e8cdd6baf9b561cd7a6 merge: reconcile #1286 with current master
-2026-09-20 5f1bc6b6bafffe14ce3f4fb0bca12101b4ab275c fix(emacs): cancel admitted turns on native protocol failure (#1287)
-2026-09-20 a424f9e52276ebf7c363d9c08581c43f5511eb28 Merge master into feat/1251-symbolic-conversation-projection
-2026-09-20 8a7647b6ca1bfcd80e9b467a0c8510f1208bb5cb fix(android): reject coerced symbolic ledger storage
-2026-09-20 8df76112273dcd8080c565dbada13929f538dcd7 fix(experts): share authority and model budget across delegation
-2026-09-20 4cbeac38fd244bf82b4fe7386cb26e3cc49d38d3 fix(android): upgrade symbolic policy columns fail closed
-2026-09-20 d8d75e49f590dd0e751e14e1884a9bba43380208 test(experts): pin canonical shared delegation budgets
-2026-09-20 384dda79bc818af1cab7173bd87900a4dcc415c1 fix(symbolic): fail closed on persisted numeric types
-2026-09-20 df4c9c9782b866853330216968bf08aee3642d7e fix(symbolic): enforce exact SQLite integer storage
-2026-09-20 50902056d071a52ca52cf7d9220a5509ec8fc32f test(android): pin v3 migration and persisted numeric fail-closed
-2026-09-20 a7a3971bb4427c5c7fdae15195f1541c4264c37b test(symbolic): cover real v3 to v4 projection migration
-2026-09-20 c602edbf0dbf145be422587d35cc7d1c9f437c57 test(symbolic): pin persisted SQLite integer storage classes
-2026-09-20 9081be4fb395e92bd559019b8ec9a11a6573e3ec merge: reconcile #1286 with current master
-2026-09-20 577364a69050ab3725361cad420d15c1306b7e29 feat(emacs): stream canonical pure-symbolic conversation control (#1284)
-2026-09-20 f0b4a05ddb7957ca59fabd221aee1124240c6bb3 test(symbolic): provider-trap completed-frame correction
-2026-09-20 fd1a4fb2345e8737c6e517d6f610fd91c05f1a6a feat(symbolic): correct completed prior frames deterministically
-2026-09-20 329ee55590d22fcf22dd43180af10b87271948f8 test(symbolic): add RED completed-frame correction coverage
-2026-09-20 b6eafa866f9c24533bc1c8dec27c3c17e3acebcc feat(symbolic): add social conversation acts and portable parity (#1283)
-2026-09-20 929d0c315b8d74cc819c97287a531d10ca6aa119 fix(symbolic): fail closed on omitted provider policy
-2026-09-20 75da25eb26aa2d5e0ccd594ba8273ebf2af51b23 fix(android): fail closed on omitted symbolic policy
-2026-09-20 45a689c9290701ec57aad14cd8c8cc1c78afa97e test(android): reject omitted symbolic policy
-2026-09-20 55b41f201d2842b1d710347f5f11cc2a24fcc84c test(symbolic): fail closed when policy is omitted
-2026-09-20 4907a7ef0feff55c580a34191889f6af6fba93c7 test(symbolic): scope Android response-act parity by enum
-2026-09-20 1ae5139adf8091a9ff7757c30a4d76d651674ad6 test(symbolic): execute social vocabulary plunit in CI
-2026-09-20 50e57ea75ce398b304de4ffbc45cb3a177dfdc44 test(android): pin social acts in edge projection
-2026-09-20 053c374bd50840d70e60a5a1e54c6da435552cfd feat(android): keep edge dialogue vocabulary in contract sync
-2026-09-20 d6bfb1bdd6b54cf45649f69d944513bd3c08dd31 test(android): cover symbolic help and acknowledgement acts
-2026-09-20 0c579a3da6e95f72ece5a5fae702ed146d0d42cb feat(android): accept canonical symbolic social acts
-2026-09-20 2c65f85e87207ccaee1c4b64ff8a053adb25f9e2 test(symbolic): pin portable social response acts
-2026-09-20 411261c238eb5a8bac2ca9f3c9273f4cc45dad50 feat(symbolic): extend dialogue wire contract for social acts
-2026-09-20 90f82f6a6035ea71b0af377130f64ab74dd856f4 feat(symbolic): render help and acknowledgement acts
-2026-09-20 ecd2f8024121dd2aa3b5c9e6abe8f8d708624c42 feat(symbolic): route bounded social conversation turns
-2026-09-20 a82efec24d789b274328f61a66daeac93254546a test(symbolic): add RED social dialogue vocabulary
-2026-09-20 c23b35bb7888d11db5ae9ed754c49dff5a5543fb merge: reconcile symbolic conversation projection with current master
-2026-09-20 a4ed3e0f6d5f77658ddbcbfa8461151b9f4eaae7 fix(android): configure androidx migration test runner
-2026-09-20 376e0d3117449c10b486fceb4e915aeb2c194041 test(android): pin androidx runner in migration gate
-2026-09-20 4d94f898f2d84cbbc3c5303cb41b2ab10a5fbf49 feat(symbolic): resolve expert why and pronoun follow-ups (#1281)
-2026-09-20 ca111dbd3b6495c2f6621a8b22c3aa046a80fe83 Merge pull request #1280 from lost-rob0t/fix/1254-package-symbolic-contracts-56
-2026-09-20 3f6247a27e66c565a1cabea72ec59c9a755c75a3 fix(nix): install canonical symbolic contracts
-2026-09-20 2c5534d7457894af9739a7c0266753891f21a9b8 fix(packaging): ship pure-symbolic runtime contracts
-2026-09-20 ee70ce98b14f39262a24a04c7d718c906a06070b Merge master into feat/1251-symbolic-conversation-projection
-2026-09-20 b1d7eb27339267d0ca74067012f981701abfbb83 Merge pull request #1278 from lost-rob0t/feat/1254-android-symbolic-response-act-wire-20260920
-2026-09-20 2efb60053f03f73b02057516446f6e3fb0eed50b test(android): repair symbolic migration emulator gate
-2026-09-20 5f5972e19d8738b2a170c34c8d7d6c2a06633a22 merge(master): reconcile Android pure-symbolic response-act wire
-2026-09-20 7f075c859aa2d6e345bd75fb829a113d0618d989 feat(expert): ZARA-EXPERT/1 descriptor, activation and invocation contract (#1273)
-2026-09-20 847fdde27822adb3ee7192dfedf263aca5c45471 Merge current master into ZARA-EXPERT/1 contract branch
-2026-09-20 ebd99b5e5a07a773abfb871fbbaffebab7b64a0b Merge master into feat/1254-android-symbolic-response-act-wire-20260920
-2026-09-20 df57bd16782c27fde3d53ea2cbd5583c63ef95c0 feat(cli): preserve conversation identity and cancellation for native clients (#1279)
-2026-09-20 3273957d4131a121fc22a094aea145909194f26f Merge master into feat/1254-android-symbolic-response-act-wire-20260920
-2026-09-20 a11245156c69c3e78dc3ec208f6dfe8f25035644 Merge e87ff856cefdad61d69b04dfba597da3678626cc into 78b4e964f89fc8ec3c867f6900a56d67b87ddfe9
-2026-09-20 e87ff856cefdad61d69b04dfba597da3678626cc test(symbolic): fence policy widening across generations
-2026-09-20 5a8d847d59228aae776fc089c59d50858b1d3da8 Merge owner-fence master into ZARA-EXPERT/1 contract branch
-2026-09-20 78b4e964f89fc8ec3c867f6900a56d67b87ddfe9 fix(android): fence stale conversation history owners (#1274)
-2026-09-20 22f8b9788ced6ac38f8fdf7f0976b5398dc5fbda test(android): require v2 to v4 policy migration on emulator
-2026-09-20 da385afb870ae9c15996a9e3d5ee5260624c4b9e test(android): pin provider-disable and zero-model budget policy
-2026-09-20 c5ea069f45189ca79885c7f16533ea1e7a4dcff9 test(symbolic): prove v2 to v4 policy-aware migration
-2026-09-20 a3c626a70dbd4741f1e3b6d85c107ff5d6b3cddb Merge master into ZARA-EXPERT/1 contract branch
-2026-09-20 cc5cae2d2ddfb3cf97d51721bfdffc782f47224b test(symbolic): expect portable conversation schema v4
-2026-09-20 bd18e90696a01046fa2b246fca766866a664a537 test(android): prove v2 to v4 symbolic policy migration
-2026-09-20 717d43b44ff6178d23b55bf1205359d337ea4aac test(android): expect portable conversation schema v4
-2026-09-20 af9d709091bb1bac785e229bd20cfc791d47d02f feat(android): advance portable conversation ABI for symbolic policy
-2026-09-20 562b0a97e813df7c1aad501dd71b3afd3676d186 feat(android): persist pure-symbolic policy with conversation projection
-2026-09-20 f6c9dd7f81e56f40b51546cddb82ec8ab53735b1 feat(symbolic): persist provider-disable and zero-model budget policy
-2026-09-20 30a048cb51e9030fb21a6b596bc97a985ae31d06 feat(symbolic): version portable policy persistence ABI
-2026-09-20 314f37da6d84b097df14be0201e5204ed2457060 feat(symbolic): persist zero-model policy in conversation ABI
-2026-09-20 13c4c3f1c0e5ab513d7f26057453e6a181459fee test(symbolic): pin durable zero-model policy across restart
-2026-09-20 ce8d59ac104b123d025c9ee1d69a8eea2255a70a merge(master): reconcile Android pure-symbolic response-act wire
-2026-09-20 420030000634189613d65be567f1d781b16af12c Merge master into fix/1251 Android conversation owner fence
 ```
 
 ## Repository paths changed, last 14 days
@@ -512,10 +428,8 @@
 .prolog/kb/org_fleet_delivery.pl
 Audit.org
 CHANGELOG.md
-MANIFEST.in
 android/.gitignore
 android/app/build.gradle.kts
-android/app/src/androidTest/AndroidManifest.xml
 android/app/src/androidTest/java/ai/zara/app/history/PortableConversationLegacyPrincipalInstrumentedTest.kt
 android/app/src/androidTest/java/ai/zara/app/history/PortableConversationMigrationInstrumentedTest.kt
 android/app/src/androidTest/java/ai/zara/app/history/PortableConversationRestartFenceInstrumentedTest.kt
@@ -535,7 +449,6 @@ android/app/src/main/java/ai/zara/app/history/SymbolicConversationProjection.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
 android/app/src/main/java/ai/zara/app/prolog/PrologReplace.kt
-android/app/src/main/java/ai/zara/app/prolog/SymbolicResponseAct.kt
 android/app/src/main/java/ai/zara/app/runtime/AndroidTextSessionController.kt
 android/app/src/main/java/ai/zara/app/runtime/JeroMqTextDealer.kt
 android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
@@ -569,11 +482,9 @@ android/app/src/main/res/values/wear.xml
 android/app/src/main/res/xml/zara_file_paths.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
 android/app/src/test/java/ai/zara/app/diagnostics/DiagnosticsV2Test.kt
-android/app/src/test/java/ai/zara/app/history/PortableConversationHistoryTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicConversationProjectionTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPureAssertionValidationTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPurePolicyTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicTerminalImmutabilityTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicTerminalRendererProvenanceTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeBoundedWindowTest.kt
@@ -584,7 +495,6 @@ android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2CutoverTe
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
-android/app/src/test/java/ai/zara/app/prolog/SymbolicSocialResponseActTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
@@ -615,7 +525,6 @@ android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/ui/ZaraAppProjectionTest.kt
 android/app/src/test/java/ai/zara/app/voice/ZaraVoiceStreamCodecTest.kt
 android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
-android/build.gradle.kts
 android/gradle.properties
 android/gradle/libs.versions.toml
 android/integration/device_remote_acceptance.py
@@ -679,7 +588,6 @@ android/shared-ui/src/main/java/ai/zara/ui/continuity/SymbolicConversationEdgeSn
 android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
 android/shared-ui/src/main/java/ai/zara/ui/health/ZaraHealthCatalog.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicSocialEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/build.gradle.kts
@@ -702,26 +610,20 @@ android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
 android/wear-voice/build.gradle.kts
-contracts/symbolic-dialogue-v1/response-act.schema.json
 contracts/zara-expert-v1/compatibility-inventory.md
 emacs/zara-conversation-context-test.el
-emacs/zara-conversation-recovery-test.el
 emacs/zara-conversation-replay-test.el
-emacs/zara-conversation-strict-test.el
 emacs/zara-conversation-symbolic-inspect-test.el
 emacs/zara-conversation-symbolic-replay-test.el
 emacs/zara-conversation-symbolic.el
-emacs/zara-conversation-test.el
 emacs/zara-conversation-unified-replay-test.el
 emacs/zara-conversation.el
-flake.nix
 kb/android_control.pl
 main.pl
 modules/config_loader.pl
 modules/health_reasoning.pl
 modules/normalizer.pl
 modules/symbolic_dialogue.pl
-modules/symbolic_dialogue_turn.pl
 rage/1299-1303-remote-protocol-slice-design.org
 rage/1299-1303-remote-protocol-slice-research.org
 rage/1299-1303-remote-protocol-slice.org
@@ -740,8 +642,6 @@ server_main.pl
 setup.py
 t/health_reasoning.pl
 t/prolog_config.pl
-t/symbolic_dialogue.pl
-t/symbolic_social_vocabulary.pl
 t/test_android_adb_plugin.py
 t/test_android_embedding_preference_device_gate.py
 t/test_android_emulator_instrumentation_evidence.py
@@ -749,14 +649,11 @@ t/test_android_gate_diagnostics.py
 t/test_android_release_contract.py
 t/test_android_remote_acceptance_packaging.py
 t/test_android_symbolic_migration_device_gate.py
-t/test_android_symbolic_response_act_contract.py
 t/test_cli_context_ids_red.py
-t/test_cli_conversation_control.py
 t/test_cli_conversation_replay.py
 t/test_cli_conversation_replay_symbolic_projection.py
 t/test_cli_conversation_replay_unified_projection.py
 t/test_config.py
-t/test_conversation_schema_portable.py
 t/test_copilot_screenshot_fixtures.py
 t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
@@ -767,7 +664,6 @@ t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
-t/test_expert_registry_delegation_budget.py
 t/test_expert_registry_delegation_missing_usage.py
 t/test_expert_registry_delegation_terminal_usage.py
 t/test_expert_registry_recursive_cancellation.py
@@ -789,20 +685,13 @@ t/test_remote_recovery_fixture.py
 t/test_runtime_command_context_ids.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_symbolic_contract_packaging.py
 t/test_symbolic_conversation_projection.py
-t/test_symbolic_conversation_v3_migration.py
-t/test_symbolic_conversation_v3_to_v4_migration.py
-t/test_symbolic_dialogue_wire_v1.py
 t/test_symbolic_expert_why_phrase.py
 t/test_symbolic_projection_exact_integers.py
 t/test_symbolic_projection_legacy_principal_migration.py
 t/test_symbolic_projection_persisted_storage_classes.py
-t/test_symbolic_projection_policy_persistence.py
 t/test_symbolic_projection_pure_assertion_validation.py
 t/test_symbolic_projection_restart_recovery.py
-t/test_symbolic_social_vocabulary.py
-t/test_symbolic_terminal_immutability.py
 t/test_symbolic_terminal_renderer_provenance.py
 t/test_symbolic_verified_outcome_aba_replay.py
 t/test_symbolic_verified_outcome_bounded_window.py
@@ -818,17 +707,14 @@ t/test_zmq_turn_accept_ordering.py
 t/test_zmq_turn_known_conversation_ordering.py
 t/test_zmq_turn_same_turn_backpressure.py
 t/test_zmq_turn_session_demux.py
-t/zero_model_acceptance.pl
 version.properties
 wiki/android-automation.org
 wiki/android-samsung-health.org
 wiki/android-watch-install.org
 wiki/android.org
 wiki/desktop-design.org
-wiki/emacs.org
 zara/__main__.py
 zara/config.py
-zara/conversation_schema.py
 zara/conversation_schema.sql
 zara/desktop/app.py
 zara/desktop/controller.py
@@ -871,11 +757,9 @@ zara/zmq_transport.py
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/diagnostics/DiagnosticsV2Test.kt
-android/app/src/test/java/ai/zara/app/history/PortableConversationHistoryTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicConversationProjectionTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPureAssertionValidationTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicPurePolicyTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicTerminalImmutabilityTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicTerminalRendererProvenanceTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeBoundedWindowTest.kt
@@ -886,7 +770,6 @@ android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2CutoverTe
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
-android/app/src/test/java/ai/zara/app/prolog/SymbolicSocialResponseActTest.kt
 android/app/src/test/java/ai/zara/app/runtime/AndroidTextSessionControllerTest.kt
 android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
 android/app/src/test/java/ai/zara/app/runtime/StockZaraServerInteropTest.kt
@@ -931,7 +814,6 @@ android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgTimerModelTest.kt
 android/org-timer/src/test/java/ai/zara/org/timer/OrgAppWiringContractTest.kt
 android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicSocialEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/src/test/java/ai/zara/wear/SymbolicConversationContinuityGateTest.kt
@@ -940,13 +822,10 @@ android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-flake.nix
 scripts/test-android-emulator-install.sh
 scripts/test-android.sh
 t/health_reasoning.pl
 t/prolog_config.pl
-t/symbolic_dialogue.pl
-t/symbolic_social_vocabulary.pl
 t/test_android_adb_plugin.py
 t/test_android_embedding_preference_device_gate.py
 t/test_android_emulator_instrumentation_evidence.py
@@ -954,14 +833,11 @@ t/test_android_gate_diagnostics.py
 t/test_android_release_contract.py
 t/test_android_remote_acceptance_packaging.py
 t/test_android_symbolic_migration_device_gate.py
-t/test_android_symbolic_response_act_contract.py
 t/test_cli_context_ids_red.py
-t/test_cli_conversation_control.py
 t/test_cli_conversation_replay.py
 t/test_cli_conversation_replay_symbolic_projection.py
 t/test_cli_conversation_replay_unified_projection.py
 t/test_config.py
-t/test_conversation_schema_portable.py
 t/test_copilot_screenshot_fixtures.py
 t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
@@ -972,7 +848,6 @@ t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
-t/test_expert_registry_delegation_budget.py
 t/test_expert_registry_delegation_missing_usage.py
 t/test_expert_registry_delegation_terminal_usage.py
 t/test_expert_registry_recursive_cancellation.py
@@ -994,20 +869,13 @@ t/test_remote_recovery_fixture.py
 t/test_runtime_command_context_ids.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_symbolic_contract_packaging.py
 t/test_symbolic_conversation_projection.py
-t/test_symbolic_conversation_v3_migration.py
-t/test_symbolic_conversation_v3_to_v4_migration.py
-t/test_symbolic_dialogue_wire_v1.py
 t/test_symbolic_expert_why_phrase.py
 t/test_symbolic_projection_exact_integers.py
 t/test_symbolic_projection_legacy_principal_migration.py
 t/test_symbolic_projection_persisted_storage_classes.py
-t/test_symbolic_projection_policy_persistence.py
 t/test_symbolic_projection_pure_assertion_validation.py
 t/test_symbolic_projection_restart_recovery.py
-t/test_symbolic_social_vocabulary.py
-t/test_symbolic_terminal_immutability.py
 t/test_symbolic_terminal_renderer_provenance.py
 t/test_symbolic_verified_outcome_aba_replay.py
 t/test_symbolic_verified_outcome_bounded_window.py
@@ -1023,5 +891,4 @@ t/test_zmq_turn_accept_ordering.py
 t/test_zmq_turn_known_conversation_ordering.py
 t/test_zmq_turn_same_turn_backpressure.py
 t/test_zmq_turn_session_demux.py
-t/zero_model_acceptance.pl
 ```
