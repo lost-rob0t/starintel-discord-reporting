@@ -6,7 +6,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/hackmode](./hackmode.md) `6120b81b89e5`
 - [lost-rob0t/prolog-rlm](./prolog-rlm.md) `2596e3f7155a`
 - [lost-rob0t/quasar-ui](./quasar-ui.md) `4de5090c9dce`
-- [lost-rob0t/quasar](./quasar.md) `53898ff87beb`
+- [lost-rob0t/quasar](./quasar.md) `4792cfe8e232`
 - [lost-rob0t/star-app](./star-app.md) `5f727b477a06`
 - [lost-rob0t/star-cl](./star-cl.md) `9ce8f88f57fb`
 - [lost-rob0t/star-config](./star-config.md) `18fe264cea86`
