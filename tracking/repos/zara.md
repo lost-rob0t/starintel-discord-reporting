@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-05T14:47:41Z`
+- generated: `2026-10-05T22:41:23Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -126,10 +126,6 @@
 2026-09-22 679675c102ececf56e582ded8da93874523d4fb8 docs(expert): pin #1238 adapter authority inventory
 2026-09-22 ab1cdf0dc1b0107c03a079827a2aedffb47d90af feat(expert): add consumer-only canonical invocation port
 2026-09-22 6d63eac235e8bd07c64495f9096389dcaafc2777 test(expert): define consumer-only canonical invocation port
-2026-09-21 4a7ad7673910e901a09a9e79c81e60bd2aeed8aa Merge pull request #1402 from lost-rob0t/fleet28/1254-desktop-project-context-fence-20260921
-2026-09-21 60e134ba6ff28cfd0493e6876c7b723b583fa3b6 test(symbolic): pin project knowledge and receipt boundaries
-2026-09-21 d08315b886f8066caedf7a278ca4923f3a09089c docs(changelog): note symbolic project context fence
-2026-09-21 2d3cb6ebcac28061781af716b641aa519e9b955d Merge master into Desktop symbolic project fence
 ```
 
 ## Repository paths changed, last 14 days
@@ -304,7 +300,6 @@ t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
-t/test_pure_symbolic_runtime_persistence.py
 t/test_pure_symbolic_same_project_state.py
 t/test_registered_predicate_authority_contract.py
 t/test_registered_predicate_authority_process.py
@@ -418,7 +413,6 @@ t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
-t/test_pure_symbolic_runtime_persistence.py
 t/test_pure_symbolic_same_project_state.py
 t/test_registered_predicate_authority_contract.py
 t/test_registered_predicate_authority_process.py
