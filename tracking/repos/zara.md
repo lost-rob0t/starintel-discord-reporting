@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-05T05:47:17Z`
+- generated: `2026-10-05T14:47:41Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -130,77 +130,6 @@
 2026-09-21 60e134ba6ff28cfd0493e6876c7b723b583fa3b6 test(symbolic): pin project knowledge and receipt boundaries
 2026-09-21 d08315b886f8066caedf7a278ca4923f3a09089c docs(changelog): note symbolic project context fence
 2026-09-21 2d3cb6ebcac28061781af716b641aa519e9b955d Merge master into Desktop symbolic project fence
-2026-09-21 81022145f0f8954b1355f18c4d3d19ebbd798677 fix(symbolic): clear stale Desktop project knowledge
-2026-09-21 ba22a3afb4a5053447223b65f0921845174dce23 test(symbolic): fence all stale Desktop project knowledge
-2026-09-21 68540d84e0e3c325506d1fa7ccbce1c98c0c30a9 Merge pull request #1398 from lost-rob0t/fleet40/1254-edge-verified-receipt-fence-20260921
-2026-09-21 f28788ab28f80a39cab4b322e5045d094edd1067 fix(symbolic): fence stale Desktop project context
-2026-09-21 1068c5071782db4e1599575fb6261b88ff53c2e7 test(symbolic): pin Desktop project context fence
-2026-09-21 2a2f68f7539c46108657dbbe6a5a79165db17cf8 test(wear): require fresh v2 verified evidence
-2026-09-21 4a8e4ff6404431f2ca6c8d69009878e7d793c521 test(edge): reject v1-only verified projections
-2026-09-21 34f7f44b5ea66c5bdfd7ebefcd6674e7bcb5931a fix(edge): require current v2 evidence for verified projection
-2026-09-21 575c2258370c48078573329ca399d42b1e8b66e2 merge(master): reconcile Desktop symbolic context into edge receipt fence
-2026-09-21 dcb39985b96ba9e3451c2f1cca99c7aa049c2800 Merge pull request #1386 from lost-rob0t/fleet28/1254-desktop-symbolic-context-20260921
-2026-09-21 fd0c74df09f251bb1beb3510548f9150d9bc352c test(wear): reject forged verified outcome edge state
-2026-09-21 3660f24e596e07ea964deb222895f8ee004ff7cc fix(edge): fence verified outcome receipt provenance
-2026-09-21 d48919ee8e9aa329b279069e15961f935f064a1b test(edge): reject forged verified outcome receipts
-2026-09-21 a8851e7fc652b11dbcf0047f90de378b1895833d fix(desktop): preserve legacy controller injection seam
-2026-09-21 764fd8de312fa6e20f4f8019ef58241e31bc4d03 fix(desktop): share canonical symbolic conversation owner
-2026-09-21 bac000063db8f624ba49046622c56620123b3618 test(desktop): require one symbolic conversation owner
-2026-09-21 be197748f1dd60ae1d87258080ab9b3ac41384df Merge master into Desktop symbolic continuity slice
-2026-09-21 970a4ea15ee2946c52ef2a486631d73cc6c450df Merge pull request #1395 from lost-rob0t/fleet28/1254-emacs-zero-model-fence-20260921
-2026-09-21 0dd917dc1e9c840106354e68d87f08ca8bca7b1b docs(rage): 1396 research/design/gate evidence
-2026-09-21 629344a8202965ccd0eae79b57c1533a2778da75 fix(transport): flush turn events only after turn.accepted reaches the wire
-2026-09-21 cdded14828a2df3723109068858e5e56cb5a6da2 test(emacs): isolate model-call zero fence
-2026-09-21 f92ba4af4f5f091835b630eb0d04a82b2acbe840 merge(master): refresh desktop symbolic continuity acceptance
-2026-09-21 b5279bd5489db858eb63aba4cedde35b5e637bdf fix(emacs): hard-fence pure-symbolic provider accounting
-2026-09-21 d7199c8cf21a30634dd004245ca824e9c5779df5 test(emacs): reject nonzero pure-symbolic accounting
-2026-09-21 af7185ee48def384783002332262412e9674343e Merge pull request #1392 from lost-rob0t/fix/recovery-acceptance-teardown
-2026-09-21 c50a1fbb210617991d327e65426b2b91425485d2 Merge remote-tracking branch 'origin/master' into fix/recovery-acceptance-teardown
-2026-09-21 1fef4437afa0bb2f56137c8e4ad4e8b2dbbe92fa merge(master): reconcile pure-symbolic dialogue continuity
-2026-09-21 3cc472ca342868a0a3a3797e4e88371a6bbc390b Merge pull request #863 from lost-rob0t/feature/666-qr-pairing
-2026-09-21 71c236414ff85d7152c284d9e2a6034891af8106 docs(rage): 863 reconciliation gate evidence
-2026-09-21 d36cd739efed63cd953558e90fbf3d0f02406ce7 test(wear): repair raw-string regex in API-30 floor contract
-2026-09-21 b1c4c44ebc82e57e3fd0de2044c13ff0fb8882ac fix(android-ui): restore pairing-aware ZaraApp overload against current core signature
-2026-09-21 058abf37c6f61966c828a333b16b0865231d6a0d merge: reconcile pairing (feature/666-qr-pairing) onto current master
-2026-09-21 5eaea4ccd62446962304d8b6c8913f49c9fd30c1 fix(android): recovery acceptance teardown stays best-effort after evidence collection
-2026-09-21 919eeb57a2dbd55c27472a9f90db24ba366a93aa Merge current master into fleet28/1254-desktop-symbolic-context-20260921
-2026-09-21 ebcf9c4192ffb67ff75fe9205c6e839774f551fd wear: lock minimum support to Galaxy Watch5 Pro / API 30 (#1391)
-2026-09-21 db16e56490869e24a7c7ecb5832f0bff5170bef6 Merge pull request #1329 from lost-rob0t/rage/1299-1303-remote-protocol-slice
-2026-09-21 50e87974655f9e70490757e6920d7a048e7c0f9e Merge remote-tracking branch 'origin/master' into rage/1299-1303-remote-protocol-slice
-2026-09-21 90a036c2cb2e26d1ff3f3c2d5394af404af7f434 Merge current master into agent10/1254-desktop-real-context
-2026-09-21 9d57493bd913bd838983efc90fe5d66aa777a8b6 test(symbolic): pin verified evidence ABA replay fence (#1342)
-2026-09-21 788223ea77b14a103b26905c6bdc6ce0d1ab8336 merge(master): refresh pure-symbolic continuity slice
-2026-09-21 5d0023d4d031c05c6b68f3fc2f906433eec228d2 chore(ci): refresh symbolic continuity gate after base advance
-2026-09-21 cf8f8aac7eae83db562965d5f0ef4802fe22b6f0 Merge remote-tracking branch 'origin/master' into rage/1299-1303-remote-protocol-slice
-2026-09-21 63be3ab2acb7e35361bff1db1350289c40be8627 merge current master into verified-evidence acceptance chain
-2026-09-21 1bc28fe5e98596c5372288d936a9fefe66f5c948 Merge PR #1347: bound verified evidence replay lifetime
-2026-09-21 29aaaab83ff2ebb27f483c47e43403c1fc252574 test(packaging): prove zero-provider symbolic wheel runtime (#1385)
-2026-09-21 3fa6b2a3e5c72e69a3ded45b98b513f85f084ecf test(symbolic): exercise restart through injected projection port
-2026-09-21 f6289f1ba61a17144f4157dbc52b42663435848e test(desktop): assert symbolic projection adapter injection
-2026-09-21 735b89262c2c57f2ba3a55c95b0ee6c9051f4b99 fix(desktop): inject symbolic projection adapter
-2026-09-21 160258af61f73afebe5e724f48185f7801280961 fix(symbolic): inject desktop projection port
-2026-09-21 cbcb14ddc05e1d635e4bbc59863bb73375a93976 feat(desktop): adapt symbolic turns to canonical projection
-2026-09-21 9a701be2d987b8931a436364edbf317cc0289599 fix(symbolic): correct context validation escapes
-2026-09-21 d487e2470e28ddba01f2b996ecbe8b9221aa6090 style(symbolic): separate context helpers
-2026-09-21 4aa8b136071401f633a82a08f407bab629656c3c test: recovery diagnostics assertion expects the failing subsystem per case
-2026-09-21 adcabdd2a9bae92250a44ef35684e2837764e1b2 test(desktop): share canonical symbolic conversation store
-2026-09-21 45eaec52c2ed0f88de5f42d7ba58b545c10193fe docs(changelog): record symbolic follow-up continuity
-2026-09-21 7a6c53540034cfad01c1814f2beee5da367842eb test(desktop): require canonical symbolic projection store
-2026-09-21 ec77272de3922e7af027d5095b22240eb8ec619f test(symbolic): commit projection synchronously
-2026-09-21 6bae3fe41d034f97e13c4d489b4980b0c66e7872 fix(symbolic): define persisted context bounds
-2026-09-21 015cd8df356712bc0ff614a3d77b389d0c29f3c2 feat(desktop): bind symbolic runtime to canonical store
-2026-09-21 775177eb0835b212877438238083626f46977b36 feat(symbolic): persist canonical dialogue context
-2026-09-21 aabf9c9eff1601e0601d25fc4a1df568eec25ffc merge(parent): reconcile bounded evidence window with current symbolic replay head
-2026-09-21 ea8b113daa70595bdb143cdebb9bf6d13ee2eb80 feat(runtime): commit active turn metadata before output
-2026-09-21 bf22f8d4be794a5149e9e1a210ed2a063a2993f9 feat(runtime): add fenced result commit hook
-2026-09-21 a3a3ebc84e80e2b458e025650e0dfc6ca9c741b5 test(runtime): fence durable result commits
-2026-09-21 dfff32a8f2ae01ffc96c5a45d636bc27c6c12d78 merge(master): reconcile ABA fence with current symbolic replay head
-2026-09-21 2671275c118994a4553084e03e7ad6cb6976ec48 test(desktop): require durable symbolic follow-up context
-2026-09-21 45f3618c01c6430e1ea533cbc7c206a1376c90e8 test(symbolic): require durable dialogue context
-2026-09-21 5cb27a3504720d98f978130bd7317727ba334c70 feat(emacs): inspect canonical pure-symbolic expert evidence (#1379)
-2026-09-21 241aafbedd48eab4448332da798275ac3842e561 test(android): align legacy cutover rejection with freshness fence
-2026-09-21 3120e0c4072981aa1461a8a7189bb90c3981bb87 test(symbolic): accept freshness rejection on legacy v1 mint
-2026-09-21 b49770ad70ae312c4345f462619146d5bb775a1e test(android): align ABA fixtures with v2 verified evidence
 ```
 
 ## Repository paths changed, last 14 days
@@ -209,7 +138,6 @@
 .github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
-.github/workflows/emacs-conversation.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
 .prolog/kb/desktop_copilot_ui.pl
@@ -247,8 +175,6 @@ android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/values/wear.xml
 android/app/src/main/res/xml/zara_file_paths.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeLegacyCutoverTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
@@ -263,11 +189,9 @@ android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
 android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceFailureBoundaryTest.kt
 android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingProcessOwnershipContractTest.kt
-android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
 android/gradle.properties
 android/gradle/libs.versions.toml
-android/integration/device_remote_recovery_acceptance.py
 android/org-app/build.gradle.kts
 android/org-app/src/main/java/ai/zara/org/app/MainActivity.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
@@ -321,10 +245,8 @@ android/org-todo/src/main/AndroidManifest.xml
 android/org-todo/src/main/java/ai/zara/org/todo/MainActivity.kt
 android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
 android/settings.gradle.kts
-android/shared-ui/src/main/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshot.kt
 android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
 android/shared-ui/src/main/java/ai/zara/ui/health/ZaraHealthCatalog.kt
-android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/build.gradle.kts
@@ -339,16 +261,12 @@ android/wear-app/src/main/java/ai/zara/wear/health/WearHealth.kt
 android/wear-app/src/main/java/ai/zara/wear/health/ZaraHealthGoalComplicationService.kt
 android/wear-app/src/main/java/ai/zara/wear/health/ZaraWearHealthSurface.kt
 android/wear-app/src/samsungHealthSensorSdk/java/ai/zara/wear/health/sdk/SamsungHealthSensorGateway.kt
-android/wear-app/src/test/java/ai/zara/wear/SymbolicConversationContinuityGateTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearClientPresentationTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-android/wear-voice/build.gradle.kts
 contracts/zara-expert-v1/compatibility-inventory.md
-emacs/zara-conversation-symbolic-inspect-test.el
-emacs/zara-conversation-symbolic.el
 kb/android_control.pl
 main.pl
 modules/config_loader.pl
@@ -358,7 +276,6 @@ rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
 rage/1396-accepted-before-events.org
 rage/663-registered-predicate-authority.org
-rage/863-reconcile-current-master.org
 rage/866-wear-full-client-auto-pairing-20260923.org
 rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
@@ -377,8 +294,6 @@ t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_desktop_mobile_parity.py
 t/test_desktop_preferences.py
-t/test_desktop_pure_symbolic_client.py
-t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
@@ -389,7 +304,6 @@ t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
-t/test_pure_symbolic_package_acceptance.py
 t/test_pure_symbolic_runtime_persistence.py
 t/test_pure_symbolic_same_project_state.py
 t/test_registered_predicate_authority_contract.py
@@ -397,7 +311,6 @@ t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_symbolic_verified_outcome_legacy_cutover.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_turn_accept_backpressure.py
@@ -445,11 +358,8 @@ zara/zmq_transport.py
 .github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
-.github/workflows/emacs-conversation.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeLegacyCutoverTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
@@ -464,7 +374,6 @@ android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
 android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceFailureBoundaryTest.kt
 android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceStoreTest.kt
 android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingProcessOwnershipContractTest.kt
-android/app/src/test/java/ai/zara/app/ui/WearFoundationContractTest.kt
 android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
 android/org-editor/src/test/java/ai/zara/org/editor/OrgAppWiringContractTest.kt
@@ -479,10 +388,8 @@ android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgGraphLayoutTest.kt
 android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgTimerModelTest.kt
 android/org-timer/src/test/java/ai/zara/org/timer/OrgAppWiringContractTest.kt
 android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/continuity/SymbolicConversationEdgeSnapshotTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
-android/wear-app/src/test/java/ai/zara/wear/SymbolicConversationContinuityGateTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearClientPresentationTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
@@ -501,8 +408,6 @@ t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_desktop_mobile_parity.py
 t/test_desktop_preferences.py
-t/test_desktop_pure_symbolic_client.py
-t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
@@ -513,7 +418,6 @@ t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
-t/test_pure_symbolic_package_acceptance.py
 t/test_pure_symbolic_runtime_persistence.py
 t/test_pure_symbolic_same_project_state.py
 t/test_registered_predicate_authority_contract.py
@@ -521,7 +425,6 @@ t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_symbolic_verified_outcome_legacy_cutover.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_turn_accept_backpressure.py

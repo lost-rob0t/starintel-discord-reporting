@@ -1,6 +1,6 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-10-05T05:47:12Z`
+- generated: `2026-10-05T14:47:37Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`fa1c8f4fb0590526c39aa3e9bc4a7e6eac30bea7`](https://github.com/lost-rob0t/star-lang/commit/fa1c8f4fb0590526c39aa3e9bc4a7e6eac30bea7)
@@ -56,7 +56,6 @@
 2026-09-26 f9ffde45fe3246460191b51e0855c1ed71754b6c test(spec): cover StarIntel 0.10.1 media and network vocabulary
 2026-09-26 672ea83660d42a90ab4fed399a511eef1d4fdef3 fix(spec): avoid inherited field shadowing in 0.10.1 media types
 2026-09-26 cd968cf62ba9b8a8832b4ba31f7ce8f0ba551b4b spec(starintel): add canonical 0.10.1 media and network vocabulary
-2026-09-21 f76195bef58e7f9518754ed70b578abf325d460e policy: make StarLang polyglot and keep Common Lisp first-class
 ```
 
 ## Repository paths changed, last 14 days
@@ -67,9 +66,7 @@
 .gitignore
 .prolog/kb/load.pl
 .prolog/kb/starintel-authority.pl
-AGENTS.md
 CHANGELOG.md
-README.md
 ci/prototype-migration.tsv
 ci/target-systems.txt
 docs/DOCUMENT-BUS-CONFORMANCE.md
