@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-04T23:13:51Z`
+- generated: `2026-10-05T05:47:17Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -201,96 +201,6 @@
 2026-09-21 241aafbedd48eab4448332da798275ac3842e561 test(android): align legacy cutover rejection with freshness fence
 2026-09-21 3120e0c4072981aa1461a8a7189bb90c3981bb87 test(symbolic): accept freshness rejection on legacy v1 mint
 2026-09-21 b49770ad70ae312c4345f462619146d5bb775a1e test(android): align ABA fixtures with v2 verified evidence
-2026-09-21 1c6abf8e5c594dc53ceebcf0ea1ce83b9574e04c fix(android): require fresh same-turn verified evidence
-2026-09-21 f542f082a7b589905fb4c346ee108b34ff02973c fix(symbolic): require fresh same-turn verified evidence
-2026-09-21 ad4fdaeef3938d78fef8ad45b37f794ea0fdcc7e test(symbolic): reject same-turn verified receipt reuse
-2026-09-21 94441c514964517cffd5fe40eacddf8c02fc6355 test: snapshot concurrent stream events without CopyOnWriteArrayList subList races
-2026-09-21 897ef9f390f021c6c65f7436eda375f73c1d0b37 test(android): cut legacy verified writes over to v2 receipts
-2026-09-21 fd2dbc69f57403900f3f271e91cf08b653073da6 test(symbolic): cut legacy verified writes over to v2 receipts
-2026-09-21 07110401719be0ef53021b53db40bb033f48e6ca fix(android): require v2 evidence on new verified turns
-2026-09-21 8a477fe3594c23e8510843135e3a520ce674376c fix(symbolic): require v2 evidence on new verified turns
-2026-09-21 60c01a4fd475df39e625b1e717820d2e61dda69a test(android): reject v1 evidence on new verified turns
-2026-09-21 4c4632668d30d67f94fc9ada54bb0a3ed44da6a9 test(symbolic): reject v1 evidence on new verified turns
-2026-09-21 6f337372d89fff006a24ba441c266f2c5332124d test: recovery close step asserts typed cause via Diagnostics v2 without chat-list dependency
-2026-09-21 9ff68d63b76c1db39689867f848d47c83c49cbcc test(android): preserve remote acceptance failure evidence
-2026-09-21 a61c779d33142b52246b5078f889ea5504213d38 test(android): reject new v1 evidence after migration
-2026-09-21 7738955a03313605c43dbb44706a6e754045389e test(symbolic): reject new v1 evidence after migration
-2026-09-21 340b14e9a32954b7a649c4deceadd39f1b92f54e fix(integration): restore full master delta on remote hardening branch
-2026-09-21 3975c2f4e7c7d1f8498e0ac30955eb1daae77bea test(android): bind migrated verified write to runtime generation
-2026-09-21 e0eb88513bb0bc0d2af8b63a4b046e7660db1cb9 chore: merge master into Android remote hardening branch
-2026-09-21 da0f659f897304308802e5d1515b27a0e728bf6a fix(ci): preserve instrumentation and remote recovery gates
-2026-09-21 88e29f577d09e8bd9586a9ab56c5cb6bba277f6f feat(symbolic): expose persisted conversation state to Emacs (#1337)
-2026-09-20 a9402fe05c9c45fabec40a317609ee21f9f40af7 test: assert close-turn typed cause via Diagnostics v2 on device; add chat breadcrumbs
-2026-09-20 e26cb21d25ccef0c3009ccec36c7444aa5f0ce44 test(android): track split verified evidence patterns
-2026-09-20 863352945fec8fce7c7c0d7dccec559f0c032c9e test(symbolic): seed legacy cutover as migrated state
-2026-09-20 0d45825ca5de2c231a645c069e027f7dc4b59813 test(symbolic): use v2 evidence in bounded-window fixtures
-2026-09-20 5c4c14f0d1337a9a8d5310998c10dcc21afc7e12 test(symbolic): bind ABA fixtures to runtime generations
-2026-09-20 be96bb8ffbb9087777e147781a71e6f1c9ddcaed fix(android): fence verified evidence generation
-2026-09-20 ec584fed624ddaedf0ddf19508784683a7975f7f fix(symbolic): require current-generation verified evidence
-2026-09-20 641dfe2b92d6abc689b67e6e6d092be7070548fc test: scroll recovery chat before asserting below-fold turns and cards
-2026-09-20 968f857998709dbc5c594880fe75ae9656e76604 test(android): fold RED freshness cases into canonical suite
-2026-09-20 72554a6b1414185f1ffe0fc192d202ff8f60b7cc test(symbolic): fold RED freshness cases into canonical suite
-2026-09-20 02549255901bd744d46f011569c96e3673064cb7 test(android): reconcile legacy freshness parity
-2026-09-20 fe8e65d96d2498ae80d3423f1eadfbe82cea73c9 test(symbolic): reconcile legacy freshness fixtures
-2026-09-20 bee1439577c2c417b7285db3556429838a6da936 test(android): pin verified evidence freshness parity
-2026-09-20 6a189a0686da0f370db053fd217bb387f952061c test(symbolic): pin verified evidence freshness bypasses
-2026-09-20 6b3a2065ca3212b9ec0c5e16b57c9bea5a3d67e4 fix(edge): preserve canonical verified evidence window
-2026-09-20 d87a50aa46173721f5c77ba23cf0f53ebacf5a60 test(edge): RED preserve canonical verified ref length
-2026-09-20 c428f0a30ae30408a3e6678731aecf0c4157b280 test(edge): RED full canonical verified window crosses wire
-2026-09-20 3b94ac489de8673149a9cb36d9d3bfdb97b06a2e test(edge): pin full verified receipt window after restart
-2026-09-20 dc74a41b216388662e55412e1e09a1c8c2fad5a7 Merge pull request #1285 from lost-rob0t/fix/1251-wear-initial-scope-fence-20260920
-2026-09-20 d53d2025f2e3952041054a45ec8160dfcce19415 fix(symbolic): enforce first-write v2 freshness
-2026-09-20 10bcd6d828e66ce29b78bd7654f9ce6c9addfa3f test(android): RED first-write v2 freshness fence
-2026-09-20 40a631e4f4d4b1d99dde54b693ed7fc51763a8bb test(symbolic): RED first-write v2 freshness fence
-2026-09-20 8b18c8f9eab07fea0f95ce521cbe4ce8cd2d9dfb test(android): make v2 device gate assertions semantic
-2026-09-20 03c6a9229d3c4631b6624469690adae6b455f2e4 test(android): pin v2 replay instrumentation in device gate
-2026-09-20 72c81f428f332834d32ca6ec17a8a15090c1e7c0 test: capture on-device Diagnostics v2 and split turn-vs-card evidence on recovery failure
-2026-09-20 9fa289730de7fd2e5c164918de43f87276973c32 test(android): run bounded v2 restart fence on emulator
-2026-09-20 ad8f353162720634fca0d2f059753eea14fcdd21 test(android): prove 80-turn v2 replay fence across process recreation
-2026-09-20 ea0c338d4f4f75cc2f8257d63604e6815566c71f test(symbolic): prove 80-turn bounded replay fence across restart
-2026-09-20 af912e6dc8836fd51839e9de29c5767ac9ca6b24 fix(android): fence same-turn v2 replay additions
-2026-09-20 160f5786a376dc2fa51b697713824b52b50055e9 fix(symbolic): fence same-turn v2 replay additions
-2026-09-20 82747fb7eab959c22f5f5401679fffbb6f3ba008 test(android): RED same-turn v2 replay fence
-2026-09-20 904629f5d065beb9f9f3ebb457c5121f2e9f6042 test(symbolic): RED same-turn v2 replay fence
-2026-09-20 b81587f595426f273047501104aeafb3fca3a5b4 chore(symbolic): preserve parent edge projection blobs exactly
-2026-09-20 6850f6d3e50a6147bbf9896e5f902b92029ef12a Merge current #1342 exact head into bounded evidence repair
-2026-09-20 99e478b0d67a2bce07e86168a897f10b1289293f test(android): fix v2 replay witness after actual retirement
-2026-09-20 3cda567a68b04e540ed5c80f46c859f54ec86da4 test(symbolic): fix v2 replay witness after actual retirement
-2026-09-20 5f7715c46738a0f2a50aafd21b4392b05c69f6c9 fix(android): mirror v2 verified receipt replay fence
-2026-09-20 406a3bcd35a483d8b466d6a7b171f1fe39ebf16c fix(symbolic): bound verified receipt replay with v2 generations
-2026-09-20 b190ad13579ba7e4e8cf905ebf230c8ba4d1b0e6 test(android): pin v2 cutover for bounded evidence window
-2026-09-20 81a2748f46e67f05a707081d0a0c3b7c498be684 test(symbolic): pin v2 cutover for bounded evidence window
-2026-09-20 1b67d8fd924d22b27f546a8e481dc2deed1ac0ca test(android): RED generation-bound verified receipt cutover
-2026-09-20 271ffdee9ef5d81e168b7b8d6f662bf5cc67feb8 test(symbolic): RED generation-bound verified receipt cutover
-2026-09-20 7b3340ffdcd049257899c7bbcbe3c5af36e69442 fix(android): classify ZMQ transport failures as typed transport.closed (#1301)
-2026-09-20 94d6d452ac5a5ce56828f99d3a06b079e9d0e165 merge(master): reconcile verified evidence replay fence with canonical edge projection
-2026-09-20 8b9073a3a94d3755f9a8d861e30fc81847efdcd2 Merge master into fix/1251-wear-initial-scope-fence-20260920
-2026-09-20 1095bc5537c98c555c29ac29ed335843191c558d Merge pull request #1338 from lost-rob0t/fix/1251-canonical-edge-projection-20260920
-2026-09-20 20ff9a23296973fd191edb8650e2eda3e5bfea34 test(android): RED reject retired receipt replay after compaction
-2026-09-20 f0cee1807698cce42f48b8630cef39b26bcfdbe9 test(symbolic): RED reject retired receipt replay after compaction
-2026-09-20 34d3c3100e743dacbecae33b9594a4689c577d42 test(android): RED pin bounded verified receipt window continuity
-2026-09-20 e86a47bc18a1a637cfe42bc89d7cd0b246845a64 test(symbolic): RED pin bounded verified receipt window continuity
-2026-09-20 7f1e79da7ec1e6d1e3eb9954b449883534498c66 fix(android): recovery fixture closes mid-stream so transport drops are deterministic
-2026-09-20 922c247a6c868057dfff73ca1fbfd027f9202d3b merge(master): reconcile symbolic evidence replay fence
-2026-09-20 d39f6c162576796a04a0b9c7853eb85d44ccde19 merge(master): refresh canonical edge projection on latest head
-2026-09-20 12cbc001937f103102c4593e814e846adbd49067 merge(master): refresh Wear scope fence on canonical head
-2026-09-20 8177460982f94a5a60cf454c2fd4f9beae867a95 fix(experts): recursively cancel live nested delegations (#1344)
-2026-09-20 c1bf5f59473f16dc98acd78cf648b0570a7b9c88 fix(android): recovery acceptance reselects the Chat tab after voice turns
-2026-09-20 2d09e1a5668b2f58828fe8be211af933a24205a6 fix(android): make verified receipts monotonic
-2026-09-20 117432783188096bcb8104cb944e82ed116185b1 fix(symbolic): make verified receipts monotonic
-2026-09-20 252eceaab6c38770bb45bdab050a71e2f4f4db8d test(android): make fresh receipts cumulative
-2026-09-20 2b16eb84e11c1a10d58a6f0194d6dc5fdb383569 test(symbolic): make fresh receipts cumulative
-2026-09-20 075fabab3ea2053d17b127a77ff38b9e72375f57 test(android): require durable receipt rewind rejection
-2026-09-20 cba8a578fe42fbcc9187a232e442c5e91e7d0053 test(symbolic): require durable receipt rewind rejection
-2026-09-20 6ab91dd2fba40129ccb8ffa732df72c86a3b7de7 test(android): pin verified evidence ABA replay fence
-2026-09-20 3ef6f4b18fafe3c3499dad7d8a4cc72369ed4ed3 test(symbolic): pin verified evidence ABA replay fence
-2026-09-20 1734d7a7bc4803bc324d79a4ba26937be9e0a003 test(android): prove edge truth survives process recreation
-2026-09-20 7ea4c61ad5c375b1bec435cfa0a809b44f534ec4 feat(android): project canonical symbolic conversation to edge truth
-2026-09-20 6877497193b6803b0586e38fd9864eaf7fcb3758 test(android): require canonical projection to edge continuity
-2026-09-20 89dd96a38e61201f04475c1565198458cd708d90 fix(wear): bind initial symbolic projection to selected scope
-2026-09-20 b893d7e27ba770c51cacdca2c12166652b6a529e test(wear): pin selected scope on initial symbolic projection
-2026-09-20 7b984e60d7d0b9cc1597696b44f1f6b35530116b fix(android): recovery acceptance navigates sub-tabs and grants mic deterministically
-2026-09-20 0561fdbeadde3c2d7ed4ac94c5427f0c10421dac Merge pull request #1264 from lost-rob0t/feat/1251-symbolic-conversation-projection
 ```
 
 ## Repository paths changed, last 14 days
@@ -310,21 +220,15 @@ Audit.org
 CHANGELOG.md
 android/.gitignore
 android/app/build.gradle.kts
-android/app/src/androidTest/java/ai/zara/app/history/PortableConversationMigrationInstrumentedTest.kt
-android/app/src/androidTest/java/ai/zara/app/history/SymbolicConversationEdgeProjectionInstrumentedTest.kt
-android/app/src/androidTest/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2RestartInstrumentedTest.kt
 android/app/src/androidTest/java/ai/zara/app/ui/LocalEmbeddingPreferenceStoreInstrumentedTest.kt
 android/app/src/main/AndroidManifest.xml
-android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/automation/AdbAutomationAdapter.kt
 android/app/src/main/java/ai/zara/app/automation/AutomationActivity.kt
 android/app/src/main/java/ai/zara/app/history/SymbolicConversationEdgeProjection.kt
-android/app/src/main/java/ai/zara/app/history/SymbolicConversationProjection.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
 android/app/src/main/java/ai/zara/app/prolog/PrologReplace.kt
-android/app/src/main/java/ai/zara/app/runtime/JeroMqTextDealer.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthGoalStore.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStore.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthPrologExport.kt
@@ -343,17 +247,11 @@ android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/values/wear.xml
 android/app/src/main/res/xml/zara_file_paths.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicConversationProjectionTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeBoundedWindowTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeFreshnessRedTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeFreshnessTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeLegacyCutoverTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2CutoverTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
-android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
@@ -370,8 +268,6 @@ android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
 android/gradle.properties
 android/gradle/libs.versions.toml
 android/integration/device_remote_recovery_acceptance.py
-android/integration/remote_recovery_fixture.py
-android/integration/stock_zara_server_fixture.py
 android/org-app/build.gradle.kts
 android/org-app/src/main/java/ai/zara/org/app/MainActivity.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
@@ -434,7 +330,6 @@ android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/build.gradle.kts
 android/wear-app/libs/README.md
 android/wear-app/src/main/AndroidManifest.xml
-android/wear-app/src/main/java/ai/zara/wear/SymbolicConversationContinuityGate.kt
 android/wear-app/src/main/java/ai/zara/wear/WearClientPresentation.kt
 android/wear-app/src/main/java/ai/zara/wear/WearCompanionClient.kt
 android/wear-app/src/main/java/ai/zara/wear/WearCompanionLinkService.kt
@@ -452,18 +347,12 @@ android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
 android/wear-voice/build.gradle.kts
 contracts/zara-expert-v1/compatibility-inventory.md
-emacs/zara-conversation-replay-test.el
 emacs/zara-conversation-symbolic-inspect-test.el
-emacs/zara-conversation-symbolic-replay-test.el
 emacs/zara-conversation-symbolic.el
-emacs/zara-conversation-unified-replay-test.el
-emacs/zara-conversation.el
 kb/android_control.pl
 main.pl
 modules/config_loader.pl
 modules/health_reasoning.pl
-modules/normalizer.pl
-modules/symbolic_dialogue.pl
 rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
@@ -482,11 +371,6 @@ t/prolog_config.pl
 t/test_android_adb_plugin.py
 t/test_android_embedding_preference_device_gate.py
 t/test_android_release_contract.py
-t/test_android_remote_acceptance_packaging.py
-t/test_android_symbolic_migration_device_gate.py
-t/test_cli_conversation_replay.py
-t/test_cli_conversation_replay_symbolic_projection.py
-t/test_cli_conversation_replay_unified_projection.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
 t/test_daemon_security_gateway.py
@@ -498,8 +382,6 @@ t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
-t/test_expert_registry_recursive_cancellation.py
-t/test_expert_registry_stale_usage_budget.py
 t/test_health_cli.py
 t/test_health_store.py
 t/test_org_app_fleet.py
@@ -515,14 +397,7 @@ t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_symbolic_expert_why_phrase.py
-t/test_symbolic_verified_outcome_aba_replay.py
-t/test_symbolic_verified_outcome_bounded_window.py
-t/test_symbolic_verified_outcome_freshness.py
-t/test_symbolic_verified_outcome_freshness_red.py
 t/test_symbolic_verified_outcome_legacy_cutover.py
-t/test_symbolic_verified_outcome_v2_cutover.py
-t/test_symbolic_verified_outcome_v2_long_run.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_turn_accept_backpressure.py
@@ -539,8 +414,6 @@ zara/__main__.py
 zara/config.py
 zara/desktop/app.py
 zara/desktop/controller.py
-zara/desktop/conversation/replay_status.py
-zara/desktop/conversation/symbolic_projection.py
 zara/desktop/conversation/symbolic_runtime.py
 zara/desktop/org_fixtures.py
 zara/desktop/prolog_studio.py
@@ -550,7 +423,6 @@ zara/desktop/windows/copilot.py
 zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
 zara/expert_port.py
-zara/experts.py
 zara/health_cli.py
 zara/health_store.py
 zara/plugins/builtin/android_adb.py
@@ -576,17 +448,11 @@ zara/zmq_transport.py
 .github/workflows/emacs-conversation.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
-android/app/src/test/java/ai/zara/app/history/SymbolicConversationProjectionTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeAbaReplayTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeBoundedWindowTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeFreshnessRedTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeFreshnessTest.kt
 android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeLegacyCutoverTest.kt
-android/app/src/test/java/ai/zara/app/history/SymbolicVerifiedOutcomeV2CutoverTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
-android/app/src/test/java/ai/zara/app/runtime/RemoteRecoveryInteropTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
@@ -629,11 +495,6 @@ t/prolog_config.pl
 t/test_android_adb_plugin.py
 t/test_android_embedding_preference_device_gate.py
 t/test_android_release_contract.py
-t/test_android_remote_acceptance_packaging.py
-t/test_android_symbolic_migration_device_gate.py
-t/test_cli_conversation_replay.py
-t/test_cli_conversation_replay_symbolic_projection.py
-t/test_cli_conversation_replay_unified_projection.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
 t/test_daemon_security_gateway.py
@@ -645,8 +506,6 @@ t/test_desktop_pure_symbolic_e2e.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_expert_invocation_port.py
-t/test_expert_registry_recursive_cancellation.py
-t/test_expert_registry_stale_usage_budget.py
 t/test_health_cli.py
 t/test_health_store.py
 t/test_org_app_fleet.py
@@ -662,14 +521,7 @@ t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_symbolic_expert_why_phrase.py
-t/test_symbolic_verified_outcome_aba_replay.py
-t/test_symbolic_verified_outcome_bounded_window.py
-t/test_symbolic_verified_outcome_freshness.py
-t/test_symbolic_verified_outcome_freshness_red.py
 t/test_symbolic_verified_outcome_legacy_cutover.py
-t/test_symbolic_verified_outcome_v2_cutover.py
-t/test_symbolic_verified_outcome_v2_long_run.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_turn_accept_backpressure.py
