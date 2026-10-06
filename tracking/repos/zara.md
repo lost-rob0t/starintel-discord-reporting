@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-06T15:14:57Z`
+- generated: `2026-10-06T21:01:10Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -119,13 +119,6 @@
 2026-09-22 9f3f6208a80529e67d5e0bc2472e1bd50436bf97 docs(rage): reconcile #663 authority ownership for Mega-Brain
 2026-09-22 093394ef38859343763fb10f896a193874044b14 test(plugin): pin inert predicate authority request/result contract (#663)
 2026-09-22 9b9b3c7d9334a0a37ed74cabd6407da56139f343 feat(plugin): define inert registered-predicate authority wire contract (#663)
-2026-09-22 00b3d7ce39f925b504f9094908e97ff42ae7a169 Merge pull request #1446 from lost-rob0t/agentic15/1238-canonical-owner-port
-2026-09-22 6e5fb21bbe5e55d7523ecdd2c93d4083698b771f fix(expert): hide stale activations from canonical port
-2026-09-22 7a37f72a5745ed07c86ba27f524b8d7aefe5fbe4 test(expert): RED hide stale activations from canonical port
-2026-09-22 ff7ed10d838bd3ce8ebcef3cdf9e426721e7dc81 test(expert): call canonical handlers with host kwargs
-2026-09-22 679675c102ececf56e582ded8da93874523d4fb8 docs(expert): pin #1238 adapter authority inventory
-2026-09-22 ab1cdf0dc1b0107c03a079827a2aedffb47d90af feat(expert): add consumer-only canonical invocation port
-2026-09-22 6d63eac235e8bd07c64495f9096389dcaafc2777 test(expert): define consumer-only canonical invocation port
 ```
 
 ## Repository paths changed, last 14 days
@@ -262,7 +255,6 @@ android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-contracts/zara-expert-v1/compatibility-inventory.md
 kb/android_control.pl
 main.pl
 modules/config_loader.pl
@@ -292,7 +284,6 @@ t/test_desktop_mobile_parity.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
-t/test_expert_invocation_port.py
 t/test_health_cli.py
 t/test_health_store.py
 t/test_org_app_fleet.py
@@ -330,7 +321,6 @@ zara/desktop/ui_fixtures.py
 zara/desktop/windows/copilot.py
 zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
-zara/expert_port.py
 zara/health_cli.py
 zara/health_store.py
 zara/plugins/builtin/android_adb.py
@@ -405,7 +395,6 @@ t/test_desktop_mobile_parity.py
 t/test_desktop_preferences.py
 t/test_desktop_settings_window.py
 t/test_desktop_theme.py
-t/test_expert_invocation_port.py
 t/test_health_cli.py
 t/test_health_store.py
 t/test_org_app_fleet.py
