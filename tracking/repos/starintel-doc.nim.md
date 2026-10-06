@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-doc.nim
 
-- generated: `2026-10-05T22:41:33Z`
+- generated: `2026-10-06T06:26:50Z`
 - canonical branch: `dev`
 - changelog eligible: `no`
-- head: [`67b479e262ad458b9adf335e777b9440137c6cf4`](https://github.com/lost-rob0t/starintel-doc.nim/commit/67b479e262ad458b9adf335e777b9440137c6cf4)
-- head date: `2026-10-04T23:54:11-04:00`
-- head subject: release: reconcile dev with validated 0.10.1 master
+- head: [`7613609b963063d98fe31fb6a95a83a9ed30fe94`](https://github.com/lost-rob0t/starintel-doc.nim/commit/7613609b963063d98fe31fb6a95a83a9ed30fe94)
+- head date: `2026-10-06T02:17:46-04:00`
+- head subject: Merge pull request #18 from lost-rob0t/fix/canonical-allof-validation
 
 ## Git log, last 14 days
 
 ```text
+2026-10-06 7613609b963063d98fe31fb6a95a83a9ed30fe94 Merge pull request #18 from lost-rob0t/fix/canonical-allof-validation
+2026-10-06 41d69f0daf2f5ce9a8fcd30ea05408b63f18888a test: compare exact wire values across numeric storage forms
+2026-10-06 32a5a55b52ce58c258501c95e7a6bc80743f864d fix: enforce generated allOf constraints in canonical validation
 2026-10-04 67b479e262ad458b9adf335e777b9440137c6cf4 release: reconcile dev with validated 0.10.1 master
 2026-10-04 0ba29aaa6fd0260a11d9d3a55067057ab4bdd6bc Merge pull request #17 from lost-rob0t/perf/starrouter-wire-prerequisites
 2026-10-04 32d006e7a6a062d387c4d007af3548b442e0b467 Keep raw JSON fixtures outside Testament test categories
