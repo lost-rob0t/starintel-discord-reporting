@@ -1,15 +1,17 @@
 # lost-rob0t/starRouter
 
-- generated: `2026-10-06T06:26:43Z`
+- generated: `2026-10-06T15:14:59Z`
 - canonical branch: `master`
 - changelog eligible: `no`
-- head: [`e8c40b6e4e0d35319d4f0352fe1c44f5404d4b98`](https://github.com/lost-rob0t/starRouter/commit/e8c40b6e4e0d35319d4f0352fe1c44f5404d4b98)
-- head date: `2026-10-06T02:15:58-04:00`
-- head subject: Merge pull request #6 from lost-rob0t/codex/starintel-0101-generated-consumer
+- head: [`59a8cb7790cfbfca6fa8f141094d95f525d9bd2c`](https://github.com/lost-rob0t/starRouter/commit/59a8cb7790cfbfca6fa8f141094d95f525d9bd2c)
+- head date: `2026-10-06T02:32:12-04:00`
+- head subject: Merge pull request #7 from lost-rob0t/codex/fix-cosign-tuf-compat
 
 ## Git log, last 14 days
 
 ```text
+2026-10-06 59a8cb7790cfbfca6fa8f141094d95f525d9bd2c Merge pull request #7 from lost-rob0t/codex/fix-cosign-tuf-compat
+2026-10-06 d2e847b7dc23035212a0d7e13a36c627bbf122dc ci: update Cosign trust-root support and verify release signatures
 2026-10-06 e8c40b6e4e0d35319d4f0352fe1c44f5404d4b98 Merge pull request #6 from lost-rob0t/codex/starintel-0101-generated-consumer
 2026-10-06 b35b19778c64127225a0f6d84c235bebf5f683d7 test: load native wire fixture in a compile-time constant
 2026-10-06 0874270c065c9901cf4bd7b1a85fbeb2692f54ff fix: preserve exact document numbers in native JsonNode fetch
