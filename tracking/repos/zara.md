@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-07T08:44:48Z`
+- generated: `2026-10-07T17:26:56Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -63,12 +63,6 @@
 2026-09-24 8e6d0cec3d9a3afff48636119a29d1590a7b88f8 fix(protocol): close transport lifecycle ownership races
 2026-09-24 015205e2ac2b7b8eef86e172b90371412e6b8c29 fix(protocol): fail closed on per-turn early-event overflow
 2026-09-24 7649e375453b35c9dc079792305449c35e73e72a Merge pull request #1472 from lost-rob0t/w04/908-prolog-replace-core-20260923
-2026-09-23 5d76113f599dd373e8ef7406f6bbd097ed3294cf test(protocol): expose same-turn early-event overflow
-2026-09-23 d7fbc3545e1c49ede2ea83562d84cf433ec28763 test(protocol): preserve early-buffer probe result
-2026-09-23 671e0052916e7bb4000e0e1ff8139ce2c5fd37c2 test(protocol): keep demux probes transparent
-2026-09-23 9da2590c01764d845ebe3e49f6b0506e0cf43472 fix(protocol): fail closed on early turn capacity
-2026-09-23 0426a141cf612089c5721b18e6e69edf077cb083 test(protocol): pin fail-closed early-turn capacity
-2026-09-23 8a380c95ba9d74f66c4766c059750581fa963734 test(protocol): expose early-turn capacity orphaning
 ```
 
 ## Repository paths changed, last 14 days
@@ -225,9 +219,6 @@ t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
-t/test_zmq_turn_accept_backpressure.py
-t/test_zmq_turn_known_conversation_ordering.py
-t/test_zmq_turn_same_turn_backpressure.py
 t/test_zmq_turn_session_demux.py
 version.properties
 wiki/android-automation.org
@@ -314,8 +305,5 @@ t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
-t/test_zmq_turn_accept_backpressure.py
-t/test_zmq_turn_known_conversation_ordering.py
-t/test_zmq_turn_same_turn_backpressure.py
 t/test_zmq_turn_session_demux.py
 ```
