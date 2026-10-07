@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-06T21:01:10Z`
+- generated: `2026-10-07T01:35:42Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -110,15 +110,6 @@
 2026-09-22 37cec796a567a9ac20295cc7cbccb2c6706f0781 feat(p0): bind predicate authority to trusted activation scope (#663)
 2026-09-22 05413a8a7a3ac69bf86e1e899e10a23b860bc507 test(p0): pin scoped predicate authority and cancellation RED (#663)
 2026-09-22 90c6597901cda79d57d883d85bef3c17562a9a09 feat(plugin): isolate registered-predicate authority owner (#663)
-2026-09-22 71aa265d2307dca182bc0e665773a1fcdd4defea fix(transport): repair secure-gateway turn-event delivery and flush race
-2026-09-22 fca61758713dd33401073a9368fa58e0c85098ad feat(plugin): add isolated registered-predicate authority owner (#663)
-2026-09-22 451db9ddc4b9b1577ee00286df835bf06631cf65 test(plugin): RED process-isolated predicate authority owner (#663)
-2026-09-22 83808dcdb14fe56cdcfafccda94f5fbb0fad0566 Merge pull request #1453 from lost-rob0t/agentic15/663-core-predicate-authority-contract
-2026-09-22 4a8b243aa8cd3332bc0ad4972056895b81a2d3f4 fix: reject nested authority metadata on predicate wire
-2026-09-22 cd1afbb2e3c0d55d780d91c2ac77b30bc29766ed test: reject nested predicate authority metadata
-2026-09-22 9f3f6208a80529e67d5e0bc2472e1bd50436bf97 docs(rage): reconcile #663 authority ownership for Mega-Brain
-2026-09-22 093394ef38859343763fb10f896a193874044b14 test(plugin): pin inert predicate authority request/result contract (#663)
-2026-09-22 9b9b3c7d9334a0a37ed74cabd6407da56139f343 feat(plugin): define inert registered-predicate authority wire contract (#663)
 ```
 
 ## Repository paths changed, last 14 days
@@ -263,7 +254,6 @@ rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
 rage/1396-accepted-before-events.org
-rage/663-registered-predicate-authority.org
 rage/866-wear-full-client-auto-pairing-20260923.org
 rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
@@ -292,15 +282,12 @@ t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
 t/test_pure_symbolic_same_project_state.py
-t/test_registered_predicate_authority_contract.py
-t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_turn_accept_backpressure.py
-t/test_zmq_turn_accept_ordering.py
 t/test_zmq_turn_known_conversation_ordering.py
 t/test_zmq_turn_same_turn_backpressure.py
 t/test_zmq_turn_session_demux.py
@@ -324,8 +311,6 @@ zara/desktop/windows/settings.py
 zara/health_cli.py
 zara/health_store.py
 zara/plugins/builtin/android_adb.py
-zara/plugins/predicate_authority.py
-zara/plugins/predicate_authority_owner.py
 zara/plugins/scoped_predicate_authority.py
 zara/protocol.py
 zara/protocol_runtime.py
@@ -403,15 +388,12 @@ t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_pure_symbolic_expert_followup_restart.py
 t/test_pure_symbolic_same_project_state.py
-t/test_registered_predicate_authority_contract.py
-t/test_registered_predicate_authority_process.py
 t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
 t/test_zmq_turn_accept_backpressure.py
-t/test_zmq_turn_accept_ordering.py
 t/test_zmq_turn_known_conversation_ordering.py
 t/test_zmq_turn_same_turn_backpressure.py
 t/test_zmq_turn_session_demux.py
