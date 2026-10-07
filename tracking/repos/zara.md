@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-07T01:35:42Z`
+- generated: `2026-10-07T08:44:48Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -69,53 +69,11 @@
 2026-09-23 9da2590c01764d845ebe3e49f6b0506e0cf43472 fix(protocol): fail closed on early turn capacity
 2026-09-23 0426a141cf612089c5721b18e6e69edf077cb083 test(protocol): pin fail-closed early-turn capacity
 2026-09-23 8a380c95ba9d74f66c4766c059750581fa963734 test(protocol): expose early-turn capacity orphaning
-2026-09-23 457d52ee810040a80c18352b8b54606cbeab22d3 fix(android): restore bounded Prolog replace core from #908
-2026-09-23 307d96182e68e61b8170a001b4904afea6e83998 test(android): make #908 replace RED compile-focused
-2026-09-23 1cdbf3dd1b5ae66f1e4b8dd311d36c86b7f7cedf test(android): restore bounded Prolog replace core from #908
-2026-09-23 d0e7b0ba605912e1319772afb867fee52bc0a7f3 docs(rage): record #866 auto-pairing iteration outcome + CI evidence
-2026-09-23 458c92ab8d89d6364aa4eeb15fa6105f48fc59f4 Merge master into agentic15/1396-session-demux-hardening
-2026-09-23 dfe5f8288fcaf1f7571f7994a595e755c2ef0d1a Merge pull request #1468 from lost-rob0t/fix/1390-embedding-preference-multiprocess
-2026-09-23 8cf5236f6dce4248976395937d3da6264df185ff test(transport): initialize acceptance barrier fixture state
-2026-09-23 4b9bd02b6b2f881bd3ff8f0edacd2123d45f1790 feat(wear): full watch client UI + phone-assisted auto pairing (#866)
-2026-09-23 f42efadbffaab630469cefb723914046f070d5ba fix(security): preserve buffered approval ownership after accept
-2026-09-23 f52e9c7fbdb293ea46ebd41e60603ea4fbb792bc fix(protocol): make turn acceptance a wire barrier
-2026-09-23 64950b904e802456af0ca4979878063d99c41a0a docs(changelog): record recoverable Android embedding preference failures
-2026-09-23 0322ba9f549af5829c568795054e99645de88224 fix(android): contain embedding metadata and migration cleanup failures
-2026-09-23 bf23f91e262f92d64d94d14f8ab9f761d8a10e57 test(android): reproduce embedding metadata and migration cleanup crashes
-2026-09-23 202162b7687205674b7e17ff76c26da5bf2eafdc test(protocol): expose acceptance eviction under backpressure
-2026-09-23 3023ce9b89633b4a5576e4b46c4de7640e5190e9 chore(ci): remove temporary #1396 patch workflow
-2026-09-23 fea8803b759b296b4c25fee01483c2a9a04568da fix(protocol): fence pending turn acceptance ownership
-2026-09-23 ba8d1f5e1e459e9fed9eaead8cfcbf4211f5b2c3 chore(ci): apply #1396 transport hardening patch
-2026-09-23 c8fa4cc009b42255b4e0f0898447030e532ccb5d fix(protocol): require accepted turn ownership before event routing
-2026-09-23 60d432b7515e9679156b47c84a8e9f167d78622e test(protocol): reproduce known-conversation pre-accept wire race
-2026-09-23 8591a7108de77b3575abb2963262f0fef4ca3f73 fix(android): harden embedding preference multiprocess storage
-2026-09-23 f4269f3e43211e5238d7f412514dfb905412fc68 chore(#1396): reconcile hardening branch with current master
-2026-09-23 9d73f5482a58f3315e09626e600a653bd1c34902 test(protocol): fence late frames across gateway generations
-2026-09-23 0c5fc42280ee298e16edcb681388f1f0d3f43513 test(protocol): pin ZARA/1 turn session demux interleavings
-2026-09-23 a4aebfecdcd46c6b058f28dde288400a1b4ef212 chore(#1396): integrate accepted-before-events fix onto current master base
-2026-09-23 f94da1289ede13ec4d58cefb73bc0b86648bb65e Merge pull request #1457 from lost-rob0t/agentic15/1252-persisted-expert-followup
-2026-09-23 a00c25fb562ec619bafa3845285cf8ce6da0e814 fix(p0): fence followups to one projection generation
-2026-09-23 85801ee176da85805ce198f500db658758264572 fix(p0): load symbolic followup state atomically
-2026-09-23 13d6e151c75fc8599a39f99b3c213bb836822000 test(p0): reject split projection snapshots for followups
-2026-09-22 c848bc756a672a796d43774dd9d678db1cc6e9de test(p0): prove expert followup survives process recreation
-2026-09-22 a49c60fd51d5e431a7d93a7616670fcf49c13b06 fix(p0): resolve persisted expert followups after restart
-2026-09-22 fe3ac1fef9cc65d378b05ab884ff6c7139afff0a fix(p0): restore persisted expert response acts
-2026-09-22 03293fae4d46edc76fd2b203dea945e4ba5f97e9 Merge pull request #1454 from lost-rob0t/agentic15/1450-preserve-same-project-expert-state
-2026-09-22 d50321e8f2c25a98164dc5ab09e037053ec4ab5f chore(p0): reconcile #1454 with scoped predicate authority
-2026-09-22 6b32cb1c0fc3a982fb35ac5876a093ef0aae2813 Merge pull request #1459 from lost-rob0t/agentic15/663-scoped-predicate-authority
-2026-09-22 51d2f2bd0d837673777a271f46b870260872ab49 test(p0): preserve same-project expert state
-2026-09-22 af4da9810d64377aca64c2d2843ce1b24467b9ab fix(p0): preserve same-project expert state
-2026-09-22 2ef385110973f4d7fee979822f03ce8a4ac723ab test(p0): exercise recovered raw transport scope fence
-2026-09-22 ea0c268922e9f73c9367881fc9b6e79fefd4e393 test(p0): exercise scoped Core predicate owner (#663)
-2026-09-22 37cec796a567a9ac20295cc7cbccb2c6706f0781 feat(p0): bind predicate authority to trusted activation scope (#663)
-2026-09-22 05413a8a7a3ac69bf86e1e899e10a23b860bc507 test(p0): pin scoped predicate authority and cancellation RED (#663)
-2026-09-22 90c6597901cda79d57d883d85bef3c17562a9a09 feat(plugin): isolate registered-predicate authority owner (#663)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
 .github/workflows/org-android-ui.yml
@@ -128,15 +86,12 @@ Audit.org
 CHANGELOG.md
 android/.gitignore
 android/app/build.gradle.kts
-android/app/src/androidTest/java/ai/zara/app/ui/LocalEmbeddingPreferenceStoreInstrumentedTest.kt
 android/app/src/main/AndroidManifest.xml
 android/app/src/main/java/ai/zara/app/MainActivity.kt
 android/app/src/main/java/ai/zara/app/automation/AdbAutomationAdapter.kt
 android/app/src/main/java/ai/zara/app/automation/AutomationActivity.kt
-android/app/src/main/java/ai/zara/app/history/SymbolicConversationEdgeProjection.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
 android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
-android/app/src/main/java/ai/zara/app/prolog/PrologReplace.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthGoalStore.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStore.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthPrologExport.kt
@@ -145,19 +100,16 @@ android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthAndroidPlugin.k
 android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthPlugin.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthUiState.kt
 android/app/src/main/java/ai/zara/app/ui/AppNavigation.kt
-android/app/src/main/java/ai/zara/app/ui/LocalEmbeddingPreferenceStore.kt
 android/app/src/main/java/ai/zara/app/ui/PairingZaraApp.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraHealthSurface.kt
 android/app/src/main/java/ai/zara/app/watch/WatchAdbTransfer.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionLinkService.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
-android/app/src/main/res/values/wear.xml
 android/app/src/main/res/xml/zara_file_paths.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
@@ -166,10 +118,6 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceFailureBoundaryTest.kt
-android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceStoreTest.kt
-android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingProcessOwnershipContractTest.kt
-android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
 android/gradle.properties
 android/gradle/libs.versions.toml
 android/org-app/build.gradle.kts
@@ -232,17 +180,13 @@ android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/build.gradle.kts
 android/wear-app/libs/README.md
 android/wear-app/src/main/AndroidManifest.xml
-android/wear-app/src/main/java/ai/zara/wear/WearClientPresentation.kt
 android/wear-app/src/main/java/ai/zara/wear/WearCompanionClient.kt
 android/wear-app/src/main/java/ai/zara/wear/WearCompanionLinkService.kt
-android/wear-app/src/main/java/ai/zara/wear/WearCompanionRuntime.kt
 android/wear-app/src/main/java/ai/zara/wear/WearMainActivity.kt
 android/wear-app/src/main/java/ai/zara/wear/health/WearHealth.kt
 android/wear-app/src/main/java/ai/zara/wear/health/ZaraHealthGoalComplicationService.kt
 android/wear-app/src/main/java/ai/zara/wear/health/ZaraWearHealthSurface.kt
 android/wear-app/src/samsungHealthSensorSdk/java/ai/zara/wear/health/sdk/SamsungHealthSensorGateway.kt
-android/wear-app/src/test/java/ai/zara/wear/WearClientPresentationTest.kt
-android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
@@ -254,17 +198,14 @@ rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
 rage/1396-accepted-before-events.org
-rage/866-wear-full-client-auto-pairing-20260923.org
 rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
-scripts/test-android-emulator-install.sh
 scripts/test-android.sh
 server_main.pl
 setup.py
 t/health_reasoning.pl
 t/prolog_config.pl
 t/test_android_adb_plugin.py
-t/test_android_embedding_preference_device_gate.py
 t/test_android_release_contract.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
@@ -280,9 +221,6 @@ t/test_org_app_fleet.py
 t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
-t/test_pure_symbolic_expert_followup_restart.py
-t/test_pure_symbolic_same_project_state.py
-t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transient_backpressure.py
@@ -294,13 +232,11 @@ t/test_zmq_turn_session_demux.py
 version.properties
 wiki/android-automation.org
 wiki/android-samsung-health.org
-wiki/android-watch-install.org
 wiki/desktop-design.org
 zara/__main__.py
 zara/config.py
 zara/desktop/app.py
 zara/desktop/controller.py
-zara/desktop/conversation/symbolic_runtime.py
 zara/desktop/org_fixtures.py
 zara/desktop/prolog_studio.py
 zara/desktop/theme.py
@@ -311,13 +247,11 @@ zara/desktop/windows/settings.py
 zara/health_cli.py
 zara/health_store.py
 zara/plugins/builtin/android_adb.py
-zara/plugins/scoped_predicate_authority.py
 zara/protocol.py
 zara/protocol_runtime.py
 zara/runtime/backend.py
 zara/runtime/commands.py
 zara/runtime/host.py
-zara/runtime/pure_symbolic_backend.py
 zara/security_gateway.py
 zara/zmq_transport.py
 ```
@@ -325,14 +259,12 @@ zara/zmq_transport.py
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/agentic15-1396-apply-fix.yml
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
 android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
-android/app/src/test/java/ai/zara/app/prolog/PrologReplaceTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
@@ -341,10 +273,6 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceFailureBoundaryTest.kt
-android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingPreferenceStoreTest.kt
-android/app/src/test/java/ai/zara/app/ui/LocalEmbeddingProcessOwnershipContractTest.kt
-android/app/src/test/java/ai/zara/app/watch/WearCompanionProvisionSourceTest.kt
 android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
 android/org-editor/src/test/java/ai/zara/org/editor/OrgAppWiringContractTest.kt
 android/org-graph/src/test/java/ai/zara/org/graph/OrgAppWiringContractTest.kt
@@ -360,17 +288,13 @@ android/org-timer/src/test/java/ai/zara/org/timer/OrgAppWiringContractTest.kt
 android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
-android/wear-app/src/test/java/ai/zara/wear/WearClientPresentationTest.kt
-android/wear-app/src/test/java/ai/zara/wear/WearCompanionClientTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-scripts/test-android-emulator-install.sh
 scripts/test-android.sh
 t/health_reasoning.pl
 t/prolog_config.pl
 t/test_android_adb_plugin.py
-t/test_android_embedding_preference_device_gate.py
 t/test_android_release_contract.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
@@ -386,9 +310,6 @@ t/test_org_app_fleet.py
 t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
-t/test_pure_symbolic_expert_followup_restart.py
-t/test_pure_symbolic_same_project_state.py
-t/test_registered_predicate_authority_scope.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transient_backpressure.py
