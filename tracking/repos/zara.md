@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-08T13:36:32Z`
+- generated: `2026-10-08T19:58:56Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -49,19 +49,6 @@
 2026-09-24 276ef2472b03dc4d2bd2fac3635390da3dfe66bb Merge branch 'master' into rage/866-wear-auto-pairing
 2026-09-24 bcf0c337b6d627ed4a5912fee320de599de3f03b docs: fix broken src block and typos in Audit.org
 2026-09-24 3cad46354c74113f427286f21b35121039b59be6 chore(kb): index zmq_transport module + record desktop-restart observation log
-2026-09-24 1fcd13022be82a9ef887d0c63073ffb67482b4e2 fix(protocol): preserve accepted turn owner across reconnect
-2026-09-24 58db963f89ac619425162780603136ccaa2ef62a test(protocol): satisfy demux whitespace gate
-2026-09-24 136003f4a3db1932798c5ccf4dda6e0fe14ff792 docs(rage): satisfy whitespace gate
-2026-09-24 3c6f07aa31386bf030c03343cae5fd140566f538 docs(rage): record terminal failure and audio closure
-2026-09-24 979470af83f57683978d80a56fdb1cb68392c45c fix(protocol): preserve terminal failure and early audio
-2026-09-24 a6277f1dbf611ffe2eccebd12c0192e97fe70d2f docs(rage): record autonomous transport hardening
-2026-09-24 5246417b62d5ca7998a9c5a4658320a784951b0d test(security): satisfy whitespace gate
-2026-09-24 cbb6e353acb43e1ce06887aa4e26bf209d5a8864 fix(protocol): transfer pre-wire acceptance on reconnect
-2026-09-24 9ab682aa2f617e008be2ed36e0e1956944a2b6ba fix(security): supersede rotated device routes before quota
-2026-09-24 dcf0bf3d6372ce8e49817564ab4ee62c8f1b95e5 fix(protocol): fence retired turns without breaking conversation routing
-2026-09-24 2bf2c43d9dcd12726b13883d963557f64c32a78b merge master into protocol hardening
-2026-09-24 8e6d0cec3d9a3afff48636119a29d1590a7b88f8 fix(protocol): close transport lifecycle ownership races
-2026-09-24 015205e2ac2b7b8eef86e172b90371412e6b8c29 fix(protocol): fail closed on per-turn early-event overflow
 ```
 
 ## Repository paths changed, last 14 days
@@ -190,7 +177,6 @@ modules/health_reasoning.pl
 rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
-rage/1396-accepted-before-events.org
 rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
 scripts/test-android.sh
@@ -202,7 +188,6 @@ t/test_android_adb_plugin.py
 t/test_android_release_contract.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
-t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_desktop_mobile_parity.py
 t/test_desktop_preferences.py
@@ -216,9 +201,7 @@ t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
-t/test_zmq_turn_session_demux.py
 version.properties
 wiki/android-automation.org
 wiki/android-samsung-health.org
@@ -288,7 +271,6 @@ t/test_android_adb_plugin.py
 t/test_android_release_contract.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
-t/test_daemon_security_gateway.py
 t/test_daemon_security_policy.py
 t/test_desktop_mobile_parity.py
 t/test_desktop_preferences.py
@@ -302,7 +284,5 @@ t/test_packaging.py
 t/test_protocol_runtime.py
 t/test_runtime_host.py
 t/test_runtime_intent_routing.py
-t/test_zmq_transient_backpressure.py
 t/test_zmq_transport.py
-t/test_zmq_turn_session_demux.py
 ```
