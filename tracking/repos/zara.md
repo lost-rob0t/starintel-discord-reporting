@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-08T06:10:59Z`
+- generated: `2026-10-08T13:36:32Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -62,7 +62,6 @@
 2026-09-24 2bf2c43d9dcd12726b13883d963557f64c32a78b merge master into protocol hardening
 2026-09-24 8e6d0cec3d9a3afff48636119a29d1590a7b88f8 fix(protocol): close transport lifecycle ownership races
 2026-09-24 015205e2ac2b7b8eef86e172b90371412e6b8c29 fix(protocol): fail closed on per-turn early-event overflow
-2026-09-24 7649e375453b35c9dc079792305449c35e73e72a Merge pull request #1472 from lost-rob0t/w04/908-prolog-replace-core-20260923
 ```
 
 ## Repository paths changed, last 14 days
