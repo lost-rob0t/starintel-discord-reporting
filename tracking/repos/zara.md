@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-09T09:10:06Z`
+- generated: `2026-10-09T17:01:01Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -27,12 +27,6 @@
 2026-09-25 864eff48d3db92ab9cc0b4839ab585b6a0822ed5 ci(org): run UI evidence for every fleet module
 2026-09-25 0a921e34fc54c9cc1dc4ea0637ca5b14abfe1141 Merge pull request #1488 from lost-rob0t/feat/org-fleet-design-tokens
 2026-09-25 7c08fbff813a96b2889ad0d81889e2b389448748 feat(org-ui): render the fleet on the canonical Zara design tokens
-2026-09-25 7b5ee6f9dfa698436f67a2919b3bbf12aff71a43 Merge pull request #1487 from lost-rob0t/chore/kb-org-fleet-delivery
-2026-09-25 2862026513d1c3c8022ee889b1a964fb515ed0bd chore(kb): index org fleet delivery knowledge
-2026-09-25 799380a2af03224a29bba0505b2c56d835cf04e5 Merge pull request #1486 from lost-rob0t/docs/org-fleet-publication-evidence
-2026-09-25 3685e76264cc9ca4515d5ee5734e219fe684447c docs(rage): record org fleet publication and distributed-asset verification
-2026-09-25 370834ccbdacc6be4c63e8396f88b27e09216c82 Merge pull request #1485 from lost-rob0t/release/0.3.1-alpha-repair
-2026-09-25 8550e69c9a3f776022a4140c8d96c54be26a9c33 test(org-fleet): pin release-line invariants instead of one alpha version
 ```
 
 ## Repository paths changed, last 14 days
@@ -45,7 +39,6 @@
 .prolog/kb/desktop_copilot_ui.pl
 .prolog/kb/desktop_prolog_ide.pl
 .prolog/kb/index.pl
-.prolog/kb/org_fleet_delivery.pl
 CHANGELOG.md
 android/.gitignore
 android/app/build.gradle.kts
@@ -124,7 +117,6 @@ t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_health_cli.py
 t/test_health_store.py
-t/test_org_app_fleet.py
 t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
@@ -188,7 +180,6 @@ t/test_desktop_settings_window.py
 t/test_desktop_theme.py
 t/test_health_cli.py
 t/test_health_store.py
-t/test_org_app_fleet.py
 t/test_org_desktop_screenshot_fixtures.py
 t/test_packaging.py
 t/test_protocol_runtime.py
