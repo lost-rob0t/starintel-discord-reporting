@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-09T17:01:01Z`
+- generated: `2026-10-09T22:41:47Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -26,7 +26,6 @@
 2026-09-25 95942072ecfc69f0da576ab94fb1eec932da20cb fix(org-ui): keep tab bar at intrinsic width so every tab stays reachable
 2026-09-25 864eff48d3db92ab9cc0b4839ab585b6a0822ed5 ci(org): run UI evidence for every fleet module
 2026-09-25 0a921e34fc54c9cc1dc4ea0637ca5b14abfe1141 Merge pull request #1488 from lost-rob0t/feat/org-fleet-design-tokens
-2026-09-25 7c08fbff813a96b2889ad0d81889e2b389448748 feat(org-ui): render the fleet on the canonical Zara design tokens
 ```
 
 ## Repository paths changed, last 14 days
@@ -68,19 +67,7 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
 android/gradle/libs.versions.toml
-android/org-surfaces/build.gradle.kts
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/DailySurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/EditorSurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/GraphSurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/HomeSurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgComponents.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgTheme.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgWorkspaceScreen.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/RemindersSurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/RoamSurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/TimersSurface.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/TodoSurface.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgDesignContractTest.kt
 android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
 android/shared-ui/src/main/java/ai/zara/ui/health/ZaraHealthCatalog.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
@@ -163,7 +150,6 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgDesignContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
