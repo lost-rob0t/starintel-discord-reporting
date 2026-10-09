@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-08T19:58:56Z`
+- generated: `2026-10-09T00:25:11Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -46,9 +46,6 @@
 2026-09-24 4e0559e00234115215c07b89d07d54cc5eb6100e merge master into #1463 transport hardening
 2026-09-24 0aec35ef633163a9c31729d2f7f1fad41bc3ed63 Merge branch 'master' into rage/866-wear-auto-pairing
 2026-09-24 94b9c9b26912050058c60d3c2247a0e43b4ec7ef feat: Prolog-governed Android ADB + vision control (#1393)
-2026-09-24 276ef2472b03dc4d2bd2fac3635390da3dfe66bb Merge branch 'master' into rage/866-wear-auto-pairing
-2026-09-24 bcf0c337b6d627ed4a5912fee320de599de3f03b docs: fix broken src block and typos in Audit.org
-2026-09-24 3cad46354c74113f427286f21b35121039b59be6 chore(kb): index zmq_transport module + record desktop-restart observation log
 ```
 
 ## Repository paths changed, last 14 days
@@ -62,7 +59,6 @@
 .prolog/kb/desktop_prolog_ide.pl
 .prolog/kb/index.pl
 .prolog/kb/org_fleet_delivery.pl
-Audit.org
 CHANGELOG.md
 android/.gitignore
 android/app/build.gradle.kts
@@ -177,7 +173,6 @@ modules/health_reasoning.pl
 rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
-rage/observation-2026-09-20-desktop-restart-resilience.org
 rage/org-fleet-apks-20260925.org
 scripts/test-android.sh
 server_main.pl
