@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-09T00:25:11Z`
+- generated: `2026-10-09T09:10:06Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -33,19 +33,6 @@
 2026-09-25 3685e76264cc9ca4515d5ee5734e219fe684447c docs(rage): record org fleet publication and distributed-asset verification
 2026-09-25 370834ccbdacc6be4c63e8396f88b27e09216c82 Merge pull request #1485 from lost-rob0t/release/0.3.1-alpha-repair
 2026-09-25 8550e69c9a3f776022a4140c8d96c54be26a9c33 test(org-fleet): pin release-line invariants instead of one alpha version
-2026-09-25 5f6d76622fcf0ddc3723d15ed5bacdbf4e91a0e2 chore(release): promote 0.3.1-alpha to repair the 0.3.0 what's-new overlay
-2026-09-25 77c5a01832b428e63b94df3cd9f99a9d3a038a9f Merge pull request #1483 from lost-rob0t/chore/0.3.0-alpha-changelog-reconcile
-2026-09-25 9a865c38817fb7fcbde6f018893745868e545366 fix(android-ci): give the Gradle daemon a 4g heap for the fleet gate
-2026-09-25 c9f92e4d800d9bd7878c03c0f19de8542da0f6a2 chore(release): reconcile Unreleased changelog into 0.3.0-alpha
-2026-09-25 6033bf1af597e66368e28958f8c88780ca97e177 Merge pull request #972 from lost-rob0t/feature/org-roam-memory-workspace-20260917
-2026-09-25 349185ce9371f7dbcde09cd14fb70101dd564a9a docs(rage): record org fleet implementation and gate evidence
-2026-09-25 e6bfde942004b0cce7358656a0d820f92e918564 feat(org): one standalone APK per Org app system over shared surfaces
-2026-09-25 62c39cd26e537c4d0abfe98d4d25f6b4e332803f Merge branch 'master' into feat/org-fleet-apks-20260924
-2026-09-24 2212471c2cf21d10577b89399d72f42c73b4abac merge master into #1463 transport hardening
-2026-09-24 2ed3bb26337f298db9029eadf68bfb9c55b985ee Merge pull request #1469 from lost-rob0t/rage/866-wear-auto-pairing
-2026-09-24 4e0559e00234115215c07b89d07d54cc5eb6100e merge master into #1463 transport hardening
-2026-09-24 0aec35ef633163a9c31729d2f7f1fad41bc3ed63 Merge branch 'master' into rage/866-wear-auto-pairing
-2026-09-24 94b9c9b26912050058c60d3c2247a0e43b4ec7ef feat: Prolog-governed Android ADB + vision control (#1393)
 ```
 
 ## Repository paths changed, last 14 days
@@ -64,10 +51,6 @@ android/.gitignore
 android/app/build.gradle.kts
 android/app/src/main/AndroidManifest.xml
 android/app/src/main/java/ai/zara/app/MainActivity.kt
-android/app/src/main/java/ai/zara/app/automation/AdbAutomationAdapter.kt
-android/app/src/main/java/ai/zara/app/automation/AutomationActivity.kt
-android/app/src/main/java/ai/zara/app/prolog/AndroidAutomation.kt
-android/app/src/main/java/ai/zara/app/prolog/AndroidAutomationCatalog.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthGoalStore.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStore.kt
 android/app/src/main/java/ai/zara/app/samsunghealth/HealthPrologExport.kt
@@ -79,13 +62,10 @@ android/app/src/main/java/ai/zara/app/ui/AppNavigation.kt
 android/app/src/main/java/ai/zara/app/ui/PairingZaraApp.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraHealthSurface.kt
-android/app/src/main/java/ai/zara/app/watch/WatchAdbTransfer.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionLinkService.kt
 android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
 android/app/src/main/res/xml/zara_file_paths.xml
 android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
-android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
-android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
@@ -94,61 +74,20 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/gradle.properties
 android/gradle/libs.versions.toml
-android/org-app/build.gradle.kts
-android/org-app/src/main/java/ai/zara/org/app/MainActivity.kt
-android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
-android/org-editor/build.gradle.kts
-android/org-editor/src/main/AndroidManifest.xml
-android/org-editor/src/main/java/ai/zara/org/editor/MainActivity.kt
-android/org-editor/src/test/java/ai/zara/org/editor/OrgAppWiringContractTest.kt
-android/org-graph/build.gradle.kts
-android/org-graph/src/main/AndroidManifest.xml
-android/org-graph/src/main/java/ai/zara/org/graph/MainActivity.kt
-android/org-graph/src/test/java/ai/zara/org/graph/OrgAppWiringContractTest.kt
-android/org-home/build.gradle.kts
-android/org-home/src/main/AndroidManifest.xml
-android/org-home/src/main/java/ai/zara/org/home/MainActivity.kt
-android/org-home/src/test/java/ai/zara/org/home/OrgAppWiringContractTest.kt
-android/org-reminder/build.gradle.kts
-android/org-reminder/src/main/AndroidManifest.xml
-android/org-reminder/src/main/java/ai/zara/org/reminder/MainActivity.kt
-android/org-reminder/src/test/java/ai/zara/org/reminder/OrgAppWiringContractTest.kt
-android/org-roam/build.gradle.kts
-android/org-roam/src/main/AndroidManifest.xml
-android/org-roam/src/main/java/ai/zara/org/roam/MainActivity.kt
-android/org-roam/src/test/java/ai/zara/org/roam/OrgAppWiringContractTest.kt
 android/org-surfaces/build.gradle.kts
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/DailySurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/EditorSurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/GraphSurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/HomeSurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgComponents.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgEditorSession.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgFleetApps.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgGraphLayout.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgTheme.kt
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgTimerModel.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgWorkspaceScreen.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/RemindersSurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/RoamSurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/TimersSurface.kt
 android/org-surfaces/src/main/java/ai/zara/org/surfaces/TodoSurface.kt
 android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgDesignContractTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgEditorSessionTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgFleetAppsTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgGraphLayoutTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgTimerModelTest.kt
-android/org-timer/build.gradle.kts
-android/org-timer/src/main/AndroidManifest.xml
-android/org-timer/src/main/java/ai/zara/org/timer/MainActivity.kt
-android/org-timer/src/test/java/ai/zara/org/timer/OrgAppWiringContractTest.kt
-android/org-todo/build.gradle.kts
-android/org-todo/src/main/AndroidManifest.xml
-android/org-todo/src/main/java/ai/zara/org/todo/MainActivity.kt
-android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
-android/settings.gradle.kts
 android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
 android/shared-ui/src/main/java/ai/zara/ui/health/ZaraHealthCatalog.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
@@ -166,20 +105,15 @@ android/wear-app/src/samsungHealthSensorSdk/java/ai/zara/wear/health/sdk/Samsung
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-kb/android_control.pl
 main.pl
-modules/config_loader.pl
 modules/health_reasoning.pl
 rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
 rage/org-fleet-apks-20260925.org
-scripts/test-android.sh
 server_main.pl
 setup.py
 t/health_reasoning.pl
-t/prolog_config.pl
-t/test_android_adb_plugin.py
 t/test_android_release_contract.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
@@ -198,7 +132,6 @@ t/test_runtime_host.py
 t/test_runtime_intent_routing.py
 t/test_zmq_transport.py
 version.properties
-wiki/android-automation.org
 wiki/android-samsung-health.org
 wiki/desktop-design.org
 zara/__main__.py
@@ -214,7 +147,6 @@ zara/desktop/windows/quick.py
 zara/desktop/windows/settings.py
 zara/health_cli.py
 zara/health_store.py
-zara/plugins/builtin/android_adb.py
 zara/protocol.py
 zara/protocol_runtime.py
 zara/runtime/backend.py
@@ -231,8 +163,6 @@ zara/zmq_transport.py
 .github/workflows/ci.yml
 .github/workflows/org-android-ui.yml
 .github/workflows/release.yml
-android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationPlanParserTest.kt
-android/app/src/test/java/ai/zara/app/prolog/AndroidAutomationRunnerTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
@@ -241,28 +171,13 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiri
 android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/org-app/src/test/java/ai/zara/org/app/OrgSurfaceWiringContractTest.kt
-android/org-editor/src/test/java/ai/zara/org/editor/OrgAppWiringContractTest.kt
-android/org-graph/src/test/java/ai/zara/org/graph/OrgAppWiringContractTest.kt
-android/org-home/src/test/java/ai/zara/org/home/OrgAppWiringContractTest.kt
-android/org-reminder/src/test/java/ai/zara/org/reminder/OrgAppWiringContractTest.kt
-android/org-roam/src/test/java/ai/zara/org/roam/OrgAppWiringContractTest.kt
 android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgDesignContractTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgEditorSessionTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgFleetAppsTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgGraphLayoutTest.kt
-android/org-surfaces/src/test/java/ai/zara/org/surfaces/OrgTimerModelTest.kt
-android/org-timer/src/test/java/ai/zara/org/timer/OrgAppWiringContractTest.kt
-android/org-todo/src/test/java/ai/zara/org/todo/OrgAppWiringContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
 android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
 android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
 android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-scripts/test-android.sh
 t/health_reasoning.pl
-t/prolog_config.pl
-t/test_android_adb_plugin.py
 t/test_android_release_contract.py
 t/test_config.py
 t/test_copilot_screenshot_fixtures.py
