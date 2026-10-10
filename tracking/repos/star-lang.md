@@ -1,15 +1,43 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-10-10T12:37:26Z`
+- generated: `2026-10-10T18:39:59Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`fa1c8f4fb0590526c39aa3e9bc4a7e6eac30bea7`](https://github.com/lost-rob0t/star-lang/commit/fa1c8f4fb0590526c39aa3e9bc4a7e6eac30bea7)
-- head date: `2026-10-04T14:28:37-04:00`
-- head subject: Merge pull request #202 from lost-rob0t/perf/starrouter-wire-prerequisites
+- head: [`bd82ff644ac149b59cc5c58b49f246f031e43f7f`](https://github.com/lost-rob0t/star-lang/commit/bd82ff644ac149b59cc5c58b49f246f031e43f7f)
+- head date: `2026-10-10T11:06:23-04:00`
+- head subject: Merge pull request #206 from lost-rob0t/feat/204-complete-0101-compatibility-bundle
 
 ## Git log, last 14 days
 
 ```text
+2026-10-10 bd82ff644ac149b59cc5c58b49f246f031e43f7f Merge pull request #206 from lost-rob0t/feat/204-complete-0101-compatibility-bundle
+2026-10-10 d238e8c3dcfd1d8ca787b084a56614360cbbe295 Merge pull request #209 from lost-rob0t/fix/208-drift-bundle-parity
+2026-10-10 27a9f6422b15ae6fcd15bb075e57fab2bde47e11 Merge pull request #205 from lost-rob0t/fix/204-consumer-bundle-path-prerequisites
+2026-10-10 069a538a8475a50152d62f521302991fd9dbd9fe test: retain aggregate diagnostics for malformed bundle entries (#208)
+2026-10-10 0c76f62558e925e22d8ac1206238546ba22d1f90 fix: keep malformed bundle mappings in structured drift diagnostics (#208)
+2026-10-10 fad4d5b332877f3378371b7a0b0083eb56ef6242 fix: share bundle filesystem verification with drift reporting (#208)
+2026-10-10 281656d17aff9f19b9f07cd6adabf1a37a3521da fix: share bundle filesystem verification with drift reporting (#208)
+2026-10-10 1fd3c2ffcc5087f531b0da4e25c90f892dca70c0 ci: run drift diagnostics before bundle generation (#208)
+2026-10-10 8cf91fb12e4638cea2f8850d12dfa3c0131cd00f test: expose bundle drift layout and import-shadow false negatives (#208)
+2026-10-10 2e5ea976b69b90317dc250b134eb104a91074b82 test(starintel): keep vendored migration checks active under Python -O
+2026-10-10 0c1924562c0378312a7883638ce09340c793f494 fix(starintel): bound immutable HTTP artifact downloads
+2026-10-10 38cc7b850419b8332f8cc770b82da5717ca1a2d2 fix(starintel): keep raw JSON conformance checks active under Python -O
+2026-10-10 9d6a0d684146cafe2ff5c42c1079f6972bed1ed6 fix(starintel): validate authority release locks before reading
+2026-10-10 73b1c39b2f80b518a45a600b288383054c0a3626 test(starintel): aggregate deterministic offline consumer drift reports
+2026-10-10 0132cb1edbfe011739b216813ec7b5d6bc5623fd ci(starintel): reject stale committed compatibility bundle lock
+2026-10-09 22942af6f9411588b4abca4717eef0b73cefa727 fix: reject nonregular consumer files before any blocking read (#204)
+2026-10-09 e767392f8f8023b202876091319c46a93fa0d3c4 fix: keep consumer locks outside bundles and reject linked targets (#204)
+2026-10-09 0badc219b191e319b9b96fbe2fe1a3be389be086 fix: reject unlisted import shadows in closed bundle destinations (#204)
+2026-10-09 ce8c4f544f6dd4a6bf103d70a0c4cc62ace495f0 fix: preserve executable mode of authority release finalizer
+2026-10-09 ecdf0b502e4e887fd5ea51d5915f1c0c6feafa18 build: commit CI-generated bundle and enforce regeneration drift checks (#204)
+2026-10-09 1d4e677a3dc137b852431e36e92a48a6946bf78b fix: enforce complete bundle layout and explicit-mode validation (#204)
+2026-10-09 ee28e47395a846a73a94bf6d0bc34e050cfea3aa feat: generate and verify complete 0.10.1 reader bundles (#204)
+2026-10-09 4e6ca650ccd3dee861e3253678e8a3d785b67d62 test: require complete relocated 0.10.1 compatibility bundles (#204)
+2026-10-09 c4216bfca1e70500cc373f14c5c093dec6b4f5c9 docs: withdraw next-version planning and focus only on 0.10.1 (#204)
+2026-10-09 646ebd54824eeeb281fee5fd9fb5fa8d5cb6b794 docs: record gated 0.10.2 transition and bundle prerequisites (#204)
+2026-10-09 99f0995edc984d5b4e9160a55d5eb3628afaa390 ci: require Nix gates for specification and consumer tool changes (#204)
+2026-10-09 592a142cab8f6aa161238ff5da189062e6abf443 fix: reject unsafe consumer targets and duplicate source mappings (#204)
+2026-10-09 e13f1109b896251f3544ee9702fcef8c23becf3f test: expose unsafe consumer paths and duplicate source mappings (#204)
 2026-10-04 fa1c8f4fb0590526c39aa3e9bc4a7e6eac30bea7 Merge pull request #202 from lost-rob0t/perf/starrouter-wire-prerequisites
 2026-10-04 96d26c338078676ec1dc6928755901636c9f7ef0 Add canonical actor wire, document bus guards and strict raw JSON conformance
 2026-10-04 e9ec1d883627d186aafe0b3647bdc29baea03543 Merge pull request #200 from lost-rob0t/codex/versioned-exact-wire-20261004
@@ -35,39 +63,19 @@
 2026-10-03 c9ecf8c0c4fa12453c8091351c889afb08bea4a6 ci(starintel): upload regenerated release preview
 2026-10-03 f0f14fb08d71df8dc861087f37e424bfddb8c53a feat(starintel): add mission and spatial contracts
 2026-09-30 919833266723edc9bddb337d606f72ae25fb8ced feat(starintel): finalize Star-Lang 0.10.1 authority
-2026-09-26 42e296616f3c9113b6a2a41b6998ee28936e8c6b test(file): cover strong hash and extension trust defaults
-2026-09-26 9fa71847be7afc968ecc9aff0ea2f6d325f7295e spec(file): require strong byte hash and safe file defaults
-2026-09-26 69d65701871500d087df3bcfcfa399faa43221f8 docs(spec): declare StarLang authority for StarIntel schemas
-2026-09-26 b6d8a2bc2093853dfbc96fe0efb4a9071354c2be test(spec): lock generic arbitrary-file fields in 0.10.1
-2026-09-26 c943c1524986c5217ea37a65fd3a07383faef908 test(compiler): prove StarIntel 0.10.1 generates all language bindings
-2026-09-26 fd14cf5fb5d7240541e74ed3fdbe21e2b24cb6f0 docs(ownership): mark binding generation final-owned
-2026-09-26 0ada063bd5843418d5953b41739bc1d12ad13d70 refactor(compiler): make prototype binding generator a compatibility shim
-2026-09-26 f37d43ce21fa536718e7f3fb896c6bb381168dc5 feat(compiler): expose polyglot schema binding generation
-2026-09-26 8c30c86a269090ff93e4d3b528e7dec8691f5da0 feat(compiler): export portable binding generator API
-2026-09-26 bec3cb39a31004b6700697068649cd5af090083f build(compiler): load final polyglot binding generators
-2026-09-26 a162155c94487c560de5197893fbe4b2572267fe feat(compiler): generate Common Lisp Emacs Lisp and Prolog bindings
-2026-09-26 ed4f2f3e1da46095d1f9dab525a72cd2aafec212 feat(compiler): generate Kotlin Java Nim Go and Rust bindings
-2026-09-26 9820ffcbcfb80979d635ba6a71439a23e4036cef feat(compiler): move Python and TypeScript schema bindings to final compiler
-2026-09-26 7a5d7bd8d38abf6dd4ef0d3fcf31283dd5eb68eb feat(compiler): add shared portable binding generator core
-2026-09-26 e6ca19ec3b965252a4663a4c747b44d326d35cc8 chore(spec): remove duplicate 0.10.1 fixture authority
-2026-09-26 c2560071b215d7a3cd2811cee4cb7df0c1af43db test(spec): load canonical StarIntel 0.10.1 StarLang source
-2026-09-26 9840efa3161ad2cea00437e517d8fb2cf2313a3b spec(starintel): make StarLang 0.10.1 core the canonical schema source
-2026-09-26 5fcbac9319d81b03115cd3e90820d9a821725579 spec(starintel): make 0.10.1 file contract fully generic
-2026-09-26 f9ffde45fe3246460191b51e0855c1ed71754b6c test(spec): cover StarIntel 0.10.1 media and network vocabulary
-2026-09-26 672ea83660d42a90ab4fed399a511eef1d4fdef3 fix(spec): avoid inherited field shadowing in 0.10.1 media types
-2026-09-26 cd968cf62ba9b8a8832b4ba31f7ce8f0ba551b4b spec(starintel): add canonical 0.10.1 media and network vocabulary
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
 .github/workflows/ci.yml
+.github/workflows/nix.yml
+.github/workflows/starintel-bundle.yml
 .github/workflows/starintel-release-preview.yml
 .gitignore
 .prolog/kb/load.pl
 .prolog/kb/starintel-authority.pl
 CHANGELOG.md
-ci/prototype-migration.tsv
 ci/target-systems.txt
 docs/DOCUMENT-BUS-CONFORMANCE.md
 docs/DOMAIN-SERVICE-CONTRACT.md
@@ -83,7 +91,6 @@ fixtures/actor2actor/lifecycle-v1/exact-request.json
 fixtures/actor2actor/lifecycle-v1/reply.json
 fixtures/actor2actor/lifecycle-v1/request.json
 fixtures/actor2actor/lifecycle-v1/unknown.json
-fixtures/starintel-core-v0.10.1.star
 flake.nix
 prototype/binding-generator-prototype.lisp
 prototype/canonical-json-binding-tests.lisp
@@ -92,6 +99,7 @@ specs/starintel/0.10.1/GEO-MISSION-MIGRATION.md
 specs/starintel/0.10.1/NETWORK-CAPTURE-MIGRATION.md
 specs/starintel/0.10.1/RESEARCH-CONTRACTS.md
 specs/starintel/0.10.1/SUPPORTED-WORKFLOWS.md
+specs/starintel/0.10.1/bundle-lock.json
 specs/starintel/0.10.1/compatibility-fixtures.json
 specs/starintel/0.10.1/compatibility.json
 specs/starintel/0.10.1/core.star
@@ -110,10 +118,13 @@ specs/starintel/0.10.1/supported-workflow-fixtures.json
 specs/starintel/0.10.1/supported-workflow-inventory.json
 specs/starintel/0.10.1/supported-workflow-mappings.json
 specs/starintel/0.10.1/workflow_semantics.py
+specs/starintel/BUNDLE-CONSUMPTION.md
 specs/starintel/README.md
+specs/starintel/VERSION-TRANSITION-PLAN.md
 specs/starintel/compatibility/0.9.0/schema.json
 specs/starintel/compatibility/README.md
 specs/starintel/compatibility/canonical-migration-fixtures.json
+specs/starintel/compatibility/capabilities.json
 specs/starintel/compatibility/historical-reader-fixtures.json
 specs/starintel/compatibility/numeric-canonical-migration-fixtures.json
 specs/starintel/compatibility/numeric-historical-reader-fixtures.json
@@ -147,10 +158,7 @@ star-document-bus/star-document-bus.asd
 star-document-bus/tests/document-bus-tests.lisp
 star-zmq/src/wire.lisp
 star-zmq/star-zmq-actors.asd
-starlang-compiler/src/bindings-common.lisp
-starlang-compiler/src/bindings-jvm-native.lisp
 starlang-compiler/src/bindings-lisp-prolog.lisp
-starlang-compiler/src/bindings-python-typescript.lisp
 starlang-compiler/src/core-surface.lisp
 starlang-compiler/src/json-schema.lisp
 starlang-compiler/src/public-surface.lisp
@@ -158,8 +166,12 @@ starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
 tools/finalize-starintel-release.py
 tools/generate-starintel-release.lisp
+tools/report-starintel-consumer-drift.py
 tools/sync-starintel-consumer.py
+tools/test-starintel-consumer-drift.py
+tools/test-starintel-consumer-optimized.py
 tools/test-starintel-consumer.py
+tools/test-starintel-raw-json-harness.py
 tools/test-starintel-raw-json.py
 tools/test-starintel-research-contracts.py
 tools/test-starintel-versioned-reader.py
@@ -170,8 +182,9 @@ tools/test-supported-workflow-contracts.py
 
 ```text
 .github/workflows/ci.yml
+.github/workflows/nix.yml
+.github/workflows/starintel-bundle.yml
 .github/workflows/starintel-release-preview.yml
-ci/prototype-migration.tsv
 ci/target-systems.txt
 flake.nix
 star-actor-protocol/star-actor-protocol.asd
