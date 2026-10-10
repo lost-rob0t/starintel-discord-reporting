@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-09T22:41:47Z`
+- generated: `2026-10-10T05:57:42Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
@@ -19,13 +19,6 @@
 2026-10-03 3db0c101beaa2e847b4fe970eea654f701bb5bcb chore: promote Zara 0.4.0-alpha
 2026-10-03 a2487b33c43c53543ea9c4b57a2ce544e4358b09 feat: add secure Zara Health phone and Wear surfaces
 2026-09-27 74728fa899e937fb43a9f618c8223137832b09b5 Merge pull request #1463 from lost-rob0t/agentic15/1396-session-demux-hardening
-2026-09-25 25b852fe27cd4aaddbf2d5e79fafd7a35af03e7c Merge master into agentic15/1396-session-demux-hardening
-2026-09-25 b8fd57c37e55a46b911223e6b79ca9dae2cfeb5d Merge pull request #1490 from lost-rob0t/docs/org-redesign-evidence
-2026-09-25 36145d33d8cae86738e8e2cf4f3733db3fb5b29b docs(rage): record org fleet design-token redesign and evidence-gate fix
-2026-09-25 21f4169d4724e3539203ae17397914d49d868b8c Merge pull request #1489 from lost-rob0t/ci/org-evidence-fleet-paths
-2026-09-25 95942072ecfc69f0da576ab94fb1eec932da20cb fix(org-ui): keep tab bar at intrinsic width so every tab stays reachable
-2026-09-25 864eff48d3db92ab9cc0b4839ab585b6a0822ed5 ci(org): run UI evidence for every fleet module
-2026-09-25 0a921e34fc54c9cc1dc4ea0637ca5b14abfe1141 Merge pull request #1488 from lost-rob0t/feat/org-fleet-design-tokens
 ```
 
 ## Repository paths changed, last 14 days
@@ -33,7 +26,6 @@
 ```text
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
-.github/workflows/org-android-ui.yml
 .github/workflows/release.yml
 .prolog/kb/desktop_copilot_ui.pl
 .prolog/kb/desktop_prolog_ide.pl
@@ -67,7 +59,6 @@ android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
 android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
 android/gradle/libs.versions.toml
-android/org-surfaces/src/main/java/ai/zara/org/surfaces/OrgWorkspaceScreen.kt
 android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
 android/shared-ui/src/main/java/ai/zara/ui/health/ZaraHealthCatalog.kt
 android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
@@ -90,7 +81,6 @@ modules/health_reasoning.pl
 rage/1333-desktop-android-ui-parity-design.org
 rage/1333-desktop-android-ui-parity-research.org
 rage/1333-desktop-android-ui-parity.org
-rage/org-fleet-apks-20260925.org
 server_main.pl
 setup.py
 t/health_reasoning.pl
@@ -140,7 +130,6 @@ zara/zmq_transport.py
 ```text
 .github/workflows/android-latest.yml
 .github/workflows/ci.yml
-.github/workflows/org-android-ui.yml
 .github/workflows/release.yml
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
 android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt

@@ -16,8 +16,8 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/star-router-cli](./star-router-cli.md) `5c9be69ae8fe`
 - [lost-rob0t/star-synthdata](./star-synthdata.md) `687d9f17be92`
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
-- [lost-rob0t/starRouter](./starRouter.md) `59a8cb7790cf`
-- [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `449a52a1784d`
+- [lost-rob0t/starRouter](./starRouter.md) `8f8166ab908d`
+- [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `d8c69c4c0ccc`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `7613609b9630`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `6aa8051dc7ea`

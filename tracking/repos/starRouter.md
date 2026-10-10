@@ -1,15 +1,16 @@
 # lost-rob0t/starRouter
 
-- generated: `2026-10-09T22:41:49Z`
+- generated: `2026-10-10T05:57:48Z`
 - canonical branch: `master`
 - changelog eligible: `no`
-- head: [`59a8cb7790cfbfca6fa8f141094d95f525d9bd2c`](https://github.com/lost-rob0t/starRouter/commit/59a8cb7790cfbfca6fa8f141094d95f525d9bd2c)
-- head date: `2026-10-06T02:32:12-04:00`
-- head subject: Merge pull request #7 from lost-rob0t/codex/fix-cosign-tuf-compat
+- head: [`8f8166ab908dd33130929e5aa99737719c6db0b8`](https://github.com/lost-rob0t/starRouter/commit/8f8166ab908dd33130929e5aa99737719c6db0b8)
+- head date: `2026-10-10T00:10:10-04:00`
+- head subject: docs: add StarIntel fleet agent contract (#8)
 
 ## Git log, last 14 days
 
 ```text
+2026-10-10 8f8166ab908dd33130929e5aa99737719c6db0b8 docs: add StarIntel fleet agent contract (#8)
 2026-10-06 59a8cb7790cfbfca6fa8f141094d95f525d9bd2c Merge pull request #7 from lost-rob0t/codex/fix-cosign-tuf-compat
 2026-10-06 d2e847b7dc23035212a0d7e13a36c627bbf122dc ci: update Cosign trust-root support and verify release signatures
 2026-10-06 e8c40b6e4e0d35319d4f0352fe1c44f5404d4b98 Merge pull request #6 from lost-rob0t/codex/starintel-0101-generated-consumer
@@ -35,6 +36,7 @@
 .github/workflows/docker-publish.yml
 .github/workflows/validate.yml
 .gitignore
+AGENTS.md
 Dockerfile
 README.org
 fixtures/raw-json-unique-keys.json
