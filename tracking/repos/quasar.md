@@ -1,15 +1,17 @@
 # lost-rob0t/quasar
 
-- generated: `2026-10-10T18:39:52Z`
+- generated: `2026-10-10T23:35:40Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`9079604f766990db7f9b8998705862c4fa914c45`](https://github.com/lost-rob0t/quasar/commit/9079604f766990db7f9b8998705862c4fa914c45)
-- head date: `2026-10-06T02:11:49-04:00`
-- head subject: Merge pull request #103 from lost-rob0t/feat/tek9-wireless-source-imports
+- head: [`8199962373a9733b6dddda54e25ee6a7508cd835`](https://github.com/lost-rob0t/quasar/commit/8199962373a9733b6dddda54e25ee6a7508cd835)
+- head date: `2026-10-10T19:17:26-04:00`
+- head subject: Merge pull request #105 from lost-rob0t/fix/websocket-disconnections
 
 ## Git log, last 14 days
 
 ```text
+2026-10-10 8199962373a9733b6dddda54e25ee6a7508cd835 Merge pull request #105 from lost-rob0t/fix/websocket-disconnections
+2026-10-10 71fa10936df54ac130eaaa515c67cc6fd62d0873 fix: reconcile websocket recovery and workspace loading status
 2026-10-06 9079604f766990db7f9b8998705862c4fa914c45 Merge pull request #103 from lost-rob0t/feat/tek9-wireless-source-imports
 2026-10-06 593e6836fd95d5e20d8bf84f56aa37378594336b fix: adapt target submissions to the server v1 command contract
 2026-10-04 2c3222dc471a4e4baa96fd9fa98b020bdc9763a9 Compose startup actor settings migrations with conflict-safe one-time persistence
@@ -32,6 +34,7 @@
 ```text
 .prolog/kb/index.pl
 .prolog/kb/starintel_actor_registry.pl
+.prolog/kb/websocket_lifecycle.pl
 README.md
 control-plane/src/actors/melissa/bridge.lisp
 control-plane/src/actors/melissa/entity.lisp
@@ -68,6 +71,7 @@ control-plane/tests/tek9-store-adversarial-tests.lisp
 control-plane/tests/tek9-store-tests.lisp
 docs/ARCHITECTURE.md
 docs/SQLITE-IMPORT-BOUNDARY.md
+docs/WEBSOCKET-DEBUGGING.md
 docs/WIRELESS-IMPORTS.md
 example_configs/init.lisp
 flake.nix
@@ -143,11 +147,17 @@ frontend/src/lib/workflow-migration.test.js
 frontend/src/store-canonical.test.jsx
 frontend/src/store.jsx
 frontend/src/testing/graph-fixtures.test.js
+frontend/src/ui-core/QuasarShell.jsx
+frontend/src/ui-core/StatusCenter.jsx
+frontend/src/ui-core/adapters/shared.js
+frontend/src/ui-core/surfaces.css
 frontend/tests/fixtures/wireless/kismet.jsonl
 frontend/tests/fixtures/wireless/wigle.csv
 frontend/tests/unit/control-plane-client.test.ts
+frontend/tests/unit/status-center.test.jsx
 package-lock.json
 scripts/bootstrap-lisp-deps
+scripts/inspect-websocket.mjs
 scripts/run-control-plane
 scripts/run-production
 scripts/test-lisp
@@ -208,7 +218,9 @@ frontend/scripts/export-wireless-test-fixtures.mjs
 frontend/tests/fixtures/wireless/kismet.jsonl
 frontend/tests/fixtures/wireless/wigle.csv
 frontend/tests/unit/control-plane-client.test.ts
+frontend/tests/unit/status-center.test.jsx
 scripts/bootstrap-lisp-deps
+scripts/inspect-websocket.mjs
 scripts/run-control-plane
 scripts/run-production
 scripts/test-lisp
