@@ -1,15 +1,18 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-10-10T23:35:36Z`
+- generated: `2026-10-11T05:52:29Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`491b89dad31e15b4172d52a03ab525b6c92fd637`](https://github.com/lost-rob0t/starintel-server/commit/491b89dad31e15b4172d52a03ab525b6c92fd637)
-- head date: `2026-10-10T11:24:39-04:00`
-- head subject: Merge pull request #323 from lost-rob0t/ss11/couchdb-outbox-recovery-drain
+- head: [`0137ead90ab9560b5a5090f0b62c1b59aac08c68`](https://github.com/lost-rob0t/starintel-server/commit/0137ead90ab9560b5a5090f0b62c1b59aac08c68)
+- head date: `2026-10-11T00:48:44-04:00`
+- head subject: Merge pull request #336 from lost-rob0t/feat/290-create-only-document
 
 ## Git log, last 14 days
 
 ```text
+2026-10-11 0137ead90ab9560b5a5090f0b62c1b59aac08c68 Merge pull request #336 from lost-rob0t/feat/290-create-only-document
+2026-10-11 76dc103e52052e994b469800bacf6dc146ea9ebd docs(api): apply exact CI-generated create-only signatures
+2026-10-11 f8a9295a3519ea50ebaa67a2ccf5f53c5fe4efc6 fix(documents): enforce optional create-only precondition inside CAS retries
 2026-10-10 491b89dad31e15b4172d52a03ab525b6c92fd637 Merge pull request #323 from lost-rob0t/ss11/couchdb-outbox-recovery-drain
 2026-10-10 49bcca052e83ed4e3e6d6a9e9860fdac9288780d Merge approved JSON fidelity base into outbox recovery proof
 2026-10-10 de2cf4e0418263484b1453ffc707c8bab0b67365 Merge pull request #329 from lost-rob0t/agent/issue-327-view-json-fidelity
@@ -87,11 +90,13 @@ doc/actors.org
 doc/api/index.org
 doc/api/star-actors.org
 doc/api/star-authorization.org
+doc/api/star-databases-couchdb.org
 doc/api/star-documents.org
 doc/api/starintel-gserver.org
 doc/document-spec.org
 doc/http-api-docs.org
 docs/canonical-compatibility.md
+docs/create-only-document-evidence.md
 flake.lock
 flake.nix
 qlfile
@@ -131,10 +136,12 @@ source/databases/view-request.lisp
 source/document-access-package.lisp
 source/document-access.lisp
 source/frontends/http-actor-discovery.lisp
+source/frontends/http-authorization-routes.lisp
 source/frontends/http-authorization.lisp
 source/frontends/http-boundary-core.lisp
 source/frontends/http-capabilities.lisp
 source/frontends/http-contract-routes.lisp
+source/frontends/http-document-update.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
 source/observability-gserver.lisp

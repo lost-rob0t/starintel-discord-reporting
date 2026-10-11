@@ -1,15 +1,20 @@
 # lost-rob0t/quasar
 
-- generated: `2026-10-10T23:35:40Z`
+- generated: `2026-10-11T05:52:37Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`8199962373a9733b6dddda54e25ee6a7508cd835`](https://github.com/lost-rob0t/quasar/commit/8199962373a9733b6dddda54e25ee6a7508cd835)
-- head date: `2026-10-10T19:17:26-04:00`
-- head subject: Merge pull request #105 from lost-rob0t/fix/websocket-disconnections
+- head: [`f387ad2e36aaef7d1ccd3908e70c979b3e12f577`](https://github.com/lost-rob0t/quasar/commit/f387ad2e36aaef7d1ccd3908e70c979b3e12f577)
+- head date: `2026-10-10T23:22:01-04:00`
+- head subject: Merge pull request #107 from lost-rob0t/feat/bounded-workbench-reads
 
 ## Git log, last 14 days
 
 ```text
+2026-10-10 f387ad2e36aaef7d1ccd3908e70c979b3e12f577 Merge pull request #107 from lost-rob0t/feat/bounded-workbench-reads
+2026-10-10 2d6c23517c24d80653d227bbb4f492b1003ac4de fix: validate workspace admission and bound query continuations
+2026-10-10 ee715bfcd1e0f943d4e17cdd1cdd3ae8de75bdd6 test: expose workspace admission and cursor size regressions
+2026-10-10 3b844b7d5fabf43769ef060119dd79b6a1f46d6a fix: verify pinned Nix Tek9 source before bootstrap
+2026-10-10 64859785eb40b3ce14090d09f021b088dfa47a66 feat: add bounded Tek9 bootstrap and document queries
 2026-10-10 8199962373a9733b6dddda54e25ee6a7508cd835 Merge pull request #105 from lost-rob0t/fix/websocket-disconnections
 2026-10-10 71fa10936df54ac130eaaa515c67cc6fd62d0873 fix: reconcile websocket recovery and workspace loading status
 2026-10-06 9079604f766990db7f9b8998705862c4fa914c45 Merge pull request #103 from lost-rob0t/feat/tek9-wireless-source-imports
@@ -32,15 +37,19 @@
 ## Repository paths changed, last 14 days
 
 ```text
+.prolog/kb/bounded_reads.pl
 .prolog/kb/index.pl
 .prolog/kb/starintel_actor_registry.pl
 .prolog/kb/websocket_lifecycle.pl
+AGENTS.md
 README.md
 control-plane/src/actors/melissa/bridge.lisp
 control-plane/src/actors/melissa/entity.lisp
 control-plane/src/actors/melissa/normalize.lisp
 control-plane/src/actors/melissa/packages.lisp
 control-plane/src/actors/melissa/transport.lisp
+control-plane/src/bounded-read-commands.lisp
+control-plane/src/bounded-reads.lisp
 control-plane/src/clog-host.lisp
 control-plane/src/control-plane.lisp
 control-plane/src/debug-logging.lisp
@@ -50,10 +59,13 @@ control-plane/src/phase2-stage-write.lisp
 control-plane/src/phase2-store-core.lisp
 control-plane/src/plugin.lisp
 control-plane/src/pro-actors.lisp
+control-plane/src/protocol.lisp
 control-plane/src/starintel-contract.lisp
 control-plane/src/store.lisp
 control-plane/src/websocket-server.lisp
 control-plane/src/workspace.lisp
+control-plane/tests/bounded-read-benchmark.lisp
+control-plane/tests/bounded-read-tests.lisp
 control-plane/tests/control-plane-tests.lisp
 control-plane/tests/logging-tests.lisp
 control-plane/tests/melissa-restart-tests.lisp
@@ -69,10 +81,14 @@ control-plane/tests/standalone/wireless-import-persistence.lisp
 control-plane/tests/standalone/workspace-contract.lisp
 control-plane/tests/tek9-store-adversarial-tests.lisp
 control-plane/tests/tek9-store-tests.lisp
+docs/ADR-TEK9-WORKSPACE-STORAGE.md
 docs/ARCHITECTURE.md
+docs/BOUNDED-READ-PERFORMANCE.md
+docs/BOUNDED-WORKBENCH.md
 docs/SQLITE-IMPORT-BOUNDARY.md
 docs/WEBSOCKET-DEBUGGING.md
 docs/WIRELESS-IMPORTS.md
+docs/bounded-read-measurements.json
 example_configs/init.lisp
 flake.nix
 frontend/docs/STARINTEL-0101-MIGRATION.md
@@ -88,6 +104,7 @@ frontend/e2e/view-installation.spec.ts
 frontend/e2e/wireless-imports.spec.ts
 frontend/package-lock.json
 frontend/package.json
+frontend/playwright.config.ts
 frontend/scripts/export-wireless-test-fixtures.mjs
 frontend/src/App.jsx
 frontend/src/actor-manager.css
@@ -156,10 +173,17 @@ frontend/tests/fixtures/wireless/wigle.csv
 frontend/tests/unit/control-plane-client.test.ts
 frontend/tests/unit/status-center.test.jsx
 package-lock.json
+package.json
+scripts/benchmark-bounded-reads
 scripts/bootstrap-lisp-deps
+scripts/check-control-plane-deps.mjs
+scripts/check-tek9-nix-source.mjs
+scripts/dev.mjs
 scripts/inspect-websocket.mjs
 scripts/run-control-plane
 scripts/run-production
+scripts/smoke-startup.mjs
+scripts/test-bootstrap-lisp-deps.mjs
 scripts/test-lisp
 scripts/test-wireless-persistence
 systems/quasar-control.asd
@@ -198,6 +222,8 @@ vendor/star-cl/starintel-v090.asd
 ## Test and CI paths touched, last 14 days
 
 ```text
+control-plane/tests/bounded-read-benchmark.lisp
+control-plane/tests/bounded-read-tests.lisp
 control-plane/tests/control-plane-tests.lisp
 control-plane/tests/logging-tests.lisp
 control-plane/tests/melissa-restart-tests.lisp
@@ -219,10 +245,16 @@ frontend/tests/fixtures/wireless/kismet.jsonl
 frontend/tests/fixtures/wireless/wigle.csv
 frontend/tests/unit/control-plane-client.test.ts
 frontend/tests/unit/status-center.test.jsx
+scripts/benchmark-bounded-reads
 scripts/bootstrap-lisp-deps
+scripts/check-control-plane-deps.mjs
+scripts/check-tek9-nix-source.mjs
+scripts/dev.mjs
 scripts/inspect-websocket.mjs
 scripts/run-control-plane
 scripts/run-production
+scripts/smoke-startup.mjs
+scripts/test-bootstrap-lisp-deps.mjs
 scripts/test-lisp
 scripts/test-wireless-persistence
 systems/quasar-control.asd

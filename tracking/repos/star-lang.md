@@ -1,15 +1,24 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-10-10T23:35:43Z`
+- generated: `2026-10-11T05:52:41Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`bd82ff644ac149b59cc5c58b49f246f031e43f7f`](https://github.com/lost-rob0t/star-lang/commit/bd82ff644ac149b59cc5c58b49f246f031e43f7f)
-- head date: `2026-10-10T11:06:23-04:00`
-- head subject: Merge pull request #206 from lost-rob0t/feat/204-complete-0101-compatibility-bundle
+- head: [`1876a5545db5e5a64b6a75e675f8d60a6bad3385`](https://github.com/lost-rob0t/star-lang/commit/1876a5545db5e5a64b6a75e675f8d60a6bad3385)
+- head date: `2026-10-10T22:30:41-04:00`
+- head subject: Merge pull request #214 from lost-rob0t/fix/process-drain-termination-ack-20261011
 
 ## Git log, last 14 days
 
 ```text
+2026-10-10 1876a5545db5e5a64b6a75e675f8d60a6bad3385 Merge pull request #214 from lost-rob0t/fix/process-drain-termination-ack-20261011
+2026-10-10 e8bb001cb521381af984de1649ec642138c52519 fix(process-port): reserve cleanup budget for termination joins
+2026-10-10 5c5e7454f7cd735cf53a2b2e992401718a5f47a6 test(process-port): reproduce asynchronous capture termination race
+2026-10-10 bfba04a15f43215cd323e1dde2d98a7343abb3ea Merge pull request #213 from lost-rob0t/feat/swi-relation-neighbors-20261011
+2026-10-10 6da7190ffa5a59ff45f6a2beb19b5720d6e8ac26 fix: reject malformed SWI sessions before generic diagnostic fallback
+2026-10-10 78af108c1e43bc04fb35dbc611a97d293c639277 feat: execute bounded relation-neighbors through supervised SWI sessions
+2026-10-10 a551fdf0a60a4901dd57c559bad36f8c905b0dc6 test: bound circular backend diagnostics for unsupported-method RED
+2026-10-10 1fe0061c5fee594ea810d05d029b55f173213a0e test: register relation regressions in the real integration suite
+2026-10-10 6c95539ae2ec23a0867a38ba41df2aca5803ba12 test: prove bounded relation query is missing from real SWI adapter
 2026-10-10 bd82ff644ac149b59cc5c58b49f246f031e43f7f Merge pull request #206 from lost-rob0t/feat/204-complete-0101-compatibility-bundle
 2026-10-10 d238e8c3dcfd1d8ca787b084a56614360cbbe295 Merge pull request #209 from lost-rob0t/fix/208-drift-bundle-parity
 2026-10-10 27a9f6422b15ae6fcd15bb075e57fab2bde47e11 Merge pull request #205 from lost-rob0t/fix/204-consumer-bundle-path-prerequisites
@@ -156,6 +165,19 @@ star-canonical-json/src/starlang-wire-json.lisp
 star-document-bus/src/document-bus.lisp
 star-document-bus/star-document-bus.asd
 star-document-bus/tests/document-bus-tests.lisp
+star-logic-adapter-swi/README.md
+star-logic-adapter-swi/prolog/star_logic_bootstrap.pl
+star-logic-adapter-swi/src/adapter.lisp
+star-logic-adapter-swi/src/conditions.lisp
+star-logic-adapter-swi/src/identity.lisp
+star-logic-adapter-swi/src/relations.lisp
+star-logic-adapter-swi/star-logic-adapter-swi.asd
+star-logic-adapter-swi/tests/relation-tests.lisp
+star-logic-adapter-swi/tests/star-logic-adapter-swi-integration-tests.asd
+star-process-port/README.md
+star-process-port/src/process.lisp
+star-process-port/star-process-port.asd
+star-process-port/tests/star-process-port-tests.lisp
 star-zmq/src/wire.lisp
 star-zmq/star-zmq-actors.asd
 starlang-compiler/src/bindings-lisp-prolog.lisp
@@ -198,6 +220,11 @@ star-actor-wire/tests/exact-wire-smoke.lisp
 star-actor-wire/tests/test_exact_document.py
 star-document-bus/star-document-bus.asd
 star-document-bus/tests/document-bus-tests.lisp
+star-logic-adapter-swi/star-logic-adapter-swi.asd
+star-logic-adapter-swi/tests/relation-tests.lisp
+star-logic-adapter-swi/tests/star-logic-adapter-swi-integration-tests.asd
+star-process-port/star-process-port.asd
+star-process-port/tests/star-process-port-tests.lisp
 star-zmq/star-zmq-actors.asd
 starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
