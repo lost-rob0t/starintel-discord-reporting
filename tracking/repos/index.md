@@ -21,7 +21,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `7613609b9630`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `6aa8051dc7ea`
-- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `64c101af3ca8`
+- [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `a4309f2d1f0e`
 - [lost-rob0t/starintel-server](./starintel-server.md) `0137ead90ab9`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `481fa64750c3`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
