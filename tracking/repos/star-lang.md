@@ -1,15 +1,17 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-10-11T05:52:41Z`
+- generated: `2026-10-11T12:56:26Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`1876a5545db5e5a64b6a75e675f8d60a6bad3385`](https://github.com/lost-rob0t/star-lang/commit/1876a5545db5e5a64b6a75e675f8d60a6bad3385)
-- head date: `2026-10-10T22:30:41-04:00`
-- head subject: Merge pull request #214 from lost-rob0t/fix/process-drain-termination-ack-20261011
+- head: [`4c8d1e19249a5030b7d97f953f694c09849b9131`](https://github.com/lost-rob0t/star-lang/commit/4c8d1e19249a5030b7d97f953f694c09849b9131)
+- head date: `2026-10-11T03:28:27-04:00`
+- head subject: Merge pull request #216 from lost-rob0t/feat/kb-producer-runtime
 
 ## Git log, last 14 days
 
 ```text
+2026-10-11 4c8d1e19249a5030b7d97f953f694c09849b9131 Merge pull request #216 from lost-rob0t/feat/kb-producer-runtime
+2026-10-11 73a1406dd29903e9b7024fe59ff9c804837b33c8 build(runtime): export existing installed SBCL and SWI producer boundary
 2026-10-10 1876a5545db5e5a64b6a75e675f8d60a6bad3385 Merge pull request #214 from lost-rob0t/fix/process-drain-termination-ack-20261011
 2026-10-10 e8bb001cb521381af984de1649ec642138c52519 fix(process-port): reserve cleanup budget for termination joins
 2026-10-10 5c5e7454f7cd735cf53a2b2e992401718a5f47a6 test(process-port): reproduce asynchronous capture termination race
@@ -90,6 +92,7 @@ docs/DOCUMENT-BUS-CONFORMANCE.md
 docs/DOMAIN-SERVICE-CONTRACT.md
 docs/LANGUAGE-SUPPORT.md
 docs/implementation-slices/ACTOR-RUNTIME-MIGRATION-MATRIX.md
+docs/implementation-slices/FINAL-RUNTIME-OWNERSHIP-ACTORS-INGEST.md
 fixtures/actor2actor/lifecycle-v1/README.md
 fixtures/actor2actor/lifecycle-v1/accepted.json
 fixtures/actor2actor/lifecycle-v1/cancel.json

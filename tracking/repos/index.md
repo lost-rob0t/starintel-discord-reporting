@@ -10,9 +10,9 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/star-app](./star-app.md) `5f727b477a06`
 - [lost-rob0t/star-cl](./star-cl.md) `33935f1e6739`
 - [lost-rob0t/star-config](./star-config.md) `18fe264cea86`
-- [lost-rob0t/star-db-bot](./star-db-bot.md) `f376c60eec13`
+- [lost-rob0t/star-db-bot](./star-db-bot.md) `fd27627e800a`
 - [lost-rob0t/star-formatter](./star-formatter.md) `2cc01b708208`
-- [lost-rob0t/star-lang](./star-lang.md) `1876a5545db5`
+- [lost-rob0t/star-lang](./star-lang.md) `4c8d1e19249a`
 - [lost-rob0t/star-router-cli](./star-router-cli.md) `5c9be69ae8fe`
 - [lost-rob0t/star-synthdata](./star-synthdata.md) `687d9f17be92`
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
