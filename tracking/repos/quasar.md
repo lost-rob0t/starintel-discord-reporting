@@ -1,21 +1,28 @@
 # lost-rob0t/quasar
 
-- generated: `2026-10-13T16:03:18Z`
+- generated: `2026-10-13T21:18:32Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
-- head: [`f387ad2e36aaef7d1ccd3908e70c979b3e12f577`](https://github.com/lost-rob0t/quasar/commit/f387ad2e36aaef7d1ccd3908e70c979b3e12f577)
-- head date: `2026-10-10T23:22:01-04:00`
-- head subject: Merge pull request #107 from lost-rob0t/feat/bounded-workbench-reads
+- head: [`3a6449a0db2f99ed90000e95bbeb3b22e281184c`](https://github.com/lost-rob0t/quasar/commit/3a6449a0db2f99ed90000e95bbeb3b22e281184c)
+- head date: `2026-10-13T14:57:28-04:00`
+- head subject: Merge PR #108: fetch identical pinned Tek9 from public mirror
 
 ## Git log, last 14 days
 
 ```text
+2026-10-13 3a6449a0db2f99ed90000e95bbeb3b22e281184c Merge PR #108: fetch identical pinned Tek9 from public mirror
+2026-10-13 9303835a6c982c9c2036e5ab044df1ec149a42c6 Fetch pinned Tek9 content from its verified public mirror
+2026-10-13 3f44c34d75589cdc574205e642be9991eb63e029 Merge PR #106: repair reusable Nix runtime packaging
+2026-10-13 cb1a088d288b799de0b45c7d239ae7c9b935f18c Run package closure check within the existing Nix runtime CI job
+2026-10-13 71e08593ce2c1395179ea8b270b89c402d374ffd Merge current Quasar main into the runtime packaging repair
+2026-10-13 f0902b54d37ab85a171e969b4b33acfd08150f3c Fix Quasar runtime ASDF package list and build it in CI
 2026-10-10 f387ad2e36aaef7d1ccd3908e70c979b3e12f577 Merge pull request #107 from lost-rob0t/feat/bounded-workbench-reads
 2026-10-10 2d6c23517c24d80653d227bbb4f492b1003ac4de fix: validate workspace admission and bound query continuations
 2026-10-10 ee715bfcd1e0f943d4e17cdd1cdd3ae8de75bdd6 test: expose workspace admission and cursor size regressions
 2026-10-10 3b844b7d5fabf43769ef060119dd79b6a1f46d6a fix: verify pinned Nix Tek9 source before bootstrap
 2026-10-10 64859785eb40b3ce14090d09f021b088dfa47a66 feat: add bounded Tek9 bootstrap and document queries
 2026-10-10 8199962373a9733b6dddda54e25ee6a7508cd835 Merge pull request #105 from lost-rob0t/fix/websocket-disconnections
+2026-10-10 698e8b05a6e67870d95dd83542057001d75ffe01 fix(nix): synchronize npm dependency hash with lockfile
 2026-10-10 71fa10936df54ac130eaaa515c67cc6fd62d0873 fix: reconcile websocket recovery and workspace loading status
 2026-10-06 9079604f766990db7f9b8998705862c4fa914c45 Merge pull request #103 from lost-rob0t/feat/tek9-wireless-source-imports
 2026-10-06 593e6836fd95d5e20d8bf84f56aa37378594336b fix: adapt target submissions to the server v1 command contract
@@ -37,6 +44,7 @@
 ## Repository paths changed, last 14 days
 
 ```text
+.github/workflows/ci.yml
 .prolog/kb/bounded_reads.pl
 .prolog/kb/index.pl
 .prolog/kb/starintel_actor_registry.pl
@@ -90,6 +98,7 @@ docs/WEBSOCKET-DEBUGGING.md
 docs/WIRELESS-IMPORTS.md
 docs/bounded-read-measurements.json
 example_configs/init.lisp
+flake.lock
 flake.nix
 frontend/docs/STARINTEL-0101-MIGRATION.md
 frontend/e2e/actor-settings.spec.ts
@@ -222,6 +231,7 @@ vendor/star-cl/starintel-v090.asd
 ## Test and CI paths touched, last 14 days
 
 ```text
+.github/workflows/ci.yml
 control-plane/tests/bounded-read-benchmark.lisp
 control-plane/tests/bounded-read-tests.lisp
 control-plane/tests/control-plane-tests.lisp
