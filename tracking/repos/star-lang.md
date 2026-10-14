@@ -1,6 +1,6 @@
 # lost-rob0t/star-lang
 
-- generated: `2026-10-14T01:15:16Z`
+- generated: `2026-10-14T07:41:57Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`4c8d1e19249a5030b7d97f953f694c09849b9131`](https://github.com/lost-rob0t/star-lang/commit/4c8d1e19249a5030b7d97f953f694c09849b9131)
@@ -73,7 +73,6 @@
 2026-10-03 2a39ae8313962e3cd3d569c317d321fe2b3a1089 ci(starintel): commit regenerated release artifacts
 2026-10-03 c9ecf8c0c4fa12453c8091351c889afb08bea4a6 ci(starintel): upload regenerated release preview
 2026-10-03 f0f14fb08d71df8dc861087f37e424bfddb8c53a feat(starintel): add mission and spatial contracts
-2026-09-30 919833266723edc9bddb337d606f72ae25fb8ced feat(starintel): finalize Star-Lang 0.10.1 authority
 ```
 
 ## Repository paths changed, last 14 days
@@ -84,8 +83,6 @@
 .github/workflows/starintel-bundle.yml
 .github/workflows/starintel-release-preview.yml
 .gitignore
-.prolog/kb/load.pl
-.prolog/kb/starintel-authority.pl
 CHANGELOG.md
 ci/target-systems.txt
 docs/DOCUMENT-BUS-CONFORMANCE.md
@@ -106,14 +103,11 @@ fixtures/actor2actor/lifecycle-v1/unknown.json
 flake.nix
 prototype/binding-generator-prototype.lisp
 prototype/canonical-json-binding-tests.lisp
-prototype/star-loader-tests.lisp
 specs/starintel/0.10.1/GEO-MISSION-MIGRATION.md
 specs/starintel/0.10.1/NETWORK-CAPTURE-MIGRATION.md
 specs/starintel/0.10.1/RESEARCH-CONTRACTS.md
 specs/starintel/0.10.1/SUPPORTED-WORKFLOWS.md
 specs/starintel/0.10.1/bundle-lock.json
-specs/starintel/0.10.1/compatibility-fixtures.json
-specs/starintel/0.10.1/compatibility.json
 specs/starintel/0.10.1/core.star
 specs/starintel/0.10.1/generated/portable-manifest.json
 specs/starintel/0.10.1/generated/schema.json
@@ -125,7 +119,6 @@ specs/starintel/0.10.1/legacy-workflow-oracle.json
 specs/starintel/0.10.1/operation_semantics.py
 specs/starintel/0.10.1/release-lock.json
 specs/starintel/0.10.1/research-fixtures.json
-specs/starintel/0.10.1/schema-lock-manifest.json
 specs/starintel/0.10.1/supported-workflow-fixtures.json
 specs/starintel/0.10.1/supported-workflow-inventory.json
 specs/starintel/0.10.1/supported-workflow-mappings.json
@@ -183,14 +176,8 @@ star-process-port/star-process-port.asd
 star-process-port/tests/star-process-port-tests.lisp
 star-zmq/src/wire.lisp
 star-zmq/star-zmq-actors.asd
-starlang-compiler/src/bindings-lisp-prolog.lisp
-starlang-compiler/src/core-surface.lisp
-starlang-compiler/src/json-schema.lisp
-starlang-compiler/src/public-surface.lisp
-starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
 tools/finalize-starintel-release.py
-tools/generate-starintel-release.lisp
 tools/report-starintel-consumer-drift.py
 tools/sync-starintel-consumer.py
 tools/test-starintel-consumer-drift.py
@@ -229,6 +216,5 @@ star-logic-adapter-swi/tests/star-logic-adapter-swi-integration-tests.asd
 star-process-port/star-process-port.asd
 star-process-port/tests/star-process-port-tests.lisp
 star-zmq/star-zmq-actors.asd
-starlang-compiler/starlang-compiler.asd
 starlang-compiler/tests/starlang-compiler-tests.lisp
 ```
