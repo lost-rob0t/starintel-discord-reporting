@@ -1,163 +1,73 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-15T04:46:12Z`
+- generated: `2026-10-24T16:00:26Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`69f16070ecba35c12a7d4df6503c3a3f30bf9e1e`](https://github.com/lost-rob0t/zara/commit/69f16070ecba35c12a7d4df6503c3a3f30bf9e1e)
-- head date: `2026-10-04T01:25:00-04:00`
-- head subject: Merge pull request #1500 from lost-rob0t/feat/desktop-prolog-ide
+- head: [`034d6b23077b543cb5d2ed8b177411bd5179ac4a`](https://github.com/lost-rob0t/zara/commit/034d6b23077b543cb5d2ed8b177411bd5179ac4a)
+- head date: `2026-10-18T21:05:36-04:00`
+- head subject: Merge PR #1524: retain copyable Android chat error details
 
 ## Git log, last 14 days
 
 ```text
-2026-10-04 69f16070ecba35c12a7d4df6503c3a3f30bf9e1e Merge pull request #1500 from lost-rob0t/feat/desktop-prolog-ide
-2026-10-04 aa6ea0a634fd41d8c88795018e4f14b34bc954bb feat(desktop): add full Prolog IDE workspace
-2026-10-03 b14b1ebef8867dcf1f97482377cdd35d80ef5714 Merge pull request #1499 from lost-rob0t/rage/1333-desktop-android-ui-parity
-2026-10-03 2d34d93f1c86211f34412f9e5d786e34f03898a4 Refresh desktop UI from Android design
-2026-10-03 a0b661ffacb885607d972ac8eeddcdcfa4777866 Merge pull request #1498 from lost-rob0t/codex/zara-health-phone-watch
-2026-10-03 cc5be4aee9caa246a9cda5662748b3b5ddd353bd feat: add Zara Health goal complications
-2026-10-03 3db0c101beaa2e847b4fe970eea654f701bb5bcb chore: promote Zara 0.4.0-alpha
-2026-10-03 a2487b33c43c53543ea9c4b57a2ce544e4358b09 feat: add secure Zara Health phone and Wear surfaces
+2026-10-18 034d6b23077b543cb5d2ed8b177411bd5179ac4a Merge PR #1524: retain copyable Android chat error details
+2026-10-18 1a83ec47988a625eee89a5ca6912c0af49b66efd test(android): reveal remote reply after retained error history #1523
+2026-10-18 9618ca6ef3148ce5307f251c3c877f9acdd51f5d test(android): reveal completed recovery reply before asserting #1523
+2026-10-18 9efd3767871bc8d1132b51167e468d7ceb5d3fa0 fix(test): install Android instrumentation APK with test-only flag
+2026-10-18 60d3fd67f29d9b1ea018f5628a8ef3644849a78e test(android): require diagnostic payload in failed-turn persistence wiring
+2026-10-18 d012851d863cb775f395c7b1a83608f56c39b0e9 fix(android): forward error copy through pairing-enabled chat shell
+2026-10-18 5b87bd18e18c6a7cc8593276f5d9390a841ca434 fix(test): preserve executable Android acceptance runner
+2026-10-18 c3bcd1b395559221c869dbb2d89bf0f7a7513174 test(android): prove restored error details reach the real clipboard
+2026-10-18 7ed1457bfd930dde87ffebc3d8adce7649c1ee5c fix(android): retain copyable diagnostics beneath failed chat messages (#1523)
+2026-10-17 d8fdbed9d1fb466c0ce3d700f9fb9a9f5665e731 Merge PR #1514: service-plugin startup order and configured tool rollback
+2026-10-17 3169bc1774f2c52fb3b526acdd4128fa17706165 fix(plugins): start services before constructing configured tools (#893)
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.github/workflows/android-latest.yml
-.github/workflows/ci.yml
-.github/workflows/release.yml
-.prolog/kb/desktop_copilot_ui.pl
-.prolog/kb/desktop_prolog_ide.pl
-.prolog/kb/index.pl
 CHANGELOG.md
-android/.gitignore
-android/app/build.gradle.kts
-android/app/src/main/AndroidManifest.xml
+android/app/src/androidTest/java/ai/zara/app/ui/ChatErrorClipboardInstrumentedTest.kt
+android/app/src/main/java/ai/zara/app/AndroidAppSession.kt
 android/app/src/main/java/ai/zara/app/MainActivity.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/HealthGoalStore.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStore.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/HealthPrologExport.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/OpenPgpHealthExporter.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthAndroidPlugin.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthPlugin.kt
-android/app/src/main/java/ai/zara/app/samsunghealth/SamsungHealthUiState.kt
-android/app/src/main/java/ai/zara/app/ui/AppNavigation.kt
+android/app/src/main/java/ai/zara/app/conversations/ConversationStore.kt
+android/app/src/main/java/ai/zara/app/diagnostics/ChatErrorDetails.kt
+android/app/src/main/java/ai/zara/app/runtime/ZaraTextClientActor.kt
+android/app/src/main/java/ai/zara/app/telemetry/ClientEventJournal.kt
+android/app/src/main/java/ai/zara/app/telemetry/SessionTelemetry.kt
 android/app/src/main/java/ai/zara/app/ui/PairingZaraApp.kt
 android/app/src/main/java/ai/zara/app/ui/ZaraApp.kt
-android/app/src/main/java/ai/zara/app/ui/ZaraHealthSurface.kt
-android/app/src/main/java/ai/zara/app/watch/WearCompanionLinkService.kt
-android/app/src/main/java/ai/zara/app/watch/WearCompanionProvisionSource.kt
-android/app/src/main/res/xml/zara_file_paths.xml
-android/app/src/samsungHealthSdk/java/ai/zara/app/samsunghealth/sdk/SamsungHealthSdkGateway.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/OpenPgpHealthExporterTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiringContractTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
-android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
-android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/gradle/libs.versions.toml
-android/shared-ui/src/main/java/ai/zara/ui/continuity/WearCompanionContract.kt
-android/shared-ui/src/main/java/ai/zara/ui/health/ZaraHealthCatalog.kt
-android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
-android/wear-app/build.gradle.kts
-android/wear-app/libs/README.md
-android/wear-app/src/main/AndroidManifest.xml
-android/wear-app/src/main/java/ai/zara/wear/WearCompanionClient.kt
-android/wear-app/src/main/java/ai/zara/wear/WearCompanionLinkService.kt
-android/wear-app/src/main/java/ai/zara/wear/WearMainActivity.kt
-android/wear-app/src/main/java/ai/zara/wear/health/WearHealth.kt
-android/wear-app/src/main/java/ai/zara/wear/health/ZaraHealthGoalComplicationService.kt
-android/wear-app/src/main/java/ai/zara/wear/health/ZaraWearHealthSurface.kt
-android/wear-app/src/samsungHealthSensorSdk/java/ai/zara/wear/health/sdk/SamsungHealthSensorGateway.kt
-android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
-android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
-android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-main.pl
-modules/health_reasoning.pl
-rage/1333-desktop-android-ui-parity-design.org
-rage/1333-desktop-android-ui-parity-research.org
-rage/1333-desktop-android-ui-parity.org
-server_main.pl
-setup.py
-t/health_reasoning.pl
-t/test_android_release_contract.py
-t/test_config.py
-t/test_copilot_screenshot_fixtures.py
-t/test_daemon_security_policy.py
-t/test_desktop_mobile_parity.py
-t/test_desktop_preferences.py
-t/test_desktop_settings_window.py
-t/test_desktop_theme.py
-t/test_health_cli.py
-t/test_health_store.py
-t/test_org_desktop_screenshot_fixtures.py
-t/test_packaging.py
-t/test_protocol_runtime.py
-t/test_runtime_host.py
-t/test_runtime_intent_routing.py
-t/test_zmq_transport.py
-version.properties
-wiki/android-samsung-health.org
-wiki/desktop-design.org
-zara/__main__.py
-zara/config.py
-zara/desktop/app.py
-zara/desktop/controller.py
-zara/desktop/org_fixtures.py
-zara/desktop/prolog_studio.py
-zara/desktop/theme.py
-zara/desktop/ui_fixtures.py
-zara/desktop/windows/copilot.py
-zara/desktop/windows/quick.py
-zara/desktop/windows/settings.py
-zara/health_cli.py
-zara/health_store.py
-zara/protocol.py
-zara/protocol_runtime.py
+android/app/src/test/java/ai/zara/app/conversations/ConversationErrorDetailsTest.kt
+android/app/src/test/java/ai/zara/app/diagnostics/ChatErrorDetailsTest.kt
+android/app/src/test/java/ai/zara/app/diagnostics/ChatErrorWiringTest.kt
+android/app/src/test/java/ai/zara/app/telemetry/SessionTelemetryTest.kt
+android/app/src/test/java/ai/zara/app/ui/ConversationHistoryWiringContractTest.kt
+android/integration/chat_error_acceptance.py
+android/integration/device_acceptance.py
+android/integration/device_remote_acceptance.py
+rage/1523-chat-error-details-20261018.org
+scripts/test-android-emulator-install.sh
+t/test_android_chat_error_acceptance.py
+t/test_android_device_acceptance_uiautomator.py
+t/test_android_remote_acceptance_packaging.py
+t/test_service_plugin_start_order.py
+wiki/android.org
+wiki/plugins.org
+zara/plugins/manager.py
 zara/runtime/backend.py
-zara/runtime/commands.py
-zara/runtime/host.py
-zara/security_gateway.py
-zara/zmq_transport.py
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
-.github/workflows/android-latest.yml
-.github/workflows/ci.yml
-.github/workflows/release.yml
-android/app/src/test/java/ai/zara/app/samsunghealth/HealthGoalStoreTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/HealthOpenPgpRecipientStoreTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/HealthPrologExportTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/OpenPgpHealthExporterTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthApplicationWiringContractTest.kt
-android/app/src/test/java/ai/zara/app/samsunghealth/SamsungHealthPluginTest.kt
-android/app/src/test/java/ai/zara/app/ui/AppNavigationContract.kt
-android/app/src/test/java/ai/zara/app/ui/AppNavigationTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/continuity/WearCompanionContractTest.kt
-android/shared-ui/src/test/java/ai/zara/ui/health/ZaraHealthCatalogTest.kt
-android/wear-app/src/test/java/ai/zara/wear/WearCompanionWiringContractTest.kt
-android/wear-app/src/test/java/ai/zara/wear/WearHealthControllerTest.kt
-android/wear-app/src/test/java/ai/zara/wear/ZaraHealthGoalComplicationTest.kt
-t/health_reasoning.pl
-t/test_android_release_contract.py
-t/test_config.py
-t/test_copilot_screenshot_fixtures.py
-t/test_daemon_security_policy.py
-t/test_desktop_mobile_parity.py
-t/test_desktop_preferences.py
-t/test_desktop_settings_window.py
-t/test_desktop_theme.py
-t/test_health_cli.py
-t/test_health_store.py
-t/test_org_desktop_screenshot_fixtures.py
-t/test_packaging.py
-t/test_protocol_runtime.py
-t/test_runtime_host.py
-t/test_runtime_intent_routing.py
-t/test_zmq_transport.py
+android/app/src/test/java/ai/zara/app/conversations/ConversationErrorDetailsTest.kt
+android/app/src/test/java/ai/zara/app/diagnostics/ChatErrorDetailsTest.kt
+android/app/src/test/java/ai/zara/app/diagnostics/ChatErrorWiringTest.kt
+android/app/src/test/java/ai/zara/app/telemetry/SessionTelemetryTest.kt
+android/app/src/test/java/ai/zara/app/ui/ConversationHistoryWiringContractTest.kt
+scripts/test-android-emulator-install.sh
+t/test_android_chat_error_acceptance.py
+t/test_android_device_acceptance_uiautomator.py
+t/test_android_remote_acceptance_packaging.py
+t/test_service_plugin_start_order.py
 ```
