@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-discord-reporting
 
-- generated: `2026-10-28T22:39:01Z`
+- generated: `2026-10-29T05:54:02Z`
 - canonical branch: `main`
 - changelog eligible: `no`
-- head: [`a767d488144aa0f634a52415b9dea83435875234`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/a767d488144aa0f634a52415b9dea83435875234)
-- head date: `2026-10-28T16:41:38Z`
+- head: [`e7c23d77b94cf5496ea42f17f5924b0b8d54e84b`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/e7c23d77b94cf5496ea42f17f5924b0b8d54e84b)
+- head date: `2026-10-28T22:39:05Z`
 - head subject: tracking: refresh StarIntel repo snapshots
 
 ## Git log, last 14 days
 
 ```text
+2026-10-28 e7c23d77b94cf5496ea42f17f5924b0b8d54e84b tracking: refresh StarIntel repo snapshots
 2026-10-28 a767d488144aa0f634a52415b9dea83435875234 tracking: refresh StarIntel repo snapshots
 2026-10-28 cda710292d8285e2b53a733b23877e5a64a3455d tracking: refresh StarIntel repo snapshots
 2026-10-28 58296dd74b4bdbe0a0f527f71d1927edffecd126 tracking: refresh StarIntel repo snapshots
@@ -28,8 +29,6 @@
 2026-10-24 30f224e9c89a14d70924503147b531441ab74fc5 tracking: refresh StarIntel repo snapshots
 2026-10-24 b1a0c88a8a246eea8094aa979acd48f31da5502a tracking: refresh StarIntel repo snapshots
 2026-10-24 a0932569eca6093c013d3f53a4f642e7e844bca7 tracking: refresh StarIntel repo snapshots
-2026-10-15 f2be9663fd0d3fc17492ddd7cbb73fedef5a8aa3 tracking: refresh StarIntel repo snapshots
-2026-10-14 0b4116e34f79ef129ca1fd1dfe71b36a3f294db7 tracking: refresh StarIntel repo snapshots
 ```
 
 ## Repository paths changed, last 14 days
@@ -40,14 +39,11 @@ tracking/repos/hackmode.md
 tracking/repos/index.md
 tracking/repos/prolog-rlm.md
 tracking/repos/quasar-ui.md
-tracking/repos/quasar.md
 tracking/repos/star-app.md
 tracking/repos/star-bbpd.md
 tracking/repos/star-cl.md
 tracking/repos/star-config.md
-tracking/repos/star-db-bot.md
 tracking/repos/star-formatter.md
-tracking/repos/star-lang.md
 tracking/repos/star-router-cli.md
 tracking/repos/star-synthdata.md
 tracking/repos/starReplay.md
@@ -58,7 +54,6 @@ tracking/repos/starintel-discord-tool.md
 tracking/repos/starintel-doc.md
 tracking/repos/starintel-doc.nim.md
 tracking/repos/starintel-gpt-auto-dig.md
-tracking/repos/starintel-server.md
 tracking/repos/starintel-social-presence.md
 tracking/repos/starintel_doc.js.md
 tracking/repos/starintel_parser.md
