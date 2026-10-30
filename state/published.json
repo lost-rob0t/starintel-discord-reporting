@@ -35,6 +35,10 @@
     "reports/starintel-updates-changelog/2026-09-05T06-49-11Z-report.md": {
       "reason": "missing changes heading; changelog needs a direct landed commit link",
       "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-10-30T21-13-00Z-report.md": {
+      "reason": "missing configured destination secret for starintel-updates-changelog",
+      "status": "blocked"
     }
   },
   "delivery_receipts": {
