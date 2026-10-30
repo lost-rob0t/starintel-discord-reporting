@@ -19,7 +19,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
 - [lost-rob0t/starRouter](./starRouter.md) `843188aa09d8`
 - [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `d8c69c4c0ccc`
-- [lost-rob0t/starintel-discord-reporting](./starintel-discord-reporting.md) `79d16b299a9c`
+- [lost-rob0t/starintel-discord-reporting](./starintel-discord-reporting.md) `e08f18b31c32`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `7613609b9630`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `6aa8051dc7ea`
