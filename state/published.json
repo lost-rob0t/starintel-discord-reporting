@@ -35,6 +35,10 @@
     "reports/starintel-updates-changelog/2026-09-05T06-49-11Z-report.md": {
       "reason": "missing changes heading; changelog needs a direct landed commit link",
       "status": "blocked"
+    },
+    "reports/starintel-updates-changelog/2026-10-30T21-30-00Z-report.md": {
+      "reason": "duplicate report: FOLLOW-UP reuses only already-delivered provenance; add genuinely new landed provenance or make it a CORRECTION",
+      "status": "blocked"
     }
   },
   "delivery_receipts": {
@@ -2802,7 +2806,7 @@
     }
   },
   "last_backlog_scan": {
-    "blocked": 9,
+    "blocked": 10,
     "delivered_this_run": {
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
@@ -2810,7 +2814,7 @@
       "starintel-updates-changelog": 0
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 234,
+    "total_reports": 235,
     "verified_deliveries": 225
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
