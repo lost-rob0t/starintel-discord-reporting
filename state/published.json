@@ -35,10 +35,6 @@
     "reports/starintel-updates-changelog/2026-09-05T06-49-11Z-report.md": {
       "reason": "missing changes heading; changelog needs a direct landed commit link",
       "status": "blocked"
-    },
-    "reports/starintel-updates-changelog/2026-10-30T21-13-00Z-report.md": {
-      "reason": "missing configured destination secret for starintel-updates-changelog",
-      "status": "blocked"
     }
   },
   "delivery_receipts": {
@@ -2780,6 +2776,18 @@
       "report_digest": "05303623289f73a4c4d89ce01ad7556b44f17e310eb0ab7bf11e9ec9ee056dee",
       "status": "verified-delivered"
     },
+    "reports/starintel-updates-changelog/2026-10-30T21-13-00Z-report.md": {
+      "accepted_at": "2026-10-30T21:22:18.353089+00:00",
+      "attempted_at": "2026-10-30T21:22:18.353089+00:00",
+      "channel_id": "1539717118218469416",
+      "channel_name": "StarIntel Shipyard",
+      "delivered_at": "2026-10-30T21:22:18.353089+00:00",
+      "message_ids": [
+        "1565838280736383157"
+      ],
+      "report_digest": "4aaf7f3fa19c5f94abd1702b9f677eebb87a575a3effe88c1221902f6ae6a942",
+      "status": "verified-delivered"
+    },
     "reports/starintel-updates-changelog/20260823T041100Z-seventh-gen-deployment-report.md": {
       "accepted_at": "2026-08-23T05:52:37.395312+00:00",
       "attempted_at": "2026-08-23T05:52:37.395312+00:00",
@@ -2799,11 +2807,11 @@
       "auto-dig-findings": 0,
       "findings-shitposts": 0,
       "lost-robot-changelog": 0,
-      "starintel-updates-changelog": 0
+      "starintel-updates-changelog": 1
     },
     "stale_blockers_pruned": 0,
-    "total_reports": 233,
-    "verified_deliveries": 224
+    "total_reports": 234,
+    "verified_deliveries": 225
   },
   "manual_cursor": "76f0021875e631c639794a39e67782041deb8944",
   "posted": [
