@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-10-31T12:39:15Z`
+- generated: `2026-10-31T18:35:39Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`f97596b0a63c9a0184fcc813bb3783e3df31eb9c`](https://github.com/lost-rob0t/starintel-server/commit/f97596b0a63c9a0184fcc813bb3783e3df31eb9c)
-- head date: `2026-10-30T19:28:08-04:00`
-- head subject: Merge pull request #357 from lost-rob0t/rage/37-consumer-reconnect
+- head: [`55deeee3aa6ff7141279562dabba071c2feeb025`](https://github.com/lost-rob0t/starintel-server/commit/55deeee3aa6ff7141279562dabba071c2feeb025)
+- head date: `2026-10-31T14:19:50-04:00`
+- head subject: Merge pull request #358 from lost-rob0t/fts-default-field
 
 ## Git log, last 14 days
 
 ```text
+2026-10-31 55deeee3aa6ff7141279562dabba071c2feeb025 Merge pull request #358 from lost-rob0t/fts-default-field
+2026-10-31 dd5c41c596652281cf32de4db693b4c09a9a42af fts: index document text into the Lucene default field
 2026-10-30 f97596b0a63c9a0184fcc813bb3783e3df31eb9c Merge pull request #357 from lost-rob0t/rage/37-consumer-reconnect
 2026-10-30 eedf8440ea424a84f32926c0364c1c2c8e1fbc0d fix(consumers): bounded transport reconnect in run-consumer (issue #37)
 2026-10-30 630e97898e7361ed2557212523789e1d050adafc fix(consumers): reopen stream at top of each reconnect session; repair paren/declare placement
@@ -86,6 +88,7 @@ source/frontends/http-contract-routes.lisp
 source/package.lisp
 source/runtime-lifecycle.lisp
 source/views/data.json
+source/views/search.json
 starintel-actor-credentials.asd
 starintel-gserver-tests.asd
 t/actor-credentials-test.lisp
