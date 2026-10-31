@@ -1,6 +1,6 @@
 # lost-rob0t/zara
 
-- generated: `2026-10-31T18:35:48Z`
+- generated: `2026-10-31T23:25:58Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`034d6b23077b543cb5d2ed8b177411bd5179ac4a`](https://github.com/lost-rob0t/zara/commit/034d6b23077b543cb5d2ed8b177411bd5179ac4a)
@@ -19,8 +19,6 @@
 2026-10-18 5b87bd18e18c6a7cc8593276f5d9390a841ca434 fix(test): preserve executable Android acceptance runner
 2026-10-18 c3bcd1b395559221c869dbb2d89bf0f7a7513174 test(android): prove restored error details reach the real clipboard
 2026-10-18 7ed1457bfd930dde87ffebc3d8adce7649c1ee5c fix(android): retain copyable diagnostics beneath failed chat messages (#1523)
-2026-10-17 d8fdbed9d1fb466c0ce3d700f9fb9a9f5665e731 Merge PR #1514: service-plugin startup order and configured tool rollback
-2026-10-17 3169bc1774f2c52fb3b526acdd4128fa17706165 fix(plugins): start services before constructing configured tools (#893)
 ```
 
 ## Repository paths changed, last 14 days
@@ -50,11 +48,7 @@ scripts/test-android-emulator-install.sh
 t/test_android_chat_error_acceptance.py
 t/test_android_device_acceptance_uiautomator.py
 t/test_android_remote_acceptance_packaging.py
-t/test_service_plugin_start_order.py
 wiki/android.org
-wiki/plugins.org
-zara/plugins/manager.py
-zara/runtime/backend.py
 ```
 
 ## Test and CI paths touched, last 14 days
@@ -69,5 +63,4 @@ scripts/test-android-emulator-install.sh
 t/test_android_chat_error_acceptance.py
 t/test_android_device_acceptance_uiautomator.py
 t/test_android_remote_acceptance_packaging.py
-t/test_service_plugin_start_order.py
 ```
