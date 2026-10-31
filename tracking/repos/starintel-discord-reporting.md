@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-discord-reporting
 
-- generated: `2026-10-30T23:51:44Z`
+- generated: `2026-10-31T05:50:37Z`
 - canonical branch: `main`
 - changelog eligible: `no`
-- head: [`7ab69e4bc99c7ecde3f63b1e5b16bbfccfaa07d8`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/7ab69e4bc99c7ecde3f63b1e5b16bbfccfaa07d8)
-- head date: `2026-10-30T17:25:11-04:00`
+- head: [`f7cdfec07db795fb0c58a2d3278391aa1491077e`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/f7cdfec07db795fb0c58a2d3278391aa1491077e)
+- head date: `2026-10-30T23:56:03Z`
 - head subject: state: record verified Discord deliveries
 
 ## Git log, last 14 days
 
 ```text
+2026-10-30 f7cdfec07db795fb0c58a2d3278391aa1491077e state: record verified Discord deliveries
+2026-10-30 18d820d11b4e968bc26d7d780906b9813c071c70 tracking: refresh StarIntel repo snapshots
 2026-10-30 7ab69e4bc99c7ecde3f63b1e5b16bbfccfaa07d8 state: record verified Discord deliveries
 2026-10-30 7cb148a6feb9860354632b1c281ec1efad126d89 report: reddit collector post with chart attached, private links omitted
 2026-10-30 7e3e98d1730046edb688f5b0a684abd3da3493e9 state: record verified Discord deliveries
@@ -66,11 +68,13 @@ tracking/repos/hackmode.md
 tracking/repos/index.md
 tracking/repos/prolog-rlm.md
 tracking/repos/quasar-ui.md
+tracking/repos/quasar.md
 tracking/repos/star-app.md
 tracking/repos/star-bbpd.md
 tracking/repos/star-cl.md
 tracking/repos/star-config.md
 tracking/repos/star-formatter.md
+tracking/repos/star-lang.md
 tracking/repos/star-router-cli.md
 tracking/repos/star-synthdata.md
 tracking/repos/starReplay.md
@@ -81,6 +85,7 @@ tracking/repos/starintel-discord-tool.md
 tracking/repos/starintel-doc.md
 tracking/repos/starintel-doc.nim.md
 tracking/repos/starintel-gpt-auto-dig.md
+tracking/repos/starintel-server.md
 tracking/repos/starintel-social-presence.md
 tracking/repos/starintel_doc.js.md
 tracking/repos/starintel_parser.md
