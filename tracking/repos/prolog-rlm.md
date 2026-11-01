@@ -1,6 +1,6 @@
 # lost-rob0t/prolog-rlm
 
-- generated: `2026-10-31T23:25:56Z`
+- generated: `2026-11-01T06:14:24Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`05455bba3ee58b6a0a7a6d4242c8b64e8fe8af68`](https://github.com/lost-rob0t/prolog-rlm/commit/05455bba3ee58b6a0a7a6d4242c8b64e8fe8af68)
@@ -26,11 +26,6 @@
 2026-10-18 185e72c6d8f80943c6e0c040387552db17e8a93f ci: require explicit capped admission for manual paid tests
 2026-10-18 3ecd85e1052af0e0d3a9931afbdbfe4b01f641bd fix(packaging): include core skills and verify installed catalog
 2026-10-18 45048bf0608447e4750a4017243b3de03deb21bf fix(runtime): preserve managed context and enforce known execution usage
-2026-10-17 ea04fb9e86ecd913027f07c132e1db2581b5d157 test(warm): validate publication independent of chosen context fidelity
-2026-10-17 e8fe1f72f9b5c3f26874f046db906cc165ed5b01 style: remove trailing whitespace in auto-warm runtime
-2026-10-17 cef51869f0d9687d5db9d0e23eda85f520061fbf test/docs: cover incremental automatic warm publication
-2026-10-17 97fa976e979af1c24a8e4606e880e8207eeeb65a test/docs: cover incremental automatic warm publication
-2026-10-17 d0c7d015d5a5a37ce23416aab79e8abff62469b0 feat(runtime): opt-in bounded auto warm publishing for managed turns
 ```
 
 ## Repository paths changed, last 14 days
