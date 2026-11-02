@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-02T06:14:48Z`
+- generated: `2026-11-02T16:13:37Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`55deeee3aa6ff7141279562dabba071c2feeb025`](https://github.com/lost-rob0t/starintel-server/commit/55deeee3aa6ff7141279562dabba071c2feeb025)
@@ -38,37 +38,20 @@
 2026-10-20 a090b7877926a15977fa7233bd30d8bda4a0873c test(recovery): add fail-closed synthetic restore drill for #343
 2026-10-19 87d78a1a3a7a649d836c5049b4228f33aeb51631 Merge pull request 'Add scoped actor credential resolver plugin' (#22) from feat/actor-credentials-plugin into master
 2026-10-19 e298c6f7ca154de5280f98192d8503fa949e5b97 Merge pull request 'Add scoped actor credential resolver plugin' (#22) from feat/actor-credentials-plugin into master
-2026-10-19 da12b5705248ec13bf828e32ea53985fb0aee01c Expose Nix to Forgejo doc coverage steps
-2026-10-19 88aef7b6ed22d2da42fd7051013fb0cea218dce9 Expose Nix to Forgejo doc coverage steps
-2026-10-19 e97258f7c08dab2bbbb2631ca652bd1238250a0c Document exported credential contract helpers
-2026-10-19 7ae3a1671119676bc11ec2816a8b8a34427a70a5 Document exported credential contract helpers
-2026-10-19 9840a43d0ce80d072fe733600d1a81c39980b7cc Add scoped actor credential resolver add-on
-2026-10-19 1182580df70d9b125e6972be1459c7c716af6ecd Add scoped actor credential resolver add-on
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.forgejo/workflows/doc-coverage.yml
 .forgejo/workflows/public-read-boundary.yml
 .github/workflows/docker.yml
 .prolog/facts.kb
-.prolog/kb/actor-credentials.pl
 .prolog/kb/consumer-lifecycle.pl
 .prolog/kb/index.pl
 .prolog/kb/public-api-tenancy.pl
 .prolog/kb/tooling.pl
 .prolog/result.json
 .prolog/verify.pl
-addons/actor-credentials/actor-credentials.lisp
-addons/actor-credentials/package.lisp
-cli/http-contract-package.lisp
-cli/http-contract.lisp
-doc/actor-credentials.org
-doc/api/index.org
-doc/api/star-authorization.org
-doc/api/star-http-contract.org
-doc/api/starintel-gserver-http-api.org
 doc/production-isolation.md
 doc/production-recovery.md
 doc/production-release.md
@@ -76,27 +59,19 @@ doc/public-read-boundary.org
 docker-compose.yml
 docker/couchdb-prometheus.ini
 docker/otelcol-sidecar.yaml
-flake.nix
 nix/images.nix
 scripts/readiness_isolation.py
 scripts/readiness_recovery.py
 scripts/readiness_release.py
-source/authorization/policy.lisp
 source/frontends/http-authorization-routes.lisp
-source/frontends/http-authorization.lisp
 source/frontends/http-contract-routes.lisp
-source/package.lisp
 source/runtime-lifecycle.lisp
 source/views/data.json
 source/views/search.json
-starintel-actor-credentials.asd
-starintel-gserver-tests.asd
-t/actor-credentials-test.lisp
 t/consumers-test.lisp
 t/http-auth-test.lisp
 t/http-capabilities-test.lisp
 t/http-public-api-integration-test.lisp
-t/run-tests.lisp
 tests/test_readiness_isolation.py
 tests/test_readiness_recovery.py
 tests/test_readiness_release.py
@@ -106,18 +81,13 @@ tests/test_readiness_release.py
 
 ```text
 .github/workflows/docker.yml
-flake.nix
 scripts/readiness_isolation.py
 scripts/readiness_recovery.py
 scripts/readiness_release.py
-starintel-actor-credentials.asd
-starintel-gserver-tests.asd
-t/actor-credentials-test.lisp
 t/consumers-test.lisp
 t/http-auth-test.lisp
 t/http-capabilities-test.lisp
 t/http-public-api-integration-test.lisp
-t/run-tests.lisp
 tests/test_readiness_isolation.py
 tests/test_readiness_recovery.py
 tests/test_readiness_release.py
