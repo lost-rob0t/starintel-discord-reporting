@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-02T16:13:37Z`
+- generated: `2026-11-02T23:36:26Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`55deeee3aa6ff7141279562dabba071c2feeb025`](https://github.com/lost-rob0t/starintel-server/commit/55deeee3aa6ff7141279562dabba071c2feeb025)
@@ -36,8 +36,6 @@
 2026-10-20 04c82f6fc6922c575aa0bf822d98204811535b7d Guard release evidence and stop mutable version publication (#343)
 2026-10-20 f879f021b1200e79f7c6f739a01c851c0e4f507f test: add private tenant readiness probe for #343
 2026-10-20 a090b7877926a15977fa7233bd30d8bda4a0873c test(recovery): add fail-closed synthetic restore drill for #343
-2026-10-19 87d78a1a3a7a649d836c5049b4228f33aeb51631 Merge pull request 'Add scoped actor credential resolver plugin' (#22) from feat/actor-credentials-plugin into master
-2026-10-19 e298c6f7ca154de5280f98192d8503fa949e5b97 Merge pull request 'Add scoped actor credential resolver plugin' (#22) from feat/actor-credentials-plugin into master
 ```
 
 ## Repository paths changed, last 14 days
