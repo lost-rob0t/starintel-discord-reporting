@@ -1,6 +1,6 @@
 # lost-rob0t/quasar
 
-- generated: `2026-11-03T16:17:55Z`
+- generated: `2026-11-03T23:26:40Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`a48ec2e43491478ddf5de09a64160eefca1973b3`](https://github.com/lost-rob0t/quasar/commit/a48ec2e43491478ddf5de09a64160eefca1973b3)
@@ -16,8 +16,6 @@
 2026-11-03 1b54a38922911a90308db5f2b3e186f16d3997a3 feat: add self-run Python actor runner subsystem
 2026-11-03 85aa65ddffdc21242ed7a255511f6511794267f1 fix: isolate workspace candidates with copy-on-write mutations
 2026-10-21 6c4a8de54ae35118cb368656737603023b6d27fb Align legacy dataset route usability
-2026-10-20 8eb92ca8af16c3a121be1ccc9c8e2c82dd148862 Preserve document result context and clarify datasets
-2026-10-20 e1e95f5daa42d8135105b388cb887eb39954ab3b Improve document search usability
 ```
 
 ## Repository paths changed, last 14 days
@@ -26,7 +24,6 @@
 .prolog/kb/canonical-wire-gotchas.pl
 .prolog/kb/control-plane-cow.pl
 .prolog/kb/datasets_usability.pl
-.prolog/kb/documents_usability.pl
 .prolog/kb/index.pl
 .prolog/kb/load.pl
 .prolog/kb/python-actors.pl
@@ -45,8 +42,6 @@ control-plane/tests/python-actor-tests.lisp
 docs/ADR-TEK9-WORKSPACE-STORAGE.md
 docs/CONFIGURATION.md
 frontend/e2e/datasets-pwa.spec.ts
-frontend/src/components/CanonicalDocumentEditor.jsx
-frontend/src/components/DatasetsPage.jsx
 frontend/src/components/Documents.jsx
 scripts/test-lisp
 systems/quasar-control.asd
