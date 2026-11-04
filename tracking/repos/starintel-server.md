@@ -1,22 +1,31 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-04T16:21:49Z`
+- generated: `2026-11-04T23:43:04Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b42f9217d5bd8cddd4f4debbce5241d8c1623d0b`](https://github.com/lost-rob0t/starintel-server/commit/b42f9217d5bd8cddd4f4debbce5241d8c1623d0b)
-- head date: `2026-11-04T11:20:06-05:00`
-- head subject: Merge pull request #366 from lost-rob0t/rage/59-target-update-response
+- head: [`c25b3b0f6b86005407827d8c5f7115d70865b92d`](https://github.com/lost-rob0t/starintel-server/commit/c25b3b0f6b86005407827d8c5f7115d70865b92d)
+- head date: `2026-11-04T16:08:04-05:00`
+- head subject: Merge pull request #368 from lost-rob0t/issue-367-actor-option-hints
 
 ## Git log, last 14 days
 
 ```text
+2026-11-04 c25b3b0f6b86005407827d8c5f7115d70865b92d Merge pull request #368 from lost-rob0t/issue-367-actor-option-hints
+2026-11-04 6a2279a7e716f1e4a50150d37bc3a1f45ecca46d Advertise per-actor target option hints in the actor registry
+2026-11-04 1c50aca55d8951d4f4fdbc7348c8f6e99cce551d Merge pull request 'Merge GitHub master (rage/59 target-update fixes) into canonical master' (#42) from sync/github-reconcile into master
+2026-11-04 43682f81ac38f636e4b49b1d8d31193eb20a4813 Merge GitHub master (rage/59 target-update fixes) into canonical master
+2026-11-04 6ea741e0f1583623ae9d26fcb9c88ee2a9066e82 Merge pull request 'kb: 2026-11-04 ingest backlog incident evidence (#37)' (#37) from kb/37-ingest-backlog-incident into master
 2026-11-04 b42f9217d5bd8cddd4f4debbce5241d8c1623d0b Merge pull request #366 from lost-rob0t/rage/59-target-update-response
+2026-11-04 bb8f61e39e59bf151d319daab999fcbc0a3f9405 Merge pull request 'fix(consumers): drain resilience — upsert, quarantine idempotency, supervised restart (#38)' (#39) from rage/38-drain-resilience into master
 2026-11-04 cf820a31fe6af168109db8bab2b70a4c2001ad56 fix(targets): update route must return one JSON string body
+2026-11-04 e7fdf906e97163b5538d4beca578e11815a51f5b docs(api): regenerate star-consumers + star-databases-couchdb reference (issue #38)
 2026-11-04 dc74abfc8ec2bd864fdb7bb19b3033e063983b1d Merge pull request #365 from lost-rob0t/rage/59-target-update-fix
 2026-11-04 2d113ec3aa8399fea4d04cca864db2b9ed988b87 fix(targets): authorized-save must bind the decision, not call it
+2026-11-04 772421c0034a795df53fc08dcfde052fa5665847 fix(consumers): drain resilience — upsert re-observations, quarantine idempotency, supervised restart (issue #38)
 2026-11-04 d0c08f5a1d7b823fe9e53d8f9ebc675ef62b53d0 Merge pull request #363 from lost-rob0t/rage/59-target-update
 2026-11-04 4bf0dcd0b5f368201ce8d7beb3dc90bf558aae92 docs(api): regenerate for targets.update and target document store
 2026-11-04 98f22360459b781de96c9cd628d8e11ef873def9 feat(targets): contracted targets.update for per-target options pinning (#59)
+2026-11-04 dc81b63af149d62f7ec1746102ae7426c917cad7 kb: 2026-11-04 ingest backlog incident — settlement stop has no supervised restart (#37 evidence)
 2026-11-03 091d74dd07fc9b13fbb820dc433b5f6585690626 kb: steady-v2 portfolio live; paging + storage-revision fingerprint fixes verified
 2026-11-03 467e1b8e17491780700186eef758d71ece72427e Merge pull request 'fix(targets): storage revision must not break recurring rehydration (#360)' (#36) from issue-360-recovery-fingerprint into master
 2026-11-02 5a2a14dbedfaa2d246d9326a13b4d1f05922f255 fix(targets): storage revision must not break recurring rehydration (#360)
@@ -68,8 +77,11 @@ docker-compose.yml
 docker/couchdb-prometheus.ini
 docker/otelcol-sidecar.yaml
 nix/images.nix
+source/actor-registry.lisp
 source/actors.lisp
 source/authorization/policy.lisp
+source/databases/outbox.lisp
+source/databases/quarantine.lisp
 source/databases/target-acceptance.lisp
 source/databases/view-request.lisp
 source/frontends/http-authorization-routes.lisp
@@ -84,27 +96,35 @@ source/target-recovery.lisp
 source/target-repository.lisp
 source/views/data.json
 source/views/search.json
+starintel-gserver-tests.asd
+t/actor-registry-test.lisp
 t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
+t/drain-resilience-test.lisp
 t/http-capabilities-test.lisp
 t/http-public-api-integration-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
+t/run-tests.lisp
 t/runtime-lifecycle-test.lisp
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
+starintel-gserver-tests.asd
+t/actor-registry-test.lisp
 t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
+t/drain-resilience-test.lisp
 t/http-capabilities-test.lisp
 t/http-public-api-integration-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
+t/run-tests.lisp
 t/runtime-lifecycle-test.lisp
 ```
