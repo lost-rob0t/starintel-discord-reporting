@@ -1,15 +1,22 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-04T06:31:45Z`
+- generated: `2026-11-04T16:21:49Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`091d74dd07fc9b13fbb820dc433b5f6585690626`](https://github.com/lost-rob0t/starintel-server/commit/091d74dd07fc9b13fbb820dc433b5f6585690626)
-- head date: `2026-11-03T00:12:47-05:00`
-- head subject: kb: steady-v2 portfolio live; paging + storage-revision fingerprint fixes verified
+- head: [`b42f9217d5bd8cddd4f4debbce5241d8c1623d0b`](https://github.com/lost-rob0t/starintel-server/commit/b42f9217d5bd8cddd4f4debbce5241d8c1623d0b)
+- head date: `2026-11-04T11:20:06-05:00`
+- head subject: Merge pull request #366 from lost-rob0t/rage/59-target-update-response
 
 ## Git log, last 14 days
 
 ```text
+2026-11-04 b42f9217d5bd8cddd4f4debbce5241d8c1623d0b Merge pull request #366 from lost-rob0t/rage/59-target-update-response
+2026-11-04 cf820a31fe6af168109db8bab2b70a4c2001ad56 fix(targets): update route must return one JSON string body
+2026-11-04 dc74abfc8ec2bd864fdb7bb19b3033e063983b1d Merge pull request #365 from lost-rob0t/rage/59-target-update-fix
+2026-11-04 2d113ec3aa8399fea4d04cca864db2b9ed988b87 fix(targets): authorized-save must bind the decision, not call it
+2026-11-04 d0c08f5a1d7b823fe9e53d8f9ebc675ef62b53d0 Merge pull request #363 from lost-rob0t/rage/59-target-update
+2026-11-04 4bf0dcd0b5f368201ce8d7beb3dc90bf558aae92 docs(api): regenerate for targets.update and target document store
+2026-11-04 98f22360459b781de96c9cd628d8e11ef873def9 feat(targets): contracted targets.update for per-target options pinning (#59)
 2026-11-03 091d74dd07fc9b13fbb820dc433b5f6585690626 kb: steady-v2 portfolio live; paging + storage-revision fingerprint fixes verified
 2026-11-03 467e1b8e17491780700186eef758d71ece72427e Merge pull request 'fix(targets): storage revision must not break recurring rehydration (#360)' (#36) from issue-360-recovery-fingerprint into master
 2026-11-02 5a2a14dbedfaa2d246d9326a13b4d1f05922f255 fix(targets): storage revision must not break recurring rehydration (#360)
@@ -52,6 +59,7 @@
 .prolog/result.json
 .prolog/verify.pl
 cli/http-contract-targets.lisp
+doc/api/index.org
 doc/api/star-actors.org
 doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
@@ -61,18 +69,22 @@ docker/couchdb-prometheus.ini
 docker/otelcol-sidecar.yaml
 nix/images.nix
 source/actors.lisp
+source/authorization/policy.lisp
 source/databases/target-acceptance.lisp
 source/databases/view-request.lisp
 source/frontends/http-authorization-routes.lisp
+source/frontends/http-capabilities.lisp
 source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
+source/frontends/http-target-v1.lisp
 source/runtime-lifecycle.lisp
 source/target-dispatch.lisp
 source/target-recovery.lisp
 source/target-repository.lisp
 source/views/data.json
 source/views/search.json
+t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
@@ -86,6 +98,7 @@ t/runtime-lifecycle-test.lisp
 ## Test and CI paths touched, last 14 days
 
 ```text
+t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
