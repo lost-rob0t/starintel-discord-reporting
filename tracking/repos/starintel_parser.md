@@ -1,6 +1,6 @@
 # lost-rob0t/starintel_parser
 
-- generated: `2026-11-05T06:54:04Z`
+- generated: `2026-11-05T16:30:33Z`
 - canonical branch: `master`
 - changelog eligible: `no`
 - head: [`d0312f00f76b900628405b4acc09323a9c713e8c`](https://github.com/lost-rob0t/starintel_parser/commit/d0312f00f76b900628405b4acc09323a9c713e8c)
