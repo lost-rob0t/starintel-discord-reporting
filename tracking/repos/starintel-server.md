@@ -1,19 +1,21 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-04T23:43:04Z`
+- generated: `2026-11-05T06:53:39Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`c25b3b0f6b86005407827d8c5f7115d70865b92d`](https://github.com/lost-rob0t/starintel-server/commit/c25b3b0f6b86005407827d8c5f7115d70865b92d)
-- head date: `2026-11-04T16:08:04-05:00`
-- head subject: Merge pull request #368 from lost-rob0t/issue-367-actor-option-hints
+- head: [`427bcb7c865672fe289c43e55a6204dccbabb74e`](https://github.com/lost-rob0t/starintel-server/commit/427bcb7c865672fe289c43e55a6204dccbabb74e)
+- head date: `2026-11-05T00:43:34Z`
+- head subject: Merge pull request 'kb: #38 drain-resilience deployment knowledge' (#41) from kb/38-drain-resilience-ops into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-05 427bcb7c865672fe289c43e55a6204dccbabb74e Merge pull request 'kb: #38 drain-resilience deployment knowledge' (#41) from kb/38-drain-resilience-ops into master
 2026-11-04 c25b3b0f6b86005407827d8c5f7115d70865b92d Merge pull request #368 from lost-rob0t/issue-367-actor-option-hints
 2026-11-04 6a2279a7e716f1e4a50150d37bc3a1f45ecca46d Advertise per-actor target option hints in the actor registry
 2026-11-04 1c50aca55d8951d4f4fdbc7348c8f6e99cce551d Merge pull request 'Merge GitHub master (rage/59 target-update fixes) into canonical master' (#42) from sync/github-reconcile into master
 2026-11-04 43682f81ac38f636e4b49b1d8d31193eb20a4813 Merge GitHub master (rage/59 target-update fixes) into canonical master
+2026-11-04 d549650674723c1e1d85f6bbe492d261042e9393 kb: #38 drain-resilience deployment knowledge — upsert/quarantine/supervision contracts, 12-worker scaling, deploy-order and gate lessons
 2026-11-04 6ea741e0f1583623ae9d26fcb9c88ee2a9066e82 Merge pull request 'kb: 2026-11-04 ingest backlog incident evidence (#37)' (#37) from kb/37-ingest-backlog-incident into master
 2026-11-04 b42f9217d5bd8cddd4f4debbce5241d8c1623d0b Merge pull request #366 from lost-rob0t/rage/59-target-update-response
 2026-11-04 bb8f61e39e59bf151d319daab999fcbc0a3f9405 Merge pull request 'fix(consumers): drain resilience — upsert, quarantine idempotency, supervised restart (#38)' (#39) from rage/38-drain-resilience into master
