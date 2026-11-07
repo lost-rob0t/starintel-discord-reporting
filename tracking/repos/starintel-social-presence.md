@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-social-presence
 
-- generated: `2026-11-07T16:29:02Z`
+- generated: `2026-11-07T21:55:07Z`
 - canonical branch: `main`
 - changelog eligible: `no`
 - head: [`b5fd42436bf4c67c546c5a3c35d7c6fad381e9a1`](https://github.com/lost-rob0t/starintel-social-presence/commit/b5fd42436bf4c67c546c5a3c35d7c6fad381e9a1)
@@ -27,9 +27,6 @@
 2026-10-25 2a9629c050705897492416c4f9ceba81eadb39c0 Publish StarIntel Shipyard 003 as Mara
 2026-10-25 46b073674b05b72e695fcf7b8e7d4c42ae03043a Merge pull request 'docs: rewrite StarIntel pages and split schema versions' (#5) from codex/rewrite-starintel-pages into main
 2026-10-25 74f954a9b1bf29cde8b480348844f7070eb756f6 docs: separate StarIntel document versions
-2026-10-24 b5c3f51c7f3ee1bb83a25a435e59a3740087d946 Merge pull request 'Exclude tenant identifiers from public social sites' (#3) from fix/public-tenant-boundary into main
-2026-10-24 c76baca5c9b28db2e3925cbdfe6c82b2edcabcfd site: exclude tenant identifiers from public output
-2026-10-24 dcb6af2d8aa9e43899a597ccbd95c34f8ea1762c Merge pull request 'Fetch pinned social site inputs from Forgejo' (#2) from fix/forgejo-site-inputs into main
 ```
 
 ## Repository paths changed, last 14 days
@@ -37,7 +34,6 @@
 ```text
 .prolog/kb/index.pl
 .prolog/kb/publication_policy.pl
-.prolog/kb/site_packages.pl
 blog/posts/2026-09-08-from-tools-to-actors.org
 blog/posts/2026-09-20-shipyard-001-evidence-actors-control-plane.org
 blog/posts/2026-09-20-shipyard-002-contracts-telemetry-research.org
@@ -62,11 +58,8 @@ scripts/check
 scripts/check_links.py
 scripts/check_no_private_links.py
 site-assets/starintel.css
-site_builder/src/starintel_site_builder/builder.py
 site_builder/src/starintel_site_builder/linkcheck.py
 site_builder/src/starintel_site_builder/private_links.py
-site_builder/src/starintel_site_builder/publication.py
-site_builder/tests/test_build.py
 site_builder/tests/test_linkcheck.py
 site_builder/tests/test_private_links.py
 ```
@@ -77,7 +70,6 @@ site_builder/tests/test_private_links.py
 scripts/check
 scripts/check_links.py
 scripts/check_no_private_links.py
-site_builder/tests/test_build.py
 site_builder/tests/test_linkcheck.py
 site_builder/tests/test_private_links.py
 ```

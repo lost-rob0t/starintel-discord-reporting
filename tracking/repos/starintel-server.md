@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-07T16:28:45Z`
+- generated: `2026-11-07T21:54:44Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`427bcb7c865672fe289c43e55a6204dccbabb74e`](https://github.com/lost-rob0t/starintel-server/commit/427bcb7c865672fe289c43e55a6204dccbabb74e)
@@ -49,18 +49,11 @@
 2026-10-30 9da03504fb902b1e2a848b70a3753a7d803a8a34 kb: consumer reconnect root cause, invariants, ingest-host and prod-couchdb tooling (issue #37 slice)
 2026-10-30 1475bd8911fd1a1487df1c4bcc3b0dd165e5f50b Raise RabbitMQ consumer_timeout to 4h in the compose stack
 2026-10-30 c91b0b2ebed24ea0c50a3368aeea06a3aef92955 Add CouchDB Prometheus metrics and drop starintel.internal domainnames
-2026-10-24 16d3fbc0061e672e82053e2ba8c1711889e2cf1d Merge pull request 'Record public stats count mismatch in project KB' (#31) from public-test-stats-kb into master
-2026-10-24 bdd9457c8751b8c8507daf53430b422218be4e92 Record public stats count mismatch
-2026-10-24 89ecaf22851231acb471ddbf8f109f56898c156f Merge pull request 'Record future own-plus-public user tenant contract' (#29) from docs-user-tenant-scope-contract into master
-2026-10-24 839c03c0cedd3876348c01bb9a479552d8e787dd Document future authenticated tenant read scope
-2026-10-24 d4a2e2f600286661ebc014fef5270f7925643ef1 Merge pull request 'Scope anonymous reads to public tenant and approved datasets' (#27) from fix/public-tenant-read-boundary into master
-2026-10-24 76be395de8179b0ee0fa9b4c10f944504077818c Scope anonymous reads to public tenant and approved datasets
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.forgejo/workflows/public-read-boundary.yml
 .prolog/facts.kb
 .prolog/kb/consumer-lifecycle.pl
 .prolog/kb/index.pl
@@ -74,7 +67,6 @@ doc/api/index.org
 doc/api/star-actors.org
 doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
-doc/public-read-boundary.org
 docker-compose.yml
 docker/couchdb-prometheus.ini
 docker/otelcol-sidecar.yaml
@@ -88,7 +80,6 @@ source/databases/target-acceptance.lisp
 source/databases/view-request.lisp
 source/frontends/http-authorization-routes.lisp
 source/frontends/http-capabilities.lisp
-source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
@@ -96,7 +87,6 @@ source/runtime-lifecycle.lisp
 source/target-dispatch.lisp
 source/target-recovery.lisp
 source/target-repository.lisp
-source/views/data.json
 source/views/search.json
 starintel-gserver-tests.asd
 t/actor-registry-test.lisp
@@ -105,8 +95,6 @@ t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
-t/http-capabilities-test.lisp
-t/http-public-api-integration-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
@@ -123,8 +111,6 @@ t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
-t/http-capabilities-test.lisp
-t/http-public-api-integration-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
