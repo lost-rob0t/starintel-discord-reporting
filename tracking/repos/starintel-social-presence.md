@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-social-presence
 
-- generated: `2026-11-07T08:51:19Z`
+- generated: `2026-11-07T16:29:02Z`
 - canonical branch: `main`
 - changelog eligible: `no`
 - head: [`b5fd42436bf4c67c546c5a3c35d7c6fad381e9a1`](https://github.com/lost-rob0t/starintel-social-presence/commit/b5fd42436bf4c67c546c5a3c35d7c6fad381e9a1)
@@ -30,20 +30,14 @@
 2026-10-24 b5c3f51c7f3ee1bb83a25a435e59a3740087d946 Merge pull request 'Exclude tenant identifiers from public social sites' (#3) from fix/public-tenant-boundary into main
 2026-10-24 c76baca5c9b28db2e3925cbdfe6c82b2edcabcfd site: exclude tenant identifiers from public output
 2026-10-24 dcb6af2d8aa9e43899a597ccbd95c34f8ea1762c Merge pull request 'Fetch pinned social site inputs from Forgejo' (#2) from fix/forgejo-site-inputs into main
-2026-10-24 a3186889d36a16b16aec0e4ecc5bef114b42c1e9 fix: match only action steps in CI hygiene
-2026-10-24 dba8fd00c967fd32853addb5c57d8829eacfb1d7 fix: authenticate private Forgejo CI checkout
-2026-10-24 780218add458921c8f43ab609b2a3e4d4c920cf9 fix: fetch pinned site inputs from Forgejo
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.forgejo/workflows/ci.yml
-.prolog/kb/ci.pl
 .prolog/kb/index.pl
 .prolog/kb/publication_policy.pl
 .prolog/kb/site_packages.pl
-.prolog/kb/source_pins.pl
 blog/posts/2026-09-08-from-tools-to-actors.org
 blog/posts/2026-09-20-shipyard-001-evidence-actors-control-plane.org
 blog/posts/2026-09-20-shipyard-002-contracts-telemetry-research.org
@@ -59,8 +53,6 @@ blog/posts/2026-11-04-shipyard-006-work-that-comes-back.org
 blog/posts/2026-11-05-shipyard-007-the-backlog-has-a-direction.org
 docs/documents/schema-v9.org
 docs/documents/star-lang-0.10.1.org
-flake.lock
-flake.nix
 nsaspy/about.org
 nsaspy/daily/2026-08-28.org
 nsaspy/projects/prolog-rlm.org
@@ -82,7 +74,6 @@ site_builder/tests/test_private_links.py
 ## Test and CI paths touched, last 14 days
 
 ```text
-flake.nix
 scripts/check
 scripts/check_links.py
 scripts/check_no_private_links.py
