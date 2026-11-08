@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-social-presence
 
-- generated: `2026-11-08T01:28:24Z`
+- generated: `2026-11-08T09:03:46Z`
 - canonical branch: `main`
 - changelog eligible: `no`
 - head: [`b5fd42436bf4c67c546c5a3c35d7c6fad381e9a1`](https://github.com/lost-rob0t/starintel-social-presence/commit/b5fd42436bf4c67c546c5a3c35d7c6fad381e9a1)
@@ -23,10 +23,6 @@
 2026-10-30 f8efd6d09673a06863afb54f0bf546922d3dcf0d blog: publish Shipyard #004
 2026-10-30 6a95f52a85bd5fb9499f7054ebce23ba7a3d9964 feat: gate checks for link liveness and private-repo mentions
 2026-10-30 18d7d24e871d3ae2534813d43a6b862ded08f260 fix: redact private repository links from published posts
-2026-10-25 0df8a128b46c5863c3da04e1d096f17c25dd0a6c Merge pull request 'Publish StarIntel Shipyard 003 as Mara' (#6) from post/shipyard-003 into main
-2026-10-25 2a9629c050705897492416c4f9ceba81eadb39c0 Publish StarIntel Shipyard 003 as Mara
-2026-10-25 46b073674b05b72e695fcf7b8e7d4c42ae03043a Merge pull request 'docs: rewrite StarIntel pages and split schema versions' (#5) from codex/rewrite-starintel-pages into main
-2026-10-25 74f954a9b1bf29cde8b480348844f7070eb756f6 docs: separate StarIntel document versions
 ```
 
 ## Repository paths changed, last 14 days
@@ -47,13 +43,6 @@ blog/posts/2026-10-30-shipyard-005-follow-the-document.org
 blog/posts/2026-10-30-shipyard-005-honest-signals.org
 blog/posts/2026-11-04-shipyard-006-work-that-comes-back.org
 blog/posts/2026-11-05-shipyard-007-the-backlog-has-a-direction.org
-docs/documents/schema-v9.org
-docs/documents/star-lang-0.10.1.org
-nsaspy/about.org
-nsaspy/daily/2026-08-28.org
-nsaspy/projects/prolog-rlm.org
-nsaspy/projects/starintel.org
-nsaspy/resume.org
 scripts/check
 scripts/check_links.py
 scripts/check_no_private_links.py
