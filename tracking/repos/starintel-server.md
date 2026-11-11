@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-11T09:29:22Z`
+- generated: `2026-11-11T17:54:39Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`b11d8ff79b533767354bd140f5f0312004729b59`](https://github.com/lost-rob0t/starintel-server/commit/b11d8ff79b533767354bd140f5f0312004729b59)
-- head date: `2026-11-11T04:19:59Z`
-- head subject: Merge pull request 'fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)' (#415) from rage/385-queue-topology-containment into master
+- head: [`024459c99065902f6eca07c1224cc0816c7a0bd4`](https://github.com/lost-rob0t/starintel-server/commit/024459c99065902f6eca07c1224cc0816c7a0bd4)
+- head date: `2026-11-11T15:30:46Z`
+- head subject: Merge pull request 'fix(runtime): authenticate the couchdb readiness probe' (#417) from fix/couchdb-readiness-probe-auth into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-11 024459c99065902f6eca07c1224cc0816c7a0bd4 Merge pull request 'fix(runtime): authenticate the couchdb readiness probe' (#417) from fix/couchdb-readiness-probe-auth into master
+2026-11-11 02cb1f635e7a4cadc185006094318fb0f9ddc944 fix(runtime): authenticate the couchdb readiness probe
 2026-11-11 b11d8ff79b533767354bd140f5f0312004729b59 Merge pull request 'fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)' (#415) from rage/385-queue-topology-containment into master
 2026-11-10 616aad8554a93430ef7be75dcab89e411aead382 fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)
 2026-11-11 1fd793fcd010bf08627bd1b25f5ec2091208ad59 Merge pull request 'feat(auth): creator/owner dimension for targets (#401)' (#412) from rage/401-owner-dimension into master
