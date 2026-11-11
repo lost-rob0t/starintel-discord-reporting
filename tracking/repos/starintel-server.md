@@ -1,15 +1,19 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-11T01:57:21Z`
+- generated: `2026-11-11T09:29:22Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`427bcb7c865672fe289c43e55a6204dccbabb74e`](https://github.com/lost-rob0t/starintel-server/commit/427bcb7c865672fe289c43e55a6204dccbabb74e)
-- head date: `2026-11-05T00:43:34Z`
-- head subject: Merge pull request 'kb: #38 drain-resilience deployment knowledge' (#41) from kb/38-drain-resilience-ops into master
+- head: [`b11d8ff79b533767354bd140f5f0312004729b59`](https://github.com/lost-rob0t/starintel-server/commit/b11d8ff79b533767354bd140f5f0312004729b59)
+- head date: `2026-11-11T04:19:59Z`
+- head subject: Merge pull request 'fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)' (#415) from rage/385-queue-topology-containment into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-11 b11d8ff79b533767354bd140f5f0312004729b59 Merge pull request 'fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)' (#415) from rage/385-queue-topology-containment into master
+2026-11-10 616aad8554a93430ef7be75dcab89e411aead382 fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)
+2026-11-11 1fd793fcd010bf08627bd1b25f5ec2091208ad59 Merge pull request 'feat(auth): creator/owner dimension for targets (#401)' (#412) from rage/401-owner-dimension into master
+2026-11-10 0d5cc5c990fbbf108b42535be0eaf238228abfdc feat(auth): creator/owner dimension for targets (#401)
 2026-11-05 427bcb7c865672fe289c43e55a6204dccbabb74e Merge pull request 'kb: #38 drain-resilience deployment knowledge' (#41) from kb/38-drain-resilience-ops into master
 2026-11-04 c25b3b0f6b86005407827d8c5f7115d70865b92d Merge pull request #368 from lost-rob0t/issue-367-actor-option-hints
 2026-11-04 6a2279a7e716f1e4a50150d37bc3a1f45ecca46d Advertise per-actor target option hints in the actor registry
@@ -55,6 +59,7 @@
 
 ```text
 .prolog/facts.kb
+.prolog/kb/authorization-scope-dimensions.pl
 .prolog/kb/consumer-lifecycle.pl
 .prolog/kb/index.pl
 .prolog/kb/public-api-tenancy.pl
@@ -65,15 +70,26 @@
 cli/http-contract-targets.lisp
 doc/api/index.org
 doc/api/star-actors.org
+doc/api/star-authorization.org
 doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
+doc/http-authorization-runtime.org
 docker-compose.yml
 docker/couchdb-prometheus.ini
 docker/otelcol-sidecar.yaml
 nix/images.nix
 source/actor-registry.lisp
+source/actor-systems/event-actor.lisp
 source/actors.lisp
+source/authorization/package.lisp
 source/authorization/policy.lisp
+source/authorization/services.lisp
+source/consumers/consumers.lisp
+source/consumers/owner-fixes.lisp
+source/consumers/package.lisp
+source/consumers/rabbit-settlement.lisp
+source/consumers/retry-policy.lisp
+source/consumers/startup-retry.lisp
 source/databases/outbox.lisp
 source/databases/quarantine.lisp
 source/databases/target-acceptance.lisp
@@ -95,6 +111,7 @@ t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
+t/event-actor-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
@@ -111,6 +128,7 @@ t/consumers-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
+t/event-actor-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
