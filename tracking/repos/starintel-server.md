@@ -1,18 +1,23 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-12T09:53:20Z`
+- generated: `2026-11-12T18:21:34Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`7abb040ada60d13e7d2174f9de84ca66ac16c309`](https://github.com/lost-rob0t/starintel-server/commit/7abb040ada60d13e7d2174f9de84ca66ac16c309)
-- head date: `2026-11-12T05:39:38Z`
-- head subject: Merge pull request 'fix(bulk): bound terminal job retention (GitHub #378)' (#421) from fix/378-terminal-bulk-retention into master
+- head: [`f50a441e1fcaad73277932195e05f2578eb972bf`](https://github.com/lost-rob0t/starintel-server/commit/f50a441e1fcaad73277932195e05f2578eb972bf)
+- head date: `2026-11-12T16:41:59Z`
+- head subject: Merge pull request 'fix(search): bounded public FTS reads with canonical revalidation (#420)' (#422) from fix/public-search-catchup-420 into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-12 f50a441e1fcaad73277932195e05f2578eb972bf Merge pull request 'fix(search): bounded public FTS reads with canonical revalidation (#420)' (#422) from fix/public-search-catchup-420 into master
+2026-11-12 c1cf84e1248faa2b3ad85c94a1193532566acc81 Merge pull request 'perf(ingest): eliminate redundant CouchDB outbox marker read' (#428) from perf/couchdb-ingest into master
+2026-11-12 de4cfd579859178546c4bd5030bbac2cee613af1 perf(ingest): reuse persisted revision for outbox publication marker
 2026-11-12 7abb040ada60d13e7d2174f9de84ca66ac16c309 Merge pull request 'fix(bulk): bound terminal job retention (GitHub #378)' (#421) from fix/378-terminal-bulk-retention into master
+2026-11-12 8230a7cd708f6973eddaea5e30feee72be5bc9b2 fix(search): reject contradictory canonical tenant aliases (#420)
 2026-11-12 976e87bf7acae3e90e06281840b911bc7bc73a1a chore: enable Mara/Star copilot opt-in [skip ci]
 2026-11-11 7086bc62ef4901aa55af26a728f96e58e1356d8d chore: opt in to Mara and Star copilot reviews [skip ci]
+2026-11-11 ed4f1faa2f859c6d9815a2f535db619abc2f0b54 fix(search): bound public FTS catch-up and revalidate current documents (#420)
 2026-11-11 75c6dac2922b07db65ec29c9ed7fc51d9c876b85 fix(bulk): bound terminal job retention (#378)
 2026-11-11 e08bd1f7ad01854a3a4866f04eae863423d6d8b8 Merge pull request 'fix(frontends): map admin user routes and self password change to explicit policy actions (#386)' (#419) from rage/386-admin-user-route-mapping into master
 2026-11-11 f0f0875e0fe8f05dacebb5d741fd47e532e3d610 fix(frontends): map admin user routes and self password change to explicit policy actions (#386)
@@ -72,6 +77,7 @@
 .prolog/kb/bulk-jobs.pl
 .prolog/kb/consumer-lifecycle.pl
 .prolog/kb/index.pl
+.prolog/kb/outbox-ingest.pl
 .prolog/kb/public-api-tenancy.pl
 .prolog/kb/root-causes.pl
 .prolog/kb/tooling.pl
@@ -84,6 +90,7 @@ doc/api/star-authorization.org
 doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
 doc/http-authorization-runtime.org
+doc/public-search-catchup.md
 docker-compose.yml
 docker/couchdb-prometheus.ini
 docker/otelcol-sidecar.yaml
@@ -108,6 +115,7 @@ source/frontends/http-authorization-routes.lisp
 source/frontends/http-authorization.lisp
 source/frontends/http-bulk-jobs.lisp
 source/frontends/http-capabilities.lisp
+source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
@@ -120,12 +128,14 @@ starintel-gserver-tests.asd
 t/actor-registry-test.lisp
 t/authorization-policy-test.lisp
 t/consumers-test.lisp
+t/couchdb-outbox-recovery-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
 t/http-auth-test.lisp
 t/http-boundary-test.lisp
+t/http-capabilities-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
@@ -139,12 +149,14 @@ starintel-gserver-tests.asd
 t/actor-registry-test.lisp
 t/authorization-policy-test.lisp
 t/consumers-test.lisp
+t/couchdb-outbox-recovery-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
 t/http-auth-test.lisp
 t/http-boundary-test.lisp
+t/http-capabilities-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp

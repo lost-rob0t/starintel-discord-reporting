@@ -19,12 +19,12 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
 - [lost-rob0t/starRouter](./starRouter.md) `843188aa09d8`
 - [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `d8c69c4c0ccc`
-- [lost-rob0t/starintel-discord-reporting](./starintel-discord-reporting.md) `55c6d014f43c`
+- [lost-rob0t/starintel-discord-reporting](./starintel-discord-reporting.md) `de7314eb4262`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `7613609b9630`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `6aa8051dc7ea`
 - [lost-rob0t/starintel-gpt-auto-dig](./starintel-gpt-auto-dig.md) `7d848549a56c`
-- [lost-rob0t/starintel-server](./starintel-server.md) `7abb040ada60`
+- [lost-rob0t/starintel-server](./starintel-server.md) `f50a441e1fca`
 - [lost-rob0t/starintel-social-presence](./starintel-social-presence.md) `b5fd42436bf4`
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `481fa64750c3`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
