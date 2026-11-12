@@ -1,15 +1,19 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-12T00:47:04Z`
+- generated: `2026-11-12T09:53:20Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`e08bd1f7ad01854a3a4866f04eae863423d6d8b8`](https://github.com/lost-rob0t/starintel-server/commit/e08bd1f7ad01854a3a4866f04eae863423d6d8b8)
-- head date: `2026-11-11T18:47:30Z`
-- head subject: Merge pull request 'fix(frontends): map admin user routes and self password change to explicit policy actions (#386)' (#419) from rage/386-admin-user-route-mapping into master
+- head: [`7abb040ada60d13e7d2174f9de84ca66ac16c309`](https://github.com/lost-rob0t/starintel-server/commit/7abb040ada60d13e7d2174f9de84ca66ac16c309)
+- head date: `2026-11-12T05:39:38Z`
+- head subject: Merge pull request 'fix(bulk): bound terminal job retention (GitHub #378)' (#421) from fix/378-terminal-bulk-retention into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-12 7abb040ada60d13e7d2174f9de84ca66ac16c309 Merge pull request 'fix(bulk): bound terminal job retention (GitHub #378)' (#421) from fix/378-terminal-bulk-retention into master
+2026-11-12 976e87bf7acae3e90e06281840b911bc7bc73a1a chore: enable Mara/Star copilot opt-in [skip ci]
+2026-11-11 7086bc62ef4901aa55af26a728f96e58e1356d8d chore: opt in to Mara and Star copilot reviews [skip ci]
+2026-11-11 75c6dac2922b07db65ec29c9ed7fc51d9c876b85 fix(bulk): bound terminal job retention (#378)
 2026-11-11 e08bd1f7ad01854a3a4866f04eae863423d6d8b8 Merge pull request 'fix(frontends): map admin user routes and self password change to explicit policy actions (#386)' (#419) from rage/386-admin-user-route-mapping into master
 2026-11-11 f0f0875e0fe8f05dacebb5d741fd47e532e3d610 fix(frontends): map admin user routes and self password change to explicit policy actions (#386)
 2026-11-11 024459c99065902f6eca07c1224cc0816c7a0bd4 Merge pull request 'fix(runtime): authenticate the couchdb readiness probe' (#417) from fix/couchdb-readiness-probe-auth into master
@@ -62,8 +66,10 @@
 ## Repository paths changed, last 14 days
 
 ```text
+.copilot
 .prolog/facts.kb
 .prolog/kb/authorization-scope-dimensions.pl
+.prolog/kb/bulk-jobs.pl
 .prolog/kb/consumer-lifecycle.pl
 .prolog/kb/index.pl
 .prolog/kb/public-api-tenancy.pl
@@ -100,6 +106,7 @@ source/databases/target-acceptance.lisp
 source/databases/view-request.lisp
 source/frontends/http-authorization-routes.lisp
 source/frontends/http-authorization.lisp
+source/frontends/http-bulk-jobs.lisp
 source/frontends/http-capabilities.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
@@ -118,6 +125,7 @@ t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
 t/http-auth-test.lisp
+t/http-boundary-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
@@ -136,6 +144,7 @@ t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
 t/http-auth-test.lisp
+t/http-boundary-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
