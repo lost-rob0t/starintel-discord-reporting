@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-11T17:54:39Z`
+- generated: `2026-11-12T00:47:04Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`024459c99065902f6eca07c1224cc0816c7a0bd4`](https://github.com/lost-rob0t/starintel-server/commit/024459c99065902f6eca07c1224cc0816c7a0bd4)
-- head date: `2026-11-11T15:30:46Z`
-- head subject: Merge pull request 'fix(runtime): authenticate the couchdb readiness probe' (#417) from fix/couchdb-readiness-probe-auth into master
+- head: [`e08bd1f7ad01854a3a4866f04eae863423d6d8b8`](https://github.com/lost-rob0t/starintel-server/commit/e08bd1f7ad01854a3a4866f04eae863423d6d8b8)
+- head date: `2026-11-11T18:47:30Z`
+- head subject: Merge pull request 'fix(frontends): map admin user routes and self password change to explicit policy actions (#386)' (#419) from rage/386-admin-user-route-mapping into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-11 e08bd1f7ad01854a3a4866f04eae863423d6d8b8 Merge pull request 'fix(frontends): map admin user routes and self password change to explicit policy actions (#386)' (#419) from rage/386-admin-user-route-mapping into master
+2026-11-11 f0f0875e0fe8f05dacebb5d741fd47e532e3d610 fix(frontends): map admin user routes and self password change to explicit policy actions (#386)
 2026-11-11 024459c99065902f6eca07c1224cc0816c7a0bd4 Merge pull request 'fix(runtime): authenticate the couchdb readiness probe' (#417) from fix/couchdb-readiness-probe-auth into master
 2026-11-11 02cb1f635e7a4cadc185006094318fb0f9ddc944 fix(runtime): authenticate the couchdb readiness probe
 2026-11-11 b11d8ff79b533767354bd140f5f0312004729b59 Merge pull request 'fix(consumers): explicit queue topology ownership with contained mismatch startup (#385)' (#415) from rage/385-queue-topology-containment into master
@@ -97,6 +99,7 @@ source/databases/quarantine.lisp
 source/databases/target-acceptance.lisp
 source/databases/view-request.lisp
 source/frontends/http-authorization-routes.lisp
+source/frontends/http-authorization.lisp
 source/frontends/http-capabilities.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
@@ -114,6 +117,7 @@ t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
+t/http-auth-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
@@ -131,6 +135,7 @@ t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
+t/http-auth-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp

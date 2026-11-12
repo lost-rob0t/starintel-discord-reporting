@@ -1,6 +1,6 @@
 # lost-rob0t/quasar-ui
 
-- generated: `2026-11-11T17:54:51Z`
+- generated: `2026-11-12T00:47:08Z`
 - canonical branch: `main`
 - changelog eligible: `yes`
 - head: [`4de5090c9dcecf1d36e7df2a951a05c2630dc46d`](https://github.com/lost-rob0t/quasar-ui/commit/4de5090c9dcecf1d36e7df2a951a05c2630dc46d)
