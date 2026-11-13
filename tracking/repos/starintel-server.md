@@ -1,15 +1,17 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-13T01:08:02Z`
+- generated: `2026-11-13T09:36:25Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`f50a441e1fcaad73277932195e05f2578eb972bf`](https://github.com/lost-rob0t/starintel-server/commit/f50a441e1fcaad73277932195e05f2578eb972bf)
-- head date: `2026-11-12T16:41:59Z`
-- head subject: Merge pull request 'fix(search): bounded public FTS reads with canonical revalidation (#420)' (#422) from fix/public-search-catchup-420 into master
+- head: [`21ee21e5962c4c629cd111c9349a307fe840f55b`](https://github.com/lost-rob0t/starintel-server/commit/21ee21e5962c4c629cd111c9349a307fe840f55b)
+- head date: `2026-11-13T04:01:16Z`
+- head subject: Merge pull request 'fix(couchdb): move session validation out of the pool lock (#433)' (#435) from fix/433-pool-probe-lock-contention into master
 
 ## Git log, last 14 days
 
 ```text
+2026-11-13 21ee21e5962c4c629cd111c9349a307fe840f55b Merge pull request 'fix(couchdb): move session validation out of the pool lock (#433)' (#435) from fix/433-pool-probe-lock-contention into master
+2026-11-12 ba21a3f30ad265df7502452a0b0db969832450d9 fix(couchdb): move session validation out of the pool lock (#433)
 2026-11-12 f50a441e1fcaad73277932195e05f2578eb972bf Merge pull request 'fix(search): bounded public FTS reads with canonical revalidation (#420)' (#422) from fix/public-search-catchup-420 into master
 2026-11-12 c1cf84e1248faa2b3ad85c94a1193532566acc81 Merge pull request 'perf(ingest): eliminate redundant CouchDB outbox marker read' (#428) from perf/couchdb-ingest into master
 2026-11-12 de4cfd579859178546c4bd5030bbac2cee613af1 perf(ingest): reuse persisted revision for outbox publication marker
@@ -73,9 +75,11 @@
 ```text
 .copilot
 .prolog/facts.kb
+.prolog/handoff.pl
 .prolog/kb/authorization-scope-dimensions.pl
 .prolog/kb/bulk-jobs.pl
 .prolog/kb/consumer-lifecycle.pl
+.prolog/kb/couchdb-checkout-boundary.pl
 .prolog/kb/index.pl
 .prolog/kb/outbox-ingest.pl
 .prolog/kb/public-api-tenancy.pl
@@ -98,6 +102,10 @@ nix/images.nix
 source/actor-registry.lisp
 source/actor-systems/event-actor.lisp
 source/actors.lisp
+source/actors/couchdb-service.lisp
+source/auth/oauth.lisp
+source/auth/store.lisp
+source/auth/users.lisp
 source/authorization/package.lisp
 source/authorization/policy.lisp
 source/authorization/services.lisp
@@ -107,10 +115,13 @@ source/consumers/package.lisp
 source/consumers/rabbit-settlement.lisp
 source/consumers/retry-policy.lisp
 source/consumers/startup-retry.lisp
+source/couchdb-session-hardening.lisp
+source/databases/couchdb.lisp
 source/databases/outbox.lisp
 source/databases/quarantine.lisp
 source/databases/target-acceptance.lisp
 source/databases/view-request.lisp
+source/frontends/http-api.lisp
 source/frontends/http-authorization-routes.lisp
 source/frontends/http-authorization.lisp
 source/frontends/http-bulk-jobs.lisp
@@ -119,7 +130,10 @@ source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
+source/package.lisp
+source/rabbit.lisp
 source/runtime-lifecycle.lisp
+source/starintel-gserver.asd
 source/target-dispatch.lisp
 source/target-recovery.lisp
 source/target-repository.lisp
@@ -129,10 +143,13 @@ t/actor-registry-test.lisp
 t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/couchdb-outbox-recovery-test.lisp
+t/couchdb-session-test.lisp
+t/couchdb-view-integration-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
+t/http-api-test.lisp
 t/http-auth-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
@@ -145,15 +162,19 @@ t/runtime-lifecycle-test.lisp
 ## Test and CI paths touched, last 14 days
 
 ```text
+source/starintel-gserver.asd
 starintel-gserver-tests.asd
 t/actor-registry-test.lisp
 t/authorization-policy-test.lisp
 t/consumers-test.lisp
 t/couchdb-outbox-recovery-test.lisp
+t/couchdb-session-test.lisp
+t/couchdb-view-integration-test.lisp
 t/couchdb-view-literal-integration-test.lisp
 t/couchdb-view-request-test.lisp
 t/drain-resilience-test.lisp
 t/event-actor-test.lisp
+t/http-api-test.lisp
 t/http-auth-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
