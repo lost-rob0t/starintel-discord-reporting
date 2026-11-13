@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-13T09:36:25Z`
+- generated: `2026-11-13T17:47:04Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`21ee21e5962c4c629cd111c9349a307fe840f55b`](https://github.com/lost-rob0t/starintel-server/commit/21ee21e5962c4c629cd111c9349a307fe840f55b)
@@ -66,8 +66,6 @@
 2026-10-30 630e97898e7361ed2557212523789e1d050adafc fix(consumers): reopen stream at top of each reconnect session; repair paren/declare placement
 2026-10-30 1a34b3908eef049bc4dd10f0d5bd7eb8848f5dc8 fix(consumers): classify reconnect by origin, not condition name
 2026-10-30 9da03504fb902b1e2a848b70a3753a7d803a8a34 kb: consumer reconnect root cause, invariants, ingest-host and prod-couchdb tooling (issue #37 slice)
-2026-10-30 1475bd8911fd1a1487df1c4bcc3b0dd165e5f50b Raise RabbitMQ consumer_timeout to 4h in the compose stack
-2026-10-30 c91b0b2ebed24ea0c50a3368aeea06a3aef92955 Add CouchDB Prometheus metrics and drop starintel.internal domainnames
 ```
 
 ## Repository paths changed, last 14 days
@@ -95,10 +93,6 @@ doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
 doc/http-authorization-runtime.org
 doc/public-search-catchup.md
-docker-compose.yml
-docker/couchdb-prometheus.ini
-docker/otelcol-sidecar.yaml
-nix/images.nix
 source/actor-registry.lisp
 source/actor-systems/event-actor.lisp
 source/actors.lisp

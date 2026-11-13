@@ -19,7 +19,7 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starReplay](./starReplay.md) `53757a282d83`
 - [lost-rob0t/starRouter](./starRouter.md) `843188aa09d8`
 - [lost-rob0t/starintel-auto-research](./starintel-auto-research.md) `d8c69c4c0ccc`
-- [lost-rob0t/starintel-discord-reporting](./starintel-discord-reporting.md) `49c1aa0e2e11`
+- [lost-rob0t/starintel-discord-reporting](./starintel-discord-reporting.md) `9e60d7f4f4ad`
 - [lost-rob0t/starintel-discord-tool](./starintel-discord-tool.md) `f820a86e9482`
 - [lost-rob0t/starintel-doc.nim](./starintel-doc.nim.md) `7613609b9630`
 - [lost-rob0t/starintel-doc](./starintel-doc.md) `6aa8051dc7ea`
@@ -29,4 +29,4 @@ Generated from canonical branches by `scripts/update_repo_snapshots.sh`. These a
 - [lost-rob0t/starintel_doc.js](./starintel_doc.js.md) `481fa64750c3`
 - [lost-rob0t/starintel_parser](./starintel_parser.md) `d0312f00f76b`
 - [lost-rob0t/tek9](./tek9.md) `e6d1cb86a2e2`
-- [lost-rob0t/zara](./zara.md) `034d6b23077b`
+- [lost-rob0t/zara](./zara.md) `26ec30cd4a63`
