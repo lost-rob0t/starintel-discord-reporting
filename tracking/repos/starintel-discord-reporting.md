@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-discord-reporting
 
-- generated: `2026-11-13T17:47:50Z`
+- generated: `2026-11-13T23:37:17Z`
 - canonical branch: `main`
 - changelog eligible: `no`
-- head: [`9e60d7f4f4ad16d6506dbae19f9f506d1370556c`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/9e60d7f4f4ad16d6506dbae19f9f506d1370556c)
-- head date: `2026-11-13T09:37:09Z`
+- head: [`8abb54b36c70a2214a1a12799cdf13f869da57fd`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/8abb54b36c70a2214a1a12799cdf13f869da57fd)
+- head date: `2026-11-13T17:47:54Z`
 - head subject: tracking: refresh StarIntel repo snapshots
 
 ## Git log, last 14 days
 
 ```text
+2026-11-13 8abb54b36c70a2214a1a12799cdf13f869da57fd tracking: refresh StarIntel repo snapshots
 2026-11-13 9e60d7f4f4ad16d6506dbae19f9f506d1370556c tracking: refresh StarIntel repo snapshots
 2026-11-13 49c1aa0e2e116bb9adee419bc63b68c8fa77bcc2 tracking: refresh StarIntel repo snapshots
 2026-11-12 08b23a7146acd2dae6202ef525202cdcb2ee9dd1 tracking: refresh StarIntel repo snapshots
@@ -57,31 +58,11 @@
 2026-10-31 d4254bfa7b903571b149f543b9e29f3883ab6bfd tracking: refresh StarIntel repo snapshots
 2026-10-30 f7cdfec07db795fb0c58a2d3278391aa1491077e state: record verified Discord deliveries
 2026-10-30 18d820d11b4e968bc26d7d780906b9813c071c70 tracking: refresh StarIntel repo snapshots
-2026-10-30 7ab69e4bc99c7ecde3f63b1e5b16bbfccfaa07d8 state: record verified Discord deliveries
-2026-10-30 7cb148a6feb9860354632b1c281ec1efad126d89 report: reddit collector post with chart attached, private links omitted
-2026-10-30 7e3e98d1730046edb688f5b0a684abd3da3493e9 state: record verified Discord deliveries
-2026-10-30 a5ba99dd845157162c2551a2c3961414d7dfb680 report: correction retracting private link, attach dataset chart
-2026-10-30 9c171109cebb84ec87b43b5a10245e419cc18683 state: record verified Discord deliveries
-2026-10-30 b24d2cd227ba01359365ebcb4cd8cb78dd5c921e report: follow-up attaching the reddit dataset chart
-2026-10-30 0bcd906febd2a221792cdefbaedb829cbb48676b state: record verified Discord deliveries
-2026-10-30 fe21e8a87fd669e67debbf703a60370a5df9c5e9 state: record verified Discord deliveries
-2026-10-30 908d8c206160069bd105b8449f9e79302a51eaea chore: ignore local .env and caches
-2026-10-30 e599c2e5c9c42145f93c1aead903063be2b61e58 state: record Discord backlog blocker
-2026-10-30 280916d9c5e08e4b1bacfe0e25592a4081c41e9e report: attach reddit dataset chart
-2026-10-30 db92a3d01f1d07698657fdbcf4ac731913d4e994 report: reddit collector reconnect + honest health, dataset at 217,789
-2026-10-30 de19890d46824d2278019bfdfb3af0f71d39dd33 tracking: refresh StarIntel repo snapshots
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-.gitignore
-reports/starintel-updates-changelog/2026-10-30T21-13-00Z-report.md
-reports/starintel-updates-changelog/2026-10-30T21-13-00Z.png
-reports/starintel-updates-changelog/2026-10-30T21-30-00Z-report.md
-reports/starintel-updates-changelog/2026-10-30T21-30-00Z-report.png
-reports/starintel-updates-changelog/2026-10-30T21-45-00Z-report.md
-reports/starintel-updates-changelog/2026-10-30T21-45-00Z-report.png
 state/published.json
 tracking/repos/auto-dig-quasar.md
 tracking/repos/hackmode.md

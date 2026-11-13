@@ -1,6 +1,6 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-13T17:47:04Z`
+- generated: `2026-11-13T23:36:53Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
 - head: [`21ee21e5962c4c629cd111c9349a307fe840f55b`](https://github.com/lost-rob0t/starintel-server/commit/21ee21e5962c4c629cd111c9349a307fe840f55b)
@@ -61,11 +61,6 @@
 2026-11-02 e6711fb516f0616fd082f80baa8f1c66c7789ee6 fix(targets): durable recurring schedules survive restart via boot rehydration (#360)
 2026-10-31 55deeee3aa6ff7141279562dabba071c2feeb025 Merge pull request #358 from lost-rob0t/fts-default-field
 2026-10-31 dd5c41c596652281cf32de4db693b4c09a9a42af fts: index document text into the Lucene default field
-2026-10-30 f97596b0a63c9a0184fcc813bb3783e3df31eb9c Merge pull request #357 from lost-rob0t/rage/37-consumer-reconnect
-2026-10-30 eedf8440ea424a84f32926c0364c1c2c8e1fbc0d fix(consumers): bounded transport reconnect in run-consumer (issue #37)
-2026-10-30 630e97898e7361ed2557212523789e1d050adafc fix(consumers): reopen stream at top of each reconnect session; repair paren/declare placement
-2026-10-30 1a34b3908eef049bc4dd10f0d5bd7eb8848f5dc8 fix(consumers): classify reconnect by origin, not condition name
-2026-10-30 9da03504fb902b1e2a848b70a3753a7d803a8a34 kb: consumer reconnect root cause, invariants, ingest-host and prod-couchdb tooling (issue #37 slice)
 ```
 
 ## Repository paths changed, last 14 days
