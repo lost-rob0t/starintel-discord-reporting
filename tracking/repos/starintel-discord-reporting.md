@@ -1,15 +1,16 @@
 # lost-rob0t/starintel-discord-reporting
 
-- generated: `2026-11-13T23:37:17Z`
+- generated: `2026-11-14T06:31:31Z`
 - canonical branch: `main`
 - changelog eligible: `no`
-- head: [`8abb54b36c70a2214a1a12799cdf13f869da57fd`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/8abb54b36c70a2214a1a12799cdf13f869da57fd)
-- head date: `2026-11-13T17:47:54Z`
+- head: [`945f9451eb9069121acd58b8a1e14a04d752448f`](https://github.com/lost-rob0t/starintel-discord-reporting/commit/945f9451eb9069121acd58b8a1e14a04d752448f)
+- head date: `2026-11-13T23:37:20Z`
 - head subject: tracking: refresh StarIntel repo snapshots
 
 ## Git log, last 14 days
 
 ```text
+2026-11-13 945f9451eb9069121acd58b8a1e14a04d752448f tracking: refresh StarIntel repo snapshots
 2026-11-13 8abb54b36c70a2214a1a12799cdf13f869da57fd tracking: refresh StarIntel repo snapshots
 2026-11-13 9e60d7f4f4ad16d6506dbae19f9f506d1370556c tracking: refresh StarIntel repo snapshots
 2026-11-13 49c1aa0e2e116bb9adee419bc63b68c8fa77bcc2 tracking: refresh StarIntel repo snapshots
@@ -55,15 +56,11 @@
 2026-10-31 4518ae72890e090bedeccd82686b55cf38655ebb tracking: refresh StarIntel repo snapshots
 2026-10-31 d87cbe2caf4e9a7395634c1e362e281878c29a8c tracking: refresh StarIntel repo snapshots
 2026-10-31 b7265a9ebb6239faf2c6e5ee3d2108730a1dd488 tracking: refresh StarIntel repo snapshots
-2026-10-31 d4254bfa7b903571b149f543b9e29f3883ab6bfd tracking: refresh StarIntel repo snapshots
-2026-10-30 f7cdfec07db795fb0c58a2d3278391aa1491077e state: record verified Discord deliveries
-2026-10-30 18d820d11b4e968bc26d7d780906b9813c071c70 tracking: refresh StarIntel repo snapshots
 ```
 
 ## Repository paths changed, last 14 days
 
 ```text
-state/published.json
 tracking/repos/auto-dig-quasar.md
 tracking/repos/hackmode.md
 tracking/repos/index.md

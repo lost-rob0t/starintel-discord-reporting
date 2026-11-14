@@ -1,15 +1,21 @@
 # lost-rob0t/starintel-server
 
-- generated: `2026-11-13T23:36:53Z`
+- generated: `2026-11-14T06:31:07Z`
 - canonical branch: `master`
 - changelog eligible: `yes`
-- head: [`21ee21e5962c4c629cd111c9349a307fe840f55b`](https://github.com/lost-rob0t/starintel-server/commit/21ee21e5962c4c629cd111c9349a307fe840f55b)
-- head date: `2026-11-13T04:01:16Z`
-- head subject: Merge pull request 'fix(couchdb): move session validation out of the pool lock (#433)' (#435) from fix/433-pool-probe-lock-contention into master
+- head: [`4b82ed3a0457ca67f2c4a6a55b90417972222310`](https://github.com/lost-rob0t/starintel-server/commit/4b82ed3a0457ca67f2c4a6a55b90417972222310)
+- head date: `2026-11-13T23:27:37-05:00`
+- head subject: merge origin/master into perf/ingest-hot-path (content-identical salvage)
 
 ## Git log, last 14 days
 
 ```text
+2026-11-13 4b82ed3a0457ca67f2c4a6a55b90417972222310 merge origin/master into perf/ingest-hot-path (content-identical salvage)
+2026-11-13 0d3f52dfb16d16fedb7dd57078d828b772dbbeb3 merge origin/master + port session-probe cache into databases/couchdb.lisp; adopt :initial-state marker; blind-new opt-in default off (salvaged from orphaned worktree)
+2026-11-13 10a3f3ccf1241804170003a66f1859926fc141cc merge: perf/search-responsiveness into perf/ingest-hot-path
+2026-11-13 a62274f5bfed7aed95ce966826fca901c1d51d92 perf: graceful search degradation under couchdb load
+2026-11-13 c8dbb293c29bd976b6bd50c85c5d9051c3361e6d perf: cut per-message couchdb point lookups on the ingest hot path
+2026-11-13 4ce2a5b4a93b270cb932d2d724ba79628361c12a Search: degrade gracefully on CouchDB read timeout instead of 500ing
 2026-11-13 21ee21e5962c4c629cd111c9349a307fe840f55b Merge pull request 'fix(couchdb): move session validation out of the pool lock (#433)' (#435) from fix/433-pool-probe-lock-contention into master
 2026-11-12 ba21a3f30ad265df7502452a0b0db969832450d9 fix(couchdb): move session validation out of the pool lock (#433)
 2026-11-12 f50a441e1fcaad73277932195e05f2578eb972bf Merge pull request 'fix(search): bounded public FTS reads with canonical revalidation (#420)' (#422) from fix/public-search-catchup-420 into master
@@ -67,6 +73,7 @@
 
 ```text
 .copilot
+.github/workflows/docker.yml
 .prolog/facts.kb
 .prolog/handoff.pl
 .prolog/kb/authorization-scope-dimensions.pl
@@ -87,7 +94,14 @@ doc/api/star-authorization.org
 doc/api/star-consumers.org
 doc/api/star-databases-couchdb.org
 doc/http-authorization-runtime.org
+doc/production-isolation.md
+doc/production-recovery.md
+doc/production-release.md
 doc/public-search-catchup.md
+docker/star-server-init.lisp
+scripts/readiness_isolation.py
+scripts/readiness_recovery.py
+scripts/readiness_release.py
 source/actor-registry.lisp
 source/actor-systems/event-actor.lisp
 source/actors.lisp
@@ -113,12 +127,14 @@ source/databases/view-request.lisp
 source/frontends/http-api.lisp
 source/frontends/http-authorization-routes.lisp
 source/frontends/http-authorization.lisp
+source/frontends/http-boundary-core.lisp
 source/frontends/http-bulk-jobs.lisp
 source/frontends/http-capabilities.lisp
 source/frontends/http-contract-routes.lisp
 source/frontends/http-target-v1-auth.lisp
 source/frontends/http-target-v1-route.lisp
 source/frontends/http-target-v1.lisp
+source/gserver-settings.lisp
 source/package.lisp
 source/rabbit.lisp
 source/runtime-lifecycle.lisp
@@ -142,15 +158,23 @@ t/http-api-test.lisp
 t/http-auth-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
+t/http-search-timeout-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
 t/runtime-lifecycle-test.lisp
+tests/test_readiness_isolation.py
+tests/test_readiness_recovery.py
+tests/test_readiness_release.py
 ```
 
 ## Test and CI paths touched, last 14 days
 
 ```text
+.github/workflows/docker.yml
+scripts/readiness_isolation.py
+scripts/readiness_recovery.py
+scripts/readiness_release.py
 source/starintel-gserver.asd
 starintel-gserver-tests.asd
 t/actor-registry-test.lisp
@@ -167,8 +191,12 @@ t/http-api-test.lisp
 t/http-auth-test.lisp
 t/http-boundary-test.lisp
 t/http-capabilities-test.lisp
+t/http-search-timeout-test.lisp
 t/http-target-tenant-test.lisp
 t/http-target-v1-test.lisp
 t/run-tests.lisp
 t/runtime-lifecycle-test.lisp
+tests/test_readiness_isolation.py
+tests/test_readiness_recovery.py
+tests/test_readiness_release.py
 ```
